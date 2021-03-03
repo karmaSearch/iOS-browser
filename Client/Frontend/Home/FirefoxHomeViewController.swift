@@ -9,6 +9,7 @@ import SDWebImage
 import XCGLogger
 import SyncTelemetry
 import SnapKit
+import Core
 
 private let log = Logger.browserLogger
 
@@ -147,6 +148,12 @@ class FirefoxHomeViewController: UICollectionViewController, HomePanel {
         card.backgroundColor = UIColor.theme.homePanel.topSitesBackground
         return card
     }()
+    
+    lazy var feedbackCard: FeedbackCard = {
+        let card = FeedbackCard()
+        card.backgroundColor = UIColor.theme.homePanel.topSitesBackground
+        return card
+    }()
 
     var pocketStories: [PocketStory] = []
 
@@ -173,8 +180,27 @@ class FirefoxHomeViewController: UICollectionViewController, HomePanel {
         self.collectionView?.register(ASHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "Header")
         self.collectionView?.register(ASFooterView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "Footer")
         collectionView?.keyboardDismissMode = .onDrag
-
-        if #available(iOS 14.0, *), !UserDefaults.standard.bool(forKey: "DidDismissDefaultBrowserCard") {
+        
+        if User.shared.showsFeedbackPromo {
+            view.addSubview(feedbackCard)
+            feedbackCard.snp.makeConstraints { make in
+                make.top.equalToSuperview()
+                make.bottom.equalTo(collectionView.snp.top)
+                make.width.lessThanOrEqualTo(508)
+                make.centerX.equalTo(self.view)
+            }
+            collectionView.snp.makeConstraints { make in
+                make.top.equalTo(feedbackCard.snp.bottom)
+                make.bottom.left.right.equalToSuperview()
+            }
+            feedbackCard.dismissClosure =  {
+                self.feedbackCard.removeFromSuperview()
+                self.collectionView.snp.makeConstraints { make in
+                    make.top.equalToSuperview()
+                    make.bottom.left.right.equalToSuperview()
+                }
+            }
+        } else if #available(iOS 14.0, *), !UserDefaults.standard.bool(forKey: "DidDismissDefaultBrowserCard") {
             self.view.addSubview(defaultBrowserCard)
             defaultBrowserCard.snp.makeConstraints { make in
                 make.top.equalToSuperview()
@@ -235,6 +261,7 @@ class FirefoxHomeViewController: UICollectionViewController, HomePanel {
 
     func applyTheme() {
         defaultBrowserCard.applyTheme()
+        feedbackCard.applyTheme()
         collectionView?.backgroundColor = UIColor.theme.homePanel.topSitesBackground
         self.view.backgroundColor = UIColor.theme.homePanel.topSitesBackground
         topSiteCell.collectionView.reloadData()

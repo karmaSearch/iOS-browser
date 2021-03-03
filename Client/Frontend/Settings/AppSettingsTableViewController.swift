@@ -140,7 +140,7 @@ class AppSettingsTableViewController: SettingsTableViewController {
             SettingSection(title: NSAttributedString(string: NSLocalizedString("About", comment: "About settings section title")), children: [
                 VersionSetting(settings: self),
                 LicenseAndAcknowledgementsSetting(),
-                // Ecosia: YourRightsSetting(),
+                /* Ecosia: YourRightsSetting(),
                 ExportBrowserDataSetting(settings: self),
                 ExportLogDataSetting(settings: self),
                 DeleteExportedDataSetting(settings: self),
@@ -155,6 +155,8 @@ class AppSettingsTableViewController: SettingsTableViewController {
                 LeanplumStatus(settings: self),
                 ClearOnboardingABVariables(settings: self),
                 ToggleNewTabToolbarButton(settings: self)
+ */
+                PushBackInstallation(settings: self)
             ])]
 
         return settings
