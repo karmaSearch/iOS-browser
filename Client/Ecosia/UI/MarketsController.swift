@@ -69,8 +69,7 @@ final class MarketsController: UIViewController, UITableViewDataSource, UITableV
         guard Markets.all[didSelectRowAt.row].id != User.shared.marketCode else { return }
         User.shared.marketCode = Markets.all[didSelectRowAt.row].id
         table.reloadData()
-        
-        // TODO Analytics.shared.market(User.shared.marketCode.rawValue)
+        Analytics.shared.market(User.shared.marketCode.rawValue)
         Goodall.shared.refresh()
     }
 }

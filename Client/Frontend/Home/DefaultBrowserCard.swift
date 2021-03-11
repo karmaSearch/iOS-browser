@@ -128,12 +128,14 @@ class DefaultBrowserCard: UIView {
         UserDefaults.standard.set(true, forKey: "DidDismissDefaultBrowserCard")
         TelemetryWrapper.gleanRecordEvent(category: .action, method: .tap, object: .dismissDefaultBrowserCard)
         LeanPlumClient.shared.track(event: .dismissDefaultBrowserCard)
+        Analytics.shared.defaultBrowser(.close)
     }
     
     @objc private func showSettings() {
         UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
         TelemetryWrapper.gleanRecordEvent(category: .action, method: .tap, object: .goToSettingsDefaultBrowserCard)
         LeanPlumClient.shared.track(event: .goToSettingsDefaultBrowserCard)
+        Analytics.shared.defaultBrowser(.click)
     }
     
     func applyTheme() {
