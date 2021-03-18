@@ -128,13 +128,44 @@ final class Analytics {
             $0.setProperty(id)
         })
     }
+
+    func urlError(_ urlError: Error) {
+        if let urlError = urlError as? URLError {
+            switch urlError.code {
+            case .networkConnectionLost,
+                 .notConnectedToInternet,
+                 .dnsLookupFailed,
+                 .resourceUnavailable,
+                 .unsupportedURL,
+                 .cannotFindHost,
+                 .cannotConnectToHost,
+                 .timedOut,
+                 .secureConnectionFailed,
+                 .serverCertificateUntrusted:
+                browserError(code: urlError.code.rawValue)
+            default:
+                break
+            }
+        } else if (urlError as NSError).code == 101 { //urlCantBeShown
+            browserError(code: 101)
+        }
+    }
     
-    func error(_ code: String) {
+    func browserError(code: Int) {
         tracker.track(SPStructured.build {
             $0.setCategory(Category.browser.rawValue)
             $0.setAction(Action.receive.rawValue)
             $0.setLabel("error")
-            $0.setProperty(code)
+            $0.setProperty(.init(code))
+        })
+    }
+
+    func migrationError(code: EcosiaImport.Failure.Code, message: String) {
+        tracker.track(SPStructured.build {
+            $0.setCategory(Category.migration.rawValue)
+            $0.setAction(Action.error.rawValue)
+            $0.setLabel(.init(code.rawValue))
+            $0.setProperty(message)
         })
     }
     
@@ -227,6 +258,14 @@ final class Analytics {
             $0.setAction(Action.open.rawValue)
             $0.setLabel("default_browser_settings")
         })
+    }
+
+    func migrated(_ migration: Migration, in seconds: TimeInterval) {
+        tracker.track(SPTiming.build({
+            $0.setCategory("migration")
+            $0.setVariable(migration.rawValue)
+            $0.setTiming(Int(seconds * 1000))
+        }))
     }
 }
 

@@ -7,7 +7,8 @@ extension Analytics {
         browser,
         navigation,
         external,
-        onboarding
+        onboarding,
+        migration
     }
     
     enum Label {
@@ -52,7 +53,8 @@ extension Analytics {
         case
         view,
         open,
-        receive
+        receive,
+        error
         
         enum Activity: String {
             case
@@ -110,5 +112,12 @@ extension Analytics {
         home,
         menu,
         new_tab
+    }
+
+    enum Migration: String {
+        case
+        tabs,
+        favourites,
+        history
     }
 }
