@@ -8,7 +8,7 @@ import Storage
 
 private struct DownloadsPanelUX {
     static let WelcomeScreenPadding: CGFloat = 15
-    static let WelcomeScreenItemWidth = 170
+    static let WelcomeScreenItemWidth = 220
     static let HeaderHeight: CGFloat = 28
 }
 
