@@ -69,7 +69,8 @@ final class EcosiaImport {
                     Analytics.shared.migrationError(code: .favourites, message: error.description)
                 }
 
-                let urls = Core.Tabs().items.compactMap { $0.page?.url }
+                // cap to max 20 tabs as more results in memory pressure
+                let urls = Core.Tabs().items.prefix(20).compactMap { $0.page?.url }
                 EcosiaTabs.migrate(urls, to: self.tabManager) { result in
                     switch result {
                     case .success:
