@@ -70,7 +70,7 @@ final class EcosiaImport {
                 }
 
                 // cap to max 20 tabs as more results in memory pressure
-                let urls = Core.Tabs().items.prefix(20).compactMap { $0.page?.url }
+                let urls = Core.Tabs().items.suffix(20).compactMap { $0.page?.url }
                 EcosiaTabs.migrate(urls, to: self.tabManager) { result in
                     switch result {
                     case .success:
