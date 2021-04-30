@@ -175,7 +175,7 @@ username = ...
 Pulling translation from the web
 
 ```bash
-tx pull -af
+tx pull -afs
 ```
 
 Test and commit the new translations. There exists schemes for testing other languages in the simulator.
@@ -184,10 +184,12 @@ Test and commit the new translations. There exists schemes for testing other lan
 
 #### Via CLI
 
-1. Add the new strings to the English source file `Client/Ecosia/L10N/en.lproj/Ecosia.strings`
-2. Push it to Transifex
+1. Pull the source file
+2. Add the new strings to the English source file `Client/Ecosia/L10N/en.lproj/Ecosia.strings`
+3. Push it to Transifex
 
 ```bash
+tx pull -afs
 tx push -s
 ```
 
