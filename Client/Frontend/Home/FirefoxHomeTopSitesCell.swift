@@ -397,7 +397,7 @@ class HorizontalFlowLayout: UICollectionViewLayout {
         var frame = CGRect.zero
         frame.origin.x = CGFloat(columnPosition) * (itemSize.width + insets.left) + insets.left
         frame.origin.y = CGFloat(rowPosition) * (itemSize.height + insets.top)
-
+        
         frame.size = itemSize
         attr.frame = frame
         return attr
@@ -440,6 +440,7 @@ class ASHorizontalScrollCellManager: NSObject, UICollectionViewDelegate, UIColle
     }
 
     func numberOfHorizontalItems() -> Int {
+        /* Ecosia
         guard let traits = currentTraits else {
             return 0
         }
@@ -458,6 +459,8 @@ class ASHorizontalScrollCellManager: NSObject, UICollectionViewDelegate, UIColle
             numItems = numItems - 1
         }
         return numItems * 2
+         */
+        4
     }
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {

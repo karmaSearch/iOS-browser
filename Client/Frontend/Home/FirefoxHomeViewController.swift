@@ -349,6 +349,12 @@ extension FirefoxHomeViewController {
                 let window = UIApplication.shared.keyWindow
                 let safeAreaInsets = window?.safeAreaInsets.left ?? 0
                 insets += FirefoxHomeUX.MinimumInsets + safeAreaInsets
+                
+                // Ecosia
+                if UIDevice.current.userInterfaceIdiom == .pad || UIApplication.shared.statusBarOrientation.isLandscape {
+                    insets += frameWidth / 4
+                }
+                
                 return insets
             case .treeCounter:
                 insets += FirefoxHomeUX.TopSitesInsets
@@ -974,6 +980,11 @@ class ASHeaderView: UICollectionReusableView {
 
     var titleInsets: CGFloat {
         get {
+            // Ecosia
+            if UIDevice.current.userInterfaceIdiom == .pad || UIApplication.shared.statusBarOrientation.isLandscape {
+                return FirefoxHomeUX.MinimumInsets + (self.frame.size.width / 4)
+            }
+            
             return UIScreen.main.bounds.size.width == self.frame.size.width && UIDevice.current.userInterfaceIdiom == .pad ? FirefoxHomeHeaderViewUX.Insets : FirefoxHomeUX.MinimumInsets
         }
     }
