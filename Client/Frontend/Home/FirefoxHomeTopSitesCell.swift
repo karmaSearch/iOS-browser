@@ -9,7 +9,6 @@ import Storage
 
 private struct TopSiteCellUX {
     static let TitleHeight: CGFloat = 24
-    static let TitleFont = DynamicFontHelper.defaultHelper.SmallSizeRegularWeightAS
     static let SelectedOverlayColor = UIColor(white: 0.0, alpha: 0.25)
     static let CellCornerRadius: CGFloat = 4
     static let TitleOffset: CGFloat = 4
@@ -45,7 +44,7 @@ class TopSiteItemCell: UICollectionViewCell, Themeable {
         let titleLabel = UILabel()
         titleLabel.layer.masksToBounds = true
         titleLabel.textAlignment = .center
-        titleLabel.font = TopSiteCellUX.TitleFont
+        titleLabel.font = .preferredFont(forTextStyle: .footnote)
         titleLabel.numberOfLines = 2
         titleLabel.adjustsFontSizeToFitWidth = true
         titleLabel.allowsDefaultTighteningForTruncation = true
@@ -94,7 +93,8 @@ class TopSiteItemCell: UICollectionViewCell, Themeable {
         titleLabel.snp.makeConstraints { make in
             make.left.equalTo(contentView).offset(TopSiteCellUX.TitleOffset)
             make.right.equalTo(contentView).offset(-TopSiteCellUX.TitleOffset)
-            make.top.equalTo(faviconBG.snp.bottom).offset(12)
+            make.top.equalTo(faviconBG.snp.bottom).offset(8)
+            make.bottom.lessThanOrEqualTo(contentView)
         }
 
         imageView.snp.makeConstraints { make in
@@ -186,7 +186,7 @@ class TopSiteItemCell: UICollectionViewCell, Themeable {
         selectedOverlay.backgroundColor = TopSiteCellUX.OverlayColor
         titleBorder.backgroundColor = TopSiteCellUX.BorderColor.cgColor
         titleLabel.backgroundColor = UIColor.clear
-        titleLabel.textColor = UIColor.theme.homePanel.topSiteDomain
+        titleLabel.textColor = UIColor.theme.ecosia.highContrastText
     }
 }
 
