@@ -423,7 +423,6 @@
 		C8DFFE492294AAB600296DB1 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFFE482294AAB600296DB1 /* NetworkUtils.swift */; };
 		C8E18F1E222EDE4500E30E52 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E18F1D222EDE4400E30E52 /* Accelerate.framework */; };
 		C8E18F20222EDED000E30E52 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E18F1F222EDED000E30E52 /* SafariServices.framework */; };
-		C8E18F22222EE11B00E30E52 /* MozillaAppServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCF403C221CBC9A00B38F28 /* MozillaAppServices.framework */; };
 		C8E2E80C23D20FB3005AACE6 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2E80823D20FB3005AACE6 /* Avatar.swift */; };
 		C8E2E80D23D20FB3005AACE6 /* RustFirefoxAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2E80923D20FB3005AACE6 /* RustFirefoxAccounts.swift */; };
 		C8E2E80E23D20FD2005AACE6 /* FxAWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2E80723D20FB3005AACE6 /* FxAWebViewController.swift */; };
@@ -1236,7 +1235,6 @@
 		0A734328A164466314ECE4BE /* ia */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ia; path = ia.lproj/Menu.strings; sourceTree = "<group>"; };
 		0A7D41DB98DDB127A2B8C544 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/Menu.strings; sourceTree = "<group>"; };
 		0AE9462E8A8E05CE07D4973D /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0B21E8051E26CCB7000C8779 /* EarlGrey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EarlGrey.framework; path = Carthage/Build/iOS/EarlGrey.framework; sourceTree = "<group>"; };
 		0B305E1A1E3A98A900BE0767 /* BookmarkingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkingTests.swift; sourceTree = "<group>"; };
 		0B3D670D1E09B90B00C1EFC7 /* AuthenticationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationTest.swift; sourceTree = "<group>"; };
 		0B414433840C8AA60829B6FB /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/Intro.strings; sourceTree = "<group>"; };
@@ -3172,7 +3170,6 @@
 		C8399D9422DE5E6200EFA5CA /* disconnect-block-social.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "disconnect-block-social.json"; sourceTree = "<group>"; };
 		C8464093BC0470D518B16C72 /* af */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = af; path = af.lproj/3DTouchActions.strings; sourceTree = "<group>"; };
 		C8611CA11F71AEB900C3DE7D /* NoImageModeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoImageModeTests.swift; sourceTree = "<group>"; };
-		C86E4F702493BA8E0087BFD9 /* Metrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
 		C87D418CB1BEBDCD40E59AA1 /* co */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = co; path = "co.lproj/Default Browser.strings"; sourceTree = "<group>"; };
 		C88847109E62D581C497BB8E /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/AuthenticationManager.strings"; sourceTree = "<group>"; };
 		C892DA0C22D39A980080F1F7 /* TrackingProtectionMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingProtectionMenu.swift; sourceTree = "<group>"; };
@@ -3608,7 +3605,6 @@
 		E42B477091701B1B5A58B99F /* lv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lv; path = lv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E4424B3B1AC71FB400F44C38 /* FiraSans-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Book.ttf"; sourceTree = "<group>"; };
 		E45343FAA6F1175CFA94DA68 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
-		E46175F21EBB73A10021AE8A /* Sentry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sentry.framework; path = Carthage/Build/iOS/Sentry.framework; sourceTree = "<group>"; };
 		E46C44F2A99C2C03F692AFB8 /* sq */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sq; path = sq.lproj/Menu.strings; sourceTree = "<group>"; };
 		E4744CDB87F255C44B05CDB4 /* es-CL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-CL"; path = "es-CL.lproj/Default Browser.strings"; sourceTree = "<group>"; };
 		E47616C61AB74CA600E7DD25 /* ReaderModeBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderModeBarView.swift; sourceTree = "<group>"; };
@@ -6501,7 +6497,6 @@
 			dependencies = (
 				C82043712523DBEB00740B71 /* PBXTargetDependency */,
 				288A2D9C1AB8B3260023ABC3 /* PBXTargetDependency */,
-				397848E11ED86605004C0C0B /* PBXTargetDependency */,
 				F84B22521A0920C600AAB793 /* PBXTargetDependency */,
 				390527551C874D35007E0BB7 /* PBXTargetDependency */,
 				047F9B3124E1FE1F00CD7DF7 /* PBXTargetDependency */,
@@ -10442,7 +10437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/Entitlements/Fennec.entitlements";
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				INFOPLIST_FILE = Extensions/Today/Info.plist;
 				MARKETING_VERSION = "${inherited}";
 				OTHER_SWIFT_FLAGS = "-DMOZ_CHANNEL_FENNEC -DMOZ_TARGET_TODAY";
@@ -10457,7 +10452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/Entitlements/Firefox.entitlements";
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				INFOPLIST_FILE = Extensions/Today/Info.plist;
 				MARKETING_VERSION = "${inherited}";
 				OTHER_SWIFT_FLAGS = "-DMOZ_CHANNEL_RELEASE -DMOZ_TARGET_TODAY";
@@ -10472,7 +10467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/Entitlements/FirefoxBeta.entitlements";
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				INFOPLIST_FILE = Extensions/Today/Info.plist;
 				MARKETING_VERSION = "${inherited}";
 				OTHER_SWIFT_FLAGS = "-DMOZ_CHANNEL_BETA -DMOZ_TARGET_TODAY";
@@ -10598,7 +10593,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Extensions/Entitlements/Fennec.entitlements;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				INFOPLIST_FILE = WidgetKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = "${inherited}";
@@ -10612,7 +10607,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Extensions/Entitlements/FennecEnterprise.entitlements;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = "${inherited}";
 				PINFOPLIST_FILE = WidgetKit/Info.plist;
@@ -10625,7 +10620,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Extensions/Entitlements/Firefox.entitlements;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				INFOPLIST_FILE = WidgetKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = "${inherited}";
@@ -10639,7 +10634,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Extensions/Entitlements/FirefoxBeta.entitlements;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				INFOPLIST_FILE = WidgetKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = "${inherited}";
@@ -10653,7 +10648,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA051BAD25399FB60096D30F /* EcosiaDebug.xcconfig */;
 			buildSettings = {
-				MARKETING_VERSION = 5.0.0;
+				CURRENT_PROJECT_VERSION = 23;
+				MARKETING_VERSION = 5.0.1;
 			};
 			name = EcosiaDebug;
 		};
@@ -10661,7 +10657,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Ecosia;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				DEVELOPMENT_TEAM = 33YMRSYD2L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -10695,7 +10691,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/Entitlements/Ecosia.entitlements";
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				DEVELOPMENT_TEAM = 33YMRSYD2L;
 				INFOPLIST_FILE = Extensions/ShareTo/Info.plist;
 				MARKETING_VERSION = "${inherited}";
@@ -10710,7 +10706,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/Entitlements/Ecosia.entitlements";
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				DEVELOPMENT_TEAM = 33YMRSYD2L;
 				INFOPLIST_FILE = Extensions/Today/Info.plist;
 				MARKETING_VERSION = "${inherited}";
@@ -10726,7 +10722,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Extensions/Entitlements/Ecosia.entitlements;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				DEVELOPMENT_TEAM = 33YMRSYD2L;
 				INFOPLIST_FILE = WidgetKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -10926,7 +10922,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA32552425487C1C0024B48D /* EcosiaBeta.xcconfig */;
 			buildSettings = {
-				MARKETING_VERSION = 5.0.0;
+				CURRENT_PROJECT_VERSION = 23;
+				MARKETING_VERSION = 5.0.1;
 			};
 			name = EcosiaBeta;
 		};
@@ -10934,7 +10931,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Ecosia;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				DEVELOPMENT_TEAM = 33YMRSYD2L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -10967,7 +10964,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/Entitlements/EcosiaBeta.entitlements";
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				DEVELOPMENT_TEAM = 33YMRSYD2L;
 				INFOPLIST_FILE = Extensions/ShareTo/Info.plist;
 				MARKETING_VERSION = "${inherited}";
@@ -10982,7 +10979,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/Entitlements/EcosiaBeta.entitlements";
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				DEVELOPMENT_TEAM = 33YMRSYD2L;
 				INFOPLIST_FILE = Extensions/Today/Info.plist;
 				MARKETING_VERSION = "${inherited}";
@@ -10998,7 +10995,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Extensions/Entitlements/EcosiaBeta.entitlements;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				DEVELOPMENT_TEAM = 33YMRSYD2L;
 				INFOPLIST_FILE = WidgetKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -11198,7 +11195,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA32552425487C1C0024B48D /* EcosiaBeta.xcconfig */;
 			buildSettings = {
-				MARKETING_VERSION = 5.0.0;
+				CURRENT_PROJECT_VERSION = 23;
+				MARKETING_VERSION = 5.0.1;
 			};
 			name = EcosiaAppCenter;
 		};
@@ -11206,7 +11204,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Ecosia;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				DEVELOPMENT_TEAM = 33YMRSYD2L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11239,7 +11237,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/Entitlements/EcosiaBeta.entitlements";
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				DEVELOPMENT_TEAM = 33YMRSYD2L;
 				INFOPLIST_FILE = Extensions/ShareTo/Info.plist;
 				MARKETING_VERSION = "${inherited}";
@@ -11254,7 +11252,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/Entitlements/EcosiaBeta.entitlements";
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				DEVELOPMENT_TEAM = 33YMRSYD2L;
 				INFOPLIST_FILE = Extensions/Today/Info.plist;
 				MARKETING_VERSION = "${inherited}";
@@ -11270,7 +11268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Extensions/Entitlements/EcosiaBeta.entitlements;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				DEVELOPMENT_TEAM = 33YMRSYD2L;
 				INFOPLIST_FILE = WidgetKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -11470,7 +11468,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CAFA91492578DC040086E6AE /* Ecosia.xcconfig */;
 			buildSettings = {
-				MARKETING_VERSION = 5.0.0;
+				CURRENT_PROJECT_VERSION = 23;
+				MARKETING_VERSION = 5.0.1;
 			};
 			name = Ecosia;
 		};
@@ -11478,7 +11477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Ecosia;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				DEVELOPMENT_TEAM = 33YMRSYD2L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11511,7 +11510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/Entitlements/Ecosia.entitlements";
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				DEVELOPMENT_TEAM = 33YMRSYD2L;
 				INFOPLIST_FILE = Extensions/ShareTo/Info.plist;
 				MARKETING_VERSION = "${inherited}";
@@ -11526,7 +11525,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/Entitlements/Ecosia.entitlements";
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				DEVELOPMENT_TEAM = 33YMRSYD2L;
 				INFOPLIST_FILE = Extensions/Today/Info.plist;
 				MARKETING_VERSION = "${inherited}";
@@ -11542,7 +11541,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Extensions/Entitlements/Ecosia.entitlements;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				DEVELOPMENT_TEAM = 33YMRSYD2L;
 				INFOPLIST_FILE = WidgetKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -11760,7 +11759,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E60961891B62B8C800DD640F /* Firefox.xcconfig */;
 			buildSettings = {
-				MARKETING_VERSION = 5.0.0;
+				CURRENT_PROJECT_VERSION = 23;
+				MARKETING_VERSION = 5.0.1;
 			};
 			name = Firefox;
 		};
@@ -11768,7 +11768,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -11799,7 +11799,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/Entitlements/Firefox.entitlements";
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				INFOPLIST_FILE = Extensions/ShareTo/Info.plist;
 				MARKETING_VERSION = "${inherited}";
 				OTHER_SWIFT_FLAGS = "-DMOZ_CHANNEL_RELEASE -DMOZ_TARGET_SHARETO";
@@ -12039,7 +12039,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6DCC1ED1DCBB6AA00CEC4B7 /* Fennec.enterprise.xcconfig */;
 			buildSettings = {
-				MARKETING_VERSION = 5.0.0;
+				CURRENT_PROJECT_VERSION = 23;
+				MARKETING_VERSION = 5.0.1;
 			};
 			name = Fennec_Enterprise;
 		};
@@ -12047,7 +12048,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Developer;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -12068,7 +12069,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/Entitlements/FennecEnterprise.entitlements";
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				INFOPLIST_FILE = Extensions/ShareTo/Info.plist;
 				MARKETING_VERSION = "${inherited}";
 				OTHER_SWIFT_FLAGS = "-DMOZ_CHANNEL_FENNEC -DMOZ_TARGET_SHARETO";
@@ -12082,7 +12083,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/Entitlements/FennecEnterprise.entitlements";
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				INFOPLIST_FILE = Extensions/Today/Info.plist;
 				MARKETING_VERSION = "${inherited}";
 				OTHER_SWIFT_FLAGS = "-DMOZ_CHANNEL_FENNEC -DMOZ_TARGET_TODAY";
@@ -12283,7 +12284,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6FCC43C1C40565200DF6113 /* FirefoxBeta.xcconfig */;
 			buildSettings = {
-				MARKETING_VERSION = 5.0.0;
+				CURRENT_PROJECT_VERSION = 23;
+				MARKETING_VERSION = 5.0.1;
 			};
 			name = FirefoxBeta;
 		};
@@ -12291,7 +12293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Beta;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -12322,7 +12324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/Entitlements/FirefoxBeta.entitlements";
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				INFOPLIST_FILE = Extensions/ShareTo/Info.plist;
 				MARKETING_VERSION = "${inherited}";
 				OTHER_SWIFT_FLAGS = "-DMOZ_CHANNEL_BETA -DMOZ_TARGET_SHARETO";
@@ -12453,7 +12455,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E60961861B62B8A700DD640F /* Fennec.xcconfig */;
 			buildSettings = {
-				MARKETING_VERSION = 5.0.0;
+				CURRENT_PROJECT_VERSION = 23;
+				MARKETING_VERSION = 5.0.1;
 			};
 			name = Fennec;
 		};
@@ -12461,7 +12464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Developer;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				DEVELOPMENT_TEAM = 43AQ936H96;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -12493,7 +12496,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "$(inherit)Extensions/Entitlements/Fennec.entitlements";
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = "${inherited}";
 				INFOPLIST_FILE = Extensions/ShareTo/Info.plist;
 				MARKETING_VERSION = "${inherited}";
 				OTHER_SWIFT_FLAGS = "-DMOZ_CHANNEL_FENNEC -DMOZ_TARGET_SHARETO";
