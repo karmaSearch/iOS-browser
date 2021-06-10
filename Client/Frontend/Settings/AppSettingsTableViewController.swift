@@ -5,6 +5,7 @@
 import UIKit
 import Shared
 import Account
+import Core
 
 /// App Settings Screen (triggered by tapping the 'Gear' in the Tab Tray Controller)
 class AppSettingsTableViewController: SettingsTableViewController {
@@ -48,10 +49,6 @@ class AppSettingsTableViewController: SettingsTableViewController {
             BoolSetting(prefs: prefs, prefKey: PrefsKeys.KeyBlockPopups, defaultValue: true,
                         titleText: NSLocalizedString("Block Pop-up Windows", comment: "Block pop-up windows setting")),
            ]
-
-        if #available(iOS 14.0, *) {
-            generalSettings.append(DefaultBrowserSetting(settings: self))
-        }
 
         /* Ecosia: remove Siri settings
         if #available(iOS 12.0, *) {
@@ -97,6 +94,12 @@ class AppSettingsTableViewController: SettingsTableViewController {
                 SyncNowSetting(settings: self)
             ] + accountChinaSyncSetting )]
          */
+        
+        if #available(iOS 14.0, *) {
+            settings += [.init(title: nil, footerTitle: .init(string: .localized(.linksFromWebsites)), children: [
+                DefaultBrowserSetting(settings: self)
+            ])]
+        }
 
         let searchSettings: [Setting] = [
             SearchAreaSetting(settings: self),
@@ -104,7 +107,7 @@ class AppSettingsTableViewController: SettingsTableViewController {
             AutoCompleteSettings(prefs: prefs),
             PersonalSearchSettings(prefs: prefs)
         ]
-
+        
         settings += [ SettingSection(title: NSAttributedString(string: .localized(.search)), footerTitle: nil, children: searchSettings)]
 
         settings += [ SettingSection(title: NSAttributedString(string: Strings.SettingsGeneralSectionTitle), children: generalSettings)]
