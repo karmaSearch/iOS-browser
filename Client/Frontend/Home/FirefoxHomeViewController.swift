@@ -497,7 +497,7 @@ extension FirefoxHomeViewController: UICollectionViewDelegateFlowLayout {
 extension FirefoxHomeViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 3
+        User.shared.topSites == false ? 2 : 3
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
