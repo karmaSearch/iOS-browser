@@ -159,7 +159,7 @@ workflows:
       - build-testflight-deploy-beta:
           filters:
             tags:
-              only: /^v.*/
+              only: /^beta.*/
             branches:
               ignore: /.*/
 

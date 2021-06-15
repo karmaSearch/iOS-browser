@@ -10644,8 +10644,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA051BAD25399FB60096D30F /* EcosiaDebug.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 23;
-				MARKETING_VERSION = 5.0.1;
+				CURRENT_PROJECT_VERSION = 24;
+				MARKETING_VERSION = 5.0.2;
 			};
 			name = EcosiaDebug;
 		};
@@ -10918,8 +10918,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA32552425487C1C0024B48D /* EcosiaBeta.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 23;
-				MARKETING_VERSION = 5.0.1;
+				CURRENT_PROJECT_VERSION = 24;
+				MARKETING_VERSION = 5.0.2;
 			};
 			name = EcosiaBeta;
 		};
@@ -11191,8 +11191,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA32552425487C1C0024B48D /* EcosiaBeta.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 23;
-				MARKETING_VERSION = 5.0.1;
+				CURRENT_PROJECT_VERSION = 24;
+				MARKETING_VERSION = 5.0.2;
 			};
 			name = EcosiaAppCenter;
 		};
@@ -11464,8 +11464,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CAFA91492578DC040086E6AE /* Ecosia.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 23;
-				MARKETING_VERSION = 5.0.1;
+				CURRENT_PROJECT_VERSION = 24;
+				MARKETING_VERSION = 5.0.2;
 			};
 			name = Ecosia;
 		};
@@ -11755,8 +11755,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E60961891B62B8C800DD640F /* Firefox.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 23;
-				MARKETING_VERSION = 5.0.1;
+				CURRENT_PROJECT_VERSION = 24;
+				MARKETING_VERSION = 5.0.2;
 			};
 			name = Firefox;
 		};
@@ -12035,8 +12035,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6DCC1ED1DCBB6AA00CEC4B7 /* Fennec.enterprise.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 23;
-				MARKETING_VERSION = 5.0.1;
+				CURRENT_PROJECT_VERSION = 24;
+				MARKETING_VERSION = 5.0.2;
 			};
 			name = Fennec_Enterprise;
 		};
@@ -12280,8 +12280,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6FCC43C1C40565200DF6113 /* FirefoxBeta.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 23;
-				MARKETING_VERSION = 5.0.1;
+				CURRENT_PROJECT_VERSION = 24;
+				MARKETING_VERSION = 5.0.2;
 			};
 			name = FirefoxBeta;
 		};
@@ -12451,8 +12451,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E60961861B62B8A700DD640F /* Fennec.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 23;
-				MARKETING_VERSION = 5.0.1;
+				CURRENT_PROJECT_VERSION = 24;
+				MARKETING_VERSION = 5.0.2;
 			};
 			name = Fennec;
 		};
