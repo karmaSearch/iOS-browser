@@ -489,6 +489,20 @@ extension FirefoxHomeViewController: UICollectionViewDelegateFlowLayout {
 
     fileprivate func showSiteWithURLHandler(_ url: URL) {
         let visitType = VisitType.bookmark
+        
+        switch url.absoluteString {
+        case Environment.current.blog.absoluteString:
+            Analytics.shared.open(topSite: .blog)
+        case Environment.current.financialReports.absoluteString:
+            Analytics.shared.open(topSite: .financialReports)
+        case Environment.current.privacy.absoluteString:
+            Analytics.shared.open(topSite: .privacy)
+        case Environment.current.howEcosiaWorks.absoluteString:
+            Analytics.shared.open(topSite: .howEcosiaWorks)
+        default:
+            break
+        }
+        
         homePanelDelegate?.homePanel(didSelectURL: url, visitType: visitType)
     }
 }
