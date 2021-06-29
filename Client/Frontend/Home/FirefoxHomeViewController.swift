@@ -217,9 +217,7 @@ class FirefoxHomeViewController: UICollectionViewController, HomePanel {
         collectionView?.backgroundColor = UIColor.theme.ecosia.primaryBackground
         self.view.backgroundColor = UIColor.theme.ecosia.primaryBackground
         topSiteCell.collectionView.reloadData()
-        if let collectionView = self.collectionView, collectionView.numberOfSections > 0, collectionView.numberOfItems(inSection: 0) > 0 {
-            collectionView.reloadData()
-        }
+        collectionView.reloadData()
     }
 
     func scrollToTop(animated: Bool = false) {
