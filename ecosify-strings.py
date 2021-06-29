@@ -32,7 +32,7 @@ def ecosify_translations(file_path):
             return
     
     newlines = []
-    brandnames = ['firefoxen', 'firefoxu', 'firefoxe', 'firefoxban', 'firefoksie', 'firefox', 'mozilla']
+    brandnames = ['firefoksa', 'firefoxen', 'firefoxu', 'firefoxe', 'firefoxban', 'firefoksie', 'firefox', 'mozilla']
 
     for line in lines:
         parts = line.split('=')
