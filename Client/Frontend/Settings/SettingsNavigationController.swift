@@ -33,7 +33,7 @@ class ThemedNavigationController: UINavigationController {
         separator.bottomAnchor.constraint(equalTo: navigationBar.bottomAnchor).isActive = true
         separator.leftAnchor.constraint(equalTo: navigationBar.leftAnchor).isActive = true
         separator.rightAnchor.constraint(equalTo: navigationBar.rightAnchor).isActive = true
-        separator.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        separator.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
         
         applyTheme()
     }
@@ -52,7 +52,7 @@ extension ThemedNavigationController: Themeable {
         viewControllers.forEach {
             ($0 as? Themeable)?.applyTheme()
         }
-        separator?.backgroundColor = UIColor.theme.ecosia.barSeparator
+        separator?.backgroundColor = UIColor.theme.tableView.separator
     }
 }
 
