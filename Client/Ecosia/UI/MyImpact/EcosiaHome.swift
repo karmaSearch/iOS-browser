@@ -107,8 +107,30 @@ final class EcosiaHome: UICollectionViewController, UICollectionViewDelegateFlow
     private let images = Images(.init(configuration: .ephemeral))
     private let news = News()
     private let personalCounter = PersonalCounter()
+    private let referrals = Referrals()
 
-    lazy var impactModel: MyImpcactCellModel = {
+    lazy var impactModel: MyImpactCellModel = {
+        return refreshImpactModel()
+    }()
+
+    private func refreshImpactModel() -> MyImpactCellModel {
+        if Goodall.shared.variant(for: .referrals) == "test" {
+            return referralImpactCellModel
+        } else {
+            return searchImpactCellModel
+        }
+    }
+
+    private var searchImpactCellModel: MyImpactCellModel {
+        let top = MyImpactStackViewModel(title: .localizedPlural(.searches, num: personalCounter.state!),
+                                         highlight: true, subtitle: .localized(.onAverageItTakes),
+                                         imageName: "personalCounter",
+                                         callout: nil)
+        return MyImpactCellModel(top: top, middle: nil, bottom: nil)
+    }
+
+
+    private var referralImpactCellModel: MyImpactCellModel {
         let callout = MyImpactStackViewModel.Callout(action: .collapse(text: .localized(.myImpactDescription),
                                                                        button: .localized(.learnMore),
                                                                        selector: #selector(learnMore)))
@@ -129,8 +151,8 @@ final class EcosiaHome: UICollectionViewController, UICollectionViewDelegateFlow
                                             imageName: "impactReferrals",
                                             callout: nil)
 
-        return MyImpcactCellModel(top: top, middle: middle, bottom: bottom)
-    }()
+        return MyImpactCellModel(top: top, middle: middle, bottom: bottom)
+    }
 
     convenience init(delegate: EcosiaHomeDelegate?) {
         let layout = EcosiaHomeLayout()
@@ -171,7 +193,15 @@ final class EcosiaHome: UICollectionViewController, UICollectionViewDelegateFlow
         }
 
         personalCounter.subscribe(self)  { [weak self] _ in
-            self?.collectionView.reloadSections([Section.impact.rawValue])
+            guard let self = self else { return }
+            self.impactModel = self.refreshImpactModel()
+            self.collectionView.reloadSections([Section.impact.rawValue])
+        }
+
+        referrals.subscribe(self)  { [weak self] _ in
+            guard let self = self else { return }
+            self.impactModel = self.refreshImpactModel()
+            self.collectionView.reloadSections([Section.impact.rawValue])
         }
     }
 
@@ -182,6 +212,7 @@ final class EcosiaHome: UICollectionViewController, UICollectionViewDelegateFlow
         Analytics.shared.navigation(.view, label: .home)
         guard hasAppeared else { return hasAppeared = true }
         updateBarAppearance()
+        impactModel = refreshImpactModel()
         collectionView.scrollRectToVisible(.init(x: 0, y: 0, width: 1, height: 1), animated: false)
         collectionView.reloadData()
     }
@@ -194,7 +225,7 @@ final class EcosiaHome: UICollectionViewController, UICollectionViewDelegateFlow
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch Section(rawValue: section)! {
         case .impact: return 1
-        case .multiply: return 1
+        case .multiply: return Goodall.shared.variant(for: .referrals) == "test" ? 1 : 0
         case .explore: return Section.Explore.allCases.count + 1 // header
         case .news: return min(3, items.count) + 2 // header and footer
         }
@@ -262,10 +293,8 @@ final class EcosiaHome: UICollectionViewController, UICollectionViewDelegateFlow
         let section = Section(rawValue: indexPath.section)!
         switch section {
         case .impact:
-            if indexPath.row == 0 {
-                delegate?.ecosiaHome(didSelectURL: Environment.current.aboutCounter)
-                Analytics.shared.navigation(.open, label: .counter)
-                dismiss(animated: true, completion: nil)
+            if let stack = (collectionView.cellForItem(at: indexPath) as? MyImpactCell)?.topStack {
+                resizeStack(sender: stack)
             }
         case .news:
             let index = indexPath.row - 1
@@ -385,7 +414,7 @@ final class EcosiaHome: UICollectionViewController, UICollectionViewDelegateFlow
 
     @objc func resizeStack(sender: MyImpactStackView) {
         guard let model = sender.model, let collapsed = model.callout?.collapsed else { return }
-        impactModel.top.callout?.collapsed = !collapsed
+        impactModel.top?.callout?.collapsed = !collapsed
 
         UIView.animate(withDuration: 0.3) {
             self.collectionView.reloadItems(at: [IndexPath(item: 0, section: Section.impact.rawValue)])

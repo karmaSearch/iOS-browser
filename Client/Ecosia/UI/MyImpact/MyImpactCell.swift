@@ -4,10 +4,10 @@
 
 import UIKit
 
-struct MyImpcactCellModel {
-    var top: MyImpactStackViewModel
-    var middle: MyImpactStackViewModel
-    var bottom: MyImpactStackViewModel
+struct MyImpactCellModel {
+    var top: MyImpactStackViewModel?
+    var middle: MyImpactStackViewModel?
+    var bottom: MyImpactStackViewModel?
 }
 
 final class MyImpactCell: UICollectionViewCell, AutoSizingCell, Themeable {
@@ -28,7 +28,7 @@ final class MyImpactCell: UICollectionViewCell, AutoSizingCell, Themeable {
     weak var outline: UIView!
     weak var separator: UIView!
 
-    private (set) var model: MyImpcactCellModel?
+    private (set) var model: MyImpactCellModel?
 
     private func setup() {
         let outline = UIView()
@@ -82,12 +82,31 @@ final class MyImpactCell: UICollectionViewCell, AutoSizingCell, Themeable {
         applyTheme()
     }
 
-    func display(_ model: MyImpcactCellModel) {
+    func display(_ model: MyImpactCellModel) {
         self.model = model
 
-        topStack.display(model.top)
-        middleStack.display(model.middle)
-        bottomStack.display(model.bottom)
+        if let top = model.top {
+            topStack.isHidden = false
+            topStack.display(top)
+        } else {
+            topStack.isHidden = true
+        }
+
+        if let middle = model.middle {
+            middleStack.isHidden = false
+            separator.isHidden = false
+            middleStack.display(middle)
+        } else {
+            middleStack.isHidden = true
+            separator.isHidden = true
+        }
+
+        if let bottom = model.bottom {
+            bottomStack.isHidden = false
+            bottomStack.display(bottom)
+        } else {
+            bottomStack.isHidden = true
+        }
     }
 
     override var isSelected: Bool {
