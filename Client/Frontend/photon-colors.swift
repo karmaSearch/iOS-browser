@@ -20,7 +20,7 @@ extension UIColor {
         static let LightGrey60 = UIColor(rgb: 0xafafba)
         static let LightGrey70 = UIColor(rgb: 0x9f9fad)
         static let LightGrey80 = UIColor(rgb: 0x8f8f9d)
-        static let LightGrey90 = UIColor(rgb: 0x80808e)
+        static let LightGrey90 = UIColor(rgb: 0xCCCCD3)
 
         static let DarkGrey05 = UIColor(rgb: 0x5b5b66)
         static let DarkGrey10 = UIColor(rgb: 0x52525e)
@@ -32,7 +32,7 @@ extension UIColor {
         static let DarkGrey65 = UIColor(rgb: 0x2c2c2e)
         static let DarkGrey70 = UIColor(rgb: 0x23222b)
         static let DarkGrey80 = UIColor(rgb: 0x1c1b22)
-        static let DarkGrey90 = UIColor(rgb: 0x15141a)
+        static let DarkGrey90 = UIColor(rgb: 0x16161a)
 
         static let Violet05 = UIColor(rgb: 0xe7dfff)
         static let Violet10 = UIColor(rgb: 0xd9bfff)
@@ -59,17 +59,17 @@ extension UIColor {
         static let Blue80 = UIColor(rgb: 0x073072)
         static let Blue90 = UIColor(rgb: 0x09204d)
 
-        static let Green05 = UIColor(rgb: 0xe3fff3)
-        static let Green10 = UIColor(rgb: 0xd1ffee)
-        static let Green20 = UIColor(rgb: 0xb3ffe3)
-        static let Green30 = UIColor(rgb: 0x87ffd1)
-        static let Green40 = UIColor(rgb: 0x54ffbd)
-        static let Green50 = UIColor(rgb: 0x3fe1b0)
-        static let Green60 = UIColor(rgb: 0x2ac3a2)
-        static let Green70 = UIColor(rgb: 0x008787)
-        static let Green80 = UIColor(rgb: 0x005e5e)
-        static let Green90 = UIColor(rgb: 0x08403f)
-        static let GreenShamrock = UIColor(rgb: 0x2ac3a2) // identical to Green60
+//        static let Green05 = UIColor(rgb: 0xe3fff3)
+//        static let Green10 = UIColor(rgb: 0xd1ffee)
+//        static let Green20 = UIColor(rgb: 0xb3ffe3)
+//        static let Green30 = UIColor(rgb: 0x87ffd1)
+//        static let Green40 = UIColor(rgb: 0x54ffbd)
+        static let Green60 = UIColor(rgb: 0x2bcd6d)
+//        static let Green60 = UIColor(rgb: 0x2ac3a2)
+//        static let Green70 = UIColor(rgb: 0x008787)
+//        static let Green80 = UIColor(rgb: 0x005e5e)
+//        static let Green90 = UIColor(rgb: 0x08403f)
+//        static let GreenShamrock = UIColor(rgb: 0x2ac3a2) // identical to Green60
 
         static let Yellow05 = UIColor(rgb: 0xffffcc)
         static let Yellow10 = UIColor(rgb: 0xffff98)
@@ -140,7 +140,7 @@ extension UIColor {
         static let White100 = UIColor(rgb: 0xffffff)
 
         static let Grey10 = UIColor(rgb: 0xf9f9fb) // change to LightGrey10 - in the future, grey should be redefined into LightGrey and DarkGrey wherever possible
-        static let Grey11 = UIColor(rgb: 0xf2f2f7) // system background / light / secondary
+        static let Grey11 = UIColor(rgb: 0xf1f1f5) // system background / light / secondary
         static let Grey10A10 = UIColor(rgba: 0xf9f9fa19)
         static let Grey10A20 = UIColor(rgba: 0xf9f9fa33)
         static let Grey10A40 = UIColor(rgba: 0xf9f9fa66)

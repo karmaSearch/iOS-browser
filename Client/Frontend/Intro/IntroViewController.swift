@@ -10,18 +10,55 @@ class IntroViewController: UIViewController, OnViewDismissable {
     var onViewDismissed: (() -> Void)? = nil
     // private var
     // Private views
-    private lazy var welcomeCard: IntroScreenWelcomeView = {
+    private lazy var scrollView: UIScrollView = {
+       let scrollView = UIScrollView()
+        scrollView.delegate = self
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.isPagingEnabled = true
+        return scrollView
+    }()
+    
+    private lazy var carouselStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .horizontal
+        stackView.distribution = .fillEqually
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
+    }()
+
+    private lazy var welcomeCard1: IntroScreenWelcomeView = {
         let welcomeCardView = IntroScreenWelcomeView()
+        welcomeCardView.setData(title: "Search with a purpose", description: "Your searches\n fund non-profit organisations, for free", icon: "welcome-icon-1", background: "welcome-background-1")
         welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
         welcomeCardView.clipsToBounds = true
         return welcomeCardView
     }()
-    private lazy var syncCard: IntroScreenSyncView = {
-        let syncCardView = IntroScreenSyncView()
-        syncCardView.translatesAutoresizingMaskIntoConstraints = false
-        syncCardView.clipsToBounds = true
-        return syncCardView
+    
+    private lazy var welcomeCard2: IntroScreenWelcomeView = {
+        let welcomeCardView = IntroScreenWelcomeView()
+        welcomeCardView.setData(title: "Find what you’re looking for", description: "KARMA works just like your usual search engine", icon: "welcome-icon-2", background: "welcome-background-2")
+        welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
+        welcomeCardView.clipsToBounds = true
+        return welcomeCardView
     }()
+    
+    private lazy var welcomeCard3: IntroScreenWelcomeView = {
+        let welcomeCardView = IntroScreenWelcomeView()
+        welcomeCardView.setData(title: "Learn & Act", description: "Get involved and keep up-to-date with the KARMA news feed", icon: "welcome-icon-3", background: "welcome-background-3", isLast: true)
+        welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
+        welcomeCardView.clipsToBounds = true
+        return welcomeCardView
+    }()
+    
+    private lazy var pageControl: UIPageControl = {
+        let pageControl = UIPageControl()
+        pageControl.pageIndicatorTintColor = UIColor.Photon.Grey11
+        pageControl.translatesAutoresizingMaskIntoConstraints = false
+        pageControl.currentPageIndicatorTintColor = UIColor.Photon.Green60
+        pageControl.addTarget(self, action: #selector(pageChanged), for: .valueChanged)
+        return pageControl
+    }()
+
     // Closure delegate
     var didFinishClosure: ((IntroViewController, FxAPageType?) -> Void)?
     
@@ -53,62 +90,78 @@ class IntroViewController: UIViewController, OnViewDismissable {
     //onboarding intro view
     private func setupIntroView() {
         // Initialize
-        view.addSubview(syncCard)
-        view.addSubview(welcomeCard)
+        view.addSubviews(scrollView)
+        scrollView.addSubview(carouselStackView)
+        
+//        view.addSubview(welcomeCard)
         
         // Constraints
-        setupWelcomeCard()
-        setupSyncCard()
+//        setupWelcomeCard()
+        setUpScrollView()
+        setUpCarousel()
     }
     
-    private func setupWelcomeCard() {
+    private func setUpScrollView() {
         NSLayoutConstraint.activate([
-            welcomeCard.topAnchor.constraint(equalTo: view.topAnchor),
-            welcomeCard.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            welcomeCard.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            welcomeCard.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
+    }
+    
+    private func setUpCarousel() {
+        [welcomeCard1, welcomeCard2, welcomeCard3].forEach { view in
+            carouselStackView.addArrangedSubview(view)
+            setupWelcomeCard(welcomeCard: view)
+        }
+
+        view.addSubviews(pageControl)
+
+        NSLayoutConstraint.activate([
+            carouselStackView.topAnchor.constraint(equalTo: scrollView.topAnchor),
+            carouselStackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
+            carouselStackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
+            carouselStackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+            carouselStackView.heightAnchor.constraint(equalTo: scrollView.heightAnchor),
+            pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            pageControl.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30)
         ])
         
-        // Buton action closures
-        // Next button action
-        welcomeCard.nextClosure = {
-            UIView.animate(withDuration: 0.3, animations: {
-                self.welcomeCard.alpha = 0
-            }) { _ in
-                self.welcomeCard.isHidden = true
-                TelemetryWrapper.recordEvent(category: .action, method: .view, object: .syncScreenView)
-            }
-        }
+        pageControl.numberOfPages = carouselStackView.arrangedSubviews.count
+        pageControl.currentPage = 0
+        
+    }
+                                
+    private func setupWelcomeCard(welcomeCard: IntroScreenWelcomeView) {
+        NSLayoutConstraint.activate([
+            welcomeCard1.heightAnchor.constraint(equalTo: carouselStackView.heightAnchor),
+            welcomeCard1.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
+        ])
+
         // Close button action
-        welcomeCard.closeClosure = {
+        welcomeCard.closeClosure = { [weak self] in
+            guard let self = self else { return }
+            let currentPage = self.pageControl.currentPage
+            TelemetryWrapper.recordEvent(category: .action, method: .press, object: .dismissedOnboarding, extras: ["slide-num": currentPage])
             self.didFinishClosure?(self, nil)
         }
-        // Sign in button closure
-        welcomeCard.signInClosure = {
-            self.didFinishClosure?(self, .emailLoginFlow)
-        }
-        // Sign up button closure
-        welcomeCard.signUpClosure = {
-            self.didFinishClosure?(self, .emailLoginFlow)
+        
+        welcomeCard.nextClosure = { [weak self] in
+            guard let self = self else { return }
+            self.pageControl.currentPage += 1
+            self.pageChanged(self.pageControl)
         }
     }
     
-    private func setupSyncCard() {
-        NSLayoutConstraint.activate([
-            syncCard.topAnchor.constraint(equalTo: view.topAnchor),
-            syncCard.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            syncCard.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            syncCard.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
-        // Start browsing button action
-        syncCard.startBrowsing = {
-            self.didFinishClosure?(self, nil)
-        }
-        // Sign-up browsing button action
-        syncCard.signUp = {
-            self.didFinishClosure?(self, .emailLoginFlow)
-        }
+    @objc func pageChanged(_ sender: UIPageControl) {
+        let page: Int = sender.currentPage
+        var frame: CGRect = self.scrollView.frame
+        frame.origin.x = frame.size.width * CGFloat(page)
+        frame.origin.y = 0
+        self.scrollView.scrollRectToVisible(frame, animated: true)
     }
+    
 }
 
 // MARK: UIViewController setup
@@ -125,5 +178,13 @@ extension IntroViewController {
         // This actually does the right thing on iPad where the modally
         // presented version happily rotates with the iPad orientation.
         return .portrait
+    }
+}
+
+// MARK: UIScrollViewDelegate
+extension IntroViewController: UIScrollViewDelegate {
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let page : Int = Int(round(scrollView.contentOffset.x / 320))
+        pageControl.currentPage = page
     }
 }
