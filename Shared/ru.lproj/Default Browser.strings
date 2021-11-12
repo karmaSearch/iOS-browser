@@ -1,16 +1,16 @@
-/* Button string to open settings that allows user to switch their default browser to Firefox. */
+/* Button string to open settings that allows user to switch their default browser to Karma. */
 "DefaultBrowserCard.Button" = "Перейти в Параметры";
 
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Узнайте как";
 
-/* Description for small card shown that allows user to switch their default browser to Firefox. */
-"DefaultBrowserCard.Description" = "Настройте автоматическое открытие ссылок с веб-сайтов, из электронных писем и «Сообщений» в Firefox.";
+/* Description for small card shown that allows user to switch their default browser to Karma. */
+"DefaultBrowserCard.Description" = "Настройте автоматическое открытие ссылок с веб-сайтов, из электронных писем и «Сообщений» в Karma.";
 
-/* Title for small card shown that allows user to switch their default browser to Firefox. */
+/* Title for small card shown that allows user to switch their default browser to Karma. */
 "DefaultBrowserCard.Title" = "Сменить браузер по умолчанию";
 
-/* Button string to open settings that allows user to switch their default browser to Firefox. */
+/* Button string to open settings that allows user to switch their default browser to Karma. */
 "DefaultBrowserOnboarding.Button" = "Перейти в Настройки";
 
 /* Description for default browser onboarding card. */
@@ -20,11 +20,11 @@
 "DefaultBrowserOnboarding.Description2" = "2. Выберите «Приложение браузера по умолчанию»";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Выберите Firefox";
+"DefaultBrowserOnboarding.Description3" = "3. Выберите Karma";
 
-/* Text for the screenshot of the iOS system settings page for Firefox. */
+/* Text for the screenshot of the iOS system settings page for Karma. */
 "DefaultBrowserOnboarding.Screenshot" = "Приложение браузера по умолчанию";
 
-/* Menu option for setting Firefox as default browser. */
+/* Menu option for setting Karma as default browser. */
 "Settings.DefaultBrowserMenuItem" = "Установить браузером по умолчанию";
 

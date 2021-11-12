@@ -43,10 +43,10 @@
 /* Title for the Jump Back In section. This section allows users to jump back in to a recently viewed tab */
 "ActivityStream.JumpBackIn.SectionTitle" = "以前表示したタブ";
 
-/* On the Firefox homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
+/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
 "ActivityStream.JumpBackIn.TabGroup.SiteCount" = "タブ数: %d";
 
-/* On the Firefox homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
+/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
 "ActivityStream.JumpBackIn.TabGroup.Title" = "\"%@\" についての検索";
 
 /* A string used to signify the start of the Recently Saved section in Home Screen. */
@@ -191,7 +191,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "あなたが最後にパスワードを変更した後に、パスワードが漏洩または盗まれました。このアカウントを保護するには、サイトにログインしてパスワードを変更してください。";
 
-/* Link to monitor.firefox.com to learn more about breached passwords */
+/* Link to monitor.Karma.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "詳細情報";
 
 /* Leads to a link to the breached website */
@@ -270,7 +270,7 @@
 "ContextMenu.ShareLinkButtonTitle" = "リンクを共有";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one talks about the more personalized home feature. */
-"ContextualHints.Homepage.PersonalizedHome" = "個人に合わせた Firefox ホームページにより、前回のページから簡単に再開できるようになりました。最近のタブ、ブックマーク、検索結果を見つけられます。";
+"ContextualHints.Homepage.PersonalizedHome" = "個人に合わせた Karma ホームページにより、前回のページから簡単に再開できるようになりました。最近のタブ、ブックマーク、検索結果を見つけられます。";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one is the call to action for the inactive tabs contextual popup.
    Contextual hints are little popups that appear for the users informing them of new features. This one talks about the inactive tabs feature. */
@@ -286,7 +286,7 @@
 "Could not load page." = "ページを読み込めませんでした。";
 
 /* Description for the new dark mode change in the version 22 app release. It describes the new automatic dark theme and how to change the theme settings. */
-"CoverSheet.v22.DarkMode.Description" = "iOS 13 ユーザーは、端末がダークモードに設定されている場合、Firefox も自動的にダークテーマに切り替わります。この動作を変更するには、「設定」 > 「テーマ」の順に開いてください。";
+"CoverSheet.v22.DarkMode.Description" = "iOS 13 ユーザーは、端末がダークモードに設定されている場合、Karma も自動的にダークテーマに切り替わります。この動作を変更するには、「設定」 > 「テーマ」の順に開いてください。";
 
 /* Title for the new dark mode change in the version 22 app release. */
 "CoverSheet.v22.DarkMode.Title" = "ダークテーマは、ダークキーボードとダークスプラッシュ画面を含みます。";
@@ -341,7 +341,7 @@
 /* Alert dialog title when the user taps the cancel download icon. */
 "Downloads.CancelDialog.Title" = "ダウンロードを中止";
 
-/* The message displayed to a user when they try and perform the download of an asset that Firefox cannot currently handle. */
+/* The message displayed to a user when they try and perform the download of an asset that Karma cannot currently handle. */
 "Downloads.Error.Message" = "ダウンロードはまだサポートされていません。";
 
 /* The label text in the Download Cancelled toast for showing confirmation that the download was cancelled. */
@@ -407,10 +407,10 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for firefox about:home page in tab history list */
-"Firefox.HomePage.Title" = "Firefox ホームページ";
+/* Title for Karma about:home page in tab history list */
+"Karma.HomePage.Title" = "Karma ホームページ";
 
-/* A button at bottom of the Firefox homepage that, when clicked, takes users straight to the settings options, where they can customize the Firefox Home page */
+/* A button at bottom of the Karma homepage that, when clicked, takes users straight to the settings options, where they can customize the Karma Home page */
 "FirefoxHome.CustomizeHomeButton.Title" = "ホームページをカスタマイズ";
 
 /* Accessibility Label for the tab toolbar Forward button */
@@ -422,16 +422,16 @@
 /* Label stating your account is not verified */
 "FxA.AccountVerificationRequired" = "アカウントの確認が必要です";
 
-/* Message explaining that user needs to check email for Firefox Account verfication link. */
-"FxA.AccountVerificationRequiredSurface" = "%@ を確認する必要があります。確認のリンクが書かれた Firefox からのメールをチェックしてください。";
+/* Message explaining that user needs to check email for Karma Account verfication link. */
+"FxA.AccountVerificationRequiredSurface" = "%@ を確認する必要があります。確認のリンクが書かれた Karma からのメールをチェックしてください。";
 
 /* Button label to connect another device to Sync */
 "FxA.ConnectAnotherDevice" = "他の端末を接続";
 
-/* Settings section title for Firefox Account */
-"FxA.FirefoxAccount" = "Firefox アカウント";
+/* Settings section title for Karma Account */
+"FxA.FirefoxAccount" = "Karma アカウント";
 
-/* Button label to go to Firefox Account settings */
+/* Button label to go to Karma Account settings */
 "FxA.ManageAccount" = "アカウントと端末の管理";
 
 /* Label when no internet is present */
@@ -441,15 +441,15 @@
 "FxA.OpenSyncPreferences" = "Sync 設定を開く";
 
 /* Instructions shown on qr code scanning view */
-"fxa.qr-scanning-view.instructions" = "firefox.com/pair で表示された QR コードをスキャンしてください";
+"fxa.qr-scanning-view.instructions" = "Karma.com/pair で表示された QR コードをスキャンしてください";
 
-/* Remove button is displayed on firefox account page under certain scenarios where user would like to remove their account. */
+/* Remove button is displayed on Karma account page under certain scenarios where user would like to remove their account. */
 "FxA.RemoveAccount" = "削除";
 
 /* Description string for alert view that gets presented when user tries to remove an account. */
-"FxA.RemoveAccountAlertMessage" = "このデバイスに関連付けされた Firefox アカウントを削除し、別のユーザーでログインする。";
+"FxA.RemoveAccountAlertMessage" = "このデバイスに関連付けされた Karma アカウントを削除し、別のユーザーでログインする。";
 
-/* Remove account alert is the final confirmation before user removes their firefox account */
+/* Remove account alert is the final confirmation before user removes their Karma account */
 "FxA.RemoveAccountAlertTitle" = "アカウントを削除";
 
 /* Button label to resend email */
@@ -459,13 +459,13 @@
 "fxa.signin.camera-signin" = "カメラを使ってログイン";
 
 /* FxA sign in create account label. */
-"fxa.signin.create-account-pt-1" = "アカウントを持つ端末間で Firefox を同期する。";
+"fxa.signin.create-account-pt-1" = "アカウントを持つ端末間で Karma を同期する。";
 
 /* FxA sign in create account label. This will be linked to the site to create an account. */
-"fxa.signin.create-account-pt-2" = "Firefox アカウントを作成する。";
+"fxa.signin.create-account-pt-2" = "Karma アカウントを作成する。";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "コンピューターの Firefox で firefox.com/pair を開いてください";
+"fxa.signin.qr-link-instruction" = "コンピューターの Karma で Karma.com/pair を開いてください";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "スキャンの準備ができました";
@@ -482,14 +482,14 @@
 /* Label explaining what sync does */
 "FxA.SyncExplain" = "他の端末で開いたタブや、ブックマーク、パスワードを読み込めます。";
 
-/* Button label to Sync your Firefox Account */
+/* Button label to Sync your Karma Account */
 "FxA.SyncNow" = "今すぐ同期";
 
 /* Call to action for sign into sync button */
 "FxA.TakeYourWebWithYou" = "ウェブを持ち歩こう";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "Firefox Sync が %@ に接続しました";
+"FxAPush_DeviceConnected_body" = "Karma Sync が %@ に接続しました";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Sync に接続しました";
@@ -498,7 +498,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ の接続が正常に解除されました。";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "この端末は Firefox Sync から正常に切断されました。";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "この端末は Karma Sync から正常に切断されました。";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Sync から切断されました";
@@ -507,7 +507,7 @@
 "FxAPush_DeviceDisconnected_title" = "Sync から切断されました";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "端末のひとつが Firefox Sync から切断されました";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "端末のひとつが Karma Sync から切断されました";
 
 /* A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing. */
 "Get your open tabs, bookmarks, and passwords from your other devices." = "他の端末で開いたタブや、ブックマーク、パスワードを読み込めます。";
@@ -555,7 +555,7 @@
 "HistoryPanel.EmptySyncedTabsPanelTabSyncDisabledState.Description" = "他の端末で開いているタブの一覧を表示するにはタブの同期を有効にしてください。";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Karma Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "履歴";
@@ -645,7 +645,7 @@
 "InactiveTabs.TabTray.AutoClosePrompt.ButtonTitle" = "タブを自動的に閉じる";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This string describes what happens if you elect to turn on this option. */
-"InactiveTabs.TabTray.AutoClosePrompt.Content" = "Firefox は 1 か月以上表示していないタブを閉じます。";
+"InactiveTabs.TabTray.AutoClosePrompt.Content" = "Karma は 1 か月以上表示していないタブを閉じます。";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This is the title of that Auto Close prompt */
 "InactiveTabs.TabTray.AutoClosePrompt.Title" = "1 か月後に自動的に閉じますか？";
@@ -674,10 +674,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "ライト";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
 "Load original page" = "元のページを読み込む";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Karma reader mode from another app. */
 "Loading content…" = "コンテンツを読み込んでいます…";
 
 /* Authentication prompt log in button */
@@ -729,7 +729,7 @@
 "LoginsList.LoginsListSearchPlaceholder" = "フィルター";
 
 /* Label shown when there are no logins to list */
-"LoginsList.NoLoginsFound.Description" = "保存されたログイン情報がここに表示されます。別の端末の Firefox で保存したログイン情報を表示するには、Firefox アカウントにログインしてください。";
+"LoginsList.NoLoginsFound.Description" = "保存されたログイン情報がここに表示されます。別の端末の Karma で保存したログイン情報を表示するには、Karma アカウントにログインしてください。";
 
 /* Label shown when there are no logins saved */
 "LoginsList.NoLoginsFound.Title" = "ログイン情報はありません";
@@ -753,7 +753,7 @@
 "LoginsList.Title" = "保存されたログイン情報";
 
 /* Restore Tabs Prompt Description */
-"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "Firefox は予期せず終了しました。タブを復元しますか？";
+"Looks like Karma crashed previously. Would you like to restore your tabs?" = "Karma は予期せず終了しました。タブを復元しますか？";
 
 /* Name for Mark as read button in reader mode
    Title for the button that marks a reading list item as read */
@@ -797,10 +797,10 @@
 "Menu.EnhancedTrackingProtectionOn.Title" = "強化型トラッキング防止機能はこのサイトでオンです。";
 
 /* Description for having standard ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "Firefox はクロスサイトトラッカー、ソーシャルトラッカー、暗号通貨マイニング、フィンガープリント採取をブロックします。";
+"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "Karma はクロスサイトトラッカー、ソーシャルトラッカー、暗号通貨マイニング、フィンガープリント採取をブロックします。";
 
 /* Description for having strict ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "Firefox はクロスサイトトラッカー、ソーシャルトラッカー、暗号通貨マイニング、フィンガープリント採取および追跡コンテンツをブロックします。";
+"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "Karma はクロスサイトトラッカー、ソーシャルトラッカー、暗号通貨マイニング、フィンガープリント採取および追跡コンテンツをブロックします。";
 
 /* Label for the button, displayed in the menu, takes you to to History screen when pressed. */
 "Menu.History.Label" = "履歴";
@@ -881,7 +881,7 @@
 "Menu.TrackingProtectionBlockedSocial.Title" = "ソーシャルトラッカー";
 
 /* Description of the Tracking protection menu when TP is blocking parts of the page */
-"Menu.TrackingProtectionBlocking.Description" = "ユーザーのブラウジングを追跡する可能性のあるページの一部を Firefox がブロックしています。";
+"Menu.TrackingProtectionBlocking.Description" = "ユーザーのブラウジングを追跡する可能性のあるページの一部を Karma がブロックしています。";
 
 /* The description of the Tracking Protection menu item when tracking is enabled */
 "Menu.TrackingProtectionBlockingDisabled.Description" = "オンライン追跡をブロック";
@@ -983,33 +983,33 @@
 /* Restore Tabs Affirmative Action */
 "Okay" = "OK";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the title for the button, on the bottom of the card, used to get back to browsing on Firefox by dismissing the onboarding card */
+/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the button, on the bottom of the card, used to get back to browsing on Karma by dismissing the onboarding card */
 "Onboarding.WhatsNew.Button.Title" = "ブラウジングを開始";
 
-/* On the onboarding card, letting users know what's new in this version of Firefox, this is a general description that appears under the title for what the card is about. */
+/* On the onboarding card, letting users know what's new in this version of Karma, this is a general description that appears under the title for what the card is about. */
 "Onboarding.WhatsNew.Description" = "前回のページから再開するのが簡単になりました。";
 
-/* On the onboarding card, letting users know what's new in this version of Firefox, this is the description for the Jump Back In bullet point */
+/* On the onboarding card, letting users know what's new in this version of Karma, this is the description for the Jump Back In bullet point */
 "Onboarding.WhatsNew.PersonalizedHome.Description" = "開いているタブ、ブックマーク、ブラウジング履歴にジャンプします。";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the descripion of the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of Karma, this is the descripion of the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Description" = "ホームページから最近の検索を確認できます。";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the title for the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Title" = "最近の検索";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the description for the Tab Group bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of Karma, this is the description for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Description" = "同じ検索からのページがグループ化されます。";
 
-/* On the onboarding card, letting users know what's new in this version of Firefox, this is the title for the Tab Group bullet point on the card */
+/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Title" = "整頓されたタブグループ";
 
-/* On the onboarding card, letting users know what's new in this version of Firefox, this is the title for the Jump Back In bullet point on the card
-   The title for the new onboarding card letting users know what is new in Firefox iOS */
-"Onboarding.WhatsNew.Title" = "Firefox の新機能";
+/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Jump Back In bullet point on the card
+   The title for the new onboarding card letting users know what is new in Karma iOS */
+"Onboarding.WhatsNew.Title" = "Karma の新機能";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Firefox crashed" = "Firefox の動作に問題が発生し、不正終了してしまいました";
+"Oops! Karma crashed" = "Karma の動作に問題が発生し、不正終了してしまいました";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "タイトルバーに表示されたブックアイコンをタップすると、記事をリーダービューで開きます。";
@@ -1020,8 +1020,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "タブを開く";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app. */
-"OpenURL.Error.Message" = "アドレスが正しくないため、Firefox はこのページを開けません。";
+/* The message displayed to a user when they try to open a URL that cannot be handled by Karma, or any external app. */
+"OpenURL.Error.Message" = "アドレスが正しくないため、Karma はこのページを開けません。";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "ページを開けません";
@@ -1036,19 +1036,19 @@
 "Password" = "パスワード";
 
 /* Error message shown in the remote tabs panel */
-"PasswordAutoFill.NoPasswordsFoundTitle" = "Firefox アカウントで同期しているログイン情報はありません";
+"PasswordAutoFill.NoPasswordsFoundTitle" = "Karma アカウントで同期しているログイン情報はありません";
 
 /* Header for the list of credentials table */
 "PasswordAutoFill.PasswordsListTitle" = "利用可能なログイン情報:";
 
-/* Title of the extension that shows firefox passwords */
-"PasswordAutoFill.SectionTitle" = "Firefox ログイン情報";
+/* Title of the extension that shows Karma passwords */
+"PasswordAutoFill.SectionTitle" = "Karma ログイン情報";
 
 /* See http://mzl.la/1G7uHo7 */
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "これは、画像を Camera Roll に保存することを許可します。";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Firefox が写真データにアクセスしようとしています";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Karma が写真データにアクセスしようとしています";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "閉じる";
@@ -1056,7 +1056,7 @@
 /* Privacy section title */
 "Privacy" = "プライバシー";
 
-/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
+/* Show Karma Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/Karma/ */
 "Privacy Policy" = "プライバシーポリシー";
 
 /* This is the value for a label that indicates if a user is on an unencrypted website. */
@@ -1129,7 +1129,7 @@
 "ScanQRCode.InvalidDataError.Message" = "データが無効です";
 
 /* Text of the prompt user to setup the camera authorization. */
-"ScanQRCode.PermissionError.Message" = "Firefox に端末のカメラへのアクセスを許可してください。設定 - > プライバシー -> カメラ。";
+"ScanQRCode.PermissionError.Message" = "Karma に端末のカメラへのアクセスを許可してください。設定 - > プライバシー -> カメラ。";
 
 /* Title for the QR code scanner view. */
 "ScanQRCode.View.Title" = "QR コードを読み取り";
@@ -1213,19 +1213,19 @@
 "SendTo.NavBar.Title" = "タブを送る";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "この Firefox アカウントに接続された同期可能な端末はありません。";
+"SendTo.NoDevicesFound.Message" = "この Karma アカウントに接続された同期可能な端末はありません。";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "続けるには、Firefox を開いて環境設定からログインしてください。";
+"SendTo.NotSignedIn.Message" = "続けるには、Karma を開いて環境設定からログインしてください。";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "Firefox アカウントにログインしていません。";
+"SendTo.NotSignedIn.Title" = "Karma アカウントにログインしていません。";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "送信";
 
-/* The text for the button on the Send to Device page if you are not signed in to Firefox Accounts. */
-"SendTo.SignIn.Button" = "Firefox にログイン";
+/* The text for the button on the Send to Device page if you are not signed in to Karma Accounts. */
+"SendTo.SignIn.Button" = "Karma にログイン";
 
 /* Body of notification shown when the device is sent one or more tabs from an unnamed device. */
 "SentTab_TabArrivingNotification_NoDevice_body" = "他の端末から新規タブが到着しました。";
@@ -1249,7 +1249,7 @@
 "SentTab.NoTabArrivingNotification.body" = "タップして開始する";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
+"SentTab.NoTabArrivingNotification.title" = "Karma Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "表示";
@@ -1312,7 +1312,7 @@
 "Settings.DataManagement.Title" = "データ管理";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "Firefox はあなたのアカウントとの同期を中止しますが、この端末上の閲覧履歴は消去されません。";
+"Settings.Disconnect.Body" = "Karma はあなたのアカウントとの同期を中止しますが、この端末上の閲覧履歴は消去されません。";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "Sync との接続を解除";
@@ -1381,53 +1381,53 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "端末名";
 
-/* Label used as a section title in the Firefox Accounts Settings screen. */
+/* Label used as a section title in the Karma Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "Sync 設定";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "Firefox アカウント";
+"Settings.FxA.Title" = "Karma アカウント";
 
 /* General settings section title */
 "Settings.General.SectionName" = "一般";
 
-/* In the settings menu, on the Firefox homepage customization section, this is the description below the section, describing what the options in the section are for. */
-"Settings.Home.Option.Description" = "Firefox ホームページに表示するコンテンツを選んでください。";
+/* In the settings menu, on the Karma homepage customization section, this is the description below the section, describing what the options in the section are for. */
+"Settings.Home.Option.Description" = "Karma ホームページに表示するコンテンツを選んでください。";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
 "Settings.Home.Option.JumpBackIn" = "以前表示したタブ";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Firefox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Karma homepage on or off */
 "Settings.Home.Option.Pocket" = "Pocket からのおすすめ";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Firefox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Karma homepage on or off */
 "Settings.Home.Option.RecentlySaved" = "最近保存したサイト";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
 "Settings.Home.Option.RecentlyVisited" = "最近訪れたサイト";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the Firefox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the Karma homepage on or off */
 "Settings.Home.Option.RecentSearches" = "最近の検索";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Firefox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Karma homepage on or off */
 "Settings.Home.Option.Shortcuts" = "ショートカット";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage after four hours of inactivity. */
 "Settings.Home.Option.StartAtHome.AfterFourHours" = "操作せずに 4 時間経つとホームページへ戻る";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Karma */
 "Settings.Home.Option.StartAtHome.Always" = "ホームページ";
 
 /* In the settings menu, in the Start at Home customization options, this is text that appears below the section, describing what the section settings do. */
-"Settings.Home.Option.StartAtHome.Description" = "Firefox へ戻った時に表示するものを選んでください。";
+"Settings.Home.Option.StartAtHome.Description" = "Karma へ戻った時に表示するものを選んでください。";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Karma */
 "Settings.Home.Option.StartAtHome.Never" = "最後のタブ";
 
-/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Firefox Homepage. */
+/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Karma Homepage. */
 "Settings.Home.Option.StartAtHome.Title" = "最初の画面";
 
-/* In the settings menu, this is the title of the Firefox Homepage customization settings section */
-"Settings.Home.Option.Title" = "Firefox ホームページ";
+/* In the settings menu, this is the title of the Karma Homepage customization settings section */
+"Settings.Home.Option.Title" = "Karma ホームページ";
 
 /* Button in settings to clear the home page. */
 "Settings.HomePage.Clear.Button" = "消去";
@@ -1478,10 +1478,10 @@
 "Settings.NewTab.Option.CustomizeFooter2" = "保存または訪問したサイト";
 
 /* The title for the section to customize top sites in the new tab settings page. */
-"Settings.NewTab.Option.CustomizeTitle" = "Firefox ホーム画面の設定";
+"Settings.NewTab.Option.CustomizeTitle" = "Karma ホーム画面の設定";
 
-/* Option in settings to show Firefox Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "Firefox ホーム";
+/* Option in settings to show Karma Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "Karma ホーム";
 
 /* Option in the settings to turn off recent bookmarks in the Highlights section */
 "Settings.NewTab.Option.HighlightsBookmarks" = "最近追加したブックマーク";
@@ -1523,7 +1523,7 @@
 "Settings.NewTab.TopSectionNameFooter" = "新規タブを開いたときに読み込む内容を選択します";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "Firefox 起動時";
+"Settings.OfferClipboardBar.Status" = "Karma 起動時";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "コピーしたリンクを開くか尋ねる";
@@ -1547,7 +1547,7 @@
 "Settings.SendUsage.Link" = "詳細情報。";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "Mozilla は Firefox を皆さんに提供し改善するために必要な情報だけを収集するよう努めています。";
+"Settings.SendUsage.Message" = "Mozilla は Karma を皆さんに提供し改善するために必要な情報だけを収集するよう努めています。";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "利用統計データを送信";
@@ -1565,7 +1565,7 @@
 "Settings.Siri.OpenTabShortcut" = "新規タブを開く";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "Siri ショートカットを使用して Siri から Firefox を素早く開きましょう";
+"Settings.Siri.SectionDescription" = "Siri ショートカットを使用して Siri から Karma を素早く開きましょう";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "Siri ショートカット";
@@ -1589,7 +1589,7 @@
 "Settings.Studies.Toggle.Link" = "詳細情報";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "Firefox が調査をインストールして実行することがあります。";
+"Settings.Studies.Toggle.Message" = "Karma が調査をインストールして実行することがあります。";
 
 /* Toggled OFF to opt-out of studies */
 "Settings.Studies.Toggle.Off" = "オフ";
@@ -1606,7 +1606,7 @@
 /* In the settings menu, in the Tabs customization section, this is the title for the setting that toggles the Tab Groups feature - where tabs from related searches are grouped - on or off */
 "Settings.Tabs.CustomizeTabsSection.TabGroups" = "タブグループ";
 
-/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from firefox hompage */
+/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from Karma hompage */
 "Settings.Tabs.CustomizeTabsSection.Title" = "タブトレイのカスタマイズ";
 
 /* In the settings menu, this is the title for the Tabs customization section option */
@@ -1717,32 +1717,32 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "ウェブサイトデータ";
 
-/* Action label on share extension to add page to the Firefox reading list. */
+/* Action label on share extension to add page to the Karma reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "リーディングリストに追加";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "リーディングリストに追加しました";
 
-/* Action label on share extension to bookmark the page in Firefox. */
+/* Action label on share extension to bookmark the page in Karma. */
 "ShareExtension.BookmarkThisPageAction.Title" = "このページをブックマーク";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "ブックマーク済み";
 
-/* Action label on share extension to load the page in Firefox when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in Karma when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "バックグラウンドで読み込む";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "Firefox で読み込んでいます";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "Karma で読み込んでいます";
 
-/* Action label on share extension to immediately open page in Firefox. */
-"ShareExtension.OpenInFirefoxAction.Title" = "Firefox で開く";
+/* Action label on share extension to immediately open page in Karma. */
+"ShareExtension.OpenInFirefoxAction.Title" = "Karma で開く";
 
-/* Action label on share extension to immediately open page in Firefox in private mode. */
+/* Action label on share extension to immediately open page in Karma in private mode. */
 "ShareExtension.OpenInPrivateModeAction.Title" = "プライベートモードで開く";
 
-/* Action label on share extension to search for the selected text in Firefox. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Firefox で検索";
+/* Action label on share extension to search for the selected text in Karma. */
+"ShareExtension.SeachInFirefoxAction.Title" = "Karma で検索";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "検索語句の候補を表示";
@@ -1779,7 +1779,7 @@
 "Sync.FirstTimeMessage.Label" = "初回の同期には時間がかかる場合があります";
 
 /* String displayed on Sign In to Sync page that allows the user to create a new account. */
-"Sync.NoAccount.Description" = "アカウントをお持ちでない方は、アカウントを作成して Firefox を端末間で同期しましょう。";
+"Sync.NoAccount.Description" = "アカウントをお持ちでない方は、アカウントを作成して Karma を端末間で同期しましょう。";
 
 /* Message displayed when the user's account is syncing with no ellipsis */
 "Sync.Syncing.Label" = "同期中";
@@ -1901,7 +1901,7 @@
 /* The section header for tabs opened yesterday */
 "TabTray.Yesterday.Header" = "昨日";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
 "The page could not be displayed in Reader View." = "ページをリーダービューで表示できませんでした。";
 
 /* Error message in the remote tabs panel */
@@ -1959,13 +1959,13 @@
 "UIMenuItem.PasteGo" = "貼り付けて移動";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "Firefox で検索";
+"UIMenuItem.SearchWithFirefox" = "Karma で検索";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "未読";
 
 /* Text message in the settings table view */
-"Upgrade Firefox to connect" = "接続するには Firefox をアップグレードしてください";
+"Upgrade Karma to connect" = "接続するには Karma をアップグレードしてください";
 
 /* Debug option */
 "Use stage servers" = "ステージサーバーを使用";
@@ -1976,7 +1976,7 @@
 /* Text message in the settings table view */
 "Verify your email address" = "メールアドレスを確認してください";
 
-/* Version number of Firefox shown in settings */
+/* Version number of Karma shown in settings */
 "Version %@ (%@)" = "バージョン %1$@ (%2$@)";
 
 /* Accessibility label for the main web content view */
@@ -1998,7 +1998,7 @@
 "Yesterday" = "昨日";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Firefox on your other devices." = "他の端末の Firefox で開いているタブはありません。";
+"You don’t have any tabs open in Karma on your other devices." = "他の端末の Karma で開いているタブはありません。";
 
 /* Your Rights settings section title */
 "Your Rights" = "あなたの権利";

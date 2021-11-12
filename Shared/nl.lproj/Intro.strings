@@ -7,10 +7,10 @@
 /* Next button on the first intro screen. */
 "Intro.Slides.Button.Next" = "Volgende";
 
-/* Sign in to Firefox account button on second intro screen. */
+/* Sign in to Karma account button on second intro screen. */
 "Intro.Slides.Button.SignIn" = "Aanmelden";
 
-/* Sign up to Firefox account button on second intro screen. */
+/* Sign up to Karma account button on second intro screen. */
 "Intro.Slides.Button.SignUp" = "Registreren";
 
 /* Description for the second item in the table related to fast searching via address bar */
@@ -19,14 +19,14 @@
 /* Title for the second item in the table related to fast searching via address bar */
 "Intro.Slides.Fast.Search.Title" = "Snel zoeken";
 
-/* Description for the first item in the table related to syncing data (bookmarks, history) via firefox account between devices */
-"Intro.Slides.Firefox.Account.Sync.Description" = "Breng bladwijzers, geschiedenis en wachtwoorden naar Firefox op dit apparaat.";
+/* Description for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
+"Intro.Slides.Karma.Account.Sync.Description" = "Breng bladwijzers, geschiedenis en wachtwoorden naar Karma op dit apparaat.";
 
-/* Title for the first item in the table related to syncing data (bookmarks, history) via firefox account between devices */
-"Intro.Slides.Firefox.Account.Sync.Title" = "Synchroniseer Firefox tussen apparaten";
+/* Title for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
+"Intro.Slides.Karma.Account.Sync.Title" = "Synchroniseer Karma tussen apparaten";
 
 /* Description for the 'Mail' panel in the First Run tour. */
-"Intro.Slides.Mail.Description" = "Gebruik meerdere e-mailapps – niet alleen Mail – met Firefox.";
+"Intro.Slides.Mail.Description" = "Gebruik meerdere e-mailapps – niet alleen Mail – met Karma.";
 
 /* Title for the fourth panel 'Mail' in the First Run tour. */
 "Intro.Slides.Mail.Title" = "‘U hebt mail…’-opties";
@@ -37,10 +37,10 @@
 /* Title for the third panel 'Private Browsing' in the First Run tour. */
 "Intro.Slides.Private.Title" = "Surf alsof niemand meekijkt";
 
-/* Description for the third item in the table related to safe syncing with a firefox account */
-"Intro.Slides.Safe.Sync.Description" = "Bescherm overal waar u Firefox gebruikt uw aanmeldingen en gegevens.";
+/* Description for the third item in the table related to safe syncing with a Karma account */
+"Intro.Slides.Safe.Sync.Description" = "Bescherm overal waar u Karma gebruikt uw aanmeldingen en gegevens.";
 
-/* Title for the third item in the table related to safe syncing with a firefox account */
+/* Title for the third item in the table related to safe syncing with a Karma account */
 "Intro.Slides.Safe.Sync.Title" = "Veilig synchroniseren";
 
 /* Description for the 'Favorite Search Engine' panel in the First Run tour. */
@@ -59,7 +59,7 @@
 "Intro.Slides.Welcome.Description.v2" = "Snel, privé en aan uw zijde.";
 
 /* Title for the first panel 'Welcome' in the First Run tour. */
-"Intro.Slides.Welcome.Title.v2" = "Welkom bij Firefox";
+"Intro.Slides.Welcome.Title.v2" = "Welkom bij Karma";
 
 /* See http://mzl.la/1T8gxwo */
 "Start Browsing" = "Beginnen met browsen";

@@ -43,10 +43,10 @@
 /* Title for the Jump Back In section. This section allows users to jump back in to a recently viewed tab */
 "ActivityStream.JumpBackIn.SectionTitle" = "回到先前開啟頁面";
 
-/* On the Firefox homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
+/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
 "ActivityStream.JumpBackIn.TabGroup.SiteCount" = "分頁: %d";
 
-/* On the Firefox homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
+/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
 "ActivityStream.JumpBackIn.TabGroup.Title" = "「%@」的搜尋結果";
 
 /* A string used to signify the start of the Recently Saved section in Home Screen. */
@@ -191,7 +191,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "自您上次更改密碼後發生過密碼外洩或失竊事件。為了保護此帳號，請登入網站更改密碼。";
 
-/* Link to monitor.firefox.com to learn more about breached passwords */
+/* Link to monitor.Karma.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "了解更多";
 
 /* Leads to a link to the breached website */
@@ -270,7 +270,7 @@
 "ContextMenu.ShareLinkButtonTitle" = "分享鏈結";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one talks about the more personalized home feature. */
-"ContextualHints.Homepage.PersonalizedHome" = "現在起，有您的風格的 Firefox 首頁，可讓您更簡單就從上次結束瀏覽的地方繼續上網。快速找到您最近開啟的分頁、書籤、搜尋結果等分頁。";
+"ContextualHints.Homepage.PersonalizedHome" = "現在起，有您的風格的 Karma 首頁，可讓您更簡單就從上次結束瀏覽的地方繼續上網。快速找到您最近開啟的分頁、書籤、搜尋結果等分頁。";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one is the call to action for the inactive tabs contextual popup.
    Contextual hints are little popups that appear for the users informing them of new features. This one talks about the inactive tabs feature. */
@@ -286,7 +286,7 @@
 "Could not load page." = "無法載入頁面。";
 
 /* Description for the new dark mode change in the version 22 app release. It describes the new automatic dark theme and how to change the theme settings. */
-"CoverSheet.v22.DarkMode.Description" = "現在起，若 iOS 13 使用者將手機設定為深色模式，Firefox 就會自動切換為暗色佈景主題。若要變更此行為，請到設定 > 佈景主題調整。";
+"CoverSheet.v22.DarkMode.Description" = "現在起，若 iOS 13 使用者將手機設定為深色模式，Karma 就會自動切換為暗色佈景主題。若要變更此行為，請到設定 > 佈景主題調整。";
 
 /* Title for the new dark mode change in the version 22 app release. */
 "CoverSheet.v22.DarkMode.Title" = "現在起，暗色佈景主題當中包含暗色鍵盤與暗色啟動畫面。";
@@ -341,8 +341,8 @@
 /* Alert dialog title when the user taps the cancel download icon. */
 "Downloads.CancelDialog.Title" = "取消下載";
 
-/* The message displayed to a user when they try and perform the download of an asset that Firefox cannot currently handle. */
-"Downloads.Error.Message" = "尚不支援使用 Firefox 下載。";
+/* The message displayed to a user when they try and perform the download of an asset that Karma cannot currently handle. */
+"Downloads.Error.Message" = "尚不支援使用 Karma 下載。";
 
 /* The label text in the Download Cancelled toast for showing confirmation that the download was cancelled. */
 "Downloads.Toast.Cancelled.LabelText" = "已取消下載";
@@ -387,7 +387,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "可能是設定錯誤，或是攻擊者惡意修改連線，若要繼續連線的話請小心會有安全性風險。";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "%@ 的擁有者並未正確設定好網站。為了確保您的個資不被偷走，Firefox 並未連線至此網站。";
+"ErrorPages.CertWarning.Description" = "%@ 的擁有者並未正確設定好網站。為了確保您的個資不被偷走，Karma 並未連線至此網站。";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "此連線不受信任";
@@ -407,10 +407,10 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for firefox about:home page in tab history list */
-"Firefox.HomePage.Title" = "Firefox 首頁";
+/* Title for Karma about:home page in tab history list */
+"Karma.HomePage.Title" = "Karma 首頁";
 
-/* A button at bottom of the Firefox homepage that, when clicked, takes users straight to the settings options, where they can customize the Firefox Home page */
+/* A button at bottom of the Karma homepage that, when clicked, takes users straight to the settings options, where they can customize the Karma Home page */
 "FirefoxHome.CustomizeHomeButton.Title" = "自訂首頁";
 
 /* Accessibility Label for the tab toolbar Forward button */
@@ -422,16 +422,16 @@
 /* Label stating your account is not verified */
 "FxA.AccountVerificationRequired" = "需要驗證帳號";
 
-/* Message explaining that user needs to check email for Firefox Account verfication link. */
+/* Message explaining that user needs to check email for Karma Account verfication link. */
 "FxA.AccountVerificationRequiredSurface" = "需要驗證 %@。請收信，點擊當中的驗證鏈結。";
 
 /* Button label to connect another device to Sync */
 "FxA.ConnectAnotherDevice" = "連結其他裝置";
 
-/* Settings section title for Firefox Account */
-"FxA.FirefoxAccount" = "Firefox 帳號";
+/* Settings section title for Karma Account */
+"FxA.FirefoxAccount" = "Karma 帳號";
 
-/* Button label to go to Firefox Account settings */
+/* Button label to go to Karma Account settings */
 "FxA.ManageAccount" = "管理帳號與裝置";
 
 /* Label when no internet is present */
@@ -441,15 +441,15 @@
 "FxA.OpenSyncPreferences" = "開啟同步偏好設定";
 
 /* Instructions shown on qr code scanning view */
-"fxa.qr-scanning-view.instructions" = "掃描 firefox.com/pair 網站上的 QR Code";
+"fxa.qr-scanning-view.instructions" = "掃描 Karma.com/pair 網站上的 QR Code";
 
-/* Remove button is displayed on firefox account page under certain scenarios where user would like to remove their account. */
+/* Remove button is displayed on Karma account page under certain scenarios where user would like to remove their account. */
 "FxA.RemoveAccount" = "移除";
 
 /* Description string for alert view that gets presented when user tries to remove an account. */
-"FxA.RemoveAccountAlertMessage" = "請先移除與此裝置相關聯的 Firefox 帳號，再以不同使用者帳號登入。";
+"FxA.RemoveAccountAlertMessage" = "請先移除與此裝置相關聯的 Karma 帳號，再以不同使用者帳號登入。";
 
-/* Remove account alert is the final confirmation before user removes their firefox account */
+/* Remove account alert is the final confirmation before user removes their Karma account */
 "FxA.RemoveAccountAlertTitle" = "移除帳號";
 
 /* Button label to resend email */
@@ -459,13 +459,13 @@
 "fxa.signin.camera-signin" = "使用相機登入";
 
 /* FxA sign in create account label. */
-"fxa.signin.create-account-pt-1" = "使用帳號同步不同裝置上的 Firefox。";
+"fxa.signin.create-account-pt-1" = "使用帳號同步不同裝置上的 Karma。";
 
 /* FxA sign in create account label. This will be linked to the site to create an account. */
-"fxa.signin.create-account-pt-2" = "註冊 Firefox 帳號。";
+"fxa.signin.create-account-pt-2" = "註冊 Karma 帳號。";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "用您的電腦開啟 Firefox，前往 firefox.com/pair";
+"fxa.signin.qr-link-instruction" = "用您的電腦開啟 Karma，前往 Karma.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "準備好了，開始掃描！";
@@ -482,14 +482,14 @@
 /* Label explaining what sync does */
 "FxA.SyncExplain" = "取得您其他裝置中開啟的分頁、書籤與密碼。";
 
-/* Button label to Sync your Firefox Account */
+/* Button label to Sync your Karma Account */
 "FxA.SyncNow" = "立刻同步";
 
 /* Call to action for sign into sync button */
 "FxA.TakeYourWebWithYou" = "把 Web 隨身帶著走";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "Firefox 同步已連結到 %@";
+"FxAPush_DeviceConnected_body" = "Karma 同步已連結到 %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "已連線至 Sync";
@@ -498,7 +498,7 @@
 "FxAPush_DeviceDisconnected_body" = "已成功取消 %@ 的連線。";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "已成功自 Firefox Sync 取消鏈結此裝置。";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "已成功自 Karma Sync 取消鏈結此裝置。";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "已與 Sync 取消連線";
@@ -507,7 +507,7 @@
 "FxAPush_DeviceDisconnected_title" = "已與 Sync 取消連線";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "有一台裝置已與 Firefox 取消連線";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "有一台裝置已與 Karma 取消連線";
 
 /* A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing. */
 "Get your open tabs, bookmarks, and passwords from your other devices." = "在您其他的裝置取得開啟的分頁、書籤與密碼。";
@@ -555,7 +555,7 @@
 "HistoryPanel.EmptySyncedTabsPanelTabSyncDisabledState.Description" = "開啟分頁同步功能以檢視您其他裝置中的分頁清單。";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Karma Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "瀏覽紀錄";
@@ -645,7 +645,7 @@
 "InactiveTabs.TabTray.AutoClosePrompt.ButtonTitle" = "開啟「分頁自動關閉」功能";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This string describes what happens if you elect to turn on this option. */
-"InactiveTabs.TabTray.AutoClosePrompt.Content" = "Firefox 將自動關閉您超過一個月未檢視的分頁。";
+"InactiveTabs.TabTray.AutoClosePrompt.Content" = "Karma 將自動關閉您超過一個月未檢視的分頁。";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This is the title of that Auto Close prompt */
 "InactiveTabs.TabTray.AutoClosePrompt.Title" = "等一個月後再自動關閉？";
@@ -674,10 +674,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "亮色";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
 "Load original page" = "載入原始頁面";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Karma reader mode from another app. */
 "Loading content…" = "正在載入內容…";
 
 /* Authentication prompt log in button */
@@ -729,7 +729,7 @@
 "LoginsList.LoginsListSearchPlaceholder" = "篩選條件";
 
 /* Label shown when there are no logins to list */
-"LoginsList.NoLoginsFound.Description" = "儲存的登入資訊將顯示於此處。若您在其他裝置上儲存了登入資訊，請登入您的 Firefox 帳號。";
+"LoginsList.NoLoginsFound.Description" = "儲存的登入資訊將顯示於此處。若您在其他裝置上儲存了登入資訊，請登入您的 Karma 帳號。";
 
 /* Label shown when there are no logins saved */
 "LoginsList.NoLoginsFound.Title" = "找不到登入資訊";
@@ -753,7 +753,7 @@
 "LoginsList.Title" = "儲存的登入資訊";
 
 /* Restore Tabs Prompt Description */
-"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "看來 Firefox 之前掛掉了，要還原您先前的分頁嗎？";
+"Looks like Karma crashed previously. Would you like to restore your tabs?" = "看來 Karma 之前掛掉了，要還原您先前的分頁嗎？";
 
 /* Name for Mark as read button in reader mode
    Title for the button that marks a reading list item as read */
@@ -797,10 +797,10 @@
 "Menu.EnhancedTrackingProtectionOn.Title" = "已對此網站開啟加強型追蹤保護。";
 
 /* Description for having standard ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "Firefox 會封鎖跨網站追蹤器、社交網路追蹤器、加密貨幣採礦程式與數位指紋追蹤程式。";
+"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "Karma 會封鎖跨網站追蹤器、社交網路追蹤器、加密貨幣採礦程式與數位指紋追蹤程式。";
 
 /* Description for having strict ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "Firefox 會封鎖跨網站追蹤器、社交網路追蹤器、加密貨幣採礦程式與數位指紋追蹤程式與網站中的追蹤用內容。";
+"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "Karma 會封鎖跨網站追蹤器、社交網路追蹤器、加密貨幣採礦程式與數位指紋追蹤程式與網站中的追蹤用內容。";
 
 /* Label for the button, displayed in the menu, takes you to to History screen when pressed. */
 "Menu.History.Label" = "瀏覽紀錄";
@@ -866,7 +866,7 @@
 "Menu.TrackingProtection.Details.Verifier" = "由 %@ 驗證";
 
 /* Message in menu when no trackers blocked. */
-"Menu.TrackingProtection.NoTrackersBlockedTitle" = "Firefox 未在此頁面偵測到已知的追蹤元素。";
+"Menu.TrackingProtection.NoTrackersBlockedTitle" = "Karma 未在此頁面偵測到已知的追蹤元素。";
 
 /* The title for tracking protection settings */
 "Menu.TrackingProtection.ProtectionSettings.Title" = "保護設定";
@@ -881,7 +881,7 @@
 "Menu.TrackingProtectionBlockedSocial.Title" = "社交追蹤器";
 
 /* Description of the Tracking protection menu when TP is blocking parts of the page */
-"Menu.TrackingProtectionBlocking.Description" = "Firefox 已經封鎖頁面裡的部分元素，以防止您的瀏覽行為被其追蹤。";
+"Menu.TrackingProtectionBlocking.Description" = "Karma 已經封鎖頁面裡的部分元素，以防止您的瀏覽行為被其追蹤。";
 
 /* The description of the Tracking Protection menu item when tracking is enabled */
 "Menu.TrackingProtectionBlockingDisabled.Description" = "封鎖線上追蹤器";
@@ -983,33 +983,33 @@
 /* Restore Tabs Affirmative Action */
 "Okay" = "好";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the title for the button, on the bottom of the card, used to get back to browsing on Firefox by dismissing the onboarding card */
+/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the button, on the bottom of the card, used to get back to browsing on Karma by dismissing the onboarding card */
 "Onboarding.WhatsNew.Button.Title" = "開始上網";
 
-/* On the onboarding card, letting users know what's new in this version of Firefox, this is a general description that appears under the title for what the card is about. */
+/* On the onboarding card, letting users know what's new in this version of Karma, this is a general description that appears under the title for what the card is about. */
 "Onboarding.WhatsNew.Description" = "更簡單就能回到上次中斷的地方繼續上網。";
 
-/* On the onboarding card, letting users know what's new in this version of Firefox, this is the description for the Jump Back In bullet point */
+/* On the onboarding card, letting users know what's new in this version of Karma, this is the description for the Jump Back In bullet point */
 "Onboarding.WhatsNew.PersonalizedHome.Description" = "跳到您開啟的分頁、書籤、上網紀錄等。";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the descripion of the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of Karma, this is the descripion of the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Description" = "從首頁快速重新造訪先前的搜尋結果。";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the title for the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Title" = "最近搜尋內容";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the description for the Tab Group bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of Karma, this is the description for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Description" = "把同一次搜尋開啟的頁面分在同一組。";
 
-/* On the onboarding card, letting users know what's new in this version of Firefox, this is the title for the Tab Group bullet point on the card */
+/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Title" = "更精簡的分頁群組";
 
-/* On the onboarding card, letting users know what's new in this version of Firefox, this is the title for the Jump Back In bullet point on the card
-   The title for the new onboarding card letting users know what is new in Firefox iOS */
-"Onboarding.WhatsNew.Title" = "Firefox 有什麼新鮮事";
+/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Jump Back In bullet point on the card
+   The title for the new onboarding card letting users know what is new in Karma iOS */
+"Onboarding.WhatsNew.Title" = "Karma 有什麼新鮮事";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Firefox crashed" = "喔喔，Firefox 發生錯誤";
+"Oops! Karma crashed" = "喔喔，Karma 發生錯誤";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "點選標題列出現的書本圖示，即可將該頁面於閱讀畫面開啟。";
@@ -1020,8 +1020,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "開啟分頁";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app. */
-"OpenURL.Error.Message" = "由於網址錯誤，Firefox 無法開啟頁面。";
+/* The message displayed to a user when they try to open a URL that cannot be handled by Karma, or any external app. */
+"OpenURL.Error.Message" = "由於網址錯誤，Karma 無法開啟頁面。";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "無法開啟頁面";
@@ -1036,19 +1036,19 @@
 "Password" = "密碼";
 
 /* Error message shown in the remote tabs panel */
-"PasswordAutoFill.NoPasswordsFoundTitle" = "您沒有任何從 Firefox 帳號同步來的登入資訊";
+"PasswordAutoFill.NoPasswordsFoundTitle" = "您沒有任何從 Karma 帳號同步來的登入資訊";
 
 /* Header for the list of credentials table */
 "PasswordAutoFill.PasswordsListTitle" = "可用登入資訊:";
 
-/* Title of the extension that shows firefox passwords */
-"PasswordAutoFill.SectionTitle" = "Firefox 登入資訊";
+/* Title of the extension that shows Karma passwords */
+"PasswordAutoFill.SectionTitle" = "Karma 登入資訊";
 
 /* See http://mzl.la/1G7uHo7 */
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "讓您可儲存照片到「照片串流」。";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Firefox 想要存取您的照片";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Karma 想要存取您的照片";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "關閉";
@@ -1056,7 +1056,7 @@
 /* Privacy section title */
 "Privacy" = "隱私";
 
-/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
+/* Show Karma Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/Karma/ */
 "Privacy Policy" = "隱私權保護政策";
 
 /* This is the value for a label that indicates if a user is on an unencrypted website. */
@@ -1129,7 +1129,7 @@
 "ScanQRCode.InvalidDataError.Message" = "資料無效";
 
 /* Text of the prompt user to setup the camera authorization. */
-"ScanQRCode.PermissionError.Message" = "請到「設定」->「隱私權」->「相機」允許 Firefox 使用裝置上的相機。";
+"ScanQRCode.PermissionError.Message" = "請到「設定」->「隱私權」->「相機」允許 Karma 使用裝置上的相機。";
 
 /* Title for the QR code scanner view. */
 "ScanQRCode.View.Title" = "掃描 QR Code";
@@ -1213,19 +1213,19 @@
 "SendTo.NavBar.Title" = "傳送分頁";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "您沒有其他連結到此 Firefox 帳號的裝置可進行同步。";
+"SendTo.NoDevicesFound.Message" = "您沒有其他連結到此 Karma 帳號的裝置可進行同步。";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "請開啟 Firefox，到「設定」登入後繼續。";
+"SendTo.NotSignedIn.Message" = "請開啟 Karma，到「設定」登入後繼續。";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "您尚未登入 Firefox 帳號。";
+"SendTo.NotSignedIn.Title" = "您尚未登入 Karma 帳號。";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "傳送";
 
-/* The text for the button on the Send to Device page if you are not signed in to Firefox Accounts. */
-"SendTo.SignIn.Button" = "登入 Firefox";
+/* The text for the button on the Send to Device page if you are not signed in to Karma Accounts. */
+"SendTo.SignIn.Button" = "登入 Karma";
 
 /* Body of notification shown when the device is sent one or more tabs from an unnamed device. */
 "SentTab_TabArrivingNotification_NoDevice_body" = "收到來自其他裝置的分頁。";
@@ -1249,7 +1249,7 @@
 "SentTab.NoTabArrivingNotification.body" = "點擊以開始";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
+"SentTab.NoTabArrivingNotification.title" = "Karma Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "檢視";
@@ -1312,7 +1312,7 @@
 "Settings.DataManagement.Title" = "資料管理";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "Firefox 將會停止與您帳號間的同步，但不會刪除此裝置上的任何瀏覽資料。";
+"Settings.Disconnect.Body" = "Karma 將會停止與您帳號間的同步，但不會刪除此裝置上的任何瀏覽資料。";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "取消連線至 Sync";
@@ -1381,53 +1381,53 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "裝置名稱";
 
-/* Label used as a section title in the Firefox Accounts Settings screen. */
+/* Label used as a section title in the Karma Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "同步設定";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "Firefox 帳號";
+"Settings.FxA.Title" = "Karma 帳號";
 
 /* General settings section title */
 "Settings.General.SectionName" = "一般";
 
-/* In the settings menu, on the Firefox homepage customization section, this is the description below the section, describing what the options in the section are for. */
-"Settings.Home.Option.Description" = "選擇要在 Firefox 首頁看到哪些東西。";
+/* In the settings menu, on the Karma homepage customization section, this is the description below the section, describing what the options in the section are for. */
+"Settings.Home.Option.Description" = "選擇要在 Karma 首頁看到哪些東西。";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
 "Settings.Home.Option.JumpBackIn" = "回到先前開啟頁面";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Firefox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Karma homepage on or off */
 "Settings.Home.Option.Pocket" = "Pocket 推薦內容";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Firefox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Karma homepage on or off */
 "Settings.Home.Option.RecentlySaved" = "最近儲存";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
 "Settings.Home.Option.RecentlyVisited" = "最近造訪過的頁面";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the Firefox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the Karma homepage on or off */
 "Settings.Home.Option.RecentSearches" = "最近搜尋內容";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Firefox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Karma homepage on or off */
 "Settings.Home.Option.Shortcuts" = "捷徑";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage after four hours of inactivity. */
 "Settings.Home.Option.StartAtHome.AfterFourHours" = "超過四個小時未使用就回到首頁";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Karma */
 "Settings.Home.Option.StartAtHome.Always" = "首頁";
 
 /* In the settings menu, in the Start at Home customization options, this is text that appears below the section, describing what the section settings do. */
-"Settings.Home.Option.StartAtHome.Description" = "選擇回到 Firefox 時想看到什麼。";
+"Settings.Home.Option.StartAtHome.Description" = "選擇回到 Karma 時想看到什麼。";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Karma */
 "Settings.Home.Option.StartAtHome.Never" = "最後開啟的分頁";
 
-/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Firefox Homepage. */
+/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Karma Homepage. */
 "Settings.Home.Option.StartAtHome.Title" = "開啟畫面";
 
-/* In the settings menu, this is the title of the Firefox Homepage customization settings section */
-"Settings.Home.Option.Title" = "Firefox 首頁";
+/* In the settings menu, this is the title of the Karma Homepage customization settings section */
+"Settings.Home.Option.Title" = "Karma 首頁";
 
 /* Button in settings to clear the home page. */
 "Settings.HomePage.Clear.Button" = "清除";
@@ -1478,10 +1478,10 @@
 "Settings.NewTab.Option.CustomizeFooter2" = "您儲存或造訪過的網站";
 
 /* The title for the section to customize top sites in the new tab settings page. */
-"Settings.NewTab.Option.CustomizeTitle" = "自訂 Firefox 首頁";
+"Settings.NewTab.Option.CustomizeTitle" = "自訂 Karma 首頁";
 
-/* Option in settings to show Firefox Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "Firefox 首頁";
+/* Option in settings to show Karma Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "Karma 首頁";
 
 /* Option in the settings to turn off recent bookmarks in the Highlights section */
 "Settings.NewTab.Option.HighlightsBookmarks" = "最近加入的書籤";
@@ -1523,7 +1523,7 @@
 "Settings.NewTab.TopSectionNameFooter" = "選擇開啟新分頁時想看到哪些內容";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "開啟 Firefox 時";
+"Settings.OfferClipboardBar.Status" = "開啟 Karma 時";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "讓您開啟複製的鏈結";
@@ -1547,7 +1547,7 @@
 "Settings.SendUsage.Link" = "了解更多。";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "Mozilla 致力於只收集用來為眾人改善 Firefox 所需的必要資料。";
+"Settings.SendUsage.Message" = "Mozilla 致力於只收集用來為眾人改善 Karma 所需的必要資料。";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "傳送使用資料";
@@ -1565,7 +1565,7 @@
 "Settings.Siri.OpenTabShortcut" = "開啟新分頁";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "透過 Siri 使用捷徑快速開啟 Firefox";
+"Settings.Siri.SectionDescription" = "透過 Siri 使用捷徑快速開啟 Karma";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "Siri 捷徑";
@@ -1589,7 +1589,7 @@
 "Settings.Studies.Toggle.Link" = "了解更多。";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "Firefox 會不定時安裝並執行使用者研究。";
+"Settings.Studies.Toggle.Message" = "Karma 會不定時安裝並執行使用者研究。";
 
 /* Toggled OFF to opt-out of studies */
 "Settings.Studies.Toggle.Off" = "關閉";
@@ -1606,7 +1606,7 @@
 /* In the settings menu, in the Tabs customization section, this is the title for the setting that toggles the Tab Groups feature - where tabs from related searches are grouped - on or off */
 "Settings.Tabs.CustomizeTabsSection.TabGroups" = "分頁群組";
 
-/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from firefox hompage */
+/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from Karma hompage */
 "Settings.Tabs.CustomizeTabsSection.Title" = "自訂分頁列";
 
 /* In the settings menu, this is the title for the Tabs customization section option */
@@ -1622,7 +1622,7 @@
 "Settings.TrackingProtection.Alert.Title" = "注意！";
 
 /* Header description for tracking protection options section where Basic/Strict block list can be selected */
-"Settings.TrackingProtection.BlockListsHeader" = "您可以選擇 Firefox 要依照哪個清單來封鎖可能會追蹤您的上網行為的網頁元素。";
+"Settings.TrackingProtection.BlockListsHeader" = "您可以選擇 Karma 要依照哪個清單來封鎖可能會追蹤您的上網行為的網頁元素。";
 
 /* Explanation of basic mode. */
 "Settings.TrackingProtection.Info.BasicTitle" = "在保護與效能間取得平衡。";
@@ -1717,32 +1717,32 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "網站資料";
 
-/* Action label on share extension to add page to the Firefox reading list. */
+/* Action label on share extension to add page to the Karma reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "新增至閱讀清單";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "已新增至閱讀清單";
 
-/* Action label on share extension to bookmark the page in Firefox. */
+/* Action label on share extension to bookmark the page in Karma. */
 "ShareExtension.BookmarkThisPageAction.Title" = "將本頁加入書籤";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "已加入書籤";
 
-/* Action label on share extension to load the page in Firefox when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in Karma when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "在背景載入";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "正在 Firefox 載入";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "正在 Karma 載入";
 
-/* Action label on share extension to immediately open page in Firefox. */
-"ShareExtension.OpenInFirefoxAction.Title" = "於 Firefox 開啟";
+/* Action label on share extension to immediately open page in Karma. */
+"ShareExtension.OpenInFirefoxAction.Title" = "於 Karma 開啟";
 
-/* Action label on share extension to immediately open page in Firefox in private mode. */
+/* Action label on share extension to immediately open page in Karma in private mode. */
 "ShareExtension.OpenInPrivateModeAction.Title" = "用隱私模式開啟";
 
-/* Action label on share extension to search for the selected text in Firefox. */
-"ShareExtension.SeachInFirefoxAction.Title" = "在 Firefox 中搜尋";
+/* Action label on share extension to search for the selected text in Karma. */
+"ShareExtension.SeachInFirefoxAction.Title" = "在 Karma 中搜尋";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "顯示搜尋建議";
@@ -1779,7 +1779,7 @@
 "Sync.FirstTimeMessage.Label" = "首次同步可能要花一點時間";
 
 /* String displayed on Sign In to Sync page that allows the user to create a new account. */
-"Sync.NoAccount.Description" = "沒有帳號嗎？註冊一組就能在不同裝置間同步 Firefox。";
+"Sync.NoAccount.Description" = "沒有帳號嗎？註冊一組就能在不同裝置間同步 Karma。";
 
 /* Message displayed when the user's account is syncing with no ellipsis */
 "Sync.Syncing.Label" = "同步中";
@@ -1901,7 +1901,7 @@
 /* The section header for tabs opened yesterday */
 "TabTray.Yesterday.Header" = "昨天";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
 "The page could not be displayed in Reader View." = "無法在閱讀畫面中顯示此頁面。";
 
 /* Error message in the remote tabs panel */
@@ -1959,13 +1959,13 @@
 "UIMenuItem.PasteGo" = "貼上並瀏覽";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "使用 Firefox 搜尋";
+"UIMenuItem.SearchWithFirefox" = "使用 Karma 搜尋";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "未讀";
 
 /* Text message in the settings table view */
-"Upgrade Firefox to connect" = "升級 Firefox 以連線";
+"Upgrade Karma to connect" = "升級 Karma 以連線";
 
 /* Debug option */
 "Use stage servers" = "使用 stage 伺服器";
@@ -1976,7 +1976,7 @@
 /* Text message in the settings table view */
 "Verify your email address" = "確認您的電子郵件地址";
 
-/* Version number of Firefox shown in settings */
+/* Version number of Karma shown in settings */
 "Version %@ (%@)" = "版本 %1$@（%2$@）";
 
 /* Accessibility label for the main web content view */
@@ -1998,7 +1998,7 @@
 "Yesterday" = "昨天";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Firefox on your other devices." = "您其他裝置上的 Firefox 沒有任何開啟的分頁。";
+"You don’t have any tabs open in Karma on your other devices." = "您其他裝置上的 Karma 沒有任何開啟的分頁。";
 
 /* Your Rights settings section title */
 "Your Rights" = "您的權利";

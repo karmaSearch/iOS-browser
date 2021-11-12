@@ -43,10 +43,10 @@
 /* Title for the Jump Back In section. This section allows users to jump back in to a recently viewed tab */
 "ActivityStream.JumpBackIn.SectionTitle" = "Asup Deui";
 
-/* On the Firefox homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
+/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
 "ActivityStream.JumpBackIn.TabGroup.SiteCount" = "Tab: %d";
 
-/* On the Firefox homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
+/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
 "ActivityStream.JumpBackIn.TabGroup.Title" = "Sungsian anjeun ngeunaan \"%@\"";
 
 /* A string used to signify the start of the Recently Saved section in Home Screen. */
@@ -191,7 +191,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "Kecap konci bocor atawa dipaling saprak anjeun ngarobah kecap konci. Pikeun ngajaga ieu akun, login ka lokana laju ganti kecap konci anjeun.";
 
-/* Link to monitor.firefox.com to learn more about breached passwords */
+/* Link to monitor.Karma.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "Lenyepan";
 
 /* Leads to a link to the breached website */
@@ -270,7 +270,7 @@
 "ContextMenu.ShareLinkButtonTitle" = "Bagikeun Tutumbu";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one talks about the more personalized home feature. */
-"ContextualHints.Homepage.PersonalizedHome" = "Tepas Firefox pribadi kiwari mantuan anjeun nyokot ti anu ditinggalkeun. Néangan tab anu can lila, markah, jeung hasil nyungsi.";
+"ContextualHints.Homepage.PersonalizedHome" = "Tepas Karma pribadi kiwari mantuan anjeun nyokot ti anu ditinggalkeun. Néangan tab anu can lila, markah, jeung hasil nyungsi.";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one is the call to action for the inactive tabs contextual popup.
    Contextual hints are little popups that appear for the users informing them of new features. This one talks about the inactive tabs feature. */
@@ -286,7 +286,7 @@
 "Could not load page." = "Teu bisa muat kaca.";
 
 /* Description for the new dark mode change in the version 22 app release. It describes the new automatic dark theme and how to change the theme settings. */
-"CoverSheet.v22.DarkMode.Description" = "Pikeun nu maké iOS 13, kiwari Firefox otomatis pindah ka téma poék nalika telepon anjeun disetél ka Mode Poék. Pikeun ngarobah ieu paripolah, buka Setélan > Téma.";
+"CoverSheet.v22.DarkMode.Description" = "Pikeun nu maké iOS 13, kiwari Karma otomatis pindah ka téma poék nalika telepon anjeun disetél ka Mode Poék. Pikeun ngarobah ieu paripolah, buka Setélan > Téma.";
 
 /* Title for the new dark mode change in the version 22 app release. */
 "CoverSheet.v22.DarkMode.Title" = "Kiwari téma poék ngawengku kibor poék jeung layar simbeuh poék.";
@@ -341,8 +341,8 @@
 /* Alert dialog title when the user taps the cancel download icon. */
 "Downloads.CancelDialog.Title" = "Bolaykeun Ngundeur";
 
-/* The message displayed to a user when they try and perform the download of an asset that Firefox cannot currently handle. */
-"Downloads.Error.Message" = "Undeuran acan dirojong na Firefox.";
+/* The message displayed to a user when they try and perform the download of an asset that Karma cannot currently handle. */
+"Downloads.Error.Message" = "Undeuran acan dirojong na Karma.";
 
 /* The label text in the Download Cancelled toast for showing confirmation that the download was cancelled. */
 "Downloads.Toast.Cancelled.LabelText" = "Undeuran Dibolaykeun";
@@ -387,7 +387,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "Ieu téh meureun salah setélan atawa diruksak ku panarajang. Tuluykeun wé mun anjeun narima kana poténsi résikona.";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "Pamilik %@ nyetél raramatlokana teu mantes. Pikeun ngilungan sangkan émbaran anjeun teu dipaling, Firefox henteu nyambungkeun ka ieu raramatloka.";
+"ErrorPages.CertWarning.Description" = "Pamilik %@ nyetél raramatlokana teu mantes. Pikeun ngilungan sangkan émbaran anjeun teu dipaling, Karma henteu nyambungkeun ka ieu raramatloka.";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "Ieu Sambungan Teu Kapercaya";
@@ -407,10 +407,10 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for firefox about:home page in tab history list */
-"Firefox.HomePage.Title" = "Kaca Tepas Firefox";
+/* Title for Karma about:home page in tab history list */
+"Karma.HomePage.Title" = "Kaca Tepas Karma";
 
-/* A button at bottom of the Firefox homepage that, when clicked, takes users straight to the settings options, where they can customize the Firefox Home page */
+/* A button at bottom of the Karma homepage that, when clicked, takes users straight to the settings options, where they can customize the Karma Home page */
 "FirefoxHome.CustomizeHomeButton.Title" = "Kustomkeun Tepas";
 
 /* Accessibility Label for the tab toolbar Forward button */
@@ -422,16 +422,16 @@
 /* Label stating your account is not verified */
 "FxA.AccountVerificationRequired" = "Diperlukeun Akun Vérifikasi";
 
-/* Message explaining that user needs to check email for Firefox Account verfication link. */
-"FxA.AccountVerificationRequiredSurface" = "Anjeun perlu mérifikasi %@. Pariksa surélék anjeun pikeun verifikasi tutumbu ti Firefox.";
+/* Message explaining that user needs to check email for Karma Account verfication link. */
+"FxA.AccountVerificationRequiredSurface" = "Anjeun perlu mérifikasi %@. Pariksa surélék anjeun pikeun verifikasi tutumbu ti Karma.";
 
 /* Button label to connect another device to Sync */
 "FxA.ConnectAnotherDevice" = "Sambungkeun Parangkan Séjén";
 
-/* Settings section title for Firefox Account */
-"FxA.FirefoxAccount" = "Akun Firefox";
+/* Settings section title for Karma Account */
+"FxA.FirefoxAccount" = "Akun Karma";
 
-/* Button label to go to Firefox Account settings */
+/* Button label to go to Karma Account settings */
 "FxA.ManageAccount" = "Atur Akun & Parangkat";
 
 /* Label when no internet is present */
@@ -441,15 +441,15 @@
 "FxA.OpenSyncPreferences" = "Buka Préférénsi Singkron";
 
 /* Instructions shown on qr code scanning view */
-"fxa.qr-scanning-view.instructions" = "Pindai kode QR anu dipidangkeun dina firefox.com/pair";
+"fxa.qr-scanning-view.instructions" = "Pindai kode QR anu dipidangkeun dina Karma.com/pair";
 
-/* Remove button is displayed on firefox account page under certain scenarios where user would like to remove their account. */
+/* Remove button is displayed on Karma account page under certain scenarios where user would like to remove their account. */
 "FxA.RemoveAccount" = "Cabut";
 
 /* Description string for alert view that gets presented when user tries to remove an account. */
-"FxA.RemoveAccountAlertMessage" = "Cabut Akun Firefox anu dihubungkeun jeung ieu alat pikeun asup salaku pangguna anu béda.";
+"FxA.RemoveAccountAlertMessage" = "Cabut Akun Karma anu dihubungkeun jeung ieu alat pikeun asup salaku pangguna anu béda.";
 
-/* Remove account alert is the final confirmation before user removes their firefox account */
+/* Remove account alert is the final confirmation before user removes their Karma account */
 "FxA.RemoveAccountAlertTitle" = "Cabut Akun";
 
 /* Button label to resend email */
@@ -459,13 +459,13 @@
 "fxa.signin.camera-signin" = "Asup Maké Kaméra Anjeun";
 
 /* FxA sign in create account label. */
-"fxa.signin.create-account-pt-1" = "Nyingkronkeun Firefox antarparabot maké hiji akun.";
+"fxa.signin.create-account-pt-1" = "Nyingkronkeun Karma antarparabot maké hiji akun.";
 
 /* FxA sign in create account label. This will be linked to the site to create an account. */
-"fxa.signin.create-account-pt-2" = "Jieun akun Firefox.";
+"fxa.signin.create-account-pt-2" = "Jieun akun Karma.";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "Dina komputer anjeun buka Firefox terus buka firefox.com/pair";
+"fxa.signin.qr-link-instruction" = "Dina komputer anjeun buka Karma terus buka Karma.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Siap Mindai";
@@ -482,14 +482,14 @@
 /* Label explaining what sync does */
 "FxA.SyncExplain" = "Cokot tab anjeun, markah sarta kecap sandina ti akun anjeun anu séjén nu keur muka.";
 
-/* Button label to Sync your Firefox Account */
+/* Button label to Sync your Karma Account */
 "FxA.SyncNow" = "Singkronkeun Ayeuna";
 
 /* Call to action for sign into sync button */
 "FxA.TakeYourWebWithYou" = "Bawa Raramat Anjeun Jeung Anjeun";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "Singkronan Firefox geus nyambung ka %@";
+"FxAPush_DeviceConnected_body" = "Singkronan Karma geus nyambung ka %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Singkronan Nyambung";
@@ -498,7 +498,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ geus laksana dipegatkeun.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Ieu parangkat geus laksana dipegatkeun ti Singkronan Firefox";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Ieu parangkat geus laksana dipegatkeun ti Singkronan Karma";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Singkronan Pegat";
@@ -507,7 +507,7 @@
 "FxAPush_DeviceDisconnected_title" = "Singkronan Pegat";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Parangkat geus dipegarkeun tina Singkronan Firefox";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Parangkat geus dipegarkeun tina Singkronan Karma";
 
 /* A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing. */
 "Get your open tabs, bookmarks, and passwords from your other devices." = "Cokot tab anjeun, markah sarta kecap sandina ti akun anjeun nu séjén.";
@@ -555,7 +555,7 @@
 "HistoryPanel.EmptySyncedTabsPanelTabSyncDisabledState.Description" = "Hurungkeun singkronan tab pikeun nénjo daptar tab ti parangkat anjeun nu séjén.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "Singkronan Firefox";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Singkronan Karma";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Jujutan";
@@ -645,7 +645,7 @@
 "InactiveTabs.TabTray.AutoClosePrompt.ButtonTitle" = "Hurungkeun Otomatis Nutup";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This string describes what happens if you elect to turn on this option. */
-"InactiveTabs.TabTray.AutoClosePrompt.Content" = "Firefox bakal nutup tab anu teu dibuka leuwih ti sabulan.";
+"InactiveTabs.TabTray.AutoClosePrompt.Content" = "Karma bakal nutup tab anu teu dibuka leuwih ti sabulan.";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This is the title of that Auto Close prompt */
 "InactiveTabs.TabTray.AutoClosePrompt.Title" = "Tutup langsung sanggeus sabulan?";
@@ -674,10 +674,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "Caang";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
 "Load original page" = "Muat kaca asli";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Karma reader mode from another app. */
 "Loading content…" = "Ngamuat kontén…";
 
 /* Authentication prompt log in button */
@@ -729,7 +729,7 @@
 "LoginsList.LoginsListSearchPlaceholder" = "Ayak";
 
 /* Label shown when there are no logins to list */
-"LoginsList.NoLoginsFound.Description" = "Login anu diteundeun bakal némbongan di dieu. Lamun anjeun neundeun login ka Firefox di séjén paranti, asup ka Firefox Account.";
+"LoginsList.NoLoginsFound.Description" = "Login anu diteundeun bakal némbongan di dieu. Lamun anjeun neundeun login ka Karma di séjén paranti, asup ka Karma Account.";
 
 /* Label shown when there are no logins saved */
 "LoginsList.NoLoginsFound.Title" = "Taya login kapanggih";
@@ -753,7 +753,7 @@
 "LoginsList.Title" = "ASUP LOG DITEUNDEUN";
 
 /* Restore Tabs Prompt Description */
-"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "Kawasna mah Firefox geus ruksak saméméhna. Anjeun rék malikkeun deui tabna?";
+"Looks like Karma crashed previously. Would you like to restore your tabs?" = "Kawasna mah Karma geus ruksak saméméhna. Anjeun rék malikkeun deui tabna?";
 
 /* Name for Mark as read button in reader mode
    Title for the button that marks a reading list item as read */
@@ -797,10 +797,10 @@
 "Menu.EnhancedTrackingProtectionOn.Title" = "Perlindungan Palacakan Lanjutan HURUNG pikeun ieu loka.";
 
 /* Description for having standard ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "Firefox meungpeuk palacak meuntas-loka, palacak sosial, kriptogurandil, jeung sidik ramo.";
+"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "Karma meungpeuk palacak meuntas-loka, palacak sosial, kriptogurandil, jeung sidik ramo.";
 
 /* Description for having strict ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "Firefox meungpeuk palacak meuntas-loka, palacak sosial, kriptogurandil, pingerprinter, jeung palacakan kontén.";
+"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "Karma meungpeuk palacak meuntas-loka, palacak sosial, kriptogurandil, pingerprinter, jeung palacakan kontén.";
 
 /* Label for the button, displayed in the menu, takes you to to History screen when pressed. */
 "Menu.History.Label" = "Jujutan";
@@ -866,7 +866,7 @@
 "Menu.TrackingProtection.Details.Verifier" = "Dipéripikasi ku %@";
 
 /* Message in menu when no trackers blocked. */
-"Menu.TrackingProtection.NoTrackersBlockedTitle" = "Taya palacak anu dipikawanoh ku Firefox karampa dina ieu kaca.";
+"Menu.TrackingProtection.NoTrackersBlockedTitle" = "Taya palacak anu dipikawanoh ku Karma karampa dina ieu kaca.";
 
 /* The title for tracking protection settings */
 "Menu.TrackingProtection.ProtectionSettings.Title" = "Setélan perlindungan";
@@ -881,7 +881,7 @@
 "Menu.TrackingProtectionBlockedSocial.Title" = "Palacak Sosial";
 
 /* Description of the Tracking protection menu when TP is blocking parts of the page */
-"Menu.TrackingProtectionBlocking.Description" = "Firefox meungpeuk bagéan tina kaca nu sigana lalacak kana langlangan anjeun.";
+"Menu.TrackingProtectionBlocking.Description" = "Karma meungpeuk bagéan tina kaca nu sigana lalacak kana langlangan anjeun.";
 
 /* The description of the Tracking Protection menu item when tracking is enabled */
 "Menu.TrackingProtectionBlockingDisabled.Description" = "Peungpeuk palacak onlén";
@@ -983,33 +983,33 @@
 /* Restore Tabs Affirmative Action */
 "Okay" = "Okéh lah";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the title for the button, on the bottom of the card, used to get back to browsing on Firefox by dismissing the onboarding card */
+/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the button, on the bottom of the card, used to get back to browsing on Karma by dismissing the onboarding card */
 "Onboarding.WhatsNew.Button.Title" = "Mitembeyan Ngalanglang";
 
-/* On the onboarding card, letting users know what's new in this version of Firefox, this is a general description that appears under the title for what the card is about. */
+/* On the onboarding card, letting users know what's new in this version of Karma, this is a general description that appears under the title for what the card is about. */
 "Onboarding.WhatsNew.Description" = "Ayeuna mah leuwih babari balik deui ka anu ditinggalkeun.";
 
-/* On the onboarding card, letting users know what's new in this version of Firefox, this is the description for the Jump Back In bullet point */
+/* On the onboarding card, letting users know what's new in this version of Karma, this is the description for the Jump Back In bullet point */
 "Onboarding.WhatsNew.PersonalizedHome.Description" = "Luncat ka tab muka, markah, jeung jujutan ngalanglang.";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the descripion of the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of Karma, this is the descripion of the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Description" = "Anjangan deui sungsian panungtung ti kaca tepas.";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the title for the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Title" = "Anyar Nyungsi";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the description for the Tab Group bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of Karma, this is the description for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Description" = "Kaca-kaca ti sungsian anu sarua dikumpulkeun.";
 
-/* On the onboarding card, letting users know what's new in this version of Firefox, this is the title for the Tab Group bullet point on the card */
+/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Title" = "Rapihkeun Grup Tab";
 
-/* On the onboarding card, letting users know what's new in this version of Firefox, this is the title for the Jump Back In bullet point on the card
-   The title for the new onboarding card letting users know what is new in Firefox iOS */
-"Onboarding.WhatsNew.Title" = "Anu anyar di Firefox";
+/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Jump Back In bullet point on the card
+   The title for the new onboarding card letting users know what is new in Karma iOS */
+"Onboarding.WhatsNew.Title" = "Anu anyar di Karma";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Firefox crashed" = "Euleuh! Firefoxna ruksak ning";
+"Oops! Karma crashed" = "Euleuh! Firefoxna ruksak ning";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "Buka artikel di Pidangan Baca ku cara noél ikon buku nalika éta bijil di wilah judul.";
@@ -1020,8 +1020,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "Buka Tab";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app. */
-"OpenURL.Error.Message" = "Firefox teu bisa muka ieu kaca lantaran alamatna henteu sohéh.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by Karma, or any external app. */
+"OpenURL.Error.Message" = "Karma teu bisa muka ieu kaca lantaran alamatna henteu sohéh.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "Teu Bisa Muka Kaca";
@@ -1036,19 +1036,19 @@
 "Password" = "Kecap sandi";
 
 /* Error message shown in the remote tabs panel */
-"PasswordAutoFill.NoPasswordsFoundTitle" = "Anjeun teu boga krédénsial anu disingkronkeun tina Firefox Account anjeun";
+"PasswordAutoFill.NoPasswordsFoundTitle" = "Anjeun teu boga krédénsial anu disingkronkeun tina Karma Account anjeun";
 
 /* Header for the list of credentials table */
 "PasswordAutoFill.PasswordsListTitle" = "Krédénsial nu Aya:";
 
-/* Title of the extension that shows firefox passwords */
-"PasswordAutoFill.SectionTitle" = "Krédénsial Firefox";
+/* Title of the extension that shows Karma passwords */
+"PasswordAutoFill.SectionTitle" = "Krédénsial Karma";
 
 /* See http://mzl.la/1G7uHo7 */
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "Ku ieu anjeun bisa neundeun gambar kana Camera Roll anjeun.";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Firefox hayang ngaksés Poto anjeun";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Karma hayang ngaksés Poto anjeun";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "Tutup";
@@ -1056,7 +1056,7 @@
 /* Privacy section title */
 "Privacy" = "Salindungan";
 
-/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
+/* Show Karma Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/Karma/ */
 "Privacy Policy" = "Kawijakan Salindungan";
 
 /* This is the value for a label that indicates if a user is on an unencrypted website. */
@@ -1129,7 +1129,7 @@
 "ScanQRCode.InvalidDataError.Message" = "Data henteu sohéh";
 
 /* Text of the prompt user to setup the camera authorization. */
-"ScanQRCode.PermissionError.Message" = "Mangga heugbaékeun Firefox pikeun ngaksés kaméra parangkat anjeun dina ‘Setélan’ -> ‘Salindungan’ -> ‘Kaméra’.";
+"ScanQRCode.PermissionError.Message" = "Mangga heugbaékeun Karma pikeun ngaksés kaméra parangkat anjeun dina ‘Setélan’ -> ‘Salindungan’ -> ‘Kaméra’.";
 
 /* Title for the QR code scanner view. */
 "ScanQRCode.View.Title" = "Pindéy kodeu QR";
@@ -1213,19 +1213,19 @@
 "SendTo.NavBar.Title" = "Kirim Tab";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "Anjeun teu boga parangkat séjén anu nyambung kana Akun Firefox ieu anu bisa disaluyukeun.";
+"SendTo.NoDevicesFound.Message" = "Anjeun teu boga parangkat séjén anu nyambung kana Akun Karma ieu anu bisa disaluyukeun.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "Mangga buka Firefox, buka Setélan sarta asup pikeun neruskeun.";
+"SendTo.NotSignedIn.Message" = "Mangga buka Karma, buka Setélan sarta asup pikeun neruskeun.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "Anjeun can asup ka Akun Firefox.";
+"SendTo.NotSignedIn.Title" = "Anjeun can asup ka Akun Karma.";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "Kirim";
 
-/* The text for the button on the Send to Device page if you are not signed in to Firefox Accounts. */
-"SendTo.SignIn.Button" = "Asup ka Firefox";
+/* The text for the button on the Send to Device page if you are not signed in to Karma Accounts. */
+"SendTo.SignIn.Button" = "Asup ka Karma";
 
 /* Body of notification shown when the device is sent one or more tabs from an unnamed device. */
 "SentTab_TabArrivingNotification_NoDevice_body" = "Tab anyar geus nepi ti parangkat séjén.";
@@ -1249,7 +1249,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Toél jang ngamimitian";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "Singkronisasi Firefox";
+"SentTab.NoTabArrivingNotification.title" = "Singkronisasi Karma";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Témbong";
@@ -1312,7 +1312,7 @@
 "Settings.DataManagement.Title" = "Manajemén Data";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "Firefox bakal eureun nyingkronkeun jeung akun anjeun, ngan moal mupus sakur data langlangan anjeun dina ieu parangkat.";
+"Settings.Disconnect.Body" = "Karma bakal eureun nyingkronkeun jeung akun anjeun, ngan moal mupus sakur data langlangan anjeun dina ieu parangkat.";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "Pegatkeun Singkronan";
@@ -1381,53 +1381,53 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "Ngaran Parangkat";
 
-/* Label used as a section title in the Firefox Accounts Settings screen. */
+/* Label used as a section title in the Karma Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "Setélan Singkronan";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "Akun Firefox";
+"Settings.FxA.Title" = "Akun Karma";
 
 /* General settings section title */
 "Settings.General.SectionName" = "Umum";
 
-/* In the settings menu, on the Firefox homepage customization section, this is the description below the section, describing what the options in the section are for. */
-"Settings.Home.Option.Description" = "Pilih kontén anu katempo dina kaca tepas Firefox.";
+/* In the settings menu, on the Karma homepage customization section, this is the description below the section, describing what the options in the section are for. */
+"Settings.Home.Option.Description" = "Pilih kontén anu katempo dina kaca tepas Karma.";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
 "Settings.Home.Option.JumpBackIn" = "Asup Deui";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Firefox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Karma homepage on or off */
 "Settings.Home.Option.Pocket" = "Disarankeun ku Pocket";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Firefox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Karma homepage on or off */
 "Settings.Home.Option.RecentlySaved" = "Anyar Diteundeun";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
 "Settings.Home.Option.RecentlyVisited" = "Anyar Dianjangan";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the Firefox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the Karma homepage on or off */
 "Settings.Home.Option.RecentSearches" = "Anyar Nyungsi";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Firefox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Karma homepage on or off */
 "Settings.Home.Option.Shortcuts" = "Takulan";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage after four hours of inactivity. */
 "Settings.Home.Option.StartAtHome.AfterFourHours" = "Tepas sanggeus opat jam teu aktip";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Karma */
 "Settings.Home.Option.StartAtHome.Always" = "Tepas";
 
 /* In the settings menu, in the Start at Home customization options, this is text that appears below the section, describing what the section settings do. */
-"Settings.Home.Option.StartAtHome.Description" = "Pilih naon anu katempo nalika balik deui ka Firefox.";
+"Settings.Home.Option.StartAtHome.Description" = "Pilih naon anu katempo nalika balik deui ka Karma.";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Karma */
 "Settings.Home.Option.StartAtHome.Never" = "Tab panungtung";
 
-/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Firefox Homepage. */
+/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Karma Homepage. */
 "Settings.Home.Option.StartAtHome.Title" = "Layar pamuka";
 
-/* In the settings menu, this is the title of the Firefox Homepage customization settings section */
-"Settings.Home.Option.Title" = "Tepas Firefox";
+/* In the settings menu, this is the title of the Karma Homepage customization settings section */
+"Settings.Home.Option.Title" = "Tepas Karma";
 
 /* Button in settings to clear the home page. */
 "Settings.HomePage.Clear.Button" = "Beresihan";
@@ -1478,10 +1478,10 @@
 "Settings.NewTab.Option.CustomizeFooter2" = "Loka teuteundeunan atawa kaanjangan";
 
 /* The title for the section to customize top sites in the new tab settings page. */
-"Settings.NewTab.Option.CustomizeTitle" = "Ropéa Tepas Firefox";
+"Settings.NewTab.Option.CustomizeTitle" = "Ropéa Tepas Karma";
 
-/* Option in settings to show Firefox Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "Tepas Firefox";
+/* Option in settings to show Karma Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "Tepas Karma";
 
 /* Option in the settings to turn off recent bookmarks in the Highlights section */
 "Settings.NewTab.Option.HighlightsBookmarks" = "Markah Cik Kénéh";
@@ -1523,7 +1523,7 @@
 "Settings.NewTab.TopSectionNameFooter" = "Pilih naon nu rék dimuat nalika muka tab anyar";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "Nalika Muka Firefox";
+"Settings.OfferClipboardBar.Status" = "Nalika Muka Karma";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "Tawaran Muka Tutumbu Tironan";
@@ -1547,7 +1547,7 @@
 "Settings.SendUsage.Link" = "Lenyepan.";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "Mozilla bakal kukumpul data nu diperlukeun hungkul jang nyadiakeun jeung ngoméan Firefox pikeun balaréa.";
+"Settings.SendUsage.Message" = "Mozilla bakal kukumpul data nu diperlukeun hungkul jang nyadiakeun jeung ngoméan Karma pikeun balaréa.";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "Kirim Data Pamakéan";
@@ -1565,7 +1565,7 @@
 "Settings.Siri.OpenTabShortcut" = "Buka Tab Anyar";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "Paké tarabas Siri pikeun gancang muka Firefox tina Siri";
+"Settings.Siri.SectionDescription" = "Paké tarabas Siri pikeun gancang muka Karma tina Siri";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "Tarabas Siri";
@@ -1589,7 +1589,7 @@
 "Settings.Studies.Toggle.Link" = "Lenyepan.";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "Firefox bisa masang jeung ngajalankeun studi iraha baé.";
+"Settings.Studies.Toggle.Message" = "Karma bisa masang jeung ngajalankeun studi iraha baé.";
 
 /* Toggled OFF to opt-out of studies */
 "Settings.Studies.Toggle.Off" = "Pareum";
@@ -1606,7 +1606,7 @@
 /* In the settings menu, in the Tabs customization section, this is the title for the setting that toggles the Tab Groups feature - where tabs from related searches are grouped - on or off */
 "Settings.Tabs.CustomizeTabsSection.TabGroups" = "Grup Tab";
 
-/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from firefox hompage */
+/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from Karma hompage */
 "Settings.Tabs.CustomizeTabsSection.Title" = "Kustomkeun Dulang Tab";
 
 /* In the settings menu, this is the title for the Tabs customization section option */
@@ -1622,7 +1622,7 @@
 "Settings.TrackingProtection.Alert.Title" = "Awas!";
 
 /* Header description for tracking protection options section where Basic/Strict block list can be selected */
-"Settings.TrackingProtection.BlockListsHeader" = "Anjeun bisa milih mana waé daptar Firefox nu bisa meungpeuk élemén Loka nu meureun ngalacak kagiatan langlangan anjeun.";
+"Settings.TrackingProtection.BlockListsHeader" = "Anjeun bisa milih mana waé daptar Karma nu bisa meungpeuk élemén Loka nu meureun ngalacak kagiatan langlangan anjeun.";
 
 /* Explanation of basic mode. */
 "Settings.TrackingProtection.Info.BasicTitle" = "Saimbang pikeun perlindungan jeung kinerja.";
@@ -1717,32 +1717,32 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "Data Raramatloka";
 
-/* Action label on share extension to add page to the Firefox reading list. */
+/* Action label on share extension to add page to the Karma reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "Tambah ka Daptar Bacaeun";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "Ditambahkeun ka Daptar Bacaeun";
 
-/* Action label on share extension to bookmark the page in Firefox. */
+/* Action label on share extension to bookmark the page in Karma. */
 "ShareExtension.BookmarkThisPageAction.Title" = "Markahkeun Ieu Kaca";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "Dimarkahkeun";
 
-/* Action label on share extension to load the page in Firefox when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in Karma when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "Muat di Kasangtukang";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "Ngamuat di Firefox";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "Ngamuat di Karma";
 
-/* Action label on share extension to immediately open page in Firefox. */
-"ShareExtension.OpenInFirefoxAction.Title" = "Buka di Firefox";
+/* Action label on share extension to immediately open page in Karma. */
+"ShareExtension.OpenInFirefoxAction.Title" = "Buka di Karma";
 
-/* Action label on share extension to immediately open page in Firefox in private mode. */
+/* Action label on share extension to immediately open page in Karma in private mode. */
 "ShareExtension.OpenInPrivateModeAction.Title" = "Buka di Modeu Nyalindung";
 
-/* Action label on share extension to search for the selected text in Firefox. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Paluruh di Firefox";
+/* Action label on share extension to search for the selected text in Karma. */
+"ShareExtension.SeachInFirefoxAction.Title" = "Paluruh di Karma";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "Témbongkeun Anjuran Maluruh";
@@ -1779,7 +1779,7 @@
 "Sync.FirstTimeMessage.Label" = "Singkronan munggaran anjeun meureun méakkeun waktu.";
 
 /* String displayed on Sign In to Sync page that allows the user to create a new account. */
-"Sync.NoAccount.Description" = "Teu boga akun? Jieun pikeun nyingkronkeun Firefox antarparabot.";
+"Sync.NoAccount.Description" = "Teu boga akun? Jieun pikeun nyingkronkeun Karma antarparabot.";
 
 /* Message displayed when the user's account is syncing with no ellipsis */
 "Sync.Syncing.Label" = "Nyingkronkeun";
@@ -1901,7 +1901,7 @@
 /* The section header for tabs opened yesterday */
 "TabTray.Yesterday.Header" = "Kamari";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
 "The page could not be displayed in Reader View." = "Kaca teu bisa dipidangkeun dina Modeu Baca";
 
 /* Error message in the remote tabs panel */
@@ -1959,13 +1959,13 @@
 "UIMenuItem.PasteGo" = "Terap & Indit";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "Paluruh ku Firefox";
+"UIMenuItem.SearchWithFirefox" = "Paluruh ku Karma";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "can dibaca";
 
 /* Text message in the settings table view */
-"Upgrade Firefox to connect" = "Apgréd Firefox pikeun nyambungkeun";
+"Upgrade Karma to connect" = "Apgréd Karma pikeun nyambungkeun";
 
 /* Debug option */
 "Use stage servers" = "Paké serper hambalan";
@@ -1976,7 +1976,7 @@
 /* Text message in the settings table view */
 "Verify your email address" = "Vérifikasi alamat surélék anjeun";
 
-/* Version number of Firefox shown in settings */
+/* Version number of Karma shown in settings */
 "Version %@ (%@)" = "Vérsi %1$@ (%2$@)";
 
 /* Accessibility label for the main web content view */
@@ -1998,7 +1998,7 @@
 "Yesterday" = "Kamari";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Firefox on your other devices." = "Anjeun teu miboga tab bukaeun na Firefox di parangkat séjén.";
+"You don’t have any tabs open in Karma on your other devices." = "Anjeun teu miboga tab bukaeun na Karma di parangkat séjén.";
 
 /* Your Rights settings section title */
 "Your Rights" = "Hak Anjeun";
