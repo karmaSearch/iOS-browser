@@ -9,8 +9,6 @@ import Shared
 
 class IntroScreenWelcomeView: UIView, CardTheme {
 
-    // Orientation independent screen size
-    private let screenSize = DeviceInfo.screenSizeOrientationIndependent()
     // Views
     private lazy var animalsBackgroundImage: UIImageView = {
         let imgView = UIImageView()

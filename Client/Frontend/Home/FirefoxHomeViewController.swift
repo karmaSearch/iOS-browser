@@ -197,11 +197,7 @@ class FirefoxHomeViewController: UICollectionViewController, HomePanel, FeatureF
         customCell.delegate = self.topSitesManager
         return customCell
     }()
-
-    lazy var defaultBrowserCard: DefaultBrowserCard = .build { card in
-        card.backgroundColor = UIColor.theme.homePanel.topSitesBackground
-    }
-
+    
     var pocketStories: [PocketStory] = []
     var hasRecentBookmarks = false
     var hasReadingListitems = false
@@ -292,25 +288,6 @@ class FirefoxHomeViewController: UICollectionViewController, HomePanel, FeatureF
         self.view.addSubview(contextualSourceView)
         contextualSourceView.backgroundColor = .clear
 
-        if #available(iOS 14.0, *), !UserDefaults.standard.bool(forKey: "DidDismissDefaultBrowserCard") {
-            self.view.addSubview(defaultBrowserCard)
-            NSLayoutConstraint.activate([
-                defaultBrowserCard.topAnchor.constraint(equalTo: view.topAnchor),
-                defaultBrowserCard.bottomAnchor.constraint(equalTo: collectionView.topAnchor),
-                defaultBrowserCard.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-                defaultBrowserCard.widthAnchor.constraint(equalToConstant: 380),
-
-                collectionView.topAnchor.constraint(equalTo: defaultBrowserCard.bottomAnchor),
-                collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-                collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-                collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            ])
-
-            defaultBrowserCard.dismissClosure = {
-                self.dismissDefaultBrowserCard()
-            }
-        }
-
         NSLayoutConstraint.activate([
             overlayView.topAnchor.constraint(equalTo: view.topAnchor),
             overlayView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -366,23 +343,11 @@ class FirefoxHomeViewController: UICollectionViewController, HomePanel, FeatureF
         self.topSitesManager.currentTraits = self.traitCollection
         applyTheme()
     }
-
-    public func dismissDefaultBrowserCard() {
-        self.defaultBrowserCard.removeFromSuperview()
-        NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: view.topAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
-    }
-
     @objc func reload(notification: Notification) {
         reloadAll()
     }
 
     func applyTheme() {
-        defaultBrowserCard.applyTheme()
         self.view.backgroundColor = UIColor.theme.homePanel.topSitesBackground
         topSiteCell.collectionView.reloadData()
         if let collectionView = self.collectionView, collectionView.numberOfSections > 0, collectionView.numberOfItems(inSection: 0) > 0 {

@@ -1943,10 +1943,10 @@ extension BrowserViewController {
             dBOnboardingViewController.preferredContentSize = CGSize(width: ViewControllerConsts.PreferredSize.DBOnboardingViewController.width, height: ViewControllerConsts.PreferredSize.DBOnboardingViewController.height)
             dBOnboardingViewController.modalPresentationStyle = .formSheet
         } else {
-            dBOnboardingViewController.modalPresentationStyle = .popover
+            dBOnboardingViewController.modalPresentationStyle = .overCurrentContext
         }
+        
         dBOnboardingViewController.viewModel.goToSettings = {
-            self.firefoxHomeViewController?.dismissDefaultBrowserCard()
             dBOnboardingViewController.dismiss(animated: true) {
                 UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
             }
@@ -2002,6 +2002,11 @@ extension BrowserViewController {
                     let fxaParams = FxALaunchParams(query: ["entrypoint": "firstrun"])
                     self.presentSignInViewController(fxaParams, flowType: flow, referringPage: .onboarding)
                 }
+            }
+        }
+        introViewController.viewModel.goToSettings = {
+            introViewController.dismiss(animated: true) {
+                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
             }
         }
         self.introVCPresentHelper(introViewController: introViewController)

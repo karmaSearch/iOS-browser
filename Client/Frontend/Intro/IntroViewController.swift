@@ -50,6 +50,13 @@ class IntroViewController: UIViewController, OnViewDismissable {
         return welcomeCardView
     }()
     
+    private lazy var defaultBrowserView: DefaultBrowserOnboardingView = {
+        let view = DefaultBrowserOnboardingView()
+        view.translatesAutoresizingMaskIntoConstraints = true
+        view.layoutSubviews()
+        return view
+    }()
+    
     private lazy var pageControl: UIPageControl = {
         let pageControl = UIPageControl()
         pageControl.pageIndicatorTintColor = UIColor.Photon.Grey11
@@ -61,6 +68,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
 
     // Closure delegate
     var didFinishClosure: ((IntroViewController, FxAPageType?) -> Void)?
+    let viewModel = DefaultBrowserOnboardingViewModel()
     
     // MARK: Initializer
     init() {
@@ -84,7 +92,9 @@ class IntroViewController: UIViewController, OnViewDismissable {
     
     // MARK: View setup
     private func initialViewSetup() {
+        view.backgroundColor = UIColor.Photon.DarkGrey90
         setupIntroView()
+        setUpDefaultBrowser()
     }
     
     //onboarding intro view
@@ -93,10 +103,8 @@ class IntroViewController: UIViewController, OnViewDismissable {
         view.addSubviews(scrollView)
         scrollView.addSubview(carouselStackView)
         
-//        view.addSubview(welcomeCard)
         
         // Constraints
-//        setupWelcomeCard()
         setUpScrollView()
         setUpCarousel()
     }
@@ -144,7 +152,14 @@ class IntroViewController: UIViewController, OnViewDismissable {
             guard let self = self else { return }
             let currentPage = self.pageControl.currentPage
             TelemetryWrapper.recordEvent(category: .action, method: .press, object: .dismissedOnboarding, extras: ["slide-num": currentPage])
-            self.didFinishClosure?(self, nil)
+            
+            self.scrollView.isHidden = true
+            self.pageControl.isHidden = true
+            self.defaultBrowserView.isHidden = false
+            self.defaultBrowserView.alpha = 0
+            UIView.animate(withDuration: 1) {
+                self.defaultBrowserView.alpha = 1
+            }
         }
         
         welcomeCard.nextClosure = { [weak self] in
@@ -154,12 +169,39 @@ class IntroViewController: UIViewController, OnViewDismissable {
         }
     }
     
+    private func setUpDefaultBrowser() {
+        view.addSubviews(defaultBrowserView)
+        defaultBrowserView.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.centerX.equalToSuperview()
+            make.top.greaterThanOrEqualToSuperview().offset(40)
+            make.height.equalTo(445).priority(.medium)
+            make.leading.equalToSuperview().offset(40)
+        }
+        
+        defaultBrowserView.isHidden = true
+        
+        defaultBrowserView.closeClosure = { [weak self] in
+            guard let self = self else { return }
+            self.didFinishClosure?(self, nil)
+        }
+        defaultBrowserView.settingsClosure = { [weak self] in
+            self?.goToSettings()
+        }
+    }
+    
     @objc func pageChanged(_ sender: UIPageControl) {
         let page: Int = sender.currentPage
         var frame: CGRect = self.scrollView.frame
         frame.origin.x = frame.size.width * CGFloat(page)
         frame.origin.y = 0
         self.scrollView.scrollRectToVisible(frame, animated: true)
+    }
+    
+    @objc private func goToSettings() {
+        viewModel.goToSettings?()
+        UserDefaults.standard.set(true, forKey: "DidDismissDefaultBrowserCard") // Don't show default browser card if this button is clicked
+        TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .goToSettingsDefaultBrowserOnboarding)
     }
     
 }
