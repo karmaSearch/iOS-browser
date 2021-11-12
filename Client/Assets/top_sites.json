@@ -739,6 +739,13 @@
   },
   {
     "title": "kayak",
+    "url": "https://mykarma.org/",
+    "image_url": "karma.png",
+    "background_color": "#fff",
+    "domain": "karma.org"
+  },
+  {
+    "title": "karma",
     "url": "https://www.kayak.com/",
     "image_url": "kayak-com.png",
     "background_color": "#fff",
