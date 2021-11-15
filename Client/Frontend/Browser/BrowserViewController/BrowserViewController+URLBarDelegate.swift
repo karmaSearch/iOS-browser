@@ -312,7 +312,6 @@ extension BrowserViewController: URLBarDelegate, FeatureFlagsProtocol {
     }
 
     func urlBar(_ urlBar: URLBarView, didEnterText text: String) {
-        urlBar.updateSearchEngineImage()
         if text.isEmpty {
             hideSearchController()
         } else {
@@ -378,7 +377,6 @@ extension BrowserViewController: URLBarDelegate, FeatureFlagsProtocol {
 
     func urlBarDidEnterOverlayMode(_ urlBar: URLBarView) {
         libraryDrawerViewController?.close()
-        urlBar.updateSearchEngineImage()
         guard let profile = profile as? BrowserProfile else {
             return
         }

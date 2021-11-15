@@ -57,9 +57,9 @@ class ActionMenuColor {
 class URLBarColor {
     var border: UIColor { return UIColor.Photon.Grey90A10 }
     func activeBorder(_ isPrivate: Bool) -> UIColor { 
-        return !isPrivate ? UIColor.Photon.Blue20A40 : UIColor.Defaults.MobilePrivatePurple
+        return !isPrivate ? UIColor.clear : UIColor.Defaults.MobilePrivatePurple
     }
-    var tint: UIColor { return UIColor.Photon.Blue40A30 }
+    var tint: UIColor { return UIColor.Photon.Green60 }
 
     // This text selection color is used in two ways:
     // 1) <UILabel>.background = textSelectionHighlight.withAlphaComponent(textSelectionHighlightAlpha)

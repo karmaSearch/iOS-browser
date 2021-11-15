@@ -1140,7 +1140,7 @@
 "Search" = "Recherche";
 
 /* The text shown in the URL bar on about:home */
-"Search or enter address" = "Recherche ou adresse";
+"Search or enter address" = "Recherche avec Karma";
 
 /* Search suggestion cell label that allows user to switch to tab which they searched for in url bar */
 "Search.Awesomebar.SwitchToTab" = "Aller à l’onglet";

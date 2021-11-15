@@ -1664,7 +1664,6 @@ extension BrowserViewController: SearchViewControllerDelegate {
         searchSettingsTableViewController.profile = self.profile
         // Update saerch icon when the searchengine changes
         searchSettingsTableViewController.updateSearchIcon = {
-            self.urlBar.updateSearchEngineImage()
             self.searchController?.reloadSearchEngines()
             self.searchController?.reloadData()
         }

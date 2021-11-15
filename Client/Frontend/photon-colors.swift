@@ -13,7 +13,7 @@ extension UIColor {
     struct Photon {
         static let LightGrey05 = UIColor(rgb: 0xfbfbfe)
         static let LightGrey10 = UIColor(rgb: 0xf9f9fb)
-        static let LightGrey20 = UIColor(rgb: 0xf0f0f4)
+        static let LightGrey20 = UIColor(rgb: 0xe8e7e8)
         static let LightGrey30 = UIColor(rgb: 0xe0e0e6)
         static let LightGrey40 = UIColor(rgb: 0xcfcfd8)
         static let LightGrey50 = UIColor(rgb: 0xbfbfc9)
@@ -157,7 +157,7 @@ extension UIColor {
         static let Grey75 = UIColor(rgb: 0x3C3C43)
         static let Grey75A60 = UIColor(rgba: 0x3C3C4399)
         static let Grey75A39 = UIColor(rgba: 0x3C3C4363)
-        static let Grey80 = UIColor(rgb: 0x2a2a2e)
+        static let Grey80 = UIColor(rgb: 0x16161a)
         static let Grey85 = UIColor(rgb: 0x1C1C1e) // system background / dark / secondary
         static let Grey90 = UIColor(rgb: 0x0c0c0d)
         static let Grey90A05 = UIColor(rgba: 0x0c0c0d0c)
