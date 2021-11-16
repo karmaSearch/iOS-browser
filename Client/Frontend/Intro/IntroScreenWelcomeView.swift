@@ -25,7 +25,7 @@ class IntroScreenWelcomeView: UIView, CardTheme {
     }()
     
     private lazy var karmaLogo: UIImageView = {
-        let logo = UIImageView(image: UIImage(named: "welcome-logo"))
+        let logo = UIImageView(image: UIImage(named: "karma-logo"))
         logo.contentMode = .scaleToFill
         logo.clipsToBounds = true
         

@@ -395,6 +395,10 @@
 		9699F77326F39E5100C5FA47 /* SiteImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9699F77226F39E5100C5FA47 /* SiteImageHelper.swift */; };
 		96D95016270238500079D39D /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D95015270238500079D39D /* Throttler.swift */; };
 		96F627002669B0D100C82340 /* FxHomeRecentlySavedCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F626FF2669B0D100C82340 /* FxHomeRecentlySavedCollectionCell.swift */; };
+		A32316502742BB4C00464742 /* KarmaHomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A323164F2742BB4C00464742 /* KarmaHomeViewCell.swift */; };
+		A32316522742C1D800464742 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32316512742C1D800464742 /* Home.xcassets */; };
+		A32316552742CDDD00464742 /* KarmaHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32316542742CDDD00464742 /* KarmaHomeViewModel.swift */; };
+		A32316562742CFD600464742 /* HomeImage.json in Resources */ = {isa = PBXBuildFile; fileRef = A32316532742C34700464742 /* HomeImage.json */; };
 		A3752C78273E704A008835B1 /* DefaultBrowserOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3752C77273E704A008835B1 /* DefaultBrowserOnboardingView.swift */; };
 		A38C49E2273EAE130074BAFD /* Karma.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A38C49E1273EAE130074BAFD /* Karma.xcconfig */; };
 		A38C49E4273EAEDF0074BAFD /* Karma_Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A38C49E3273EAEDF0074BAFD /* Karma_Debug.xcconfig */; };
@@ -2735,6 +2739,10 @@
 		A3114C1793DE75790B35B80F /* gl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = gl; path = gl.lproj/HistoryPanel.strings; sourceTree = "<group>"; };
 		A323164D274026F800464742 /* CredentialProviderKarmaDebug.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = CredentialProviderKarmaDebug.entitlements; sourceTree = "<group>"; };
 		A323164E274026F800464742 /* CredentialProviderKarma.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = CredentialProviderKarma.entitlements; sourceTree = "<group>"; };
+		A323164F2742BB4C00464742 /* KarmaHomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaHomeViewCell.swift; sourceTree = "<group>"; };
+		A32316512742C1D800464742 /* Home.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Home.xcassets; sourceTree = "<group>"; };
+		A32316532742C34700464742 /* HomeImage.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeImage.json; sourceTree = "<group>"; };
+		A32316542742CDDD00464742 /* KarmaHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaHomeViewModel.swift; sourceTree = "<group>"; };
 		A3752C77273E704A008835B1 /* DefaultBrowserOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBrowserOnboardingView.swift; sourceTree = "<group>"; };
 		A38C49E1273EAE130074BAFD /* Karma.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Karma.xcconfig; path = Configuration/Karma.xcconfig; sourceTree = "<group>"; };
 		A38C49E3273EAEDF0074BAFD /* Karma_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Karma_Debug.xcconfig; path = Configuration/Karma_Debug.xcconfig; sourceTree = "<group>"; };
@@ -6376,6 +6384,10 @@
 				43AB6FA025DC53D30016B015 /* LibraryShortcutView.swift */,
 				43AB6FA125DC53D30016B015 /* PanelDataObservers.swift */,
 				966206CC2698DE1E005C0A55 /* FirefoxHomeRecentlySavedViewModel.swift */,
+				A323164F2742BB4C00464742 /* KarmaHomeViewCell.swift */,
+				A32316512742C1D800464742 /* Home.xcassets */,
+				A32316532742C34700464742 /* HomeImage.json */,
+				A32316542742CDDD00464742 /* KarmaHomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -7360,6 +7372,7 @@
 				7B4980A81CE363ED0017547C /* Settings.xcassets in Resources */,
 				39F4C0FA2045D87400746155 /* FocusHelper.js in Resources */,
 				E4B7B7861A793CF20022C5E0 /* FiraSans-UltraLight.ttf in Resources */,
+				A32316522742C1D800464742 /* Home.xcassets in Resources */,
 				2F44FB2C1A9D5D8500FD20CC /* Library.xcassets in Resources */,
 				E4B7B77D1A793CF20022C5E0 /* FiraSans-Regular.ttf in Resources */,
 				A38C49E2273EAE130074BAFD /* Karma.xcconfig in Resources */,
@@ -7372,6 +7385,7 @@
 				FA9294011D6584A200AC8D33 /* QRCode.xcassets in Resources */,
 				EBC9D38822D4D56F0011D881 /* disconnect-block-cookies-social.json in Resources */,
 				D308EE561CBF0BF5006843F2 /* CertError.css in Resources */,
+				A32316562742CFD600464742 /* HomeImage.json in Resources */,
 				C8399D9122DE5E5200EFA5CA /* disconnect-block-advertising.json in Resources */,
 				43A5643923CD1E1C00B6857D /* Update.xcassets in Resources */,
 				C8399D9322DE5E5B00EFA5CA /* disconnect-block-analytics.json in Resources */,
@@ -8050,6 +8064,7 @@
 				EBF47E701F7979DF00899189 /* TelemetryWrapper.swift in Sources */,
 				E68F36981EA694000048CF44 /* PanelDataObservers.swift in Sources */,
 				31ADB5DA1E58CEC300E87909 /* ClipboardBarDisplayHandler.swift in Sources */,
+				A32316552742CDDD00464742 /* KarmaHomeViewModel.swift in Sources */,
 				39EF4363260CEE5E0011E22E /* ExperimentConstants.swift in Sources */,
 				745DAB3F1CDAB09E00D44181 /* HistoryBackButton.swift in Sources */,
 				EB9A179D20E69A7F00B12184 /* LegacyTheme.swift in Sources */,
@@ -8220,6 +8235,7 @@
 				CA77ABFD24773C92005079F9 /* BreachAlertsManager.swift in Sources */,
 				C81A8F2526D3ED1900EBA539 /* UIWindowExtensions.swift in Sources */,
 				EBC4869E2195F58300CDA48D /* AboutHomeHandler.swift in Sources */,
+				A32316502742BB4C00464742 /* KarmaHomeViewCell.swift in Sources */,
 				DDA24A431FD84D630098F159 /* DefaultSearchPrefs.swift in Sources */,
 				23BD0E4E25533AE50038586B /* TabMoreMenuViewModel.swift in Sources */,
 				E65075611E37F77D006961AC /* MenuHelper.swift in Sources */,

@@ -30,7 +30,7 @@ extension UIColor {
         static let DarkGrey50 = UIColor(rgb: 0x32313c)
         static let DarkGrey60 = UIColor(rgb: 0x2b2a33)
         static let DarkGrey65 = UIColor(rgb: 0x2c2c2e)
-        static let DarkGrey70 = UIColor(rgb: 0x23222b)
+        static let DarkGrey70 = UIColor(rgb: 0x242629)
         static let DarkGrey80 = UIColor(rgb: 0x1c1b22)
         static let DarkGrey90 = UIColor(rgb: 0x16161a)
 
@@ -122,7 +122,7 @@ extension UIColor {
         static let Purple40 = UIColor(rgb: 0xd74cf0)
         static let Purple50 = UIColor(rgb: 0xb833e1)
         static let Purple60 = UIColor(rgb: 0x952bb9)
-        static let Purple70 = UIColor(rgb: 0x722291)
+        static let Purple70 = UIColor(rgb: 0x7F5AF0)
         static let Purple80 = UIColor(rgb: 0x4e1a69)
         static let Purple90 = UIColor(rgb: 0x2b1141)
 

@@ -1,0 +1,30 @@
+{
+    "images": [
+        {
+        "imageName": "animal18",
+        "infoText": "Info text à renseigner",
+        "author" : "Philip Brown"
+        },
+        {
+        "imageName": "animal19",
+        "infoText": "Info text à renseigner",
+        "author" : "Philip Brown"
+        },
+        {
+        "imageName": "animal21",
+        "infoText": "Info text à renseigner",
+        "author" : "Philip Brown"
+        },
+        {
+        "imageName": "animal22",
+        "infoText": "Info text à renseigner",
+        "author" : "Philip Brown"
+        },
+        {
+        "imageName": "animal24",
+        "infoText": "Info text à renseigner",
+        "author" : "Philip Brown"
+        }
+        
+    ]
+}

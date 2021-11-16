@@ -16,6 +16,7 @@ private let log = Logger.browserLogger
 struct FirefoxHomeUX {
     static let highlightCellHeight: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 250 : 200
     static let jumpBackInCellHeight: CGFloat = 120
+    static let karmaMenuHeight: CGFloat = UIScreen.main.bounds.height/2
     static let recentlySavedCellHeight: CGFloat = 136
     static let sectionInsetsForSizeClass = UXSizeClasses(compact: 0, regular: 101, other: 15)
     static let numberOfItemsPerRowForSizeClassIpad = UXSizeClasses(compact: 3, regular: 4, other: 2)
@@ -91,6 +92,7 @@ protocol HomePanelDelegate: AnyObject {
     func homePanelDidRequestToCustomizeHomeSettings()
     func homePanelDidPresentContextualHint(type: ContextualHintViewType)
     func homePanelDidDismissContextualHint(type: ContextualHintViewType)
+    func homePanelDidRequestToOpenSettings()
 }
 
 protocol HomePanel: NotificationThemeable {
@@ -459,6 +461,7 @@ class FirefoxHomeViewController: UICollectionViewController, HomePanel, FeatureF
 extension FirefoxHomeViewController {
 
     enum Section: Int, CaseIterable {
+        case karmaMenu
         case topSites
         case libraryShortcuts
         case jumpBackIn
@@ -468,6 +471,7 @@ extension FirefoxHomeViewController {
 
         var title: String? {
             switch self {
+            case .karmaMenu: return nil
             case .pocket: return .ASPocketTitle2
             case .jumpBackIn: return .FirefoxHomeJumpBackInSectionTitle
             case .recentlySaved: return .RecentlySavedSectionTitle
@@ -488,13 +492,14 @@ extension FirefoxHomeViewController {
 
         var footerHeight: CGSize {
             switch self {
-            case .pocket, .jumpBackIn, .recentlySaved, .customizeHome: return .zero
+            case .pocket, .jumpBackIn, .recentlySaved, .customizeHome, .karmaMenu: return .zero
             case .topSites, .libraryShortcuts: return CGSize(width: 50, height: 5)
             }
         }
 
         func cellHeight(_ traits: UITraitCollection, width: CGFloat) -> CGFloat {
             switch self {
+            case .karmaMenu: return FirefoxHomeUX.karmaMenuHeight
             case .pocket: return FirefoxHomeUX.highlightCellHeight
             case .jumpBackIn: return FirefoxHomeUX.jumpBackInCellHeight
             case .recentlySaved: return FirefoxHomeUX.recentlySavedCellHeight
@@ -510,6 +515,9 @@ extension FirefoxHomeViewController {
         - An iPad in 66% split view is still considered regular width
          */
         func sectionInsets(_ traits: UITraitCollection, frameWidth: CGFloat) -> CGFloat {
+            if self == .karmaMenu {
+                return 0
+            }
             var currentTraits = traits
             if (traits.horizontalSizeClass == .regular && UIScreen.main.bounds.size.width != frameWidth) || UIDevice.current.userInterfaceIdiom == .phone {
                 currentTraits = UITraitCollection(horizontalSizeClass: .compact)
@@ -533,7 +541,7 @@ extension FirefoxHomeViewController {
                 }
 
                 return numItems
-            case .topSites, .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome:
+            case .topSites, .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome, .karmaMenu:
                 return 1
             }
         }
@@ -546,7 +554,7 @@ extension FirefoxHomeViewController {
             case .pocket:
                 let numItems = numberOfItemsForRow(traits)
                 return CGSize(width: floor(((frameWidth - inset) - (FirefoxHomeUX.minimumInsets * (numItems - 1))) / numItems), height: height)
-            case .topSites, .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome:
+            case .topSites, .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome, .karmaMenu:
                 return CGSize(width: frameWidth - inset, height: height)
             }
         }
@@ -559,6 +567,7 @@ extension FirefoxHomeViewController {
 
         var cellIdentifier: String {
             switch self {
+            case .karmaMenu: return "KarmaMenuCell"
             case .topSites: return "TopSiteCell"
             case .pocket: return "PocketCell"
             case .jumpBackIn: return "JumpBackInCell"
@@ -570,6 +579,7 @@ extension FirefoxHomeViewController {
 
         var cellType: UICollectionViewCell.Type {
             switch self {
+            case .karmaMenu: return KarmaHomeViewCell.self
             case .topSites: return ASHorizontalScrollCell.self
             case .pocket: return FirefoxHomeHighlightCell.self
             case .jumpBackIn: return FxHomeJumpBackInCollectionCell.self
@@ -657,7 +667,10 @@ extension FirefoxHomeViewController: UICollectionViewDelegateFlowLayout {
             case .customizeHome:
                 headerView.moreButton.isHidden = true
                 return headerView
-        }
+            case .karmaMenu:
+                headerView.moreButton.isHidden = true
+                return headerView
+            }
         default:
             return UICollectionReusableView()
         }
@@ -689,7 +702,7 @@ extension FirefoxHomeViewController: UICollectionViewDelegateFlowLayout {
         case .libraryShortcuts:
             let width = min(FirefoxHomeUX.libraryShortcutsMaxWidth, cellSize.width)
             return CGSize(width: width, height: cellSize.height)
-        case .customizeHome, .pocket, .recentlySaved:
+        case .customizeHome, .pocket, .recentlySaved, .karmaMenu:
             return cellSize
         }
     }
@@ -707,7 +720,7 @@ extension FirefoxHomeViewController: UICollectionViewDelegateFlowLayout {
             return isJumpBackInSectionEnabled ? getHeaderSize(forSection: section) : .zero
         case .recentlySaved:
             return isRecentlySavedSectionEnabled ? getHeaderSize(forSection: section) : .zero
-        case .customizeHome:
+        case .customizeHome, .karmaMenu:
             return .zero
         }
     }
@@ -760,7 +773,7 @@ extension FirefoxHomeViewController {
             return isRecentlySavedSectionEnabled ? 1 : 0
         case .libraryShortcuts:
             return isYourLibrarySectionEnabled ? 1 : 0
-        case .customizeHome:
+        case .customizeHome, .karmaMenu:
             return 1
         }
     }
@@ -782,6 +795,8 @@ extension FirefoxHomeViewController {
             return configureLibraryShortcutsCell(cell, forIndexPath: indexPath)
         case .customizeHome:
             return configureCustomizeHomeCell(cell, forIndexPath: indexPath)
+        case .karmaMenu:
+            return configureCustomizeKarmaCell(cell, forIndexPath: indexPath)
         }
     }
 
@@ -847,6 +862,16 @@ extension FirefoxHomeViewController {
 
         return customizeHomeCell
     }
+    
+    private func configureCustomizeKarmaCell(_ cell: UICollectionViewCell, forIndexPath indexPath: IndexPath) -> UICollectionViewCell {
+        let customizeHomeCell = cell as! KarmaHomeViewCell
+        customizeHomeCell.setNeedsLayout()
+        customizeHomeCell.openMenu = { [weak self] in
+            self?.homePanelDelegate?.homePanelDidRequestToOpenSettings()
+        }
+        return customizeHomeCell
+    }
+    
 }
 
 // MARK: - Data Management
@@ -1015,7 +1040,7 @@ extension FirefoxHomeViewController: DataObserverDelegate {
             let pointInTopSite = longPressGestureRecognizer.location(in: topSiteCell.collectionView)
             guard let topSiteIndexPath = topSiteCell.collectionView.indexPathForItem(at: pointInTopSite) else { return }
             presentContextMenu(for: topSiteIndexPath)
-        case .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome:
+        case .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome, .karmaMenu:
             return
         }
     }
@@ -1035,7 +1060,7 @@ extension FirefoxHomeViewController: DataObserverDelegate {
             site = Site(url: pocketStories[index].url.absoluteString, title: pocketStories[index].title)
             let key = TelemetryWrapper.EventExtraKey.pocketTilePosition.rawValue
             TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .pocketStory, value: nil, extras: [key : "\(index)"])
-        case .topSites, .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome:
+        case .topSites, .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome, .karmaMenu:
             return
         }
 
@@ -1126,9 +1151,10 @@ extension FirefoxHomeViewController: HomePanelContextMenu {
         switch Section(indexPath.section) {
         case .pocket:
             return Site(url: pocketStories[indexPath.row].url.absoluteString, title: pocketStories[indexPath.row].title)
+            
         case .topSites:
             return topSitesManager.content[indexPath.item]
-        case .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome:
+        case .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome, .karmaMenu:
             return nil
         }
     }
@@ -1144,7 +1170,7 @@ extension FirefoxHomeViewController: HomePanelContextMenu {
             }
         case .pocket:
             sourceView = self.collectionView?.cellForItem(at: indexPath)
-        case .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome:
+        case .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome, .karmaMenu:
             return nil
         }
 
@@ -1224,7 +1250,7 @@ extension FirefoxHomeViewController: HomePanelContextMenu {
         var actions = [openInNewTabAction, openInNewPrivateTabAction, bookmarkAction, shareAction]
 
         switch Section(indexPath.section) {
-        case .pocket, .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome: break
+        case .pocket, .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome, .karmaMenu: break
         case .topSites: actions.append(contentsOf: topSiteActions)
         }
 

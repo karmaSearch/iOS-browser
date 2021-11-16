@@ -1641,6 +1641,10 @@ extension BrowserViewController: HomePanelDelegate {
     func homePanelDidDismissContextualHint(type: ContextualHintViewType) {
         self.urlBar.locationTextField?.becomeFirstResponder()
     }
+    
+    func homePanelDidRequestToOpenSettings() {
+        self.openSettings()
+    }
 }
 
 extension BrowserViewController: SearchViewControllerDelegate {
