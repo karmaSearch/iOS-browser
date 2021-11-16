@@ -757,6 +757,12 @@ class BrowserViewController: UIViewController {
             view.addSubview(karmaHomeViewController.view)
             karmaHomeViewController.didMove(toParent: self)
         }
+        
+        if inline {
+            karmaHomeViewController?.expandSection()
+        } else {
+            karmaHomeViewController?.reduceSection()
+        }
 
         karmaHomeViewController?.applyTheme()
 

@@ -162,7 +162,6 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
     fileprivate let profile: Profile
     fileprivate let pocketAPI = Pocket()
     fileprivate let flowLayout = UICollectionViewFlowLayout()
-    fileprivate let experiments: NimbusApi
     fileprivate var hasSentPocketSectionEvent = false
     fileprivate var hasSentJumpBackInSectionEvent = false
     fileprivate var timer: Timer?
@@ -208,23 +207,25 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
         return tabManager.selectedTab
     }
 
-    lazy var homescreen = experiments.withVariables(featureId: .homescreen, sendExposureEvent: false) {
-        Homescreen(variables: $0)
-    }
+    var sectionsEnabled: [Homescreen.SectionId: Bool] = [:]
 
     // MARK: - Section availability variables
     var isTopSitesSectionEnabled: Bool {
-        homescreen.sectionsEnabled[.topSites] == true
+        sectionsEnabled[.topSites] == true
+    }
+    
+    var isKarmaHomeSectionEnabled: Bool {
+        sectionsEnabled[.karmahome] == true
     }
 
     var isYourLibrarySectionEnabled: Bool {
         UIDevice.current.userInterfaceIdiom != .pad &&
-            homescreen.sectionsEnabled[.libraryShortcuts] == true
+        sectionsEnabled[.libraryShortcuts] == true
     }
 
     var isJumpBackInSectionEnabled: Bool {
         guard featureFlags.isFeatureActiveForBuild(.jumpBackIn),
-              homescreen.sectionsEnabled[.jumpBackIn] == true,
+              sectionsEnabled[.jumpBackIn] == true,
               featureFlags.userPreferenceFor(.jumpBackIn) == UserFeaturePreference.enabled
         else { return false }
 
@@ -235,7 +236,7 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
 
     var isRecentlySavedSectionEnabled: Bool {
         guard featureFlags.isFeatureActiveForBuild(.recentlySaved),
-              homescreen.sectionsEnabled[.recentlySaved] == true,
+              sectionsEnabled[.recentlySaved] == true,
               featureFlags.userPreferenceFor(.recentlySaved) == UserFeaturePreference.enabled
         else { return false }
 
@@ -254,9 +255,8 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
     }
 
     // MARK: - Initializers
-    init(profile: Profile, experiments: NimbusApi = Experiments.shared) {
+    init(profile: Profile) {
         self.profile = profile
-        self.experiments = experiments
         super.init(collectionViewLayout: flowLayout)
         collectionView?.delegate = self
         collectionView?.dataSource = self
@@ -267,6 +267,9 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
 
         let refreshEvents: [Notification.Name] = [.DynamicFontChanged, .HomePanelPrefsChanged, .DisplayThemeChanged]
         refreshEvents.forEach { NotificationCenter.default.addObserver(self, selector: #selector(reload), name: $0, object: nil) }
+        let homeScren = Homescreen()
+        self.sectionsEnabled = homeScren.fullSectionsEnabled
+        
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -309,7 +312,6 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        experiments.recordExposureEvent(featureId: .homescreen)
         TelemetryWrapper.recordEvent(category: .action,
                                      method: .view,
                                      object: .firefoxHomepage,
@@ -353,6 +355,24 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
         self.view.backgroundColor = UIColor.theme.homePanel.topSitesBackground
         topSiteCell.collectionView.reloadData()
         if let collectionView = self.collectionView, collectionView.numberOfSections > 0, collectionView.numberOfItems(inSection: 0) > 0 {
+            collectionView.reloadData()
+        }
+    }
+    
+    func reduceSection() {
+        let reduceSectionsEnabled = Homescreen().reduceSectionsEnabled
+        guard sectionsEnabled != reduceSectionsEnabled else { return }
+        sectionsEnabled = reduceSectionsEnabled
+        if let collectionView = self.collectionView{
+            collectionView.reloadData()
+        }
+    }
+    
+    func expandSection() {
+        let fullSectionsEnabled = Homescreen().fullSectionsEnabled
+        guard sectionsEnabled != fullSectionsEnabled else { return }
+        sectionsEnabled = fullSectionsEnabled
+        if let collectionView = self.collectionView{
             collectionView.reloadData()
         }
     }
@@ -773,8 +793,10 @@ extension KarmaHomeViewController {
             return isRecentlySavedSectionEnabled ? 1 : 0
         case .libraryShortcuts:
             return isYourLibrarySectionEnabled ? 1 : 0
-        case .customizeHome, .karmaMenu:
-            return 1
+        case .karmaMenu:
+            return isKarmaHomeSectionEnabled ? 1 : 0
+        case .customizeHome:
+            return 0
         }
     }
 

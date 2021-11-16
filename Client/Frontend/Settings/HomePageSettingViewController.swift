@@ -23,20 +23,18 @@ class HomePageSettingViewController: SettingsTableViewController, FeatureFlagsPr
         fatalError("init(coder:) has not been implemented")
     }
     
-    lazy var homescreen = Experiments.shared.withVariables(featureId: .homescreen, sendExposureEvent: false) {
-        Homescreen(variables: $0)
-    }
+    lazy var homescreen = Homescreen()
 
     var isJumpBackInSectionEnabled: Bool {
         let isFeatureEnabled = featureFlags.isFeatureActiveForBuild(.jumpBackIn)
-        let isNimbusFeatureEnabled = homescreen.sectionsEnabled[.jumpBackIn] == true
+        let isNimbusFeatureEnabled = homescreen.fullSectionsEnabled[.jumpBackIn] == true
         guard isFeatureEnabled, isNimbusFeatureEnabled else { return false }
         return true
     }
 
     var isRecentlySavedSectionEnabled: Bool {
         let isFeatureEnabled = featureFlags.isFeatureActiveForBuild(.recentlySaved)
-        let isNimbusFeatureEnabled = homescreen.sectionsEnabled[.recentlySaved] == true
+        let isNimbusFeatureEnabled = homescreen.fullSectionsEnabled[.recentlySaved] == true
         guard isFeatureEnabled, isNimbusFeatureEnabled else { return false }
         return true
     }
