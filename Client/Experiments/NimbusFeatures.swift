@@ -49,7 +49,7 @@ struct Homescreen {
     // If the entry for a given key is missing, it is filled in with the defaults
     // listed in the `SectionId` enum.
     lazy var sectionsEnabled: [SectionId: Bool] = {
-        return [.topSites: true]
+        return [.libraryShortcuts: true, .topSites: true, .recentlySaved: true]
        /* var map: [SectionId: Bool] = variables.getBoolMap("sections-enabled")?.compactMapKeysAsEnums() ?? [:]
         for id in SectionId.allCases {
             map[id] = map[id] ?? id.defaultValue

@@ -154,7 +154,7 @@ extension HomePanelContextMenu {
 
 // MARK: - HomeVC
 
-class FirefoxHomeViewController: UICollectionViewController, HomePanel, FeatureFlagsProtocol {
+class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFlagsProtocol {
     weak var homePanelDelegate: HomePanelDelegate?
     weak var libraryPanelDelegate: LibraryPanelDelegate?
     fileprivate var hasPresentedContextualHint = false
@@ -458,7 +458,7 @@ class FirefoxHomeViewController: UICollectionViewController, HomePanel, FeatureF
 
 // MARK: -  Section Management
 
-extension FirefoxHomeViewController {
+extension KarmaHomeViewController {
 
     enum Section: Int, CaseIterable {
         case karmaMenu
@@ -601,7 +601,7 @@ extension FirefoxHomeViewController {
 
 // MARK: -  CollectionView Delegate
 
-extension FirefoxHomeViewController: UICollectionViewDelegateFlowLayout {
+extension KarmaHomeViewController: UICollectionViewDelegateFlowLayout {
 
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
@@ -746,7 +746,7 @@ extension FirefoxHomeViewController: UICollectionViewDelegateFlowLayout {
 
 // MARK: - CollectionView Data Source
 
-extension FirefoxHomeViewController {
+extension KarmaHomeViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return Section.allCases.count
@@ -876,7 +876,7 @@ extension FirefoxHomeViewController {
 
 // MARK: - Data Management
 
-extension FirefoxHomeViewController: DataObserverDelegate {
+extension KarmaHomeViewController: DataObserverDelegate {
 
     // Reloads both highlights and top sites data from their respective caches. Does not invalidate the cache.
     // See ActivityStreamDataObserver for invalidation logic.
@@ -1072,7 +1072,7 @@ extension FirefoxHomeViewController: DataObserverDelegate {
 
 // MARK: - Actions Handling
 
-extension FirefoxHomeViewController {
+extension KarmaHomeViewController {
     @objc func openTabTray(_ sender: UIButton) {
         if sender.accessibilityIdentifier == FxHomeAccessibilityIdentifiers.MoreButtons.jumpBackIn {
             TelemetryWrapper.recordEvent(category: .action,
@@ -1138,7 +1138,7 @@ extension FirefoxHomeViewController {
 
 // MARK: - Context Menu
 
-extension FirefoxHomeViewController: HomePanelContextMenu {
+extension KarmaHomeViewController: HomePanelContextMenu {
     func presentContextMenu(for site: Site, with indexPath: IndexPath, completionHandler: @escaping () -> PhotonActionSheet?) {
 
         fetchBookmarkStatus(for: site) {
@@ -1260,7 +1260,7 @@ extension FirefoxHomeViewController: HomePanelContextMenu {
 
 // MARK: - Popover Presentation Delegate
 
-extension FirefoxHomeViewController: UIPopoverPresentationControllerDelegate {
+extension KarmaHomeViewController: UIPopoverPresentationControllerDelegate {
 
     // Dismiss the popover if the device is being rotated.
     // This is used by the Share UIActivityViewController action sheet on iPad

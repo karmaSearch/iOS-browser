@@ -357,7 +357,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIViewControllerRestorati
             setUpWebServer(profile)
         }
 
-        BrowserViewController.foregroundBVC().firefoxHomeViewController?.reloadAll()
+        BrowserViewController.foregroundBVC().karmaHomeViewController?.reloadAll()
 
         // Resume file downloads.
         // TODO: iOS 13 needs to iterate all the BVCs.
