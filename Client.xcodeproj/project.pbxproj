@@ -395,13 +395,18 @@
 		9699F77326F39E5100C5FA47 /* SiteImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9699F77226F39E5100C5FA47 /* SiteImageHelper.swift */; };
 		96D95016270238500079D39D /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D95015270238500079D39D /* Throttler.swift */; };
 		96F627002669B0D100C82340 /* FxHomeRecentlySavedCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F626FF2669B0D100C82340 /* FxHomeRecentlySavedCollectionCell.swift */; };
+		A3168A67274412D40081E3FF /* SDWebImageWebPCoder in Frameworks */ = {isa = PBXBuildFile; productRef = A3168A66274412D40081E3FF /* SDWebImageWebPCoder */; };
 		A32316502742BB4C00464742 /* KarmaHomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A323164F2742BB4C00464742 /* KarmaHomeViewCell.swift */; };
 		A32316522742C1D800464742 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32316512742C1D800464742 /* Home.xcassets */; };
 		A32316552742CDDD00464742 /* KarmaHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32316542742CDDD00464742 /* KarmaHomeViewModel.swift */; };
 		A32316562742CFD600464742 /* HomeImage.json in Resources */ = {isa = PBXBuildFile; fileRef = A32316532742C34700464742 /* HomeImage.json */; };
+		A32316582743EF7400464742 /* LearnAndActViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32316572743EF7400464742 /* LearnAndActViewCell.swift */; };
+		A323165A2743F76B00464742 /* LearnAndActiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32316592743F76B00464742 /* LearnAndActiViewModel.swift */; };
+		A323165C2743F80700464742 /* learnandact.json in Resources */ = {isa = PBXBuildFile; fileRef = A323165B2743F80600464742 /* learnandact.json */; };
 		A3752C78273E704A008835B1 /* DefaultBrowserOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3752C77273E704A008835B1 /* DefaultBrowserOnboardingView.swift */; };
 		A38C49E2273EAE130074BAFD /* Karma.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A38C49E1273EAE130074BAFD /* Karma.xcconfig */; };
 		A38C49E4273EAEDF0074BAFD /* Karma_Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A38C49E3273EAEDF0074BAFD /* Karma_Debug.xcconfig */; };
+		A3B970A7274530FA00BAA1F4 /* LearnAndActHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B970A6274530FA00BAA1F4 /* LearnAndActHeader.swift */; };
 		A83E5AB71C1D993D0026D912 /* UIPasteboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83E5AB61C1D993D0026D912 /* UIPasteboardExtensions.swift */; };
 		A83E5B1A1C1DA8BF0026D912 /* image.gif in Resources */ = {isa = PBXBuildFile; fileRef = A83E5B181C1DA8BF0026D912 /* image.gif */; };
 		A83E5B1B1C1DA8BF0026D912 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = A83E5B191C1DA8BF0026D912 /* image.png */; };
@@ -2743,6 +2748,9 @@
 		A32316512742C1D800464742 /* Home.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Home.xcassets; sourceTree = "<group>"; };
 		A32316532742C34700464742 /* HomeImage.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeImage.json; sourceTree = "<group>"; };
 		A32316542742CDDD00464742 /* KarmaHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaHomeViewModel.swift; sourceTree = "<group>"; };
+		A32316572743EF7400464742 /* LearnAndActViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAndActViewCell.swift; sourceTree = "<group>"; };
+		A32316592743F76B00464742 /* LearnAndActiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAndActiViewModel.swift; sourceTree = "<group>"; };
+		A323165B2743F80600464742 /* learnandact.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = learnandact.json; sourceTree = "<group>"; };
 		A3752C77273E704A008835B1 /* DefaultBrowserOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBrowserOnboardingView.swift; sourceTree = "<group>"; };
 		A38C49E1273EAE130074BAFD /* Karma.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Karma.xcconfig; path = Configuration/Karma.xcconfig; sourceTree = "<group>"; };
 		A38C49E3273EAEDF0074BAFD /* Karma_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Karma_Debug.xcconfig; path = Configuration/Karma_Debug.xcconfig; sourceTree = "<group>"; };
@@ -2750,6 +2758,7 @@
 		A38C49E6273EAF890074BAFD /* Karma.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Karma.entitlements; sourceTree = "<group>"; };
 		A38C49E7273EAFE00074BAFD /* KarmaDebug.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = KarmaDebug.entitlements; sourceTree = "<group>"; };
 		A38C49E8273EB0210074BAFD /* KarmaDebug.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = KarmaDebug.entitlements; sourceTree = "<group>"; };
+		A3B970A6274530FA00BAA1F4 /* LearnAndActHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAndActHeader.swift; sourceTree = "<group>"; };
 		A3E54C1386C753F253BEEB71 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Search.strings; sourceTree = "<group>"; };
 		A3FB49E4AED8F44971799F71 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/FindInPage.strings; sourceTree = "<group>"; };
 		A3FB4ED398FB21FB64A28124 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/ClearHistoryConfirm.strings; sourceTree = "<group>"; };
@@ -4246,6 +4255,7 @@
 				E6231C051B90A472005ABB0D /* libxml2.2.tbd in Frameworks */,
 				EBCF403B221CBC5B00B38F28 /* SwiftProtobuf.framework in Frameworks */,
 				4357697525B733CC0017B210 /* MozillaAppServices.framework in Frameworks */,
+				A3168A67274412D40081E3FF /* SDWebImageWebPCoder in Frameworks */,
 				E6231C011B90A44F005ABB0D /* libz.tbd in Frameworks */,
 				E4B3348A1BBF23F9004E2BFF /* AdSupport.framework in Frameworks */,
 				3BA9A0231D2C208C00BD418C /* Fuzi.framework in Frameworks */,
@@ -6385,9 +6395,13 @@
 				43AB6FA125DC53D30016B015 /* PanelDataObservers.swift */,
 				966206CC2698DE1E005C0A55 /* FirefoxHomeRecentlySavedViewModel.swift */,
 				A323164F2742BB4C00464742 /* KarmaHomeViewCell.swift */,
+				A32316572743EF7400464742 /* LearnAndActViewCell.swift */,
 				A32316512742C1D800464742 /* Home.xcassets */,
 				A32316532742C34700464742 /* HomeImage.json */,
+				A323165B2743F80600464742 /* learnandact.json */,
 				A32316542742CDDD00464742 /* KarmaHomeViewModel.swift */,
+				A32316592743F76B00464742 /* LearnAndActiViewModel.swift */,
+				A3B970A6274530FA00BAA1F4 /* LearnAndActHeader.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -6821,6 +6835,9 @@
 				F8324A112649A188007E4BFA /* PBXTargetDependency */,
 			);
 			name = Client;
+			packageProductDependencies = (
+				A3168A66274412D40081E3FF /* SDWebImageWebPCoder */,
+			);
 			productName = Client;
 			productReference = F84B21BE1A090F8100AAB793 /* Client.app */;
 			productType = "com.apple.product-type.application";
@@ -7133,6 +7150,9 @@
 				gd,
 			);
 			mainGroup = F84B21B51A090F8100AAB793;
+			packageReferences = (
+				A3168A65274412D40081E3FF /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */,
+			);
 			productRefGroup = F84B21BF1A090F8100AAB793 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -7383,6 +7403,7 @@
 				D30684F11C84F12A002D8D82 /* SearchPlugins in Resources */,
 				74821FFE1DB6D3AC00EEEA72 /* MailSchemes.plist in Resources */,
 				FA9294011D6584A200AC8D33 /* QRCode.xcassets in Resources */,
+				A323165C2743F80700464742 /* learnandact.json in Resources */,
 				EBC9D38822D4D56F0011D881 /* disconnect-block-cookies-social.json in Resources */,
 				D308EE561CBF0BF5006843F2 /* CertError.css in Resources */,
 				A32316562742CFD600464742 /* HomeImage.json in Resources */,
@@ -8164,6 +8185,7 @@
 				0BB5B30B1AC0AD1F0052877D /* LoginsHelper.swift in Sources */,
 				C87DF9DB267247190097E707 /* UIConstants+BottomInset.swift in Sources */,
 				C86E4F712493BA8E0087BFD9 /* Metrics.swift in Sources */,
+				A32316582743EF7400464742 /* LearnAndActViewCell.swift in Sources */,
 				1DA3CE6324EEE83200422BB2 /* SavedTab+ConfigureExtension.swift in Sources */,
 				43E9BDFB255E0904005BCB91 /* TabMoreMenuHeader.swift in Sources */,
 				392ED7E61D0AEFEF009D9B62 /* HomePageAccessors.swift in Sources */,
@@ -8221,6 +8243,7 @@
 				435D7CC5246209AA0043ACB9 /* IntroViewController.swift in Sources */,
 				CA4ACE4924C8C91600F55894 /* BreachAlertsDetailView.swift in Sources */,
 				A83E5AB71C1D993D0026D912 /* UIPasteboardExtensions.swift in Sources */,
+				A3B970A7274530FA00BAA1F4 /* LearnAndActHeader.swift in Sources */,
 				D8EFFA0C1FF5B1FA001D3A09 /* NavigationRouter.swift in Sources */,
 				C849E46326B9C3AF00260F0B /* EnhancedTrackingProtectionVM.swift in Sources */,
 				D0E55C4F1FB4FD23006DC274 /* FormPostHelper.swift in Sources */,
@@ -8357,6 +8380,7 @@
 				C8954A522729AD9D001C7283 /* Theme.swift in Sources */,
 				C8F457AA1F1FDD9B000CB895 /* BrowserViewController+KeyCommands.swift in Sources */,
 				59A68FD5260B8D520F890F4A /* ReaderPanel.swift in Sources */,
+				A323165A2743F76B00464742 /* LearnAndActiViewModel.swift in Sources */,
 				C849E46126B9C39B00260F0B /* EnhancedTrackingProtectionVC.swift in Sources */,
 				E40FAB0C1A7ABB77009CB80D /* WebServer.swift in Sources */,
 				59A68D66379CFA85C4EAF00B /* TwoLineCellAndFooter.swift in Sources */,
@@ -13170,6 +13194,25 @@
 			defaultConfigurationName = Fennec;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3168A65274412D40081E3FF /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageWebPCoder";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A3168A66274412D40081E3FF /* SDWebImageWebPCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3168A65274412D40081E3FF /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */;
+			productName = SDWebImageWebPCoder;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F84B21B61A090F8100AAB793 /* Project object */;
 }

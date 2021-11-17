@@ -20,12 +20,13 @@ struct FirefoxHomeUX {
     static let recentlySavedCellHeight: CGFloat = 136
     static let sectionInsetsForSizeClass = UXSizeClasses(compact: 0, regular: 101, other: 15)
     static let numberOfItemsPerRowForSizeClassIpad = UXSizeClasses(compact: 3, regular: 4, other: 2)
-    static let spacingBetweenSections: CGFloat = 24
+    static let spacingBetweenSections: CGFloat = 15
     static let sectionInsetsForIpad: CGFloat = 101
     static let minimumInsets: CGFloat = 15
     static let libraryShortcutsHeight: CGFloat = 90
     static let libraryShortcutsMaxWidth: CGFloat = 375
     static let customizeHomeHeight: CGFloat = 100
+    static let learnAndActHeight: CGFloat = 159
 }
 
 struct FxHomeAccessibilityIdentifiers {
@@ -200,6 +201,7 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
     }()
     
     var pocketStories: [PocketStory] = []
+    var learnAndAct: LearnAndAct?
     var hasRecentBookmarks = false
     var hasReadingListitems = false
     var currentTab: Tab? {
@@ -217,7 +219,11 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
     var isKarmaHomeSectionEnabled: Bool {
         sectionsEnabled[.karmahome] == true
     }
-
+    
+    var isLearnAndActSectionEnabled: Bool {
+        sectionsEnabled[.learnandact] == true
+    }
+    
     var isYourLibrarySectionEnabled: Bool {
         UIDevice.current.userInterfaceIdiom != .pad &&
         sectionsEnabled[.libraryShortcuts] == true
@@ -253,6 +259,8 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
 
         return true
     }
+    
+    private let learnAndActViewModel = LearnAndActiViewModel()
 
     // MARK: - Initializers
     init(profile: Profile) {
@@ -287,6 +295,7 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
 
         Section.allCases.forEach { collectionView.register($0.cellType, forCellWithReuseIdentifier: $0.cellIdentifier) }
         self.collectionView?.register(ASHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "Header")
+        self.collectionView?.register(LearnAndActHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "LearnAndActHeader")
         collectionView?.keyboardDismissMode = .onDrag
         collectionView?.backgroundColor = .clear
         self.view.addSubviews(overlayView)
@@ -303,7 +312,13 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
         self.view.backgroundColor = UIColor.theme.homePanel.topSitesBackground
         self.profile.panelDataObservers.activityStream.delegate = self
 
+        
         applyTheme()
+        
+        learnAndActViewModel.getDatas { [weak self] learnAndAct in
+            self?.learnAndAct = learnAndAct
+            self?.collectionView.reloadSections(IndexSet(integer: Section.learnAndAct.rawValue))
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -366,6 +381,7 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
         if let collectionView = self.collectionView{
             collectionView.reloadData()
         }
+        tapGestureRecognizer.isEnabled = true
     }
     
     func expandSection() {
@@ -375,6 +391,7 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
         if let collectionView = self.collectionView{
             collectionView.reloadData()
         }
+        tapGestureRecognizer.isEnabled = false
     }
 
     func scrollToTop(animated: Bool = false) {
@@ -488,6 +505,7 @@ extension KarmaHomeViewController {
         case recentlySaved
         case pocket
         case customizeHome
+        case learnAndAct
 
         var title: String? {
             switch self {
@@ -498,6 +516,7 @@ extension KarmaHomeViewController {
             case .topSites: return .ASShortcutsTitle
             case .libraryShortcuts: return .AppMenuLibraryTitleString
             case .customizeHome: return nil
+            case .learnAndAct: return nil
             }
         }
 
@@ -512,7 +531,7 @@ extension KarmaHomeViewController {
 
         var footerHeight: CGSize {
             switch self {
-            case .pocket, .jumpBackIn, .recentlySaved, .customizeHome, .karmaMenu: return .zero
+            case .pocket, .jumpBackIn, .recentlySaved, .customizeHome, .karmaMenu, .learnAndAct: return .zero
             case .topSites, .libraryShortcuts: return CGSize(width: 50, height: 5)
             }
         }
@@ -526,6 +545,7 @@ extension KarmaHomeViewController {
             case .topSites: return 0 //calculated dynamically
             case .libraryShortcuts: return FirefoxHomeUX.libraryShortcutsHeight
             case .customizeHome: return FirefoxHomeUX.customizeHomeHeight
+            case .learnAndAct: return FirefoxHomeUX.learnAndActHeight
             }
         }
 
@@ -535,9 +555,6 @@ extension KarmaHomeViewController {
         - An iPad in 66% split view is still considered regular width
          */
         func sectionInsets(_ traits: UITraitCollection, frameWidth: CGFloat) -> CGFloat {
-            if self == .karmaMenu {
-                return 0
-            }
             var currentTraits = traits
             if (traits.horizontalSizeClass == .regular && UIScreen.main.bounds.size.width != frameWidth) || UIDevice.current.userInterfaceIdiom == .phone {
                 currentTraits = UITraitCollection(horizontalSizeClass: .compact)
@@ -561,7 +578,7 @@ extension KarmaHomeViewController {
                 }
 
                 return numItems
-            case .topSites, .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome, .karmaMenu:
+            case .topSites, .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome, .learnAndAct, .karmaMenu:
                 return 1
             }
         }
@@ -574,8 +591,12 @@ extension KarmaHomeViewController {
             case .pocket:
                 let numItems = numberOfItemsForRow(traits)
                 return CGSize(width: floor(((frameWidth - inset) - (FirefoxHomeUX.minimumInsets * (numItems - 1))) / numItems), height: height)
-            case .topSites, .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome, .karmaMenu:
+            case .topSites, .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome:
                 return CGSize(width: frameWidth - inset, height: height)
+            case .karmaMenu:
+                return CGSize(width: frameWidth, height: height)
+            case .learnAndAct:
+                return CGSize(width: frameWidth, height: height)
             }
         }
 
@@ -594,6 +615,7 @@ extension KarmaHomeViewController {
             case .recentlySaved: return "RecentlySavedCell"
             case .libraryShortcuts: return  "LibraryShortcutsCell"
             case .customizeHome: return "CustomizeHomeCell"
+            case .learnAndAct: return "LearnAndActViewCell"
             }
         }
 
@@ -606,6 +628,7 @@ extension KarmaHomeViewController {
             case .recentlySaved: return FxHomeRecentlySavedCollectionCell.self
             case .libraryShortcuts: return ASLibraryCell.self
             case .customizeHome: return FxHomeCustomizeHomeView.self
+            case .learnAndAct: return LearnAndActViewCell.self
             }
         }
 
@@ -690,6 +713,9 @@ extension KarmaHomeViewController: UICollectionViewDelegateFlowLayout {
             case .karmaMenu:
                 headerView.moreButton.isHidden = true
                 return headerView
+            case .learnAndAct:
+                let learnAndActHeader = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "LearnAndActHeader", for: indexPath) as! LearnAndActHeader
+                return learnAndActHeader
             }
         default:
             return UICollectionReusableView()
@@ -722,8 +748,9 @@ extension KarmaHomeViewController: UICollectionViewDelegateFlowLayout {
         case .libraryShortcuts:
             let width = min(FirefoxHomeUX.libraryShortcutsMaxWidth, cellSize.width)
             return CGSize(width: width, height: cellSize.height)
-        case .customizeHome, .pocket, .recentlySaved, .karmaMenu:
+        case .customizeHome, .pocket, .recentlySaved, .karmaMenu, .learnAndAct:
             return cellSize
+
         }
     }
 
@@ -740,6 +767,8 @@ extension KarmaHomeViewController: UICollectionViewDelegateFlowLayout {
             return isJumpBackInSectionEnabled ? getHeaderSize(forSection: section) : .zero
         case .recentlySaved:
             return isRecentlySavedSectionEnabled ? getHeaderSize(forSection: section) : .zero
+        case .learnAndAct:
+            return isLearnAndActSectionEnabled ? getHeaderSize(forSection: section) : .zero
         case .customizeHome, .karmaMenu:
             return .zero
         }
@@ -755,7 +784,27 @@ extension KarmaHomeViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         let insets = Section(section).sectionInsets(self.traitCollection, frameWidth: self.view.frame.width)
-        return UIEdgeInsets(top: 0, left: insets, bottom: FirefoxHomeUX.spacingBetweenSections, right: insets)
+        let defaultInsets =  UIEdgeInsets(top: 0, left: insets, bottom: FirefoxHomeUX.spacingBetweenSections, right: insets)
+        
+        switch Section(section) {
+        case .pocket:
+            return pocketStories.isEmpty ? .zero : defaultInsets
+        case .topSites:
+            return isTopSitesSectionEnabled ? defaultInsets : .zero
+        case .libraryShortcuts:
+            return isYourLibrarySectionEnabled ? defaultInsets : .zero
+        case .jumpBackIn:
+            return isJumpBackInSectionEnabled ? defaultInsets : .zero
+        case .recentlySaved:
+            return isRecentlySavedSectionEnabled ? defaultInsets : .zero
+        case .learnAndAct:
+            return isLearnAndActSectionEnabled ? defaultInsets : .zero
+        case .customizeHome, .karmaMenu:
+            return isLearnAndActSectionEnabled ? defaultInsets : .zero
+        case .karmaMenu:
+            return isKarmaHomeSectionEnabled ? defaultInsets : .zero
+        }
+        
     }
 
     fileprivate func showSiteWithURLHandler(_ url: URL, isGoogleTopSite: Bool = false) {
@@ -797,6 +846,8 @@ extension KarmaHomeViewController {
             return isKarmaHomeSectionEnabled ? 1 : 0
         case .customizeHome:
             return 0
+        case .learnAndAct:
+            return isLearnAndActSectionEnabled ? (learnAndAct?.blocs.count ?? 0 ): 0
         }
     }
 
@@ -819,6 +870,8 @@ extension KarmaHomeViewController {
             return configureCustomizeHomeCell(cell, forIndexPath: indexPath)
         case .karmaMenu:
             return configureCustomizeKarmaCell(cell, forIndexPath: indexPath)
+        case .learnAndAct:
+            return configureCustomizeLearnAndActCell(cell, forIndexPath: indexPath)
         }
     }
 
@@ -892,6 +945,13 @@ extension KarmaHomeViewController {
             self?.homePanelDelegate?.homePanelDidRequestToOpenSettings()
         }
         return customizeHomeCell
+    }
+    
+    private func configureCustomizeLearnAndActCell(_ cell: UICollectionViewCell, forIndexPath indexPath: IndexPath) -> UICollectionViewCell {
+        let customizeCell = cell as! LearnAndActViewCell
+        customizeCell.learnAndAct = self.learnAndAct?.blocs[indexPath.row]
+        customizeCell.setNeedsLayout()
+        return customizeCell
     }
     
 }
@@ -1061,9 +1121,11 @@ extension KarmaHomeViewController: DataObserverDelegate {
             let topSiteCell = self.collectionView?.cellForItem(at: indexPath) as! ASHorizontalScrollCell
             let pointInTopSite = longPressGestureRecognizer.location(in: topSiteCell.collectionView)
             guard let topSiteIndexPath = topSiteCell.collectionView.indexPathForItem(at: pointInTopSite) else { return }
-            presentContextMenu(for: topSiteIndexPath)
+            presentContextMenu(for: IndexPath(row: topSiteIndexPath.row, section: indexPath.section))
         case .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome, .karmaMenu:
             return
+        case .learnAndAct:
+            presentContextMenu(for: indexPath)
         }
     }
 
@@ -1082,6 +1144,10 @@ extension KarmaHomeViewController: DataObserverDelegate {
             site = Site(url: pocketStories[index].url.absoluteString, title: pocketStories[index].title)
             let key = TelemetryWrapper.EventExtraKey.pocketTilePosition.rawValue
             TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .pocketStory, value: nil, extras: [key : "\(index)"])
+        case .learnAndAct:
+            if let bloc = learnAndAct?.blocs {
+                site = Site(url: bloc[index].blogArticleActionURL, title: bloc[index].blogArticleTitle)
+            }
         case .topSites, .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome, .karmaMenu:
             return
         }
@@ -1173,7 +1239,11 @@ extension KarmaHomeViewController: HomePanelContextMenu {
         switch Section(indexPath.section) {
         case .pocket:
             return Site(url: pocketStories[indexPath.row].url.absoluteString, title: pocketStories[indexPath.row].title)
-            
+        case .learnAndAct:
+            if let blocs = learnAndAct?.blocs {
+                return Site(url: blocs[indexPath.row].blogArticleActionURL, title: blocs[indexPath.row].blogArticleTitle)
+            }
+            return nil
         case .topSites:
             return topSitesManager.content[indexPath.item]
         case .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome, .karmaMenu:
@@ -1190,6 +1260,8 @@ extension KarmaHomeViewController: HomePanelContextMenu {
             if let topSiteCell = self.collectionView?.cellForItem(at: IndexPath(row: 0, section: 0)) as? ASHorizontalScrollCell {
                 sourceView = topSiteCell.collectionView.cellForItem(at: indexPath)
             }
+        case .learnAndAct:
+            sourceView = self.collectionView?.cellForItem(at: indexPath)
         case .pocket:
             sourceView = self.collectionView?.cellForItem(at: indexPath)
         case .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome, .karmaMenu:
@@ -1272,7 +1344,7 @@ extension KarmaHomeViewController: HomePanelContextMenu {
         var actions = [openInNewTabAction, openInNewPrivateTabAction, bookmarkAction, shareAction]
 
         switch Section(indexPath.section) {
-        case .pocket, .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome, .karmaMenu: break
+        case .pocket, .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome, .karmaMenu, .learnAndAct: break
         case .topSites: actions.append(contentsOf: topSiteActions)
         }
 

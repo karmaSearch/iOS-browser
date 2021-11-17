@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import SwiftyJSON
+
 struct HomeImage {
     var imageName: String
     var infoTitle: String?
@@ -18,16 +20,15 @@ class KarmaHomeViewModel {
         if let filePath = Bundle.main.path(forResource: "HomeImage", ofType: "json"),
            let data = NSData(contentsOfFile: filePath) {
           do {
-            let jsonString = try String(contentsOfFile: filePath, encoding: String.Encoding.utf8)
 
-              if let jsonData = try JSONSerialization.jsonObject(with: data as Data, options: JSONSerialization.ReadingOptions.allowFragments) as? [String: Any],
-                 let array = jsonData["images"] as? [Any] {
-                  let random = Int.random(in: 0..<array.count)
+              let json = try JSON(data: data as Data)
+              let array = json["images"].arrayValue
+              let random = Int.random(in: 0..<array.count)
                   
-                  if let randomImage = array[random] as? [String: String] {
-                      return HomeImage(imageName: randomImage["imageName"] ?? "", infoTitle: randomImage["infoText"] ?? "", author: randomImage["author"] ?? "")
-                  }
-              }
+              let randomImage = array[random]
+              return HomeImage(imageName: randomImage["imageName"].stringValue, infoTitle: randomImage["infoText"].stringValue, author: randomImage["author"].stringValue)
+              
+              
           }
           catch {
             print(error)
