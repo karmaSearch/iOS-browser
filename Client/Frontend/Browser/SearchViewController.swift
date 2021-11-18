@@ -13,6 +13,19 @@ private enum SearchListSection: Int, CaseIterable {
     case remoteTabs
     case openedTabs
     case bookmarksAndHistory
+    
+    var title: String {
+        switch self {
+        case .searchSuggestions:
+            return .SearchSuggestionHeader
+        case .remoteTabs:
+            return .SearchRemoteTabsHeader
+        case .openedTabs:
+            return .SearchOpenTabsHeader
+        case .bookmarksAndHistory:
+            return .SearchBookmarksAndHistoryHeader
+        }
+    }
 }
 
 private struct SearchViewControllerUX {
@@ -134,6 +147,7 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
         }
 
         NotificationCenter.default.addObserver(self, selector: #selector(dynamicFontChanged), name: .DynamicFontChanged, object: nil)
+        tableView.register(SearchHeader.self, forHeaderFooterViewReuseIdentifier: "SearchHeader")
     }
 
     @objc func dynamicFontChanged(_ notification: Notification) {
@@ -492,9 +506,28 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return super.tableView(tableView, heightForRowAt: indexPath)
     }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "SearchHeader") as? SearchHeader else {
+            return nil
+        }
+        headerView.titleLabel.text = SearchListSection(rawValue: section)?.title
+        return headerView
+    }
 
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 0
+        let headerSize: CGFloat = 30
+        switch SearchListSection(rawValue: section)! {
+        case .searchSuggestions:
+            guard let count = suggestions?.count else { return 0 }
+            return count == 0 ? 0 : headerSize
+        case .openedTabs:
+            return filteredOpenedTabs.isEmpty ? 0 : headerSize
+        case .remoteTabs:
+            return filteredRemoteClientTabs.isEmpty ? 0 : headerSize
+        case .bookmarksAndHistory:
+            return data.count == 0 ? 0 : headerSize
+        }
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -538,7 +571,7 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
     }
 
     func getAttributedBoldSearchSuggestions(searchPhrase: String, query: String) -> NSAttributedString {
-        let boldAttributes = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: DynamicFontHelper().DefaultStandardFont.pointSize)]
+        let boldAttributes = [NSAttributedString.Key.font : UIFont.customFont(ofSize: DynamicFontHelper().DefaultStandardFont.pointSize, weight: .bold)]
         let regularAttributes = [NSAttributedString.Key.font : DynamicFontHelper().DefaultStandardFont]
         let attributedString = NSMutableAttributedString(string: "", attributes: regularAttributes)
         let phraseString = NSAttributedString(string: searchPhrase, attributes: regularAttributes)

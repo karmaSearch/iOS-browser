@@ -410,6 +410,7 @@
 		A32CC8742745663F0039113B /* KGSecondChancesSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A32CC8732745663E0039113B /* KGSecondChancesSolid.ttf */; };
 		A32CC87527456AC10039113B /* UIFont+Karma.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32CC86527455A700039113B /* UIFont+Karma.swift */; };
 		A32CC87727464C400039113B /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A32CC87627464C400039113B /* ProximaNova-Regular.otf */; };
+		A32CC8792746AF4A0039113B /* SearchHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32CC8782746AF490039113B /* SearchHeader.swift */; };
 		A3752C78273E704A008835B1 /* DefaultBrowserOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3752C77273E704A008835B1 /* DefaultBrowserOnboardingView.swift */; };
 		A38C49E2273EAE130074BAFD /* Karma.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A38C49E1273EAE130074BAFD /* Karma.xcconfig */; };
 		A38C49E4273EAEDF0074BAFD /* Karma_Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A38C49E3273EAEDF0074BAFD /* Karma_Debug.xcconfig */; };
@@ -2770,6 +2771,7 @@
 		A32CC871274566060039113B /* KGSecondChancesSketch.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KGSecondChancesSketch.ttf; sourceTree = "<group>"; };
 		A32CC8732745663E0039113B /* KGSecondChancesSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KGSecondChancesSolid.ttf; sourceTree = "<group>"; };
 		A32CC87627464C400039113B /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		A32CC8782746AF490039113B /* SearchHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeader.swift; sourceTree = "<group>"; };
 		A3752C77273E704A008835B1 /* DefaultBrowserOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBrowserOnboardingView.swift; sourceTree = "<group>"; };
 		A38C49E1273EAE130074BAFD /* Karma.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Karma.xcconfig; path = Configuration/Karma.xcconfig; sourceTree = "<group>"; };
 		A38C49E3273EAEDF0074BAFD /* Karma_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Karma_Debug.xcconfig; path = Configuration/Karma_Debug.xcconfig; sourceTree = "<group>"; };
@@ -5678,6 +5680,7 @@
 				D34510871ACF415700EC27F0 /* SearchLoader.swift */,
 				D31A0FC61A65D6D000DC8C7E /* SearchSuggestClient.swift */,
 				23D57E6D25ED6F2700883FAD /* SearchViewController.swift */,
+				A32CC8782746AF490039113B /* SearchHeader.swift */,
 				74C027441B2A348C001B1E88 /* SessionData.swift */,
 				F35B8D2C1D6383E9008E3D61 /* SessionRestoreHelper.swift */,
 				3BF56D261CDBBE1F00AC4D75 /* SimpleToast.swift */,
@@ -8384,6 +8387,7 @@
 				CAC458F1249429C20042561A /* LoginListSelectionHelper.swift in Sources */,
 				EB9A178E20E525DF00B12184 /* ThemeSettingsController.swift in Sources */,
 				C8656D75270F834600E199EA /* FlaggableFeatureOptions.swift in Sources */,
+				A32CC8792746AF4A0039113B /* SearchHeader.swift in Sources */,
 				23A50958253F782E008FEBD9 /* NewTabButton.swift in Sources */,
 				D3C744CD1A687D6C004CE85D /* URIFixup.swift in Sources */,
 				E4A961181AC041C40069AD6F /* ReadabilityService.swift in Sources */,
