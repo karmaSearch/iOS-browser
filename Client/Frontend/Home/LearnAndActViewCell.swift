@@ -51,7 +51,7 @@ class LearnAndActViewCell: UICollectionViewCell {
     private lazy var descriptionLabel: UILabel = .build { label in
         label.font = UIFont.customFont(ofSize: 12, weight: .medium)
         label.textAlignment = .left
-        label.textColor = UIColor(rgb: 0x242629)
+        label.textColor = UIColor.Photon.DarkGrey70
         label.numberOfLines = 5
         label.setContentHuggingPriority(.defaultHigh, for: .vertical)
     }

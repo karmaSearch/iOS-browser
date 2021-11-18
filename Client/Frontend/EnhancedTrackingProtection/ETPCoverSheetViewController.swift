@@ -43,7 +43,7 @@ class ETPCoverSheetViewController: UIViewController {
     private var doneButton: UIButton = {
         let button = UIButton()
         button.setTitle(.SettingsSearchDoneButton, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        button.titleLabel?.font = UIFont.customFont(ofSize: 18, weight: .regular)
         button.setTitleColor(UIColor.systemBlue, for: .normal)
         return button
     }()
@@ -66,7 +66,7 @@ class ETPCoverSheetViewController: UIViewController {
         let label = UILabel()
         label.text = viewModel.etpCoverSheetmodel?.descriptionText
         label.textColor = fxTextThemeColour
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont.customFont(ofSize: 18)
         label.textAlignment = .left
         label.numberOfLines = 0
         return label

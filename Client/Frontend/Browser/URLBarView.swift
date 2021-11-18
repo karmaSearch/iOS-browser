@@ -129,6 +129,7 @@ class URLBarView: UIView {
         cancelButton.addTarget(self, action: #selector(didClickCancel), for: .touchUpInside)
         cancelButton.alpha = 0
         cancelButton.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+        cancelButton.titleLabel?.font = UIFont.customFont(ofSize: 18, weight: .regular)
         return cancelButton
     }()
 
@@ -331,6 +332,7 @@ class URLBarView: UIView {
                 make.edges.equalTo(self.locationContainer).inset(UIEdgeInsets(equalInset: URLBarViewUX.TextFieldBorderWidth))
             }
         }
+        self.cancelButton.sizeToFit()
 
     }
 
@@ -345,7 +347,7 @@ class URLBarView: UIView {
 
         guard let locationTextField = locationTextField else { return }
 
-        locationTextField.font = UIFont.preferredFont(forTextStyle: .body)
+        locationTextField.font = UIFont.customFont(ofSize: 18, weight: .medium)
         locationTextField.adjustsFontForContentSizeCategory = true
         locationTextField.clipsToBounds = true
         locationTextField.translatesAutoresizingMaskIntoConstraints = false

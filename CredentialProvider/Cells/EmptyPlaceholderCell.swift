@@ -12,14 +12,14 @@ class EmptyPlaceholderCell: UITableViewCell {
         let label = UILabel()
         label.textColor = UIColor.CredentialProvider.titleColor
         label.text = .LoginsListNoLoginsFoundTitle
-        label.font = UIFont.systemFont(ofSize: 15)
+        label.font = UIFont.customFont(ofSize: 15)
         return label
     }()
     
     lazy private var descriptionLabel: UILabel = {
         let label = UILabel()
         label.text = .LoginsListNoLoginsFoundDescription
-        label.font = UIFont.systemFont(ofSize: 13)
+        label.font = UIFont.customFont(ofSize: 13)
         label.textColor = .systemGray
         label.textAlignment = .center
         label.numberOfLines = 0

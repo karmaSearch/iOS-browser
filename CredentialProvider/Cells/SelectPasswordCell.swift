@@ -11,7 +11,7 @@ class SelectPasswordCell: UITableViewCell {
     lazy private var selectLabel: UILabel = {
         let label = UILabel()
         label.text = .LoginsListSelectPasswordTitle.uppercased()
-        label.font = UIFont.systemFont(ofSize: 13)
+        label.font = UIFont.customFont(ofSize: 13)
         label.textColor = .systemGray
         return label
     }()

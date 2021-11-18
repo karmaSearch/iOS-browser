@@ -16,7 +16,7 @@ class DefaultBrowserCard: UIView {
         label.text = String.DefaultBrowserCardTitle
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
-        label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        label.font = UIFont.customFont(ofSize: 20, weight: .bold)
         label.textColor = UIColor.theme.defaultBrowserCard.textColor
     }
     private lazy var descriptionText: UILabel = .build { label in
@@ -24,13 +24,13 @@ class DefaultBrowserCard: UIView {
         label.numberOfLines = 4
         label.lineBreakMode = .byWordWrapping
         label.adjustsFontSizeToFitWidth = true
-        label.font = UIFont.systemFont(ofSize: 15, weight: .regular)
+        label.font = UIFont.customFont(ofSize: 15, weight: .regular)
         label.textColor = UIColor.theme.defaultBrowserCard.textColor
     }
     private lazy var learnHowButton: UIButton = .build { [weak self] button in
         button.setTitle(String.PrivateBrowsingLearnMore, for: .normal) // TODO update string
         button.backgroundColor = UIColor.Photon.Blue50
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
+        button.titleLabel?.font = UIFont.customFont(ofSize: 17, weight: .semibold)
         button.titleLabel?.textAlignment = .center
         button.layer.cornerRadius = 8
         button.layer.masksToBounds = true

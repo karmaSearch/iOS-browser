@@ -141,6 +141,6 @@ class BackForwardTableViewCell: UITableViewCell {
         connectingForwards = true
         connectingBackwards = true
         isCurrentTab = false
-        label.font = UIFont.systemFont(ofSize: BackForwardViewCellUX.fontSize)
+        label.font = UIFont.customFont(ofSize: BackForwardViewCellUX.fontSize)
     }
 }

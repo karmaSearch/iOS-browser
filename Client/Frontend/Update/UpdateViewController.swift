@@ -36,7 +36,7 @@ struct UpdateViewControllerUX {
     struct StartBrowsingButton {
         static let colour = UIColor.Photon.Blue50
         static let cornerRadius:CGFloat = 10
-        static let font = UIFont.systemFont(ofSize: 18, weight: .semibold)
+        static let font = UIFont.customFont(ofSize: 18, weight: .semibold)
         static let height = 46
         static let edgeInset = 18
     }
@@ -97,7 +97,7 @@ class UpdateViewController: UIViewController {
         let label = UILabel()
         label.text = viewModel.updateCoverSheetModel?.titleText
         label.textColor = fxTextThemeColour
-        label.font = UIFont.systemFont(ofSize: 34)
+        label.font = UIFont.customFont(ofSize: 34)
         label.textAlignment = .left
         label.numberOfLines = 0
         return label
@@ -105,7 +105,7 @@ class UpdateViewController: UIViewController {
     private var doneButton: UIButton = {
         let button = UIButton()
         button.setTitle(.SettingsSearchDoneButton, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        button.titleLabel?.font = UIFont.customFont(ofSize: 18, weight: .regular)
         button.setTitleColor(UIColor.systemBlue, for: .normal)
         return button
     }()

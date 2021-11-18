@@ -271,8 +271,7 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
         collectionView.translatesAutoresizingMaskIntoConstraints = false
 
         collectionView?.addGestureRecognizer(longPressRecognizer)
-        currentTab?.lastKnownUrl?.absoluteString.hasPrefix("internal://") ?? false ? collectionView?.addGestureRecognizer(tapGestureRecognizer) : nil
-
+        
         let refreshEvents: [Notification.Name] = [.DynamicFontChanged, .HomePanelPrefsChanged, .DisplayThemeChanged]
         refreshEvents.forEach { NotificationCenter.default.addObserver(self, selector: #selector(reload), name: $0, object: nil) }
         let homeScren = Homescreen()
@@ -375,23 +374,25 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
     }
     
     func reduceSection() {
+        currentTab?.lastKnownUrl?.absoluteString.hasPrefix("internal://") ?? false ? collectionView?.addGestureRecognizer(tapGestureRecognizer) : nil
         let reduceSectionsEnabled = Homescreen().reduceSectionsEnabled
         guard sectionsEnabled != reduceSectionsEnabled else { return }
         sectionsEnabled = reduceSectionsEnabled
         if let collectionView = self.collectionView{
             collectionView.reloadData()
         }
-        tapGestureRecognizer.isEnabled = true
+
     }
     
     func expandSection() {
+        
+        collectionView.removeGestureRecognizer(tapGestureRecognizer)
         let fullSectionsEnabled = Homescreen().fullSectionsEnabled
         guard sectionsEnabled != fullSectionsEnabled else { return }
         sectionsEnabled = fullSectionsEnabled
         if let collectionView = self.collectionView{
             collectionView.reloadData()
         }
-        tapGestureRecognizer.isEnabled = false
     }
 
     func scrollToTop(animated: Bool = false) {

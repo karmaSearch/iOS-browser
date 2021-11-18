@@ -104,7 +104,7 @@ class SyncNowSetting: WithAccountSetting {
         )
     }
 
-    fileprivate let syncingTitle = NSAttributedString(string: .SyncingMessageWithEllipsis, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.syncText, NSAttributedString.Key.font: UIFont.systemFont(ofSize: DynamicFontHelper.defaultHelper.DefaultStandardFontSize, weight: UIFont.Weight.regular)])
+    fileprivate let syncingTitle = NSAttributedString(string: .SyncingMessageWithEllipsis, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.syncText, NSAttributedString.Key.font: UIFont.customFont(ofSize: DynamicFontHelper.defaultHelper.DefaultStandardFontSize, weight: UIFont.Weight.regular)])
 
     func startRotateSyncIcon() {
         DispatchQueue.main.async {
@@ -158,7 +158,7 @@ class SyncNowSetting: WithAccountSetting {
 
         let formattedLabel = timestampFormatter.string(from: Date.fromTimestamp(timestamp))
         let attributedString = NSMutableAttributedString(string: formattedLabel)
-        let attributes = [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.headerTextLight, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12, weight: UIFont.Weight.regular)]
+        let attributes = [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.headerTextLight, NSAttributedString.Key.font: UIFont.customFont(ofSize: 12, weight: UIFont.Weight.regular)]
         let range = NSRange(location: 0, length: attributedString.length)
         attributedString.setAttributes(attributes, range: range)
         return attributedString
@@ -495,7 +495,7 @@ class ForgetSyncAuthStateDebugSetting: HiddenSetting {
 class SentryIDSetting: HiddenSetting {
     let deviceAppHash = UserDefaults(suiteName: AppInfo.sharedContainerIdentifier)?.string(forKey: "SentryDeviceAppHash") ?? "0000000000000000000000000000000000000000"
     override var title: NSAttributedString? {
-        return NSAttributedString(string: "Sentry ID: \(deviceAppHash)", attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10)])
+        return NSAttributedString(string: "Sentry ID: \(deviceAppHash)", attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText, NSAttributedString.Key.font: UIFont.customFont(ofSize: 10)])
     }
 
     override func onClick(_ navigationController: UINavigationController?) {

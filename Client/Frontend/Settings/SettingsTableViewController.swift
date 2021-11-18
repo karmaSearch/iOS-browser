@@ -495,7 +495,7 @@ class CheckmarkSetting: Setting {
             let check = UILabel(frame: CGRect(x: 20, y: 10, width: 24, height: 20))
             cell.contentView.addSubview(check)
             check.text = "\u{2713}"
-            check.font = UIFont.systemFont(ofSize: 20)
+            check.font = UIFont.customFont(ofSize: 20)
             check.textColor = checkColor
 
             let result = NSMutableAttributedString()

@@ -228,13 +228,13 @@ class JumpBackInCell: UICollectionViewCell {
 
     let itemTitle: UILabel = .build { label in
         label.adjustsFontSizeToFitWidth = false
-        label.font = UIFont.systemFont(ofSize: JumpBackInCellUX.titleFontSize)
+        label.font = UIFont.customFont(ofSize: JumpBackInCellUX.titleFontSize)
         label.numberOfLines = 2
     }
 
     let itemDetails: UILabel = .build { label in
         label.adjustsFontSizeToFitWidth = false
-        label.font = UIFont.systemFont(ofSize: JumpBackInCellUX.detailsFontSize)
+        label.font = UIFont.customFont(ofSize: JumpBackInCellUX.detailsFontSize)
     }
 
     let faviconImage: UIImageView = .build { imageView in
@@ -246,7 +246,7 @@ class JumpBackInCell: UICollectionViewCell {
 
     let siteNameLabel: UILabel = .build { label in
         label.adjustsFontSizeToFitWidth = false
-        label.font = UIFont.systemFont(ofSize: JumpBackInCellUX.siteFontSize)
+        label.font = UIFont.customFont(ofSize: JumpBackInCellUX.siteFontSize)
         label.textColor = .label
     }
 

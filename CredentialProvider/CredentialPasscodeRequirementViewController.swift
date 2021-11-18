@@ -22,7 +22,7 @@ class CredentialPasscodeRequirementViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = .LoginsWelcomeViewTitle2
-        label.font = UIFont.systemFont(ofSize: 32, weight: .bold)
+        label.font = UIFont.customFont(ofSize: 32, weight: .bold)
         label.numberOfLines = 0
         label.textAlignment = .center
         return label
@@ -32,7 +32,7 @@ class CredentialPasscodeRequirementViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = .LoginsWelcomeViewTagline
-        label.font = UIFont.systemFont(ofSize: 20)
+        label.font = UIFont.customFont(ofSize: 20)
         label.numberOfLines = 0
         label.textAlignment = .center
         return label
@@ -41,7 +41,7 @@ class CredentialPasscodeRequirementViewController: UIViewController {
     lazy private var warningLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont.customFont(ofSize: 18)
         label.text = .LoginsPasscodeRequirementWarning
         label.textAlignment = .center
         label.numberOfLines = 0
