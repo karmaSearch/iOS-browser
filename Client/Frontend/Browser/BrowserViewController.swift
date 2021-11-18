@@ -1674,7 +1674,6 @@ extension BrowserViewController: SearchViewControllerDelegate {
         searchSettingsTableViewController.profile = self.profile
         // Update saerch icon when the searchengine changes
         searchSettingsTableViewController.updateSearchIcon = {
-            self.searchController?.reloadSearchEngines()
             self.searchController?.reloadData()
         }
         let navController = ModalSettingsNavigationController(rootViewController: searchSettingsTableViewController)

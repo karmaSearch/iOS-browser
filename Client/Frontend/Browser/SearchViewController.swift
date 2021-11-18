@@ -131,12 +131,7 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
         searchEngineContainerView.addSubview(searchEngineScrollView)
         view.addSubview(searchEngineContainerView)
 
-        searchEngineScrollViewContent.layer.backgroundColor = UIColor.clear.cgColor
-        searchEngineScrollView.addSubview(searchEngineScrollViewContent)
-
         layoutTable()
-        layoutSearchEngineScrollView()
-        layoutSearchEngineScrollViewContent()
 
         blur.snp.makeConstraints { make in
             make.edges.equalTo(self.view)
@@ -158,7 +153,6 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        reloadSearchEngines()
         reloadData()
     }
 
@@ -174,20 +168,6 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
         }
     }
 
-    fileprivate func layoutSearchEngineScrollViewContent() {
-        searchEngineScrollViewContent.snp.remakeConstraints { make in
-            make.center.equalTo(self.searchEngineScrollView).priority(10)
-            //left-align the engines on iphones, center on ipad
-            if UIScreen.main.traitCollection.horizontalSizeClass == .compact {
-                make.left.equalTo(self.searchEngineScrollView).priority(1000)
-            } else {
-                make.left.greaterThanOrEqualTo(self.searchEngineScrollView).priority(1000)
-            }
-            make.right.lessThanOrEqualTo(self.searchEngineScrollView).priority(1000)
-            make.top.equalTo(self.searchEngineScrollView)
-            make.bottom.equalTo(self.searchEngineScrollView)
-        }
-    }
 
     var searchEngines: SearchEngines! {
         didSet {
@@ -202,8 +182,6 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
                 suggestClient = SearchSuggestClient(searchEngine: searchEngines.defaultEngine, userAgent: ua)
             }
 
-            // Reload the footer list of search engines.
-            reloadSearchEngines()
         }
     }
 
@@ -238,82 +216,6 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
         }
     }
 
-    func reloadSearchEngines() {
-        searchEngineScrollViewContent.subviews.forEach { $0.removeFromSuperview() }
-        var leftEdge = searchEngineScrollViewContent.snp.left
-
-        //search settings icon
-        let searchButton = UIButton()
-        searchButton.setImage(UIImage(named: "quickSearch"), for: [])
-        searchButton.imageView?.contentMode = .center
-        searchButton.layer.backgroundColor = SearchViewControllerUX.EngineButtonBackgroundColor
-        searchButton.addTarget(self, action: #selector(didClickSearchButton), for: .touchUpInside)
-        searchButton.accessibilityLabel = String(format: .SearchSettingsAccessibilityLabel)
-
-        searchEngineScrollViewContent.addSubview(searchButton)
-        searchButton.snp.makeConstraints { make in
-            make.size.equalTo(SearchViewControllerUX.FaviconSize)
-            //offset the left edge to align with search results
-            make.left.equalTo(leftEdge).offset(SearchViewControllerUX.SuggestionMargin * 2)
-            make.top.equalTo(self.searchEngineScrollViewContent).offset(SearchViewControllerUX.SuggestionMargin)
-            make.bottom.equalTo(self.searchEngineScrollViewContent).offset(-SearchViewControllerUX.SuggestionMargin)
-        }
-
-        //search engines
-        leftEdge = searchButton.snp.right
-        for engine in quickSearchEngines {
-            let engineButton = UIButton()
-            engineButton.setImage(engine.image, for: [])
-            engineButton.imageView?.contentMode = .scaleAspectFit
-            engineButton.imageView?.layer.cornerRadius = 4
-            engineButton.layer.backgroundColor = SearchViewControllerUX.EngineButtonBackgroundColor
-            engineButton.addTarget(self, action: #selector(didSelectEngine), for: .touchUpInside)
-            engineButton.accessibilityLabel = String(format: .SearchSearchEngineAccessibilityLabel, engine.shortName)
-
-            engineButton.imageView?.snp.makeConstraints { make in
-                make.width.height.equalTo(SearchViewControllerUX.FaviconSize)
-                return
-            }
-
-            searchEngineScrollViewContent.addSubview(engineButton)
-            engineButton.snp.makeConstraints { make in
-                make.width.equalTo(SearchViewControllerUX.EngineButtonWidth)
-                make.height.equalTo(SearchViewControllerUX.EngineButtonHeight)
-                make.left.equalTo(leftEdge)
-                make.top.equalTo(self.searchEngineScrollViewContent)
-                make.bottom.equalTo(self.searchEngineScrollViewContent)
-                if engine === self.searchEngines.quickSearchEngines.last {
-                    make.right.equalTo(self.searchEngineScrollViewContent)
-                }
-            }
-            leftEdge = engineButton.snp.right
-        }
-    }
-
-    @objc func didSelectEngine(_ sender: UIButton) {
-        // The UIButtons are the same cardinality and order as the array of quick search engines.
-        // Subtract 1 from index to account for magnifying glass accessory.
-        guard let index = searchEngineScrollViewContent.subviews.firstIndex(of: sender) else {
-            assertionFailure()
-            return
-        }
-
-        let engine = quickSearchEngines[index - 1]
-
-        guard let url = engine.searchURLForQuery(searchQuery) else {
-            assertionFailure()
-            return
-        }
-
-        Telemetry.default.recordSearch(location: .quickSearch, searchEngine: engine.engineID ?? "other")
-        GleanMetrics.Search.counts["\(engine.engineID ?? "custom").\(SearchesMeasurement.SearchLocation.quickSearch.rawValue)"].add()
-
-        searchDelegate?.searchViewController(self, didSelectURL: url, searchTerm: "")
-    }
-
-    @objc func didClickSearchButton() {
-        self.searchDelegate?.presentSearchSettingsController()
-    }
 
     func keyboardHelper(_ keyboardHelper: KeyboardHelper, keyboardWillShowWithState state: KeyboardState) {
         animateSearchEnginesWithKeyboard(state)
@@ -331,7 +233,6 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
         // The height of the suggestions row may change, so call reloadData() to recalculate cell heights.
         coordinator.animate(alongsideTransition: { _ in
             self.tableView.reloadData()
-            self.layoutSearchEngineScrollViewContent()
         }, completion: nil)
     }
 
