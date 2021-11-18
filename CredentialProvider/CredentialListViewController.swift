@@ -81,7 +81,7 @@ class CredentialListViewController: UIViewController, CredentialListViewProtocol
         navigationItem.largeTitleDisplayMode = .never
         navigationController?.navigationBar.accessibilityIdentifier = "firefox.navigationBar"
         navigationController?.navigationBar.titleTextAttributes = [
-            .font: UIFont.navigationTitleFont
+            .font: UIFont.customFont(ofSize: 19, weight: .semibold)
         ]
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: cancelButton)
         searchController = self.getStyledSearchController()
