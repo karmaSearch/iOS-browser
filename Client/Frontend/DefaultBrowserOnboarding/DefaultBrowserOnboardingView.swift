@@ -17,8 +17,8 @@ class DefaultBrowserOnboardingView: UIView {
     
     private lazy var titleLabel: UILabel = .build { label in
         label.textColor = .white
-        label.text = "Set up KARMA as your default browser !"
-        label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        label.text = .DefaultBrowserMenuItem
+        label.font = UIFont.customFontKG(ofSize: 20)
         label.textAlignment = .center
         label.numberOfLines = 2
         label.adjustsFontSizeToFitWidth = true
@@ -26,16 +26,16 @@ class DefaultBrowserOnboardingView: UIView {
     
     private lazy var subTitleLabelPage: UILabel = .build { label in
         label.textColor = UIColor.Photon.LightGrey90
-        label.text = "Websites will be opened by KARMA so that you can help protect biodiversity and improve animal welfare"
-        label.font = UIFont.systemFont(ofSize: 15)
+        label.text = .DefaultBrowserCardDescription
+        label.font = DynamicFontHelper.defaultHelper.DeviceFont
         label.textAlignment = .center
         label.adjustsFontSizeToFitWidth = true
         label.numberOfLines = 0
     }
     
     private lazy var chooseButton: UIButton = .build { button in
-        button.setTitle("Choose KARMA", for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 19, weight: .regular)
+        button.setTitle(.DefaultBrowserOnboardingButton, for: .normal)
+        button.titleLabel?.font = DynamicFontHelper.defaultHelper.DeviceFontLargeBold
         button.setTitleColor(UIColor.Photon.White100, for: .normal)
         button.setBackgroundColor(UIColor.Photon.Green60, forState: .normal)
         button.clipsToBounds = true
@@ -46,8 +46,8 @@ class DefaultBrowserOnboardingView: UIView {
     }
     
     private lazy var notNowButton: UIButton = .build { button in
-        button.setTitle("Not now", for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 19, weight: .regular)
+        button.setTitle(.DefaultBrowserOnboardingButtonSkip, for: .normal)
+        button.titleLabel?.font = DynamicFontHelper.defaultHelper.DeviceFont
         button.setTitleColor(UIColor.Photon.Green60, for: .normal)
         button.setBackgroundColor(UIColor.clear, forState: .normal)
         button.clipsToBounds = true

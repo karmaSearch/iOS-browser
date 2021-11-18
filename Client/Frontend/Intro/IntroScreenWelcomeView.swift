@@ -35,27 +35,28 @@ class IntroScreenWelcomeView: UIView, CardTheme {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
-        label.font = UIFont.systemFont(ofSize: 32, weight: .bold)
+        label.font = UIFont.customFont(ofSize: 24, weight: .bold)
         label.textAlignment = .center
         label.adjustsFontSizeToFitWidth = true
+        label.setContentHuggingPriority(.defaultHigh, for: .vertical)
         return label
     }()
     
     private lazy var subTitleLabelPage1: UILabel = {
         let label = UILabel()
         label.textColor = UIColor.Photon.LightGrey90
-        label.font = UIFont.systemFont(ofSize: 15)
+        label.font = UIFont.customFont(ofSize: 15, weight: .medium)
         label.textAlignment = .center
-        label.adjustsFontSizeToFitWidth = true
         label.numberOfLines = 2
+        label.baselineAdjustment = .alignCenters
         return label
     }()
     
     private var closeButton: UIButton = {
         let closeButton = UIButton()
         closeButton.tintColor = UIColor.Photon.Grey11
-        closeButton.setTitle("skip", for: .normal)
-        closeButton.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .medium)
+        closeButton.setTitle(.IntroButtonSkip, for: .normal)
+        closeButton.titleLabel?.font = UIFont.customFont(ofSize: 15, weight: .medium)
         closeButton.setImage(UIImage(named: "skip-right-arrow"), for: .normal)
         closeButton.semanticContentAttribute = .forceRightToLeft
         return closeButton
@@ -64,7 +65,7 @@ class IntroScreenWelcomeView: UIView, CardTheme {
     private lazy var nextButton: UIButton = {
         let button = UIButton()
         button.setTitle(.IntroNextButtonTitle, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 19, weight: .regular)
+        button.titleLabel?.font = UIFont.customFont(ofSize: 15, weight: .medium)
         button.setTitleColor(UIColor.Photon.White100, for: .normal)
         button.setBackgroundColor(UIColor.Photon.Green60, forState: .normal)
         button.layer.cornerRadius = 12
@@ -145,7 +146,9 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         
         iconImage.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalToSuperview().inset(40)
+            make.top.greaterThanOrEqualToSuperview().inset(10)
+            make.top.equalToSuperview().inset(40).priority(.medium)
+            make.height.equalTo(iconImage.snp.width).multipliedBy(0.44)
         }
         
         titleLabel.snp.makeConstraints { make in
@@ -155,13 +158,13 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         
         subTitleLabelPage1.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(60)
-            make.top.equalTo(titleLabel.snp.bottom)
+            make.top.equalTo(titleLabel.snp.bottom).offset(10)
         }
         
         nextButton.addTarget(self, action: #selector(nextAction), for: .touchUpInside)
         nextButton.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(60)
-            make.top.greaterThanOrEqualTo(subTitleLabelPage1.snp.bottom).offset(20)
+            make.top.equalTo(subTitleLabelPage1.snp.bottom).offset(20)
             make.bottom.equalToSuperview().inset(100).priority(.medium)
             make.height.equalTo(31)
         }

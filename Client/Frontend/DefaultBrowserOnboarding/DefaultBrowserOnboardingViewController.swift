@@ -7,20 +7,6 @@ import UIKit
 import Shared
 import SnapKit
 
-struct DBOnboardingUX {
-    static let textOffset = 20
-    static let textOffsetSmall = 13
-    static let fontSize: CGFloat = 24
-    static let fontSizeSmall: CGFloat = 20
-    static let fontSizeXSmall: CGFloat = 16
-    static let titleSize: CGFloat = 28
-    static let titleSizeSmall: CGFloat = 24
-    static let titleSizeLarge: CGFloat = 34
-    static let containerViewHeight = 350
-    static let containerViewHeightSmall = 300
-    static let containerViewHeightXSmall = 250
-}
-
 class DefaultBrowserOnboardingViewController: UIViewController, OnViewDismissable {
     
     // MARK: - Properties
@@ -30,20 +16,7 @@ class DefaultBrowserOnboardingViewController: UIViewController, OnViewDismissabl
     let viewModel = DefaultBrowserOnboardingViewModel()
     let theme = LegacyThemeManager.instance
     // Private vars
-    private var fxTextThemeColour: UIColor {
-        // For dark theme we want to show light colours and for light we want to show dark colours
-        return theme.currentName == .dark ? .white : .black
-    }
-    private var fxBackgroundThemeColour: UIColor = UIColor.theme.onboarding.backgroundColor
-    private var descriptionFontSize: CGFloat {
-        return screenSize.height > 1000 ? DBOnboardingUX.fontSizeXSmall :
-               screenSize.height > 668 ? DBOnboardingUX.fontSize :
-               screenSize.height > 640 ? DBOnboardingUX.fontSizeSmall : DBOnboardingUX.fontSizeXSmall
-    }
-    private var titleFontSize: CGFloat {
-        return screenSize.height > 1000 ? DBOnboardingUX.titleSizeLarge :
-               screenSize.height > 640 ? DBOnboardingUX.titleSize : DBOnboardingUX.titleSizeSmall
-    }
+    
     // Orientation independent screen size
     private let screenSize = DeviceInfo.screenSizeOrientationIndependent()
 
@@ -141,7 +114,6 @@ class DefaultBrowserOnboardingViewController: UIViewController, OnViewDismissabl
         }
         
     }
-    
     
     // Button Actions
     @objc private func dismissAnimated() {

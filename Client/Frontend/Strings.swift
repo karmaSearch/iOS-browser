@@ -1122,7 +1122,7 @@ extension String {
     // ETP Cover Sheet
     public static let CoverSheetETPTitle = MZLocalizedString("CoverSheet.v24.ETP.Title", value: "Protection Against Ad Tracking", comment: "Title for the new ETP mode i.e. standard vs strict", lastUpdated: .unknown)
     public static let CoverSheetETPDescription = MZLocalizedString("CoverSheet.v24.ETP.Description", value: "Built-in Enhanced Tracking Protection helps stop ads from following you around. Turn on Strict to block even more trackers, ads, and popups. ", comment: "Description for the new ETP mode i.e. standard vs strict", lastUpdated: .unknown)
-    public static let CoverSheetETPSettingsButton = MZLocalizedString("CoverSheet.v24.ETP.Settings.Button", value: "Go to Settings", comment: "Text for the new ETP settings button", lastUpdated: .unknown)
+    public static let CoverSheetETPSettingsButton = MZLocalizedString("CoverSheet.v24.ETP.Settings.Button", value: "Choose KARMA", comment: "Text for the new ETP settings button", lastUpdated: .unknown)
 }
 
 // MARK: - FxA Signin screen
@@ -1231,7 +1231,9 @@ extension String {
     public static let DefaultBrowserOnboardingDescriptionStep1 = MZLocalizedString("DefaultBrowserOnboarding.Description1", tableName: "Default Browser", value: "1. Go to Settings", comment: "Description for default browser onboarding card.", lastUpdated: .unknown)
     public static let DefaultBrowserOnboardingDescriptionStep2 = MZLocalizedString("DefaultBrowserOnboarding.Description2", tableName: "Default Browser", value: "2. Tap Default Browser App", comment: "Description for default browser onboarding card.", lastUpdated: .unknown)
     public static let DefaultBrowserOnboardingDescriptionStep3 = MZLocalizedString("DefaultBrowserOnboarding.Description3", tableName: "Default Browser", value: "3. Select Firefox", comment: "Description for default browser onboarding card.", lastUpdated: .unknown)
-    public static let DefaultBrowserOnboardingButton = MZLocalizedString("DefaultBrowserOnboarding.Button", tableName: "Default Browser", value: "Go to Settings", comment: "Button string to open settings that allows user to switch their default browser to Firefox.", lastUpdated: .unknown)
+    public static let DefaultBrowserOnboardingButton = MZLocalizedString("DefaultBrowserOnboarding.Button", tableName: "Default Browser", value: "Choose KARMA", comment: "Button string to open settings that allows user to switch their default browser to Firefox.", lastUpdated: .unknown)
+    public static let DefaultBrowserOnboardingButtonSkip = MZLocalizedString("DefaultBrowserOnboarding.Button.Skip", tableName: "Default Browser", value: "Not now", comment: "Button string to skip", lastUpdated: .unknown)
+    
 }
 
 // MARK: - FxAWebViewController

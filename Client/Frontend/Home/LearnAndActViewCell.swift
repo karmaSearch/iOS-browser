@@ -30,36 +30,40 @@ class LearnAndActViewCell: UICollectionViewCell {
     }
     
     private lazy var titleLabel: UILabel = .build { label in
-        label.font = DynamicFontHelper.defaultHelper.DefaultMediumBoldFont
+        label.font = UIFont.customFont(ofSize: 16, weight: .bold)
         label.textAlignment = .left
         label.textColor = UIColor.Photon.DarkGrey90
         label.numberOfLines = 2
     }
     
     private lazy var typeLabel: UILabel = .build { label in
-        label.font = DynamicFontHelper.defaultHelper.DefaultMediumFont
-        label.textAlignment = .center
+        label.font = UIFont.customFont(ofSize: 10, weight: .bold)
+        label.textAlignment = .left
         label.textColor = UIColor.Photon.DarkGrey90
     }
     
     private lazy var timeToRead: UILabel = .build { label in
-        label.font = DynamicFontHelper.defaultHelper.DefaultMediumFont
+        label.font = UIFont.customFont(ofSize: 10, weight: .medium)
         label.textAlignment = .left
-        label.textColor = UIColor(rgba: 0x94a1b2)
+        label.textColor = UIColor(rgb: 0x94A1B2)
     }
     
     private lazy var descriptionLabel: UILabel = .build { label in
-        label.font = DynamicFontHelper.defaultHelper.DefaultMediumFont
+        label.font = UIFont.customFont(ofSize: 12, weight: .medium)
         label.textAlignment = .left
-        label.textColor = UIColor(rgba: 0x242629)
+        label.textColor = UIColor(rgb: 0x242629)
         label.numberOfLines = 5
         label.setContentHuggingPriority(.defaultHigh, for: .vertical)
     }
     
     private lazy var linkLabel: UILabel = .build { label in
-        label.font = DynamicFontHelper.defaultHelper.DefaultSmallFontBold
+        label.font = UIFont.customFont(ofSize: 12, weight: .bold)
         label.textAlignment = .left
         label.textColor = UIColor.Photon.Green60
+    }
+    
+    private lazy var seprator: UIView = .build { view in
+        view.backgroundColor = UIColor.Photon.LightGrey90
     }
     
     public var learnAndAct: LearnAndActBloc? {
@@ -77,20 +81,29 @@ class LearnAndActViewCell: UICollectionViewCell {
             SDWebImageDownloader.shared.setValue("image/webp,image/apng,image/*,*/*;q=0.8", forHTTPHeaderField:"Accept")
             
             imageView.sd_setImage(with: URL(string: "https://mykarma.org"+learnAndAct.blogArticleImage), completed: nil)
-        
+            
+         /*   let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.lineHeightMultiple = 1.23
+            paragraphStyle.lineBreakMode = .byWordWrapping
+            paragraphStyle.paragraphSpacingBefore = 0
+            descriptionLabel.attributedText = NSMutableAttributedString(string: learnAndAct.blogArticleDescription, attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle, .baselineOffset: 0])
+            
+            let paragraphStyleForTitle = NSMutableParagraphStyle()
+            paragraphStyleForTitle.lineHeightMultiple = 0.86
+            titleLabel.attributedText = NSMutableAttributedString(string: learnAndAct.blogArticleTitle, attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyleForTitle])*/
         }
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.contentView.addSubviews(imageView, titleLabel, typeView, timeToRead, titleLabel, timeToRead, descriptionLabel, linkLabel)
+        self.contentView.addSubviews(imageView, titleLabel, typeView, timeToRead, titleLabel, timeToRead, descriptionLabel, linkLabel, seprator)
         
         typeView.addSubview(typeLabel)
         
         typeView.snp.makeConstraints { make in
-            make.top.greaterThanOrEqualToSuperview().offset(padding)
+            make.top.greaterThanOrEqualToSuperview()
             make.leading.equalToSuperview()
-            make.width.greaterThanOrEqualTo(65)
+            make.width.greaterThanOrEqualTo(58)
             make.height.equalTo(17)
         }
         
@@ -102,7 +115,7 @@ class LearnAndActViewCell: UICollectionViewCell {
         
         imageView.snp.makeConstraints { make in
             make.width.equalTo(imageView.snp.height)
-            make.width.equalToSuperview().multipliedBy(0.33)
+            make.width.equalToSuperview().multipliedBy(0.33).priority(.high)
             make.top.equalTo(typeView.snp.centerY)
             make.centerY.equalToSuperview()
             make.leading.equalTo(padding2)
@@ -127,10 +140,16 @@ class LearnAndActViewCell: UICollectionViewCell {
         }
         
         linkLabel.snp.makeConstraints { make in
-            make.top.equalTo(descriptionLabel.snp.bottom)
+            make.top.equalTo(descriptionLabel.snp.bottom).offset(1)
             make.leading.equalTo(imageView.snp.trailing).offset(padding)
             make.trailing.equalToSuperview().offset(-padding)
             make.bottom.lessThanOrEqualToSuperview().offset(-padding)
+            make.height.equalTo(13)
+        }
+        
+        seprator.snp.makeConstraints { make in
+            make.leading.trailing.bottom.equalToSuperview()
+            make.height.equalTo(1)
         }
     }
     

@@ -28,7 +28,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
 
     private lazy var welcomeCard1: IntroScreenWelcomeView = {
         let welcomeCardView = IntroScreenWelcomeView()
-        welcomeCardView.setData(title: "Search with a purpose", description: "Your searches\n fund non-profit organisations, for free", icon: "welcome-icon-1", background: "welcome-background-1")
+        welcomeCardView.setData(title: .IntroSlidesTitle1, description: .IntroSlidesSubTitle1, icon: "welcome-icon-1", background: "welcome-background-1")
         welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
         welcomeCardView.clipsToBounds = true
         return welcomeCardView
@@ -36,7 +36,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
     
     private lazy var welcomeCard2: IntroScreenWelcomeView = {
         let welcomeCardView = IntroScreenWelcomeView()
-        welcomeCardView.setData(title: "Find what you’re looking for", description: "KARMA works just like your usual search engine", icon: "welcome-icon-2", background: "welcome-background-2")
+        welcomeCardView.setData(title: .IntroSlidesTitle2, description: .IntroSlidesSubTitle2,  icon: "welcome-icon-2", background: "welcome-background-2")
         welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
         welcomeCardView.clipsToBounds = true
         return welcomeCardView
@@ -44,7 +44,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
     
     private lazy var welcomeCard3: IntroScreenWelcomeView = {
         let welcomeCardView = IntroScreenWelcomeView()
-        welcomeCardView.setData(title: "Learn & Act", description: "Get involved and keep up-to-date with the KARMA news feed", icon: "welcome-icon-3", background: "welcome-background-3", isLast: true)
+        welcomeCardView.setData(title: .IntroSlidesTitle3, description: .IntroSlidesSubTitle3, icon: "welcome-icon-3", background: "welcome-background-3", isLast: true)
         welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
         welcomeCardView.clipsToBounds = true
         return welcomeCardView

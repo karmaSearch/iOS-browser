@@ -1,5 +1,5 @@
 /* Button string to open settings that allows user to switch their default browser to Karma. */
-"DefaultBrowserCard.Button" = "Go to Settings";
+"DefaultBrowserCard.Button" = "Choose KARMA";
 
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Learn How";
@@ -11,7 +11,7 @@
 "DefaultBrowserCard.Title" = "Switch Your Default Browser";
 
 /* Button string to open settings that allows user to switch their default browser to Karma. */
-"DefaultBrowserOnboarding.Button" = "Go to Settings";
+"DefaultBrowserOnboarding.Button" = "Choose KARMA";
 
 /* Description for default browser onboarding card. */
 "DefaultBrowserOnboarding.Description1" = "1. Go to Settings";
@@ -26,5 +26,5 @@
 "DefaultBrowserOnboarding.Screenshot" = "Default Browser App";
 
 /* Menu option for setting Karma as default browser. */
-"Settings.DefaultBrowserMenuItem" = "Set as Default Browser";
+"Settings.DefaultBrowserMenuItem" = "Set up KARMA as your default browser !";
 
