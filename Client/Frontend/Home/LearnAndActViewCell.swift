@@ -87,7 +87,9 @@ class LearnAndActViewCell: UICollectionViewCell {
             paragraphStyle.maximumLineHeight = 18
             paragraphStyle.minimumLineHeight = 18
             
-            descriptionLabel.attributedText = NSMutableAttributedString(string: learnAndAct.blogArticleDescription, attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle, .baselineOffset: 2])
+            let baselineOffSet = learnAndAct.blogArticleDuration.isEmpty ? 0 : 1
+            
+            descriptionLabel.attributedText = NSMutableAttributedString(string: learnAndAct.blogArticleDescription, attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle, .baselineOffset: baselineOffSet])
             descriptionLabel.lineBreakMode = .byTruncatingTail
             
             let paragraphStyleForTitle = NSMutableParagraphStyle()
@@ -100,12 +102,12 @@ class LearnAndActViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.contentView.addSubviews(imageView, titleLabel, typeView, timeToRead, titleLabel, timeToRead, descriptionLabel, linkLabel, seprator)
+        self.contentView.addSubviews(imageView, titleLabel, typeView, timeToRead, timeToRead, descriptionLabel, linkLabel, seprator)
         
         typeView.addSubview(typeLabel)
         
         typeView.snp.makeConstraints { make in
-            make.top.greaterThanOrEqualToSuperview()
+            make.top.equalToSuperview()
             make.leading.equalToSuperview()
             make.width.greaterThanOrEqualTo(58)
             make.height.equalTo(17)
@@ -119,14 +121,13 @@ class LearnAndActViewCell: UICollectionViewCell {
         
         imageView.snp.makeConstraints { make in
             make.width.equalTo(imageView.snp.height)
-            make.width.equalToSuperview().multipliedBy(0.33).priority(.high)
             make.top.equalTo(typeView.snp.centerY)
             make.centerY.equalToSuperview()
             make.leading.equalTo(padding2)
         }
         
         titleLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(padding)
+            make.top.equalTo(typeView.snp.top)
             make.leading.equalTo(imageView.snp.trailing).offset(padding)
             make.trailing.equalToSuperview().offset(-padding)
         }
@@ -147,7 +148,7 @@ class LearnAndActViewCell: UICollectionViewCell {
             make.top.equalTo(descriptionLabel.snp.bottom).offset(1)
             make.leading.equalTo(imageView.snp.trailing).offset(padding)
             make.trailing.equalToSuperview().offset(-padding)
-            make.bottom.lessThanOrEqualToSuperview().offset(-padding)
+            make.bottom.lessThanOrEqualTo(imageView.snp.bottom)
             make.height.equalTo(13)
         }
         

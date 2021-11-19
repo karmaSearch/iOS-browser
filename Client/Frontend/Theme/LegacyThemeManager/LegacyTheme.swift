@@ -90,7 +90,7 @@ class BrowserColor {
 
 // The back/forward/refresh/menu button (bottom toolbar)
 class ToolbarButtonColor {
-    var selectedTint: UIColor { return UIColor.Photon.Blue40 }
+    var selectedTint: UIColor { return UIColor.Photon.Green60 }
     var disabledTint: UIColor { return UIColor.Photon.Grey30 }
 }
 
