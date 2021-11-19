@@ -72,7 +72,7 @@
       buildConfiguration = "Karma">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Firefox"
+      buildConfiguration = "Karma"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
