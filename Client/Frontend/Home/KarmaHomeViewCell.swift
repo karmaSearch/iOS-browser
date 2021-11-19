@@ -11,9 +11,8 @@ import UIKit
 
 class KarmaHomeViewCell: UICollectionViewCell {
     private lazy var backgroundImageView: UIImageView = .build { imageView in
-        imageView.contentMode = .center
+        imageView.contentMode = .scaleAspectFill
         imageView.layer.masksToBounds = true
-        imageView.image = UIImage(named: "Animal=Animal18 Medium")
     }
 
     private lazy var infoButton: UIButton = .build { button in
