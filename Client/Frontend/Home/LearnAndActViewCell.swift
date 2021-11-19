@@ -54,6 +54,7 @@ class LearnAndActViewCell: UICollectionViewCell {
         label.textColor = UIColor.Photon.DarkGrey70
         label.numberOfLines = 5
         label.setContentHuggingPriority(.defaultHigh, for: .vertical)
+        label.clipsToBounds = false
     }
     
     private lazy var linkLabel: UILabel = .build { label in
@@ -82,15 +83,18 @@ class LearnAndActViewCell: UICollectionViewCell {
             
             imageView.sd_setImage(with: URL(string: "https://mykarma.org"+learnAndAct.blogArticleImage), completed: nil)
             
-         /*   let paragraphStyle = NSMutableParagraphStyle()
-            paragraphStyle.lineHeightMultiple = 1.23
-            paragraphStyle.lineBreakMode = .byWordWrapping
-            paragraphStyle.paragraphSpacingBefore = 0
-            descriptionLabel.attributedText = NSMutableAttributedString(string: learnAndAct.blogArticleDescription, attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle, .baselineOffset: 0])
+            let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.maximumLineHeight = 18
+            paragraphStyle.minimumLineHeight = 18
+            
+            descriptionLabel.attributedText = NSMutableAttributedString(string: learnAndAct.blogArticleDescription, attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle, .baselineOffset: 2])
+            descriptionLabel.lineBreakMode = .byTruncatingTail
             
             let paragraphStyleForTitle = NSMutableParagraphStyle()
             paragraphStyleForTitle.lineHeightMultiple = 0.86
-            titleLabel.attributedText = NSMutableAttributedString(string: learnAndAct.blogArticleTitle, attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyleForTitle])*/
+            titleLabel.attributedText = NSMutableAttributedString(string: learnAndAct.blogArticleTitle, attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyleForTitle])
+            
+            descriptionLabel.sizeToFit()
         }
     }
     
