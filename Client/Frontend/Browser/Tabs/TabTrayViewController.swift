@@ -43,16 +43,6 @@ class TabTrayViewController: UIViewController {
         return button
     }()
 
-    lazy var syncTabButton: UIBarButtonItem = {
-        let button = UIBarButtonItem(title: .FxASyncNow,
-                                     style: .plain,
-                                     target: self,
-                                     action: #selector(didTapSyncTabs))
-        
-        button.accessibilityIdentifier = "syncTabsButtonTabTray"
-        return button
-    }()
-    
     lazy var syncLoadingView: UIStackView = {
         let syncingLabel = UILabel()
         syncingLabel.text = .SyncingMessageWithEllipsis
@@ -94,7 +84,7 @@ class TabTrayViewController: UIViewController {
     }()
 
     lazy var bottomToolbarItemsForSync: [UIBarButtonItem] = {
-        return [flexibleSpace, syncTabButton]
+        return [flexibleSpace]
     }()
 
     lazy var navigationMenu: UISegmentedControl = {
@@ -113,14 +103,12 @@ class TabTrayViewController: UIViewController {
 
     lazy var iPadNavigationMenuIdentifiers: UISegmentedControl = {
         return UISegmentedControl(items: [String.TabTraySegmentedControlTitlesTabs,
-                                          String.TabTraySegmentedControlTitlesPrivateTabs,
-                                          String.TabTraySegmentedControlTitlesSyncedTabs])
+                                          String.TabTraySegmentedControlTitlesPrivateTabs])
     }()
 
     lazy var iPhoneNavigationMenuIdentifiers: UISegmentedControl = {
         return UISegmentedControl(items: [UIImage(named: "nav-tabcounter")!.overlayWith(image: countLabel),
-                                          UIImage(named: "smallPrivateMask")!,
-                                          UIImage(named: "synced_devices")!])
+                                          UIImage(named: "smallPrivateMask")!])
     }()
 
     // Toolbars
@@ -172,7 +160,6 @@ class TabTrayViewController: UIViewController {
     }
 
     private func viewSetup() {
-        viewModel.syncedTabsController.remotePanelDelegate = self
         
         if let appWindow = (UIApplication.shared.delegate?.window),
            let window = appWindow as UIWindow? {
@@ -236,13 +223,6 @@ class TabTrayViewController: UIViewController {
             switchBetweenLocalPanels(withPrivateMode: false)
         case 1:
             switchBetweenLocalPanels(withPrivateMode: true)
-        case 2:
-            TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .libraryPanel, value: .syncPanel, extras: nil)
-            if children.first == viewModel.tabTrayView {
-                hideCurrentPanel()
-                updateToolbarItems(forSyncTabs: viewModel.profile.hasSyncableAccount())
-                showPanel(viewModel.syncedTabsController)
-            }
         default:
             return
         }
@@ -286,7 +266,7 @@ class TabTrayViewController: UIViewController {
     fileprivate func updateToolbarItems(forSyncTabs showSyncItems: Bool = false) {
         if shouldUseiPadSetup {
             if navigationMenu.selectedSegmentIndex == 2 {
-                navigationItem.rightBarButtonItems = (showSyncItems ? [doneButton, fixedSpace, syncTabButton] : [doneButton])
+                navigationItem.rightBarButtonItems = (showSyncItems ? [doneButton, fixedSpace] : [doneButton])
                 navigationItem.leftBarButtonItem = nil
             } else {
                 navigationItem.rightBarButtonItems = [doneButton, fixedSpace, newTabButton]
@@ -305,35 +285,9 @@ class TabTrayViewController: UIViewController {
         switch notification.name {
         case .DisplayThemeChanged:
             applyTheme()
-        case .ProfileDidStartSyncing, .ProfileDidFinishSyncing:
-            updateButtonTitle(notification)
         case .TabClosed:
             countLabel.text = viewModel.normalTabsCount
             iPhoneNavigationMenuIdentifiers.setImage(UIImage(named: "nav-tabcounter")!.overlayWith(image: countLabel), forSegmentAt: 0)
-        default:
-            break
-        }
-    }
-    
-    private func updateButtonTitle(_ notification: Notification) {
-        switch notification.name {
-        case .ProfileDidStartSyncing:
-            // Update Sync Tab button
-            DispatchQueue.main.async { [weak self] in
-                guard let self = self else { return }
-                
-                self.syncTabButton.isEnabled = false
-                self.syncTabButton.customView = self.syncLoadingView
-            }
-        case .ProfileDidFinishSyncing:
-            // Update Sync Tab button
-            DispatchQueue.main.async { [weak self] in
-                guard let self = self else { return }
-                
-                self.syncTabButton.customView = nil
-                self.syncTabButton.title = .FxASyncNow
-                self.syncTabButton.isEnabled = true
-            }
         default:
             break
         }
@@ -351,7 +305,6 @@ extension TabTrayViewController: NotificationThemeable {
          } else {
              navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black, .font: UIFont.customFont(ofSize: 19, weight: .semibold)]
          }
-         viewModel.syncedTabsController.applyTheme()
      }
  }
 
@@ -388,45 +341,7 @@ extension TabTrayViewController {
         viewModel.didTapDeleteTab(sender)
     }
 
-    @objc func didTapSyncTabs(_ sender: UIBarButtonItem) {
-        viewModel.didTapSyncTabs(sender)
-    }
-
     @objc func didTapDone() {
         self.dismiss(animated: true, completion: nil)
     }
-}
-
-// MARK: - RemoteTabsPanel : LibraryPanelDelegate
-
-extension TabTrayViewController: RemotePanelDelegate {
-        func remotePanelDidRequestToSignIn() {
-            fxaSignInOrCreateAccountHelper()
-        }
-        
-        func remotePanelDidRequestToCreateAccount() {
-            fxaSignInOrCreateAccountHelper()
-        }
-        
-        func remotePanelDidRequestToOpenInNewTab(_ url: URL, isPrivate: Bool) {
-            TelemetryWrapper.recordEvent(category: .action, method: .open, object: .syncTab)
-            self.openInNewTab?(url, isPrivate)
-            self.dismissVC()
-        }
-        
-        func remotePanel(didSelectURL url: URL, visitType: VisitType) {
-            TelemetryWrapper.recordEvent(category: .action, method: .open, object: .syncTab)
-            self.didSelectUrl?(url, visitType)
-            self.dismissVC()
-        }
-    
-        // Sign In and Create Account Helper
-        func fxaSignInOrCreateAccountHelper() {
-            let fxaParams = FxALaunchParams(query: ["entrypoint": "homepanel"])
-            let controller = FirefoxAccountSignInViewController.getSignInOrFxASettingsVC(fxaParams, flowType: .emailLoginFlow, referringPage: .tabTray, profile: viewModel.profile)
-            (controller as? FirefoxAccountSignInViewController)?.shouldReload = { [weak self] in
-                self?.viewModel.reloadRemoteTabs()
-            }
-            presentThemedViewController(navItemLocation: .Left, navItemText: .Close, vcBeingPresented: controller, topTabsVisible: UIDevice.current.userInterfaceIdiom == .pad)
-        }
 }
