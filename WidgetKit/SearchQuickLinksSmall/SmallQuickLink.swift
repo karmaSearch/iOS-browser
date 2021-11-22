@@ -36,9 +36,41 @@ struct SmallQuickLinkView : View {
 
     @ViewBuilder
     var body: some View {
-        ImageButtonWithLabel(isSmall: true, link: entry.link)
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(LinearGradient(gradient: Gradient(colors: entry.link.backgroundColors), startPoint: .bottomLeading, endPoint: .topTrailing)).widgetURL(entry.link.smallWidgetUrl)
+        VStack(alignment: .trailing, spacing: -5) {
+            Image("logoKarma")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(maxWidth: .infinity, idealHeight: 16)
+                .padding(EdgeInsets(top: 15, leading: 10, bottom: -5, trailing: 10))
+                .widgetURL(entry.link.smallWidgetUrl)
+            Image("polar-bear")
+                .resizable()
+                .zIndex(3)
+                .aspectRatio(contentMode: .fit)
+                .padding(.trailing, 10)
+                .padding(.bottom, -5)
+            Bar()
+                .padding(.bottom, 10)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color("backgroundColor"))
+    }
+}
+struct Bar: View {
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 25)
+                .fill(Color("Bar"))
+                .frame(height: 50)
+            HStack {
+                Image(systemName: "magnifyingglass")
+                    .foregroundColor(.init("widgetText"))
+                    .padding(.leading)
+                Spacer()
+            }
+        }
+        .padding(.horizontal, 10)
+        .contentShape(Rectangle())
     }
 }
 
