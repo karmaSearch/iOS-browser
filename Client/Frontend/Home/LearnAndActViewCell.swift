@@ -23,7 +23,7 @@ class LearnAndActViewCell: UICollectionViewCell {
     }
     
     private lazy var typeView: UIView = .build { view in
-        view.backgroundColor = UIColor.Photon.Green60
+        view.backgroundColor = UIColor.theme.homePanel.karmaTintColor
         view.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner]
         view.layer.cornerRadius = 5
         view.clipsToBounds = true
@@ -32,26 +32,26 @@ class LearnAndActViewCell: UICollectionViewCell {
     private lazy var titleLabel: UILabel = .build { label in
         label.font = UIFont.customFont(ofSize: 16, weight: .bold)
         label.textAlignment = .left
-        label.textColor = UIColor.Photon.DarkGrey90
+        label.textColor =  UIColor.theme.homePanel.learnAndActCellTitleColor
         label.numberOfLines = 2
     }
     
     private lazy var typeLabel: UILabel = .build { label in
         label.font = UIFont.customFont(ofSize: 10, weight: .bold)
         label.textAlignment = .left
-        label.textColor = UIColor.Photon.DarkGrey90
+        label.textColor = UIColor.theme.homePanel.learnAndActTypeColor
     }
     
     private lazy var timeToRead: UILabel = .build { label in
         label.font = UIFont.customFont(ofSize: 10, weight: .medium)
         label.textAlignment = .left
-        label.textColor = UIColor(rgb: 0x94A1B2)
+        label.textColor = UIColor.theme.homePanel.learnAndActDurationColor
     }
     
     private lazy var descriptionLabel: UILabel = .build { label in
         label.font = UIFont.customFont(ofSize: 12, weight: .medium)
         label.textAlignment = .left
-        label.textColor = UIColor.Photon.DarkGrey70
+        label.textColor = UIColor.theme.homePanel.learnAndActDescriptionColor
         label.numberOfLines = 5
         label.setContentHuggingPriority(.defaultHigh, for: .vertical)
         label.clipsToBounds = false
@@ -60,11 +60,11 @@ class LearnAndActViewCell: UICollectionViewCell {
     private lazy var linkLabel: UILabel = .build { label in
         label.font = UIFont.customFont(ofSize: 12, weight: .bold)
         label.textAlignment = .left
-        label.textColor = UIColor.Photon.Green60
+        label.textColor = UIColor.theme.homePanel.learnAndActLinkColor
     }
     
     private lazy var seprator: UIView = .build { view in
-        view.backgroundColor = UIColor.Photon.LightGrey90
+        view.backgroundColor = UIColor.theme.homePanel.separator
     }
     
     public var learnAndAct: LearnAndActBloc? {

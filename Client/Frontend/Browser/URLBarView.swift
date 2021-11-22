@@ -102,7 +102,7 @@ class URLBarView: UIView {
     lazy var locationContainer: UIView = {
         let locationContainer = TabLocationContainerView()
         locationContainer.translatesAutoresizingMaskIntoConstraints = false
-        locationContainer.backgroundColor = .white
+        locationContainer.backgroundColor = .clear
         return locationContainer
     }()
 
@@ -759,7 +759,7 @@ extension URLBarView: NotificationThemeable {
         addNewTabButton.applyTheme()
 
         cancelTextColor = UIColor.theme.urlbar.tint
-        backgroundColor = UIColor.white
+        backgroundColor = UIColor.theme.browser.background
         line.backgroundColor = UIColor.theme.browser.urlBarDivider
 
         locationBorderColor = UIColor.theme.urlbar.border

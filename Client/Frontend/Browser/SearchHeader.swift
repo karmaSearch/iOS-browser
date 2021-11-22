@@ -13,7 +13,7 @@ import SnapKit
 class SearchHeader: UITableViewHeaderFooterView {
     var titleLabel: UILabel = .build { label in
         label.font = DynamicFontHelper.defaultHelper.DeviceFontLargeBold
-        label.textColor = UIColor.Photon.DarkGrey70
+        label.textColor = UIColor.theme.homePanel.searchTitleHeaderColor
     }
     
     override func prepareForReuse() {
@@ -29,7 +29,7 @@ class SearchHeader: UITableViewHeaderFooterView {
             make.leading.equalTo(self.safeArea.leading).inset(14)
             make.top.centerY.equalToSuperview()
         }
-        contentView.backgroundColor = UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1)
+        contentView.backgroundColor = UIColor.theme.homePanel.searchHeaderColor
     }
     
     required init?(coder aDecoder: NSCoder) {

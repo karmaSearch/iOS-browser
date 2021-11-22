@@ -24,7 +24,7 @@ enum BuiltinThemeName: String {
 
 // Convenience reference to these normal mode colors which are used in a few color classes.
 fileprivate let defaultBackground = UIColor.Photon.Grey10
-fileprivate let defaultSeparator = UIColor.Photon.Grey30
+fileprivate let defaultSeparator = UIColor.Photon.LightGrey90
 fileprivate let defaultTextAndTint = UIColor.Photon.Grey80 
 
 class TableViewColor {
@@ -202,6 +202,17 @@ class HomePanelColor {
     
     var customizeHomepageButtonBackground: UIColor { return UIColor.Photon.LightGrey30 }
     var customizeHomepageButtonText: UIColor { return UIColor.Photon.DarkGrey90 }
+    
+    var karmaTintColor: UIColor { UIColor.Photon.Green60 }
+    var learnAndActCellTitleColor: UIColor { UIColor.Photon.DarkGrey90 }
+    var learnAndActTypeColor: UIColor { UIColor.Photon.DarkGrey90 }
+    var learnAndActDurationColor: UIColor { UIColor(rgb: 0x94A1B2) }
+    var learnAndActDescriptionColor: UIColor { UIColor(rgb: 0x94A1B2) }
+    var learnAndActLinkColor: UIColor { karmaTintColor }
+    
+    var searchHeaderColor: UIColor { UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1) }
+    var searchTitleHeaderColor: UIColor { UIColor.Photon.DarkGrey70 }
+
 }
 
 class SnackBarColor {
@@ -236,6 +247,7 @@ class OnboardingColor {
 class RemoteTabTrayColor {
     var background: UIColor { return UIColor.white }
 }
+
 
 protocol LegacyTheme {
     var name: String { get }
@@ -278,3 +290,4 @@ class NormalTheme: LegacyTheme {
     var onboarding: OnboardingColor { return OnboardingColor() }
     var remotePanel: RemoteTabTrayColor { return RemoteTabTrayColor() }
 }
+

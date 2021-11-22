@@ -5,8 +5,8 @@
 import UIKit
 
 // Convenience reference to these normal mode colors which are used in a few color classes.
-fileprivate let defaultBackground = UIColor.Photon.DarkGrey60
-fileprivate let defaultSeparator = UIColor.Photon.Grey60
+fileprivate let defaultBackground = UIColor.Photon.DarkGrey90
+fileprivate let defaultSeparator = UIColor.Photon.LightGrey90
 fileprivate let defaultTextAndTint = UIColor.Photon.Grey10
 
 fileprivate class DarkTableViewColor: TableViewColor {
@@ -87,7 +87,7 @@ fileprivate class DarkTopTabsColor: TopTabsColor {
 }
 
 fileprivate class DarkTextFieldColor: TextFieldColor {
-    override var background: UIColor { return UIColor.Photon.DarkGrey80 }
+    override var background: UIColor { return UIColor.Photon.DarkGrey40 }
     override var backgroundInOverlay: UIColor { return self.background }
 
     override var textAndTint: UIColor { return defaultTextAndTint }
@@ -118,7 +118,7 @@ fileprivate class DarkHomePanelColor: HomePanelColor {
 
     override var topSiteDomain: UIColor { return UIColor.Photon.LightGrey05 }
     override var topSitePin: UIColor { return UIColor.Photon.LightGrey05 }
-    override var topSitesBackground: UIColor { return UIColor.Photon.DarkGrey60 }
+    override var topSitesBackground: UIColor { return UIColor.black }
 
     override var shortcutBackground: UIColor { return UIColor.Photon.DarkGrey30 }
     override var shortcutShadowColor: CGColor { return UIColor(red: 0.11, green: 0.11, blue: 0.13, alpha: 1.0).cgColor }
@@ -138,6 +138,13 @@ fileprivate class DarkHomePanelColor: HomePanelColor {
     
     override var customizeHomepageButtonBackground: UIColor { return UIColor.Photon.DarkGrey50 }
     override var customizeHomepageButtonText: UIColor { return UIColor.Photon.LightGrey10 }
+    
+    override var learnAndActCellTitleColor: UIColor { UIColor.Photon.White100 }
+    override var learnAndActDurationColor: UIColor { UIColor.Photon.LightGrey90 }
+    override var learnAndActDescriptionColor: UIColor { UIColor.Photon.Grey11 }
+    
+    override var searchHeaderColor: UIColor { UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1) }
+    override var searchTitleHeaderColor: UIColor { UIColor.Photon.White100 }
 }
 
 fileprivate class DarkSnackBarColor: SnackBarColor {
@@ -183,4 +190,5 @@ class DarkTheme: NormalTheme {
     override var defaultBrowserCard: DefaultBrowserCardColor { return DarkDefaultBrowserCardColor() }
     override var onboarding: OnboardingColor { return DarkOnboardingColor() }
     override var remotePanel: RemoteTabTrayColor { return DarkRemoteTabTrayColor() }
+    
 }

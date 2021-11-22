@@ -374,6 +374,7 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
     }
     
     func reduceSection() {
+        tapGestureRecognizer.isEnabled = true
         currentTab?.lastKnownUrl?.absoluteString.hasPrefix("internal://") ?? false ? collectionView?.addGestureRecognizer(tapGestureRecognizer) : nil
         let reduceSectionsEnabled = Homescreen().reduceSectionsEnabled
         guard sectionsEnabled != reduceSectionsEnabled else { return }
@@ -385,8 +386,7 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
     }
     
     func expandSection() {
-        
-        collectionView.removeGestureRecognizer(tapGestureRecognizer)
+        tapGestureRecognizer.isEnabled = false
         let fullSectionsEnabled = Homescreen().fullSectionsEnabled
         guard sectionsEnabled != fullSectionsEnabled else { return }
         sectionsEnabled = fullSectionsEnabled
