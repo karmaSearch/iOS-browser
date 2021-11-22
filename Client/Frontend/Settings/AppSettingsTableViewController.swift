@@ -61,30 +61,13 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagsP
 
         let prefs = profile.prefs
         var generalSettings: [Setting] = [
-            SearchSetting(settings: self),
-            NewTabPageSetting(settings: self),
-            HomeSetting(settings: self),
             OpenWithSetting(settings: self),
             ThemeSetting(settings: self),
+            SiriPageSetting(settings: self),
             BoolSetting(prefs: prefs, prefKey: PrefsKeys.KeyBlockPopups, defaultValue: true,
                         titleText: .AppSettingsBlockPopups),
            ]
 
-        generalSettings.insert(SiriPageSetting(settings: self), at: 5)
-
-        if featureFlags.isFeatureActiveForBuild(.groupedTabs) || featureFlags.isFeatureActiveForBuild(.inactiveTabs) {
-            generalSettings.insert(TabsSetting(), at: 3)
-        }
-
-        let accountChinaSyncSetting: [Setting]
-        if !AppInfo.isChinaEdition {
-            accountChinaSyncSetting = []
-        } else {
-            accountChinaSyncSetting = [
-                // Show China sync service setting:
-                ChinaSyncServiceSetting(settings: self)
-            ]
-        }
         // There is nothing to show in the Customize section if we don't include the compact tab layout
         // setting on iPad. When more options are added that work on both device types, this logic can
         // be changed.
