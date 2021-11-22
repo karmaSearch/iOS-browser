@@ -20,7 +20,7 @@ class TabMoreMenuHeader: UIView {
         let title = UILabel()
         title.numberOfLines = 2
         title.lineBreakMode = .byTruncatingTail
-        title.font = UIFont.systemFont(ofSize: 17, weight: .regular)
+        title.font = UIFont.customFont(ofSize: 17, weight: .regular)
         title.textColor = UIColor.theme.defaultBrowserCard.textColor
         return title
     }()
@@ -30,7 +30,7 @@ class TabMoreMenuHeader: UIView {
         descriptionText.text = String.DefaultBrowserCardDescription
         descriptionText.numberOfLines = 0
         descriptionText.lineBreakMode = .byWordWrapping
-        descriptionText.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        descriptionText.font = UIFont.customFont(ofSize: 14, weight: .regular)
         descriptionText.textColor = UIColor.theme.defaultBrowserCard.textColor
         return descriptionText
     }()

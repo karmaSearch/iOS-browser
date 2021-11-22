@@ -234,6 +234,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIViewControllerRestorati
         // button will be in the incorrect position and overlap with the input text. Not clear if
         // that is an iOS bug or not.
         AutocompleteTextField.appearance().semanticContentAttribute = .forceLeftToRight
+        UINavigationBar.appearance().titleTextAttributes = [
+            .font: UIFont.customFont(ofSize: 19, weight: .semibold)
+        ]
 
         pushNotificationSetup()
 
@@ -357,7 +360,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIViewControllerRestorati
             setUpWebServer(profile)
         }
 
-        BrowserViewController.foregroundBVC().firefoxHomeViewController?.reloadAll()
+        BrowserViewController.foregroundBVC().karmaHomeViewController?.reloadAll()
 
         // Resume file downloads.
         // TODO: iOS 13 needs to iterate all the BVCs.

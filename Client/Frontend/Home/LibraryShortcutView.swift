@@ -26,7 +26,7 @@ class LibraryShortcutView: UIView {
         let titleLabel = UILabel()
         titleLabel.textAlignment = .center
         titleLabel.lineBreakMode = .byWordWrapping
-        titleLabel.font = UIFont.preferredFont(forTextStyle: .caption1)
+        titleLabel.font = DynamicFontHelper.defaultHelper.DefaultSmallFontBold
         titleLabel.preferredMaxLayoutWidth = 70
         return titleLabel
     }()

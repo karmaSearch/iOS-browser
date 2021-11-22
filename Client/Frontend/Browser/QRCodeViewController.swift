@@ -61,7 +61,7 @@ class QRCodeViewController: UIViewController {
 
         // Setup the NavigationBar
         self.navigationController?.navigationBar.barTintColor = QRCodeViewControllerUX.navigationBarBackgroundColor
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: QRCodeViewControllerUX.navigationBarTitleColor]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: QRCodeViewControllerUX.navigationBarTitleColor, .font: UIFont.customFont(ofSize: 19, weight: .semibold)]
 
         // Setup the NavigationItem
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "qrcode-goBack"), style: .plain, target: self, action: #selector(goBack))

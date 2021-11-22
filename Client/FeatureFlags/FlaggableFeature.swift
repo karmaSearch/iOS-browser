@@ -127,12 +127,9 @@ struct FlaggableFeature {
     private func checkNimbusHomepageFeatures(for sectionID: Homescreen.SectionId?, from experiments: NimbusApi = Experiments.shared) -> UserFeaturePreference {
         guard let sectionID = sectionID else { return UserFeaturePreference.disabled }
 
-        var homePageExperiments = experiments.withVariables(featureId: .homescreen,
-                                                            sendExposureEvent: false) {
-            Homescreen(variables: $0)
-        }
+        var homePageExperiments = Homescreen()
 
-        if let sectionIsEnabled = homePageExperiments.sectionsEnabled[sectionID], sectionIsEnabled {
+        if let sectionIsEnabled = homePageExperiments.fullSectionsEnabled[sectionID], sectionIsEnabled {
             // For pocket's default value, we also need to check the locale being supported.
             // Here, we want to make sure the section is enabled && locale is supported before
             // we would return that pocket is enabled

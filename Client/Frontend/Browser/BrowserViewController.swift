@@ -49,7 +49,7 @@ enum ReferringPage {
 }
 
 class BrowserViewController: UIViewController {
-    var firefoxHomeViewController: FirefoxHomeViewController?
+    var karmaHomeViewController: KarmaHomeViewController?
     var libraryViewController: LibraryViewController?
     var libraryDrawerViewController: DrawerViewController?
     var webViewContainer: UIView!
@@ -283,7 +283,7 @@ class BrowserViewController: UIViewController {
         }
 
         view.setNeedsUpdateConstraints()
-        firefoxHomeViewController?.view.setNeedsUpdateConstraints()
+        karmaHomeViewController?.view.setNeedsUpdateConstraints()
 
         if let tab = tabManager.selectedTab,
                let webView = tab.webView {
@@ -348,7 +348,7 @@ class BrowserViewController: UIViewController {
         webViewContainerBackdrop.alpha = 1
         webViewContainer.alpha = 0
         urlBar.locationContainer.alpha = 0
-        firefoxHomeViewController?.view.alpha = 0
+        karmaHomeViewController?.view.alpha = 0
         topTabsViewController?.switchForegroundStatus(isInForeground: false)
         presentedViewController?.popoverPresentationController?.containerView?.alpha = 0
         presentedViewController?.view.alpha = 0
@@ -360,7 +360,7 @@ class BrowserViewController: UIViewController {
         UIView.animate(withDuration: 0.2, delay: 0, options: UIView.AnimationOptions(), animations: {
             self.webViewContainer.alpha = 1
             self.urlBar.locationContainer.alpha = 1
-            self.firefoxHomeViewController?.view.alpha = 1
+            self.karmaHomeViewController?.view.alpha = 1
             self.topTabsViewController?.switchForegroundStatus(isInForeground: true)
             self.presentedViewController?.popoverPresentationController?.containerView?.alpha = 1
             self.presentedViewController?.view.alpha = 1
@@ -718,7 +718,7 @@ class BrowserViewController: UIViewController {
 
         // Remake constraints even if we're already showing the home controller.
         // The home controller may change sizes if we tap the URL bar while on about:home.
-        firefoxHomeViewController?.view.snp.remakeConstraints { make in
+        karmaHomeViewController?.view.snp.remakeConstraints { make in
             make.top.equalTo(self.urlBar.snp.bottom)
             make.left.right.equalTo(self.view)
             if self.homePanelIsInline {
@@ -744,27 +744,33 @@ class BrowserViewController: UIViewController {
 
     func showFirefoxHome(inline: Bool) {
         homePanelIsInline = inline
-        if self.firefoxHomeViewController == nil {
+        if self.karmaHomeViewController == nil {
             // Firefox home page tracking i.e. being shown from awesomebar vs bottom right hamburger menu
             let trackingValue: TelemetryWrapper.EventValue = homePanelIsInline ? .openHomeFromPhotonMenuButton : .openHomeFromAwesomebar
             TelemetryWrapper.recordEvent(category: .action, method: .open, object: .firefoxHomepage, value: trackingValue, extras: nil)
 
-            let firefoxHomeViewController = FirefoxHomeViewController(profile: profile)
-            firefoxHomeViewController.homePanelDelegate = self
-            firefoxHomeViewController.libraryPanelDelegate = self
-            self.firefoxHomeViewController = firefoxHomeViewController
-            addChild(firefoxHomeViewController)
-            view.addSubview(firefoxHomeViewController.view)
-            firefoxHomeViewController.didMove(toParent: self)
+            let karmaHomeViewController = KarmaHomeViewController(profile: profile)
+            karmaHomeViewController.homePanelDelegate = self
+            karmaHomeViewController.libraryPanelDelegate = self
+            self.karmaHomeViewController = karmaHomeViewController
+            addChild(karmaHomeViewController)
+            view.addSubview(karmaHomeViewController.view)
+            karmaHomeViewController.didMove(toParent: self)
+        }
+        
+        if inline {
+            karmaHomeViewController?.expandSection()
+        } else {
+            karmaHomeViewController?.reduceSection()
         }
 
-        firefoxHomeViewController?.applyTheme()
+        karmaHomeViewController?.applyTheme()
 
         // We have to run this animation, even if the view is already showing
         // because there may be a hide animation running and we want to be sure
         // to override its results.
         UIView.animate(withDuration: 0.2, animations: { () -> Void in
-            self.firefoxHomeViewController?.view.alpha = 1
+            self.karmaHomeViewController?.view.alpha = 1
         }, completion: { finished in
             if finished {
                 self.webViewContainer.accessibilityElementsHidden = true
@@ -776,17 +782,17 @@ class BrowserViewController: UIViewController {
     }
 
     fileprivate func hideFirefoxHome() {
-        guard let firefoxHomeViewController = self.firefoxHomeViewController else {
+        guard let karmaHomeViewController = self.karmaHomeViewController else {
             return
         }
 
-        self.firefoxHomeViewController = nil
+        self.karmaHomeViewController = nil
         UIView.animate(withDuration: 0.2, delay: 0, options: .beginFromCurrentState, animations: { () -> Void in
-            firefoxHomeViewController.view.alpha = 0
+            karmaHomeViewController.view.alpha = 0
         }, completion: { _ in
-            firefoxHomeViewController.willMove(toParent: nil)
-            firefoxHomeViewController.view.removeFromSuperview()
-            firefoxHomeViewController.removeFromParent()
+            karmaHomeViewController.willMove(toParent: nil)
+            karmaHomeViewController.view.removeFromSuperview()
+            karmaHomeViewController.removeFromParent()
             self.webViewContainer.accessibilityElementsHidden = false
             UIAccessibility.post(notification: UIAccessibility.Notification.screenChanged, argument: nil)
 
@@ -851,10 +857,10 @@ class BrowserViewController: UIViewController {
         let controller: DismissableNavigationViewController
         controller = DismissableNavigationViewController(rootViewController: libraryViewController)
         controller.onViewWillDisappear = {
-            self.firefoxHomeViewController?.reloadAll()
+            self.karmaHomeViewController?.reloadAll()
         }
         controller.onViewDismissed = {
-            self.firefoxHomeViewController?.reloadAll()
+            self.karmaHomeViewController?.reloadAll()
         }
         self.present(controller, animated: true, completion: nil)
     }
@@ -890,7 +896,7 @@ class BrowserViewController: UIViewController {
             make.left.right.bottom.equalTo(self.view)
         }
 
-        firefoxHomeViewController?.view?.isHidden = true
+        karmaHomeViewController?.view?.isHidden = true
 
         searchController.didMove(toParent: self)
     }
@@ -900,7 +906,7 @@ class BrowserViewController: UIViewController {
             searchController.willMove(toParent: nil)
             searchController.view.removeFromSuperview()
             searchController.removeFromParent()
-            firefoxHomeViewController?.view?.isHidden = false
+            karmaHomeViewController?.view?.isHidden = false
         }
     }
 
@@ -1641,6 +1647,10 @@ extension BrowserViewController: HomePanelDelegate {
     func homePanelDidDismissContextualHint(type: ContextualHintViewType) {
         self.urlBar.locationTextField?.becomeFirstResponder()
     }
+    
+    func homePanelDidRequestToOpenSettings() {
+        self.openSettings()
+    }
 }
 
 extension BrowserViewController: SearchViewControllerDelegate {
@@ -1664,8 +1674,6 @@ extension BrowserViewController: SearchViewControllerDelegate {
         searchSettingsTableViewController.profile = self.profile
         // Update saerch icon when the searchengine changes
         searchSettingsTableViewController.updateSearchIcon = {
-            self.urlBar.updateSearchEngineImage()
-            self.searchController?.reloadSearchEngines()
             self.searchController?.reloadData()
         }
         let navController = ModalSettingsNavigationController(rootViewController: searchSettingsTableViewController)
@@ -1688,7 +1696,7 @@ extension BrowserViewController: TabManagerDelegate {
         // Reset the scroll position for the ActivityStreamPanel so that it
         // is always presented scrolled to the top when switching tabs.
         if !isRestoring, selected != previous,
-            let activityStreamPanel = firefoxHomeViewController {
+            let activityStreamPanel = karmaHomeViewController {
             activityStreamPanel.scrollToTop()
         }
 
@@ -1791,7 +1799,7 @@ extension BrowserViewController: TabManagerDelegate {
             topTabsDidChangeTab()
         }
 
-        updateInContentHomePanel(selected?.url as URL?, focusUrlBar: true)
+        updateInContentHomePanel(selected?.url as URL?, focusUrlBar: false)
 
         if let tab = selected, NewTabAccessors.getNewTabPage(self.profile.prefs) == .blankPage {
             if tab.url == nil, !tab.restoring {
@@ -1943,10 +1951,10 @@ extension BrowserViewController {
             dBOnboardingViewController.preferredContentSize = CGSize(width: ViewControllerConsts.PreferredSize.DBOnboardingViewController.width, height: ViewControllerConsts.PreferredSize.DBOnboardingViewController.height)
             dBOnboardingViewController.modalPresentationStyle = .formSheet
         } else {
-            dBOnboardingViewController.modalPresentationStyle = .popover
+            dBOnboardingViewController.modalPresentationStyle = .overCurrentContext
         }
+        
         dBOnboardingViewController.viewModel.goToSettings = {
-            self.firefoxHomeViewController?.dismissDefaultBrowserCard()
             dBOnboardingViewController.dismiss(animated: true) {
                 UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
             }
@@ -2002,6 +2010,11 @@ extension BrowserViewController {
                     let fxaParams = FxALaunchParams(query: ["entrypoint": "firstrun"])
                     self.presentSignInViewController(fxaParams, flowType: flow, referringPage: .onboarding)
                 }
+            }
+        }
+        introViewController.viewModel.goToSettings = {
+            introViewController.dismiss(animated: true) {
+                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
             }
         }
         self.introVCPresentHelper(introViewController: introViewController)
@@ -2299,7 +2312,7 @@ extension BrowserViewController: TabTrayDelegate {
 extension BrowserViewController: NotificationThemeable {
     func applyTheme() {
         guard self.isViewLoaded else { return }
-        let ui: [NotificationThemeable?] = [urlBar, toolbar, readerModeBar, topTabsViewController, firefoxHomeViewController, searchController, libraryViewController, libraryDrawerViewController, chronTabTrayController]
+        let ui: [NotificationThemeable?] = [urlBar, toolbar, readerModeBar, topTabsViewController, karmaHomeViewController, searchController, libraryViewController, libraryDrawerViewController, chronTabTrayController]
         ui.forEach { $0?.applyTheme() }
 
         statusBarOverlay.backgroundColor = shouldShowTopTabsForTraitCollection(traitCollection) ? UIColor.theme.topTabs.background : urlBar.backgroundColor

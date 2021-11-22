@@ -43,7 +43,7 @@ class LibraryPanelButton: UIButton {
             nameLabel.adjustsFontSizeToFitWidth = true
             nameLabel.minimumScaleFactor = 0.7
             nameLabel.numberOfLines = 1
-            nameLabel.font = UIFont.systemFont(ofSize: DynamicFontHelper.defaultHelper.DefaultSmallFontSize - 1)
+            nameLabel.font = UIFont.customFont(ofSize: DynamicFontHelper.defaultHelper.DefaultSmallFontSize - 1)
             nameLabel.textAlignment = .center
         }
     }

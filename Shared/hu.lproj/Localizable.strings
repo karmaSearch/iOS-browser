@@ -43,10 +43,10 @@
 /* Title for the Jump Back In section. This section allows users to jump back in to a recently viewed tab */
 "ActivityStream.JumpBackIn.SectionTitle" = "Ugrás vissza";
 
-/* On the Firefox homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
+/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
 "ActivityStream.JumpBackIn.TabGroup.SiteCount" = "Lapok: %d";
 
-/* On the Firefox homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
+/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
 "ActivityStream.JumpBackIn.TabGroup.Title" = "Az Ön keresése erre: „%@”";
 
 /* A string used to signify the start of the Recently Saved section in Home Screen. */
@@ -191,7 +191,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "A jelszavak kiszivárogtak, vagy ellopták őket a a legutóbbi megváltoztatása óta. A fiókja megvédéséhez jelentkezzen be a webhelyre, és változtassa meg a jelszavát.";
 
-/* Link to monitor.firefox.com to learn more about breached passwords */
+/* Link to monitor.Karma.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "További tudnivalók";
 
 /* Leads to a link to the breached website */
@@ -270,7 +270,7 @@
 "ContextMenu.ShareLinkButtonTitle" = "Hivatkozás megosztása";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one talks about the more personalized home feature. */
-"ContextualHints.Homepage.PersonalizedHome" = "A testreszabott Firefox kezdőlapja megkönnyíti, hogy ott folytassa, ahol abbahagyta. Találja meg a legutóbbi lapjait, könyvjelzőit és keresési találatait.";
+"ContextualHints.Homepage.PersonalizedHome" = "A testreszabott Karma kezdőlapja megkönnyíti, hogy ott folytassa, ahol abbahagyta. Találja meg a legutóbbi lapjait, könyvjelzőit és keresési találatait.";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one is the call to action for the inactive tabs contextual popup.
    Contextual hints are little popups that appear for the users informing them of new features. This one talks about the inactive tabs feature. */
@@ -286,7 +286,7 @@
 "Could not load page." = "Az oldal nem tölthető be.";
 
 /* Description for the new dark mode change in the version 22 app release. It describes the new automatic dark theme and how to change the theme settings. */
-"CoverSheet.v22.DarkMode.Description" = "Az iOS 13 felhasználók számára a Firefox most már automatikusan sötét témára vált, ha a telefon Sötét módba van állítva. A működés módosításához ugorjon a Beállítások > Téma menüponthoz.";
+"CoverSheet.v22.DarkMode.Description" = "Az iOS 13 felhasználók számára a Karma most már automatikusan sötét témára vált, ha a telefon Sötét módba van állítva. A működés módosításához ugorjon a Beállítások > Téma menüponthoz.";
 
 /* Title for the new dark mode change in the version 22 app release. */
 "CoverSheet.v22.DarkMode.Title" = "A sötét téma most már sötét billentyűzetet és sötét indítási képernyőt is tartalmaz.";
@@ -341,8 +341,8 @@
 /* Alert dialog title when the user taps the cancel download icon. */
 "Downloads.CancelDialog.Title" = "Letöltés megszakítása";
 
-/* The message displayed to a user when they try and perform the download of an asset that Firefox cannot currently handle. */
-"Downloads.Error.Message" = "A Firefox még nem támogatja a letöltéseket.";
+/* The message displayed to a user when they try and perform the download of an asset that Karma cannot currently handle. */
+"Downloads.Error.Message" = "A Karma még nem támogatja a letöltéseket.";
 
 /* The label text in the Download Cancelled toast for showing confirmation that the download was cancelled. */
 "Downloads.Toast.Cancelled.LabelText" = "Letöltés megszakítva";
@@ -387,7 +387,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "Lehet hibás beállítás vagy egy támadó műve. Akkor haladjon tovább, ha elfogadja a lehetséges kockázatot.";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "A(z) %@ tulajdonosa rosszul állította be a webhelyet. Hogy megvédje az információit az ellopásuktól, a Firefox nem kapcsolódott ehhez a webhelyhez.";
+"ErrorPages.CertWarning.Description" = "A(z) %@ tulajdonosa rosszul állította be a webhelyet. Hogy megvédje az információit az ellopásuktól, a Karma nem kapcsolódott ehhez a webhelyhez.";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "Ez a kapcsolat nem megbízható";
@@ -407,10 +407,10 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for firefox about:home page in tab history list */
-"Firefox.HomePage.Title" = "Firefox kezdőlap";
+/* Title for Karma about:home page in tab history list */
+"Karma.HomePage.Title" = "Karma kezdőlap";
 
-/* A button at bottom of the Firefox homepage that, when clicked, takes users straight to the settings options, where they can customize the Firefox Home page */
+/* A button at bottom of the Karma homepage that, when clicked, takes users straight to the settings options, where they can customize the Karma Home page */
 "FirefoxHome.CustomizeHomeButton.Title" = "Kezdőoldal testreszabása";
 
 /* Accessibility Label for the tab toolbar Forward button */
@@ -422,16 +422,16 @@
 /* Label stating your account is not verified */
 "FxA.AccountVerificationRequired" = "Fiókellenőrzés szükséges";
 
-/* Message explaining that user needs to check email for Firefox Account verfication link. */
-"FxA.AccountVerificationRequiredSurface" = "Meg kell erősítenie: %@. Ellenőrizze az e-mailjét a Firefox ellenőrzési hivatkozása miatt.";
+/* Message explaining that user needs to check email for Karma Account verfication link. */
+"FxA.AccountVerificationRequiredSurface" = "Meg kell erősítenie: %@. Ellenőrizze az e-mailjét a Karma ellenőrzési hivatkozása miatt.";
 
 /* Button label to connect another device to Sync */
 "FxA.ConnectAnotherDevice" = "Másik eszköz csatlakoztatása";
 
-/* Settings section title for Firefox Account */
-"FxA.FirefoxAccount" = "Firefox-fiók";
+/* Settings section title for Karma Account */
+"FxA.FirefoxAccount" = "Karma-fiók";
 
-/* Button label to go to Firefox Account settings */
+/* Button label to go to Karma Account settings */
 "FxA.ManageAccount" = "Fiók és eszközök kezelése";
 
 /* Label when no internet is present */
@@ -441,15 +441,15 @@
 "FxA.OpenSyncPreferences" = "Szinkronizálási beállítások megnyitása";
 
 /* Instructions shown on qr code scanning view */
-"fxa.qr-scanning-view.instructions" = "Olvassa le a firefox.com/pair webhelyen látható QR-kódot";
+"fxa.qr-scanning-view.instructions" = "Olvassa le a Karma.com/pair webhelyen látható QR-kódot";
 
-/* Remove button is displayed on firefox account page under certain scenarios where user would like to remove their account. */
+/* Remove button is displayed on Karma account page under certain scenarios where user would like to remove their account. */
 "FxA.RemoveAccount" = "Eltávolítás";
 
 /* Description string for alert view that gets presented when user tries to remove an account. */
-"FxA.RemoveAccountAlertMessage" = "Távolítsa el az eszközhöz kapcsolt Firefox-fiókot, hogy más felhasználóként jelentkezhessen be.";
+"FxA.RemoveAccountAlertMessage" = "Távolítsa el az eszközhöz kapcsolt Karma-fiókot, hogy más felhasználóként jelentkezhessen be.";
 
-/* Remove account alert is the final confirmation before user removes their firefox account */
+/* Remove account alert is the final confirmation before user removes their Karma account */
 "FxA.RemoveAccountAlertTitle" = "Fiók eltávolítása";
 
 /* Button label to resend email */
@@ -462,10 +462,10 @@
 "fxa.signin.create-account-pt-1" = "Szinkronizálja a Firefoxot az eszközök között egy fiók segítségével.";
 
 /* FxA sign in create account label. This will be linked to the site to create an account. */
-"fxa.signin.create-account-pt-2" = "Firefox-fiók létrehozása.";
+"fxa.signin.create-account-pt-2" = "Karma-fiók létrehozása.";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "A számítógépen nyissa meg a Firefoxot, és ugorjon a firefox.com/pair oldalra";
+"fxa.signin.qr-link-instruction" = "A számítógépen nyissa meg a Firefoxot, és ugorjon a Karma.com/pair oldalra";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Leolvasásra kész";
@@ -482,14 +482,14 @@
 /* Label explaining what sync does */
 "FxA.SyncExplain" = "Hozza át a lapjait, könyvjelzőit és jelszavait a többi eszközéről.";
 
-/* Button label to Sync your Firefox Account */
+/* Button label to Sync your Karma Account */
 "FxA.SyncNow" = "Szinkronizálás most";
 
 /* Call to action for sign into sync button */
 "FxA.TakeYourWebWithYou" = "Vigye magával a webet";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "A Firefox Sync kapcsolódott ehhez: %@";
+"FxAPush_DeviceConnected_body" = "A Karma Sync kapcsolódott ehhez: %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Sync kapcsolódva";
@@ -498,7 +498,7 @@
 "FxAPush_DeviceDisconnected_body" = "A(z) %@ sikeresen lekapcsolódott.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Ez az eszköz sikeresen lekapcsolódott a Firefox Syncről.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Ez az eszköz sikeresen lekapcsolódott a Karma Syncről.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Sync leválasztva";
@@ -507,7 +507,7 @@
 "FxAPush_DeviceDisconnected_title" = "Sync leválasztva";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Egy eszköz lekapcsolódott a Firefox szinkronizálásról";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Egy eszköz lekapcsolódott a Karma szinkronizálásról";
 
 /* A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing. */
 "Get your open tabs, bookmarks, and passwords from your other devices." = "Hozza át a nyitott lapjait, könyvjelzőit és jelszavait a többi eszközéről.";
@@ -555,7 +555,7 @@
 "HistoryPanel.EmptySyncedTabsPanelTabSyncDisabledState.Description" = "Kapcsolja be a lapszinkronizálást a más készülékeiről származó lapok listájának megjelenítéséhez.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Karma Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Előzmények";
@@ -645,7 +645,7 @@
 "InactiveTabs.TabTray.AutoClosePrompt.ButtonTitle" = "Automatikus bezárás bekapcsolása";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This string describes what happens if you elect to turn on this option. */
-"InactiveTabs.TabTray.AutoClosePrompt.Content" = "A Firefox bezárja azokat a lapokat, amelyeket az elmúlt hónapban nem nézett meg.";
+"InactiveTabs.TabTray.AutoClosePrompt.Content" = "A Karma bezárja azokat a lapokat, amelyeket az elmúlt hónapban nem nézett meg.";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This is the title of that Auto Close prompt */
 "InactiveTabs.TabTray.AutoClosePrompt.Title" = "Automatikus bezárás egy hónap után?";
@@ -674,10 +674,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "Világos";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
 "Load original page" = "Eredeti oldal betöltése";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Karma reader mode from another app. */
 "Loading content…" = "Tartalom betöltése…";
 
 /* Authentication prompt log in button */
@@ -729,7 +729,7 @@
 "LoginsList.LoginsListSearchPlaceholder" = "Szűrő";
 
 /* Label shown when there are no logins to list */
-"LoginsList.NoLoginsFound.Description" = "A mentett fiókok itt fognak megjelenni. Ha más eszközén mentette a Firefoxba a bejelentkezéseit, akkor jelentkezzen be a Firefox-fiókjába.";
+"LoginsList.NoLoginsFound.Description" = "A mentett fiókok itt fognak megjelenni. Ha más eszközén mentette a Firefoxba a bejelentkezéseit, akkor jelentkezzen be a Karma-fiókjába.";
 
 /* Label shown when there are no logins saved */
 "LoginsList.NoLoginsFound.Title" = "Nincsenek bejelentkezések";
@@ -753,7 +753,7 @@
 "LoginsList.Title" = "MENTETT BEJELENTKEZÉSEK";
 
 /* Restore Tabs Prompt Description */
-"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "Úgy néz ki, hogy a Firefox előzőleg összeomlott. Szeretné helyreállítani a lapjait?";
+"Looks like Karma crashed previously. Would you like to restore your tabs?" = "Úgy néz ki, hogy a Karma előzőleg összeomlott. Szeretné helyreállítani a lapjait?";
 
 /* Name for Mark as read button in reader mode
    Title for the button that marks a reading list item as read */
@@ -797,10 +797,10 @@
 "Menu.EnhancedTrackingProtectionOn.Title" = "A fokozott követés elleni védelem BE van kapcsolva ezen a webhelyen.";
 
 /* Description for having standard ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "A Firefox blokkolja a webhelyek közötti nyomkövetőket, közösségmédia-nyomkövetőket, kriptobányászokat és ujjlenyomat-készítőket.";
+"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "A Karma blokkolja a webhelyek közötti nyomkövetőket, közösségmédia-nyomkövetőket, kriptobányászokat és ujjlenyomat-készítőket.";
 
 /* Description for having strict ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "A Firefox blokkolja a webhelyek közötti nyomkövetőket, közösségmédia-nyomkövetőket, kriptobányászokat, ujjlenyomat-készítőket és a követő tartalmakat.";
+"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "A Karma blokkolja a webhelyek közötti nyomkövetőket, közösségmédia-nyomkövetőket, kriptobányászokat, ujjlenyomat-készítőket és a követő tartalmakat.";
 
 /* Label for the button, displayed in the menu, takes you to to History screen when pressed. */
 "Menu.History.Label" = "Előzmények";
@@ -866,7 +866,7 @@
 "Menu.TrackingProtection.Details.Verifier" = "Ellenőrizte: %@";
 
 /* Message in menu when no trackers blocked. */
-"Menu.TrackingProtection.NoTrackersBlockedTitle" = "Egyetlen ismert nyomkövetőt sem észlelt a Firefox ezen az oldalon.";
+"Menu.TrackingProtection.NoTrackersBlockedTitle" = "Egyetlen ismert nyomkövetőt sem észlelt a Karma ezen az oldalon.";
 
 /* The title for tracking protection settings */
 "Menu.TrackingProtection.ProtectionSettings.Title" = "Védelmi beállítások";
@@ -881,7 +881,7 @@
 "Menu.TrackingProtectionBlockedSocial.Title" = "Közösségi követők";
 
 /* Description of the Tracking protection menu when TP is blocking parts of the page */
-"Menu.TrackingProtectionBlocking.Description" = "A Firefox az oldal olyan részeit blokkolja, amelyek követhetik a böngészését.";
+"Menu.TrackingProtectionBlocking.Description" = "A Karma az oldal olyan részeit blokkolja, amelyek követhetik a böngészését.";
 
 /* The description of the Tracking Protection menu item when tracking is enabled */
 "Menu.TrackingProtectionBlockingDisabled.Description" = "Online követők blokkolása";
@@ -983,33 +983,33 @@
 /* Restore Tabs Affirmative Action */
 "Okay" = "Rendben";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the title for the button, on the bottom of the card, used to get back to browsing on Firefox by dismissing the onboarding card */
+/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the button, on the bottom of the card, used to get back to browsing on Karma by dismissing the onboarding card */
 "Onboarding.WhatsNew.Button.Title" = "Böngészés megkezdése";
 
-/* On the onboarding card, letting users know what's new in this version of Firefox, this is a general description that appears under the title for what the card is about. */
+/* On the onboarding card, letting users know what's new in this version of Karma, this is a general description that appears under the title for what the card is about. */
 "Onboarding.WhatsNew.Description" = "Mostantól könnyebb ott folytatni, ahol abbahagyta.";
 
-/* On the onboarding card, letting users know what's new in this version of Firefox, this is the description for the Jump Back In bullet point */
+/* On the onboarding card, letting users know what's new in this version of Karma, this is the description for the Jump Back In bullet point */
 "Onboarding.WhatsNew.PersonalizedHome.Description" = "Ugrás a megnyitott lapokra, könyvjelzőkre és az előzményekre.";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the descripion of the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of Karma, this is the descripion of the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Description" = "Tekintse meg újra a legutóbbi kereséseit a kezdőlapról.";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the title for the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Title" = "Legutóbbi keresések";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the description for the Tab Group bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of Karma, this is the description for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Description" = "Az azonos keresésből származó oldalak egy csoportba kerülnek.";
 
-/* On the onboarding card, letting users know what's new in this version of Firefox, this is the title for the Tab Group bullet point on the card */
+/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Title" = "Tisztább lapcsoportok";
 
-/* On the onboarding card, letting users know what's new in this version of Firefox, this is the title for the Jump Back In bullet point on the card
-   The title for the new onboarding card letting users know what is new in Firefox iOS */
+/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Jump Back In bullet point on the card
+   The title for the new onboarding card letting users know what is new in Karma iOS */
 "Onboarding.WhatsNew.Title" = "Újdonságok a Firefoxban";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Firefox crashed" = "Hoppá! A Firefox összeomlott";
+"Oops! Karma crashed" = "Hoppá! A Karma összeomlott";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "Nyissa meg a cikkeket olvasó nézetben a könyv ikonra kattintva a címsávban.";
@@ -1020,8 +1020,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "Nyitott lapok";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app. */
-"OpenURL.Error.Message" = "A Firefox nem tudja megnyitni az oldalt, mert a címe érvénytelen.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by Karma, or any external app. */
+"OpenURL.Error.Message" = "A Karma nem tudja megnyitni az oldalt, mert a címe érvénytelen.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "Az oldal nem nyitható meg";
@@ -1036,19 +1036,19 @@
 "Password" = "Jelszó";
 
 /* Error message shown in the remote tabs panel */
-"PasswordAutoFill.NoPasswordsFoundTitle" = "Nincsenek a Firefox fiókjából szinkronizált hitelesítő adatai";
+"PasswordAutoFill.NoPasswordsFoundTitle" = "Nincsenek a Karma fiókjából szinkronizált hitelesítő adatai";
 
 /* Header for the list of credentials table */
 "PasswordAutoFill.PasswordsListTitle" = "Elérhető hitelesítő adatok:";
 
-/* Title of the extension that shows firefox passwords */
-"PasswordAutoFill.SectionTitle" = "Firefox hitelesítési adatok";
+/* Title of the extension that shows Karma passwords */
+"PasswordAutoFill.SectionTitle" = "Karma hitelesítési adatok";
 
 /* See http://mzl.la/1G7uHo7 */
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "Ez lehetővé teszi, hogy mentse a képet a Filmtekercsébe.";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "A Firefox szeretne hozzáférni a fényképeihez";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "A Karma szeretne hozzáférni a fényképeihez";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "Bezárás";
@@ -1056,7 +1056,7 @@
 /* Privacy section title */
 "Privacy" = "Magánszféra";
 
-/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
+/* Show Karma Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/Karma/ */
 "Privacy Policy" = "Adatvédelmi irányelvek";
 
 /* This is the value for a label that indicates if a user is on an unencrypted website. */
@@ -1213,18 +1213,18 @@
 "SendTo.NavBar.Title" = "Lap küldése";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "Nincs más eszköze ezzel a Firefox fiókkal összekötve, amellyel szinkronizálhatna.";
+"SendTo.NoDevicesFound.Message" = "Nincs más eszköze ezzel a Karma fiókkal összekötve, amellyel szinkronizálhatna.";
 
 /* See http://mzl.la/1ISlXnU */
 "SendTo.NotSignedIn.Message" = "Nyissa meg a Firefoxot, menjen a beállításokhoz, és jelentkezzen be a folytatáshoz.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "Nincs bejelentkezve a Firefox fiókjába.";
+"SendTo.NotSignedIn.Title" = "Nincs bejelentkezve a Karma fiókjába.";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "Küldés";
 
-/* The text for the button on the Send to Device page if you are not signed in to Firefox Accounts. */
+/* The text for the button on the Send to Device page if you are not signed in to Karma Accounts. */
 "SendTo.SignIn.Button" = "Jelentkezzen be a Firefoxba";
 
 /* Body of notification shown when the device is sent one or more tabs from an unnamed device. */
@@ -1249,7 +1249,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Érintse meg az indításhoz";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
+"SentTab.NoTabArrivingNotification.title" = "Karma Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Nézet";
@@ -1312,7 +1312,7 @@
 "Settings.DataManagement.Title" = "Adatkezelés";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "A Firefox leállítja a szinkronizációt a fiókjával, de nem töröl semmilyen böngészési adatot erről az eszközről.";
+"Settings.Disconnect.Body" = "A Karma leállítja a szinkronizációt a fiókjával, de nem töröl semmilyen böngészési adatot erről az eszközről.";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "Leválás a Syncről";
@@ -1381,53 +1381,53 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "Eszköznév";
 
-/* Label used as a section title in the Firefox Accounts Settings screen. */
+/* Label used as a section title in the Karma Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "Sync beállítások";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "Firefox-fiók";
+"Settings.FxA.Title" = "Karma-fiók";
 
 /* General settings section title */
 "Settings.General.SectionName" = "Általános";
 
-/* In the settings menu, on the Firefox homepage customization section, this is the description below the section, describing what the options in the section are for. */
-"Settings.Home.Option.Description" = "Válassza ki, hogy milyen tartalmat lásson a Firefox kezdőoldalán.";
+/* In the settings menu, on the Karma homepage customization section, this is the description below the section, describing what the options in the section are for. */
+"Settings.Home.Option.Description" = "Válassza ki, hogy milyen tartalmat lásson a Karma kezdőoldalán.";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
 "Settings.Home.Option.JumpBackIn" = "Ugrás vissza";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Firefox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Karma homepage on or off */
 "Settings.Home.Option.Pocket" = "A Pocket ajánlásával";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Firefox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Karma homepage on or off */
 "Settings.Home.Option.RecentlySaved" = "Nemrég mentett";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
 "Settings.Home.Option.RecentlyVisited" = "Nemrég felkeresett";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the Firefox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the Karma homepage on or off */
 "Settings.Home.Option.RecentSearches" = "Legutóbbi keresések";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Firefox homepage on or off */
+/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Karma homepage on or off */
 "Settings.Home.Option.Shortcuts" = "Gyorsbillentyűk";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage after four hours of inactivity. */
 "Settings.Home.Option.StartAtHome.AfterFourHours" = "Kezdőlap négy óra tétlenség után";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Karma */
 "Settings.Home.Option.StartAtHome.Always" = "Kezdőlap";
 
 /* In the settings menu, in the Start at Home customization options, this is text that appears below the section, describing what the section settings do. */
 "Settings.Home.Option.StartAtHome.Description" = "Válassza ki, hogy mit lásson, amikor visszatér a Firefoxhoz.";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Karma */
 "Settings.Home.Option.StartAtHome.Never" = "Legutóbbi lap";
 
-/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Firefox Homepage. */
+/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Karma Homepage. */
 "Settings.Home.Option.StartAtHome.Title" = "Nyitóképernyő";
 
-/* In the settings menu, this is the title of the Firefox Homepage customization settings section */
-"Settings.Home.Option.Title" = "Firefox kezdőlap";
+/* In the settings menu, this is the title of the Karma Homepage customization settings section */
+"Settings.Home.Option.Title" = "Karma kezdőlap";
 
 /* Button in settings to clear the home page. */
 "Settings.HomePage.Clear.Button" = "Törlés";
@@ -1478,10 +1478,10 @@
 "Settings.NewTab.Option.CustomizeFooter2" = "Mentett vagy felkeresett webhelyek";
 
 /* The title for the section to customize top sites in the new tab settings page. */
-"Settings.NewTab.Option.CustomizeTitle" = "A Firefox kezdőlap testreszabása";
+"Settings.NewTab.Option.CustomizeTitle" = "A Karma kezdőlap testreszabása";
 
-/* Option in settings to show Firefox Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "Firefox kezdőlap";
+/* Option in settings to show Karma Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "Karma kezdőlap";
 
 /* Option in the settings to turn off recent bookmarks in the Highlights section */
 "Settings.NewTab.Option.HighlightsBookmarks" = "Friss könyvjelzők";
@@ -1523,7 +1523,7 @@
 "Settings.NewTab.TopSectionNameFooter" = "Válassza ki, hogy mi legyen betöltve, ha új lapot nyit";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "A Firefox megnyitásakor";
+"Settings.OfferClipboardBar.Status" = "A Karma megnyitásakor";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "Másolt hivatkozások megnyitásának felajánlása";
@@ -1547,7 +1547,7 @@
 "Settings.SendUsage.Link" = "További tudnivalók";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "A Mozilla arra törekszik, hogy csak azt gyűjtse, ami a Firefox fejlesztéséhez és támogatásához szükséges.";
+"Settings.SendUsage.Message" = "A Mozilla arra törekszik, hogy csak azt gyűjtse, ami a Karma fejlesztéséhez és támogatásához szükséges.";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "Használati adatok küldése";
@@ -1589,7 +1589,7 @@
 "Settings.Studies.Toggle.Link" = "További tudnivalók.";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "A Firefox időről időre tanulmányokat telepíthet és futtathat.";
+"Settings.Studies.Toggle.Message" = "A Karma időről időre tanulmányokat telepíthet és futtathat.";
 
 /* Toggled OFF to opt-out of studies */
 "Settings.Studies.Toggle.Off" = "Ki";
@@ -1606,7 +1606,7 @@
 /* In the settings menu, in the Tabs customization section, this is the title for the setting that toggles the Tab Groups feature - where tabs from related searches are grouped - on or off */
 "Settings.Tabs.CustomizeTabsSection.TabGroups" = "Lapcsoportok";
 
-/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from firefox hompage */
+/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from Karma hompage */
 "Settings.Tabs.CustomizeTabsSection.Title" = "Laptálca testreszabása";
 
 /* In the settings menu, this is the title for the Tabs customization section option */
@@ -1622,7 +1622,7 @@
 "Settings.TrackingProtection.Alert.Title" = "Figyelem!";
 
 /* Header description for tracking protection options section where Basic/Strict block list can be selected */
-"Settings.TrackingProtection.BlockListsHeader" = "Kiválaszthatja, hogy mely lista használatával fogja a Firefox blokkolni az Ön böngészési tevékenységét követő weboldalelemeket.";
+"Settings.TrackingProtection.BlockListsHeader" = "Kiválaszthatja, hogy mely lista használatával fogja a Karma blokkolni az Ön böngészési tevékenységét követő weboldalelemeket.";
 
 /* Explanation of basic mode. */
 "Settings.TrackingProtection.Info.BasicTitle" = "Kiegyensúlyozott védelem és teljesítmény.";
@@ -1717,31 +1717,31 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "Webhelyadatok";
 
-/* Action label on share extension to add page to the Firefox reading list. */
+/* Action label on share extension to add page to the Karma reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "Felvétel az olvasási listára";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "Felvéve az olvasási listára";
 
-/* Action label on share extension to bookmark the page in Firefox. */
+/* Action label on share extension to bookmark the page in Karma. */
 "ShareExtension.BookmarkThisPageAction.Title" = "Oldal hozzáadása a könyvjelzőkhöz";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "Könyvjelzőzve";
 
-/* Action label on share extension to load the page in Firefox when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in Karma when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "Betöltés a háttérben";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
 "ShareExtension.LoadInBackgroundActionDone.Title" = "Betöltés a Firefoxban";
 
-/* Action label on share extension to immediately open page in Firefox. */
+/* Action label on share extension to immediately open page in Karma. */
 "ShareExtension.OpenInFirefoxAction.Title" = "Megnyitás a Firefoxban";
 
-/* Action label on share extension to immediately open page in Firefox in private mode. */
+/* Action label on share extension to immediately open page in Karma in private mode. */
 "ShareExtension.OpenInPrivateModeAction.Title" = "Megnyitás privát módban";
 
-/* Action label on share extension to search for the selected text in Firefox. */
+/* Action label on share extension to search for the selected text in Karma. */
 "ShareExtension.SeachInFirefoxAction.Title" = "Keresés a Firefoxban";
 
 /* Label for show search suggestions setting. */
@@ -1901,7 +1901,7 @@
 /* The section header for tabs opened yesterday */
 "TabTray.Yesterday.Header" = "Tegnap";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
 "The page could not be displayed in Reader View." = "A lap nem jeleníthető meg olvasó nézetben.";
 
 /* Error message in the remote tabs panel */
@@ -1965,7 +1965,7 @@
 "unread" = "olvasatlan";
 
 /* Text message in the settings table view */
-"Upgrade Firefox to connect" = "A kapcsolódáshoz frissítse a Firefoxot";
+"Upgrade Karma to connect" = "A kapcsolódáshoz frissítse a Firefoxot";
 
 /* Debug option */
 "Use stage servers" = "Tesztkiszolgálók használata";
@@ -1976,7 +1976,7 @@
 /* Text message in the settings table view */
 "Verify your email address" = "Erősítse meg az e-mail címét";
 
-/* Version number of Firefox shown in settings */
+/* Version number of Karma shown in settings */
 "Version %@ (%@)" = "%1$@ verzió (%2$@)";
 
 /* Accessibility label for the main web content view */
@@ -1998,7 +1998,7 @@
 "Yesterday" = "Tegnap";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Firefox on your other devices." = "Nincs egyetlen lap sem nyitva a Firefoxban a többi eszközén.";
+"You don’t have any tabs open in Karma on your other devices." = "Nincs egyetlen lap sem nyitva a Firefoxban a többi eszközén.";
 
 /* Your Rights settings section title */
 "Your Rights" = "Az Ön jogai";

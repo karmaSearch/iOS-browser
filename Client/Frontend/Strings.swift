@@ -1122,7 +1122,7 @@ extension String {
     // ETP Cover Sheet
     public static let CoverSheetETPTitle = MZLocalizedString("CoverSheet.v24.ETP.Title", value: "Protection Against Ad Tracking", comment: "Title for the new ETP mode i.e. standard vs strict", lastUpdated: .unknown)
     public static let CoverSheetETPDescription = MZLocalizedString("CoverSheet.v24.ETP.Description", value: "Built-in Enhanced Tracking Protection helps stop ads from following you around. Turn on Strict to block even more trackers, ads, and popups. ", comment: "Description for the new ETP mode i.e. standard vs strict", lastUpdated: .unknown)
-    public static let CoverSheetETPSettingsButton = MZLocalizedString("CoverSheet.v24.ETP.Settings.Button", value: "Go to Settings", comment: "Text for the new ETP settings button", lastUpdated: .unknown)
+    public static let CoverSheetETPSettingsButton = MZLocalizedString("CoverSheet.v24.ETP.Settings.Button", value: "Choose KARMA", comment: "Text for the new ETP settings button", lastUpdated: .unknown)
 }
 
 // MARK: - FxA Signin screen
@@ -1231,7 +1231,9 @@ extension String {
     public static let DefaultBrowserOnboardingDescriptionStep1 = MZLocalizedString("DefaultBrowserOnboarding.Description1", tableName: "Default Browser", value: "1. Go to Settings", comment: "Description for default browser onboarding card.", lastUpdated: .unknown)
     public static let DefaultBrowserOnboardingDescriptionStep2 = MZLocalizedString("DefaultBrowserOnboarding.Description2", tableName: "Default Browser", value: "2. Tap Default Browser App", comment: "Description for default browser onboarding card.", lastUpdated: .unknown)
     public static let DefaultBrowserOnboardingDescriptionStep3 = MZLocalizedString("DefaultBrowserOnboarding.Description3", tableName: "Default Browser", value: "3. Select Firefox", comment: "Description for default browser onboarding card.", lastUpdated: .unknown)
-    public static let DefaultBrowserOnboardingButton = MZLocalizedString("DefaultBrowserOnboarding.Button", tableName: "Default Browser", value: "Go to Settings", comment: "Button string to open settings that allows user to switch their default browser to Firefox.", lastUpdated: .unknown)
+    public static let DefaultBrowserOnboardingButton = MZLocalizedString("DefaultBrowserOnboarding.Button", tableName: "Default Browser", value: "Choose KARMA", comment: "Button string to open settings that allows user to switch their default browser to Firefox.", lastUpdated: .unknown)
+    public static let DefaultBrowserOnboardingButtonSkip = MZLocalizedString("DefaultBrowserOnboarding.Button.Skip", tableName: "Default Browser", value: "Not now", comment: "Button string to skip", lastUpdated: .unknown)
+    
 }
 
 // MARK: - FxAWebViewController
@@ -1342,6 +1344,10 @@ extension String {
     public static let SearchSearchEngineSuggestionAccessibilityLabel = MZLocalizedString("Search suggestions from %@", tableName: "Search", comment: "Accessibility label for image of default search engine displayed left to the actual search suggestions from the engine. The parameter substituted for \"%@\" is the name of the search engine. E.g.: Search suggestions from Google", lastUpdated: .unknown)
     public static let SearchSearchSuggestionTapAccessibilityHint = MZLocalizedString("Searches for the suggestion", comment: "Accessibility hint describing the action performed when a search suggestion is clicked", lastUpdated: .unknown)
     public static let SearchSuggestionCellSwitchToTabLabel = MZLocalizedString("Search.Awesomebar.SwitchToTab", value: "Switch to tab", comment: "Search suggestion cell label that allows user to switch to tab which they searched for in url bar", lastUpdated: .unknown)
+    public static let SearchSuggestionHeader = MZLocalizedString("Karma Search", tableName: "Search", comment: "Search suggestions header", lastUpdated: .unknown)
+    public static let SearchRemoteTabsHeader = MZLocalizedString("remoteTabs", tableName: "Search", comment: "Search remote tabs header", lastUpdated: .unknown)
+    public static let SearchOpenTabsHeader = MZLocalizedString("openedTabs", tableName: "Search", comment: "Search opened tabs header", lastUpdated: .unknown)
+    public static let SearchBookmarksAndHistoryHeader = MZLocalizedString("bookmarksAndHistory", tableName: "Search", comment: "Search bookmark and history header", lastUpdated: .unknown)
 }
 
 // MARK: - Tab Location View

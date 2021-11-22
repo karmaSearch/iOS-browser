@@ -27,8 +27,8 @@ class ASHeaderView: UICollectionReusableView {
     lazy var titleLabel: UILabel = .build { label in
         label.text = self.title
         label.textColor = UIColor.theme.homePanel.activityStreamHeaderText
-        label.font = DynamicFontHelper.defaultHelper.preferredBoldFont(withTextStyle: .title3,
-                                                                       maxSize: FirefoxHomeHeaderViewUX.maxTitleLabelTextSize)
+        label.font = UIFont.customFont(ofSize: 22, weight: .bold)
+        
         label.adjustsFontForContentSizeCategory = true
         label.numberOfLines = 0
     }

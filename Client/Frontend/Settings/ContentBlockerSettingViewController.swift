@@ -219,7 +219,7 @@ class ContentBlockerSettingViewController: SettingsTableViewController {
         let title: String = .TrackerProtectionLearnMore
 
         var attributes = [NSAttributedString.Key: AnyObject]()
-        attributes[NSAttributedString.Key.font] = UIFont.systemFont(ofSize: 12, weight: UIFont.Weight.regular)
+        attributes[NSAttributedString.Key.font] = UIFont.customFont(ofSize: 12, weight: UIFont.Weight.regular)
         attributes[NSAttributedString.Key.foregroundColor] = UIColor.theme.general.highlightBlue
 
         let button = UIButton()

@@ -32,7 +32,7 @@ private extension TrayToBrowserAnimator {
         // Hide browser components
         bvc.toggleSnackBarVisibility(show: false)
         toggleWebViewVisibility(false, usingTabManager: bvc.tabManager)
-        bvc.firefoxHomeViewController?.view.isHidden = true
+        bvc.karmaHomeViewController?.view.isHidden = true
 
         bvc.webViewContainerBackdrop.isHidden = true
         bvc.statusBarOverlay.isHidden = false
@@ -97,7 +97,7 @@ private extension TrayToBrowserAnimator {
             bvc.toggleSnackBarVisibility(show: true)
             toggleWebViewVisibility(true, usingTabManager: bvc.tabManager)
             bvc.webViewContainerBackdrop.isHidden = false
-            bvc.firefoxHomeViewController?.view.isHidden = false
+            bvc.karmaHomeViewController?.view.isHidden = false
             bvc.urlBar.isTransitioning = false
             transitionContext.completeTransition(true)
         })
@@ -156,7 +156,7 @@ private extension BrowserToTrayAnimator {
         cell.title.transform = CGAffineTransform(translationX: 0, y: -cell.title.frame.size.height)
 
         // Hide views we don't want to show during the animation in the BVC
-        bvc.firefoxHomeViewController?.view.isHidden = true
+        bvc.karmaHomeViewController?.view.isHidden = true
         bvc.statusBarOverlay.isHidden = true
         bvc.toggleSnackBarVisibility(show: false)
         toggleWebViewVisibility(false, usingTabManager: bvc.tabManager)
@@ -208,7 +208,7 @@ private extension BrowserToTrayAnimator {
 
                 bvc.toggleSnackBarVisibility(show: true)
                 toggleWebViewVisibility(true, usingTabManager: bvc.tabManager)
-                bvc.firefoxHomeViewController?.view.isHidden = false
+                bvc.karmaHomeViewController?.view.isHidden = false
 
                 resetTransformsForViews([bvc.header, bvc.readerModeBar, bvc.footer])
                 bvc.urlBar.isTransitioning = false

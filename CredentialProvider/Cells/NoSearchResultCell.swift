@@ -13,7 +13,7 @@ class NoSearchResultCell: UITableViewCell {
         let label = UILabel()
         label.textColor = UIColor.CredentialProvider.titleColor
         label.text = .LoginsListNoMatchingResultTitle
-        label.font = UIFont.systemFont(ofSize: 15)
+        label.font = UIFont.customFont(ofSize: 15)
         return label
     }()
     
@@ -21,7 +21,7 @@ class NoSearchResultCell: UITableViewCell {
         let label = UILabel()
         label.text = .LoginsListNoMatchingResultSubtitle
         label.textColor = .systemGray
-        label.font = UIFont.systemFont(ofSize: 13)
+        label.font = UIFont.customFont(ofSize: 13)
         label.textAlignment = .center
         label.numberOfLines = 0
         return label

@@ -11,12 +11,12 @@ import SyncTelemetry
 
 class FirefoxHomeTests: XCTestCase {
     var profile: MockProfile!
-    var vc: FirefoxHomeViewController!
+    var vc: KarmaHomeViewController!
 
     override func setUp() {
         super.setUp()
         self.profile = MockProfile()
-        self.vc = FirefoxHomeViewController(profile: self.profile)
+        self.vc = KarmaHomeViewController(profile: self.profile)
     }
 
     override func tearDown() {

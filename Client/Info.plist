@@ -108,6 +108,14 @@
 	<string>$(NIMBUS_URL)</string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>KGSecondChancesSolid.ttf</string>
+		<string>KGSecondChancesSketch.ttf</string>
+		<string>ProximaNova-Extrabold.otf</string>
+		<string>ProximaNova-Regular.otf</string>
+		<string>ProximaNova-Bold.otf</string>
+		<string>ProximaNova-Medium.otf</string>
+		<string>ProximaNova-SemiBold.otf</string>
+		<string>ProximaNova-Medium It.otf</string>
 		<string>NewYorkMedium-Bold.otf</string>
 		<string>NewYorkMedium-BoldItalic.otf</string>
 		<string>NewYorkMedium-Regular.otf</string>

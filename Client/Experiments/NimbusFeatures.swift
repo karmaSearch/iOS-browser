@@ -25,40 +25,21 @@ import MozillaAppServices
 // ```
 struct Homescreen {
     enum SectionId: String, CaseIterable {
+        case karmahome
         case topSites
         case jumpBackIn
         case recentlySaved
         case pocket
         case libraryShortcuts
-
-        // The section as enabled if the Nimbus hasn't loaded, or the user
-        // is not in an experiment or rollout.
-        // This should be as-if MR2 is not enabled.
-        var defaultValue: Bool {
-            switch self {
-            case .topSites: return true
-            case .jumpBackIn: return false
-            case .recentlySaved: return false
-            case .pocket: return true
-            case .libraryShortcuts: return true
-            }
-        }
+        case learnandact
     }
 
-    // A dictionary of flags enabling the sections on the user's homescreen.
-    // If the entry for a given key is missing, it is filled in with the defaults
-    // listed in the `SectionId` enum.
-    lazy var sectionsEnabled: [SectionId: Bool] = {
-        var map: [SectionId: Bool] = variables.getBoolMap("sections-enabled")?.compactMapKeysAsEnums() ?? [:]
-        for id in SectionId.allCases {
-            map[id] = map[id] ?? id.defaultValue
-        }
-        return map
+    var fullSectionsEnabled: [SectionId: Bool] = {
+        return [.karmahome: true, .topSites: true, .learnandact: true]
+    }()
+    
+    var reduceSectionsEnabled: [SectionId: Bool] = {
+        return [.topSites: true, .libraryShortcuts: true]
     }()
 
-    init(variables: Variables) {
-        self.variables = variables
-    }
-    // Variables is a thin wrapper around a JSON object.
-    private let variables: Variables
 }

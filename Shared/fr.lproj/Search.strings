@@ -7,3 +7,7 @@
 /* Accessibility label for image of default search engine displayed left to the actual search suggestions from the engine. The parameter substituted for \"%@\" is the name of the search engine. E.g.: Search suggestions from Google */
 "Search suggestions from %@" = "Suggestions de recherche depuis %@";
 
+"Karma Search" = "Karma Search";
+"remoteTabs" = "Onglets distants";
+"openedTabs" = "Onglets ouverts";
+"bookmarksAndHistory" = "Marque-pages et historique";

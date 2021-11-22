@@ -34,7 +34,7 @@ class LoginListTableViewCell: ThemedTableViewCell {
     lazy var hostnameLabel: UILabel = {
         let label = UILabel()
         label.textColor = UIColor.theme.tableView.rowText
-        label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        label.font = UIFont.customFont(ofSize: 16, weight: .regular)
         label.textAlignment = .left
         label.numberOfLines = 1
         return label
@@ -43,7 +43,7 @@ class LoginListTableViewCell: ThemedTableViewCell {
     lazy var usernameLabel: UILabel = {
         let label = UILabel()
         label.textColor = UIColor.theme.tableView.rowDetailText
-        label.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        label.font = UIFont.customFont(ofSize: 14, weight: .regular)
         label.textAlignment = .left
         label.numberOfLines = 1
         return label

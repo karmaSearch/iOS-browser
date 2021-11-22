@@ -7,10 +7,10 @@
 /* Next button on the first intro screen. */
 "Intro.Slides.Button.Next" = "Weiter";
 
-/* Sign in to Firefox account button on second intro screen. */
+/* Sign in to Karma account button on second intro screen. */
 "Intro.Slides.Button.SignIn" = "Anmelden";
 
-/* Sign up to Firefox account button on second intro screen. */
+/* Sign up to Karma account button on second intro screen. */
 "Intro.Slides.Button.SignUp" = "Registrieren";
 
 /* Description for the second item in the table related to fast searching via address bar */
@@ -19,14 +19,14 @@
 /* Title for the second item in the table related to fast searching via address bar */
 "Intro.Slides.Fast.Search.Title" = "Schnelle Suche";
 
-/* Description for the first item in the table related to syncing data (bookmarks, history) via firefox account between devices */
-"Intro.Slides.Firefox.Account.Sync.Description" = "Übertragen Sie Lesezeichen, Chronik und Passwörter zu Firefox auf diesem Gerät.";
+/* Description for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
+"Intro.Slides.Karma.Account.Sync.Description" = "Übertragen Sie Lesezeichen, Chronik und Passwörter zu Karma auf diesem Gerät.";
 
-/* Title for the first item in the table related to syncing data (bookmarks, history) via firefox account between devices */
-"Intro.Slides.Firefox.Account.Sync.Title" = "Synchronisieren Sie Firefox zwischen Geräten";
+/* Title for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
+"Intro.Slides.Karma.Account.Sync.Title" = "Synchronisieren Sie Karma zwischen Geräten";
 
 /* Description for the 'Mail' panel in the First Run tour. */
-"Intro.Slides.Mail.Description" = "Nutzen Sie eine beliebige E-Mail-App – nicht nur Mail – mit Firefox.";
+"Intro.Slides.Mail.Description" = "Nutzen Sie eine beliebige E-Mail-App – nicht nur Mail – mit Karma.";
 
 /* Title for the fourth panel 'Mail' in the First Run tour. */
 "Intro.Slides.Mail.Title" = "Einstellungen zu E-Mails";
@@ -37,10 +37,10 @@
 /* Title for the third panel 'Private Browsing' in the First Run tour. */
 "Intro.Slides.Private.Title" = "Surfen Sie, als würde niemand zusehen";
 
-/* Description for the third item in the table related to safe syncing with a firefox account */
-"Intro.Slides.Safe.Sync.Description" = "Schützen Sie Ihre Zugangsdaten und Informationen überall dort, wo Sie Firefox verwenden.";
+/* Description for the third item in the table related to safe syncing with a Karma account */
+"Intro.Slides.Safe.Sync.Description" = "Schützen Sie Ihre Zugangsdaten und Informationen überall dort, wo Sie Karma verwenden.";
 
-/* Title for the third item in the table related to safe syncing with a firefox account */
+/* Title for the third item in the table related to safe syncing with a Karma account */
 "Intro.Slides.Safe.Sync.Title" = "Sichere Synchronisierung";
 
 /* Description for the 'Favorite Search Engine' panel in the First Run tour. */
@@ -59,7 +59,7 @@
 "Intro.Slides.Welcome.Description.v2" = "Schnell, privat und auf Ihrer Seite.";
 
 /* Title for the first panel 'Welcome' in the First Run tour. */
-"Intro.Slides.Welcome.Title.v2" = "Willkommen bei Firefox";
+"Intro.Slides.Welcome.Title.v2" = "Willkommen bei Karma";
 
 /* See http://mzl.la/1T8gxwo */
 "Start Browsing" = "Lossurfen";

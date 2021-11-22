@@ -30,7 +30,7 @@ class ScreenshotHelper {
         }
         //Handle home page snapshots, can not use Apple API snapshot function for this
         if InternalURL(url)?.isAboutHomeURL ?? false {
-            if let homePanel = controller?.firefoxHomeViewController {
+            if let homePanel = controller?.karmaHomeViewController {
                 let screenshot = homePanel.view.screenshot(quality: UIConstants.ActiveScreenshotQuality)
                 tab.setScreenshot(screenshot)
             }

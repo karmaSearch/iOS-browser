@@ -71,7 +71,7 @@ class ThemedTableSectionHeaderFooterView: UITableViewHeaderFooterView, Notificat
 
     lazy var titleLabel: UILabel = {
         var headerLabel = UILabel()
-        headerLabel.font = UIFont.systemFont(ofSize: 12.0, weight: UIFont.Weight.regular)
+        headerLabel.font = UIFont.customFont(ofSize: 12.0, weight: UIFont.Weight.regular)
         headerLabel.numberOfLines = 0
         return headerLabel
     }()

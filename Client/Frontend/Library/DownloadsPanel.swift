@@ -218,7 +218,7 @@ class DownloadsPanel: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         let attributedString = NSAttributedString(string: label, attributes: [
             .baselineOffset: -(strokeWidth * 2),
-            .font: UIFont.systemFont(ofSize: fontSize),
+            .font: UIFont.customFont(ofSize: fontSize),
             .foregroundColor: strokeColor
             ])
         let stringHeight: CGFloat = fontSize * 2

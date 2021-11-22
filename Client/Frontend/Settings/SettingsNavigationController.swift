@@ -32,7 +32,7 @@ extension ThemedNavigationController: NotificationThemeable {
         let standardAppearance = UINavigationBarAppearance()
         standardAppearance.configureWithDefaultBackground()
         standardAppearance.backgroundColor = UIColor.theme.tableView.headerBackground
-        standardAppearance.titleTextAttributes = [.foregroundColor: UIColor.theme.tableView.headerTextDark]
+        standardAppearance.titleTextAttributes = [.foregroundColor: UIColor.theme.tableView.headerTextDark, .font: UIFont.customFont(ofSize: 19, weight: .semibold)]
         
         navigationBar.standardAppearance = standardAppearance
         navigationBar.compactAppearance = standardAppearance

@@ -7,10 +7,10 @@
 /* Next button on the first intro screen. */
 "Intro.Slides.Button.Next" = "Ɣer sdat";
 
-/* Sign in to Firefox account button on second intro screen. */
+/* Sign in to Karma account button on second intro screen. */
 "Intro.Slides.Button.SignIn" = "Kcem";
 
-/* Sign up to Firefox account button on second intro screen. */
+/* Sign up to Karma account button on second intro screen. */
 "Intro.Slides.Button.SignUp" = "Jerred";
 
 /* Description for the second item in the table related to fast searching via address bar */
@@ -19,14 +19,14 @@
 /* Title for the second item in the table related to fast searching via address bar */
 "Intro.Slides.Fast.Search.Title" = "Anadi arurad";
 
-/* Description for the first item in the table related to syncing data (bookmarks, history) via firefox account between devices */
-"Intro.Slides.Firefox.Account.Sync.Description" = "Awi-d ticraḍ n yisebtar, amazray, d wawalen uffiren ɣer Firefox deg yibenk-a.";
+/* Description for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
+"Intro.Slides.Karma.Account.Sync.Description" = "Awi-d ticraḍ n yisebtar, amazray, d wawalen uffiren ɣer Karma deg yibenk-a.";
 
-/* Title for the first item in the table related to syncing data (bookmarks, history) via firefox account between devices */
-"Intro.Slides.Firefox.Account.Sync.Title" = "Mtawi Firefox gar yibenkan";
+/* Title for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
+"Intro.Slides.Karma.Account.Sync.Title" = "Mtawi Karma gar yibenkan";
 
 /* Description for the 'Mail' panel in the First Run tour. */
-"Intro.Slides.Mail.Description" = "Seqdec asnas imayl win ibγun illi- mačči kan Mail - s Firefox.";
+"Intro.Slides.Mail.Description" = "Seqdec asnas imayl win ibγun illi- mačči kan Mail - s Karma.";
 
 /* Title for the fourth panel 'Mail' in the First Run tour. */
 "Intro.Slides.Mail.Title" = "Tewwiḍ iγewwaṛen… n imayl";
@@ -37,10 +37,10 @@
 /* Title for the third panel 'Private Browsing' in the First Run tour. */
 "Intro.Slides.Private.Title" = "Inig am akken ulac win i k-id-ittmuqqulen";
 
-/* Description for the third item in the table related to safe syncing with a firefox account */
-"Intro.Slides.Safe.Sync.Description" = "Mmesten inekcumen-ik d yisefka-k deg wanda tebɣuḍ tesqedceḍ Firefox.";
+/* Description for the third item in the table related to safe syncing with a Karma account */
+"Intro.Slides.Safe.Sync.Description" = "Mmesten inekcumen-ik d yisefka-k deg wanda tebɣuḍ tesqedceḍ Karma.";
 
-/* Title for the third item in the table related to safe syncing with a firefox account */
+/* Title for the third item in the table related to safe syncing with a Karma account */
 "Intro.Slides.Safe.Sync.Title" = "Amtawi aɣelsan";
 
 /* Description for the 'Favorite Search Engine' panel in the First Run tour. */
@@ -59,7 +59,7 @@
 "Intro.Slides.Welcome.Description.v2" = "D arurad, d abaḍni daɣen ɣer yidis-ik.";
 
 /* Title for the first panel 'Welcome' in the First Run tour. */
-"Intro.Slides.Welcome.Title.v2" = "Anṣuf ar Firefox";
+"Intro.Slides.Welcome.Title.v2" = "Anṣuf ar Karma";
 
 /* See http://mzl.la/1T8gxwo */
 "Start Browsing" = "Bdu tunigin";

@@ -290,7 +290,7 @@ extension BrowserViewController: URLBarDelegate, FeatureFlagsProtocol {
     }
 
     func urlBarDidPressScrollToTop(_ urlBar: URLBarView) {
-        if let selectedTab = tabManager.selectedTab, firefoxHomeViewController == nil {
+        if let selectedTab = tabManager.selectedTab, karmaHomeViewController == nil {
             // Only scroll to top if we are not showing the home view controller
             selectedTab.webView?.scrollView.setContentOffset(CGPoint.zero, animated: true)
         }
@@ -312,7 +312,6 @@ extension BrowserViewController: URLBarDelegate, FeatureFlagsProtocol {
     }
 
     func urlBar(_ urlBar: URLBarView, didEnterText text: String) {
-        urlBar.updateSearchEngineImage()
         if text.isEmpty {
             hideSearchController()
         } else {
@@ -378,7 +377,6 @@ extension BrowserViewController: URLBarDelegate, FeatureFlagsProtocol {
 
     func urlBarDidEnterOverlayMode(_ urlBar: URLBarView) {
         libraryDrawerViewController?.close()
-        urlBar.updateSearchEngineImage()
         guard let profile = profile as? BrowserProfile else {
             return
         }

@@ -8,7 +8,7 @@ import Storage
 struct SiteTableViewControllerUX {
     static let HeaderHeight = CGFloat(32)
     static let RowHeight = CGFloat(44)
-    static let HeaderFont = UIFont.systemFont(ofSize: 12, weight: UIFont.Weight.medium)
+    static let HeaderFont = UIFont.customFont(ofSize: 12, weight: UIFont.Weight.medium)
     static let HeaderTextMargin = CGFloat(16)
 }
 
@@ -194,7 +194,7 @@ class SiteTableViewController: UIViewController, UITableViewDelegate, UITableVie
     func applyTheme() {
         navigationController?.navigationBar.barTintColor = UIColor.theme.tableView.headerBackground
         navigationController?.navigationBar.tintColor = UIColor.theme.general.controlTint
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.headerTextDark]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.headerTextDark, .font: UIFont.customFont(ofSize: 19, weight: .semibold)]
         setNeedsStatusBarAppearanceUpdate()
 
         tableView.backgroundColor = UIColor.theme.homePanel.panelBackground

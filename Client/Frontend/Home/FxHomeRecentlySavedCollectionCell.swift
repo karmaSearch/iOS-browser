@@ -206,7 +206,7 @@ class RecentlySavedCell: UICollectionViewCell, NotificationThemeable {
     }
     let itemTitle: UILabel = .build { label in
         label.adjustsFontSizeToFitWidth = false
-        label.font = UIFont.systemFont(ofSize: RecentlySavedCellUX.bookmarkTitleFontSize)
+        label.font = UIFont.customFont(ofSize: RecentlySavedCellUX.bookmarkTitleFontSize)
         label.textColor = .label
     }
     

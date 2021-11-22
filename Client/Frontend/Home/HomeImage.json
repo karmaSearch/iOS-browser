@@ -1,0 +1,14 @@
+{
+    "images": [
+        {
+        "imageName": "plants",
+        "infoText": "Plants by ",
+        "author" : "John Fowler"
+        },
+        {
+        "imageName": "toucan",
+        "infoText": "Toucan in the rain by ",
+        "author" : "Zdeněk Macháček"
+        }
+    ]
+}

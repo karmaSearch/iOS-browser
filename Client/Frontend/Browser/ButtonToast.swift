@@ -11,8 +11,8 @@ struct ButtonToastUX {
     static let ToastDelay = DispatchTimeInterval.milliseconds(900)
     static let ToastButtonBorderRadius: CGFloat = 5
     static let ToastButtonBorderWidth: CGFloat = 1
-    static let ToastLabelFont = UIFont.systemFont(ofSize: 15, weight: .semibold)
-    static let ToastDescriptionFont = UIFont.systemFont(ofSize: 13)
+    static let ToastLabelFont = UIFont.customFont(ofSize: 15, weight: .semibold)
+    static let ToastDescriptionFont = UIFont.customFont(ofSize: 13)
 
     struct ToastButtonPaddedView {
         static let WidthOffset: CGFloat = 20.0

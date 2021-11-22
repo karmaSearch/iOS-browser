@@ -8,84 +8,75 @@ import SnapKit
 import Shared
 
 class IntroScreenWelcomeView: UIView, CardTheme {
-    // Private vars
-    private var fxTextThemeColour: UIColor {
-        // For dark theme we want to show light colours and for light we want to show dark colours
-        return theme == .dark ? .white : .black
-    }
-    private var fxBackgroundThemeColour: UIColor {
-        return theme == .dark ? UIColor.Firefox.DarkGrey10 : .white
-    }
-    // Orientation independent screen size
-    private let screenSize = DeviceInfo.screenSizeOrientationIndependent()
+
     // Views
-    private lazy var titleImageViewPage1: UIImageView = {
-        let imgView = UIImageView(image: UIImage(named: "tour-Welcome"))
-        imgView.contentMode = .center
+    private lazy var animalsBackgroundImage: UIImageView = {
+        let imgView = UIImageView()
+        imgView.contentMode = .scaleToFill
         imgView.clipsToBounds = true
         return imgView
     }()
+    
+    private lazy var iconImage: UIImageView = {
+        let imgView = UIImageView()
+        imgView.contentMode = .scaleToFill
+        imgView.clipsToBounds = true
+        return imgView
+    }()
+    
+    private lazy var karmaLogo: UIImageView = {
+        let logo = UIImageView(image: UIImage(named: "karma-logo"))
+        logo.contentMode = .scaleToFill
+        logo.clipsToBounds = true
+        
+        return logo
+    }()
+    
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.text = .CardTitleWelcome
-        label.textColor = fxTextThemeColour
-        label.font = UIFont.systemFont(ofSize: 32, weight: .bold)
+        label.textColor = .white
+        label.font = UIFont.customFont(ofSize: 24, weight: .bold)
         label.textAlignment = .center
         label.adjustsFontSizeToFitWidth = true
+        label.setContentHuggingPriority(.defaultHigh, for: .vertical)
         return label
     }()
+    
     private lazy var subTitleLabelPage1: UILabel = {
-        let fontSize: CGFloat = screenSize.width <= 320 ? 16 : 20
         let label = UILabel()
-        label.text = .CardTextWelcome
-        label.textColor = fxTextThemeColour
-        label.font = UIFont.systemFont(ofSize: fontSize)
+        label.textColor = UIColor.Photon.LightGrey90
+        label.font = UIFont.customFont(ofSize: 15, weight: .medium)
         label.textAlignment = .center
-        label.adjustsFontSizeToFitWidth = true
         label.numberOfLines = 2
+        label.baselineAdjustment = .alignCenters
         return label
     }()
+    
     private var closeButton: UIButton = {
         let closeButton = UIButton()
-        closeButton.setImage(UIImage(named: "close-large"), for: .normal)
-        closeButton.tintColor = .secondaryLabel
+        closeButton.tintColor = UIColor.Photon.Grey11
+        closeButton.setTitle(.IntroButtonSkip, for: .normal)
+        closeButton.titleLabel?.font = UIFont.customFont(ofSize: 15, weight: .medium)
+        closeButton.setImage(UIImage(named: "skip-right-arrow"), for: .normal)
+        closeButton.semanticContentAttribute = .forceRightToLeft
         return closeButton
     }()
-    private lazy var signUpButton: UIButton = {
-        let button = UIButton()
-        button.accessibilityIdentifier = "signUpOnboardingButton"
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
-        button.layer.cornerRadius = 10
-        button.backgroundColor = UIColor.Photon.Blue50
-        button.setTitle(.IntroSignUpButtonTitle, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
-        button.setTitleColor(.white, for: .normal)
-        button.titleLabel?.textAlignment = .center
-        return button
-    }()
-    private lazy var signInButton: UIButton = {
-        let button = UIButton()
-        button.accessibilityIdentifier = "signInOnboardingButton"
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
-        button.layer.cornerRadius = 10
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.gray.cgColor
-        button.backgroundColor = .clear
-        button.setTitle(.IntroSignInButtonTitle, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
-        button.setTitleColor(UIColor.Photon.Blue50, for: .normal)
-        button.titleLabel?.textAlignment = .center
-        return button
-    }()
+
     private lazy var nextButton: UIButton = {
         let button = UIButton()
         button.setTitle(.IntroNextButtonTitle, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
-        button.setTitleColor(UIColor.Photon.Blue50, for: .normal)
+        button.titleLabel?.font = UIFont.customFont(ofSize: 15, weight: .medium)
+        button.setTitleColor(UIColor.Photon.White100, for: .normal)
+        button.setBackgroundColor(UIColor.Photon.Green60, forState: .normal)
+        button.layer.cornerRadius = 12
+        button.clipsToBounds = true
         button.titleLabel?.textAlignment = .center
         button.accessibilityIdentifier = "nextOnboardingButton"
         return button
     }()
+    
+    private var isLast: Bool = false
+    
     // Helper views
     let main2panel = UIStackView()
     let imageHolder = UIView()
@@ -93,10 +84,7 @@ class IntroScreenWelcomeView: UIView, CardTheme {
     // Closure delegates
     var closeClosure: (() -> Void)?
     var nextClosure: (() -> Void)?
-    var signUpClosure: (() -> Void)?
-    var signInClosure: (() -> Void)?
-    // Basic variables
-    private var currentPage: Int32 = 0
+    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -110,98 +98,109 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         TelemetryWrapper.recordEvent(category: .action, method: .view, object: .welcomeScreenView)
     }
     
+    func setData(title: String, description: String, icon: String, background: String, isLast: Bool = false) {
+        self.titleLabel.text = title
+        self.subTitleLabelPage1.text = description
+        self.animalsBackgroundImage.image = UIImage(named: background)
+        self.iconImage.image = UIImage(named: icon)
+        self.isLast = isLast
+        self.closeButton.isHidden = isLast
+    }
+    
     // MARK: View setup
     private func initialViewSetup() {
         // Background colour setup
-        backgroundColor = fxBackgroundThemeColour
+        backgroundColor = .white
         // View setup
         main2panel.axis = .vertical
         main2panel.distribution = .fillEqually
-    
+        bottomHolder.backgroundColor = UIColor.Photon.DarkGrey90
+        
         addSubview(main2panel)
         main2panel.snp.makeConstraints { make in
             make.left.right.equalToSuperview()
-            make.top.equalTo(safeArea.top)
-            make.bottom.equalTo(safeArea.bottom)
+            make.top.equalTo(snp.top)
+            make.bottom.equalTo(snp.bottom)
         }
         
         main2panel.addArrangedSubview(imageHolder)
-        imageHolder.addSubview(titleImageViewPage1)
-        titleImageViewPage1.snp.makeConstraints { make in
+        imageHolder.addSubview(animalsBackgroundImage)
+        setUpCurveBackground()
+        imageHolder.addSubviews(karmaLogo)
+        
+        karmaLogo.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(safeArea.top).inset(30)
+        }
+
+        animalsBackgroundImage.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
         
+        // bottomHolder
         main2panel.addArrangedSubview(bottomHolder)
-        [titleLabel, subTitleLabelPage1, signUpButton, signInButton, nextButton].forEach {
+        
+        [iconImage, titleLabel, subTitleLabelPage1, nextButton].forEach {
              bottomHolder.addSubview($0)
         }
         
+        iconImage.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.greaterThanOrEqualToSuperview().inset(10)
+            make.top.equalToSuperview().inset(40).priority(.medium)
+            make.height.equalTo(iconImage.snp.width).multipliedBy(0.44)
+        }
+        
         titleLabel.snp.makeConstraints { make in
-            make.left.right.equalToSuperview().inset(10)
-            make.top.equalToSuperview()
+            make.left.right.equalToSuperview().inset(20)
+            make.top.equalTo(iconImage.snp.bottom).offset(20)
         }
         
         subTitleLabelPage1.snp.makeConstraints { make in
-            make.left.right.equalToSuperview().inset(35)
-            make.top.equalTo(titleLabel.snp.bottom)
+            make.left.right.equalToSuperview().inset(60)
+            make.top.equalTo(titleLabel.snp.bottom).offset(10)
         }
         
-        let buttonEdgeInset = 15
-        let buttonHeight = 46
-        let buttonSpacing = 16
-        
-        signUpButton.addTarget(self, action: #selector(showSignUpFlow), for: .touchUpInside)
-        signUpButton.snp.makeConstraints { make in
-            make.left.right.equalToSuperview().inset(buttonEdgeInset)
-            make.bottom.equalTo(signInButton.snp.top).offset(-buttonSpacing)
-            make.height.equalTo(buttonHeight)
-        }
-        signInButton.addTarget(self, action: #selector(showEmailLoginFlow), for: .touchUpInside)
-        signInButton.snp.makeConstraints { make in
-            make.left.right.equalToSuperview().inset(buttonEdgeInset)
-            make.bottom.equalTo(nextButton.snp.top).offset(-buttonSpacing)
-            make.height.equalTo(buttonHeight)
-        }
         nextButton.addTarget(self, action: #selector(nextAction), for: .touchUpInside)
         nextButton.snp.makeConstraints { make in
-            make.left.right.equalToSuperview().inset(buttonEdgeInset)
-            // On large iPhone screens, bump this up from the bottom
-            let offset: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 20 : (screenSize.height > 800 ? 60 : 20)
-            make.bottom.equalToSuperview().inset(offset)
-            make.height.equalTo(buttonHeight)
+            make.left.right.equalToSuperview().inset(60)
+            make.top.equalTo(subTitleLabelPage1.snp.bottom).offset(20)
+            make.bottom.equalToSuperview().inset(100).priority(.medium)
+            make.height.equalTo(31)
         }
         addSubview(closeButton)
         closeButton.addTarget(self, action: #selector(handleCloseButtonTapped), for: .touchUpInside)
         closeButton.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(buttonEdgeInset)
-            make.right.equalToSuperview().inset(buttonEdgeInset)
+            make.bottom.equalTo(safeArea.bottom).inset(15)
+            make.right.equalToSuperview().inset(15)
         }
 
-        closeButton.tintColor = .secondaryLabel
+    }
+    
+    private func setUpCurveBackground() {
+        let curve = UIImageView(image: UIImage(named: "bg-curves"))
+        imageHolder.addSubview(curve)
+        
+        curve.snp.makeConstraints { make in
+            make.bottom.equalToSuperview()
+            make.leading.equalToSuperview()
+            make.trailing.equalToSuperview()
+        }
     }
     
     // MARK: Button Actions
     @objc func handleCloseButtonTapped() {
-        TelemetryWrapper.recordEvent(category: .action, method: .press, object: .dismissedOnboarding, extras: ["slide-num": currentPage])
         TelemetryWrapper.recordEvent(category: .action, method: .press, object: .welcomeScreenClose)
         closeClosure?()
-    }
-
-    @objc func showEmailLoginFlow() {
-        TelemetryWrapper.recordEvent(category: .action, method: .press, object: .dismissedOnboardingEmailLogin, extras: ["slide-num": currentPage])
-        TelemetryWrapper.recordEvent(category: .action, method: .press, object: .welcomeScreenSignIn)
-        signInClosure?()
-    }
-
-    @objc func showSignUpFlow() {
-        TelemetryWrapper.recordEvent(category: .action, method: .press, object: .dismissedOnboardingSignUp, extras: ["slide-num": currentPage])
-        TelemetryWrapper.recordEvent(category: .action, method: .press, object: .welcomeScreenSignUp)
-        signUpClosure?()
     }
     
     @objc private func nextAction() {
         TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .welcomeScreenNext)
-        nextClosure?()
+        if isLast {
+            closeClosure?()
+        } else {
+            nextClosure?()
+        }
     }
     
     @objc private func dismissAnimated() {

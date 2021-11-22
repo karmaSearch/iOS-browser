@@ -65,7 +65,7 @@ class DefaultBrowserOnboardingViewModel {
         let didShow = UserDefaults.standard.bool(forKey: PrefsKeys.KeyDidShowDefaultBrowserOnboarding)
         guard !didShow else { return false }
         
-        if currentSessionCount == maxSessionCount {
+        if currentSessionCount == maxSessionCount && currentSessionCount != 0 {
             shouldShow = true
             UserDefaults.standard.set(true, forKey: PrefsKeys.KeyDidShowDefaultBrowserOnboarding)
         }
