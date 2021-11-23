@@ -1,16 +1,16 @@
-/* Button string to open settings that allows user to switch their default browser to Karma. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Button" = "ᱥᱟᱡᱟᱣ ᱠᱚ ᱨᱮ ᱪᱟᱞᱟᱜ ᱢᱮ";
 
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "ᱪᱮᱫᱢᱮ ᱚᱠᱟᱞᱠᱟ";
 
-/* Description for small card shown that allows user to switch their default browser to Karma. */
-"DefaultBrowserCard.Description" = "ᱞᱤᱱᱠ ᱠᱚ ᱥᱟᱡᱟᱣ ᱢᱮ ᱣᱮᱵᱥᱟᱭᱤᱴ, ᱤᱢᱮᱞ, ᱟᱨ ᱢᱮᱥᱮᱡ ᱠᱷᱚᱱ Karma ᱨᱮ ᱟᱪᱛᱮ ᱡᱷᱤᱜ ᱞᱚᱜᱤᱛ.";
+/* Description for small card shown that allows user to switch their default browser to KARMA. */
+"DefaultBrowserCard.Description" = "ᱞᱤᱱᱠ ᱠᱚ ᱥᱟᱡᱟᱣ ᱢᱮ ᱣᱮᱵᱥᱟᱭᱤᱴ, ᱤᱢᱮᱞ, ᱟᱨ ᱢᱮᱥᱮᱡ ᱠᱷᱚᱱ KARMA ᱨᱮ ᱟᱪᱛᱮ ᱡᱷᱤᱜ ᱞᱚᱜᱤᱛ.";
 
-/* Title for small card shown that allows user to switch their default browser to Karma. */
+/* Title for small card shown that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Title" = "ᱟᱢᱟᱜ ᱢᱩᱞ ᱯᱟᱱᱛᱮᱭᱟᱜ ᱵᱚᱫᱚᱞ ᱢᱮ";
 
-/* Button string to open settings that allows user to switch their default browser to Karma. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserOnboarding.Button" = "ᱥᱟᱡᱟᱣ ᱨᱮ ᱪᱟᱞᱟᱜ ᱢᱮ";
 
 /* Description for default browser onboarding card. */
@@ -20,11 +20,11 @@
 "DefaultBrowserOnboarding.Description2" = "2. ᱢᱩᱞ ᱵᱨᱟᱩᱡᱽᱟᱹᱨ ᱮᱯ ᱨᱮ ᱚᱛᱟᱭ ᱢᱮ";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Karma ᱵᱟᱪᱷᱟᱣᱢᱮ";
+"DefaultBrowserOnboarding.Description3" = "3. KARMA ᱵᱟᱪᱷᱟᱣᱢᱮ";
 
-/* Text for the screenshot of the iOS system settings page for Karma. */
+/* Text for the screenshot of the iOS system settings page for KARMA. */
 "DefaultBrowserOnboarding.Screenshot" = "ᱢᱩᱞ ᱵᱨᱟᱩᱡᱽᱟᱹᱨ ᱮᱯ";
 
-/* Menu option for setting Karma as default browser. */
+/* Menu option for setting KARMA as default browser. */
 "Settings.DefaultBrowserMenuItem" = "ᱢᱩᱞ ᱯᱟᱱᱛᱮᱭᱟᱜ ᱞᱮᱠᱟ ᱥᱟᱡᱟᱣ ᱢᱮ";
 

@@ -1,16 +1,16 @@
-/* Button string to open settings that allows user to switch their default browser to Karma. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Button" = "Choisir KARMA";
 
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Me montrer comment";
 
-/* Description for small card shown that allows user to switch their default browser to Karma. */
-"DefaultBrowserCard.Description" = "Faites en sorte que les liens des sites web, des courriels et des messages s’ouvrent automatiquement dans Karma.";
+/* Description for small card shown that allows user to switch their default browser to KARMA. */
+"DefaultBrowserCard.Description" = "Faites en sorte que les liens des sites web, des courriels et des messages s’ouvrent automatiquement dans KARMA.";
 
-/* Title for small card shown that allows user to switch their default browser to Karma. */
+/* Title for small card shown that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Title" = "Changez de navigateur par défaut";
 
-/* Button string to open settings that allows user to switch their default browser to Karma. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserOnboarding.Button" = "Choisir KARMA";
 
 "DefaultBrowserOnboarding.Button.Skip" = "Pas maintenant";
@@ -22,12 +22,12 @@
 "DefaultBrowserOnboarding.Description2" = "2. Appuyez sur App du navigateur par défaut";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Sélectionnez Karma";
+"DefaultBrowserOnboarding.Description3" = "3. Sélectionnez KARMA";
 
-/* Text for the screenshot of the iOS system settings page for Karma. */
+/* Text for the screenshot of the iOS system settings page for KARMA. */
 "DefaultBrowserOnboarding.Screenshot" = "App du navigateur par défaut";
 
-/* Menu option for setting Karma as default browser. */
+/* Menu option for setting KARMA as default browser. */
 "Settings.DefaultBrowserMenuItem" = "Définir KARMA comme navigateur par défaut";
 
 

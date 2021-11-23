@@ -7,10 +7,10 @@
 /* Next button on the first intro screen. */
 "Intro.Slides.Button.Next" = "Selanjutnya";
 
-/* Sign in to Karma account button on second intro screen. */
+/* Sign in to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignIn" = "Masuk";
 
-/* Sign up to Karma account button on second intro screen. */
+/* Sign up to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignUp" = "Daftar";
 
 /* Description for the second item in the table related to fast searching via address bar */
@@ -19,14 +19,14 @@
 /* Title for the second item in the table related to fast searching via address bar */
 "Intro.Slides.Fast.Search.Title" = "Pencarian Cepat";
 
-/* Description for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Description" = "Bawa markah, riwayat, dan kata sandi ke Karma di perangkat ini.";
+/* Description for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Description" = "Bawa markah, riwayat, dan kata sandi ke KARMA di perangkat ini.";
 
-/* Title for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Title" = "Sinkronkan Karma Antar-Perangkat";
+/* Title for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Title" = "Sinkronkan KARMA Antar-Perangkat";
 
 /* Description for the 'Mail' panel in the First Run tour. */
-"Intro.Slides.Mail.Description" = "Gunakan aplikasi email apapun - tidak hanya Mail - dengan Karma.";
+"Intro.Slides.Mail.Description" = "Gunakan aplikasi email apapun - tidak hanya Mail - dengan KARMA.";
 
 /* Title for the fourth panel 'Mail' in the First Run tour. */
 "Intro.Slides.Mail.Title" = "Opsi ketika Anda mendapat surel";
@@ -37,10 +37,10 @@
 /* Title for the third panel 'Private Browsing' in the First Run tour. */
 "Intro.Slides.Private.Title" = "Menjelajah seperti tidak ada yang mengawasi";
 
-/* Description for the third item in the table related to safe syncing with a Karma account */
-"Intro.Slides.Safe.Sync.Description" = "Lindungi log masuk dan data Anda di mana pun Anda menggunakan Karma.";
+/* Description for the third item in the table related to safe syncing with a KARMA account */
+"Intro.Slides.Safe.Sync.Description" = "Lindungi log masuk dan data Anda di mana pun Anda menggunakan KARMA.";
 
-/* Title for the third item in the table related to safe syncing with a Karma account */
+/* Title for the third item in the table related to safe syncing with a KARMA account */
 "Intro.Slides.Safe.Sync.Title" = "Sinkronisasi Aman";
 
 /* Description for the 'Favorite Search Engine' panel in the First Run tour. */
@@ -59,7 +59,7 @@
 "Intro.Slides.Welcome.Description.v2" = "Cepat, privat, dan berada di sisi Anda.";
 
 /* Title for the first panel 'Welcome' in the First Run tour. */
-"Intro.Slides.Welcome.Title.v2" = "Selamat datang di Karma";
+"Intro.Slides.Welcome.Title.v2" = "Selamat datang di KARMA";
 
 /* See http://mzl.la/1T8gxwo */
 "Start Browsing" = "Mulai Menjelajah";

@@ -7,10 +7,10 @@
 /* Next button on the first intro screen. */
 "Intro.Slides.Button.Next" = "Επόμενο";
 
-/* Sign in to Karma account button on second intro screen. */
+/* Sign in to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignIn" = "Σύνδεση";
 
-/* Sign up to Karma account button on second intro screen. */
+/* Sign up to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignUp" = "Εγγραφή";
 
 /* Description for the second item in the table related to fast searching via address bar */
@@ -19,14 +19,14 @@
 /* Title for the second item in the table related to fast searching via address bar */
 "Intro.Slides.Fast.Search.Title" = "Γρήγορη αναζήτηση";
 
-/* Description for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Description" = "Φέρτε σελιδοδείκτες, ιστορικό και κωδικούς πρόσβασης στο Karma σε αυτή τη συσκευή.";
+/* Description for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Description" = "Φέρτε σελιδοδείκτες, ιστορικό και κωδικούς πρόσβασης στο KARMA σε αυτή τη συσκευή.";
 
-/* Title for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Title" = "Συγχρονισμός του Karma μεταξύ συσκευών";
+/* Title for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Title" = "Συγχρονισμός του KARMA μεταξύ συσκευών";
 
 /* Description for the 'Mail' panel in the First Run tour. */
-"Intro.Slides.Mail.Description" = "Χρησιμοποιήστε οποιαδήποτε εφαρμογή email - όχι μόνο το Mail - με το Karma.";
+"Intro.Slides.Mail.Description" = "Χρησιμοποιήστε οποιαδήποτε εφαρμογή email - όχι μόνο το Mail - με το KARMA.";
 
 /* Title for the fourth panel 'Mail' in the First Run tour. */
 "Intro.Slides.Mail.Title" = "Έχετε επιλογές… αλληλογραφίας";
@@ -37,10 +37,10 @@
 /* Title for the third panel 'Private Browsing' in the First Run tour. */
 "Intro.Slides.Private.Title" = "Περιηγηθείτε σαν να μην σας βλέπει κανείς";
 
-/* Description for the third item in the table related to safe syncing with a Karma account */
-"Intro.Slides.Safe.Sync.Description" = "Προστατέψτε τις συνδέσεις και τα δεδομένα σας όπου κι αν χρησιμοποιήσετε το Karma.";
+/* Description for the third item in the table related to safe syncing with a KARMA account */
+"Intro.Slides.Safe.Sync.Description" = "Προστατέψτε τις συνδέσεις και τα δεδομένα σας όπου κι αν χρησιμοποιήσετε το KARMA.";
 
-/* Title for the third item in the table related to safe syncing with a Karma account */
+/* Title for the third item in the table related to safe syncing with a KARMA account */
 "Intro.Slides.Safe.Sync.Title" = "Ασφαλής συγχρονισμός";
 
 /* Description for the 'Favorite Search Engine' panel in the First Run tour. */
@@ -59,7 +59,7 @@
 "Intro.Slides.Welcome.Description.v2" = "Γρήγορο, ιδιωτικό, στο πλευρό σας.";
 
 /* Title for the first panel 'Welcome' in the First Run tour. */
-"Intro.Slides.Welcome.Title.v2" = "Καλώς ορίσατε στο Karma";
+"Intro.Slides.Welcome.Title.v2" = "Καλώς ορίσατε στο KARMA";
 
 /* See http://mzl.la/1T8gxwo */
 "Start Browsing" = "Έναρξη περιήγησης";

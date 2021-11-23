@@ -7,10 +7,10 @@
 /* Next button on the first intro screen. */
 "Intro.Slides.Button.Next" = "Næste";
 
-/* Sign in to Karma account button on second intro screen. */
+/* Sign in to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignIn" = "Log ind";
 
-/* Sign up to Karma account button on second intro screen. */
+/* Sign up to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignUp" = "Tilmeld dig";
 
 /* Description for the second item in the table related to fast searching via address bar */
@@ -19,14 +19,14 @@
 /* Title for the second item in the table related to fast searching via address bar */
 "Intro.Slides.Fast.Search.Title" = "Hurtig søgning";
 
-/* Description for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Description" = "Synkroniser bogmærker, historik og adgangskoder med Karma på denne enhed.";
+/* Description for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Description" = "Synkroniser bogmærker, historik og adgangskoder med KARMA på denne enhed.";
 
-/* Title for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Title" = "Synkroniser Karma mellem enheder";
+/* Title for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Title" = "Synkroniser KARMA mellem enheder";
 
 /* Description for the 'Mail' panel in the First Run tour. */
-"Intro.Slides.Mail.Description" = "I Karma kan du anvende alle email-apps - ikke blot Mail.";
+"Intro.Slides.Mail.Description" = "I KARMA kan du anvende alle email-apps - ikke blot Mail.";
 
 /* Title for the fourth panel 'Mail' in the First Run tour. */
 "Intro.Slides.Mail.Title" = "Du har fået mail… muligheder";
@@ -37,10 +37,10 @@
 /* Title for the third panel 'Private Browsing' in the First Run tour. */
 "Intro.Slides.Private.Title" = "Surf uden øjenvidner";
 
-/* Description for the third item in the table related to safe syncing with a Karma account */
-"Intro.Slides.Safe.Sync.Description" = "Beskyt dine logins og dine data, overalt du bruger Karma.";
+/* Description for the third item in the table related to safe syncing with a KARMA account */
+"Intro.Slides.Safe.Sync.Description" = "Beskyt dine logins og dine data, overalt du bruger KARMA.";
 
-/* Title for the third item in the table related to safe syncing with a Karma account */
+/* Title for the third item in the table related to safe syncing with a KARMA account */
 "Intro.Slides.Safe.Sync.Title" = "Sikker synkronisering";
 
 /* Description for the 'Favorite Search Engine' panel in the First Run tour. */
@@ -59,7 +59,7 @@
 "Intro.Slides.Welcome.Description.v2" = "Hurtig, privat og på din side.";
 
 /* Title for the first panel 'Welcome' in the First Run tour. */
-"Intro.Slides.Welcome.Title.v2" = "Velkommen til Karma";
+"Intro.Slides.Welcome.Title.v2" = "Velkommen til KARMA";
 
 /* See http://mzl.la/1T8gxwo */
 "Start Browsing" = "Gå i gang";

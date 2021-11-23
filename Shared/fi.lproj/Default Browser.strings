@@ -1,15 +1,15 @@
-/* Description for small card shown that allows user to switch their default browser to Karma. */
+/* Description for small card shown that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Description" = "Aseta verkkosivustojen, sähköpostien ja viestien linkit avautumaan automaattisesti Firefoxissa.";
 
-/* Title for small card shown that allows user to switch their default browser to Karma. */
+/* Title for small card shown that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Title" = "Vaihda oletusselain";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Valitse Karma";
+"DefaultBrowserOnboarding.Description3" = "3. Valitse KARMA";
 
-/* Text for the screenshot of the iOS system settings page for Karma. */
+/* Text for the screenshot of the iOS system settings page for KARMA. */
 "DefaultBrowserOnboarding.Screenshot" = "Oletusselain";
 
-/* Menu option for setting Karma as default browser. */
+/* Menu option for setting KARMA as default browser. */
 "Settings.DefaultBrowserMenuItem" = "Aseta oletusselaimeksi";
 

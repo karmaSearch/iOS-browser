@@ -1,9 +1,9 @@
 /* Sub label for Top Sites widget */
-"TodayWidget.QuickViewOpenTabsSubLabel" = "Karma - отворени раздели";
+"TodayWidget.QuickViewOpenTabsSubLabel" = "KARMA - отворени раздели";
 
-/* Title for top sites widget to add Karma top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "Предпочитани страници";
 
 /* Sub label for Top Sites widget */
-"TodayWidget.TopSitesSubLabel" = "Karma - Предпочитани";
+"TodayWidget.TopSitesSubLabel" = "KARMA - Предпочитани";
 

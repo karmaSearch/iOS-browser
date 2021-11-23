@@ -7,10 +7,10 @@
 /* Next button on the first intro screen. */
 "Intro.Slides.Button.Next" = "下一步";
 
-/* Sign in to Karma account button on second intro screen. */
+/* Sign in to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignIn" = "登录";
 
-/* Sign up to Karma account button on second intro screen. */
+/* Sign up to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignUp" = "注册";
 
 /* Description for the second item in the table related to fast searching via address bar */
@@ -19,14 +19,14 @@
 /* Title for the second item in the table related to fast searching via address bar */
 "Intro.Slides.Fast.Search.Title" = "快速搜索";
 
-/* Description for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Description" = "将 Karma 的书签、历史记录和密码带到此设备。";
+/* Description for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Description" = "将 KARMA 的书签、历史记录和密码带到此设备。";
 
-/* Title for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Title" = "在设备之间同步 Karma";
+/* Title for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Title" = "在设备之间同步 KARMA";
 
 /* Description for the 'Mail' panel in the First Run tour. */
-"Intro.Slides.Mail.Description" = "可以与 Karma 配合使用任何邮件 App，不再只是自带的“邮件”。";
+"Intro.Slides.Mail.Description" = "可以与 KARMA 配合使用任何邮件 App，不再只是自带的“邮件”。";
 
 /* Title for the fourth panel 'Mail' in the First Run tour. */
 "Intro.Slides.Mail.Title" = "现在…你能选择要调用的邮件 App";
@@ -37,10 +37,10 @@
 /* Title for the third panel 'Private Browsing' in the First Run tour. */
 "Intro.Slides.Private.Title" = "上网时拒绝对你的监视";
 
-/* Description for the third item in the table related to safe syncing with a Karma account */
-"Intro.Slides.Safe.Sync.Description" = "在任何使用 Karma 的地方都保护登录信息。";
+/* Description for the third item in the table related to safe syncing with a KARMA account */
+"Intro.Slides.Safe.Sync.Description" = "在任何使用 KARMA 的地方都保护登录信息。";
 
-/* Title for the third item in the table related to safe syncing with a Karma account */
+/* Title for the third item in the table related to safe syncing with a KARMA account */
 "Intro.Slides.Safe.Sync.Title" = "安全同步";
 
 /* Description for the 'Favorite Search Engine' panel in the First Run tour. */
@@ -59,7 +59,7 @@
 "Intro.Slides.Welcome.Description.v2" = "快速、私密，伴您身边。";
 
 /* Title for the first panel 'Welcome' in the First Run tour. */
-"Intro.Slides.Welcome.Title.v2" = "欢迎使用 Karma";
+"Intro.Slides.Welcome.Title.v2" = "欢迎使用 KARMA";
 
 /* See http://mzl.la/1T8gxwo */
 "Start Browsing" = "开始浏览";

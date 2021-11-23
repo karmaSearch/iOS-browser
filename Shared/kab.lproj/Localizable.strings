@@ -43,10 +43,10 @@
 /* Title for the Jump Back In section. This section allows users to jump back in to a recently viewed tab */
 "ActivityStream.JumpBackIn.SectionTitle" = "Uɣal ɣer deffir";
 
-/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
 "ActivityStream.JumpBackIn.TabGroup.SiteCount" = "Accaren: %d";
 
-/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
 "ActivityStream.JumpBackIn.TabGroup.Title" = "Anadi-inek i \"%@\"";
 
 /* A string used to signify the start of the Recently Saved section in Home Screen. */
@@ -191,7 +191,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "Awalen uffiren ttukcafen neɣ ttwakren seg usnifel aneggaru n wawal-ik·im uffir. I ummesten n umiḍan-a, kcem ɣer usmel syen beddel awal-ik·im uffir.";
 
-/* Link to monitor.Karma.com to learn more about breached passwords */
+/* Link to monitor.KARMA.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "Issin ugar";
 
 /* Leads to a link to the breached website */
@@ -270,7 +270,7 @@
 "ContextMenu.ShareLinkButtonTitle" = "Bḍu aseɣwen";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one talks about the more personalized home feature. */
-"ContextualHints.Homepage.PersonalizedHome" = "Asebter-inek•inem n Karma udmawan yettarra tura fessus ugar akemmel seg wanda akken i tḥebseḍ. Af accaren-ik•im n melmi kan, ticraḍ n yisebtar, d yigmaḍ n unadi.";
+"ContextualHints.Homepage.PersonalizedHome" = "Asebter-inek•inem n KARMA udmawan yettarra tura fessus ugar akemmel seg wanda akken i tḥebseḍ. Af accaren-ik•im n melmi kan, ticraḍ n yisebtar, d yigmaḍ n unadi.";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one is the call to action for the inactive tabs contextual popup.
    Contextual hints are little popups that appear for the users informing them of new features. This one talks about the inactive tabs feature. */
@@ -286,7 +286,7 @@
 "Could not load page." = "Ur yezmir ara ad d-isali asebter.";
 
 /* Description for the new dark mode change in the version 22 app release. It describes the new automatic dark theme and how to change the theme settings. */
-"CoverSheet.v22.DarkMode.Description" = "I yiseqdacen n iOS 13, Karma ad yeddu s wudem awurman ɣer usentel ubrik ticki tiliɣri-ik tbedd ɣer usentel ubrik. Akken ad tbeddleḍ tiddin-is, ddu ɣer yiɣewwaṛen > Asentel.";
+"CoverSheet.v22.DarkMode.Description" = "I yiseqdacen n iOS 13, KARMA ad yeddu s wudem awurman ɣer usentel ubrik ticki tiliɣri-ik tbedd ɣer usentel ubrik. Akken ad tbeddleḍ tiddin-is, ddu ɣer yiɣewwaṛen > Asentel.";
 
 /* Title for the new dark mode change in the version 22 app release. */
 "CoverSheet.v22.DarkMode.Title" = "Asentel aberkan igber anasiw aberkan d ugdil ibḍan.";
@@ -341,8 +341,8 @@
 /* Alert dialog title when the user taps the cancel download icon. */
 "Downloads.CancelDialog.Title" = "Sefsex azdam";
 
-/* The message displayed to a user when they try and perform the download of an asset that Karma cannot currently handle. */
-"Downloads.Error.Message" = "Isidar ur ttusefraken ara deg Karma akka tura.";
+/* The message displayed to a user when they try and perform the download of an asset that KARMA cannot currently handle. */
+"Downloads.Error.Message" = "Isidar ur ttusefraken ara deg KARMA akka tura.";
 
 /* The label text in the Download Cancelled toast for showing confirmation that the download was cancelled. */
 "Downloads.Toast.Cancelled.LabelText" = "Asider ittwafsex";
@@ -387,7 +387,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "Ahat d tawila ur nelhi ara neɣ d aɛraḍ n ukellex sɣur aẓeddam. Kemmel ma yella tegziḍ uguren i izemren ad ḍrun.";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "Imawlan n %@ ur sewlen ara asmel-nsen web akken iwata. Akken ad tettummesten teɣlut-inek seg takwerḍa, Karma ur itteqqen ara ɣer usmel-a web.";
+"ErrorPages.CertWarning.Description" = "Imawlan n %@ ur sewlen ara asmel-nsen web akken iwata. Akken ad tettummesten teɣlut-inek seg takwerḍa, KARMA ur itteqqen ara ɣer usmel-a web.";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "Tuqqna-a ur tettwaman ara";
@@ -407,10 +407,10 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for Karma about:home page in tab history list */
-"Karma.HomePage.Title" = "Asebter agejdan n Karma";
+/* Title for KARMA about:home page in tab history list */
+"KARMA.HomePage.Title" = "Asebter agejdan n KARMA";
 
-/* A button at bottom of the Karma homepage that, when clicked, takes users straight to the settings options, where they can customize the Karma Home page */
+/* A button at bottom of the KARMA homepage that, when clicked, takes users straight to the settings options, where they can customize the KARMA Home page */
 "FirefoxHome.CustomizeHomeButton.Title" = "Sagen asebter agejdan";
 
 /* Accessibility Label for the tab toolbar Forward button */
@@ -422,16 +422,16 @@
 /* Label stating your account is not verified */
 "FxA.AccountVerificationRequired" = "Isra asenqed n umiḍan";
 
-/* Message explaining that user needs to check email for Karma Account verfication link. */
-"FxA.AccountVerificationRequiredSurface" = "Yessef ad tesneqdeḍ %@. Wali tanaka-ik n urmas akken ad tkecmeḍ ar useɣwen i k-d-yuzen Karma.";
+/* Message explaining that user needs to check email for KARMA Account verfication link. */
+"FxA.AccountVerificationRequiredSurface" = "Yessef ad tesneqdeḍ %@. Wali tanaka-ik n urmas akken ad tkecmeḍ ar useɣwen i k-d-yuzen KARMA.";
 
 /* Button label to connect another device to Sync */
 "FxA.ConnectAnotherDevice" = "Qqen ibenk-nniḍen";
 
-/* Settings section title for Karma Account */
-"FxA.FirefoxAccount" = "Amiḍan Karma";
+/* Settings section title for KARMA Account */
+"FxA.FirefoxAccount" = "Amiḍan KARMA";
 
-/* Button label to go to Karma Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "Sefrek amiḍan & ibenkan";
 
 /* Label when no internet is present */
@@ -441,15 +441,15 @@
 "FxA.OpenSyncPreferences" = "Ldi Ismenyifen n umtawi";
 
 /* Instructions shown on qr code scanning view */
-"fxa.qr-scanning-view.instructions" = "Snirem tangalt QR i yettwaseknen deg Karma.com/pair";
+"fxa.qr-scanning-view.instructions" = "Snirem tangalt QR i yettwaseknen deg KARMA.com/pair";
 
-/* Remove button is displayed on Karma account page under certain scenarios where user would like to remove their account. */
+/* Remove button is displayed on KARMA account page under certain scenarios where user would like to remove their account. */
 "FxA.RemoveAccount" = "Kkes";
 
 /* Description string for alert view that gets presented when user tries to remove an account. */
-"FxA.RemoveAccountAlertMessage" = "Kkes amiḍan Karma icudden ɣer ibnek-a akken ad teqneḍ am useqdac amaynut.";
+"FxA.RemoveAccountAlertMessage" = "Kkes amiḍan KARMA icudden ɣer ibnek-a akken ad teqneḍ am useqdac amaynut.";
 
-/* Remove account alert is the final confirmation before user removes their Karma account */
+/* Remove account alert is the final confirmation before user removes their KARMA account */
 "FxA.RemoveAccountAlertTitle" = "Kkes amiḍan";
 
 /* Button label to resend email */
@@ -459,13 +459,13 @@
 "fxa.signin.camera-signin" = "Kcem s tkamirat-ik";
 
 /* FxA sign in create account label. */
-"fxa.signin.create-account-pt-1" = "Semtawi Karma gar yibenkan s yiwen umiḍan kan.";
+"fxa.signin.create-account-pt-1" = "Semtawi KARMA gar yibenkan s yiwen umiḍan kan.";
 
 /* FxA sign in create account label. This will be linked to the site to create an account. */
-"fxa.signin.create-account-pt-2" = "Rnu amiḍan Karma";
+"fxa.signin.create-account-pt-2" = "Rnu amiḍan KARMA";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "Deg uselkim-ik ldi Karma terzuḍ ɣer Karma.com/pair";
+"fxa.signin.qr-link-instruction" = "Deg uselkim-ik ldi KARMA terzuḍ ɣer KARMA.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Iheyya i usnirem";
@@ -482,14 +482,14 @@
 /* Label explaining what sync does */
 "FxA.SyncExplain" = "Awi-d iccaren-inek yeldin, ticraḍ, akked wawalen uffiren seg yibenkan-nniḍen.";
 
-/* Button label to Sync your Karma Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "Mtawi tura";
 
 /* Call to action for sign into sync button */
 "FxA.TakeYourWebWithYou" = "Awi web-inek yid-k";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "Karma yeqqen ar %@";
+"FxAPush_DeviceConnected_body" = "KARMA yeqqen ar %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Synch yeqqen";
@@ -498,7 +498,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ ur yeqqin ara.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Ibenk-a yeffeɣ akken iwata seg tuqqna n Karma Sync.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Ibenk-a yeffeɣ akken iwata seg tuqqna n KARMA Sync.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Synch yeffeɣ seg tuqqna";
@@ -507,7 +507,7 @@
 "FxAPush_DeviceDisconnected_title" = "Synch yeffeɣ seg tuqqna";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Ibenk yeffeɣ si tuqqna n Karma Sync";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Ibenk yeffeɣ si tuqqna n KARMA Sync";
 
 /* A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing. */
 "Get your open tabs, bookmarks, and passwords from your other devices." = "Awi-d iccaren-inek yeldin, ticraḍ, akked wawalen uffiren seg yibenkan-nniḍen.";
@@ -555,7 +555,7 @@
 "HistoryPanel.EmptySyncedTabsPanelTabSyncDisabledState.Description" = "Rmed amtawi n yiccer akken ad d-tsekneḍ tabdart n waccaren seg yibenkan-ik-nniḍen.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "Karma Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Amazray";
@@ -645,7 +645,7 @@
 "InactiveTabs.TabTray.AutoClosePrompt.ButtonTitle" = "Rmed amdal awurman";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This string describes what happens if you elect to turn on this option. */
-"InactiveTabs.TabTray.AutoClosePrompt.Content" = "Karma ad imdel accaren ur tesneqdeḍ ara deg wayyur yezrin.";
+"InactiveTabs.TabTray.AutoClosePrompt.Content" = "KARMA ad imdel accaren ur tesneqdeḍ ara deg wayyur yezrin.";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This is the title of that Auto Close prompt */
 "InactiveTabs.TabTray.AutoClosePrompt.Title" = "Amdal awurman seld yiwen wayyur?";
@@ -674,10 +674,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "Aceɛlal";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "Sali-d asebter aneẓli";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Karma reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "Asali n ugbur…";
 
 /* Authentication prompt log in button */
@@ -729,7 +729,7 @@
 "LoginsList.LoginsListSearchPlaceholder" = "Zizdeg";
 
 /* Label shown when there are no logins to list */
-"LoginsList.NoLoginsFound.Description" = "Inekcamen ittwaskelsen ad ttwaseknen da. Ma yella teskelseḍ inekcam-inek·inem Karma deg ibenk-nniḍen, qqen ɣer umiḍan Karma.";
+"LoginsList.NoLoginsFound.Description" = "Inekcamen ittwaskelsen ad ttwaseknen da. Ma yella teskelseḍ inekcam-inek·inem KARMA deg ibenk-nniḍen, qqen ɣer umiḍan KARMA.";
 
 /* Label shown when there are no logins saved */
 "LoginsList.NoLoginsFound.Title" = "Ulac inek am yettwafen";
@@ -753,7 +753,7 @@
 "LoginsList.Title" = "SAVED LOGINS";
 
 /* Restore Tabs Prompt Description */
-"Looks like Karma crashed previously. Would you like to restore your tabs?" = "A yettban dakken Karma yeɣli yakan. Tebɣiḍ ad d-terreḍ icarren-inek?";
+"Looks like KARMA crashed previously. Would you like to restore your tabs?" = "A yettban dakken KARMA yeɣli yakan. Tebɣiḍ ad d-terreḍ icarren-inek?";
 
 /* Name for Mark as read button in reader mode
    Title for the button that marks a reading list item as read */
@@ -797,10 +797,10 @@
 "Menu.EnhancedTrackingProtectionOn.Title" = "Ammesten yettwaseǧehden mgal aḍfaṛ irmed i usmel-a.";
 
 /* Description for having standard ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "Karma yessewḥal imakaren gar yismal, imakaren inmettiyen d yidsilen umḍinen.";
+"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "KARMA yessewḥal imakaren gar yismal, imakaren inmettiyen d yidsilen umḍinen.";
 
 /* Description for having strict ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "Karma yessewḥal imakaren gar yismal, imakaren inmettiyen, idsilen umḍinen d tukerḍa n ugbur.";
+"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "KARMA yessewḥal imakaren gar yismal, imakaren inmettiyen, idsilen umḍinen d tukerḍa n ugbur.";
 
 /* Label for the button, displayed in the menu, takes you to to History screen when pressed. */
 "Menu.History.Label" = "Azray";
@@ -866,7 +866,7 @@
 "Menu.TrackingProtection.Details.Verifier" = "Yettwasenqed sɣur %@";
 
 /* Message in menu when no trackers blocked. */
-"Menu.TrackingProtection.NoTrackersBlockedTitle" = "Ulac ineḍfaren i yessen Karma ittwafen deg usebter-a.";
+"Menu.TrackingProtection.NoTrackersBlockedTitle" = "Ulac ineḍfaren i yessen KARMA ittwafen deg usebter-a.";
 
 /* The title for tracking protection settings */
 "Menu.TrackingProtection.ProtectionSettings.Title" = "Iɣewwaṛen n tɣellist";
@@ -881,7 +881,7 @@
 "Menu.TrackingProtectionBlockedSocial.Title" = "Ineḍfaṛen n iẓeḍwa imettanen";
 
 /* Description of the Tracking protection menu when TP is blocking parts of the page */
-"Menu.TrackingProtectionBlocking.Description" = "Karma issewḥel kra n yiḥricen n usebter izemren ad sfuɣlen tunigin-ik.";
+"Menu.TrackingProtectionBlocking.Description" = "KARMA issewḥel kra n yiḥricen n usebter izemren ad sfuɣlen tunigin-ik.";
 
 /* The description of the Tracking Protection menu item when tracking is enabled */
 "Menu.TrackingProtectionBlockingDisabled.Description" = "Sewḥel inedfaṛen iqnen";
@@ -983,17 +983,17 @@
 /* Restore Tabs Affirmative Action */
 "Okay" = "Ih";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the button, on the bottom of the card, used to get back to browsing on Karma by dismissing the onboarding card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the button, on the bottom of the card, used to get back to browsing on KARMA by dismissing the onboarding card */
 "Onboarding.WhatsNew.Button.Title" = "Bdu tunigin";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is the description for the Jump Back In bullet point */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is the description for the Jump Back In bullet point */
 "Onboarding.WhatsNew.PersonalizedHome.Description" = "Ɛeddi ɣer waccaren yeldin, ticraḍ n yisebtar, d uzray n tunigin.";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Title" = "Inadiyen n melmi kan";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Karma crashed" = "Ayhu! Karma yeɣli";
+"Oops! KARMA crashed" = "Ayhu! KARMA yeɣli";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "Ad d-yeldi imagraden deg tmeẓri n umeɣri s usenned ɣef tignit n udlis ticki tban-d deg ufeggag n uzwel.";
@@ -1004,8 +1004,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "Lddi icarren";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Karma, or any external app. */
-"OpenURL.Error.Message" = "Karma ur yezmir ara ad yeldi asebter acku tansa-nni ur tmeɣtu ara.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
+"OpenURL.Error.Message" = "KARMA ur yezmir ara ad yeldi asebter acku tansa-nni ur tmeɣtu ara.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "Ur yezmir ara ad yeldi asebter";
@@ -1020,19 +1020,19 @@
 "Password" = "Awal uffir";
 
 /* Error message shown in the remote tabs panel */
-"PasswordAutoFill.NoPasswordsFoundTitle" = "Ur tesεiḍ ara aseqdac akked wawal uffir imtawan seg umiḍan-ik Karma";
+"PasswordAutoFill.NoPasswordsFoundTitle" = "Ur tesεiḍ ara aseqdac akked wawal uffir imtawan seg umiḍan-ik KARMA";
 
 /* Header for the list of credentials table */
 "PasswordAutoFill.PasswordsListTitle" = "Aseqdac akked wawal uffir i yellan:";
 
-/* Title of the extension that shows Karma passwords */
-"PasswordAutoFill.SectionTitle" = "Aseqdac akked wawal uffir n Karma";
+/* Title of the extension that shows KARMA passwords */
+"PasswordAutoFill.SectionTitle" = "Aseqdac akked wawal uffir n KARMA";
 
 /* See http://mzl.la/1G7uHo7 */
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "Aya ad isireg asekles n tugna ɣer uzmam n tkamiṛat.";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Karma yebɣa ad yekcem ɣer tewlafin-inek";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "KARMA yebɣa ad yekcem ɣer tewlafin-inek";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "Mdel";
@@ -1040,7 +1040,7 @@
 /* Privacy section title */
 "Privacy" = "Tabaḍnit";
 
-/* Show Karma Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/Karma/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "Tasertit n tbaḍnit";
 
 /* This is the value for a label that indicates if a user is on an unencrypted website. */
@@ -1113,7 +1113,7 @@
 "ScanQRCode.InvalidDataError.Message" = "Isefka arameγtu";
 
 /* Text of the prompt user to setup the camera authorization. */
-"ScanQRCode.PermissionError.Message" = "Ttxilek sireg Karma ad ikcem ɣer tkamiṛat n ubnek-inek deg 'iɣewwaṛen' -> 'Tabaḍnit' -> 'Takamiṛat'.";
+"ScanQRCode.PermissionError.Message" = "Ttxilek sireg KARMA ad ikcem ɣer tkamiṛat n ubnek-inek deg 'iɣewwaṛen' -> 'Tabaḍnit' -> 'Takamiṛat'.";
 
 /* Title for the QR code scanner view. */
 "ScanQRCode.View.Title" = "Semḍen Tangalt QR";
@@ -1197,19 +1197,19 @@
 "SendTo.NavBar.Title" = "Azen iccer";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "Ur ɣur-k ara ibenkan-nniḍen yeqqnen ɣer umiḍan-inek Karma u i iwejden i usemtawi.";
+"SendTo.NoDevicesFound.Message" = "Ur ɣur-k ara ibenkan-nniḍen yeqqnen ɣer umiḍan-inek KARMA u i iwejden i usemtawi.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "Ma ulac aɣilif ldi Karma, ddu ɣer yiɣewwaren sakin kcem akken ad tkemmled.";
+"SendTo.NotSignedIn.Message" = "Ma ulac aɣilif ldi KARMA, ddu ɣer yiɣewwaren sakin kcem akken ad tkemmled.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "Aql-ak ur teqqineḍ ara ɣer umiḍan-inek Karma.";
+"SendTo.NotSignedIn.Title" = "Aql-ak ur teqqineḍ ara ɣer umiḍan-inek KARMA.";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "Azen";
 
-/* The text for the button on the Send to Device page if you are not signed in to Karma Accounts. */
-"SendTo.SignIn.Button" = "Kcem ɣer Karma";
+/* The text for the button on the Send to Device page if you are not signed in to KARMA Accounts. */
+"SendTo.SignIn.Button" = "Kcem ɣer KARMA";
 
 /* Body of notification shown when the device is sent one or more tabs from an unnamed device. */
 "SentTab_TabArrivingNotification_NoDevice_body" = "Illa iccer amaynut seg ibenk-nniḍen.";
@@ -1233,7 +1233,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Senned akken ad tebḍuḍ";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "Karma Sync";
+"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Sken";
@@ -1296,7 +1296,7 @@
 "Settings.DataManagement.Title" = "Asefrek n isefka";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "Karma ad iseḥbes amtawi d umiḍan-inek, acukan ur ittekkes ara isefka-inek n tunigin seg uselkim-a.";
+"Settings.Disconnect.Body" = "KARMA ad iseḥbes amtawi d umiḍan-inek, acukan ur ittekkes ara isefka-inek n tunigin seg uselkim-a.";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "Ffeɣ si Sych";
@@ -1365,38 +1365,38 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "Isem n wallal";
 
-/* Label used as a section title in the Karma Accounts Settings screen. */
+/* Label used as a section title in the KARMA Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "Iγewwaṛen n umtawi";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "Amiḍan Karma";
+"Settings.FxA.Title" = "Amiḍan KARMA";
 
 /* General settings section title */
 "Settings.General.SectionName" = "Amatu";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
 "Settings.Home.Option.JumpBackIn" = "Uɣal ɣer deffir";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the KARMA homepage on or off */
 "Settings.Home.Option.Pocket" = "Awelleh si Pocket";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentlySaved" = "Yettwasekles melmi kan";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
 "Settings.Home.Option.RecentlyVisited" = "Ttwarzan melmi kan";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentSearches" = "Inadiyen n melmi kan";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the KARMA homepage on or off */
 "Settings.Home.Option.Shortcuts" = "Inegzumen";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Karma */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Always" = "Asebter agejdan";
 
-/* In the settings menu, this is the title of the Karma Homepage customization settings section */
-"Settings.Home.Option.Title" = "Asebter agejdan n Karma";
+/* In the settings menu, this is the title of the KARMA Homepage customization settings section */
+"Settings.Home.Option.Title" = "Asebter agejdan n KARMA";
 
 /* Button in settings to clear the home page. */
 "Settings.HomePage.Clear.Button" = "Sfeḍ";
@@ -1447,10 +1447,10 @@
 "Settings.NewTab.Option.CustomizeFooter2" = "Ismal i teskelseḍ neɣ wuɣur terziḍ";
 
 /* The title for the section to customize top sites in the new tab settings page. */
-"Settings.NewTab.Option.CustomizeTitle" = "Sagen asebter agejdan Karma";
+"Settings.NewTab.Option.CustomizeTitle" = "Sagen asebter agejdan KARMA";
 
-/* Option in settings to show Karma Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "Asebter agejdan Karma";
+/* Option in settings to show KARMA Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "Asebter agejdan KARMA";
 
 /* Option in the settings to turn off recent bookmarks in the Highlights section */
 "Settings.NewTab.Option.HighlightsBookmarks" = "Ticraḍ n melmi kan";
@@ -1492,7 +1492,7 @@
 "Settings.NewTab.TopSectionNameFooter" = "Fren ayen ad d-yettwamlen m'ara yeldi yicer amaynut";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "Ticki yeldi-d Karma";
+"Settings.OfferClipboardBar.Status" = "Ticki yeldi-d KARMA";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "Sumer tulya n iseɣwan yettwaneɣlen";
@@ -1516,7 +1516,7 @@
 "Settings.SendUsage.Link" = "Issin ugar.";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "Mozilla tettennaɣ akken ad telqeḍ kan ayen tesra i usnulfu d usnerni n Karma i yal yiwen";
+"Settings.SendUsage.Message" = "Mozilla tettennaɣ akken ad telqeḍ kan ayen tesra i usnulfu d usnerni n KARMA i yal yiwen";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "Azen isefka n useqdec";
@@ -1534,7 +1534,7 @@
 "Settings.Siri.OpenTabShortcut" = "Ldi iccer amaynut";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "Seqdec Siri akken ad teldiḍ Karma s wudem arurad";
+"Settings.Siri.SectionDescription" = "Seqdec Siri akken ad teldiḍ KARMA s wudem arurad";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "Inegzumen Siri";
@@ -1558,7 +1558,7 @@
 "Settings.Studies.Toggle.Link" = "Issin ugar.";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "Karma yezmer ad isebded yerna ad iseddu leqraya seg wakud ɣer wayeḍ.";
+"Settings.Studies.Toggle.Message" = "KARMA yezmer ad isebded yerna ad iseddu leqraya seg wakud ɣer wayeḍ.";
 
 /* Toggled OFF to opt-out of studies */
 "Settings.Studies.Toggle.Off" = "Yensa";
@@ -1585,7 +1585,7 @@
 "Settings.TrackingProtection.Alert.Title" = "Aqeṛṛu d afella!";
 
 /* Header description for tracking protection options section where Basic/Strict block list can be selected */
-"Settings.TrackingProtection.BlockListsHeader" = "Tzemreḍ ad tferneḍ anta tabdart ara yesseqdec Karma akken ad isewḥel iferdisen Web i izemren ad sfuɣlen armud-inek n tunigin.";
+"Settings.TrackingProtection.BlockListsHeader" = "Tzemreḍ ad tferneḍ anta tabdart ara yesseqdec KARMA akken ad isewḥel iferdisen Web i izemren ad sfuɣlen armud-inek n tunigin.";
 
 /* Explanation of basic mode. */
 "Settings.TrackingProtection.Info.BasicTitle" = "Yerked gar ummesten akked tmellit.";
@@ -1680,32 +1680,32 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "Isefka n usmel web";
 
-/* Action label on share extension to add page to the Karma reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "Rnu ɣer tebdart n tɣuri";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "Rnu ɣer tebdart n tɣuri";
 
-/* Action label on share extension to bookmark the page in Karma. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "Creḍ asebter-a";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "Ittwacreḍ";
 
-/* Action label on share extension to load the page in Karma when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "Sali-d deffir ugilal";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "Sali-d deg Karma";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "Sali-d deg KARMA";
 
-/* Action label on share extension to immediately open page in Karma. */
-"ShareExtension.OpenInFirefoxAction.Title" = "Ldi deg Karma";
+/* Action label on share extension to immediately open page in KARMA. */
+"ShareExtension.OpenInFirefoxAction.Title" = "Ldi deg KARMA";
 
-/* Action label on share extension to immediately open page in Karma in private mode. */
+/* Action label on share extension to immediately open page in KARMA in private mode. */
 "ShareExtension.OpenInPrivateModeAction.Title" = "Ldi deg iccer uslig";
 
-/* Action label on share extension to search for the selected text in Karma. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Nadi deg Karma";
+/* Action label on share extension to search for the selected text in KARMA. */
+"ShareExtension.SeachInFirefoxAction.Title" = "Nadi deg KARMA";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "Sken isumar n unadi";
@@ -1742,7 +1742,7 @@
 "Sync.FirstTimeMessage.Label" = "Amtawi-inek amezwaru ad yawi kra n wakud";
 
 /* String displayed on Sign In to Sync page that allows the user to create a new account. */
-"Sync.NoAccount.Description" = "Ulac amiḍan? Rnu yiwen i umtaw n Karma gar yibenkan.";
+"Sync.NoAccount.Description" = "Ulac amiḍan? Rnu yiwen i umtaw n KARMA gar yibenkan.";
 
 /* Message displayed when the user's account is syncing with no ellipsis */
 "Sync.Syncing.Label" = "Amtawi";
@@ -1861,7 +1861,7 @@
 /* The section header for tabs opened yesterday */
 "TabTray.Yesterday.Header" = "Iḍelli";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "The page could not be displayed in Reader View." = "Asebter ur d-yettwaskan ara deg tmeẓri n umeɣri.";
 
 /* Error message in the remote tabs panel */
@@ -1919,13 +1919,13 @@
 "UIMenuItem.PasteGo" = "Senṭeḍ & Ldi";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "Nadi s Karma";
+"UIMenuItem.SearchWithFirefox" = "Nadi s KARMA";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "ur yettwaɣri ara";
 
 /* Text message in the settings table view */
-"Upgrade Karma to connect" = "Leqqem Karma akken ad teqqneḍ";
+"Upgrade KARMA to connect" = "Leqqem KARMA akken ad teqqneḍ";
 
 /* Debug option */
 "Use stage servers" = "Seqdec iqeddacen n usekyed";
@@ -1936,7 +1936,7 @@
 /* Text message in the settings table view */
 "Verify your email address" = "Senqed tansa n yimayl-inek";
 
-/* Version number of Karma shown in settings */
+/* Version number of KARMA shown in settings */
 "Version %@ (%@)" = "Lqem %1$@ (%2$@)";
 
 /* Accessibility label for the main web content view */
@@ -1958,7 +1958,7 @@
 "Yesterday" = "Iḍelli";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Karma on your other devices." = "Ur ɣur-k ara icarren yeldin deg Karma deg yibenkan-inek-nniḍen.";
+"You don’t have any tabs open in KARMA on your other devices." = "Ur ɣur-k ara icarren yeldin deg KARMA deg yibenkan-inek-nniḍen.";
 
 /* Your Rights settings section title */
 "Your Rights" = "Izerfan-inek";

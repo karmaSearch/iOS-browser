@@ -1,13 +1,13 @@
-/* Button string to open settings that allows user to switch their default browser to Karma. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Button" = "Tənzimləmələrə get";
 
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Necə ediləcəyini öyrən";
 
-/* Title for small card shown that allows user to switch their default browser to Karma. */
+/* Title for small card shown that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Title" = "Əsas səyyah tətbiqinizi dəyişdirin";
 
-/* Button string to open settings that allows user to switch their default browser to Karma. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserOnboarding.Button" = "Tənzimləmələrə get";
 
 /* Description for default browser onboarding card. */
@@ -17,11 +17,11 @@
 "DefaultBrowserOnboarding.Description2" = "2. Əsas Səyyah Tətbiq-inə toxunun";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Karma seçin";
+"DefaultBrowserOnboarding.Description3" = "3. KARMA seçin";
 
-/* Text for the screenshot of the iOS system settings page for Karma. */
+/* Text for the screenshot of the iOS system settings page for KARMA. */
 "DefaultBrowserOnboarding.Screenshot" = "Əsas Səyyah Tətbiqi";
 
-/* Menu option for setting Karma as default browser. */
+/* Menu option for setting KARMA as default browser. */
 "Settings.DefaultBrowserMenuItem" = "Əsas səyyah tətbiqi olaraq qur";
 

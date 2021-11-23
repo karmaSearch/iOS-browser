@@ -5,7 +5,7 @@
 "ContextMenu.OpenInNewPrivateTabButtonTitle" = "Apre in una nova unghjetta privata";
 
 /* Description text displayed when there are no open tabs while in private mode */
-"Karma won’t remember any of your history or cookies, but new bookmarks will be saved." = "Karma ùn cunserverà alcuna crunulogia nè canistrelli, ma e nove indette seranu arregistrate.";
+"KARMA won’t remember any of your history or cookies, but new bookmarks will be saved." = "KARMA ùn cunserverà alcuna crunulogia nè canistrelli, ma e nove indette seranu arregistrate.";
 
 /* Text button displayed when there are no tabs open while in private mode */
 "Learn More" = "Sapene di più";

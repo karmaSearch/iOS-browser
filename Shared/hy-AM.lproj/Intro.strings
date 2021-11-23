@@ -7,10 +7,10 @@
 /* Next button on the first intro screen. */
 "Intro.Slides.Button.Next" = "Հաջորդը";
 
-/* Sign in to Karma account button on second intro screen. */
+/* Sign in to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignIn" = "Մուտք գործել";
 
-/* Sign up to Karma account button on second intro screen. */
+/* Sign up to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignUp" = "Գրանցվել";
 
 /* Description for the second item in the table related to fast searching via address bar */
@@ -19,14 +19,14 @@
 /* Title for the second item in the table related to fast searching via address bar */
 "Intro.Slides.Fast.Search.Title" = "Արագ որոնում";
 
-/* Description for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Description" = "Այս սարքում բերեք էջանիշեր, պատմություն և գաղտնաբառեր Karma- ին:";
+/* Description for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Description" = "Այս սարքում բերեք էջանիշեր, պատմություն և գաղտնաբառեր KARMA- ին:";
 
-/* Title for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Title" = "Համաժամեցնել Karma-ը սարքերի միջև";
+/* Title for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Title" = "Համաժամեցնել KARMA-ը սարքերի միջև";
 
 /* Description for the 'Mail' panel in the First Run tour. */
-"Intro.Slides.Mail.Description" = "Օգտագործեք ցանկացած էլ. ֊փոստի գործադիր — ոչ միայն փոստ — Karma-ով։";
+"Intro.Slides.Mail.Description" = "Օգտագործեք ցանկացած էլ. ֊փոստի գործադիր — ոչ միայն փոստ — KARMA-ով։";
 
 /* Title for the fourth panel 'Mail' in the First Run tour. */
 "Intro.Slides.Mail.Title" = "Դուք ստացել եք նամակ... ընտրանքներ";
@@ -37,10 +37,10 @@
 /* Title for the third panel 'Private Browsing' in the First Run tour. */
 "Intro.Slides.Private.Title" = "Զննարկեք այնպես, կարծես ոչ ոք ձեզ չի նայում";
 
-/* Description for the third item in the table related to safe syncing with a Karma account */
-"Intro.Slides.Safe.Sync.Description" = "Պաշտպանեք ձեր մուտքագրումները և տվյալները Karma-ում՝ ամենուրեք:";
+/* Description for the third item in the table related to safe syncing with a KARMA account */
+"Intro.Slides.Safe.Sync.Description" = "Պաշտպանեք ձեր մուտքագրումները և տվյալները KARMA-ում՝ ամենուրեք:";
 
-/* Title for the third item in the table related to safe syncing with a Karma account */
+/* Title for the third item in the table related to safe syncing with a KARMA account */
 "Intro.Slides.Safe.Sync.Title" = "Անվտանգ համաժամեցում";
 
 /* Description for the 'Favorite Search Engine' panel in the First Run tour. */
@@ -59,7 +59,7 @@
 "Intro.Slides.Welcome.Description.v2" = "Արագ է, գաղտնի և ձեր կողմից։";
 
 /* Title for the first panel 'Welcome' in the First Run tour. */
-"Intro.Slides.Welcome.Title.v2" = "Բարի գալուստ Karma";
+"Intro.Slides.Welcome.Title.v2" = "Բարի գալուստ KARMA";
 
 /* See http://mzl.la/1T8gxwo */
 "Start Browsing" = "Սկսել դիտարկումը";

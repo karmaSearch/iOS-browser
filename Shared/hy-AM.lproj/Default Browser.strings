@@ -1,16 +1,16 @@
-/* Button string to open settings that allows user to switch their default browser to Karma. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Button" = "Անցնել Կարգավորումներին";
 
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Իմանալ ինչպես";
 
-/* Description for small card shown that allows user to switch their default browser to Karma. */
-"DefaultBrowserCard.Description" = "Տեղադրեք հղումներ կայքերից, էլ. նամակներից և հաղորդագրություններից՝ Karma-ում ավտոմատ կերպով բացելու համար:";
+/* Description for small card shown that allows user to switch their default browser to KARMA. */
+"DefaultBrowserCard.Description" = "Տեղադրեք հղումներ կայքերից, էլ. նամակներից և հաղորդագրություններից՝ KARMA-ում ավտոմատ կերպով բացելու համար:";
 
-/* Title for small card shown that allows user to switch their default browser to Karma. */
+/* Title for small card shown that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Title" = "Փոխարկեք ձեր կանխադրված զննարկիչը";
 
-/* Button string to open settings that allows user to switch their default browser to Karma. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserOnboarding.Button" = "Անցնել Կարգավորումներին";
 
 /* Description for default browser onboarding card. */
@@ -20,11 +20,11 @@
 "DefaultBrowserOnboarding.Description2" = "2. Հպեք սկզբնադիր զննարկիչի հավելվածին";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Ընտրեք Karma-ը";
+"DefaultBrowserOnboarding.Description3" = "3. Ընտրեք KARMA-ը";
 
-/* Text for the screenshot of the iOS system settings page for Karma. */
+/* Text for the screenshot of the iOS system settings page for KARMA. */
 "DefaultBrowserOnboarding.Screenshot" = "Սկզբնադիր զննարկիչի հավելված";
 
-/* Menu option for setting Karma as default browser. */
+/* Menu option for setting KARMA as default browser. */
 "Settings.DefaultBrowserMenuItem" = "Կայել որպես սկզբնադիր դիտարկիչ";
 

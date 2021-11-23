@@ -22,8 +22,8 @@
 /* Quick Actions drop down menu item for new search when widget enters edit mode and drop down menu expands */
 "TodayWidget.DropDownMenuItemNewSearch" = "ᱱᱟᱶᱟ ᱥᱮᱸᱫᱽᱨᱟ";
 
-/* Description for medium size widget to add Karma Shortcut to home screen */
-"TodayWidget.FirefoxShortcutGalleryDescription" = "Karma ᱠᱷᱟᱴᱚᱢᱟᱪᱷᱟ ᱟᱢᱟᱜ ᱚᱲᱟᱜ ᱤᱥᱠᱨᱤᱱ ᱨᱮ ᱥᱮᱞᱮᱫ ᱢᱮ.";
+/* Description for medium size widget to add KARMA Shortcut to home screen */
+"TodayWidget.FirefoxShortcutGalleryDescription" = "KARMA ᱠᱷᱟᱴᱚᱢᱟᱪᱷᱟ ᱟᱢᱟᱜ ᱚᱲᱟᱜ ᱤᱥᱠᱨᱤᱱ ᱨᱮ ᱥᱮᱞᱮᱫ ᱢᱮ.";
 
 /* Go to link pasted on the clipboard */
 "TodayWidget.GoToCopiedLinkLabelV1" = "ᱱᱚᱠᱚᱞ ᱟᱠᱟᱱ ᱞᱮᱸᱠ ᱛᱮ ᱪᱟᱞᱟᱜᱢᱮ";
@@ -44,7 +44,7 @@
 "TodayWidget.NewPrivateTabButtonLabelV2" = "ᱱᱤᱡᱮᱨᱟᱠ ᱴᱮᱵ ᱨᱮ ᱥᱮᱸᱫᱽᱨᱟᱭ ᱢᱮ";
 
 /* Open New Tab button label */
-"TodayWidget.NewSearchButtonLabelV1" = "Karma ᱨᱮ ᱥᱮᱸᱫᱽᱨᱟᱭ ᱢᱮ";
+"TodayWidget.NewSearchButtonLabelV1" = "KARMA ᱨᱮ ᱥᱮᱸᱫᱽᱨᱟᱭ ᱢᱮ";
 
 /* Open New Tab button label */
 "TodayWidget.NewTabButtonLabelV1" = "ᱱᱟᱶᱟ ᱥᱮᱸᱫᱽᱨᱟ";
@@ -55,38 +55,38 @@
 /* Label that is shown when there are no tabs opened in tab tray i.e. Empty State */
 "TodayWidget.NoOpenTabsLabelV2" = "ᱴᱮᱵ ᱠᱚ ᱡᱷᱤ ᱵᱚᱱᱩ-ᱟ.";
 
-/* Open Karma when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenFirefoxLabel" = "Karma ᱡᱷᱤᱜ ᱢᱮ";
+/* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
+"TodayWidget.OpenFirefoxLabel" = "KARMA ᱡᱷᱤᱜ ᱢᱮ";
 
-/* Description for Karma Pocket stories widget in Gallery View where user can add it to home screen. Pocket is the name of another app. */
+/* Description for KARMA Pocket stories widget in Gallery View where user can add it to home screen. Pocket is the name of another app. */
 "TodayWidget.PocketWidgetGalleryDescription" = "ᱣᱮᱵ ᱠᱷᱚᱱ ᱚᱲᱤ ᱵᱟᱛᱟᱨ ᱟᱨ ᱪᱤᱱᱛᱮ ᱵᱷᱟᱵᱱᱟ ᱮᱦᱚᱵ ᱠᱚᱦᱱᱤ ᱠᱚ ᱭᱟᱢ ᱢᱮ ᱡᱟ ᱯᱚᱠᱮᱴ ᱠᱤᱭᱩᱨᱮᱴ ᱠᱟᱫᱟᱭ.";
 
-/* Sub label for medium size Karma Pocket stories widge widget. Pocket is the name of another app. */
-"TodayWidget.PocketWidgetSubLabel" = "Karma - ᱯᱚᱠᱮᱴ ᱵᱟᱛᱟᱣ ᱠᱟᱫᱟᱭ";
+/* Sub label for medium size KARMA Pocket stories widge widget. Pocket is the name of another app. */
+"TodayWidget.PocketWidgetSubLabel" = "KARMA - ᱯᱚᱠᱮᱴ ᱵᱟᱛᱟᱣ ᱠᱟᱫᱟᱭ";
 
-/* Title for Karma Pocket stories widget in Gallery View where user can add it to home screen. Pocket is the name of another app. */
+/* Title for KARMA Pocket stories widget in Gallery View where user can add it to home screen. Pocket is the name of another app. */
 "TodayWidget.PocketWidgetTitle" = "ᱯᱚᱠᱮᱴ ᱵᱟᱛᱟᱣ ᱠᱟᱫᱟᱭ";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "ᱱᱤᱡᱮᱨᱟᱠ ᱥᱮᱸᱫᱽᱨᱟ";
 
 /* Quick action description when widget enters edit mode */
-"TodayWidget.QuickActionDescription" = "Karma ᱠᱷᱟᱴᱚᱢᱟᱪᱷᱟ ᱵᱟᱪᱷᱟᱣ ᱢᱮ ᱚᱲᱟᱜ ᱤᱥᱠᱨᱤᱱ ᱨᱮ ᱥᱮᱞᱮᱫ ᱞᱚᱜᱤᱛ ᱛᱮ.";
+"TodayWidget.QuickActionDescription" = "KARMA ᱠᱷᱟᱴᱚᱢᱟᱪᱷᱟ ᱵᱟᱪᱷᱟᱣ ᱢᱮ ᱚᱲᱟᱜ ᱤᱥᱠᱨᱤᱱ ᱨᱮ ᱥᱮᱞᱮᱫ ᱞᱚᱜᱤᱛ ᱛᱮ.";
 
 /* Quick Actions left label text for dropdown menu when widget enters edit mode */
 "TodayWidget.QuickActionDropDownMenu" = "ᱞᱚᱜᱚᱱ ᱛᱮᱭᱟ ᱠᱚᱢᱤ";
 
 /* Description for small size widget to add it to home screen */
-"TodayWidget.QuickActionGalleryDescription" = "ᱢᱤᱫ ᱴᱟᱝ Karma ᱠᱷᱟᱴᱚᱢᱟᱪᱷᱟ ᱚᱲᱟᱜ ᱤᱥᱠᱨᱤᱱ ᱨᱮ ᱥᱮᱞᱮᱫ ᱛᱟᱞᱟᱝ ᱢᱮ. ᱣᱤᱡᱮᱴ ᱥᱮᱞᱮᱫ ᱠᱟᱛᱮ ᱡᱚᱴᱮᱫ ᱢᱮ ᱟᱨ ᱚᱛᱟ ᱫᱚᱦᱚᱭ ᱢᱮ ᱥᱟᱯᱲᱟᱣ ᱞᱚᱜᱤᱛ ᱛᱮ ᱟᱨ ᱮᱴᱟᱜ-ᱟ ᱠᱷᱟᱴᱚᱢᱟᱪᱷᱟ ᱵᱟᱪᱷᱟᱣ ᱛᱟᱞᱟᱝ ᱢᱮ.";
+"TodayWidget.QuickActionGalleryDescription" = "ᱢᱤᱫ ᱴᱟᱝ KARMA ᱠᱷᱟᱴᱚᱢᱟᱪᱷᱟ ᱚᱲᱟᱜ ᱤᱥᱠᱨᱤᱱ ᱨᱮ ᱥᱮᱞᱮᱫ ᱛᱟᱞᱟᱝ ᱢᱮ. ᱣᱤᱡᱮᱴ ᱥᱮᱞᱮᱫ ᱠᱟᱛᱮ ᱡᱚᱴᱮᱫ ᱢᱮ ᱟᱨ ᱚᱛᱟ ᱫᱚᱦᱚᱭ ᱢᱮ ᱥᱟᱯᱲᱟᱣ ᱞᱚᱜᱤᱛ ᱛᱮ ᱟᱨ ᱮᱴᱟᱜ-ᱟ ᱠᱷᱟᱴᱚᱢᱟᱪᱷᱟ ᱵᱟᱪᱷᱟᱣ ᱛᱟᱞᱟᱝ ᱢᱮ.";
 
 /* Quick Actions title when widget enters edit mode */
 "TodayWidget.QuickActionsGalleryTitle" = "ᱞᱚᱜᱚᱱ ᱛᱮᱭᱟ ᱠᱚᱢᱤ";
 
-/* Karma shortcuts title when widget enters edit mode. Do not translate the word Karma. */
-"TodayWidget.QuickActionsGalleryTitleV2" = "Karma ᱥᱚᱴᱠᱚᱴ";
+/* KARMA shortcuts title when widget enters edit mode. Do not translate the word KARMA. */
+"TodayWidget.QuickActionsGalleryTitleV2" = "KARMA ᱥᱚᱴᱠᱚᱴ";
 
 /* Sub label for medium size quick action widget */
-"TodayWidget.QuickActionsSubLabel" = "Karma - ᱞᱚᱜᱚᱱ ᱛᱮᱭᱟ ᱠᱚᱢᱤ";
+"TodayWidget.QuickActionsSubLabel" = "KARMA - ᱞᱚᱜᱚᱱ ᱛᱮᱭᱟ ᱠᱚᱢᱤ";
 
 /* Description for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryDescription" = "ᱟᱢᱟᱜ ᱠᱷᱩᱞᱟᱹ ᱟᱠᱟᱱ ᱴᱮᱵ ᱠᱚ ᱥᱚᱡᱷᱮ ᱟᱹᱛᱩᱨ ᱢᱮ ᱟᱢᱟᱜ ᱚᱲᱟᱜ ᱤᱥᱠᱨᱤᱱ ᱨᱮ.";
@@ -101,35 +101,35 @@
 "TodayWidget.QuickViewLargeGalleryDescription" = "ᱟᱢᱟᱜ ᱠᱷᱩᱞᱟᱹ ᱟᱠᱟᱱ ᱴᱮᱵ ᱠᱚ ᱨᱮᱭᱟᱜ ᱥᱚᱴᱠᱚᱴ ᱠᱚ ᱥᱮᱞᱮᱫ ᱢᱮ ᱾";
 
 /* Sub label for Top Sites widget */
-"TodayWidget.QuickViewOpenTabsSubLabel" = "Karma - ᱴᱮᱵ ᱠᱚ ᱠᱷᱩᱞᱟᱹᱭ ᱢᱮ";
+"TodayWidget.QuickViewOpenTabsSubLabel" = "KARMA - ᱴᱮᱵ ᱠᱚ ᱠᱷᱩᱞᱟᱹᱭ ᱢᱮ";
 
-/* Title for small size widget which allows users to search in Karma. Do not translate the word Karma. */
-"TodayWidget.SearchInFirefoxTitle" = "Karma ᱨᱮ ᱥᱮᱸᱫᱽᱨᱟᱭ ᱢᱮ";
+/* Title for small size widget which allows users to search in KARMA. Do not translate the word KARMA. */
+"TodayWidget.SearchInFirefoxTitle" = "KARMA ᱨᱮ ᱥᱮᱸᱫᱽᱨᱟᱭ ᱢᱮ";
 
-/* Search in Karma. Do not translate the word Karma */
-"TodayWidget.SearchInFirefoxV2" = "Karma ᱨᱮ ᱥᱮᱸᱫᱽᱨᱟᱭ ᱢᱮ";
+/* Search in KARMA. Do not translate the word KARMA */
+"TodayWidget.SearchInFirefoxV2" = "KARMA ᱨᱮ ᱥᱮᱸᱫᱽᱨᱟᱭ ᱢᱮ";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "ᱱᱤᱡᱮᱨᱟᱠ ᱴᱮᱵ ᱨᱮ ᱥᱮᱸᱫᱽᱨᱟᱭ ᱢᱮ";
 
-/* Description for top sites widget to add Karma top sites shotcuts to home screen */
+/* Description for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryDescription" = "ᱠᱷᱟᱴᱚᱢᱟᱪᱷᱟ ᱥᱮᱞᱮᱫ ᱢᱮ ᱵᱚᱨᱟᱵᱚᱨ ᱟᱨ ᱱᱤᱛᱚᱜ-ᱟ ᱥᱟᱭᱤᱴ ᱧᱮᱞᱟᱠ ᱨᱮ.";
 
-/* Title for top sites widget to add Karma top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "ᱪᱮᱛᱟᱱ ᱨᱤᱱ ᱥᱟᱭᱤᱴ";
 
-/* Title for top sites widget to add Karma top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitleV2" = "ᱣᱮᱵᱽᱥᱟᱭᱤᱴ ᱥᱚᱴᱠᱚᱴᱥ";
 
 /* Sub label for Top Sites widget */
-"TodayWidget.TopSitesSubLabel" = "Karma - ᱪᱮᱛᱟᱱ ᱨᱤᱱ ᱥᱟᱭᱤᱴ";
+"TodayWidget.TopSitesSubLabel" = "KARMA - ᱪᱮᱛᱟᱱ ᱨᱤᱱ ᱥᱟᱭᱤᱴ";
 
 /* Sub label for Shortcuts widget */
-"TodayWidget.TopSitesSubLabel2" = "Karma - ᱣᱮᱵᱥᱟᱭᱤᱴ ᱥᱚᱴᱠᱚᱴ ᱠᱚ";
+"TodayWidget.TopSitesSubLabel2" = "KARMA - ᱣᱮᱵᱥᱟᱭᱤᱴ ᱥᱚᱴᱠᱚᱴ ᱠᱚ";
 
 /* View More for Quick View widget in Gallery View where we don't know how many tabs might be opened */
 "TodayWidget.ViewMore" = "ᱵᱚᱲᱛᱤ ᱧᱮᱞ ᱢᱮ";
 
-/* View More… for Karma Pocket stories widget where we don't know how many articles are available. */
+/* View More… for KARMA Pocket stories widget where we don't know how many articles are available. */
 "TodayWidget.ViewMoreDots" = "ᱵᱚᱲᱛᱤ ᱧᱮᱞ ᱢᱮ...";
 

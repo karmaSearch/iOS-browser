@@ -43,10 +43,10 @@
 /* Title for the Jump Back In section. This section allows users to jump back in to a recently viewed tab */
 "ActivityStream.JumpBackIn.SectionTitle" = "回到先前页面";
 
-/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
 "ActivityStream.JumpBackIn.TabGroup.SiteCount" = "标签页：%d";
 
-/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
 "ActivityStream.JumpBackIn.TabGroup.Title" = "“%@”的搜索结果";
 
 /* A string used to signify the start of the Recently Saved section in Home Screen. */
@@ -191,7 +191,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "自上次更改密码后，密码已遭泄露或窃取。为保护此账户，请登录网站并更改密码。";
 
-/* Link to monitor.Karma.com to learn more about breached passwords */
+/* Link to monitor.KARMA.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "详细了解";
 
 /* Leads to a link to the breached website */
@@ -270,7 +270,7 @@
 "ContextMenu.ShareLinkButtonTitle" = "分享链接";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one talks about the more personalized home feature. */
-"ContextualHints.Homepage.PersonalizedHome" = "个性化的 Karma 主页，让您可以更轻松地从上次中断的地方继续浏览。快速找到您最近打开的标签页、书签和搜索结果。";
+"ContextualHints.Homepage.PersonalizedHome" = "个性化的 KARMA 主页，让您可以更轻松地从上次中断的地方继续浏览。快速找到您最近打开的标签页、书签和搜索结果。";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one is the call to action for the inactive tabs contextual popup.
    Contextual hints are little popups that appear for the users informing them of new features. This one talks about the inactive tabs feature. */
@@ -286,7 +286,7 @@
 "Could not load page." = "未能载入页面。";
 
 /* Description for the new dark mode change in the version 22 app release. It describes the new automatic dark theme and how to change the theme settings. */
-"CoverSheet.v22.DarkMode.Description" = "对于 iOS 13 用户，当您的手机设置为深色模式时，Karma 现在会自动切换为深邃主题。要更改此行为，请前往“设置”>“主题”。";
+"CoverSheet.v22.DarkMode.Description" = "对于 iOS 13 用户，当您的手机设置为深色模式时，KARMA 现在会自动切换为深邃主题。要更改此行为，请前往“设置”>“主题”。";
 
 /* Title for the new dark mode change in the version 22 app release. */
 "CoverSheet.v22.DarkMode.Title" = "深色主题现在包含一套深色键盘和深色启动页。";
@@ -341,8 +341,8 @@
 /* Alert dialog title when the user taps the cancel download icon. */
 "Downloads.CancelDialog.Title" = "取消下载";
 
-/* The message displayed to a user when they try and perform the download of an asset that Karma cannot currently handle. */
-"Downloads.Error.Message" = "Karma 尚不支持下载。";
+/* The message displayed to a user when they try and perform the download of an asset that KARMA cannot currently handle. */
+"Downloads.Error.Message" = "KARMA 尚不支持下载。";
 
 /* The label text in the Download Cancelled toast for showing confirmation that the download was cancelled. */
 "Downloads.Toast.Cancelled.LabelText" = "下载已取消";
@@ -387,7 +387,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "这可能是配置错误，也可能是被攻击者篡改。继续访问需要承担潜在的风险。";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "%@ 的管理员未正确配置网站。为避免您的信息被窃，Karma 没有建立与该网站的连接。";
+"ErrorPages.CertWarning.Description" = "%@ 的管理员未正确配置网站。为避免您的信息被窃，KARMA 没有建立与该网站的连接。";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "此连接不受信任";
@@ -407,10 +407,10 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for Karma about:home page in tab history list */
-"Karma.HomePage.Title" = "Karma 主页";
+/* Title for KARMA about:home page in tab history list */
+"KARMA.HomePage.Title" = "KARMA 主页";
 
-/* A button at bottom of the Karma homepage that, when clicked, takes users straight to the settings options, where they can customize the Karma Home page */
+/* A button at bottom of the KARMA homepage that, when clicked, takes users straight to the settings options, where they can customize the KARMA Home page */
 "FirefoxHome.CustomizeHomeButton.Title" = "定制主页";
 
 /* Accessibility Label for the tab toolbar Forward button */
@@ -422,16 +422,16 @@
 /* Label stating your account is not verified */
 "FxA.AccountVerificationRequired" = "需要验证账户";
 
-/* Message explaining that user needs to check email for Karma Account verfication link. */
-"FxA.AccountVerificationRequiredSurface" = "您需要验证 %@。请检查您的邮箱找到验证链接以确认链接 Karma。";
+/* Message explaining that user needs to check email for KARMA Account verfication link. */
+"FxA.AccountVerificationRequiredSurface" = "您需要验证 %@。请检查您的邮箱找到验证链接以确认链接 KARMA。";
 
 /* Button label to connect another device to Sync */
 "FxA.ConnectAnotherDevice" = "连接其他设备";
 
-/* Settings section title for Karma Account */
-"FxA.FirefoxAccount" = "Karma 账户";
+/* Settings section title for KARMA Account */
+"FxA.FirefoxAccount" = "KARMA 账户";
 
-/* Button label to go to Karma Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "管理账户和设备";
 
 /* Label when no internet is present */
@@ -441,15 +441,15 @@
 "FxA.OpenSyncPreferences" = "打开同步首选项";
 
 /* Instructions shown on qr code scanning view */
-"fxa.qr-scanning-view.instructions" = "到 Karma.com/pair 扫描二维码";
+"fxa.qr-scanning-view.instructions" = "到 KARMA.com/pair 扫描二维码";
 
-/* Remove button is displayed on Karma account page under certain scenarios where user would like to remove their account. */
+/* Remove button is displayed on KARMA account page under certain scenarios where user would like to remove their account. */
 "FxA.RemoveAccount" = "移除";
 
 /* Description string for alert view that gets presented when user tries to remove an account. */
-"FxA.RemoveAccountAlertMessage" = "移除与此设备关联的 Karma 账户，登录其他账户。";
+"FxA.RemoveAccountAlertMessage" = "移除与此设备关联的 KARMA 账户，登录其他账户。";
 
-/* Remove account alert is the final confirmation before user removes their Karma account */
+/* Remove account alert is the final confirmation before user removes their KARMA account */
 "FxA.RemoveAccountAlertTitle" = "移除账户";
 
 /* Button label to resend email */
@@ -459,13 +459,13 @@
 "fxa.signin.camera-signin" = "使用相机登录";
 
 /* FxA sign in create account label. */
-"fxa.signin.create-account-pt-1" = "使用账户在设备间同步 Karma。";
+"fxa.signin.create-account-pt-1" = "使用账户在设备间同步 KARMA。";
 
 /* FxA sign in create account label. This will be linked to the site to create an account. */
-"fxa.signin.create-account-pt-2" = "创建 Karma 账户。";
+"fxa.signin.create-account-pt-2" = "创建 KARMA 账户。";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "在计算机上使用 Karma 打开 Karma.com/pair";
+"fxa.signin.qr-link-instruction" = "在计算机上使用 KARMA 打开 KARMA.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "扫描就绪";
@@ -482,14 +482,14 @@
 /* Label explaining what sync does */
 "FxA.SyncExplain" = "随时在您的各个设备上取得您的标签页、书签及密码。";
 
-/* Button label to Sync your Karma Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "立即同步";
 
 /* Call to action for sign into sync button */
 "FxA.TakeYourWebWithYou" = "精彩网络与你相伴";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "Karma 同步已连接至 %@";
+"FxAPush_DeviceConnected_body" = "KARMA 同步已连接至 %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "同步已连接";
@@ -498,7 +498,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ 已成功断开。";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "此设备已成功断开 Karma 同步。";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "此设备已成功断开 KARMA 同步。";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "同步已断开";
@@ -507,7 +507,7 @@
 "FxAPush_DeviceDisconnected_title" = "同步已断开";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "一台设备已断开 Karma 同步";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "一台设备已断开 KARMA 同步";
 
 /* A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing. */
 "Get your open tabs, bookmarks, and passwords from your other devices." = "查看您其他设备上打开的标签页、书签和密码。";
@@ -555,7 +555,7 @@
 "HistoryPanel.EmptySyncedTabsPanelTabSyncDisabledState.Description" = "打开标签页同步功能，就能看到其他设备上打开的标签页。";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "Karma 同步";
+"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA 同步";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "历史记录";
@@ -645,7 +645,7 @@
 "InactiveTabs.TabTray.AutoClosePrompt.ButtonTitle" = "开启“自动关闭”";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This string describes what happens if you elect to turn on this option. */
-"InactiveTabs.TabTray.AutoClosePrompt.Content" = "Karma 将自动关闭您一个月内未查看的标签页。";
+"InactiveTabs.TabTray.AutoClosePrompt.Content" = "KARMA 将自动关闭您一个月内未查看的标签页。";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This is the title of that Auto Close prompt */
 "InactiveTabs.TabTray.AutoClosePrompt.Title" = "要一个月后自动关闭吗？";
@@ -674,10 +674,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "明亮";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "载入原页面";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Karma reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "正在载入内容…";
 
 /* Authentication prompt log in button */
@@ -729,7 +729,7 @@
 "LoginsList.LoginsListSearchPlaceholder" = "筛选";
 
 /* Label shown when there are no logins to list */
-"LoginsList.NoLoginsFound.Description" = "保存的登录信息将显示于此处。若您在其他设备保存过登录信息，请登录您的 Karma 账户。";
+"LoginsList.NoLoginsFound.Description" = "保存的登录信息将显示于此处。若您在其他设备保存过登录信息，请登录您的 KARMA 账户。";
 
 /* Label shown when there are no logins saved */
 "LoginsList.NoLoginsFound.Title" = "未找到登录信息";
@@ -753,7 +753,7 @@
 "LoginsList.Title" = "已保存的登录信息";
 
 /* Restore Tabs Prompt Description */
-"Looks like Karma crashed previously. Would you like to restore your tabs?" = "看起来 Karma 此前崩溃了。您想恢复您的标签页吗？";
+"Looks like KARMA crashed previously. Would you like to restore your tabs?" = "看起来 KARMA 此前崩溃了。您想恢复您的标签页吗？";
 
 /* Name for Mark as read button in reader mode
    Title for the button that marks a reading list item as read */
@@ -797,10 +797,10 @@
 "Menu.EnhancedTrackingProtectionOn.Title" = "已开启此网站的增强型跟踪保护。";
 
 /* Description for having standard ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "Karma 可拦截跨网站跟踪器、社交跟踪器、加密货币挖矿程序和数字指纹跟踪程序。";
+"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "KARMA 可拦截跨网站跟踪器、社交跟踪器、加密货币挖矿程序和数字指纹跟踪程序。";
 
 /* Description for having strict ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "Karma 可拦截跨网站跟踪器、社交跟踪器、加密货币挖矿程序和数字指纹跟踪程序，以及跟踪性内容。";
+"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "KARMA 可拦截跨网站跟踪器、社交跟踪器、加密货币挖矿程序和数字指纹跟踪程序，以及跟踪性内容。";
 
 /* Label for the button, displayed in the menu, takes you to to History screen when pressed. */
 "Menu.History.Label" = "历史";
@@ -866,7 +866,7 @@
 "Menu.TrackingProtection.Details.Verifier" = "验证者：%@";
 
 /* Message in menu when no trackers blocked. */
-"Menu.TrackingProtection.NoTrackersBlockedTitle" = "此页面上未检测到 Karma 已知的跟踪器。";
+"Menu.TrackingProtection.NoTrackersBlockedTitle" = "此页面上未检测到 KARMA 已知的跟踪器。";
 
 /* The title for tracking protection settings */
 "Menu.TrackingProtection.ProtectionSettings.Title" = "保护设置";
@@ -881,7 +881,7 @@
 "Menu.TrackingProtectionBlockedSocial.Title" = "社交跟踪器";
 
 /* Description of the Tracking protection menu when TP is blocking parts of the page */
-"Menu.TrackingProtectionBlocking.Description" = "Karma 已拦截此页面中可能跟踪您的浏览行为的内容。";
+"Menu.TrackingProtectionBlocking.Description" = "KARMA 已拦截此页面中可能跟踪您的浏览行为的内容。";
 
 /* The description of the Tracking Protection menu item when tracking is enabled */
 "Menu.TrackingProtectionBlockingDisabled.Description" = "拦截在线跟踪器";
@@ -983,33 +983,33 @@
 /* Restore Tabs Affirmative Action */
 "Okay" = "好";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the button, on the bottom of the card, used to get back to browsing on Karma by dismissing the onboarding card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the button, on the bottom of the card, used to get back to browsing on KARMA by dismissing the onboarding card */
 "Onboarding.WhatsNew.Button.Title" = "开始浏览";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is a general description that appears under the title for what the card is about. */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is a general description that appears under the title for what the card is about. */
 "Onboarding.WhatsNew.Description" = "现在可以更轻松地从上次中断的地方继续浏览。";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is the description for the Jump Back In bullet point */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is the description for the Jump Back In bullet point */
 "Onboarding.WhatsNew.PersonalizedHome.Description" = "跳转到您打开的标签页、书签和浏览历史。";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the descripion of the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the descripion of the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Description" = "从主页快速访问您的上次搜索。";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Title" = "最近的搜索";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the description for the Tab Group bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the description for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Description" = "将同一次搜索打开的页面归入一组。";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Tab Group bullet point on the card */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is the title for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Title" = "更简洁的标签组";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Jump Back In bullet point on the card
-   The title for the new onboarding card letting users know what is new in Karma iOS */
-"Onboarding.WhatsNew.Title" = "Karma 的新变化";
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is the title for the Jump Back In bullet point on the card
+   The title for the new onboarding card letting users know what is new in KARMA iOS */
+"Onboarding.WhatsNew.Title" = "KARMA 的新变化";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Karma crashed" = "啊哦！Karma 崩溃了";
+"Oops! KARMA crashed" = "啊哦！KARMA 崩溃了";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "当书本图标出现在标题栏时，轻按它即可在阅读模式下阅读文章。";
@@ -1020,8 +1020,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "打开的标签页";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Karma, or any external app. */
-"OpenURL.Error.Message" = "地址无效，因此Karma 无法打开该页面。";
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
+"OpenURL.Error.Message" = "地址无效，因此KARMA 无法打开该页面。";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "无法打开页面";
@@ -1036,19 +1036,19 @@
 "Password" = "密码";
 
 /* Error message shown in the remote tabs panel */
-"PasswordAutoFill.NoPasswordsFoundTitle" = "您没有任何同步自 Karma 账户的登录信息";
+"PasswordAutoFill.NoPasswordsFoundTitle" = "您没有任何同步自 KARMA 账户的登录信息";
 
 /* Header for the list of credentials table */
 "PasswordAutoFill.PasswordsListTitle" = "可用登录信息：";
 
-/* Title of the extension that shows Karma passwords */
-"PasswordAutoFill.SectionTitle" = "Karma 登录信息";
+/* Title of the extension that shows KARMA passwords */
+"PasswordAutoFill.SectionTitle" = "KARMA 登录信息";
 
 /* See http://mzl.la/1G7uHo7 */
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "这将允许您保存图像到您的“相机胶卷”。";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Karma 想要访问您的照片";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "KARMA 想要访问您的照片";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "关闭";
@@ -1056,7 +1056,7 @@
 /* Privacy section title */
 "Privacy" = "隐私";
 
-/* Show Karma Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/Karma/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "隐私政策";
 
 /* This is the value for a label that indicates if a user is on an unencrypted website. */
@@ -1129,7 +1129,7 @@
 "ScanQRCode.InvalidDataError.Message" = "数据无效";
 
 /* Text of the prompt user to setup the camera authorization. */
-"ScanQRCode.PermissionError.Message" = "请在 设置 -> 隐私 -> 相机 中允许 Karma 访问设备的相机。";
+"ScanQRCode.PermissionError.Message" = "请在 设置 -> 隐私 -> 相机 中允许 KARMA 访问设备的相机。";
 
 /* Title for the QR code scanner view. */
 "ScanQRCode.View.Title" = "扫描 QR 码";
@@ -1213,19 +1213,19 @@
 "SendTo.NavBar.Title" = "发送标签页";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "您没有其他已连接此 Karma 账户的设备可用于同步。";
+"SendTo.NoDevicesFound.Message" = "您没有其他已连接此 KARMA 账户的设备可用于同步。";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "请打开 Karma，转至“设置”并登录以继续。";
+"SendTo.NotSignedIn.Message" = "请打开 KARMA，转至“设置”并登录以继续。";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "您尚未登录您的 Karma 账户。";
+"SendTo.NotSignedIn.Title" = "您尚未登录您的 KARMA 账户。";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "发送";
 
-/* The text for the button on the Send to Device page if you are not signed in to Karma Accounts. */
-"SendTo.SignIn.Button" = "登录 Karma";
+/* The text for the button on the Send to Device page if you are not signed in to KARMA Accounts. */
+"SendTo.SignIn.Button" = "登录 KARMA";
 
 /* Body of notification shown when the device is sent one or more tabs from an unnamed device. */
 "SentTab_TabArrivingNotification_NoDevice_body" = "从其他设备收到了新的标签页。";
@@ -1249,7 +1249,7 @@
 "SentTab.NoTabArrivingNotification.body" = "点按以开始";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "Karma 同步";
+"SentTab.NoTabArrivingNotification.title" = "KARMA 同步";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "查看";
@@ -1312,7 +1312,7 @@
 "Settings.DataManagement.Title" = "数据管理";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "Karma 将停止与您的账户的同步，但不会删除此设备上的任何浏览数据。";
+"Settings.Disconnect.Body" = "KARMA 将停止与您的账户的同步，但不会删除此设备上的任何浏览数据。";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "断开同步";
@@ -1381,53 +1381,53 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "设备名称";
 
-/* Label used as a section title in the Karma Accounts Settings screen. */
+/* Label used as a section title in the KARMA Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "同步设置";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "Karma 账户";
+"Settings.FxA.Title" = "KARMA 账户";
 
 /* General settings section title */
 "Settings.General.SectionName" = "常规";
 
-/* In the settings menu, on the Karma homepage customization section, this is the description below the section, describing what the options in the section are for. */
-"Settings.Home.Option.Description" = "选择要在 Karma 主页看到的内容。";
+/* In the settings menu, on the KARMA homepage customization section, this is the description below the section, describing what the options in the section are for. */
+"Settings.Home.Option.Description" = "选择要在 KARMA 主页看到的内容。";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
 "Settings.Home.Option.JumpBackIn" = "回到先前页面";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the KARMA homepage on or off */
 "Settings.Home.Option.Pocket" = "Pocket 推荐";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentlySaved" = "最近保存";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
 "Settings.Home.Option.RecentlyVisited" = "最近访问";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentSearches" = "最近的搜索";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the KARMA homepage on or off */
 "Settings.Home.Option.Shortcuts" = "快捷方式";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage after four hours of inactivity. */
 "Settings.Home.Option.StartAtHome.AfterFourHours" = "四小时未使用即回到主页";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Karma */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Always" = "主页";
 
 /* In the settings menu, in the Start at Home customization options, this is text that appears below the section, describing what the section settings do. */
-"Settings.Home.Option.StartAtHome.Description" = "选择您回到 Karma 时要看到的内容。";
+"Settings.Home.Option.StartAtHome.Description" = "选择您回到 KARMA 时要看到的内容。";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Karma */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Never" = "最后打开的标签页";
 
-/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Karma Homepage. */
+/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the KARMA Homepage. */
 "Settings.Home.Option.StartAtHome.Title" = "启动页";
 
-/* In the settings menu, this is the title of the Karma Homepage customization settings section */
-"Settings.Home.Option.Title" = "Karma 主页";
+/* In the settings menu, this is the title of the KARMA Homepage customization settings section */
+"Settings.Home.Option.Title" = "KARMA 主页";
 
 /* Button in settings to clear the home page. */
 "Settings.HomePage.Clear.Button" = "清除";
@@ -1478,10 +1478,10 @@
 "Settings.NewTab.Option.CustomizeFooter2" = "您保存或访问过的网站";
 
 /* The title for the section to customize top sites in the new tab settings page. */
-"Settings.NewTab.Option.CustomizeTitle" = "定制 Karma 主页";
+"Settings.NewTab.Option.CustomizeTitle" = "定制 KARMA 主页";
 
-/* Option in settings to show Karma Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "Karma 主页";
+/* Option in settings to show KARMA Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "KARMA 主页";
 
 /* Option in the settings to turn off recent bookmarks in the Highlights section */
 "Settings.NewTab.Option.HighlightsBookmarks" = "最近添加的书签";
@@ -1523,7 +1523,7 @@
 "Settings.NewTab.TopSectionNameFooter" = "选择打开新标签页时要加载的内容";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "当打开 Karma 时";
+"Settings.OfferClipboardBar.Status" = "当打开 KARMA 时";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "询问打开已复制的链接";
@@ -1547,7 +1547,7 @@
 "Settings.SendUsage.Link" = "详细了解。";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "Mozilla 仅收集为大众提供和改进 Karma 所必要的信息。";
+"Settings.SendUsage.Message" = "Mozilla 仅收集为大众提供和改进 KARMA 所必要的信息。";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "发送使用数据";
@@ -1565,7 +1565,7 @@
 "Settings.Siri.OpenTabShortcut" = "打开新标签页";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "使用 Siri 快捷指令快速开启 Karma";
+"Settings.Siri.SectionDescription" = "使用 Siri 快捷指令快速开启 KARMA";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "Siri 快捷指令";
@@ -1589,7 +1589,7 @@
 "Settings.Studies.Toggle.Link" = "详细了解。";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "Karma 可能会不时地安装并运行一些研究项目。";
+"Settings.Studies.Toggle.Message" = "KARMA 可能会不时地安装并运行一些研究项目。";
 
 /* Toggled OFF to opt-out of studies */
 "Settings.Studies.Toggle.Off" = "关闭";
@@ -1606,7 +1606,7 @@
 /* In the settings menu, in the Tabs customization section, this is the title for the setting that toggles the Tab Groups feature - where tabs from related searches are grouped - on or off */
 "Settings.Tabs.CustomizeTabsSection.TabGroups" = "标签组";
 
-/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from Karma hompage */
+/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from KARMA hompage */
 "Settings.Tabs.CustomizeTabsSection.Title" = "自定义标签页托盘";
 
 /* In the settings menu, this is the title for the Tabs customization section option */
@@ -1622,7 +1622,7 @@
 "Settings.TrackingProtection.Alert.Title" = "注意！";
 
 /* Header description for tracking protection options section where Basic/Strict block list can be selected */
-"Settings.TrackingProtection.BlockListsHeader" = "您可以选择一个列表，Karma 将依此过滤可能会跟踪您网上活动的网页元素。";
+"Settings.TrackingProtection.BlockListsHeader" = "您可以选择一个列表，KARMA 将依此过滤可能会跟踪您网上活动的网页元素。";
 
 /* Explanation of basic mode. */
 "Settings.TrackingProtection.Info.BasicTitle" = "平衡保护和性能。";
@@ -1717,32 +1717,32 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "网站数据";
 
-/* Action label on share extension to add page to the Karma reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "添加到阅读列表";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "已添加到阅读列表";
 
-/* Action label on share extension to bookmark the page in Karma. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "为此页添加书签";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "已加书签";
 
-/* Action label on share extension to load the page in Karma when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "在后台载入";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "正在 Karma 中载入";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "正在 KARMA 中载入";
 
-/* Action label on share extension to immediately open page in Karma. */
-"ShareExtension.OpenInFirefoxAction.Title" = "在 Karma 中打开";
+/* Action label on share extension to immediately open page in KARMA. */
+"ShareExtension.OpenInFirefoxAction.Title" = "在 KARMA 中打开";
 
-/* Action label on share extension to immediately open page in Karma in private mode. */
+/* Action label on share extension to immediately open page in KARMA in private mode. */
 "ShareExtension.OpenInPrivateModeAction.Title" = "在隐私模式中打开";
 
-/* Action label on share extension to search for the selected text in Karma. */
-"ShareExtension.SeachInFirefoxAction.Title" = "在 Karma 中搜索";
+/* Action label on share extension to search for the selected text in KARMA. */
+"ShareExtension.SeachInFirefoxAction.Title" = "在 KARMA 中搜索";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "显示搜索建议";
@@ -1779,7 +1779,7 @@
 "Sync.FirstTimeMessage.Label" = "您的首次同步可能会花些时间";
 
 /* String displayed on Sign In to Sync page that allows the user to create a new account. */
-"Sync.NoAccount.Description" = "尚无账户？立即创建以在设备间同步 Karma。";
+"Sync.NoAccount.Description" = "尚无账户？立即创建以在设备间同步 KARMA。";
 
 /* Message displayed when the user's account is syncing with no ellipsis */
 "Sync.Syncing.Label" = "正在同步";
@@ -1901,7 +1901,7 @@
 /* The section header for tabs opened yesterday */
 "TabTray.Yesterday.Header" = "昨天";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "The page could not be displayed in Reader View." = "此页面无法在阅读模式下显示。";
 
 /* Error message in the remote tabs panel */
@@ -1959,13 +1959,13 @@
 "UIMenuItem.PasteGo" = "粘贴并前往";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "使用 Karma 搜索";
+"UIMenuItem.SearchWithFirefox" = "使用 KARMA 搜索";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "未读";
 
 /* Text message in the settings table view */
-"Upgrade Karma to connect" = "升级 Karma 以连接";
+"Upgrade KARMA to connect" = "升级 KARMA 以连接";
 
 /* Debug option */
 "Use stage servers" = "使用预发布(Stage)服务器";
@@ -1976,7 +1976,7 @@
 /* Text message in the settings table view */
 "Verify your email address" = "验证您的电子邮件地址";
 
-/* Version number of Karma shown in settings */
+/* Version number of KARMA shown in settings */
 "Version %@ (%@)" = "版本 %1$@ (%2$@)";
 
 /* Accessibility label for the main web content view */
@@ -1998,7 +1998,7 @@
 "Yesterday" = "昨天";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Karma on your other devices." = "您没有在其他设备的 Karma 上已经打开的标签页。";
+"You don’t have any tabs open in KARMA on your other devices." = "您没有在其他设备的 KARMA 上已经打开的标签页。";
 
 /* Your Rights settings section title */
 "Your Rights" = "您的权利";

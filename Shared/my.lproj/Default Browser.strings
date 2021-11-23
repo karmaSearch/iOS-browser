@@ -1,12 +1,12 @@
-/* Button string to open settings that allows user to switch their default browser to Karma. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Button" = "အပြင်အဆင်များသို့ သွားပါ";
 
-/* Description for small card shown that allows user to switch their default browser to Karma. */
-"DefaultBrowserCard.Description" = "Karma တွင်ဝက်ဘ်ဆိုက်များ၊ အီးမေးလ်များနှင့်မက်ဆေ့ခ်ျများမှလင့်ခ်များကိုသတ်မှတ်ပါ။";
+/* Description for small card shown that allows user to switch their default browser to KARMA. */
+"DefaultBrowserCard.Description" = "KARMA တွင်ဝက်ဘ်ဆိုက်များ၊ အီးမေးလ်များနှင့်မက်ဆေ့ခ်ျများမှလင့်ခ်များကိုသတ်မှတ်ပါ။";
 
-/* Title for small card shown that allows user to switch their default browser to Karma. */
+/* Title for small card shown that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Title" = "သင်၏ပုံမှန် Browser ကိုပြောင်းပါ";
 
-/* Menu option for setting Karma as default browser. */
+/* Menu option for setting KARMA as default browser. */
 "Settings.DefaultBrowserMenuItem" = "ပုံသေဘရောက်ဇာ အဖြစ်သတ်မှတ်မည်";
 

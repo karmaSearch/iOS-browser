@@ -1,16 +1,16 @@
-/* Button string to open settings that allows user to switch their default browser to Karma. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Button" = "Buka Setélan";
 
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Lenyepan Carana";
 
-/* Description for small card shown that allows user to switch their default browser to Karma. */
-"DefaultBrowserCard.Description" = "Setél tutumbu ti raramatloka, surélék, jeung Surat pikeun muka otomatis dina Karma.";
+/* Description for small card shown that allows user to switch their default browser to KARMA. */
+"DefaultBrowserCard.Description" = "Setél tutumbu ti raramatloka, surélék, jeung Surat pikeun muka otomatis dina KARMA.";
 
-/* Title for small card shown that allows user to switch their default browser to Karma. */
+/* Title for small card shown that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Title" = "Alihkeun Panyungsi Baku Anjeun";
 
-/* Button string to open settings that allows user to switch their default browser to Karma. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserOnboarding.Button" = "Buka Setélan";
 
 /* Description for default browser onboarding card. */
@@ -20,11 +20,11 @@
 "DefaultBrowserOnboarding.Description2" = "2. Toél Aplikasi Panyungsi Baku";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Pilih Karma";
+"DefaultBrowserOnboarding.Description3" = "3. Pilih KARMA";
 
-/* Text for the screenshot of the iOS system settings page for Karma. */
+/* Text for the screenshot of the iOS system settings page for KARMA. */
 "DefaultBrowserOnboarding.Screenshot" = "Aplikasi Panyungsi Baku";
 
-/* Menu option for setting Karma as default browser. */
+/* Menu option for setting KARMA as default browser. */
 "Settings.DefaultBrowserMenuItem" = "Jadikeun Panyungsi Baku";
 

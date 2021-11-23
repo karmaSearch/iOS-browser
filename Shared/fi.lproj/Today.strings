@@ -34,18 +34,18 @@
 /* Label that is shown when there are no tabs opened in tab tray i.e. Empty State */
 "TodayWidget.NoOpenTabsLabelV2" = "Ei avoimia välilehtiä";
 
-/* Open Karma when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenFirefoxLabel" = "Avaa Karma";
+/* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
+"TodayWidget.OpenFirefoxLabel" = "Avaa KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Yksityinen haku";
 
-/* Karma shortcuts title when widget enters edit mode. Do not translate the word Karma. */
-"TodayWidget.QuickActionsGalleryTitleV2" = "Karma-oikotiet";
+/* KARMA shortcuts title when widget enters edit mode. Do not translate the word KARMA. */
+"TodayWidget.QuickActionsGalleryTitleV2" = "KARMA-oikotiet";
 
-/* Title for top sites widget to add Karma top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "Ykkössivustot";
 
 /* Sub label for Top Sites widget */
-"TodayWidget.TopSitesSubLabel" = "Karma - Ykkössivustot";
+"TodayWidget.TopSitesSubLabel" = "KARMA - Ykkössivustot";
 

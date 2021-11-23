@@ -7,10 +7,10 @@
 /* Next button on the first intro screen. */
 "Intro.Slides.Button.Next" = "Weiter";
 
-/* Sign in to Karma account button on second intro screen. */
+/* Sign in to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignIn" = "Anmelden";
 
-/* Sign up to Karma account button on second intro screen. */
+/* Sign up to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignUp" = "Registrieren";
 
 /* Description for the second item in the table related to fast searching via address bar */
@@ -19,14 +19,14 @@
 /* Title for the second item in the table related to fast searching via address bar */
 "Intro.Slides.Fast.Search.Title" = "Schnelle Suche";
 
-/* Description for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Description" = "Übertragen Sie Lesezeichen, Chronik und Passwörter zu Karma auf diesem Gerät.";
+/* Description for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Description" = "Übertragen Sie Lesezeichen, Chronik und Passwörter zu KARMA auf diesem Gerät.";
 
-/* Title for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Title" = "Synchronisieren Sie Karma zwischen Geräten";
+/* Title for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Title" = "Synchronisieren Sie KARMA zwischen Geräten";
 
 /* Description for the 'Mail' panel in the First Run tour. */
-"Intro.Slides.Mail.Description" = "Nutzen Sie eine beliebige E-Mail-App – nicht nur Mail – mit Karma.";
+"Intro.Slides.Mail.Description" = "Nutzen Sie eine beliebige E-Mail-App – nicht nur Mail – mit KARMA.";
 
 /* Title for the fourth panel 'Mail' in the First Run tour. */
 "Intro.Slides.Mail.Title" = "Einstellungen zu E-Mails";
@@ -37,10 +37,10 @@
 /* Title for the third panel 'Private Browsing' in the First Run tour. */
 "Intro.Slides.Private.Title" = "Surfen Sie, als würde niemand zusehen";
 
-/* Description for the third item in the table related to safe syncing with a Karma account */
-"Intro.Slides.Safe.Sync.Description" = "Schützen Sie Ihre Zugangsdaten und Informationen überall dort, wo Sie Karma verwenden.";
+/* Description for the third item in the table related to safe syncing with a KARMA account */
+"Intro.Slides.Safe.Sync.Description" = "Schützen Sie Ihre Zugangsdaten und Informationen überall dort, wo Sie KARMA verwenden.";
 
-/* Title for the third item in the table related to safe syncing with a Karma account */
+/* Title for the third item in the table related to safe syncing with a KARMA account */
 "Intro.Slides.Safe.Sync.Title" = "Sichere Synchronisierung";
 
 /* Description for the 'Favorite Search Engine' panel in the First Run tour. */
@@ -59,7 +59,7 @@
 "Intro.Slides.Welcome.Description.v2" = "Schnell, privat und auf Ihrer Seite.";
 
 /* Title for the first panel 'Welcome' in the First Run tour. */
-"Intro.Slides.Welcome.Title.v2" = "Willkommen bei Karma";
+"Intro.Slides.Welcome.Title.v2" = "Willkommen bei KARMA";
 
 /* See http://mzl.la/1T8gxwo */
 "Start Browsing" = "Lossurfen";

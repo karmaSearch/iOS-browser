@@ -1,16 +1,16 @@
-/* Button string to open settings that allows user to switch their default browser to Karma. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Button" = "Joan ezarpenetara";
 
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Ikasi nola";
 
-/* Description for small card shown that allows user to switch their default browser to Karma. */
+/* Description for small card shown that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Description" = "Ireki webgune, mezu elektroniko eta Messages-eko loturak Firefoxen automatikoki.";
 
-/* Title for small card shown that allows user to switch their default browser to Karma. */
+/* Title for small card shown that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Title" = "Aldatu zure nabigatzaile lehenetsia";
 
-/* Button string to open settings that allows user to switch their default browser to Karma. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserOnboarding.Button" = "Joan ezarpenetara";
 
 /* Description for default browser onboarding card. */
@@ -20,11 +20,11 @@
 "DefaultBrowserOnboarding.Description2" = "2. Sakatu nabigatzaile lehenetsiaren aplikazioa";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Hautatu Karma";
+"DefaultBrowserOnboarding.Description3" = "3. Hautatu KARMA";
 
-/* Text for the screenshot of the iOS system settings page for Karma. */
+/* Text for the screenshot of the iOS system settings page for KARMA. */
 "DefaultBrowserOnboarding.Screenshot" = "Nabigatzaile lehenetsiaren aplikazioa";
 
-/* Menu option for setting Karma as default browser. */
+/* Menu option for setting KARMA as default browser. */
 "Settings.DefaultBrowserMenuItem" = "Ezarri nabigatzaile lehenetsi gisa";
 

@@ -22,8 +22,8 @@
 /* Quick Actions drop down menu item for new search when widget enters edit mode and drop down menu expands */
 "TodayWidget.DropDownMenuItemNewSearch" = "新規検索";
 
-/* Description for medium size widget to add Karma Shortcut to home screen */
-"TodayWidget.FirefoxShortcutGalleryDescription" = "ホーム画面に Karma のショートカットを追加します。";
+/* Description for medium size widget to add KARMA Shortcut to home screen */
+"TodayWidget.FirefoxShortcutGalleryDescription" = "ホーム画面に KARMA のショートカットを追加します。";
 
 /* Go to link pasted on the clipboard */
 "TodayWidget.GoToCopiedLinkLabelV1" = "コピーしたリンクを開く";
@@ -44,7 +44,7 @@
 "TodayWidget.NewPrivateTabButtonLabelV2" = "プライベートタブで検索";
 
 /* Open New Tab button label */
-"TodayWidget.NewSearchButtonLabelV1" = "Karma で検索";
+"TodayWidget.NewSearchButtonLabelV1" = "KARMA で検索";
 
 /* Open New Tab button label */
 "TodayWidget.NewTabButtonLabelV1" = "新規検索";
@@ -55,38 +55,38 @@
 /* Label that is shown when there are no tabs opened in tab tray i.e. Empty State */
 "TodayWidget.NoOpenTabsLabelV2" = "開いたタブはありません";
 
-/* Open Karma when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenFirefoxLabel" = "Karma を開く";
+/* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
+"TodayWidget.OpenFirefoxLabel" = "KARMA を開く";
 
-/* Description for Karma Pocket stories widget in Gallery View where user can add it to home screen. Pocket is the name of another app. */
+/* Description for KARMA Pocket stories widget in Gallery View where user can add it to home screen. Pocket is the name of another app. */
 "TodayWidget.PocketWidgetGalleryDescription" = "Pocket によってウェブから集められた魅力的で示唆に富んだストーリーを見つけましょう。";
 
-/* Sub label for medium size Karma Pocket stories widge widget. Pocket is the name of another app. */
-"TodayWidget.PocketWidgetSubLabel" = "Karma - Pocket からのおすすめ";
+/* Sub label for medium size KARMA Pocket stories widge widget. Pocket is the name of another app. */
+"TodayWidget.PocketWidgetSubLabel" = "KARMA - Pocket からのおすすめ";
 
-/* Title for Karma Pocket stories widget in Gallery View where user can add it to home screen. Pocket is the name of another app. */
+/* Title for KARMA Pocket stories widget in Gallery View where user can add it to home screen. Pocket is the name of another app. */
 "TodayWidget.PocketWidgetTitle" = "Pocket からのおすすめ";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "プライベート検索";
 
 /* Quick action description when widget enters edit mode */
-"TodayWidget.QuickActionDescription" = "ホーム画面に追加する Karma のショートカットを選択してください。";
+"TodayWidget.QuickActionDescription" = "ホーム画面に追加する KARMA のショートカットを選択してください。";
 
 /* Quick Actions left label text for dropdown menu when widget enters edit mode */
 "TodayWidget.QuickActionDropDownMenu" = "クイックアクション";
 
 /* Description for small size widget to add it to home screen */
-"TodayWidget.QuickActionGalleryDescription" = "Karma のショートカットをホーム画面に追加します。ウィジェットを追加したら、長押しして編集し、別のショートカットを選択します。";
+"TodayWidget.QuickActionGalleryDescription" = "KARMA のショートカットをホーム画面に追加します。ウィジェットを追加したら、長押しして編集し、別のショートカットを選択します。";
 
 /* Quick Actions title when widget enters edit mode */
 "TodayWidget.QuickActionsGalleryTitle" = "クイックアクション";
 
-/* Karma shortcuts title when widget enters edit mode. Do not translate the word Karma. */
-"TodayWidget.QuickActionsGalleryTitleV2" = "Karma ショートカット";
+/* KARMA shortcuts title when widget enters edit mode. Do not translate the word KARMA. */
+"TodayWidget.QuickActionsGalleryTitleV2" = "KARMA ショートカット";
 
 /* Sub label for medium size quick action widget */
-"TodayWidget.QuickActionsSubLabel" = "Karma - クイックアクション";
+"TodayWidget.QuickActionsSubLabel" = "KARMA - クイックアクション";
 
 /* Description for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryDescription" = "ホーム画面から開いたタブに直接アクセスできます。";
@@ -101,35 +101,35 @@
 "TodayWidget.QuickViewLargeGalleryDescription" = "開いたタブへのショートカットを追加します。";
 
 /* Sub label for Top Sites widget */
-"TodayWidget.QuickViewOpenTabsSubLabel" = "Karma - 開いたタブ";
+"TodayWidget.QuickViewOpenTabsSubLabel" = "KARMA - 開いたタブ";
 
-/* Title for small size widget which allows users to search in Karma. Do not translate the word Karma. */
-"TodayWidget.SearchInFirefoxTitle" = "Karma で検索";
+/* Title for small size widget which allows users to search in KARMA. Do not translate the word KARMA. */
+"TodayWidget.SearchInFirefoxTitle" = "KARMA で検索";
 
-/* Search in Karma. Do not translate the word Karma */
-"TodayWidget.SearchInFirefoxV2" = "Karma で検索";
+/* Search in KARMA. Do not translate the word KARMA */
+"TodayWidget.SearchInFirefoxV2" = "KARMA で検索";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "プライベートタブで検索";
 
-/* Description for top sites widget to add Karma top sites shotcuts to home screen */
+/* Description for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryDescription" = "最近よく訪れるサイトへのショートカットを追加します。";
 
-/* Title for top sites widget to add Karma top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "トップサイト";
 
-/* Title for top sites widget to add Karma top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitleV2" = "ウェブサイトショートカット";
 
 /* Sub label for Top Sites widget */
-"TodayWidget.TopSitesSubLabel" = "Karma - トップサイト";
+"TodayWidget.TopSitesSubLabel" = "KARMA - トップサイト";
 
 /* Sub label for Shortcuts widget */
-"TodayWidget.TopSitesSubLabel2" = "Karma - ウェブサイトのショートカット";
+"TodayWidget.TopSitesSubLabel2" = "KARMA - ウェブサイトのショートカット";
 
 /* View More for Quick View widget in Gallery View where we don't know how many tabs might be opened */
 "TodayWidget.ViewMore" = "もっと見る";
 
-/* View More… for Karma Pocket stories widget where we don't know how many articles are available. */
+/* View More… for KARMA Pocket stories widget where we don't know how many articles are available. */
 "TodayWidget.ViewMoreDots" = "もっと見る...";
 

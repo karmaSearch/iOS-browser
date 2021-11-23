@@ -12,21 +12,21 @@ class IntroScreenWelcomeView: UIView, CardTheme {
     // Views
     private lazy var animalsBackgroundImage: UIImageView = {
         let imgView = UIImageView()
-        imgView.contentMode = .scaleToFill
+        imgView.contentMode = .scaleAspectFill
         imgView.clipsToBounds = true
         return imgView
     }()
     
     private lazy var iconImage: UIImageView = {
         let imgView = UIImageView()
-        imgView.contentMode = .scaleToFill
+        imgView.contentMode = .scaleAspectFit
         imgView.clipsToBounds = true
         return imgView
     }()
     
     private lazy var karmaLogo: UIImageView = {
         let logo = UIImageView(image: UIImage(named: "karma-logo"))
-        logo.contentMode = .scaleToFill
+        logo.contentMode = .scaleAspectFit
         logo.clipsToBounds = true
         
         return logo

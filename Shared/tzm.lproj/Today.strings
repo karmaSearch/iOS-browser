@@ -7,16 +7,16 @@
 /* Open New Tab button label */
 "TodayWidget.NewTabButtonLabelV1" = "ⴰⵔⵣⵣⵓ ⴰⵎⴰⵢⵏⵓ";
 
-/* Open Karma when there are no tabs opened in tab tray i.e. Empty State */
+/* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
 "TodayWidget.OpenFirefoxLabel" = "ⵕⵥⵎ ⴼⴰⵢⵔⴼⵓⴽⵙ";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "ⴰⵔⵣⵣⵓ ⵓⵙⵍⵓⴳ";
 
-/* Title for small size widget which allows users to search in Karma. Do not translate the word Karma. */
+/* Title for small size widget which allows users to search in KARMA. Do not translate the word KARMA. */
 "TodayWidget.SearchInFirefoxTitle" = "ⵔⵣⵓ ⴳ ⴼⴰⵢⵔⴼⵓⴽⵙ";
 
-/* Search in Karma. Do not translate the word Karma */
+/* Search in KARMA. Do not translate the word KARMA */
 "TodayWidget.SearchInFirefoxV2" = "ⵔⵣⵓ ⴳ ⴼⴰⵢⵔⴼⵓⴽⵙ";
 
 /* Search in private tab */

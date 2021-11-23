@@ -7,10 +7,10 @@
 /* Next button on the first intro screen. */
 "Intro.Slides.Button.Next" = "ᱤᱱᱟᱹ ᱛᱟᱭᱚᱢ";
 
-/* Sign in to Karma account button on second intro screen. */
+/* Sign in to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignIn" = "ᱵᱚᱞᱚᱱ ᱥᱩᱦᱤ";
 
-/* Sign up to Karma account button on second intro screen. */
+/* Sign up to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignUp" = "ᱥᱩᱦᱤ";
 
 /* Description for the second item in the table related to fast searching via address bar */
@@ -19,14 +19,14 @@
 /* Title for the second item in the table related to fast searching via address bar */
 "Intro.Slides.Fast.Search.Title" = "ᱞᱚᱜᱚᱱ ᱥᱮᱸᱫᱽᱨᱟ";
 
-/* Description for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Description" = "ᱱᱚᱶᱟ ᱥᱟᱫᱷᱚᱱ ᱨᱮ Karma ᱛᱮ ᱵᱩᱠᱢᱟᱨᱠ , ᱦᱤᱛᱟᱹᱞ, ᱟᱨ ᱫᱟᱱᱟᱝ ᱥᱟᱵᱟᱫ ᱟᱹᱜᱩᱭ ᱢᱮ ᱾";
+/* Description for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Description" = "ᱱᱚᱶᱟ ᱥᱟᱫᱷᱚᱱ ᱨᱮ KARMA ᱛᱮ ᱵᱩᱠᱢᱟᱨᱠ , ᱦᱤᱛᱟᱹᱞ, ᱟᱨ ᱫᱟᱱᱟᱝ ᱥᱟᱵᱟᱫ ᱟᱹᱜᱩᱭ ᱢᱮ ᱾";
 
-/* Title for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Title" = "ᱥᱟᱫᱷᱚᱱ ᱛᱟᱞᱟ ᱛᱮ Karma ᱛᱚᱞ ᱡᱚᱠᱷᱟᱭᱮᱢ";
+/* Title for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Title" = "ᱥᱟᱫᱷᱚᱱ ᱛᱟᱞᱟ ᱛᱮ KARMA ᱛᱚᱞ ᱡᱚᱠᱷᱟᱭᱮᱢ";
 
 /* Description for the 'Mail' panel in the First Run tour. */
-"Intro.Slides.Mail.Description" = "Karma ᱥᱟᱞᱟᱜ — ᱠᱷᱟᱹᱞᱤ ᱢᱮᱞ ᱜᱮ ᱵᱟᱝᱟ — ᱚᱞᱜᱟ ᱤᱼᱢᱮᱞ ᱮᱯᱯ ᱵᱮᱵᱷᱟᱨ ᱢᱮ ᱾";
+"Intro.Slides.Mail.Description" = "KARMA ᱥᱟᱞᱟᱜ — ᱠᱷᱟᱹᱞᱤ ᱢᱮᱞ ᱜᱮ ᱵᱟᱝᱟ — ᱚᱞᱜᱟ ᱤᱼᱢᱮᱞ ᱮᱯᱯ ᱵᱮᱵᱷᱟᱨ ᱢᱮ ᱾";
 
 /* Title for the fourth panel 'Mail' in the First Run tour. */
 "Intro.Slides.Mail.Title" = "ᱟᱢ ᱢᱮᱞ ᱮᱢ ᱧᱟᱢ ᱠᱮᱜᱼᱟ… ᱚᱯᱥᱚᱱᱥ";
@@ -37,10 +37,10 @@
 /* Title for the third panel 'Private Browsing' in the First Run tour. */
 "Intro.Slides.Private.Title" = "ᱵᱨᱟᱩᱡ ᱢᱮ ᱡᱮᱞᱠᱟ ᱚᱠᱚᱭ ᱦᱚᱸ ᱵᱟᱠᱚ ᱧᱮᱞᱮᱫ ᱢᱮᱭᱟ";
 
-/* Description for the third item in the table related to safe syncing with a Karma account */
-"Intro.Slides.Safe.Sync.Description" = "ᱟᱢᱟᱠ ᱵᱚᱞᱚᱱ ᱠᱚ ᱟᱨ ᱥᱟᱠᱷᱤᱭᱟᱛ ᱠᱚ ᱨᱚᱯᱷᱟᱭ ᱢᱮ ᱡᱟᱦᱟᱱ ᱨᱤᱜᱤ ᱟᱢ Karma ᱵᱮᱵᱷᱟᱨ ᱟᱢ ᱾";
+/* Description for the third item in the table related to safe syncing with a KARMA account */
+"Intro.Slides.Safe.Sync.Description" = "ᱟᱢᱟᱠ ᱵᱚᱞᱚᱱ ᱠᱚ ᱟᱨ ᱥᱟᱠᱷᱤᱭᱟᱛ ᱠᱚ ᱨᱚᱯᱷᱟᱭ ᱢᱮ ᱡᱟᱦᱟᱱ ᱨᱤᱜᱤ ᱟᱢ KARMA ᱵᱮᱵᱷᱟᱨ ᱟᱢ ᱾";
 
-/* Title for the third item in the table related to safe syncing with a Karma account */
+/* Title for the third item in the table related to safe syncing with a KARMA account */
 "Intro.Slides.Safe.Sync.Title" = "ᱡᱚᱯᱛᱤ ᱛᱚᱞ ᱡᱚᱠᱷᱟ";
 
 /* Description for the 'Favorite Search Engine' panel in the First Run tour. */
@@ -59,7 +59,7 @@
 "Intro.Slides.Welcome.Description.v2" = "ᱞᱚᱜᱚᱱ, ᱱᱤᱡᱚᱨᱟᱜ ᱟᱨ ᱟᱢᱟᱜ ᱥᱟᱢᱟᱝ ᱨᱮ ᱾";
 
 /* Title for the first panel 'Welcome' in the First Run tour. */
-"Intro.Slides.Welcome.Title.v2" = "Karma ᱨᱮ ᱥᱚᱜᱩᱱ ᱫᱟᱨᱟᱢ";
+"Intro.Slides.Welcome.Title.v2" = "KARMA ᱨᱮ ᱥᱚᱜᱩᱱ ᱫᱟᱨᱟᱢ";
 
 /* See http://mzl.la/1T8gxwo */
 "Start Browsing" = "ᱯᱟᱱᱛᱮᱭᱟᱠ ᱮᱦᱚᱵ ᱢᱮ";

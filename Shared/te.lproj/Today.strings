@@ -23,20 +23,20 @@
 "TodayWidget.PrivateTabButtonLabelV1" = "అంతరంగిక వెతుకులాట";
 
 /* Sub label for Top Sites widget */
-"TodayWidget.QuickViewOpenTabsSubLabel" = "Karma - తెరిచివున్న ట్యాబులు";
+"TodayWidget.QuickViewOpenTabsSubLabel" = "KARMA - తెరిచివున్న ట్యాబులు";
 
-/* Title for small size widget which allows users to search in Karma. Do not translate the word Karma. */
+/* Title for small size widget which allows users to search in KARMA. Do not translate the word KARMA. */
 "TodayWidget.SearchInFirefoxTitle" = "Firefox‌తో వెతుకు";
 
-/* Title for top sites widget to add Karma top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "మేటి సైట్లు";
 
 /* Sub label for Top Sites widget */
-"TodayWidget.TopSitesSubLabel" = "Karma - మేటి సైట్లు";
+"TodayWidget.TopSitesSubLabel" = "KARMA - మేటి సైట్లు";
 
 /* View More for Quick View widget in Gallery View where we don't know how many tabs might be opened */
 "TodayWidget.ViewMore" = "ఇంకా చూడండి";
 
-/* View More… for Karma Pocket stories widget where we don't know how many articles are available. */
+/* View More… for KARMA Pocket stories widget where we don't know how many articles are available. */
 "TodayWidget.ViewMoreDots" = "ఇంకా చూడండి…";
 

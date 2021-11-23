@@ -43,10 +43,10 @@
 /* Title for the Jump Back In section. This section allows users to jump back in to a recently viewed tab */
 "ActivityStream.JumpBackIn.SectionTitle" = "Sugrįžkite";
 
-/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
 "ActivityStream.JumpBackIn.TabGroup.SiteCount" = "Kortelių: %d";
 
-/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
 "ActivityStream.JumpBackIn.TabGroup.Title" = "Jūsų paieška „%@“";
 
 /* A string used to signify the start of the Recently Saved section in Home Screen. */
@@ -191,7 +191,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "Po paskutinio karto kai keitėte slaptažodį, įvyko duomenų nutekėjimas. Norėdami apsaugoti šią paskyrą, prisijunkite prie svetainės ir pasikeiskite slaptažodį.";
 
-/* Link to monitor.Karma.com to learn more about breached passwords */
+/* Link to monitor.KARMA.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "Sužinoti daugiau";
 
 /* Leads to a link to the breached website */
@@ -270,7 +270,7 @@
 "ContextMenu.ShareLinkButtonTitle" = "Dalintis saitu";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one talks about the more personalized home feature. */
-"ContextualHints.Homepage.PersonalizedHome" = "Suasmenintame „Karma“ pradžios tinklalapyje dabar lengviau tęsti nuo ten, kur baigėte. Raskite paskiausias korteles, adresyno įrašus, ir paieškos rezultatus.";
+"ContextualHints.Homepage.PersonalizedHome" = "Suasmenintame „KARMA“ pradžios tinklalapyje dabar lengviau tęsti nuo ten, kur baigėte. Raskite paskiausias korteles, adresyno įrašus, ir paieškos rezultatus.";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one is the call to action for the inactive tabs contextual popup.
    Contextual hints are little popups that appear for the users informing them of new features. This one talks about the inactive tabs feature. */
@@ -286,7 +286,7 @@
 "Could not load page." = "Nepavyko įkelti tinklalapio.";
 
 /* Description for the new dark mode change in the version 22 app release. It describes the new automatic dark theme and how to change the theme settings. */
-"CoverSheet.v22.DarkMode.Description" = "Turintiems „iOS“ 13, „Karma“ automatiškai naudos tamsų grafinį apvalkalą, jei telefone įjungta tamsioji veiksena. Norėdami tai pakeisti, eikite į „Nuostatos“ > „Grafinis apvalkalas“.";
+"CoverSheet.v22.DarkMode.Description" = "Turintiems „iOS“ 13, „KARMA“ automatiškai naudos tamsų grafinį apvalkalą, jei telefone įjungta tamsioji veiksena. Norėdami tai pakeisti, eikite į „Nuostatos“ > „Grafinis apvalkalas“.";
 
 /* Title for the new dark mode change in the version 22 app release. */
 "CoverSheet.v22.DarkMode.Title" = "Tamsus grafinis apvalkalas dabar naudoja tamsią klaviatūrą bei tamsų paleidimo ekraną.";
@@ -341,8 +341,8 @@
 /* Alert dialog title when the user taps the cancel download icon. */
 "Downloads.CancelDialog.Title" = "Atsisakyti atsiuntimo";
 
-/* The message displayed to a user when they try and perform the download of an asset that Karma cannot currently handle. */
-"Downloads.Error.Message" = "Atsiuntimų „Karma“ dar nepalaiko.";
+/* The message displayed to a user when they try and perform the download of an asset that KARMA cannot currently handle. */
+"Downloads.Error.Message" = "Atsiuntimų „KARMA“ dar nepalaiko.";
 
 /* The label text in the Download Cancelled toast for showing confirmation that the download was cancelled. */
 "Downloads.Toast.Cancelled.LabelText" = "Atsiuntimas nutrauktas";
@@ -387,7 +387,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "Taip gali būti dėl netinkamos konfigūracijos arba piktavalio „kišamų nagų“. Tęskite, jei sutinkate su galima rizika.";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "%@ savininkas netinkamai sukonfigūravo savo svetainę. „Karma“ nesijungė prie šios svetainės, kad apsaugotų jūsų duomenis nuo perėmimo.";
+"ErrorPages.CertWarning.Description" = "%@ savininkas netinkamai sukonfigūravo savo svetainę. „KARMA“ nesijungė prie šios svetainės, kad apsaugotų jūsų duomenis nuo perėmimo.";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "Šis ryšys nepatikimas";
@@ -407,10 +407,10 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for Karma about:home page in tab history list */
-"Karma.HomePage.Title" = "„Karma“ pradžios tinklalapis";
+/* Title for KARMA about:home page in tab history list */
+"KARMA.HomePage.Title" = "„KARMA“ pradžios tinklalapis";
 
-/* A button at bottom of the Karma homepage that, when clicked, takes users straight to the settings options, where they can customize the Karma Home page */
+/* A button at bottom of the KARMA homepage that, when clicked, takes users straight to the settings options, where they can customize the KARMA Home page */
 "FirefoxHome.CustomizeHomeButton.Title" = "Tvarkyti pradžios tinklalapį";
 
 /* Accessibility Label for the tab toolbar Forward button */
@@ -422,16 +422,16 @@
 /* Label stating your account is not verified */
 "FxA.AccountVerificationRequired" = "Reikalingas paskyros patvirtinimas";
 
-/* Message explaining that user needs to check email for Karma Account verfication link. */
-"FxA.AccountVerificationRequiredSurface" = "Jūs turite patvirtinti %@. Savo el. pašte ieškokite patvirtinimo nuorodos iš „Karma“.";
+/* Message explaining that user needs to check email for KARMA Account verfication link. */
+"FxA.AccountVerificationRequiredSurface" = "Jūs turite patvirtinti %@. Savo el. pašte ieškokite patvirtinimo nuorodos iš „KARMA“.";
 
 /* Button label to connect another device to Sync */
 "FxA.ConnectAnotherDevice" = "Susieti kitą įrenginį";
 
-/* Settings section title for Karma Account */
-"FxA.FirefoxAccount" = "„Karma“ paskyra";
+/* Settings section title for KARMA Account */
+"FxA.FirefoxAccount" = "„KARMA“ paskyra";
 
-/* Button label to go to Karma Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "Tvarkyti paskyrą ir įrenginius";
 
 /* Label when no internet is present */
@@ -441,15 +441,15 @@
 "FxA.OpenSyncPreferences" = "Atverti sinchronizavimo nuostatas";
 
 /* Instructions shown on qr code scanning view */
-"fxa.qr-scanning-view.instructions" = "Nuskaitykite QR kodą iš Karma.com/pair";
+"fxa.qr-scanning-view.instructions" = "Nuskaitykite QR kodą iš KARMA.com/pair";
 
-/* Remove button is displayed on Karma account page under certain scenarios where user would like to remove their account. */
+/* Remove button is displayed on KARMA account page under certain scenarios where user would like to remove their account. */
 "FxA.RemoveAccount" = "Pašalinti";
 
 /* Description string for alert view that gets presented when user tries to remove an account. */
-"FxA.RemoveAccountAlertMessage" = "Pašalinti su šiuo įrenginiu susietą „Karma“ paskyrą, kad būtų galima prisijungti su kitu naudotoju.";
+"FxA.RemoveAccountAlertMessage" = "Pašalinti su šiuo įrenginiu susietą „KARMA“ paskyrą, kad būtų galima prisijungti su kitu naudotoju.";
 
-/* Remove account alert is the final confirmation before user removes their Karma account */
+/* Remove account alert is the final confirmation before user removes their KARMA account */
 "FxA.RemoveAccountAlertTitle" = "Pašalinti paskyrą";
 
 /* Button label to resend email */
@@ -459,13 +459,13 @@
 "fxa.signin.camera-signin" = "Prisijunkite su savo kamera";
 
 /* FxA sign in create account label. */
-"fxa.signin.create-account-pt-1" = "Sinchronizuokite „Karma“ tarp įrenginių su paskyra.";
+"fxa.signin.create-account-pt-1" = "Sinchronizuokite „KARMA“ tarp įrenginių su paskyra.";
 
 /* FxA sign in create account label. This will be linked to the site to create an account. */
-"fxa.signin.create-account-pt-2" = "Susikurkite „Karma“ paskyrą.";
+"fxa.signin.create-account-pt-2" = "Susikurkite „KARMA“ paskyrą.";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "Atverkite „Karma“ savo kompiuteryje, ir eikite į Karma.com/pair";
+"fxa.signin.qr-link-instruction" = "Atverkite „KARMA“ savo kompiuteryje, ir eikite į KARMA.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Pasiruošti nuskaitymui";
@@ -482,14 +482,14 @@
 /* Label explaining what sync does */
 "FxA.SyncExplain" = "Gaukite korteles, adresyną bei slaptažodžius iš kitų savo įrenginių.";
 
-/* Button label to Sync your Karma Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "Sinchronizuoti dabar";
 
 /* Call to action for sign into sync button */
 "FxA.TakeYourWebWithYou" = "Pasiimkite savo saityną kartu";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "„Karma Sync“ prisijungė prie „%@“";
+"FxAPush_DeviceConnected_body" = "„KARMA Sync“ prisijungė prie „%@“";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "„Sync“ prisijungė";
@@ -498,7 +498,7 @@
 "FxAPush_DeviceDisconnected_body" = "„%@“ buvo sėkmingai atjungtas.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Šis įrenginys buvo sėkmingai atjungtas nuo „Karma Sync“.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Šis įrenginys buvo sėkmingai atjungtas nuo „KARMA Sync“.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "„Sync“ atsijungė";
@@ -507,7 +507,7 @@
 "FxAPush_DeviceDisconnected_title" = "„Sync“ atsijungė";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Įrenginys buvo atjungtas nuo „Karma Sync“";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Įrenginys buvo atjungtas nuo „KARMA Sync“";
 
 /* A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing. */
 "Get your open tabs, bookmarks, and passwords from your other devices." = "Gaukite atviras korteles, adresyną bei slaptažodžius iš kitų savo įrenginių.";
@@ -555,7 +555,7 @@
 "HistoryPanel.EmptySyncedTabsPanelTabSyncDisabledState.Description" = "Įjunkite kortelių sinchronizavimą, norėdami peržiūrėti kituose įrenginiuose esančias korteles.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "„Karma Sync“";
+"HistoryPanel.EmptySyncedTabsState.Title" = "„KARMA Sync“";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Žurnalas";
@@ -645,7 +645,7 @@
 "InactiveTabs.TabTray.AutoClosePrompt.ButtonTitle" = "Įjungti automatinį kortelių užvėrimą";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This string describes what happens if you elect to turn on this option. */
-"InactiveTabs.TabTray.AutoClosePrompt.Content" = "„Karma“ gali užverti korteles, kuriomis paskutinį mėnesį nesinaudojote.";
+"InactiveTabs.TabTray.AutoClosePrompt.Content" = "„KARMA“ gali užverti korteles, kuriomis paskutinį mėnesį nesinaudojote.";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This is the title of that Auto Close prompt */
 "InactiveTabs.TabTray.AutoClosePrompt.Title" = "Užverti automatiškai po mėnesio?";
@@ -674,10 +674,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "Šviesi";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "Įkelti pirminį tinklalapį";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Karma reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "Įkeliamas turinys…";
 
 /* Authentication prompt log in button */
@@ -729,7 +729,7 @@
 "LoginsList.LoginsListSearchPlaceholder" = "Filtras";
 
 /* Label shown when there are no logins to list */
-"LoginsList.NoLoginsFound.Description" = "Įrašyti prisijungimai atsiras čia. Jei įrašėte prisijungimus su „Karma“ kitame įrenginyje, prisijunkite prie savo „Karma“ paskyros.";
+"LoginsList.NoLoginsFound.Description" = "Įrašyti prisijungimai atsiras čia. Jei įrašėte prisijungimus su „KARMA“ kitame įrenginyje, prisijunkite prie savo „KARMA“ paskyros.";
 
 /* Label shown when there are no logins saved */
 "LoginsList.NoLoginsFound.Title" = "Prisijungimų nerasta";
@@ -753,7 +753,7 @@
 "LoginsList.Title" = "ĮRAŠYTI PRISIJUNGIMAI";
 
 /* Restore Tabs Prompt Description */
-"Looks like Karma crashed previously. Would you like to restore your tabs?" = "Panašu, kad „Karma“ praėjusį kartą užstrigo. Ar norite atkurti savo korteles?";
+"Looks like KARMA crashed previously. Would you like to restore your tabs?" = "Panašu, kad „KARMA“ praėjusį kartą užstrigo. Ar norite atkurti savo korteles?";
 
 /* Name for Mark as read button in reader mode
    Title for the button that marks a reading list item as read */
@@ -797,10 +797,10 @@
 "Menu.EnhancedTrackingProtectionOn.Title" = "Išplėsta apsauga nuo stebėjimo šioje svetainėje įjungta.";
 
 /* Description for having standard ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "„Karma“ blokuoja tarp svetainių veikiančius stebėjimo elementus, soc. tinklų stebėjimo elementus, kriptovaliutų kasėjus, ir skaitmeninių atspaudų stebėjimą.";
+"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "„KARMA“ blokuoja tarp svetainių veikiančius stebėjimo elementus, soc. tinklų stebėjimo elementus, kriptovaliutų kasėjus, ir skaitmeninių atspaudų stebėjimą.";
 
 /* Description for having strict ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "„Karma“ blokuoja tarp svetainių veikiančius stebėjimo elementus, soc. tinklų stebėjimo elementus, kriptovaliutų kasėjus, skaitmeninių atspaudų stebėjimą, ir stebėjimui naudojamas turinį.";
+"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "„KARMA“ blokuoja tarp svetainių veikiančius stebėjimo elementus, soc. tinklų stebėjimo elementus, kriptovaliutų kasėjus, skaitmeninių atspaudų stebėjimą, ir stebėjimui naudojamas turinį.";
 
 /* Label for the button, displayed in the menu, takes you to to History screen when pressed. */
 "Menu.History.Label" = "Žurnalas";
@@ -866,7 +866,7 @@
 "Menu.TrackingProtection.Details.Verifier" = "Tai liudija „%@“";
 
 /* Message in menu when no trackers blocked. */
-"Menu.TrackingProtection.NoTrackersBlockedTitle" = "Tinklalapyje nerasta „Karma“ žinomų stebėjimo elementų.";
+"Menu.TrackingProtection.NoTrackersBlockedTitle" = "Tinklalapyje nerasta „KARMA“ žinomų stebėjimo elementų.";
 
 /* The title for tracking protection settings */
 "Menu.TrackingProtection.ProtectionSettings.Title" = "Apsaugos nuostatos";
@@ -881,7 +881,7 @@
 "Menu.TrackingProtectionBlockedSocial.Title" = "Socialiniai stebėjimo elementai";
 
 /* Description of the Tracking protection menu when TP is blocking parts of the page */
-"Menu.TrackingProtectionBlocking.Description" = "„Karma“ blokuoja jūsų naršymą galinčias stebėti šio tinklalapio dalis.";
+"Menu.TrackingProtectionBlocking.Description" = "„KARMA“ blokuoja jūsų naršymą galinčias stebėti šio tinklalapio dalis.";
 
 /* The description of the Tracking Protection menu item when tracking is enabled */
 "Menu.TrackingProtectionBlockingDisabled.Description" = "Blokuoti stebėjimo elementus";
@@ -983,33 +983,33 @@
 /* Restore Tabs Affirmative Action */
 "Okay" = "Gerai";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the button, on the bottom of the card, used to get back to browsing on Karma by dismissing the onboarding card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the button, on the bottom of the card, used to get back to browsing on KARMA by dismissing the onboarding card */
 "Onboarding.WhatsNew.Button.Title" = "Pradėti naršymą";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is a general description that appears under the title for what the card is about. */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is a general description that appears under the title for what the card is about. */
 "Onboarding.WhatsNew.Description" = "Dabar lengviau tęsti nuo ten, kur baigėte.";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is the description for the Jump Back In bullet point */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is the description for the Jump Back In bullet point */
 "Onboarding.WhatsNew.PersonalizedHome.Description" = "Pereikite prie atvertų kortelių, adresyno, ir naršymo istorijos.";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the descripion of the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the descripion of the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Description" = "Peržiūrėkite savo paskiausias paieškas iš pradžios tinklalapio ir kortelių.";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Title" = "Paskiausios paieškos";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the description for the Tab Group bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the description for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Description" = "Tinklalapiai iš tos pačios paieškos bus sugrupuojami.";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Tab Group bullet point on the card */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is the title for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Title" = "Tvarkingesnės kortelių grupės";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Jump Back In bullet point on the card
-   The title for the new onboarding card letting users know what is new in Karma iOS */
-"Onboarding.WhatsNew.Title" = "Kas naujo „Karma“";
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is the title for the Jump Back In bullet point on the card
+   The title for the new onboarding card letting users know what is new in KARMA iOS */
+"Onboarding.WhatsNew.Title" = "Kas naujo „KARMA“";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Karma crashed" = "Oi! „Karma“ užstrigo";
+"Oops! KARMA crashed" = "Oi! „KARMA“ užstrigo";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "Atverkite straipsnius skaitymo veiksenoje, bakstelėdami knygos piktogramą, pasirodančią antraštės juostoje.";
@@ -1020,8 +1020,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "Atvertos kortelės";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Karma, or any external app. */
-"OpenURL.Error.Message" = "„Karma“ negali atverti nurodyto tinklalapio, nes jo adresas nėra tinkamas.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
+"OpenURL.Error.Message" = "„KARMA“ negali atverti nurodyto tinklalapio, nes jo adresas nėra tinkamas.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "Nepavyko atverti tinklalapio.";
@@ -1036,19 +1036,19 @@
 "Password" = "Slaptažodis";
 
 /* Error message shown in the remote tabs panel */
-"PasswordAutoFill.NoPasswordsFoundTitle" = "Jūs neturite jokių iš savo „Karma“ paskyros sinchronizuotų prisijungimų duomenų";
+"PasswordAutoFill.NoPasswordsFoundTitle" = "Jūs neturite jokių iš savo „KARMA“ paskyros sinchronizuotų prisijungimų duomenų";
 
 /* Header for the list of credentials table */
 "PasswordAutoFill.PasswordsListTitle" = "Galimi prisijungimai:";
 
-/* Title of the extension that shows Karma passwords */
-"PasswordAutoFill.SectionTitle" = "„Karma“ prisijungimai";
+/* Title of the extension that shows KARMA passwords */
+"PasswordAutoFill.SectionTitle" = "„KARMA“ prisijungimai";
 
 /* See http://mzl.la/1G7uHo7 */
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "Tai jums leis paveikslą įrašyti į „Camera Roll“.";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "„Karma“ prašo prieigos prie jūsų nuotraukų";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "„KARMA“ prašo prieigos prie jūsų nuotraukų";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "Užverti";
@@ -1056,7 +1056,7 @@
 /* Privacy section title */
 "Privacy" = "Privatumas";
 
-/* Show Karma Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/Karma/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "Privatumo nuostatai";
 
 /* This is the value for a label that indicates if a user is on an unencrypted website. */
@@ -1129,7 +1129,7 @@
 "ScanQRCode.InvalidDataError.Message" = "Netinkami duomenys";
 
 /* Text of the prompt user to setup the camera authorization. */
-"ScanQRCode.PermissionError.Message" = "Prašome leisti „Karma“ pasiekti jūsų įrenginio kamerą per „Nustatymai“ -> „Privatumas“ -> „Kamera“.";
+"ScanQRCode.PermissionError.Message" = "Prašome leisti „KARMA“ pasiekti jūsų įrenginio kamerą per „Nustatymai“ -> „Privatumas“ -> „Kamera“.";
 
 /* Title for the QR code scanner view. */
 "ScanQRCode.View.Title" = "Skenuoti QR kodą";
@@ -1213,19 +1213,19 @@
 "SendTo.NavBar.Title" = "Nusiųsti kortelę";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "Su šia „Karma“ paskyra nesate susieję jokių kitų sinchronizuoti galinčių įrenginių.";
+"SendTo.NoDevicesFound.Message" = "Su šia „KARMA“ paskyra nesate susieję jokių kitų sinchronizuoti galinčių įrenginių.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "Jei norite tęsti, atverkite „Karma“, eikite į nuostatas ir prisijunkite.";
+"SendTo.NotSignedIn.Message" = "Jei norite tęsti, atverkite „KARMA“, eikite į nuostatas ir prisijunkite.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "Jūs nesate prisijungę prie savo „Karma“ paskyros.";
+"SendTo.NotSignedIn.Title" = "Jūs nesate prisijungę prie savo „KARMA“ paskyros.";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "Siųsti";
 
-/* The text for the button on the Send to Device page if you are not signed in to Karma Accounts. */
-"SendTo.SignIn.Button" = "Prisijungti prie „Karma“";
+/* The text for the button on the Send to Device page if you are not signed in to KARMA Accounts. */
+"SendTo.SignIn.Button" = "Prisijungti prie „KARMA“";
 
 /* Body of notification shown when the device is sent one or more tabs from an unnamed device. */
 "SentTab_TabArrivingNotification_NoDevice_body" = "Iš kito įrenginio atkeliavo nauja kortelė";
@@ -1249,7 +1249,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Bakstelėkite pradėjimui";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "Karma Sync";
+"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Rodyti";
@@ -1312,7 +1312,7 @@
 "Settings.DataManagement.Title" = "Duomenų tvarkymas";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "„Karma“ nebesinchronizuos duomenų su jūsų paskyra, tačiau šiame įrenginyje esančių naršymo duomenų nepašalins.";
+"Settings.Disconnect.Body" = "„KARMA“ nebesinchronizuos duomenų su jūsų paskyra, tačiau šiame įrenginyje esančių naršymo duomenų nepašalins.";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "Atjungti „Sync“";
@@ -1381,53 +1381,53 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "Įrenginio pavadinimas";
 
-/* Label used as a section title in the Karma Accounts Settings screen. */
+/* Label used as a section title in the KARMA Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "Sinchronizavimo nuostatos";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "„Karma“ paskyra";
+"Settings.FxA.Title" = "„KARMA“ paskyra";
 
 /* General settings section title */
 "Settings.General.SectionName" = "Bendrosios";
 
-/* In the settings menu, on the Karma homepage customization section, this is the description below the section, describing what the options in the section are for. */
-"Settings.Home.Option.Description" = "Pasirinkite, ką matysite „Karma“ pradžios tinklalapyje.";
+/* In the settings menu, on the KARMA homepage customization section, this is the description below the section, describing what the options in the section are for. */
+"Settings.Home.Option.Description" = "Pasirinkite, ką matysite „KARMA“ pradžios tinklalapyje.";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
 "Settings.Home.Option.JumpBackIn" = "Sugrįžkite";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the KARMA homepage on or off */
 "Settings.Home.Option.Pocket" = "„Pocket“ rekomenduoja";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentlySaved" = "Paskiausiai įtraukta";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
 "Settings.Home.Option.RecentlyVisited" = "Paskiausiai lankyta";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentSearches" = "Paskiausios paieškos";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the KARMA homepage on or off */
 "Settings.Home.Option.Shortcuts" = "Leistukai";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage after four hours of inactivity. */
 "Settings.Home.Option.StartAtHome.AfterFourHours" = "Pradžios tinklalapį po keturių valandų neveiklumo";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Karma */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Always" = "Pradžios tinklalapį";
 
 /* In the settings menu, in the Start at Home customization options, this is text that appears below the section, describing what the section settings do. */
-"Settings.Home.Option.StartAtHome.Description" = "Pasirinkite, ką matysite sugrįžę į „Karma“.";
+"Settings.Home.Option.StartAtHome.Description" = "Pasirinkite, ką matysite sugrįžę į „KARMA“.";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Karma */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Never" = "Paskutinę kortelę";
 
-/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Karma Homepage. */
+/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the KARMA Homepage. */
 "Settings.Home.Option.StartAtHome.Title" = "Vaizdas po paleidimo";
 
-/* In the settings menu, this is the title of the Karma Homepage customization settings section */
-"Settings.Home.Option.Title" = "„Karma“ pradžios tinklalapis";
+/* In the settings menu, this is the title of the KARMA Homepage customization settings section */
+"Settings.Home.Option.Title" = "„KARMA“ pradžios tinklalapis";
 
 /* Button in settings to clear the home page. */
 "Settings.HomePage.Clear.Button" = "Išvalyti";
@@ -1478,10 +1478,10 @@
 "Settings.NewTab.Option.CustomizeFooter2" = "Jūsų įrašytos arba lankomos svetainės";
 
 /* The title for the section to customize top sites in the new tab settings page. */
-"Settings.NewTab.Option.CustomizeTitle" = "„Karma“ pradžios tinklalapio individualizavimas";
+"Settings.NewTab.Option.CustomizeTitle" = "„KARMA“ pradžios tinklalapio individualizavimas";
 
-/* Option in settings to show Karma Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "„Karma“ pradžios tinklalapis";
+/* Option in settings to show KARMA Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "„KARMA“ pradžios tinklalapis";
 
 /* Option in the settings to turn off recent bookmarks in the Highlights section */
 "Settings.NewTab.Option.HighlightsBookmarks" = "Paskiausi adresyno įrašai";
@@ -1523,7 +1523,7 @@
 "Settings.NewTab.TopSectionNameFooter" = "Pasirinkite, ką įkelti atveriant naują kortelę";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "Kai atveriama „Karma“";
+"Settings.OfferClipboardBar.Status" = "Kai atveriama „KARMA“";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "Siūlyti atverti nukopijuotus saitus";
@@ -1547,7 +1547,7 @@
 "Settings.SendUsage.Link" = "Sužinoti daugiau.";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "„Mozilla“ siekia rinkti tik tai, ko reikia norint pagerinti „Karma“ visiems.";
+"Settings.SendUsage.Message" = "„Mozilla“ siekia rinkti tik tai, ko reikia norint pagerinti „KARMA“ visiems.";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "Siųsti naudojimo duomenis";
@@ -1565,7 +1565,7 @@
 "Settings.Siri.OpenTabShortcut" = "Atverti naują kortelę";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "Naudoti „Siri“ leistukus norint greitai atverti „Karma“";
+"Settings.Siri.SectionDescription" = "Naudoti „Siri“ leistukus norint greitai atverti „KARMA“";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "„Siri“ leistukai";
@@ -1589,7 +1589,7 @@
 "Settings.Studies.Toggle.Link" = "Sužinoti daugiau.";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "„Karma“ retkarčiais gali įdiegti ir vykdyti tyrimus.";
+"Settings.Studies.Toggle.Message" = "„KARMA“ retkarčiais gali įdiegti ir vykdyti tyrimus.";
 
 /* Toggled OFF to opt-out of studies */
 "Settings.Studies.Toggle.Off" = "Išjungta";
@@ -1606,7 +1606,7 @@
 /* In the settings menu, in the Tabs customization section, this is the title for the setting that toggles the Tab Groups feature - where tabs from related searches are grouped - on or off */
 "Settings.Tabs.CustomizeTabsSection.TabGroups" = "Kortelių grupės";
 
-/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from Karma hompage */
+/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from KARMA hompage */
 "Settings.Tabs.CustomizeTabsSection.Title" = "Tvarkyti kortelių dėklą";
 
 /* In the settings menu, this is the title for the Tabs customization section option */
@@ -1622,7 +1622,7 @@
 "Settings.TrackingProtection.Alert.Title" = "Dėmesio!";
 
 /* Header description for tracking protection options section where Basic/Strict block list can be selected */
-"Settings.TrackingProtection.BlockListsHeader" = "Galite pasirinkti, kurį sąrašą „Karma“ naudos blokavimui saityno elementų, kurie gali sekti jūsų veiklą internete.";
+"Settings.TrackingProtection.BlockListsHeader" = "Galite pasirinkti, kurį sąrašą „KARMA“ naudos blokavimui saityno elementų, kurie gali sekti jūsų veiklą internete.";
 
 /* Explanation of basic mode. */
 "Settings.TrackingProtection.Info.BasicTitle" = "Subalansuota apsauga ir našumas.";
@@ -1717,32 +1717,32 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "Svetainių duomenys";
 
-/* Action label on share extension to add page to the Karma reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "Įtraukti į skaitinių sąrašą";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "Įtraukta į skaitinių sąrašą";
 
-/* Action label on share extension to bookmark the page in Karma. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "Įrašyti į adresyną";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "Adresyne";
 
-/* Action label on share extension to load the page in Karma when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "Įkelti fone";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "Įkeliama per „Karma“";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "Įkeliama per „KARMA“";
 
-/* Action label on share extension to immediately open page in Karma. */
-"ShareExtension.OpenInFirefoxAction.Title" = "Atverti per „Karma“";
+/* Action label on share extension to immediately open page in KARMA. */
+"ShareExtension.OpenInFirefoxAction.Title" = "Atverti per „KARMA“";
 
-/* Action label on share extension to immediately open page in Karma in private mode. */
+/* Action label on share extension to immediately open page in KARMA in private mode. */
 "ShareExtension.OpenInPrivateModeAction.Title" = "Atverti privačiojoje kortelėje";
 
-/* Action label on share extension to search for the selected text in Karma. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Ieškoti per „Karma“";
+/* Action label on share extension to search for the selected text in KARMA. */
+"ShareExtension.SeachInFirefoxAction.Title" = "Ieškoti per „KARMA“";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "Rodyti paieškos žodžių siūlymus";
@@ -1779,7 +1779,7 @@
 "Sync.FirstTimeMessage.Label" = "Jūsų pirmas sinchronizavimas gali užtrukti";
 
 /* String displayed on Sign In to Sync page that allows the user to create a new account. */
-"Sync.NoAccount.Description" = "Neturite paskyros? Susikurkite, norėdami sinchronizuoti „Karma“ tarp įrenginių.";
+"Sync.NoAccount.Description" = "Neturite paskyros? Susikurkite, norėdami sinchronizuoti „KARMA“ tarp įrenginių.";
 
 /* Message displayed when the user's account is syncing with no ellipsis */
 "Sync.Syncing.Label" = "Sinchronizuojama";
@@ -1901,7 +1901,7 @@
 /* The section header for tabs opened yesterday */
 "TabTray.Yesterday.Header" = "Vakar";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "The page could not be displayed in Reader View." = "Šio tinklalapio atvaizduoti skaitymo veiksenoje nepavyko.";
 
 /* Error message in the remote tabs panel */
@@ -1959,13 +1959,13 @@
 "UIMenuItem.PasteGo" = "Įdėti ir atverti";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "Ieškoti per „Karma“";
+"UIMenuItem.SearchWithFirefox" = "Ieškoti per „KARMA“";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "neskaityta";
 
 /* Text message in the settings table view */
-"Upgrade Karma to connect" = "Norėdami prisijungti, atnaujinkite „Karma“";
+"Upgrade KARMA to connect" = "Norėdami prisijungti, atnaujinkite „KARMA“";
 
 /* Debug option */
 "Use stage servers" = "Naudoti bandomuosius serverius";
@@ -1976,7 +1976,7 @@
 /* Text message in the settings table view */
 "Verify your email address" = "Patvirtinkite el. pašto adresą";
 
-/* Version number of Karma shown in settings */
+/* Version number of KARMA shown in settings */
 "Version %@ (%@)" = "Versija %1$@ (%2$@)";
 
 /* Accessibility label for the main web content view */
@@ -1998,7 +1998,7 @@
 "Yesterday" = "Vakar";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Karma on your other devices." = "Kituose savo įrenginiuose su „Karma“ neturite atvertų kortelių.";
+"You don’t have any tabs open in KARMA on your other devices." = "Kituose savo įrenginiuose su „KARMA“ neturite atvertų kortelių.";
 
 /* Your Rights settings section title */
 "Your Rights" = "Jūsų teisės";

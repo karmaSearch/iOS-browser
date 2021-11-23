@@ -7,10 +7,10 @@
 /* Next button on the first intro screen. */
 "Intro.Slides.Button.Next" = "ถัดไป";
 
-/* Sign in to Karma account button on second intro screen. */
+/* Sign in to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignIn" = "ลงชื่อเข้า";
 
-/* Sign up to Karma account button on second intro screen. */
+/* Sign up to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignUp" = "ลงทะเบียน";
 
 /* Description for the second item in the table related to fast searching via address bar */
@@ -19,10 +19,10 @@
 /* Title for the second item in the table related to fast searching via address bar */
 "Intro.Slides.Fast.Search.Title" = "ค้นหาอย่างรวดเร็ว";
 
-/* Description for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
+/* Description for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
 "Intro.Slides.Firefox.Account.Sync.Description" = "นำที่คั่นหน้า ประวัติ และรหัสผ่านไปยัง Firefox บนอุปกรณ์นี้";
 
-/* Title for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
+/* Title for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
 "Intro.Slides.Firefox.Account.Sync.Title" = "ซิงค์ Firefox ระหว่างอุปกรณ์";
 
 /* Description for the 'Mail' panel in the First Run tour. */
@@ -37,10 +37,10 @@
 /* Title for the third panel 'Private Browsing' in the First Run tour. */
 "Intro.Slides.Private.Title" = "เรียกดูเหมือนไม่มีใครเฝ้ามองอยู่";
 
-/* Description for the third item in the table related to safe syncing with a Karma account */
+/* Description for the third item in the table related to safe syncing with a KARMA account */
 "Intro.Slides.Safe.Sync.Description" = "ป้องการข้อมูลและการเข้าสู่ระบบของคุณทุกที่ที่คุณใช้ Firefox";
 
-/* Title for the third item in the table related to safe syncing with a Karma account */
+/* Title for the third item in the table related to safe syncing with a KARMA account */
 "Intro.Slides.Safe.Sync.Title" = "Safe Sync";
 
 /* Description for the 'Favorite Search Engine' panel in the First Run tour. */

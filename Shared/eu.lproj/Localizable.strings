@@ -43,10 +43,10 @@
 /* Title for the Jump Back In section. This section allows users to jump back in to a recently viewed tab */
 "ActivityStream.JumpBackIn.SectionTitle" = "Itzuli zeudenera";
 
-/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
 "ActivityStream.JumpBackIn.TabGroup.SiteCount" = "Fitxak: %d";
 
-/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
 "ActivityStream.JumpBackIn.TabGroup.Title" = "Zure bilaketa: \"%@\"";
 
 /* A string used to signify the start of the Recently Saved section in Home Screen. */
@@ -191,7 +191,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "Zure pasahitza aldatu zenuen azken alditik pasahitzak jakitera eman edo lapurtu egin dira. Kontu hau babesteko, hasi saioa gunean eta aldatu pasahitza.";
 
-/* Link to monitor.Karma.com to learn more about breached passwords */
+/* Link to monitor.KARMA.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "Argibide gehiago";
 
 /* Leads to a link to the breached website */
@@ -341,7 +341,7 @@
 /* Alert dialog title when the user taps the cancel download icon. */
 "Downloads.CancelDialog.Title" = "Utzi deskarga";
 
-/* The message displayed to a user when they try and perform the download of an asset that Karma cannot currently handle. */
+/* The message displayed to a user when they try and perform the download of an asset that KARMA cannot currently handle. */
 "Downloads.Error.Message" = "Oraindik ez dira deskargak onartzen Firefoxen.";
 
 /* The label text in the Download Cancelled toast for showing confirmation that the download was cancelled. */
@@ -387,7 +387,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "Konfigurazio okerra edo erasotzaile baten faltsutze-saiakera izan daiteke. Jarraitu balizko arriskua onartzen baduzu.";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "%@ gunearen jabeak webgunea gaizki konfiguratu du. Zure informazioa lapurtzea saihesteko, Karma ez da webgune honetara konektatu.";
+"ErrorPages.CertWarning.Description" = "%@ gunearen jabeak webgunea gaizki konfiguratu du. Zure informazioa lapurtzea saihesteko, KARMA ez da webgune honetara konektatu.";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "Konexio hau ez da fidagarria";
@@ -407,10 +407,10 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for Karma about:home page in tab history list */
-"Karma.HomePage.Title" = "Firefoxen hasiera-orria";
+/* Title for KARMA about:home page in tab history list */
+"KARMA.HomePage.Title" = "Firefoxen hasiera-orria";
 
-/* A button at bottom of the Karma homepage that, when clicked, takes users straight to the settings options, where they can customize the Karma Home page */
+/* A button at bottom of the KARMA homepage that, when clicked, takes users straight to the settings options, where they can customize the KARMA Home page */
 "FirefoxHome.CustomizeHomeButton.Title" = "Pertsonalizatu hasiera-orria";
 
 /* Accessibility Label for the tab toolbar Forward button */
@@ -422,16 +422,16 @@
 /* Label stating your account is not verified */
 "FxA.AccountVerificationRequired" = "Kontuaren egiaztapena behar da";
 
-/* Message explaining that user needs to check email for Karma Account verfication link. */
+/* Message explaining that user needs to check email for KARMA Account verfication link. */
 "FxA.AccountVerificationRequiredSurface" = "%@ helbidea egiaztatu behar duzu. Begiratu zure posta Firefoxen egiaztapen-loturarako.";
 
 /* Button label to connect another device to Sync */
 "FxA.ConnectAnotherDevice" = "Konektatu beste gailu bat";
 
-/* Settings section title for Karma Account */
-"FxA.FirefoxAccount" = "Karma kontua";
+/* Settings section title for KARMA Account */
+"FxA.FirefoxAccount" = "KARMA kontua";
 
-/* Button label to go to Karma Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "Kudeatu kontua eta gailuak";
 
 /* Label when no internet is present */
@@ -441,15 +441,15 @@
 "FxA.OpenSyncPreferences" = "Ireki Sync hobespenak";
 
 /* Instructions shown on qr code scanning view */
-"fxa.qr-scanning-view.instructions" = "Eskaneatu Karma.com/pair helbideko QR kodea";
+"fxa.qr-scanning-view.instructions" = "Eskaneatu KARMA.com/pair helbideko QR kodea";
 
-/* Remove button is displayed on Karma account page under certain scenarios where user would like to remove their account. */
+/* Remove button is displayed on KARMA account page under certain scenarios where user would like to remove their account. */
 "FxA.RemoveAccount" = "Kendu";
 
 /* Description string for alert view that gets presented when user tries to remove an account. */
-"FxA.RemoveAccountAlertMessage" = "Kendu gailu honekin erlazionatutako Karma kontua beste erabiltzaile batekin saioa hasteko.";
+"FxA.RemoveAccountAlertMessage" = "Kendu gailu honekin erlazionatutako KARMA kontua beste erabiltzaile batekin saioa hasteko.";
 
-/* Remove account alert is the final confirmation before user removes their Karma account */
+/* Remove account alert is the final confirmation before user removes their KARMA account */
 "FxA.RemoveAccountAlertTitle" = "Kendu kontua";
 
 /* Button label to resend email */
@@ -459,13 +459,13 @@
 "fxa.signin.camera-signin" = "Hasi saioa zure kamerarekin";
 
 /* FxA sign in create account label. */
-"fxa.signin.create-account-pt-1" = "Karma gailuen artean sinkronizatu kontu bat erabiliz.";
+"fxa.signin.create-account-pt-1" = "KARMA gailuen artean sinkronizatu kontu bat erabiliz.";
 
 /* FxA sign in create account label. This will be linked to the site to create an account. */
-"fxa.signin.create-account-pt-2" = "Sortu Karma kontua.";
+"fxa.signin.create-account-pt-2" = "Sortu KARMA kontua.";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "Ireki Karma zure ordenagailuan eta zoaz Karma.com/pair helbidera";
+"fxa.signin.qr-link-instruction" = "Ireki KARMA zure ordenagailuan eta zoaz KARMA.com/pair helbidera";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Eskaneatzeko prest";
@@ -482,14 +482,14 @@
 /* Label explaining what sync does */
 "FxA.SyncExplain" = "Eskuratu zure fitxak, laster-markak eta pasahitzak zure beste gailuetatik.";
 
-/* Button label to Sync your Karma Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "Sinkronizatu orain";
 
 /* Call to action for sign into sync button */
 "FxA.TakeYourWebWithYou" = "Eraman ezazu weba zurekin";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "Karma Sync %@ gailura konektatu da";
+"FxAPush_DeviceConnected_body" = "KARMA Sync %@ gailura konektatu da";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Sync konektatuta";
@@ -498,7 +498,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ gailua ondo deskonektatu da.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Gailu hau Karma Sync-etik ondo deskonektatu da.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Gailu hau KARMA Sync-etik ondo deskonektatu da.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Sync deskonektatuta";
@@ -507,7 +507,7 @@
 "FxAPush_DeviceDisconnected_title" = "Sync deskonektatuta";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Gailu bat Karma Sync-etik deskonektatu da";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Gailu bat KARMA Sync-etik deskonektatu da";
 
 /* A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing. */
 "Get your open tabs, bookmarks, and passwords from your other devices." = "Eskuratu irekitako fitxak, laster-markak eta pasahitzak zure beste gailuetatik.";
@@ -555,7 +555,7 @@
 "HistoryPanel.EmptySyncedTabsPanelTabSyncDisabledState.Description" = "Aktibatu fitxak sinkronizatzea zure beste gailuetako fitxen zerrenda ikusteko.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "Karma Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Historia";
@@ -674,10 +674,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "Argia";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "Kargatu jatorrizko orria";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Karma reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "Edukia kargatzen…";
 
 /* Authentication prompt log in button */
@@ -729,7 +729,7 @@
 "LoginsList.LoginsListSearchPlaceholder" = "Iragazkia";
 
 /* Label shown when there are no logins to list */
-"LoginsList.NoLoginsFound.Description" = "Gordetako saio-hasierak hemen agertuko dira. Beste gailu bateko Firefoxen saio-hasierak gorde badituzu, hasi saioa zure Karma kontuan.";
+"LoginsList.NoLoginsFound.Description" = "Gordetako saio-hasierak hemen agertuko dira. Beste gailu bateko Firefoxen saio-hasierak gorde badituzu, hasi saioa zure KARMA kontuan.";
 
 /* Label shown when there are no logins saved */
 "LoginsList.NoLoginsFound.Title" = "Ez da saio-hasierarik aurkitu";
@@ -753,7 +753,7 @@
 "LoginsList.Title" = "GORDETAKO SAIO-HASIERAK";
 
 /* Restore Tabs Prompt Description */
-"Looks like Karma crashed previously. Would you like to restore your tabs?" = "Badirudi Firefoxek aurretik huts egin duela. Zure fitxak berreskuratu nahi dituzu?";
+"Looks like KARMA crashed previously. Would you like to restore your tabs?" = "Badirudi Firefoxek aurretik huts egin duela. Zure fitxak berreskuratu nahi dituzu?";
 
 /* Name for Mark as read button in reader mode
    Title for the button that marks a reading list item as read */
@@ -881,7 +881,7 @@
 "Menu.TrackingProtectionBlockedSocial.Title" = "Sare sozialetako jarraipen-elementuak";
 
 /* Description of the Tracking protection menu when TP is blocking parts of the page */
-"Menu.TrackingProtectionBlocking.Description" = "Zure nabigazioaren jarraipena egin lezaketen orriaren zatiak blokeatzen ari da Karma.";
+"Menu.TrackingProtectionBlocking.Description" = "Zure nabigazioaren jarraipena egin lezaketen orriaren zatiak blokeatzen ari da KARMA.";
 
 /* The description of the Tracking Protection menu item when tracking is enabled */
 "Menu.TrackingProtectionBlockingDisabled.Description" = "Blokeatu jarraipen-elementuak";
@@ -983,33 +983,33 @@
 /* Restore Tabs Affirmative Action */
 "Okay" = "Ados";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the button, on the bottom of the card, used to get back to browsing on Karma by dismissing the onboarding card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the button, on the bottom of the card, used to get back to browsing on KARMA by dismissing the onboarding card */
 "Onboarding.WhatsNew.Button.Title" = "Hasi nabigatzen";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is a general description that appears under the title for what the card is about. */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is a general description that appears under the title for what the card is about. */
 "Onboarding.WhatsNew.Description" = "Errazagoa da orain utzi zenuen tokitik jarraitzea.";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is the description for the Jump Back In bullet point */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is the description for the Jump Back In bullet point */
 "Onboarding.WhatsNew.PersonalizedHome.Description" = "Saltatu irekitako zure fitxa, laster-marka eta nabigazio-historiara.";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the descripion of the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the descripion of the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Description" = "Itzuli zure azken bilaketetara zure hasiera-orritik.";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Title" = "Azken bilaketak";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the description for the Tab Group bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the description for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Description" = "Bilaketa berdinetik datozen orriak taldekatu egiten dira.";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Tab Group bullet point on the card */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is the title for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Title" = "Fitxa multzo txukunagoak";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Jump Back In bullet point on the card
-   The title for the new onboarding card letting users know what is new in Karma iOS */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is the title for the Jump Back In bullet point on the card
+   The title for the new onboarding card letting users know what is new in KARMA iOS */
 "Onboarding.WhatsNew.Title" = "Firefoxen berrikuntzak";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Karma crashed" = "Ene! Firefoxek huts egin du";
+"Oops! KARMA crashed" = "Ene! Firefoxek huts egin du";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "Ireki artikuluak irakurtzeko ikuspegian liburuaren ikonoa sakatuz izenburu-barran agertzen denean.";
@@ -1020,7 +1020,7 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "Irekitako fitxak";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Karma, or any external app. */
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
 "OpenURL.Error.Message" = "Firefoxek ezin du orria ireki helbide baliogabea duelako.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
@@ -1036,13 +1036,13 @@
 "Password" = "Pasahitza";
 
 /* Error message shown in the remote tabs panel */
-"PasswordAutoFill.NoPasswordsFoundTitle" = "Ez daukazu kredentzialik sinkronizatuta zure Karma kontutik";
+"PasswordAutoFill.NoPasswordsFoundTitle" = "Ez daukazu kredentzialik sinkronizatuta zure KARMA kontutik";
 
 /* Header for the list of credentials table */
 "PasswordAutoFill.PasswordsListTitle" = "Kredentzial erabilgarriak:";
 
-/* Title of the extension that shows Karma passwords */
-"PasswordAutoFill.SectionTitle" = "Karma kredentzialak";
+/* Title of the extension that shows KARMA passwords */
+"PasswordAutoFill.SectionTitle" = "KARMA kredentzialak";
 
 /* See http://mzl.la/1G7uHo7 */
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "Honekin kameraren karretean gorde dezakezu irudia.";
@@ -1056,7 +1056,7 @@
 /* Privacy section title */
 "Privacy" = "Pribatutasuna";
 
-/* Show Karma Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/Karma/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "Pribatutasun-politika";
 
 /* This is the value for a label that indicates if a user is on an unencrypted website. */
@@ -1213,18 +1213,18 @@
 "SendTo.NavBar.Title" = "Bidali fitxa";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "Ez daukazu Karma kontu honetara sinkronizatzeko konektatutako beste gailurik.";
+"SendTo.NoDevicesFound.Message" = "Ez daukazu KARMA kontu honetara sinkronizatzeko konektatutako beste gailurik.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "Jarraitzeko, ireki Karma, joan ezarpenetara eta hasi saioa.";
+"SendTo.NotSignedIn.Message" = "Jarraitzeko, ireki KARMA, joan ezarpenetara eta hasi saioa.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "Ez duzu zure Karma kontuan saiorik hasi.";
+"SendTo.NotSignedIn.Title" = "Ez duzu zure KARMA kontuan saiorik hasi.";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "Bidali";
 
-/* The text for the button on the Send to Device page if you are not signed in to Karma Accounts. */
+/* The text for the button on the Send to Device page if you are not signed in to KARMA Accounts. */
 "SendTo.SignIn.Button" = "Hasi saioa Firefoxen";
 
 /* Body of notification shown when the device is sent one or more tabs from an unnamed device. */
@@ -1249,7 +1249,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Sakatu hasteko";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "Karma Sync";
+"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Ikusi";
@@ -1381,52 +1381,52 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "Gailuaren izena";
 
-/* Label used as a section title in the Karma Accounts Settings screen. */
+/* Label used as a section title in the KARMA Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "Sinkronizazio-ezarpenak";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "Karma kontua";
+"Settings.FxA.Title" = "KARMA kontua";
 
 /* General settings section title */
 "Settings.General.SectionName" = "Orokorra";
 
-/* In the settings menu, on the Karma homepage customization section, this is the description below the section, describing what the options in the section are for. */
+/* In the settings menu, on the KARMA homepage customization section, this is the description below the section, describing what the options in the section are for. */
 "Settings.Home.Option.Description" = "Aukeratu Firefoxen hasiera-orrian ikusiko duzun edukia.";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
 "Settings.Home.Option.JumpBackIn" = "Itzuli zeudenera";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the KARMA homepage on or off */
 "Settings.Home.Option.Pocket" = "Pocket-ek gomendatua";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentlySaved" = "Gordetako azkenak";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
 "Settings.Home.Option.RecentlyVisited" = "Bisitatutako azkenak";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentSearches" = "Azken bilaketak";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the KARMA homepage on or off */
 "Settings.Home.Option.Shortcuts" = "Lasterbideak";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage after four hours of inactivity. */
 "Settings.Home.Option.StartAtHome.AfterFourHours" = "Hasiera-orria, lau orduz inaktibo egon ondoren";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Karma */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Always" = "Hasiera-orria";
 
 /* In the settings menu, in the Start at Home customization options, this is text that appears below the section, describing what the section settings do. */
 "Settings.Home.Option.StartAtHome.Description" = "Aukeratu zer ikusi Firefoxera itzultzen zarenean.";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Karma */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Never" = "Azken fitxa";
 
-/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Karma Homepage. */
+/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the KARMA Homepage. */
 "Settings.Home.Option.StartAtHome.Title" = "Irekitze-pantaila";
 
-/* In the settings menu, this is the title of the Karma Homepage customization settings section */
+/* In the settings menu, this is the title of the KARMA Homepage customization settings section */
 "Settings.Home.Option.Title" = "Firefoxen hasiera-orria";
 
 /* Button in settings to clear the home page. */
@@ -1480,7 +1480,7 @@
 /* The title for the section to customize top sites in the new tab settings page. */
 "Settings.NewTab.Option.CustomizeTitle" = "Pertsonalizatu Firefoxen hasiera";
 
-/* Option in settings to show Karma Home when you open a new tab */
+/* Option in settings to show KARMA Home when you open a new tab */
 "Settings.NewTab.Option.FirefoxHome" = "Firefoxen hasiera";
 
 /* Option in the settings to turn off recent bookmarks in the Highlights section */
@@ -1523,7 +1523,7 @@
 "Settings.NewTab.TopSectionNameFooter" = "Aukeratu fitxa berria irekitzean kargatuko dena";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "Karma irekitzean";
+"Settings.OfferClipboardBar.Status" = "KARMA irekitzean";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "Eskaini kopiatutako loturak irekitzea";
@@ -1547,7 +1547,7 @@
 "Settings.SendUsage.Link" = "Argibide gehiago.";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "Karma denontzat eskaini eta hobetzeko beharrezkoa dena soilik biltzen ahalegintzen da Mozilla.";
+"Settings.SendUsage.Message" = "KARMA denontzat eskaini eta hobetzeko beharrezkoa dena soilik biltzen ahalegintzen da Mozilla.";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "Bidali erabilera-datuak";
@@ -1565,7 +1565,7 @@
 "Settings.Siri.OpenTabShortcut" = "Ireki fitxa berria";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "Erabili Siri lasterbideak Karma Siri bidez irekitzeko";
+"Settings.Siri.SectionDescription" = "Erabili Siri lasterbideak KARMA Siri bidez irekitzeko";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "Siri lasterbideak";
@@ -1606,7 +1606,7 @@
 /* In the settings menu, in the Tabs customization section, this is the title for the setting that toggles the Tab Groups feature - where tabs from related searches are grouped - on or off */
 "Settings.Tabs.CustomizeTabsSection.TabGroups" = "Fitxa multzoak";
 
-/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from Karma hompage */
+/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from KARMA hompage */
 "Settings.Tabs.CustomizeTabsSection.Title" = "Pertsonalizatu fitxen erretilua";
 
 /* In the settings menu, this is the title for the Tabs customization section option */
@@ -1717,31 +1717,31 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "Webguneetako datuak";
 
-/* Action label on share extension to add page to the Karma reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "Gehitu irakurketa-zerrendan";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "Irakurketa-zerrendan gehitu da";
 
-/* Action label on share extension to bookmark the page in Karma. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "Egin orriaren laster-marka";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "Laster-marka eginda";
 
-/* Action label on share extension to load the page in Karma when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "Kargatu atzeko planoan";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
 "ShareExtension.LoadInBackgroundActionDone.Title" = "Firefoxen kargatzen";
 
-/* Action label on share extension to immediately open page in Karma. */
+/* Action label on share extension to immediately open page in KARMA. */
 "ShareExtension.OpenInFirefoxAction.Title" = "Ireki Firefoxen";
 
-/* Action label on share extension to immediately open page in Karma in private mode. */
+/* Action label on share extension to immediately open page in KARMA in private mode. */
 "ShareExtension.OpenInPrivateModeAction.Title" = "Ireki modu pribatuan";
 
-/* Action label on share extension to search for the selected text in Karma. */
+/* Action label on share extension to search for the selected text in KARMA. */
 "ShareExtension.SeachInFirefoxAction.Title" = "Bilatu Firefoxen";
 
 /* Label for show search suggestions setting. */
@@ -1779,7 +1779,7 @@
 "Sync.FirstTimeMessage.Label" = "Lehenengo sinkronizazioa denbora apur bat har lezake";
 
 /* String displayed on Sign In to Sync page that allows the user to create a new account. */
-"Sync.NoAccount.Description" = "Ez daukazu konturik? Sortu kontua Karma gailuen artean sinkronizatzeko.";
+"Sync.NoAccount.Description" = "Ez daukazu konturik? Sortu kontua KARMA gailuen artean sinkronizatzeko.";
 
 /* Message displayed when the user's account is syncing with no ellipsis */
 "Sync.Syncing.Label" = "Sinkronizatzen";
@@ -1901,7 +1901,7 @@
 /* The section header for tabs opened yesterday */
 "TabTray.Yesterday.Header" = "Atzo";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "The page could not be displayed in Reader View." = "Orria ezin da irakurtzeko ikuspegian bistaratu.";
 
 /* Error message in the remote tabs panel */
@@ -1959,13 +1959,13 @@
 "UIMenuItem.PasteGo" = "Itsatsi eta joan";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "Bilatu Karma erabiliz";
+"UIMenuItem.SearchWithFirefox" = "Bilatu KARMA erabiliz";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "irakurri gabe";
 
 /* Text message in the settings table view */
-"Upgrade Karma to connect" = "Konektatzeko, bertsio-berritu Karma";
+"Upgrade KARMA to connect" = "Konektatzeko, bertsio-berritu KARMA";
 
 /* Debug option */
 "Use stage servers" = "Erabili probetarako zerbitzariak";
@@ -1976,7 +1976,7 @@
 /* Text message in the settings table view */
 "Verify your email address" = "Egiaztatu zure helbide elektronikoa";
 
-/* Version number of Karma shown in settings */
+/* Version number of KARMA shown in settings */
 "Version %@ (%@)" = "%1$@ (%2$@) bertsioa";
 
 /* Accessibility label for the main web content view */
@@ -1998,7 +1998,7 @@
 "Yesterday" = "Atzo";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Karma on your other devices." = "Ez daukazu fitxarik irekita beste gailuetako Firefoxetan.";
+"You don’t have any tabs open in KARMA on your other devices." = "Ez daukazu fitxarik irekita beste gailuetako Firefoxetan.";
 
 /* Your Rights settings section title */
 "Your Rights" = "Zure eskubideak";

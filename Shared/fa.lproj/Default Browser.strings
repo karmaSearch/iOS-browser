@@ -1,13 +1,13 @@
-/* Button string to open settings that allows user to switch their default browser to Karma. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Button" = "برو به تنظیمات";
 
-/* Description for small card shown that allows user to switch their default browser to Karma. */
-"DefaultBrowserCard.Description" = "پیوندهای وب سایت ها ، ایمیل ها و پیام ها را تنظیم کنید تا به طور خودکار در Karma باز شوند.";
+/* Description for small card shown that allows user to switch their default browser to KARMA. */
+"DefaultBrowserCard.Description" = "پیوندهای وب سایت ها ، ایمیل ها و پیام ها را تنظیم کنید تا به طور خودکار در KARMA باز شوند.";
 
-/* Title for small card shown that allows user to switch their default browser to Karma. */
+/* Title for small card shown that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Title" = "مرورگر یش‌فرض خود تغییر دهید";
 
-/* Button string to open settings that allows user to switch their default browser to Karma. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserOnboarding.Button" = "برو به تنظیمات";
 
 /* Description for default browser onboarding card. */
@@ -17,11 +17,11 @@
 "DefaultBrowserOnboarding.Description2" = "۲. تبدیل به مرورگر پیش‌فرض";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Karma را انتخاب کنید";
+"DefaultBrowserOnboarding.Description3" = "3. KARMA را انتخاب کنید";
 
-/* Text for the screenshot of the iOS system settings page for Karma. */
+/* Text for the screenshot of the iOS system settings page for KARMA. */
 "DefaultBrowserOnboarding.Screenshot" = "مرورگر پیش‌فرض";
 
-/* Menu option for setting Karma as default browser. */
+/* Menu option for setting KARMA as default browser. */
 "Settings.DefaultBrowserMenuItem" = "تبدیل به مرورگر پیش‌فرض";
 

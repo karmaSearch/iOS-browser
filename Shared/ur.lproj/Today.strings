@@ -22,8 +22,8 @@
 /* Quick Actions drop down menu item for new search when widget enters edit mode and drop down menu expands */
 "TodayWidget.DropDownMenuItemNewSearch" = "نئی تلاش";
 
-/* Description for medium size widget to add Karma Shortcut to home screen */
-"TodayWidget.FirefoxShortcutGalleryDescription" = "اپنے ہوم اسکرین پر Karma شارٹ کٹ جوڑیں۔";
+/* Description for medium size widget to add KARMA Shortcut to home screen */
+"TodayWidget.FirefoxShortcutGalleryDescription" = "اپنے ہوم اسکرین پر KARMA شارٹ کٹ جوڑیں۔";
 
 /* Go to link pasted on the clipboard */
 "TodayWidget.GoToCopiedLinkLabelV1" = "نقل شدہ ربط پر جائیں";
@@ -44,7 +44,7 @@
 "TodayWidget.NewPrivateTabButtonLabelV2" = "نجی ٹیب میں تلاش کریں";
 
 /* Open New Tab button label */
-"TodayWidget.NewSearchButtonLabelV1" = "Karma میں تلاش کریں";
+"TodayWidget.NewSearchButtonLabelV1" = "KARMA میں تلاش کریں";
 
 /* Open New Tab button label */
 "TodayWidget.NewTabButtonLabelV1" = "نئی تلاش";
@@ -55,38 +55,38 @@
 /* Label that is shown when there are no tabs opened in tab tray i.e. Empty State */
 "TodayWidget.NoOpenTabsLabelV2" = "کھلی ٹیبز نہیں ہیں";
 
-/* Open Karma when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenFirefoxLabel" = "Karma کھولیں";
+/* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
+"TodayWidget.OpenFirefoxLabel" = "KARMA کھولیں";
 
-/* Description for Karma Pocket stories widget in Gallery View where user can add it to home screen. Pocket is the name of another app. */
+/* Description for KARMA Pocket stories widget in Gallery View where user can add it to home screen. Pocket is the name of another app. */
 "TodayWidget.PocketWidgetGalleryDescription" = "Pocket کے ذریعہ تیار کردہ پورے ویب سے دلچسپ اور فکر انگیز اشتعال انگیز کہانیاں دریافت کریں۔";
 
-/* Sub label for medium size Karma Pocket stories widge widget. Pocket is the name of another app. */
-"TodayWidget.PocketWidgetSubLabel" = "Karma - Pocket کے ذریعہ تجویز کردہ مواد";
+/* Sub label for medium size KARMA Pocket stories widge widget. Pocket is the name of another app. */
+"TodayWidget.PocketWidgetSubLabel" = "KARMA - Pocket کے ذریعہ تجویز کردہ مواد";
 
-/* Title for Karma Pocket stories widget in Gallery View where user can add it to home screen. Pocket is the name of another app. */
+/* Title for KARMA Pocket stories widget in Gallery View where user can add it to home screen. Pocket is the name of another app. */
 "TodayWidget.PocketWidgetTitle" = "Pocket کی جانب سے تجویز کردہ";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "نجی تلاش";
 
 /* Quick action description when widget enters edit mode */
-"TodayWidget.QuickActionDescription" = "اپنی ہوم اسکرین پر جوڑنے کے لئے کوئی Karma شارٹ کٹ منتخب کریں۔";
+"TodayWidget.QuickActionDescription" = "اپنی ہوم اسکرین پر جوڑنے کے لئے کوئی KARMA شارٹ کٹ منتخب کریں۔";
 
 /* Quick Actions left label text for dropdown menu when widget enters edit mode */
 "TodayWidget.QuickActionDropDownMenu" = "فوری کارروائی";
 
 /* Description for small size widget to add it to home screen */
-"TodayWidget.QuickActionGalleryDescription" = "اپنے ہوم اسکرین پر Karma شارٹ کٹ جوڑیں۔ جوڑنے کے بعد شارٹ کٹ کو ترمیم کرنے کے لئے دبا کر رکھیں اور کوئی دوسرا شارٹ کاٹ منتخب کریں۔";
+"TodayWidget.QuickActionGalleryDescription" = "اپنے ہوم اسکرین پر KARMA شارٹ کٹ جوڑیں۔ جوڑنے کے بعد شارٹ کٹ کو ترمیم کرنے کے لئے دبا کر رکھیں اور کوئی دوسرا شارٹ کاٹ منتخب کریں۔";
 
 /* Quick Actions title when widget enters edit mode */
 "TodayWidget.QuickActionsGalleryTitle" = "فوری کارروائی";
 
-/* Karma shortcuts title when widget enters edit mode. Do not translate the word Karma. */
-"TodayWidget.QuickActionsGalleryTitleV2" = "Karma شارٹ کٹس";
+/* KARMA shortcuts title when widget enters edit mode. Do not translate the word KARMA. */
+"TodayWidget.QuickActionsGalleryTitleV2" = "KARMA شارٹ کٹس";
 
 /* Sub label for medium size quick action widget */
-"TodayWidget.QuickActionsSubLabel" = "Karma - فوری کاروائی";
+"TodayWidget.QuickActionsSubLabel" = "KARMA - فوری کاروائی";
 
 /* Description for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryDescription" = "سیدھے اپنے ہوم اسکرین پر سے ہی اپنے کھلی ٹیبز تک رسائی حاصل کریں۔";
@@ -101,35 +101,35 @@
 "TodayWidget.QuickViewLargeGalleryDescription" = "اپنی کھلی ٹیبز میں شارٹ کٹ شامل کریں۔";
 
 /* Sub label for Top Sites widget */
-"TodayWidget.QuickViewOpenTabsSubLabel" = "Karma - ٹیبز کھولیے";
+"TodayWidget.QuickViewOpenTabsSubLabel" = "KARMA - ٹیبز کھولیے";
 
-/* Title for small size widget which allows users to search in Karma. Do not translate the word Karma. */
-"TodayWidget.SearchInFirefoxTitle" = "Karma میں تلاش کریں";
+/* Title for small size widget which allows users to search in KARMA. Do not translate the word KARMA. */
+"TodayWidget.SearchInFirefoxTitle" = "KARMA میں تلاش کریں";
 
-/* Search in Karma. Do not translate the word Karma */
-"TodayWidget.SearchInFirefoxV2" = "Karma میں تلاش کریں";
+/* Search in KARMA. Do not translate the word KARMA */
+"TodayWidget.SearchInFirefoxV2" = "KARMA میں تلاش کریں";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "نجی ٹیب میں تلاش کریں";
 
-/* Description for top sites widget to add Karma top sites shotcuts to home screen */
+/* Description for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryDescription" = "کثرت سے اور حال ہی میں دیکھی گئی سائٹوں کا شارٹ کٹ جوڑیں۔";
 
-/* Title for top sites widget to add Karma top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "بہترین سائٹیں";
 
-/* Title for top sites widget to add Karma top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitleV2" = "ویب سائٹ شارٹ کٹس";
 
 /* Sub label for Top Sites widget */
-"TodayWidget.TopSitesSubLabel" = "Karma - سرفہرست سائٹیں";
+"TodayWidget.TopSitesSubLabel" = "KARMA - سرفہرست سائٹیں";
 
 /* Sub label for Shortcuts widget */
-"TodayWidget.TopSitesSubLabel2" = "Karma ۔ ویب سائٹ شارٹ کٹس";
+"TodayWidget.TopSitesSubLabel2" = "KARMA ۔ ویب سائٹ شارٹ کٹس";
 
 /* View More for Quick View widget in Gallery View where we don't know how many tabs might be opened */
 "TodayWidget.ViewMore" = "مزید دیکھیں";
 
-/* View More… for Karma Pocket stories widget where we don't know how many articles are available. */
+/* View More… for KARMA Pocket stories widget where we don't know how many articles are available. */
 "TodayWidget.ViewMoreDots" = "مزید دیکھیں…";
 

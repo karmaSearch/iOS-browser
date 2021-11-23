@@ -43,10 +43,10 @@
 /* Title for the Jump Back In section. This section allows users to jump back in to a recently viewed tab */
 "ActivityStream.JumpBackIn.SectionTitle" = "Wskocz z powrotem";
 
-/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
 "ActivityStream.JumpBackIn.TabGroup.SiteCount" = "Karty: %d";
 
-/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
 "ActivityStream.JumpBackIn.TabGroup.Title" = "Wyszukiwanie „%@”";
 
 /* A string used to signify the start of the Recently Saved section in Home Screen. */
@@ -191,7 +191,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "Od czasu ostatniej zmiany danych logowania hasła z tej witryny wyciekły lub zostały wykradzione. Zaloguj się na witrynie i zmień hasło, by ochronić to konto.";
 
-/* Link to monitor.Karma.com to learn more about breached passwords */
+/* Link to monitor.KARMA.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "Więcej informacji";
 
 /* Leads to a link to the breached website */
@@ -286,7 +286,7 @@
 "Could not load page." = "Nie można było wczytać strony";
 
 /* Description for the new dark mode change in the version 22 app release. It describes the new automatic dark theme and how to change the theme settings. */
-"CoverSheet.v22.DarkMode.Description" = "W systemie iOS 13 Karma automatycznie przełącza się na ciemny motyw, kiedy telefon jest ustawiony na ciemny tryb. Można to zmienić w ustawieniach motywu.";
+"CoverSheet.v22.DarkMode.Description" = "W systemie iOS 13 KARMA automatycznie przełącza się na ciemny motyw, kiedy telefon jest ustawiony na ciemny tryb. Można to zmienić w ustawieniach motywu.";
 
 /* Title for the new dark mode change in the version 22 app release. */
 "CoverSheet.v22.DarkMode.Title" = "Ciemny motyw obejmuje teraz ciemną klawiaturę i ciemny ekran powitalny.";
@@ -341,8 +341,8 @@
 /* Alert dialog title when the user taps the cancel download icon. */
 "Downloads.CancelDialog.Title" = "Anuluj pobieranie";
 
-/* The message displayed to a user when they try and perform the download of an asset that Karma cannot currently handle. */
-"Downloads.Error.Message" = "Karma nie obsługuje jeszcze pobierania plików.";
+/* The message displayed to a user when they try and perform the download of an asset that KARMA cannot currently handle. */
+"Downloads.Error.Message" = "KARMA nie obsługuje jeszcze pobierania plików.";
 
 /* The label text in the Download Cancelled toast for showing confirmation that the download was cancelled. */
 "Downloads.Toast.Cancelled.LabelText" = "Anulowano pobieranie";
@@ -387,7 +387,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "Może to być skutkiem błędnej konfiguracji lub próby ataku. Kontynuuj tylko, jeśli akceptujesz potencjalne ryzyko.";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "Właściciel witryny %@ niepoprawnie ją skonfigurował. Karma nie połączył się z nią, by chronić użytkownika przed kradzieżą informacji.";
+"ErrorPages.CertWarning.Description" = "Właściciel witryny %@ niepoprawnie ją skonfigurował. KARMA nie połączył się z nią, by chronić użytkownika przed kradzieżą informacji.";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "Połączenie nie jest bezpieczne";
@@ -407,10 +407,10 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for Karma about:home page in tab history list */
-"Karma.HomePage.Title" = "Strona startowa Firefoksa";
+/* Title for KARMA about:home page in tab history list */
+"KARMA.HomePage.Title" = "Strona startowa Firefoksa";
 
-/* A button at bottom of the Karma homepage that, when clicked, takes users straight to the settings options, where they can customize the Karma Home page */
+/* A button at bottom of the KARMA homepage that, when clicked, takes users straight to the settings options, where they can customize the KARMA Home page */
 "FirefoxHome.CustomizeHomeButton.Title" = "Dostosuj stronę startową";
 
 /* Accessibility Label for the tab toolbar Forward button */
@@ -422,16 +422,16 @@
 /* Label stating your account is not verified */
 "FxA.AccountVerificationRequired" = "Wymagana weryfikacja konta";
 
-/* Message explaining that user needs to check email for Karma Account verfication link. */
+/* Message explaining that user needs to check email for KARMA Account verfication link. */
 "FxA.AccountVerificationRequiredSurface" = "Adres %@ musi zostać zweryfikowany. Sprawdź swoją skrzynkę pocztową i otwórz odnośnik weryfikacyjny.";
 
 /* Button label to connect another device to Sync */
 "FxA.ConnectAnotherDevice" = "Połącz inne urządzenie";
 
-/* Settings section title for Karma Account */
+/* Settings section title for KARMA Account */
 "FxA.FirefoxAccount" = "Konto Firefoksa";
 
-/* Button label to go to Karma Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "Zarządzaj kontem i urządzeniami";
 
 /* Label when no internet is present */
@@ -441,15 +441,15 @@
 "FxA.OpenSyncPreferences" = "Otwórz preferencje synchronizacji";
 
 /* Instructions shown on qr code scanning view */
-"fxa.qr-scanning-view.instructions" = "Zeskanuj kod QR wyświetlony na stronie Karma.com/pair";
+"fxa.qr-scanning-view.instructions" = "Zeskanuj kod QR wyświetlony na stronie KARMA.com/pair";
 
-/* Remove button is displayed on Karma account page under certain scenarios where user would like to remove their account. */
+/* Remove button is displayed on KARMA account page under certain scenarios where user would like to remove their account. */
 "FxA.RemoveAccount" = "Usuń";
 
 /* Description string for alert view that gets presented when user tries to remove an account. */
 "FxA.RemoveAccountAlertMessage" = "Usuń konto Firefoksa powiązane z tym urządzeniem, by zalogować się jako inny użytkownik.";
 
-/* Remove account alert is the final confirmation before user removes their Karma account */
+/* Remove account alert is the final confirmation before user removes their KARMA account */
 "FxA.RemoveAccountAlertTitle" = "Usuń konto";
 
 /* Button label to resend email */
@@ -465,7 +465,7 @@
 "fxa.signin.create-account-pt-2" = "Utwórz konto Firefoksa.";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "Otwórz Firefoksa na komputerze i wejdź na stronę Karma.com/pair";
+"fxa.signin.qr-link-instruction" = "Otwórz Firefoksa na komputerze i wejdź na stronę KARMA.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Gotowy do skanowania";
@@ -482,7 +482,7 @@
 /* Label explaining what sync does */
 "FxA.SyncExplain" = "Uzyskaj dostęp do kart, zakładek i haseł z innych urządzeń.";
 
-/* Button label to Sync your Karma Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "Synchronizuj";
 
 /* Call to action for sign into sync button */
@@ -645,7 +645,7 @@
 "InactiveTabs.TabTray.AutoClosePrompt.ButtonTitle" = "Włącz automatyczne zamykanie";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This string describes what happens if you elect to turn on this option. */
-"InactiveTabs.TabTray.AutoClosePrompt.Content" = "Karma zamknie karty, których nie odwiedzono w ciągu ostatniego miesiąca.";
+"InactiveTabs.TabTray.AutoClosePrompt.Content" = "KARMA zamknie karty, których nie odwiedzono w ciągu ostatniego miesiąca.";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This is the title of that Auto Close prompt */
 "InactiveTabs.TabTray.AutoClosePrompt.Title" = "Zamykać automatycznie po miesiącu?";
@@ -674,10 +674,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "Jasny";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "Wczytaj oryginalną stronę";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Karma reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "Wczytywanie treści…";
 
 /* Authentication prompt log in button */
@@ -753,7 +753,7 @@
 "LoginsList.Title" = "Zachowane dane logowania";
 
 /* Restore Tabs Prompt Description */
-"Looks like Karma crashed previously. Would you like to restore your tabs?" = "Wygląda na to, że Karma uległ poprzednio awarii. Czy przywrócić karty?";
+"Looks like KARMA crashed previously. Would you like to restore your tabs?" = "Wygląda na to, że KARMA uległ poprzednio awarii. Czy przywrócić karty?";
 
 /* Name for Mark as read button in reader mode
    Title for the button that marks a reading list item as read */
@@ -797,10 +797,10 @@
 "Menu.EnhancedTrackingProtectionOn.Title" = "Wzmocniona ochrona przed śledzeniem jest włączona na tej witrynie.";
 
 /* Description for having standard ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "Karma blokuje elementy śledzące między witrynami, śledzące serwisów społecznościowych, używające urządzenia użytkownika do generowania kryptowalut i śledzące przez zbieranie informacji o konfiguracji.";
+"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "KARMA blokuje elementy śledzące między witrynami, śledzące serwisów społecznościowych, używające urządzenia użytkownika do generowania kryptowalut i śledzące przez zbieranie informacji o konfiguracji.";
 
 /* Description for having strict ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "Karma blokuje elementy śledzące między witrynami, śledzące serwisów społecznościowych, używające urządzenia użytkownika do generowania kryptowalut, śledzące przez zbieranie informacji o konfiguracji i treści z elementami śledzącymi.";
+"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "KARMA blokuje elementy śledzące między witrynami, śledzące serwisów społecznościowych, używające urządzenia użytkownika do generowania kryptowalut, śledzące przez zbieranie informacji o konfiguracji i treści z elementami śledzącymi.";
 
 /* Label for the button, displayed in the menu, takes you to to History screen when pressed. */
 "Menu.History.Label" = "Historia";
@@ -866,7 +866,7 @@
 "Menu.TrackingProtection.Details.Verifier" = "Zweryfikowane przez: %@";
 
 /* Message in menu when no trackers blocked. */
-"Menu.TrackingProtection.NoTrackersBlockedTitle" = "Karma nie wykrył na tej stronie znanych elementów śledzących.";
+"Menu.TrackingProtection.NoTrackersBlockedTitle" = "KARMA nie wykrył na tej stronie znanych elementów śledzących.";
 
 /* The title for tracking protection settings */
 "Menu.TrackingProtection.ProtectionSettings.Title" = "Ustawienia ochrony";
@@ -881,7 +881,7 @@
 "Menu.TrackingProtectionBlockedSocial.Title" = "Śledzące społecznościowe";
 
 /* Description of the Tracking protection menu when TP is blocking parts of the page */
-"Menu.TrackingProtectionBlocking.Description" = "Karma blokuje elementy strony mogące śledzić Twoją aktywność w sieci.";
+"Menu.TrackingProtectionBlocking.Description" = "KARMA blokuje elementy strony mogące śledzić Twoją aktywność w sieci.";
 
 /* The description of the Tracking Protection menu item when tracking is enabled */
 "Menu.TrackingProtectionBlockingDisabled.Description" = "Blokowanie elementów śledzących";
@@ -983,33 +983,33 @@
 /* Restore Tabs Affirmative Action */
 "Okay" = "Przywróć";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the button, on the bottom of the card, used to get back to browsing on Karma by dismissing the onboarding card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the button, on the bottom of the card, used to get back to browsing on KARMA by dismissing the onboarding card */
 "Onboarding.WhatsNew.Button.Title" = "Zacznij przeglądać Internet";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is a general description that appears under the title for what the card is about. */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is a general description that appears under the title for what the card is about. */
 "Onboarding.WhatsNew.Description" = "Teraz łatwiej jest kontynuować od miejsca, w którym skończono.";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is the description for the Jump Back In bullet point */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is the description for the Jump Back In bullet point */
 "Onboarding.WhatsNew.PersonalizedHome.Description" = "Szybko przejdź do otwartych kart, zakładek i historii przeglądania.";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the descripion of the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the descripion of the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Description" = "Wróć do swoich ostatnich wyszukiwań na stronie startowej.";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Title" = "Ostatnie wyszukiwania";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the description for the Tab Group bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the description for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Description" = "Strony z tego samego wyszukiwania są grupowane.";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Tab Group bullet point on the card */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is the title for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Title" = "Uporządkowane grupy kart";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Jump Back In bullet point on the card
-   The title for the new onboarding card letting users know what is new in Karma iOS */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is the title for the Jump Back In bullet point on the card
+   The title for the new onboarding card letting users know what is new in KARMA iOS */
 "Onboarding.WhatsNew.Title" = "Co nowego w Firefoksie";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Karma crashed" = "Karma uległ awarii :(";
+"Oops! KARMA crashed" = "KARMA uległ awarii :(";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "Otwieraj artykuły w widoku poprawionej czytelności stukając ikonę książki, kiedy pojawi się w pasku adresu.";
@@ -1020,8 +1020,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "Otwarte karty";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Karma, or any external app. */
-"OpenURL.Error.Message" = "Karma nie może otworzyć tej strony, gdyż jej adres jest nieprawidłowy.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
+"OpenURL.Error.Message" = "KARMA nie może otworzyć tej strony, gdyż jej adres jest nieprawidłowy.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "Nie można otworzyć strony";
@@ -1041,14 +1041,14 @@
 /* Header for the list of credentials table */
 "PasswordAutoFill.PasswordsListTitle" = "Dostępne dane logowania:";
 
-/* Title of the extension that shows Karma passwords */
+/* Title of the extension that shows KARMA passwords */
 "PasswordAutoFill.SectionTitle" = "Dane logowania Firefoksa";
 
 /* See http://mzl.la/1G7uHo7 */
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "Pozwoli to zachować obraz w albumie Wszystkie zdjęcia.";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Karma chce uzyskać dostęp do Zdjęć";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "KARMA chce uzyskać dostęp do Zdjęć";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "Zamknij";
@@ -1056,7 +1056,7 @@
 /* Privacy section title */
 "Privacy" = "Prywatność";
 
-/* Show Karma Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/Karma/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "Zasady ochrony prywatności";
 
 /* This is the value for a label that indicates if a user is on an unencrypted website. */
@@ -1224,7 +1224,7 @@
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "Wyślij";
 
-/* The text for the button on the Send to Device page if you are not signed in to Karma Accounts. */
+/* The text for the button on the Send to Device page if you are not signed in to KARMA Accounts. */
 "SendTo.SignIn.Button" = "Zaloguj się w Firefoksie";
 
 /* Body of notification shown when the device is sent one or more tabs from an unnamed device. */
@@ -1249,7 +1249,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Stuknij, by rozpocząć";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "Karma Sync";
+"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Wyświetl";
@@ -1312,7 +1312,7 @@
 "Settings.DataManagement.Title" = "Zarządzanie danymi";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "Karma zatrzyma synchronizację z tym kontem, ale nie usunie danych przeglądania na tym urządzeniu.";
+"Settings.Disconnect.Body" = "KARMA zatrzyma synchronizację z tym kontem, ale nie usunie danych przeglądania na tym urządzeniu.";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "Rozłącz synchronizację";
@@ -1381,7 +1381,7 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "Nazwa urządzenia";
 
-/* Label used as a section title in the Karma Accounts Settings screen. */
+/* Label used as a section title in the KARMA Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "Ustawienia synchronizacji";
 
 /* Title displayed in header of the FxA settings panel. */
@@ -1390,43 +1390,43 @@
 /* General settings section title */
 "Settings.General.SectionName" = "Ogólne";
 
-/* In the settings menu, on the Karma homepage customization section, this is the description below the section, describing what the options in the section are for. */
+/* In the settings menu, on the KARMA homepage customization section, this is the description below the section, describing what the options in the section are for. */
 "Settings.Home.Option.Description" = "Wybierz, co wyświetlać na stronie startowej Firefoksa.";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
 "Settings.Home.Option.JumpBackIn" = "Wskocz z powrotem";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the KARMA homepage on or off */
 "Settings.Home.Option.Pocket" = "Poleca Pocket";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentlySaved" = "Ostatnio zachowane";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
 "Settings.Home.Option.RecentlyVisited" = "Ostatnio odwiedzone";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentSearches" = "Ostatnie wyszukiwania";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the KARMA homepage on or off */
 "Settings.Home.Option.Shortcuts" = "Skróty";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage after four hours of inactivity. */
 "Settings.Home.Option.StartAtHome.AfterFourHours" = "Strona startowa po czterech godzinach bezczynności";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Karma */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Always" = "Strona startowa";
 
 /* In the settings menu, in the Start at Home customization options, this is text that appears below the section, describing what the section settings do. */
 "Settings.Home.Option.StartAtHome.Description" = "Wybierz, co wyświetlać po powrocie do Firefoksa.";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Karma */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Never" = "Ostatnia karta";
 
-/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Karma Homepage. */
+/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the KARMA Homepage. */
 "Settings.Home.Option.StartAtHome.Title" = "Ekran początkowy";
 
-/* In the settings menu, this is the title of the Karma Homepage customization settings section */
+/* In the settings menu, this is the title of the KARMA Homepage customization settings section */
 "Settings.Home.Option.Title" = "Strona startowa Firefoksa";
 
 /* Button in settings to clear the home page. */
@@ -1480,7 +1480,7 @@
 /* The title for the section to customize top sites in the new tab settings page. */
 "Settings.NewTab.Option.CustomizeTitle" = "Dostosuj stronę startową Firefoksa";
 
-/* Option in settings to show Karma Home when you open a new tab */
+/* Option in settings to show KARMA Home when you open a new tab */
 "Settings.NewTab.Option.FirefoxHome" = "Strona startowa Firefoksa";
 
 /* Option in the settings to turn off recent bookmarks in the Highlights section */
@@ -1589,7 +1589,7 @@
 "Settings.Studies.Toggle.Link" = "Więcej informacji.";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "Karma może od czasu do czasu instalować i przeprowadzać badania.";
+"Settings.Studies.Toggle.Message" = "KARMA może od czasu do czasu instalować i przeprowadzać badania.";
 
 /* Toggled OFF to opt-out of studies */
 "Settings.Studies.Toggle.Off" = "Wyłączone";
@@ -1606,7 +1606,7 @@
 /* In the settings menu, in the Tabs customization section, this is the title for the setting that toggles the Tab Groups feature - where tabs from related searches are grouped - on or off */
 "Settings.Tabs.CustomizeTabsSection.TabGroups" = "Grupy kart";
 
-/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from Karma hompage */
+/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from KARMA hompage */
 "Settings.Tabs.CustomizeTabsSection.Title" = "Dostosuj listę kart";
 
 /* In the settings menu, this is the title for the Tabs customization section option */
@@ -1622,7 +1622,7 @@
 "Settings.TrackingProtection.Alert.Title" = "Uwaga!";
 
 /* Header description for tracking protection options section where Basic/Strict block list can be selected */
-"Settings.TrackingProtection.BlockListsHeader" = "Możesz wybrać, której listy Karma będzie używał do blokowania elementów mogących śledzić Twoje przeglądanie.";
+"Settings.TrackingProtection.BlockListsHeader" = "Możesz wybrać, której listy KARMA będzie używał do blokowania elementów mogących śledzić Twoje przeglądanie.";
 
 /* Explanation of basic mode. */
 "Settings.TrackingProtection.Info.BasicTitle" = "Równowaga między bezpieczeństwem a szybkością wczytywania stron.";
@@ -1717,31 +1717,31 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "Dane witryn";
 
-/* Action label on share extension to add page to the Karma reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "Dodaj do czytelni";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "Dodano do czytelni";
 
-/* Action label on share extension to bookmark the page in Karma. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "Dodaj zakładkę do tej strony";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "Dodano zakładkę";
 
-/* Action label on share extension to load the page in Karma when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "Wczytaj w tle";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
 "ShareExtension.LoadInBackgroundActionDone.Title" = "Wczytywanie w Firefoksie";
 
-/* Action label on share extension to immediately open page in Karma. */
+/* Action label on share extension to immediately open page in KARMA. */
 "ShareExtension.OpenInFirefoxAction.Title" = "Otwórz w Firefoksie";
 
-/* Action label on share extension to immediately open page in Karma in private mode. */
+/* Action label on share extension to immediately open page in KARMA in private mode. */
 "ShareExtension.OpenInPrivateModeAction.Title" = "Otwórz w trybie prywatnym";
 
-/* Action label on share extension to search for the selected text in Karma. */
+/* Action label on share extension to search for the selected text in KARMA. */
 "ShareExtension.SeachInFirefoxAction.Title" = "Wyszukaj w Firefoksie";
 
 /* Label for show search suggestions setting. */
@@ -1901,7 +1901,7 @@
 /* The section header for tabs opened yesterday */
 "TabTray.Yesterday.Header" = "Wczoraj";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "The page could not be displayed in Reader View." = "Strona nie może zostać wyświetlona w widoku poprawionej czytelności";
 
 /* Error message in the remote tabs panel */
@@ -1965,7 +1965,7 @@
 "unread" = "nieprzeczytane";
 
 /* Text message in the settings table view */
-"Upgrade Karma to connect" = "Uaktualnij Firefoksa, by połączyć";
+"Upgrade KARMA to connect" = "Uaktualnij Firefoksa, by połączyć";
 
 /* Debug option */
 "Use stage servers" = "Używaj serwerów testowych";
@@ -1976,7 +1976,7 @@
 /* Text message in the settings table view */
 "Verify your email address" = "Zweryfikuj swój adres e-mail";
 
-/* Version number of Karma shown in settings */
+/* Version number of KARMA shown in settings */
 "Version %@ (%@)" = "Wersja %1$@ (%2$@)";
 
 /* Accessibility label for the main web content view */
@@ -1998,7 +1998,7 @@
 "Yesterday" = "Wczoraj";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Karma on your other devices." = "Brak otwartych kart w Firefoksach na innych urządzeniach.";
+"You don’t have any tabs open in KARMA on your other devices." = "Brak otwartych kart w Firefoksach na innych urządzeniach.";
 
 /* Your Rights settings section title */
 "Your Rights" = "O prawach użytkownika";

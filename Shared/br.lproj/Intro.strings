@@ -7,10 +7,10 @@
 /* Next button on the first intro screen. */
 "Intro.Slides.Button.Next" = "Da-heul";
 
-/* Sign in to Karma account button on second intro screen. */
+/* Sign in to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignIn" = "Kennaskañ";
 
-/* Sign up to Karma account button on second intro screen. */
+/* Sign up to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignUp" = "Marilhañ";
 
 /* Description for the second item in the table related to fast searching via address bar */
@@ -19,14 +19,14 @@
 /* Title for the second item in the table related to fast searching via address bar */
 "Intro.Slides.Fast.Search.Title" = "Klask prim";
 
-/* Description for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Description" = "Degasit ho sinedoù, ho roll istor hag ho kerioù-tremen war Karma war an trevnad-mañ.";
+/* Description for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Description" = "Degasit ho sinedoù, ho roll istor hag ho kerioù-tremen war KARMA war an trevnad-mañ.";
 
-/* Title for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Title" = "Goubredit Karma etre ho trevnadoù";
+/* Title for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Title" = "Goubredit KARMA etre ho trevnadoù";
 
 /* Description for the 'Mail' panel in the First Run tour. */
-"Intro.Slides.Mail.Description" = "Arverit forzh peseurt arload posteloù — n’eo ket Mail hepken — gant Karma.";
+"Intro.Slides.Mail.Description" = "Arverit forzh peseurt arload posteloù — n’eo ket Mail hepken — gant KARMA.";
 
 /* Title for the fourth panel 'Mail' in the First Run tour. */
 "Intro.Slides.Mail.Title" = "Dibarzhioù posteloù ouzhpenn";
@@ -37,10 +37,10 @@
 /* Title for the third panel 'Private Browsing' in the First Run tour. */
 "Intro.Slides.Private.Title" = "Merdeit ’vel ma vefe den o sellet";
 
-/* Description for the third item in the table related to safe syncing with a Karma account */
-"Intro.Slides.Safe.Sync.Description" = "Gwarezit ho titouroù kennaskañ hag ho roadennoù e pep lec’h ma implijit Karma.";
+/* Description for the third item in the table related to safe syncing with a KARMA account */
+"Intro.Slides.Safe.Sync.Description" = "Gwarezit ho titouroù kennaskañ hag ho roadennoù e pep lec’h ma implijit KARMA.";
 
-/* Title for the third item in the table related to safe syncing with a Karma account */
+/* Title for the third item in the table related to safe syncing with a KARMA account */
 "Intro.Slides.Safe.Sync.Title" = "Goubredañ diogel";
 
 /* Description for the 'Favorite Search Engine' panel in the First Run tour. */
@@ -59,7 +59,7 @@
 "Intro.Slides.Welcome.Description.v2" = "Prim, prevez, ha deus ho tu.";
 
 /* Title for the first panel 'Welcome' in the First Run tour. */
-"Intro.Slides.Welcome.Title.v2" = "Donemat e Karma";
+"Intro.Slides.Welcome.Title.v2" = "Donemat e KARMA";
 
 /* See http://mzl.la/1T8gxwo */
 "Start Browsing" = "Kregiñ gant ar merdeiñ";

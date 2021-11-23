@@ -5,7 +5,7 @@
 "ContextMenu.OpenInNewPrivateTabButtonTitle" = "Atvērt jaunā privātā cilnē";
 
 /* Description text displayed when there are no open tabs while in private mode */
-"Karma won’t remember any of your history or cookies, but new bookmarks will be saved." = "Karma neatcerēsies apmeklēto lapu vēsturi un sīkdatnes, bet jaunās grāmatzīmes tiks saglabātas jūsu ierīcē.";
+"KARMA won’t remember any of your history or cookies, but new bookmarks will be saved." = "KARMA neatcerēsies apmeklēto lapu vēsturi un sīkdatnes, bet jaunās grāmatzīmes tiks saglabātas jūsu ierīcē.";
 
 /* Text button displayed when there are no tabs open while in private mode */
 "Learn More" = "Uzzināt vairāk";

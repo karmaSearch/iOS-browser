@@ -182,7 +182,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "ລະຫັດຜ່ານໄດ້ຖືກເປີດເຜີຍ ຫລື ລັກນັບແຕ່ທ່ານໄດ້ປ່ຽນລະຫັດຜ່ານຄັ້ງຫລ້າສຸດ. ເພື່ອຮັກສາບັນຊີນີ້ ໃຫ້ລັອກອິນເຂົ້າສູ່ເວັບໄຊທແລ້ວປ່ຽນລະຫັດຜ່ານໃຫມ່.";
 
-/* Link to monitor.Karma.com to learn more about breached passwords */
+/* Link to monitor.KARMA.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "ຮຽນຮູ້ເພີ່ມເຕີມ";
 
 /* Leads to a link to the breached website */
@@ -270,7 +270,7 @@
 "Could not load page." = "ບໍ່ສາມາດໂຫລດຫນ້າເວັບນີ້ໄດ້.";
 
 /* Description for the new dark mode change in the version 22 app release. It describes the new automatic dark theme and how to change the theme settings. */
-"CoverSheet.v22.DarkMode.Description" = "ສຳລັບຜູ້ໃຊ້ iOS 13 Karma ຈະສະລັບກັບໄປໃຊ້ໂຫມດມືດໂດຍອັດຕະໂນມັດເມື່ອມືຖືຂອງທ່ານຖືກຕັ້ງຄ່າໃຫ້ຢູ່ໃນໂຫມດມືດ. ຫາກຕ້ອງການປ່ຽນໃຫ້ໄປທີ່ ຕັ້ງຄ່າ > ຊຸດຕົກແຕ່ງ";
+"CoverSheet.v22.DarkMode.Description" = "ສຳລັບຜູ້ໃຊ້ iOS 13 KARMA ຈະສະລັບກັບໄປໃຊ້ໂຫມດມືດໂດຍອັດຕະໂນມັດເມື່ອມືຖືຂອງທ່ານຖືກຕັ້ງຄ່າໃຫ້ຢູ່ໃນໂຫມດມືດ. ຫາກຕ້ອງການປ່ຽນໃຫ້ໄປທີ່ ຕັ້ງຄ່າ > ຊຸດຕົກແຕ່ງ";
 
 /* Title for the new dark mode change in the version 22 app release. */
 "CoverSheet.v22.DarkMode.Title" = "ຊຸດຕົກແຕ່ງແບບມືດປະກອບໄປດ້ວຍຄີບອດ ແລະ ຫນ້າຈໍມືດ.";
@@ -325,8 +325,8 @@
 /* Alert dialog title when the user taps the cancel download icon. */
 "Downloads.CancelDialog.Title" = "ຍົກເລີກການດາວໂຫລດ";
 
-/* The message displayed to a user when they try and perform the download of an asset that Karma cannot currently handle. */
-"Downloads.Error.Message" = "ການດາວໂຫລດຍັງບໍ່ໄດ້ຮັບການຮັບຮອງຈາກ Karma ເທື່ອ.";
+/* The message displayed to a user when they try and perform the download of an asset that KARMA cannot currently handle. */
+"Downloads.Error.Message" = "ການດາວໂຫລດຍັງບໍ່ໄດ້ຮັບການຮັບຮອງຈາກ KARMA ເທື່ອ.";
 
 /* The label text in the Download Cancelled toast for showing confirmation that the download was cancelled. */
 "Downloads.Toast.Cancelled.LabelText" = "ການດາວໂຫລດຖືກຍົກເລີກ";
@@ -371,7 +371,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "ມັນອາດຈະເກີດມາຈາກການຕັ້ງຄ່າຜິດພາດ ຫລື ເປັນການດັດແປງໂດຍນັກເຈາະຂໍ້ມູນ. ດຳເນີນການຕໍ່ໄປຖ້າຫາກວ່າທ່ານຍອມຮັບຄວາມສ່ຽງທີ່ອາດເກີດຂື້ນນີ້ໄດ້.";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "ເຈົ້າຂອງ %@ ໄດ້ຕັ້ງຄ່າເວັບໄຊທ໌ຂອງພວກເຂົາບໍ່ເຫມາະສົມ. ເພື່ອເປັນການປົກປ້ອງຂໍ້ມູນຂອງທ່ານຈາກການຖືກໂຈລະກຳ, Karma ຈຶ່ງໄດ້ຕັດການເຊື່ອມຕໍ່ໄປຫາເວັບໄຊທ໌ນີ້.";
+"ErrorPages.CertWarning.Description" = "ເຈົ້າຂອງ %@ ໄດ້ຕັ້ງຄ່າເວັບໄຊທ໌ຂອງພວກເຂົາບໍ່ເຫມາະສົມ. ເພື່ອເປັນການປົກປ້ອງຂໍ້ມູນຂອງທ່ານຈາກການຖືກໂຈລະກຳ, KARMA ຈຶ່ງໄດ້ຕັດການເຊື່ອມຕໍ່ໄປຫາເວັບໄຊທ໌ນີ້.";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "ການເຊື່ອມຕໍ່ນີ້ບໍ່ນ່າເຊື່ອຖື";
@@ -391,8 +391,8 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for Karma about:home page in tab history list */
-"Karma.HomePage.Title" = "ຫນ້າທຳອິດຂອງ Karma";
+/* Title for KARMA about:home page in tab history list */
+"KARMA.HomePage.Title" = "ຫນ້າທຳອິດຂອງ KARMA";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "ໄປຂ້າງຫນ້າ";
@@ -403,16 +403,16 @@
 /* Label stating your account is not verified */
 "FxA.AccountVerificationRequired" = "ຈຳເປັນຕ້ອງມີການຢືນຢັນບັນຊີ";
 
-/* Message explaining that user needs to check email for Karma Account verfication link. */
-"FxA.AccountVerificationRequiredSurface" = "ທ່ານຕ້ອງໄດ້ຢືນຢັນ %@. ກວດເບິງອີເມລຂອງທ່ານສຳລັບລີ້ງການຢືນຢັນຈາກ Karma.";
+/* Message explaining that user needs to check email for KARMA Account verfication link. */
+"FxA.AccountVerificationRequiredSurface" = "ທ່ານຕ້ອງໄດ້ຢືນຢັນ %@. ກວດເບິງອີເມລຂອງທ່ານສຳລັບລີ້ງການຢືນຢັນຈາກ KARMA.";
 
 /* Button label to connect another device to Sync */
 "FxA.ConnectAnotherDevice" = "ເຊື່ອມຕໍ່ກັບອຸປະກອນອື່ນ";
 
-/* Settings section title for Karma Account */
-"FxA.FirefoxAccount" = "ບັນຊີ Karma";
+/* Settings section title for KARMA Account */
+"FxA.FirefoxAccount" = "ບັນຊີ KARMA";
 
-/* Button label to go to Karma Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "ຈັດການບັນຊີ ແລະ ອຸປະກອນ";
 
 /* Label when no internet is present */
@@ -422,15 +422,15 @@
 "FxA.OpenSyncPreferences" = "ເປີດການຕັ້ງຄ່າ Sync";
 
 /* Instructions shown on qr code scanning view */
-"fxa.qr-scanning-view.instructions" = "ສະແກນລະຫັດ QR ທີ່ສະແດງຢູ່ໃນ Karma.com/pair";
+"fxa.qr-scanning-view.instructions" = "ສະແກນລະຫັດ QR ທີ່ສະແດງຢູ່ໃນ KARMA.com/pair";
 
-/* Remove button is displayed on Karma account page under certain scenarios where user would like to remove their account. */
+/* Remove button is displayed on KARMA account page under certain scenarios where user would like to remove their account. */
 "FxA.RemoveAccount" = "ລຶບ";
 
 /* Description string for alert view that gets presented when user tries to remove an account. */
-"FxA.RemoveAccountAlertMessage" = "ລົບບັນຊີ Karma ທີ່ເຊື່ອມເຂົ້າກັບອຸປະກອນນີ້ອອກເພື່ອໃຫ້ຜູ້ນຳໃຊ້ຄົນອື່ນເຂົ້າສູ່ລະບົບໄດ້.";
+"FxA.RemoveAccountAlertMessage" = "ລົບບັນຊີ KARMA ທີ່ເຊື່ອມເຂົ້າກັບອຸປະກອນນີ້ອອກເພື່ອໃຫ້ຜູ້ນຳໃຊ້ຄົນອື່ນເຂົ້າສູ່ລະບົບໄດ້.";
 
-/* Remove account alert is the final confirmation before user removes their Karma account */
+/* Remove account alert is the final confirmation before user removes their KARMA account */
 "FxA.RemoveAccountAlertTitle" = "ລຶບບັນຊີ";
 
 /* Button label to resend email */
@@ -440,13 +440,13 @@
 "fxa.signin.camera-signin" = "ເຂົ້າລະບົບດ້ວຍກ້ອງຂອງທ່ານ";
 
 /* FxA sign in create account label. */
-"fxa.signin.create-account-pt-1" = "Sync Karma ລະຫວ່າງອຸປະກອນຕ່າງດ້ວຍບັນຊີ.";
+"fxa.signin.create-account-pt-1" = "Sync KARMA ລະຫວ່າງອຸປະກອນຕ່າງດ້ວຍບັນຊີ.";
 
 /* FxA sign in create account label. This will be linked to the site to create an account. */
-"fxa.signin.create-account-pt-2" = "ສ້າງບັນຊີ Karma.";
+"fxa.signin.create-account-pt-2" = "ສ້າງບັນຊີ KARMA.";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "ເປີດ Karma ໃນຄອມພິວເຕີຂອງທ່ານ ແລະ ໄປທີ່ Karma.com/pair";
+"fxa.signin.qr-link-instruction" = "ເປີດ KARMA ໃນຄອມພິວເຕີຂອງທ່ານ ແລະ ໄປທີ່ KARMA.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "ກຽມພ້ອມທີ່ຈະສະແກນ";
@@ -463,14 +463,14 @@
 /* Label explaining what sync does */
 "FxA.SyncExplain" = "ນຳເອົາແທັບ, ບຸກມາກ ແລະ ລະຫັດຜ່ານຂອງທ່ານຈາກອຸປະກອນອື່ນເຂົ້າມາ.";
 
-/* Button label to Sync your Karma Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "Sync ດຽວນີ້";
 
 /* Call to action for sign into sync button */
 "FxA.TakeYourWebWithYou" = "ນຳເອົາເວັບຂອງທ່ານໄປກັບທ່ານ";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "Karma Sync ໄດ້ເຊື່ອມຕໍ່ກັບ %@";
+"FxAPush_DeviceConnected_body" = "KARMA Sync ໄດ້ເຊື່ອມຕໍ່ກັບ %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "ເຊື່ອມຕໍກັບ Sync ແລ້ວ";
@@ -479,7 +479,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ ໄດ້ຕັດການເຊື່ອມຕໍ່ແລ້ວ.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "ອຸປະກອນນີ້ໄດ້ຕັດການເຊື່ອຕໍ່ກັບ Karma Sync ແລ້ວ.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "ອຸປະກອນນີ້ໄດ້ຕັດການເຊື່ອຕໍ່ກັບ KARMA Sync ແລ້ວ.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "ຕັດການເຊື່ອມຕໍກັບ Sync ແລ້ວ";
@@ -488,7 +488,7 @@
 "FxAPush_DeviceDisconnected_title" = "ຕັດການເຊື່ອມຕໍກັບ Sync ແລ້ວ";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "ອຸປະກອນບໍ່ໄດ້ເຊື່ອມຕໍ່ກັບ Karma Sync";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "ອຸປະກອນບໍ່ໄດ້ເຊື່ອມຕໍ່ກັບ KARMA Sync";
 
 /* A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing. */
 "Get your open tabs, bookmarks, and passwords from your other devices." = "ນຳເອົາແທັບທີ່ທ່ານເປີດ, ບຸກມາກ ແລະ ລະຫັດຜ່ານຂອງທ່ານຈາກອຸປະກອນອື່ນເຂົ້າມາ.";
@@ -536,7 +536,7 @@
 "HistoryPanel.EmptySyncedTabsPanelTabSyncDisabledState.Description" = "ເປີດການຊິງຄ໌ແທັບເພື່ອເບິ່ງລາຍການແທັບທີ່ເປີດຢູ່ໃນອຸປະກອນອື່ນໆຂອງທ່ານ.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "Karma Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "ປະຫວັດການໃຊ້ງານ";
@@ -640,10 +640,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "ແສງ";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "ໂຫລດຫນ້າເວັບດັ້ງເດີມ";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Karma reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "ກຳລັງໂຫລດເນື້ອຫາ…";
 
 /* Authentication prompt log in button */
@@ -695,7 +695,7 @@
 "LoginsList.LoginsListSearchPlaceholder" = "ຕົວກັ່ນຕອງ";
 
 /* Label shown when there are no logins to list */
-"LoginsList.NoLoginsFound.Description" = "ການລັອກອິນທີ່ໄດ້ບັນທຶກໄວ້ຈະສະແດງຂື້ນຢູ່ທີ່ນີ້. ເຂົ້າສູ່ລະບົບບັນຊີ Karma ຂອງທ່ານ ຖ້າຫາກວ່າທ່ານໄດ້ບັນທຶກການລັອກອິນຂອງທ່ານໄວ້ໃນ Karma ໃນອຸປະກອນອື່ນໆ.";
+"LoginsList.NoLoginsFound.Description" = "ການລັອກອິນທີ່ໄດ້ບັນທຶກໄວ້ຈະສະແດງຂື້ນຢູ່ທີ່ນີ້. ເຂົ້າສູ່ລະບົບບັນຊີ KARMA ຂອງທ່ານ ຖ້າຫາກວ່າທ່ານໄດ້ບັນທຶກການລັອກອິນຂອງທ່ານໄວ້ໃນ KARMA ໃນອຸປະກອນອື່ນໆ.";
 
 /* Label that appears after the search if there are no logins matching the search */
 "LoginsList.NoMatchingResult.Subtitle" = "ບໍ່ມີຜົນໄດ້ຮັບທີ່ກົງກັບການຄົ້ນຫາຂອງທ່ານ.";
@@ -716,7 +716,7 @@
 "LoginsList.Title" = "ບັກທຶກການເຂົ້າສູ່ລະບົບໄວ້";
 
 /* Restore Tabs Prompt Description */
-"Looks like Karma crashed previously. Would you like to restore your tabs?" = "ເບິງຄ້າຍຄືວ່າ Karma ເກີດມີຂໍ້ຜິດພາດກ່ອນຫນ້ານີ້. ທ່ານຕ້ອງການກູ້ຄືນແທັບຂອງທ່ານຫລືບໍ?";
+"Looks like KARMA crashed previously. Would you like to restore your tabs?" = "ເບິງຄ້າຍຄືວ່າ KARMA ເກີດມີຂໍ້ຜິດພາດກ່ອນຫນ້ານີ້. ທ່ານຕ້ອງການກູ້ຄືນແທັບຂອງທ່ານຫລືບໍ?";
 
 /* Name for Mark as read button in reader mode
    Title for the button that marks a reading list item as read */
@@ -760,10 +760,10 @@
 "Menu.EnhancedTrackingProtectionOn.Title" = "ການປັບປຸງການປ້ອງກັນການຕິດຕາມແມ່ນເປີດສຳລັບເວບໄຊທ໌ນີ້.";
 
 /* Description for having standard ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "Karma ບັອກຕົວຕິດຕາມເວັບໄຊທ, ສື່ສັງຄົມອອນລາຍ, ນັກຄຸດຫລຽນ ແລະ ລາຍນີ້ວມື.";
+"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "KARMA ບັອກຕົວຕິດຕາມເວັບໄຊທ, ສື່ສັງຄົມອອນລາຍ, ນັກຄຸດຫລຽນ ແລະ ລາຍນີ້ວມື.";
 
 /* Description for having strict ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "Karma ໄດ້ບັອກຕົວຕີດຕາມ cross-site, ສື່ສັງຄົມ, ຕົວຂຸດລຽນ, ລາຍນີ້ວມື ແລະ ເນື້ອຫາໃນເວັບ.";
+"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "KARMA ໄດ້ບັອກຕົວຕີດຕາມ cross-site, ສື່ສັງຄົມ, ຕົວຂຸດລຽນ, ລາຍນີ້ວມື ແລະ ເນື້ອຫາໃນເວັບ.";
 
 /* Label for the button, displayed in the menu, takes you to to History screen when pressed. */
 "Menu.History.Label" = "ປະຫວັດການໃຊ້ງານ";
@@ -826,7 +826,7 @@
 "Menu.TrackingProtection.BlockedTitle" = "ບັອກ";
 
 /* Message in menu when no trackers blocked. */
-"Menu.TrackingProtection.NoTrackersBlockedTitle" = "Karma ບໍ່ສາມາດກວດພົບຕົວຕິດຕາມທີ່ຮູ້ຈັກໃນໜ້ານີ້.";
+"Menu.TrackingProtection.NoTrackersBlockedTitle" = "KARMA ບໍ່ສາມາດກວດພົບຕົວຕິດຕາມທີ່ຮູ້ຈັກໃນໜ້ານີ້.";
 
 /* The title for tracking protection settings */
 "Menu.TrackingProtection.ProtectionSettings.Title" = "ຕັ້ງຄ່າການປ້ອງກັນ";
@@ -841,7 +841,7 @@
 "Menu.TrackingProtectionBlockedSocial.Title" = "ຕົວຕິດຕາມສືສັງຄົມອອນໄລນ";
 
 /* Description of the Tracking protection menu when TP is blocking parts of the page */
-"Menu.TrackingProtectionBlocking.Description" = "Karma ກຳລັງບັອກເນື້ອຫາບາງສ່ວນຂອງຫນ້ານີ້ທີ່ອາດຈະເຮັດໃຫ້ການທ່ອງເວັບຂອງທ່ານຖືກຕິດຕາມ.";
+"Menu.TrackingProtectionBlocking.Description" = "KARMA ກຳລັງບັອກເນື້ອຫາບາງສ່ວນຂອງຫນ້ານີ້ທີ່ອາດຈະເຮັດໃຫ້ການທ່ອງເວັບຂອງທ່ານຖືກຕິດຕາມ.";
 
 /* The description of the Tracking Protection menu item when tracking is enabled */
 "Menu.TrackingProtectionBlockingDisabled.Description" = "ບັອກຕົວຕິດຕາມອອນລາຍ";
@@ -944,7 +944,7 @@
 "Okay" = "ຕົກລົງ";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Karma crashed" = "Oops! Karma ມີຂໍ້ຜິດພາດ";
+"Oops! KARMA crashed" = "Oops! KARMA ມີຂໍ້ຜິດພາດ";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "ເປີດຫົວຂໍ້ນີ້ໃນ Reader View ໂດຍການເຕະໄອຄອນປື້ມເມື່ອມັນປະກົດຂື້ນໃນ Title bar.";
@@ -955,8 +955,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "ເປີດແທັບ";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Karma, or any external app. */
-"OpenURL.Error.Message" = "Karma ບໍ່ສາມາດເປີດຫນ້ານີ້ໄດ້ເພາະວ່າມັນມີທີ່ຢູ່ທີບໍ່ຖືກຕ້ອງ.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
+"OpenURL.Error.Message" = "KARMA ບໍ່ສາມາດເປີດຫນ້ານີ້ໄດ້ເພາະວ່າມັນມີທີ່ຢູ່ທີບໍ່ຖືກຕ້ອງ.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "ບໍ່ສາມາດເປີດຫນ້ານີ້ໄດ້.";
@@ -971,19 +971,19 @@
 "Password" = "ລະຫັດຜ່ານ";
 
 /* Error message shown in the remote tabs panel */
-"PasswordAutoFill.NoPasswordsFoundTitle" = "ທ່ານບໍ່ມີຂໍ້ມູນຮັບຮອງໃດໆ ທີ່ຊີງຈາກບັນຊີ Karma ຂອງທ່ານ";
+"PasswordAutoFill.NoPasswordsFoundTitle" = "ທ່ານບໍ່ມີຂໍ້ມູນຮັບຮອງໃດໆ ທີ່ຊີງຈາກບັນຊີ KARMA ຂອງທ່ານ";
 
 /* Header for the list of credentials table */
 "PasswordAutoFill.PasswordsListTitle" = "ຂໍ້ມູນຮັບຮອງທີ່ມີ";
 
-/* Title of the extension that shows Karma passwords */
-"PasswordAutoFill.SectionTitle" = "ຂໍ້ມູນຮັບຮອງ Karma";
+/* Title of the extension that shows KARMA passwords */
+"PasswordAutoFill.SectionTitle" = "ຂໍ້ມູນຮັບຮອງ KARMA";
 
 /* See http://mzl.la/1G7uHo7 */
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "ສິ່ງນີ້ອະນຸຍາດໃຫ້ທ່ານບັນທຶກຮູບພາບໄປໄວ້ໃນທີ່ເກັບຮູບພາບຂອງທ່ານ.";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Karma ຕ້ອງການເຂົ້າເຖິງຮູບພາບຂອງທ່ານ";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "KARMA ຕ້ອງການເຂົ້າເຖິງຮູບພາບຂອງທ່ານ";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "ປິດ";
@@ -991,7 +991,7 @@
 /* Privacy section title */
 "Privacy" = "ຄວາມເປັນສ່ວນຕົວ";
 
-/* Show Karma Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/Karma/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ";
 
 /* Title for quick-search engines settings section. */
@@ -1058,7 +1058,7 @@
 "ScanQRCode.InvalidDataError.Message" = "ຂໍ້ມູນບໍ່ຖືກຕ້ອງ";
 
 /* Text of the prompt user to setup the camera authorization. */
-"ScanQRCode.PermissionError.Message" = "ກະລຸນາອະນຸຍາດໃຫ້ Karma ເຂົ້າໄປນຳໃຊ້ກ້ອງຖ່າຍຮູບຂອງອຸປະກອນຂອງທ່ານໃນ ‘ການຕັ້ງຄ່າ’ -> ‘ຄວາມເປັນສ່ວນຕົວ’ -> ‘ກ້ອງຖ່າຍຮູບ’.";
+"ScanQRCode.PermissionError.Message" = "ກະລຸນາອະນຸຍາດໃຫ້ KARMA ເຂົ້າໄປນຳໃຊ້ກ້ອງຖ່າຍຮູບຂອງອຸປະກອນຂອງທ່ານໃນ ‘ການຕັ້ງຄ່າ’ -> ‘ຄວາມເປັນສ່ວນຕົວ’ -> ‘ກ້ອງຖ່າຍຮູບ’.";
 
 /* Title for the QR code scanner view. */
 "ScanQRCode.View.Title" = "ສະແກນລະຫັດ QR";
@@ -1142,19 +1142,19 @@
 "SendTo.NavBar.Title" = "ສົ່ງແທັບ";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "ທ່ານບໍ່ມີອຸປະກອນໃດໆທີ່ເຊື່ອມຕໍ່ກັບບັນຊີ Karma ນີ້ຢູ່ເພື່ອສາມາດໃຊ້ການ Sync ໄດ້.";
+"SendTo.NoDevicesFound.Message" = "ທ່ານບໍ່ມີອຸປະກອນໃດໆທີ່ເຊື່ອມຕໍ່ກັບບັນຊີ KARMA ນີ້ຢູ່ເພື່ອສາມາດໃຊ້ການ Sync ໄດ້.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "ກະລຸນາເປີດ Karma, ໄປທີ່ການຕັ້ງຄ່າ ແລະ ລົງຊື່ເຂົ້າໃຊ້ເພື່ອດຳເນີນການຕໍໄປ.";
+"SendTo.NotSignedIn.Message" = "ກະລຸນາເປີດ KARMA, ໄປທີ່ການຕັ້ງຄ່າ ແລະ ລົງຊື່ເຂົ້າໃຊ້ເພື່ອດຳເນີນການຕໍໄປ.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "ທ່ານຍັງບໍ່ໄດ້ລົງຊື່ເຂົ້າໃຊ້ບັນຊີ Karma ຂອງທ່ານເທືອ.";
+"SendTo.NotSignedIn.Title" = "ທ່ານຍັງບໍ່ໄດ້ລົງຊື່ເຂົ້າໃຊ້ບັນຊີ KARMA ຂອງທ່ານເທືອ.";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "ສົ່ງ";
 
-/* The text for the button on the Send to Device page if you are not signed in to Karma Accounts. */
-"SendTo.SignIn.Button" = "ລົງຊື່ເຂົ້າໃຊ້ Karma";
+/* The text for the button on the Send to Device page if you are not signed in to KARMA Accounts. */
+"SendTo.SignIn.Button" = "ລົງຊື່ເຂົ້າໃຊ້ KARMA";
 
 /* Body of notification shown when the device is sent one or more tabs from an unnamed device. */
 "SentTab_TabArrivingNotification_NoDevice_body" = "ມີແທັບໃຫມ່ເຂົ້າມາຈາກອຸປະກ່ອນອື່ນ.";
@@ -1178,7 +1178,7 @@
 "SentTab.NoTabArrivingNotification.body" = "ແຕະເພື່ອເລີ່ມຕົ້ນ";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "Karma Sync";
+"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "ມຸມມອງ";
@@ -1241,7 +1241,7 @@
 "Settings.DataManagement.Title" = "ການຈັດການຂໍ້ມູນ";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "Karma ຈະຢຸດການ Sync ກັບບັນຊີຂອງທ່ານ, ແຕວ່າຈະບໍ່ລຶບປະຫວັດການຄົ້ນຫາຂອງທ່ານໃນອຸປະກອນນີ້.";
+"Settings.Disconnect.Body" = "KARMA ຈະຢຸດການ Sync ກັບບັນຊີຂອງທ່ານ, ແຕວ່າຈະບໍ່ລຶບປະຫວັດການຄົ້ນຫາຂອງທ່ານໃນອຸປະກອນນີ້.";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "ຕັດການເຊື່ອມຕໍ່";
@@ -1310,11 +1310,11 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "ຊື່ອຸປະກອນ";
 
-/* Label used as a section title in the Karma Accounts Settings screen. */
+/* Label used as a section title in the KARMA Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "ການຕັ້ງຄ່າ Sync";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "ບັນຊີ Karma";
+"Settings.FxA.Title" = "ບັນຊີ KARMA";
 
 /* General settings section title */
 "Settings.General.SectionName" = "ທົ່ວໄປ";
@@ -1368,10 +1368,10 @@
 "Settings.NewTab.Option.CustomizeFooter2" = "ເວັບໄຊທທີ່ທ່ານໄດ້ບັນທຶກໄວ້ ຫລື ເຂົ້າໄປເບິງມາ";
 
 /* The title for the section to customize top sites in the new tab settings page. */
-"Settings.NewTab.Option.CustomizeTitle" = "ປັບແຕ່ງຫນ້າຫລັກຂອງ Karma";
+"Settings.NewTab.Option.CustomizeTitle" = "ປັບແຕ່ງຫນ້າຫລັກຂອງ KARMA";
 
-/* Option in settings to show Karma Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "ຫນ້າຫລັກຂອງ Karma";
+/* Option in settings to show KARMA Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "ຫນ້າຫລັກຂອງ KARMA";
 
 /* Option in the settings to turn off recent bookmarks in the Highlights section */
 "Settings.NewTab.Option.HighlightsBookmarks" = "ບຸກມາກມື້ກີ້ນີ້";
@@ -1413,7 +1413,7 @@
 "Settings.NewTab.TopSectionNameFooter" = "ເລື່ອກສິ່ງທີ່ຈະໂຫລດເມື່ອເປີດແທັບໃຫມ່";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "ເມື່ອເປີດ Karma";
+"Settings.OfferClipboardBar.Status" = "ເມື່ອເປີດ KARMA";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "ສະເຫນີໃຫ້ເປີດລີ້ງທີ່ໄດ້ສຳເນົາໄວ້";
@@ -1437,7 +1437,7 @@
 "Settings.SendUsage.Link" = "ຮຽນຮູ້ເພີ່ມເຕີມ.";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "Mozilla ພະຍາຍາມທີ່ຈະເກັບຮວບຮ່ວມສະເພາະສິ່ງທີ່ຈຳເປັນຕໍ່ການປັບປູງ Karma ສຳລັບທຸກໆຄົນ.";
+"Settings.SendUsage.Message" = "Mozilla ພະຍາຍາມທີ່ຈະເກັບຮວບຮ່ວມສະເພາະສິ່ງທີ່ຈຳເປັນຕໍ່ການປັບປູງ KARMA ສຳລັບທຸກໆຄົນ.";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "ສົ່ງຂໍ້ມູນການນຳໃຊ້";
@@ -1455,7 +1455,7 @@
 "Settings.Siri.OpenTabShortcut" = "ເປີດແທັບໃໝ່";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "ໃຊ້ທາງລັດ Siri ເພື່ອເປີດ Karma ຢ່າງວ່ອງໄວຜ່ານ Siri";
+"Settings.Siri.SectionDescription" = "ໃຊ້ທາງລັດ Siri ເພື່ອເປີດ KARMA ຢ່າງວ່ອງໄວຜ່ານ Siri";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "ທາງລັດ Siri";
@@ -1479,7 +1479,7 @@
 "Settings.Studies.Toggle.Link" = "ຮຽນຮູ້ເພີ່ມເຕີມ.";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "Karma ອາດຈະຕິດຕັ້ງ ແລະ ເອີ້ນນຳໃຊ້ການສຶກສາເປັນບາງຄັ້ງ.";
+"Settings.Studies.Toggle.Message" = "KARMA ອາດຈະຕິດຕັ້ງ ແລະ ເອີ້ນນຳໃຊ້ການສຶກສາເປັນບາງຄັ້ງ.";
 
 /* Toggled OFF to opt-out of studies */
 "Settings.Studies.Toggle.Off" = "ປິດ";
@@ -1595,32 +1595,32 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "ຂໍ້ມູນເວັບໄຊ";
 
-/* Action label on share extension to add page to the Karma reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "ເພີ່ມເຂົ້າໄປໃນລາຍການອ່ານ";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "ເພີ່ມເຂົ້າໄປໃນລາຍການອ່ານແລ້ວ";
 
-/* Action label on share extension to bookmark the page in Karma. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "ບຸກມາກຫນ້ານີ້";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "ບຸກມາກໄວ້ແລ້ວ";
 
-/* Action label on share extension to load the page in Karma when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "ໂຫລດໃນເບື້ອງຫລັງ";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "ກຳລັງໂຫລດໃນ Karma";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "ກຳລັງໂຫລດໃນ KARMA";
 
-/* Action label on share extension to immediately open page in Karma. */
-"ShareExtension.OpenInFirefoxAction.Title" = "ເປີດໃນ Karma";
+/* Action label on share extension to immediately open page in KARMA. */
+"ShareExtension.OpenInFirefoxAction.Title" = "ເປີດໃນ KARMA";
 
-/* Action label on share extension to immediately open page in Karma in private mode. */
+/* Action label on share extension to immediately open page in KARMA in private mode. */
 "ShareExtension.OpenInPrivateModeAction.Title" = "ເປີດໃນໂຫມດສ່ວນຕົວ";
 
-/* Action label on share extension to search for the selected text in Karma. */
-"ShareExtension.SeachInFirefoxAction.Title" = "ຊອກຫາໃນ Karma";
+/* Action label on share extension to search for the selected text in KARMA. */
+"ShareExtension.SeachInFirefoxAction.Title" = "ຊອກຫາໃນ KARMA";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "ສະແດງຜົນການແນະນຳການຄົ້ນຫາ";
@@ -1657,7 +1657,7 @@
 "Sync.FirstTimeMessage.Label" = "ການ sync ຄັ້ງທຳອິດຂອງທ່ານອາດຈະໃຊ້ເວລາດົນຫນ້ອຍຫນຶ່ງ";
 
 /* String displayed on Sign In to Sync page that allows the user to create a new account. */
-"Sync.NoAccount.Description" = "ຫຍັງບໍ່ທັນມີບັນຊີບໍ? ສ້າງຂື້ນມາໃຫມ່ເພື່ອ sync ຂໍ້ມູນ Karma ລະຫວ່າງອຸປະກອນຕ່າງໆ.";
+"Sync.NoAccount.Description" = "ຫຍັງບໍ່ທັນມີບັນຊີບໍ? ສ້າງຂື້ນມາໃຫມ່ເພື່ອ sync ຂໍ້ມູນ KARMA ລະຫວ່າງອຸປະກອນຕ່າງໆ.";
 
 /* Message displayed when the user's account is syncing with no ellipsis */
 "Sync.Syncing.Label" = "ກຳລັງ sync";
@@ -1776,7 +1776,7 @@
 /* The section header for tabs opened yesterday */
 "TabTray.Yesterday.Header" = "ມື້ວານ";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "The page could not be displayed in Reader View." = "ຫນ້າເວັບນີ້ບໍ່ສາມາດສະແດງຢູ່ໃນ Reader View.";
 
 /* Error message in the remote tabs panel */
@@ -1834,13 +1834,13 @@
 "UIMenuItem.PasteGo" = "ວາງ & ໄປ";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "ຄົ້ນຫາດ້ວຍ Karma";
+"UIMenuItem.SearchWithFirefox" = "ຄົ້ນຫາດ້ວຍ KARMA";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "ຍັງບໍ່ທັນອ່ານ";
 
 /* Text message in the settings table view */
-"Upgrade Karma to connect" = "ອັບເກຣດ Karma ເພື່ອເຊື່ອມຕໍ່";
+"Upgrade KARMA to connect" = "ອັບເກຣດ KARMA ເພື່ອເຊື່ອມຕໍ່";
 
 /* Debug option */
 "Use stage servers" = "ໃຊ້ stage servers";
@@ -1851,7 +1851,7 @@
 /* Text message in the settings table view */
 "Verify your email address" = "ຢືນຢັນທີ່ຢູ່ອີເມລຂອງທ່ານ";
 
-/* Version number of Karma shown in settings */
+/* Version number of KARMA shown in settings */
 "Version %@ (%@)" = "ລຸ້ນທີ່ %1$@ (%2$@)";
 
 /* Accessibility label for the main web content view */
@@ -1873,7 +1873,7 @@
 "Yesterday" = "ມື້ວານ";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Karma on your other devices." = "ທ່ານບໍ່ມີແທັບໃດທີ່ເປີດໃນ Karma ໃນອຸປະກອນອື່ນໆຂອງທ່ານ.";
+"You don’t have any tabs open in KARMA on your other devices." = "ທ່ານບໍ່ມີແທັບໃດທີ່ເປີດໃນ KARMA ໃນອຸປະກອນອື່ນໆຂອງທ່ານ.";
 
 /* Your Rights settings section title */
 "Your Rights" = "ສິດທິຂອງທ່ານ";

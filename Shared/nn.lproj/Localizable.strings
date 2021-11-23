@@ -182,7 +182,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "Passord vart lekne eller stolne sidan du sist endra passordet. For å beskytte denne kontoen, logg deg på nettstaden og endre passordet ditt.";
 
-/* Link to monitor.Karma.com to learn more about breached passwords */
+/* Link to monitor.KARMA.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "Les meir";
 
 /* Leads to a link to the breached website */
@@ -270,7 +270,7 @@
 "Could not load page." = "Klarte ikkje å laste sida.";
 
 /* Description for the new dark mode change in the version 22 app release. It describes the new automatic dark theme and how to change the theme settings. */
-"CoverSheet.v22.DarkMode.Description" = "For iOS 13-brukarar byter Karma no automatisk til eit mørkt tema når telefonen er sett til Mørk modus. Gå til Innstillingar > Tema, for å endre dette.";
+"CoverSheet.v22.DarkMode.Description" = "For iOS 13-brukarar byter KARMA no automatisk til eit mørkt tema når telefonen er sett til Mørk modus. Gå til Innstillingar > Tema, for å endre dette.";
 
 /* Title for the new dark mode change in the version 22 app release. */
 "CoverSheet.v22.DarkMode.Title" = "Mørkt tema inkluderer no eit mørkt tastatur og mørkt velkomstbilde.";
@@ -325,8 +325,8 @@
 /* Alert dialog title when the user taps the cancel download icon. */
 "Downloads.CancelDialog.Title" = "Avbryt nedlasting";
 
-/* The message displayed to a user when they try and perform the download of an asset that Karma cannot currently handle. */
-"Downloads.Error.Message" = "Nedlastingar er ikkje støtta i Karma enno.";
+/* The message displayed to a user when they try and perform the download of an asset that KARMA cannot currently handle. */
+"Downloads.Error.Message" = "Nedlastingar er ikkje støtta i KARMA enno.";
 
 /* The label text in the Download Cancelled toast for showing confirmation that the download was cancelled. */
 "Downloads.Toast.Cancelled.LabelText" = "Nedlasting avbroten";
@@ -371,7 +371,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "Det kan vere ein feilkonfigurasjon eller ei manipulering av ein angripar. Fortset om du godtek risikoen.";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "Eigaren av %@ har konfigurerat nettstaden sin feil. For å verne informasjonen din frå å verte stolen, har Karma ikkje kopla seg til denne nettstaden.";
+"ErrorPages.CertWarning.Description" = "Eigaren av %@ har konfigurerat nettstaden sin feil. For å verne informasjonen din frå å verte stolen, har KARMA ikkje kopla seg til denne nettstaden.";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "Denne tilkoplinga er usikker";
@@ -391,8 +391,8 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for Karma about:home page in tab history list */
-"Karma.HomePage.Title" = "Karma startside";
+/* Title for KARMA about:home page in tab history list */
+"KARMA.HomePage.Title" = "KARMA startside";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "Fram";
@@ -403,16 +403,16 @@
 /* Label stating your account is not verified */
 "FxA.AccountVerificationRequired" = "Kontostadfesting er påkravd";
 
-/* Message explaining that user needs to check email for Karma Account verfication link. */
-"FxA.AccountVerificationRequiredSurface" = "Du må stadfeste %@. Sjekk e-posten din for verifiseringslenka frå Karma.";
+/* Message explaining that user needs to check email for KARMA Account verfication link. */
+"FxA.AccountVerificationRequiredSurface" = "Du må stadfeste %@. Sjekk e-posten din for verifiseringslenka frå KARMA.";
 
 /* Button label to connect another device to Sync */
 "FxA.ConnectAnotherDevice" = "Kople til ei anna eining";
 
-/* Settings section title for Karma Account */
-"FxA.FirefoxAccount" = "Karma-konto";
+/* Settings section title for KARMA Account */
+"FxA.FirefoxAccount" = "KARMA-konto";
 
-/* Button label to go to Karma Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "Handter kontoen og einingar";
 
 /* Label when no internet is present */
@@ -422,15 +422,15 @@
 "FxA.OpenSyncPreferences" = "Opne Sync-innstillingar";
 
 /* Instructions shown on qr code scanning view */
-"fxa.qr-scanning-view.instructions" = "Skann QR-koden vist på Karma.com/pair";
+"fxa.qr-scanning-view.instructions" = "Skann QR-koden vist på KARMA.com/pair";
 
-/* Remove button is displayed on Karma account page under certain scenarios where user would like to remove their account. */
+/* Remove button is displayed on KARMA account page under certain scenarios where user would like to remove their account. */
 "FxA.RemoveAccount" = "Fjern";
 
 /* Description string for alert view that gets presented when user tries to remove an account. */
-"FxA.RemoveAccountAlertMessage" = "Fjern Karma-kontoen som er tilknytta denne eininga, for å logge på som ein annan brukar.";
+"FxA.RemoveAccountAlertMessage" = "Fjern KARMA-kontoen som er tilknytta denne eininga, for å logge på som ein annan brukar.";
 
-/* Remove account alert is the final confirmation before user removes their Karma account */
+/* Remove account alert is the final confirmation before user removes their KARMA account */
 "FxA.RemoveAccountAlertTitle" = "Fjern konto";
 
 /* Button label to resend email */
@@ -440,13 +440,13 @@
 "fxa.signin.camera-signin" = "Logg inn med kameraet ditt";
 
 /* FxA sign in create account label. */
-"fxa.signin.create-account-pt-1" = "Synkroniser Karma mellom einingar med ein konto.";
+"fxa.signin.create-account-pt-1" = "Synkroniser KARMA mellom einingar med ein konto.";
 
 /* FxA sign in create account label. This will be linked to the site to create an account. */
-"fxa.signin.create-account-pt-2" = "Opprett ein Karma-konto";
+"fxa.signin.create-account-pt-2" = "Opprett ein KARMA-konto";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "Opne Karma på datamaskina di og gå til Karma.com/pair";
+"fxa.signin.qr-link-instruction" = "Opne KARMA på datamaskina di og gå til KARMA.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Klar til å skanne";
@@ -463,14 +463,14 @@
 /* Label explaining what sync does */
 "FxA.SyncExplain" = "Få faner, bokmerke og passord frå dei andre einingane dine.";
 
-/* Button label to Sync your Karma Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "Synkroniser no";
 
 /* Call to action for sign into sync button */
 "FxA.TakeYourWebWithYou" = "Ta med deg nettet";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "Karma Sync har kopla til %@";
+"FxAPush_DeviceConnected_body" = "KARMA Sync har kopla til %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Sync er tilkopla";
@@ -479,7 +479,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ har blitt kopla frå.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Denne eininga er kopla frå Karma Sync.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Denne eininga er kopla frå KARMA Sync.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Sync er fråkopla";
@@ -488,7 +488,7 @@
 "FxAPush_DeviceDisconnected_title" = "Sync er fråkopla";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Ei eining har blitt kopla frå Karma Sync";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Ei eining har blitt kopla frå KARMA Sync";
 
 /* A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing. */
 "Get your open tabs, bookmarks, and passwords from your other devices." = "Få opne faner, bokmerke og passord frå dei andre einingane dine.";
@@ -536,7 +536,7 @@
 "HistoryPanel.EmptySyncedTabsPanelTabSyncDisabledState.Description" = "Slå på fanesynkronisering for å vise ei liste med faner frå dei andre einingane dine.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "Karma Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Historikk";
@@ -643,10 +643,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "Ljos";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "Last originalsida";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Karma reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "Lastar innhald…";
 
 /* Authentication prompt log in button */
@@ -698,7 +698,7 @@
 "LoginsList.LoginsListSearchPlaceholder" = "Filter";
 
 /* Label shown when there are no logins to list */
-"LoginsList.NoLoginsFound.Description" = "Lagra innloggingar vil visast her. Om du har lagra inloggningane dine i Karma på ei anna eining, loggar du inn på Karma-kontoen din.";
+"LoginsList.NoLoginsFound.Description" = "Lagra innloggingar vil visast her. Om du har lagra inloggningane dine i KARMA på ei anna eining, loggar du inn på KARMA-kontoen din.";
 
 /* Label shown when there are no logins saved */
 "LoginsList.NoLoginsFound.Title" = "Fann ingen innloggingar";
@@ -722,7 +722,7 @@
 "LoginsList.Title" = "LAGRA INNLOGGINGAR";
 
 /* Restore Tabs Prompt Description */
-"Looks like Karma crashed previously. Would you like to restore your tabs?" = "Det ser ut til at Karma krasja tidlegare. Vil du rette oppatt fanene dine?";
+"Looks like KARMA crashed previously. Would you like to restore your tabs?" = "Det ser ut til at KARMA krasja tidlegare. Vil du rette oppatt fanene dine?";
 
 /* Name for Mark as read button in reader mode
    Title for the button that marks a reading list item as read */
@@ -766,10 +766,10 @@
 "Menu.EnhancedTrackingProtectionOn.Title" = "Utvida sporingsvern er slått PÅ for denne nettstaden.";
 
 /* Description for having standard ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "Karma blokkerer sporing på tvers av nettstadar, sporing via sosiale medium, kryptoutvinning og fingeravtrykksporarar.";
+"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "KARMA blokkerer sporing på tvers av nettstadar, sporing via sosiale medium, kryptoutvinning og fingeravtrykksporarar.";
 
 /* Description for having strict ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "Karma blokkerer sporing på tvers av nettstadar, sporing via sosiale medium, kryptoutvinning, fingeravtrykksporarar og sporingsinnhald.";
+"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "KARMA blokkerer sporing på tvers av nettstadar, sporing via sosiale medium, kryptoutvinning, fingeravtrykksporarar og sporingsinnhald.";
 
 /* Label for the button, displayed in the menu, takes you to to History screen when pressed. */
 "Menu.History.Label" = "Historikk";
@@ -835,7 +835,7 @@
 "Menu.TrackingProtection.Details.Verifier" = "Stadfesta av %@";
 
 /* Message in menu when no trackers blocked. */
-"Menu.TrackingProtection.NoTrackersBlockedTitle" = "Ingen sporarar kjende for Karma vart oppdaga på denne sida.";
+"Menu.TrackingProtection.NoTrackersBlockedTitle" = "Ingen sporarar kjende for KARMA vart oppdaga på denne sida.";
 
 /* The title for tracking protection settings */
 "Menu.TrackingProtection.ProtectionSettings.Title" = "Verneinnstillingar";
@@ -850,7 +850,7 @@
 "Menu.TrackingProtectionBlockedSocial.Title" = "Sporing via sosiale medium";
 
 /* Description of the Tracking protection menu when TP is blocking parts of the page */
-"Menu.TrackingProtectionBlocking.Description" = "Karma blokkerer delar av sida som kan spore surfinga di.";
+"Menu.TrackingProtectionBlocking.Description" = "KARMA blokkerer delar av sida som kan spore surfinga di.";
 
 /* The description of the Tracking Protection menu item when tracking is enabled */
 "Menu.TrackingProtectionBlockingDisabled.Description" = "Blokker online-sporarar";
@@ -953,7 +953,7 @@
 "Okay" = "OK";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Karma crashed" = "Ops! Karma krasja";
+"Oops! KARMA crashed" = "Ops! KARMA krasja";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "Opne artiklar i lesevising ved å trykkje på bok-ikonet når du ser det i adresselinja.";
@@ -964,8 +964,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "Opne faner";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Karma, or any external app. */
-"OpenURL.Error.Message" = "Karma kan ikkje opne sida fordi ho har ei ugyldig adresse.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
+"OpenURL.Error.Message" = "KARMA kan ikkje opne sida fordi ho har ei ugyldig adresse.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "Klarte ikkje å opne sida";
@@ -980,19 +980,19 @@
 "Password" = "Passord";
 
 /* Error message shown in the remote tabs panel */
-"PasswordAutoFill.NoPasswordsFoundTitle" = "Du har ingen autentiseringsopplysningar synkroniserte frå Karma-kontoen din";
+"PasswordAutoFill.NoPasswordsFoundTitle" = "Du har ingen autentiseringsopplysningar synkroniserte frå KARMA-kontoen din";
 
 /* Header for the list of credentials table */
 "PasswordAutoFill.PasswordsListTitle" = "Tilgjengelege autentiseringsopplysningar:";
 
-/* Title of the extension that shows Karma passwords */
-"PasswordAutoFill.SectionTitle" = "Karma-autentiseringsopplysningar";
+/* Title of the extension that shows KARMA passwords */
+"PasswordAutoFill.SectionTitle" = "KARMA-autentiseringsopplysningar";
 
 /* See http://mzl.la/1G7uHo7 */
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "Dette vil tillate lagring av bildet til kamerarullen din.";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Karma ønskjer tilgang til bilda dine";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "KARMA ønskjer tilgang til bilda dine";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "Lat att";
@@ -1000,7 +1000,7 @@
 /* Privacy section title */
 "Privacy" = "Personvern";
 
-/* Show Karma Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/Karma/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "Personvernpraksis";
 
 /* This is the value for a label that indicates if a user is on an unencrypted website. */
@@ -1073,7 +1073,7 @@
 "ScanQRCode.InvalidDataError.Message" = "Ugyldige data";
 
 /* Text of the prompt user to setup the camera authorization. */
-"ScanQRCode.PermissionError.Message" = "La Karma få tilgang til kameraet i eininga, i «Innstilligar» -> «Personvern» -> «Kamera».";
+"ScanQRCode.PermissionError.Message" = "La KARMA få tilgang til kameraet i eininga, i «Innstilligar» -> «Personvern» -> «Kamera».";
 
 /* Title for the QR code scanner view. */
 "ScanQRCode.View.Title" = "Skann QR-kode";
@@ -1157,19 +1157,19 @@
 "SendTo.NavBar.Title" = "Send fane";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "Du har ingen andre einingar tilkopla til denne Karma-kontoen som er tilgjengelege for synkronisering.";
+"SendTo.NoDevicesFound.Message" = "Du har ingen andre einingar tilkopla til denne KARMA-kontoen som er tilgjengelege for synkronisering.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "Ver snill og opne Karma, gå till Instillingar og logg inn for å fortsetje.";
+"SendTo.NotSignedIn.Message" = "Ver snill og opne KARMA, gå till Instillingar og logg inn for å fortsetje.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "Du er ikkje innlogga med Karma-kontoen din.";
+"SendTo.NotSignedIn.Title" = "Du er ikkje innlogga med KARMA-kontoen din.";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "Send";
 
-/* The text for the button on the Send to Device page if you are not signed in to Karma Accounts. */
-"SendTo.SignIn.Button" = "Logg inn på Karma";
+/* The text for the button on the Send to Device page if you are not signed in to KARMA Accounts. */
+"SendTo.SignIn.Button" = "Logg inn på KARMA";
 
 /* Body of notification shown when the device is sent one or more tabs from an unnamed device. */
 "SentTab_TabArrivingNotification_NoDevice_body" = "Ny fane mottatt frå ei anna eining.";
@@ -1193,7 +1193,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Trykk for å starte";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "Karma Sync";
+"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Vis";
@@ -1256,7 +1256,7 @@
 "Settings.DataManagement.Title" = "Databehandling";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "Karma vil slutta å synkronisera med kontoen din, men vil ikkje sletta nokon av nettlesardataa dine på denne eininga.";
+"Settings.Disconnect.Body" = "KARMA vil slutta å synkronisera med kontoen din, men vil ikkje sletta nokon av nettlesardataa dine på denne eininga.";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "Kople frå Sync";
@@ -1325,11 +1325,11 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "Einingsnamn";
 
-/* Label used as a section title in the Karma Accounts Settings screen. */
+/* Label used as a section title in the KARMA Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "Sync-innstillingar";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "Karma-konto";
+"Settings.FxA.Title" = "KARMA-konto";
 
 /* General settings section title */
 "Settings.General.SectionName" = "Generelt";
@@ -1383,10 +1383,10 @@
 "Settings.NewTab.Option.CustomizeFooter2" = "Nettstadar du lagrar eller besøkjer";
 
 /* The title for the section to customize top sites in the new tab settings page. */
-"Settings.NewTab.Option.CustomizeTitle" = "Tilpass Karma-startsida";
+"Settings.NewTab.Option.CustomizeTitle" = "Tilpass KARMA-startsida";
 
-/* Option in settings to show Karma Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "Karma startside";
+/* Option in settings to show KARMA Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "KARMA startside";
 
 /* Option in the settings to turn off recent bookmarks in the Highlights section */
 "Settings.NewTab.Option.HighlightsBookmarks" = "Siste bokmerke";
@@ -1428,7 +1428,7 @@
 "Settings.NewTab.TopSectionNameFooter" = "Vel kva som skal lastast inn når du opnar ei ny fane";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "Når du opnar Karma";
+"Settings.OfferClipboardBar.Status" = "Når du opnar KARMA";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "Tilby å opne kopierte lenker";
@@ -1452,7 +1452,7 @@
 "Settings.SendUsage.Link" = "Les meir.";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "Mozilla strevar etter å berre samle inn det vi treng for å tilby og forbetre Karma for alle.";
+"Settings.SendUsage.Message" = "Mozilla strevar etter å berre samle inn det vi treng for å tilby og forbetre KARMA for alle.";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "Send bruksdata";
@@ -1470,7 +1470,7 @@
 "Settings.Siri.OpenTabShortcut" = "Opne ny fane";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "Bruk Siri-snarvegar for å raskt opne Karma via Siri";
+"Settings.Siri.SectionDescription" = "Bruk Siri-snarvegar for å raskt opne KARMA via Siri";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "Siri-snarvegar";
@@ -1494,7 +1494,7 @@
 "Settings.Studies.Toggle.Link" = "Les meir.";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "Karma kan installere og køyre studiar av og til.";
+"Settings.Studies.Toggle.Message" = "KARMA kan installere og køyre studiar av og til.";
 
 /* Toggled OFF to opt-out of studies */
 "Settings.Studies.Toggle.Off" = "Av";
@@ -1515,7 +1515,7 @@
 "Settings.TrackingProtection.Alert.Title" = "Varsel!";
 
 /* Header description for tracking protection options section where Basic/Strict block list can be selected */
-"Settings.TrackingProtection.BlockListsHeader" = "Du kan velje kva for lister Karma skal bruke for å blokkere webelement som kan spore nettlesaraktiviteten din.";
+"Settings.TrackingProtection.BlockListsHeader" = "Du kan velje kva for lister KARMA skal bruke for å blokkere webelement som kan spore nettlesaraktiviteten din.";
 
 /* Explanation of basic mode. */
 "Settings.TrackingProtection.Info.BasicTitle" = "Balansert for vern og yting.";
@@ -1610,32 +1610,32 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "Nettstaddata";
 
-/* Action label on share extension to add page to the Karma reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "Legg til i leselista";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "Lagt til i leselista";
 
-/* Action label on share extension to bookmark the page in Karma. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "Bokmerk denne sida";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "Bokmerkt";
 
-/* Action label on share extension to load the page in Karma when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "Last inn i bakgrunnen";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "Lastar i Karma";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "Lastar i KARMA";
 
-/* Action label on share extension to immediately open page in Karma. */
-"ShareExtension.OpenInFirefoxAction.Title" = "Opne i Karma";
+/* Action label on share extension to immediately open page in KARMA. */
+"ShareExtension.OpenInFirefoxAction.Title" = "Opne i KARMA";
 
-/* Action label on share extension to immediately open page in Karma in private mode. */
+/* Action label on share extension to immediately open page in KARMA in private mode. */
 "ShareExtension.OpenInPrivateModeAction.Title" = "Opne i privatmodus";
 
-/* Action label on share extension to search for the selected text in Karma. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Søk i Karma";
+/* Action label on share extension to search for the selected text in KARMA. */
+"ShareExtension.SeachInFirefoxAction.Title" = "Søk i KARMA";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "Vis søkjeforslag";
@@ -1672,7 +1672,7 @@
 "Sync.FirstTimeMessage.Label" = "Første synkronisering kan ta litt tid";
 
 /* String displayed on Sign In to Sync page that allows the user to create a new account. */
-"Sync.NoAccount.Description" = "Ingen konto? Lag ein for å synkronisere Karma mellom einingar.";
+"Sync.NoAccount.Description" = "Ingen konto? Lag ein for å synkronisere KARMA mellom einingar.";
 
 /* Message displayed when the user's account is syncing with no ellipsis */
 "Sync.Syncing.Label" = "Synkroniserer";
@@ -1791,7 +1791,7 @@
 /* The section header for tabs opened yesterday */
 "TabTray.Yesterday.Header" = "I går";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "The page could not be displayed in Reader View." = "Denne sida kunne ikkje visast i lesevising.";
 
 /* Error message in the remote tabs panel */
@@ -1849,13 +1849,13 @@
 "UIMenuItem.PasteGo" = "Lim inn og gå til sida";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "Søk med Karma";
+"UIMenuItem.SearchWithFirefox" = "Søk med KARMA";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "ulesen";
 
 /* Text message in the settings table view */
-"Upgrade Karma to connect" = "Oppgrader Karma for å kople til";
+"Upgrade KARMA to connect" = "Oppgrader KARMA for å kople til";
 
 /* Debug option */
 "Use stage servers" = "Bruk testserver";
@@ -1866,7 +1866,7 @@
 /* Text message in the settings table view */
 "Verify your email address" = "Stadfest e-postadressa di";
 
-/* Version number of Karma shown in settings */
+/* Version number of KARMA shown in settings */
 "Version %@ (%@)" = "Versjon %1$@ (%2$@)";
 
 /* Accessibility label for the main web content view */
@@ -1888,7 +1888,7 @@
 "Yesterday" = "I går";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Karma on your other devices." = "Du har ingen faner opne i Karma på andre einingar.";
+"You don’t have any tabs open in KARMA on your other devices." = "Du har ingen faner opne i KARMA på andre einingar.";
 
 /* Your Rights settings section title */
 "Your Rights" = "Dine rettar";

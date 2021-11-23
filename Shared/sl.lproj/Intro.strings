@@ -7,10 +7,10 @@
 /* Next button on the first intro screen. */
 "Intro.Slides.Button.Next" = "Naprej";
 
-/* Sign in to Karma account button on second intro screen. */
+/* Sign in to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignIn" = "Prijava";
 
-/* Sign up to Karma account button on second intro screen. */
+/* Sign up to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignUp" = "Registracija";
 
 /* Description for the second item in the table related to fast searching via address bar */
@@ -19,11 +19,11 @@
 /* Title for the second item in the table related to fast searching via address bar */
 "Intro.Slides.Fast.Search.Title" = "Hitro iskanje";
 
-/* Description for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Description" = "Prinesite zaznamke, zgodovino in gesla v Karma na tej napravi.";
+/* Description for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Description" = "Prinesite zaznamke, zgodovino in gesla v KARMA na tej napravi.";
 
-/* Title for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Title" = "Sinhronizirajte Karma med napravami";
+/* Title for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Title" = "Sinhronizirajte KARMA med napravami";
 
 /* Description for the 'Mail' panel in the First Run tour. */
 "Intro.Slides.Mail.Description" = "Uporabite poljubni poštni odjemalec s Firefoxom, ne le Mail.";
@@ -37,10 +37,10 @@
 /* Title for the third panel 'Private Browsing' in the First Run tour. */
 "Intro.Slides.Private.Title" = "Brskajte, kot da vas nihče ne gleda";
 
-/* Description for the third item in the table related to safe syncing with a Karma account */
-"Intro.Slides.Safe.Sync.Description" = "Zaščitite svoje prijave in podatke povsod, kjer uporabljate Karma.";
+/* Description for the third item in the table related to safe syncing with a KARMA account */
+"Intro.Slides.Safe.Sync.Description" = "Zaščitite svoje prijave in podatke povsod, kjer uporabljate KARMA.";
 
-/* Title for the third item in the table related to safe syncing with a Karma account */
+/* Title for the third item in the table related to safe syncing with a KARMA account */
 "Intro.Slides.Safe.Sync.Title" = "Varna sinhronizacija";
 
 /* Description for the 'Favorite Search Engine' panel in the First Run tour. */

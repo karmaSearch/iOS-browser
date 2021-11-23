@@ -1,16 +1,16 @@
-/* Button string to open settings that allows user to switch their default browser to Karma. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Button" = "Ayarlara git";
 
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Nasıl yapılacağını öğren";
 
-/* Description for small card shown that allows user to switch their default browser to Karma. */
+/* Description for small card shown that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Description" = "Web siteleri, e-postalar ve Mesajlar’daki bağlantılar Firefox’ta açılsın.";
 
-/* Title for small card shown that allows user to switch their default browser to Karma. */
+/* Title for small card shown that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Title" = "Saptanmış tarayıcınızı değiştirin";
 
-/* Button string to open settings that allows user to switch their default browser to Karma. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserOnboarding.Button" = "Ayarlar’a git";
 
 /* Description for default browser onboarding card. */
@@ -22,9 +22,9 @@
 /* Description for default browser onboarding card. */
 "DefaultBrowserOnboarding.Description3" = "3. Firefox’u seçin";
 
-/* Text for the screenshot of the iOS system settings page for Karma. */
+/* Text for the screenshot of the iOS system settings page for KARMA. */
 "DefaultBrowserOnboarding.Screenshot" = "Saptanmış Tarayıcı Uygulaması";
 
-/* Menu option for setting Karma as default browser. */
+/* Menu option for setting KARMA as default browser. */
 "Settings.DefaultBrowserMenuItem" = "Saptanmış tarayıcı yap";
 

@@ -7,10 +7,10 @@
 /* Next button on the first intro screen. */
 "Intro.Slides.Button.Next" = "अर्को";
 
-/* Sign in to Karma account button on second intro screen. */
+/* Sign in to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignIn" = "साइन इन";
 
-/* Sign up to Karma account button on second intro screen. */
+/* Sign up to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignUp" = "साइन अप";
 
 /* Description for the second item in the table related to fast searching via address bar */
@@ -19,14 +19,14 @@
 /* Title for the second item in the table related to fast searching via address bar */
 "Intro.Slides.Fast.Search.Title" = "द्रुत खोजी";
 
-/* Description for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Description" = "यस उपकरणको फायरफक्समा बुकमार्कहरू, ईतिहास र पासवर्डहरू ल्याउनुहोस् ।";
+/* Description for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Description" = "यस उपकरणको फायरफक्समा बुकमार्कहरू, ईतिहास र पासवर्डहरू ल्याउनुहोस् ।";
 
-/* Title for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Title" = "उपकरणहरू बीच फायरफक्स सिंक गर्नुहोस्";
+/* Title for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Title" = "उपकरणहरू बीच फायरफक्स सिंक गर्नुहोस्";
 
 /* Description for the 'Mail' panel in the First Run tour. */
-"Intro.Slides.Mail.Description" = "कुनै पनि इमेल एप प्रयोग गर्नुहोस् - मेल मात्र हैन - Karma को साथमा ।";
+"Intro.Slides.Mail.Description" = "कुनै पनि इमेल एप प्रयोग गर्नुहोस् - मेल मात्र हैन - KARMA को साथमा ।";
 
 /* Title for the fourth panel 'Mail' in the First Run tour. */
 "Intro.Slides.Mail.Title" = "तपाईँले मेलहरू पाउनु भएको छ … विकल्पहरू";
@@ -37,10 +37,10 @@
 /* Title for the third panel 'Private Browsing' in the First Run tour. */
 "Intro.Slides.Private.Title" = "कसैले पनि नहेरे झैँ ब्राउज गर्नुहोस्";
 
-/* Description for the third item in the table related to safe syncing with a Karma account */
+/* Description for the third item in the table related to safe syncing with a KARMA account */
 "Intro.Slides.Safe.Sync.Description" = "तपाईको लगइनहरू र डेटा सुरक्षित गर्नुहोस् जहाँ तपाईं फायरफक्स प्रयोग गर्नुहुन्छ ।";
 
-/* Title for the third item in the table related to safe syncing with a Karma account */
+/* Title for the third item in the table related to safe syncing with a KARMA account */
 "Intro.Slides.Safe.Sync.Title" = "सुरक्षित sync";
 
 /* Description for the 'Favorite Search Engine' panel in the First Run tour. */

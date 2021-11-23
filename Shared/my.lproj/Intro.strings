@@ -7,10 +7,10 @@
 /* Next button on the first intro screen. */
 "Intro.Slides.Button.Next" = "ရှေ့သို့";
 
-/* Sign in to Karma account button on second intro screen. */
+/* Sign in to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignIn" = "၀င်ပါ";
 
-/* Sign up to Karma account button on second intro screen. */
+/* Sign up to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignUp" = "စတင်သုံးရန် စာရင်းသွင်းပါ";
 
 /* Description for the second item in the table related to fast searching via address bar */
@@ -19,14 +19,14 @@
 /* Title for the second item in the table related to fast searching via address bar */
 "Intro.Slides.Fast.Search.Title" = "အမြန်ရှာဖွေရေး";
 
-/* Description for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Description" = "Bookmarks, history နှင့် password များကိုဤစက်ရှိ Karma သို့ယူဆောင်ပါ။";
+/* Description for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Description" = "Bookmarks, history နှင့် password များကိုဤစက်ရှိ KARMA သို့ယူဆောင်ပါ။";
 
-/* Title for the first item in the table related to syncing data (bookmarks, history) via Karma account between devices */
-"Intro.Slides.Karma.Account.Sync.Title" = "ကိရိယာများအကြား Karma ကိုထပ်တူပြုပါ";
+/* Title for the first item in the table related to syncing data (bookmarks, history) via KARMA account between devices */
+"Intro.Slides.KARMA.Account.Sync.Title" = "ကိရိယာများအကြား KARMA ကိုထပ်တူပြုပါ";
 
 /* Description for the 'Mail' panel in the First Run tour. */
-"Intro.Slides.Mail.Description" = "နှစ်သက်ရာ အီးမေးလ်အက်ပ်ကို အသုံးပြုပါ — Mail နှင့်သာမဟုတ်ပါ — Karma နှင့်ပါ။";
+"Intro.Slides.Mail.Description" = "နှစ်သက်ရာ အီးမေးလ်အက်ပ်ကို အသုံးပြုပါ — Mail နှင့်သာမဟုတ်ပါ — KARMA နှင့်ပါ။";
 
 /* Title for the fourth panel 'Mail' in the First Run tour. */
 "Intro.Slides.Mail.Title" = "သင့်ထံ စာဝင်လာသည်… ရွေးစရာများ";
@@ -37,10 +37,10 @@
 /* Title for the third panel 'Private Browsing' in the First Run tour. */
 "Intro.Slides.Private.Title" = "မည်သူမျှစောင့်ကြည့်မနေသကဲ့သို့ အသုံးပြုပါ";
 
-/* Description for the third item in the table related to safe syncing with a Karma account */
-"Intro.Slides.Safe.Sync.Description" = "သင် Karma ကို နေရာတိုင်း၌ သုံးခြင်းဖြင့် သင်၏ လော့အင် နှင့် အချက်အလက်များ ကို ကာကွယ်ပါ။";
+/* Description for the third item in the table related to safe syncing with a KARMA account */
+"Intro.Slides.Safe.Sync.Description" = "သင် KARMA ကို နေရာတိုင်း၌ သုံးခြင်းဖြင့် သင်၏ လော့အင် နှင့် အချက်အလက်များ ကို ကာကွယ်ပါ။";
 
-/* Title for the third item in the table related to safe syncing with a Karma account */
+/* Title for the third item in the table related to safe syncing with a KARMA account */
 "Intro.Slides.Safe.Sync.Title" = "Safe ထပ်တူပြုခြင်း";
 
 /* Description for the 'Favorite Search Engine' panel in the First Run tour. */
@@ -59,7 +59,7 @@
 "Intro.Slides.Welcome.Description.v2" = "သင့်အတွက် မြန်ဆန်လုံခြုံသောစနစ်";
 
 /* Title for the first panel 'Welcome' in the First Run tour. */
-"Intro.Slides.Welcome.Title.v2" = "Karma က ကြိုဆိုပါသည်";
+"Intro.Slides.Welcome.Title.v2" = "KARMA က ကြိုဆိုပါသည်";
 
 /* See http://mzl.la/1T8gxwo */
 "Start Browsing" = "စတင် သုံးစွဲမည်";

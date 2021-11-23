@@ -43,10 +43,10 @@
 /* Title for the Jump Back In section. This section allows users to jump back in to a recently viewed tab */
 "ActivityStream.JumpBackIn.SectionTitle" = "Jump Back In";
 
-/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
 "ActivityStream.JumpBackIn.TabGroup.SiteCount" = "Tabs: %d";
 
-/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
 "ActivityStream.JumpBackIn.TabGroup.Title" = "Your search for \"%@\"";
 
 /* A string used to signify the start of the Recently Saved section in Home Screen. */
@@ -191,7 +191,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "Passwords were leaked or stolen since you last changed your password. To protect this account, log in to the site and change your password.";
 
-/* Link to monitor.Karma.com to learn more about breached passwords */
+/* Link to monitor.KARMA.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "Learn more";
 
 /* Leads to a link to the breached website */
@@ -270,7 +270,7 @@
 "ContextMenu.ShareLinkButtonTitle" = "Share Link";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one talks about the more personalized home feature. */
-"ContextualHints.Homepage.PersonalizedHome" = "Your personalized Karma homepage now makes it easier to pick up where you left off. Find your recent tabs, bookmarks, and search results.";
+"ContextualHints.Homepage.PersonalizedHome" = "Your personalized KARMA homepage now makes it easier to pick up where you left off. Find your recent tabs, bookmarks, and search results.";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one is the call to action for the inactive tabs contextual popup.
    Contextual hints are little popups that appear for the users informing them of new features. This one talks about the inactive tabs feature. */
@@ -286,7 +286,7 @@
 "Could not load page." = "Could not load page.";
 
 /* Description for the new dark mode change in the version 22 app release. It describes the new automatic dark theme and how to change the theme settings. */
-"CoverSheet.v22.DarkMode.Description" = "For iOS 13 users, Karma now automatically switches to a dark theme when your phone is set to Dark Mode. To change this behaviour, go to Settings > Theme.";
+"CoverSheet.v22.DarkMode.Description" = "For iOS 13 users, KARMA now automatically switches to a dark theme when your phone is set to Dark Mode. To change this behaviour, go to Settings > Theme.";
 
 /* Title for the new dark mode change in the version 22 app release. */
 "CoverSheet.v22.DarkMode.Title" = "Dark theme now includes a dark keyboard and dark splash screen.";
@@ -341,8 +341,8 @@
 /* Alert dialog title when the user taps the cancel download icon. */
 "Downloads.CancelDialog.Title" = "Cancel Download";
 
-/* The message displayed to a user when they try and perform the download of an asset that Karma cannot currently handle. */
-"Downloads.Error.Message" = "Downloads aren’t supported in Karma yet.";
+/* The message displayed to a user when they try and perform the download of an asset that KARMA cannot currently handle. */
+"Downloads.Error.Message" = "Downloads aren’t supported in KARMA yet.";
 
 /* The label text in the Download Cancelled toast for showing confirmation that the download was cancelled. */
 "Downloads.Toast.Cancelled.LabelText" = "Download Cancelled";
@@ -387,7 +387,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "It may be a misconfiguration or tampering by an attacker. Proceed if you accept the potential risk.";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "The owner of %@ has configured their website improperly. To protect your information from being stolen, Karma has not connected to this website.";
+"ErrorPages.CertWarning.Description" = "The owner of %@ has configured their website improperly. To protect your information from being stolen, KARMA has not connected to this website.";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "This Connection is Untrusted";
@@ -407,10 +407,10 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for Karma about:home page in tab history list */
-"Karma.HomePage.Title" = "Karma Home Page";
+/* Title for KARMA about:home page in tab history list */
+"KARMA.HomePage.Title" = "KARMA Home Page";
 
-/* A button at bottom of the Karma homepage that, when clicked, takes users straight to the settings options, where they can customize the Karma Home page */
+/* A button at bottom of the KARMA homepage that, when clicked, takes users straight to the settings options, where they can customize the KARMA Home page */
 "FirefoxHome.CustomizeHomeButton.Title" = "Customize Homepage";
 
 /* Accessibility Label for the tab toolbar Forward button */
@@ -422,16 +422,16 @@
 /* Label stating your account is not verified */
 "FxA.AccountVerificationRequired" = "Account Verification Required";
 
-/* Message explaining that user needs to check email for Karma Account verfication link. */
-"FxA.AccountVerificationRequiredSurface" = "You need to verify %@. Check your email for the verification link from Karma.";
+/* Message explaining that user needs to check email for KARMA Account verfication link. */
+"FxA.AccountVerificationRequiredSurface" = "You need to verify %@. Check your email for the verification link from KARMA.";
 
 /* Button label to connect another device to Sync */
 "FxA.ConnectAnotherDevice" = "Connect Another Device";
 
-/* Settings section title for Karma Account */
-"FxA.FirefoxAccount" = "Karma Account";
+/* Settings section title for KARMA Account */
+"FxA.FirefoxAccount" = "KARMA Account";
 
-/* Button label to go to Karma Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "Manage Account & Devices";
 
 /* Label when no internet is present */
@@ -441,15 +441,15 @@
 "FxA.OpenSyncPreferences" = "Open Sync Preferences";
 
 /* Instructions shown on qr code scanning view */
-"fxa.qr-scanning-view.instructions" = "Scan the QR code shown at Karma.com/pair";
+"fxa.qr-scanning-view.instructions" = "Scan the QR code shown at KARMA.com/pair";
 
-/* Remove button is displayed on Karma account page under certain scenarios where user would like to remove their account. */
+/* Remove button is displayed on KARMA account page under certain scenarios where user would like to remove their account. */
 "FxA.RemoveAccount" = "Remove";
 
 /* Description string for alert view that gets presented when user tries to remove an account. */
-"FxA.RemoveAccountAlertMessage" = "Remove the Karma Account associated with this device to sign in as a different user.";
+"FxA.RemoveAccountAlertMessage" = "Remove the KARMA Account associated with this device to sign in as a different user.";
 
-/* Remove account alert is the final confirmation before user removes their Karma account */
+/* Remove account alert is the final confirmation before user removes their KARMA account */
 "FxA.RemoveAccountAlertTitle" = "Remove Account";
 
 /* Button label to resend email */
@@ -459,13 +459,13 @@
 "fxa.signin.camera-signin" = "Sign In with Your Camera";
 
 /* FxA sign in create account label. */
-"fxa.signin.create-account-pt-1" = "Synchronize Karma between devices with an account.";
+"fxa.signin.create-account-pt-1" = "Synchronize KARMA between devices with an account.";
 
 /* FxA sign in create account label. This will be linked to the site to create an account. */
-"fxa.signin.create-account-pt-2" = "Create Karma account.";
+"fxa.signin.create-account-pt-2" = "Create KARMA account.";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "On your computer open Karma and go to Karma.com/pair";
+"fxa.signin.qr-link-instruction" = "On your computer open KARMA and go to KARMA.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Ready to Scan";
@@ -482,14 +482,14 @@
 /* Label explaining what sync does */
 "FxA.SyncExplain" = "Get your tabs, bookmarks, and passwords from your other devices.";
 
-/* Button label to Sync your Karma Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "Sync Now";
 
 /* Call to action for sign into sync button */
 "FxA.TakeYourWebWithYou" = "Take Your Web With You";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "Karma Sync has connected to %@";
+"FxAPush_DeviceConnected_body" = "KARMA Sync has connected to %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Sync Connected";
@@ -498,7 +498,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ has been successfully disconnected.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "This device has been successfully disconnected from Karma Sync.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "This device has been successfully disconnected from KARMA Sync.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Sync Disconnected";
@@ -507,7 +507,7 @@
 "FxAPush_DeviceDisconnected_title" = "Sync Disconnected";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "A device has disconnected from Karma Sync";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "A device has disconnected from KARMA Sync";
 
 /* A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing. */
 "Get your open tabs, bookmarks, and passwords from your other devices." = "Get your open tabs, bookmarks, and passwords from your other devices.";
@@ -555,7 +555,7 @@
 "HistoryPanel.EmptySyncedTabsPanelTabSyncDisabledState.Description" = "Turn on tab syncing to view a list of tabs from your other devices.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "Karma Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "History";
@@ -645,7 +645,7 @@
 "InactiveTabs.TabTray.AutoClosePrompt.ButtonTitle" = "Turn on Auto Close";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This string describes what happens if you elect to turn on this option. */
-"InactiveTabs.TabTray.AutoClosePrompt.Content" = "Karma will close tabs you haven’t viewed over the past month.";
+"InactiveTabs.TabTray.AutoClosePrompt.Content" = "KARMA will close tabs you haven’t viewed over the past month.";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This is the title of that Auto Close prompt */
 "InactiveTabs.TabTray.AutoClosePrompt.Title" = "Auto-close after one month?";
@@ -674,10 +674,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "Light";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "Load original page";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Karma reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "Loading content…";
 
 /* Authentication prompt log in button */
@@ -729,7 +729,7 @@
 "LoginsList.LoginsListSearchPlaceholder" = "Filter";
 
 /* Label shown when there are no logins to list */
-"LoginsList.NoLoginsFound.Description" = "Saved logins will show up here. If you saved your logins to Karma on a different device, sign in to your Karma Account.";
+"LoginsList.NoLoginsFound.Description" = "Saved logins will show up here. If you saved your logins to KARMA on a different device, sign in to your KARMA Account.";
 
 /* Label shown when there are no logins saved */
 "LoginsList.NoLoginsFound.Title" = "No logins found";
@@ -753,7 +753,7 @@
 "LoginsList.Title" = "SAVED LOGINS";
 
 /* Restore Tabs Prompt Description */
-"Looks like Karma crashed previously. Would you like to restore your tabs?" = "Looks like Karma crashed previously. Would you like to restore your tabs?";
+"Looks like KARMA crashed previously. Would you like to restore your tabs?" = "Looks like KARMA crashed previously. Would you like to restore your tabs?";
 
 /* Name for Mark as read button in reader mode
    Title for the button that marks a reading list item as read */
@@ -797,10 +797,10 @@
 "Menu.EnhancedTrackingProtectionOn.Title" = "Enhanced Tracking Protection is ON for this site.";
 
 /* Description for having standard ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "Karma blocks cross-site trackers, social trackers, cryptominers, and fingerprinters.";
+"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "KARMA blocks cross-site trackers, social trackers, cryptominers, and fingerprinters.";
 
 /* Description for having strict ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "Karma blocks cross-site trackers, social trackers, cryptominers, fingerprinters, and tracking content.";
+"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "KARMA blocks cross-site trackers, social trackers, cryptominers, fingerprinters, and tracking content.";
 
 /* Label for the button, displayed in the menu, takes you to to History screen when pressed. */
 "Menu.History.Label" = "History";
@@ -866,7 +866,7 @@
 "Menu.TrackingProtection.Details.Verifier" = "Verified by %@";
 
 /* Message in menu when no trackers blocked. */
-"Menu.TrackingProtection.NoTrackersBlockedTitle" = "No trackers known to Karma were detected on this page.";
+"Menu.TrackingProtection.NoTrackersBlockedTitle" = "No trackers known to KARMA were detected on this page.";
 
 /* The title for tracking protection settings */
 "Menu.TrackingProtection.ProtectionSettings.Title" = "Protection Settings";
@@ -881,7 +881,7 @@
 "Menu.TrackingProtectionBlockedSocial.Title" = "Social Trackers";
 
 /* Description of the Tracking protection menu when TP is blocking parts of the page */
-"Menu.TrackingProtectionBlocking.Description" = "Karma is blocking parts of the page that may track your browsing.";
+"Menu.TrackingProtectionBlocking.Description" = "KARMA is blocking parts of the page that may track your browsing.";
 
 /* The description of the Tracking Protection menu item when tracking is enabled */
 "Menu.TrackingProtectionBlockingDisabled.Description" = "Block online trackers";
@@ -983,33 +983,33 @@
 /* Restore Tabs Affirmative Action */
 "Okay" = "Okay";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the button, on the bottom of the card, used to get back to browsing on Karma by dismissing the onboarding card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the button, on the bottom of the card, used to get back to browsing on KARMA by dismissing the onboarding card */
 "Onboarding.WhatsNew.Button.Title" = "Start Browsing";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is a general description that appears under the title for what the card is about. */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is a general description that appears under the title for what the card is about. */
 "Onboarding.WhatsNew.Description" = "It’s now easier to pick up where you left off.";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is the description for the Jump Back In bullet point */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is the description for the Jump Back In bullet point */
 "Onboarding.WhatsNew.PersonalizedHome.Description" = "Jump to your open tabs, bookmarks, and browsing history.";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the descripion of the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the descripion of the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Description" = "Revisit your latest searches from your homepage.";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Title" = "Recent Searches";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the description for the Tab Group bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the description for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Description" = "Pages from the same search get grouped together.";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Tab Group bullet point on the card */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is the title for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Title" = "Tidier Tab Groups";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Jump Back In bullet point on the card
-   The title for the new onboarding card letting users know what is new in Karma iOS */
-"Onboarding.WhatsNew.Title" = "What’s New in Karma";
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is the title for the Jump Back In bullet point on the card
+   The title for the new onboarding card letting users know what is new in KARMA iOS */
+"Onboarding.WhatsNew.Title" = "What’s New in KARMA";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Karma crashed" = "Oops! Karma crashed";
+"Oops! KARMA crashed" = "Oops! KARMA crashed";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "Open articles in Reader View by tapping the book icon when it appears in the title bar.";
@@ -1020,8 +1020,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "Open Tabs";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Karma, or any external app. */
-"OpenURL.Error.Message" = "Karma cannot open the page because it has an invalid address.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
+"OpenURL.Error.Message" = "KARMA cannot open the page because it has an invalid address.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "Cannot Open Page";
@@ -1036,19 +1036,19 @@
 "Password" = "Password";
 
 /* Error message shown in the remote tabs panel */
-"PasswordAutoFill.NoPasswordsFoundTitle" = "You don’t have any credentials synced from your Karma Account";
+"PasswordAutoFill.NoPasswordsFoundTitle" = "You don’t have any credentials synced from your KARMA Account";
 
 /* Header for the list of credentials table */
 "PasswordAutoFill.PasswordsListTitle" = "Available Credentials:";
 
-/* Title of the extension that shows Karma passwords */
-"PasswordAutoFill.SectionTitle" = "Karma Credentials";
+/* Title of the extension that shows KARMA passwords */
+"PasswordAutoFill.SectionTitle" = "KARMA Credentials";
 
 /* See http://mzl.la/1G7uHo7 */
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "This allows you to save the image to your Camera Roll.";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Karma would like to access your Photos";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "KARMA would like to access your Photos";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "Close";
@@ -1056,7 +1056,7 @@
 /* Privacy section title */
 "Privacy" = "Privacy";
 
-/* Show Karma Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/Karma/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "Privacy Policy";
 
 /* This is the value for a label that indicates if a user is on an unencrypted website. */
@@ -1129,7 +1129,7 @@
 "ScanQRCode.InvalidDataError.Message" = "The data is invalid";
 
 /* Text of the prompt user to setup the camera authorization. */
-"ScanQRCode.PermissionError.Message" = "Please allow Karma to access your device’s camera in ‘Settings’ -> ‘Privacy’ -> ‘Camera’.";
+"ScanQRCode.PermissionError.Message" = "Please allow KARMA to access your device’s camera in ‘Settings’ -> ‘Privacy’ -> ‘Camera’.";
 
 /* Title for the QR code scanner view. */
 "ScanQRCode.View.Title" = "Scan QR Code";
@@ -1140,7 +1140,7 @@
 "Search" = "Search";
 
 /* The text shown in the URL bar on about:home */
-"Search or enter address" = "Search the web with Karma";
+"Search or enter address" = "Search the web with KARMA";
 
 /* Search suggestion cell label that allows user to switch to tab which they searched for in url bar */
 "Search.Awesomebar.SwitchToTab" = "Switch to tab";
@@ -1213,19 +1213,19 @@
 "SendTo.NavBar.Title" = "Send Tab";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "You don’t have any other devices connected to this Karma Account available to sync.";
+"SendTo.NoDevicesFound.Message" = "You don’t have any other devices connected to this KARMA Account available to sync.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "Please open Karma, go to Settings and sign in to continue.";
+"SendTo.NotSignedIn.Message" = "Please open KARMA, go to Settings and sign in to continue.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "You are not signed in to your Karma Account.";
+"SendTo.NotSignedIn.Title" = "You are not signed in to your KARMA Account.";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "Send";
 
-/* The text for the button on the Send to Device page if you are not signed in to Karma Accounts. */
-"SendTo.SignIn.Button" = "Sign In to Karma";
+/* The text for the button on the Send to Device page if you are not signed in to KARMA Accounts. */
+"SendTo.SignIn.Button" = "Sign In to KARMA";
 
 /* Body of notification shown when the device is sent one or more tabs from an unnamed device. */
 "SentTab_TabArrivingNotification_NoDevice_body" = "New tab arrived from another device.";
@@ -1249,7 +1249,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Tap to begin";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "Karma Sync";
+"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "View";
@@ -1312,7 +1312,7 @@
 "Settings.DataManagement.Title" = "Data Management";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "Karma will stop syncing with your account, but won’t delete any of your browsing data on this device.";
+"Settings.Disconnect.Body" = "KARMA will stop syncing with your account, but won’t delete any of your browsing data on this device.";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "Disconnect Sync";
@@ -1381,53 +1381,53 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "Device Name";
 
-/* Label used as a section title in the Karma Accounts Settings screen. */
+/* Label used as a section title in the KARMA Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "Sync Settings";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "Karma Account";
+"Settings.FxA.Title" = "KARMA Account";
 
 /* General settings section title */
 "Settings.General.SectionName" = "General";
 
-/* In the settings menu, on the Karma homepage customization section, this is the description below the section, describing what the options in the section are for. */
-"Settings.Home.Option.Description" = "Choose content you see on the Karma homepage.";
+/* In the settings menu, on the KARMA homepage customization section, this is the description below the section, describing what the options in the section are for. */
+"Settings.Home.Option.Description" = "Choose content you see on the KARMA homepage.";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
 "Settings.Home.Option.JumpBackIn" = "Jump Back In";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the KARMA homepage on or off */
 "Settings.Home.Option.Pocket" = "Recommended by Pocket";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentlySaved" = "Recently Saved";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
 "Settings.Home.Option.RecentlyVisited" = "Recently Visited";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentSearches" = "Recent Searches";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the KARMA homepage on or off */
 "Settings.Home.Option.Shortcuts" = "Shortcuts";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage after four hours of inactivity. */
 "Settings.Home.Option.StartAtHome.AfterFourHours" = "Homepage after four hours of inactivity";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Karma */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Always" = "Homepage";
 
 /* In the settings menu, in the Start at Home customization options, this is text that appears below the section, describing what the section settings do. */
-"Settings.Home.Option.StartAtHome.Description" = "Choose what you see when you return to Karma.";
+"Settings.Home.Option.StartAtHome.Description" = "Choose what you see when you return to KARMA.";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Karma */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Never" = "Last tab";
 
-/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Karma Homepage. */
+/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the KARMA Homepage. */
 "Settings.Home.Option.StartAtHome.Title" = "Opening screen";
 
-/* In the settings menu, this is the title of the Karma Homepage customization settings section */
-"Settings.Home.Option.Title" = "Karma Homepage";
+/* In the settings menu, this is the title of the KARMA Homepage customization settings section */
+"Settings.Home.Option.Title" = "KARMA Homepage";
 
 /* Button in settings to clear the home page. */
 "Settings.HomePage.Clear.Button" = "Clear";
@@ -1478,10 +1478,10 @@
 "Settings.NewTab.Option.CustomizeFooter2" = "Sites you save or visit";
 
 /* The title for the section to customize top sites in the new tab settings page. */
-"Settings.NewTab.Option.CustomizeTitle" = "Customize Karma Home";
+"Settings.NewTab.Option.CustomizeTitle" = "Customize KARMA Home";
 
-/* Option in settings to show Karma Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "Karma Home";
+/* Option in settings to show KARMA Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "KARMA Home";
 
 /* Option in the settings to turn off recent bookmarks in the Highlights section */
 "Settings.NewTab.Option.HighlightsBookmarks" = "Recent Bookmarks";
@@ -1523,7 +1523,7 @@
 "Settings.NewTab.TopSectionNameFooter" = "Choose what to load when opening a new tab";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "When Opening Karma";
+"Settings.OfferClipboardBar.Status" = "When Opening KARMA";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "Offer to Open Copied Links";
@@ -1547,7 +1547,7 @@
 "Settings.SendUsage.Link" = "Learn More.";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "Mozilla strives to only collect what we need to provide and improve Karma for everyone.";
+"Settings.SendUsage.Message" = "Mozilla strives to only collect what we need to provide and improve KARMA for everyone.";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "Send Usage Data";
@@ -1565,7 +1565,7 @@
 "Settings.Siri.OpenTabShortcut" = "Open New Tab";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "Use Siri shortcuts to quickly open Karma via Siri";
+"Settings.Siri.SectionDescription" = "Use Siri shortcuts to quickly open KARMA via Siri";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "Siri Shortcuts";
@@ -1589,7 +1589,7 @@
 "Settings.Studies.Toggle.Link" = "Learn More.";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "Karma may install and run studies from time to time.";
+"Settings.Studies.Toggle.Message" = "KARMA may install and run studies from time to time.";
 
 /* Toggled OFF to opt-out of studies */
 "Settings.Studies.Toggle.Off" = "Off";
@@ -1606,7 +1606,7 @@
 /* In the settings menu, in the Tabs customization section, this is the title for the setting that toggles the Tab Groups feature - where tabs from related searches are grouped - on or off */
 "Settings.Tabs.CustomizeTabsSection.TabGroups" = "Tab Groups";
 
-/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from Karma hompage */
+/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from KARMA hompage */
 "Settings.Tabs.CustomizeTabsSection.Title" = "Customize Tab Tray";
 
 /* In the settings menu, this is the title for the Tabs customization section option */
@@ -1622,7 +1622,7 @@
 "Settings.TrackingProtection.Alert.Title" = "Heads up!";
 
 /* Header description for tracking protection options section where Basic/Strict block list can be selected */
-"Settings.TrackingProtection.BlockListsHeader" = "You can choose which list Karma will use to block Web elements that may track your browsing activity.";
+"Settings.TrackingProtection.BlockListsHeader" = "You can choose which list KARMA will use to block Web elements that may track your browsing activity.";
 
 /* Explanation of basic mode. */
 "Settings.TrackingProtection.Info.BasicTitle" = "Balanced for protection and performance.";
@@ -1717,32 +1717,32 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "Website Data";
 
-/* Action label on share extension to add page to the Karma reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "Add to Reading List";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "Added to Reading List";
 
-/* Action label on share extension to bookmark the page in Karma. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "Bookmark This Page";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "Bookmarked";
 
-/* Action label on share extension to load the page in Karma when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "Load in Background";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "Loading in Karma";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "Loading in KARMA";
 
-/* Action label on share extension to immediately open page in Karma. */
-"ShareExtension.OpenInFirefoxAction.Title" = "Open in Karma";
+/* Action label on share extension to immediately open page in KARMA. */
+"ShareExtension.OpenInFirefoxAction.Title" = "Open in KARMA";
 
-/* Action label on share extension to immediately open page in Karma in private mode. */
+/* Action label on share extension to immediately open page in KARMA in private mode. */
 "ShareExtension.OpenInPrivateModeAction.Title" = "Open in Private Mode";
 
-/* Action label on share extension to search for the selected text in Karma. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Search in Karma";
+/* Action label on share extension to search for the selected text in KARMA. */
+"ShareExtension.SeachInFirefoxAction.Title" = "Search in KARMA";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "Show Search Suggestions";
@@ -1779,7 +1779,7 @@
 "Sync.FirstTimeMessage.Label" = "Your first sync may take a while";
 
 /* String displayed on Sign In to Sync page that allows the user to create a new account. */
-"Sync.NoAccount.Description" = "No account? Create one to synchronize Karma between devices.";
+"Sync.NoAccount.Description" = "No account? Create one to synchronize KARMA between devices.";
 
 /* Message displayed when the user's account is syncing with no ellipsis */
 "Sync.Syncing.Label" = "Syncing";
@@ -1901,7 +1901,7 @@
 /* The section header for tabs opened yesterday */
 "TabTray.Yesterday.Header" = "Yesterday";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "The page could not be displayed in Reader View." = "The page could not be displayed in Reader View.";
 
 /* Error message in the remote tabs panel */
@@ -1959,13 +1959,13 @@
 "UIMenuItem.PasteGo" = "Paste & Go";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "Search with Karma";
+"UIMenuItem.SearchWithFirefox" = "Search with KARMA";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "unread";
 
 /* Text message in the settings table view */
-"Upgrade Karma to connect" = "Upgrade Karma to connect";
+"Upgrade KARMA to connect" = "Upgrade KARMA to connect";
 
 /* Debug option */
 "Use stage servers" = "Use stage servers";
@@ -1976,7 +1976,7 @@
 /* Text message in the settings table view */
 "Verify your email address" = "Verify your email address";
 
-/* Version number of Karma shown in settings */
+/* Version number of KARMA shown in settings */
 "Version %@ (%@)" = "Version %1$@ (%2$@)";
 
 /* Accessibility label for the main web content view */
@@ -1998,7 +1998,7 @@
 "Yesterday" = "Yesterday";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Karma on your other devices." = "You don’t have any tabs open in Karma on your other devices.";
+"You don’t have any tabs open in KARMA on your other devices." = "You don’t have any tabs open in KARMA on your other devices.";
 
 /* Your Rights settings section title */
 "Your Rights" = "Your Rights";

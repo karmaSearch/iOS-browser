@@ -186,7 +186,9 @@ class IntroViewController: UIViewController, OnViewDismissable {
             self.didFinishClosure?(self, nil)
         }
         defaultBrowserView.settingsClosure = { [weak self] in
-            self?.goToSettings()
+            guard let self = self else { return }
+            self.goToSettings()
+            self.didFinishClosure?(self, nil)
         }
     }
     

@@ -22,7 +22,7 @@
 /* Quick Actions drop down menu item for new search when widget enters edit mode and drop down menu expands */
 "TodayWidget.DropDownMenuItemNewSearch" = "Új keresés";
 
-/* Description for medium size widget to add Karma Shortcut to home screen */
+/* Description for medium size widget to add KARMA Shortcut to home screen */
 "TodayWidget.FirefoxShortcutGalleryDescription" = "Firefoxos parancsikonok hozzáadása a kezdőképernyőhöz.";
 
 /* Go to link pasted on the clipboard */
@@ -55,16 +55,16 @@
 /* Label that is shown when there are no tabs opened in tab tray i.e. Empty State */
 "TodayWidget.NoOpenTabsLabelV2" = "Nincs nyitott lap";
 
-/* Open Karma when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenFirefoxLabel" = "Karma megnyitása";
+/* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
+"TodayWidget.OpenFirefoxLabel" = "KARMA megnyitása";
 
-/* Description for Karma Pocket stories widget in Gallery View where user can add it to home screen. Pocket is the name of another app. */
+/* Description for KARMA Pocket stories widget in Gallery View where user can add it to home screen. Pocket is the name of another app. */
 "TodayWidget.PocketWidgetGalleryDescription" = "Fedezzen fel az izgalmas és elgondolkodtató történeteket az internetről, a Pocket válogatásából.";
 
-/* Sub label for medium size Karma Pocket stories widge widget. Pocket is the name of another app. */
-"TodayWidget.PocketWidgetSubLabel" = "Karma – a Pocket ajánlásával";
+/* Sub label for medium size KARMA Pocket stories widge widget. Pocket is the name of another app. */
+"TodayWidget.PocketWidgetSubLabel" = "KARMA – a Pocket ajánlásával";
 
-/* Title for Karma Pocket stories widget in Gallery View where user can add it to home screen. Pocket is the name of another app. */
+/* Title for KARMA Pocket stories widget in Gallery View where user can add it to home screen. Pocket is the name of another app. */
 "TodayWidget.PocketWidgetTitle" = "A Pocket ajánlásával";
 
 /* Open New Private Tab button label */
@@ -77,16 +77,16 @@
 "TodayWidget.QuickActionDropDownMenu" = "Gyors művelet";
 
 /* Description for small size widget to add it to home screen */
-"TodayWidget.QuickActionGalleryDescription" = "Adjon egy Karma ikont a kezdőképernyőhöz. A kisalkalmazás hozzáadása után érintse meg és tartsa lenyomva a szerkesztéshez, majd válasszon egy másik ikont.";
+"TodayWidget.QuickActionGalleryDescription" = "Adjon egy KARMA ikont a kezdőképernyőhöz. A kisalkalmazás hozzáadása után érintse meg és tartsa lenyomva a szerkesztéshez, majd válasszon egy másik ikont.";
 
 /* Quick Actions title when widget enters edit mode */
 "TodayWidget.QuickActionsGalleryTitle" = "Gyors műveletek";
 
-/* Karma shortcuts title when widget enters edit mode. Do not translate the word Karma. */
-"TodayWidget.QuickActionsGalleryTitleV2" = "Karma-hivatkozások";
+/* KARMA shortcuts title when widget enters edit mode. Do not translate the word KARMA. */
+"TodayWidget.QuickActionsGalleryTitleV2" = "KARMA-hivatkozások";
 
 /* Sub label for medium size quick action widget */
-"TodayWidget.QuickActionsSubLabel" = "Karma – Gyors műveletek";
+"TodayWidget.QuickActionsSubLabel" = "KARMA – Gyors műveletek";
 
 /* Description for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryDescription" = "Érje el nyitott lapjait közvetlenül a kezdőképernyőn.";
@@ -101,35 +101,35 @@
 "TodayWidget.QuickViewLargeGalleryDescription" = "Parancsikonok hozzáadása a nyitott lapokhoz.";
 
 /* Sub label for Top Sites widget */
-"TodayWidget.QuickViewOpenTabsSubLabel" = "Karma – Nyitott lapok";
+"TodayWidget.QuickViewOpenTabsSubLabel" = "KARMA – Nyitott lapok";
 
-/* Title for small size widget which allows users to search in Karma. Do not translate the word Karma. */
+/* Title for small size widget which allows users to search in KARMA. Do not translate the word KARMA. */
 "TodayWidget.SearchInFirefoxTitle" = "Keresés a Firefoxban";
 
-/* Search in Karma. Do not translate the word Karma */
+/* Search in KARMA. Do not translate the word KARMA */
 "TodayWidget.SearchInFirefoxV2" = "Keresés a Firefoxban";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Keresés privát lapon";
 
-/* Description for top sites widget to add Karma top sites shotcuts to home screen */
+/* Description for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryDescription" = "Parancsikonok hozzáadása a gyakran és nemrég látogatott webhelyekhez.";
 
-/* Title for top sites widget to add Karma top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "Népszerű oldalak";
 
-/* Title for top sites widget to add Karma top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitleV2" = "Webhelyparancsok";
 
 /* Sub label for Top Sites widget */
-"TodayWidget.TopSitesSubLabel" = "Karma – Népszerű oldalak";
+"TodayWidget.TopSitesSubLabel" = "KARMA – Népszerű oldalak";
 
 /* Sub label for Shortcuts widget */
-"TodayWidget.TopSitesSubLabel2" = "Karma – Webhelyparancsok";
+"TodayWidget.TopSitesSubLabel2" = "KARMA – Webhelyparancsok";
 
 /* View More for Quick View widget in Gallery View where we don't know how many tabs might be opened */
 "TodayWidget.ViewMore" = "Több";
 
-/* View More… for Karma Pocket stories widget where we don't know how many articles are available. */
+/* View More… for KARMA Pocket stories widget where we don't know how many articles are available. */
 "TodayWidget.ViewMoreDots" = "Több…";
 

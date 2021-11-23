@@ -1,17 +1,17 @@
 /* Next button on the first intro screen. */
 "Intro.Slides.Button.Next" = "Sa susunod";
 
-/* Sign in to Karma account button on second intro screen. */
+/* Sign in to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignIn" = "Mag sign-in";
 
-/* Sign up to Karma account button on second intro screen. */
+/* Sign up to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignUp" = "Mag-sign Up";
 
 /* Title for the second item in the table related to fast searching via address bar */
 "Intro.Slides.Fast.Search.Title" = "Mabilis na Paghahanap";
 
 /* Description for the 'Mail' panel in the First Run tour. */
-"Intro.Slides.Mail.Description" = "Gamitin ang anumang email app - hindi lamang Mail - may Karma.";
+"Intro.Slides.Mail.Description" = "Gamitin ang anumang email app - hindi lamang Mail - may KARMA.";
 
 /* Title for the fourth panel 'Mail' in the First Run tour. */
 "Intro.Slides.Mail.Title" = "Nakakuha ka ng mga mail... opsyon";
@@ -22,7 +22,7 @@
 /* Title for the third panel 'Private Browsing' in the First Run tour. */
 "Intro.Slides.Private.Title" = "Mag-browse tulad ng walang nanonood";
 
-/* Title for the third item in the table related to safe syncing with a Karma account */
+/* Title for the third item in the table related to safe syncing with a KARMA account */
 "Intro.Slides.Safe.Sync.Title" = "Ligtas na Pag-sync";
 
 /* Description for the 'Favorite Search Engine' panel in the First Run tour. */
@@ -41,7 +41,7 @@
 "Intro.Slides.Welcome.Description.v2" = "Mabilis, pribado, at nasa tabi mo.";
 
 /* Title for the first panel 'Welcome' in the First Run tour. */
-"Intro.Slides.Welcome.Title.v2" = "Maligayang pagdating sa Karma";
+"Intro.Slides.Welcome.Title.v2" = "Maligayang pagdating sa KARMA";
 
 /* See http://mzl.la/1T8gxwo */
 "Start Browsing" = "Simulang mag-Browse";

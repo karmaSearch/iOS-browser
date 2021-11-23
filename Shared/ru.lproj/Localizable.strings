@@ -43,10 +43,10 @@
 /* Title for the Jump Back In section. This section allows users to jump back in to a recently viewed tab */
 "ActivityStream.JumpBackIn.SectionTitle" = "Перейти обратно в";
 
-/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
 "ActivityStream.JumpBackIn.TabGroup.SiteCount" = "Вкладки: %d";
 
-/* On the Karma homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
 "ActivityStream.JumpBackIn.TabGroup.Title" = "Ваш поиск \"%@\"";
 
 /* A string used to signify the start of the Recently Saved section in Home Screen. */
@@ -191,7 +191,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "С момента последней смены вами пароля произошла утечка или кража паролей. Чтобы защитить этот аккаунт, войдите на сайт и смените свой пароль.";
 
-/* Link to monitor.Karma.com to learn more about breached passwords */
+/* Link to monitor.KARMA.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "Подробнее";
 
 /* Leads to a link to the breached website */
@@ -270,7 +270,7 @@
 "ContextMenu.ShareLinkButtonTitle" = "Поделиться ссылкой";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one talks about the more personalized home feature. */
-"ContextualHints.Homepage.PersonalizedHome" = "На вашей персональной домашней странице Karma теперь легче продолжить с того места, где вы остановились. Найдите свои недавние вкладки, закладки и результаты поиска.";
+"ContextualHints.Homepage.PersonalizedHome" = "На вашей персональной домашней странице KARMA теперь легче продолжить с того места, где вы остановились. Найдите свои недавние вкладки, закладки и результаты поиска.";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one is the call to action for the inactive tabs contextual popup.
    Contextual hints are little popups that appear for the users informing them of new features. This one talks about the inactive tabs feature. */
@@ -286,7 +286,7 @@
 "Could not load page." = "Не удалось загрузить страницу.";
 
 /* Description for the new dark mode change in the version 22 app release. It describes the new automatic dark theme and how to change the theme settings. */
-"CoverSheet.v22.DarkMode.Description" = "У пользователей iOS 13 Karma теперь автоматически переключается на тёмную тему, когда ваш телефон переводится на Тёмное оформление. Чтобы изменить это поведение, перейдите в Параметры > Тема.";
+"CoverSheet.v22.DarkMode.Description" = "У пользователей iOS 13 KARMA теперь автоматически переключается на тёмную тему, когда ваш телефон переводится на Тёмное оформление. Чтобы изменить это поведение, перейдите в Параметры > Тема.";
 
 /* Title for the new dark mode change in the version 22 app release. */
 "CoverSheet.v22.DarkMode.Title" = "Тёмная тема теперь также распространяется на клавиатуру и заставку.";
@@ -341,8 +341,8 @@
 /* Alert dialog title when the user taps the cancel download icon. */
 "Downloads.CancelDialog.Title" = "Отменить загрузку";
 
-/* The message displayed to a user when they try and perform the download of an asset that Karma cannot currently handle. */
-"Downloads.Error.Message" = "Загрузки в Karma пока не поддерживаются.";
+/* The message displayed to a user when they try and perform the download of an asset that KARMA cannot currently handle. */
+"Downloads.Error.Message" = "Загрузки в KARMA пока не поддерживаются.";
 
 /* The label text in the Download Cancelled toast for showing confirmation that the download was cancelled. */
 "Downloads.Toast.Cancelled.LabelText" = "Загрузка отменена";
@@ -387,7 +387,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "Это может быть из-за неправильной настройки или атаки злоумышленника. Вы можете продолжить, если принимаете на себя потенциальный риск.";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "Владелец %@ неправильно настроил свой веб-сайт. Чтобы защитить вашу информацию от кражи, Karma не соединился с этим веб-сайтом.";
+"ErrorPages.CertWarning.Description" = "Владелец %@ неправильно настроил свой веб-сайт. Чтобы защитить вашу информацию от кражи, KARMA не соединился с этим веб-сайтом.";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "Ваше соединение не защищено";
@@ -407,10 +407,10 @@
 /* Tile title for Facebook */
 "Facebook" = "Фейсбук";
 
-/* Title for Karma about:home page in tab history list */
-"Karma.HomePage.Title" = "Домашняя страница Karma";
+/* Title for KARMA about:home page in tab history list */
+"KARMA.HomePage.Title" = "Домашняя страница KARMA";
 
-/* A button at bottom of the Karma homepage that, when clicked, takes users straight to the settings options, where they can customize the Karma Home page */
+/* A button at bottom of the KARMA homepage that, when clicked, takes users straight to the settings options, where they can customize the KARMA Home page */
 "FirefoxHome.CustomizeHomeButton.Title" = "Настроить домашнюю страницу";
 
 /* Accessibility Label for the tab toolbar Forward button */
@@ -422,16 +422,16 @@
 /* Label stating your account is not verified */
 "FxA.AccountVerificationRequired" = "Необходимо подтвердить аккаунт";
 
-/* Message explaining that user needs to check email for Karma Account verfication link. */
-"FxA.AccountVerificationRequiredSurface" = "Вам нужно подтвердить %@. Откройте свою электронную почту и найдите ссылку для подтверждения от Karma.";
+/* Message explaining that user needs to check email for KARMA Account verfication link. */
+"FxA.AccountVerificationRequiredSurface" = "Вам нужно подтвердить %@. Откройте свою электронную почту и найдите ссылку для подтверждения от KARMA.";
 
 /* Button label to connect another device to Sync */
 "FxA.ConnectAnotherDevice" = "Подключить другое устройство";
 
-/* Settings section title for Karma Account */
-"FxA.FirefoxAccount" = "Аккаунт Karma";
+/* Settings section title for KARMA Account */
+"FxA.FirefoxAccount" = "Аккаунт KARMA";
 
-/* Button label to go to Karma Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "Управление аккаунтом и устройствами";
 
 /* Label when no internet is present */
@@ -441,15 +441,15 @@
 "FxA.OpenSyncPreferences" = "Открыть настройки синхронизации";
 
 /* Instructions shown on qr code scanning view */
-"fxa.qr-scanning-view.instructions" = "Отсканируйте QR-код на Karma.com/pair";
+"fxa.qr-scanning-view.instructions" = "Отсканируйте QR-код на KARMA.com/pair";
 
-/* Remove button is displayed on Karma account page under certain scenarios where user would like to remove their account. */
+/* Remove button is displayed on KARMA account page under certain scenarios where user would like to remove their account. */
 "FxA.RemoveAccount" = "Удалить";
 
 /* Description string for alert view that gets presented when user tries to remove an account. */
-"FxA.RemoveAccountAlertMessage" = "Удалить аккаунт Karma, привязанный к этому устройству, и зайти под другим аккаунтом.";
+"FxA.RemoveAccountAlertMessage" = "Удалить аккаунт KARMA, привязанный к этому устройству, и зайти под другим аккаунтом.";
 
-/* Remove account alert is the final confirmation before user removes their Karma account */
+/* Remove account alert is the final confirmation before user removes their KARMA account */
 "FxA.RemoveAccountAlertTitle" = "Удалить аккаунт";
 
 /* Button label to resend email */
@@ -459,13 +459,13 @@
 "fxa.signin.camera-signin" = "Войдите с помощью вашей камеры";
 
 /* FxA sign in create account label. */
-"fxa.signin.create-account-pt-1" = "Синхронизируйте Karma между устройствами с помощью аккаунта.";
+"fxa.signin.create-account-pt-1" = "Синхронизируйте KARMA между устройствами с помощью аккаунта.";
 
 /* FxA sign in create account label. This will be linked to the site to create an account. */
-"fxa.signin.create-account-pt-2" = "Создать аккаунт Karma.";
+"fxa.signin.create-account-pt-2" = "Создать аккаунт KARMA.";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "Запустите Karma на вашем компьютере и перейдите на Karma.com/pair";
+"fxa.signin.qr-link-instruction" = "Запустите KARMA на вашем компьютере и перейдите на KARMA.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Сканировать QR-код";
@@ -482,14 +482,14 @@
 /* Label explaining what sync does */
 "FxA.SyncExplain" = "Синхронизируйте ваши вкладки, закладки и пароли с другими вашими устройствами.";
 
-/* Button label to Sync your Karma Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "Синхронизировать";
 
 /* Call to action for sign into sync button */
 "FxA.TakeYourWebWithYou" = "Возьмите свой Интернет с собой";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "Служба Синхронизации Karma соединилась с %@";
+"FxAPush_DeviceConnected_body" = "Служба Синхронизации KARMA соединилась с %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Синхронизация соединилась";
@@ -498,7 +498,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ было успешно отсоединено.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Это устройство было успешно отсоединено от службы Синхронизации Karma.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Это устройство было успешно отсоединено от службы Синхронизации KARMA.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Синхронизация отсоединилась";
@@ -507,7 +507,7 @@
 "FxAPush_DeviceDisconnected_title" = "Синхронизация отсоединилась";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Устройство отсоединилось от службы Синхронизации Karma";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Устройство отсоединилось от службы Синхронизации KARMA";
 
 /* A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing. */
 "Get your open tabs, bookmarks, and passwords from your other devices." = "Синхронизируйте открытые вкладки, закладки и пароли с другими вашими устройствами.";
@@ -555,7 +555,7 @@
 "HistoryPanel.EmptySyncedTabsPanelTabSyncDisabledState.Description" = "Включите синхронизацию вкладок, чтобы увидеть список вкладок с других устройств.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "Синхронизация Karma";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Синхронизация KARMA";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "История";
@@ -645,7 +645,7 @@
 "InactiveTabs.TabTray.AutoClosePrompt.ButtonTitle" = "Включить автозакрытие";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This string describes what happens if you elect to turn on this option. */
-"InactiveTabs.TabTray.AutoClosePrompt.Content" = "Karma будет закрывать вкладки, к которым вы не обращались за последний месяц.";
+"InactiveTabs.TabTray.AutoClosePrompt.Content" = "KARMA будет закрывать вкладки, к которым вы не обращались за последний месяц.";
 
 /* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This is the title of that Auto Close prompt */
 "InactiveTabs.TabTray.AutoClosePrompt.Title" = "Автоматически закрывать через месяц?";
@@ -674,10 +674,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "Светлая";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "Загрузить исходную страницу";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Karma reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "Загрузка содержимого…";
 
 /* Authentication prompt log in button */
@@ -729,7 +729,7 @@
 "LoginsList.LoginsListSearchPlaceholder" = "Фильтр";
 
 /* Label shown when there are no logins to list */
-"LoginsList.NoLoginsFound.Description" = "Здесь будут отображаться сохранённые логины. Если вы сохранили свои логины в Karma на другом устройстве, войдите в свой Аккаунт Karma.";
+"LoginsList.NoLoginsFound.Description" = "Здесь будут отображаться сохранённые логины. Если вы сохранили свои логины в KARMA на другом устройстве, войдите в свой Аккаунт KARMA.";
 
 /* Label shown when there are no logins saved */
 "LoginsList.NoLoginsFound.Title" = "Логины не найдены";
@@ -753,7 +753,7 @@
 "LoginsList.Title" = "СОХРАНЁННЫЕ ЛОГИНЫ";
 
 /* Restore Tabs Prompt Description */
-"Looks like Karma crashed previously. Would you like to restore your tabs?" = "Похоже, что Karma ранее упал. Вы хотите восстановить ваши вкладки?";
+"Looks like KARMA crashed previously. Would you like to restore your tabs?" = "Похоже, что KARMA ранее упал. Вы хотите восстановить ваши вкладки?";
 
 /* Name for Mark as read button in reader mode
    Title for the button that marks a reading list item as read */
@@ -797,10 +797,10 @@
 "Menu.EnhancedTrackingProtectionOn.Title" = "Улучшенная защита от отслеживания на этом сайте ВКЛЮЧЕНА.";
 
 /* Description for having standard ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "Karma блокирует межсайтовые трекеры, трекеры социальных сетей, криптомайнеры и сборщики цифровых отпечатков.";
+"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "KARMA блокирует межсайтовые трекеры, трекеры социальных сетей, криптомайнеры и сборщики цифровых отпечатков.";
 
 /* Description for having strict ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "Karma блокирует межсайтовые трекеры, трекеры социальных сетей, криптомайнеры, сборщики цифровых отпечатков и отслеживающее содержимое.";
+"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "KARMA блокирует межсайтовые трекеры, трекеры социальных сетей, криптомайнеры, сборщики цифровых отпечатков и отслеживающее содержимое.";
 
 /* Label for the button, displayed in the menu, takes you to to History screen when pressed. */
 "Menu.History.Label" = "История";
@@ -866,7 +866,7 @@
 "Menu.TrackingProtection.Details.Verifier" = "Подтверждено: %@";
 
 /* Message in menu when no trackers blocked. */
-"Menu.TrackingProtection.NoTrackersBlockedTitle" = "На этой странице не обнаружено ни одного известного Karma трекера.";
+"Menu.TrackingProtection.NoTrackersBlockedTitle" = "На этой странице не обнаружено ни одного известного KARMA трекера.";
 
 /* The title for tracking protection settings */
 "Menu.TrackingProtection.ProtectionSettings.Title" = "Настройки защиты";
@@ -881,7 +881,7 @@
 "Menu.TrackingProtectionBlockedSocial.Title" = "Трекеры социальных сетей";
 
 /* Description of the Tracking protection menu when TP is blocking parts of the page */
-"Menu.TrackingProtectionBlocking.Description" = "Karma блокирует части страницы, которые могут отслеживать ваше поведение в Интернете.";
+"Menu.TrackingProtectionBlocking.Description" = "KARMA блокирует части страницы, которые могут отслеживать ваше поведение в Интернете.";
 
 /* The description of the Tracking Protection menu item when tracking is enabled */
 "Menu.TrackingProtectionBlockingDisabled.Description" = "Блокировать онлайн-трекеры";
@@ -983,33 +983,33 @@
 /* Restore Tabs Affirmative Action */
 "Okay" = "Хорошо";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the button, on the bottom of the card, used to get back to browsing on Karma by dismissing the onboarding card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the button, on the bottom of the card, used to get back to browsing on KARMA by dismissing the onboarding card */
 "Onboarding.WhatsNew.Button.Title" = "Начать веб-сёрфинг";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is a general description that appears under the title for what the card is about. */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is a general description that appears under the title for what the card is about. */
 "Onboarding.WhatsNew.Description" = "Теперь легче продолжить с того места, на котором вы остановились.";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is the description for the Jump Back In bullet point */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is the description for the Jump Back In bullet point */
 "Onboarding.WhatsNew.PersonalizedHome.Description" = "Переходите к открытым вкладкам, закладкам и истории просмотра.";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the descripion of the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the descripion of the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Description" = "Повторяйте свои последние поисковые запросы с домашней страницы.";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the title for the Recent Searches bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the Recent Searches bullet point on the card */
 "Onboarding.WhatsNew.RecentSearches.Title" = "Недавние поиски";
 
-/* On the onboarding card letting users know what's new in this version of Karma, this is the description for the Tab Group bullet point on the card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the description for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Description" = "Страницы из одного поиска группируются вместе.";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Tab Group bullet point on the card */
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is the title for the Tab Group bullet point on the card */
 "Onboarding.WhatsNew.TabGroups.Title" = "Лучшая организация групп вкладок";
 
-/* On the onboarding card, letting users know what's new in this version of Karma, this is the title for the Jump Back In bullet point on the card
-   The title for the new onboarding card letting users know what is new in Karma iOS */
-"Onboarding.WhatsNew.Title" = "Что нового в Karma";
+/* On the onboarding card, letting users know what's new in this version of KARMA, this is the title for the Jump Back In bullet point on the card
+   The title for the new onboarding card letting users know what is new in KARMA iOS */
+"Onboarding.WhatsNew.Title" = "Что нового в KARMA";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Karma crashed" = "Ой! Karma упал";
+"Oops! KARMA crashed" = "Ой! KARMA упал";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "Открывайте статьи в виде для чтения, нажимая на значок книги, когда он появляется в адресной строке.";
@@ -1020,8 +1020,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "Открытые вкладки";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Karma, or any external app. */
-"OpenURL.Error.Message" = "Karma не может открыть страницу, так как её адрес некорректен.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
+"OpenURL.Error.Message" = "KARMA не может открыть страницу, так как её адрес некорректен.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "Не удалось открыть страницу";
@@ -1036,19 +1036,19 @@
 "Password" = "Пароль";
 
 /* Error message shown in the remote tabs panel */
-"PasswordAutoFill.NoPasswordsFoundTitle" = "У вас нет учётных данных, синхронизированных из Аккаунта Karma";
+"PasswordAutoFill.NoPasswordsFoundTitle" = "У вас нет учётных данных, синхронизированных из Аккаунта KARMA";
 
 /* Header for the list of credentials table */
 "PasswordAutoFill.PasswordsListTitle" = "Доступные учётные данные:";
 
-/* Title of the extension that shows Karma passwords */
-"PasswordAutoFill.SectionTitle" = "Учётные данные Karma";
+/* Title of the extension that shows KARMA passwords */
+"PasswordAutoFill.SectionTitle" = "Учётные данные KARMA";
 
 /* See http://mzl.la/1G7uHo7 */
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "Это позволит сохранить изображение в вашу «Фотопленку».";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Karma хотел бы получить доступ к вашим Фото";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "KARMA хотел бы получить доступ к вашим Фото";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "Закрыть";
@@ -1056,7 +1056,7 @@
 /* Privacy section title */
 "Privacy" = "Приватность";
 
-/* Show Karma Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/Karma/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "Политика приватности";
 
 /* This is the value for a label that indicates if a user is on an unencrypted website. */
@@ -1129,7 +1129,7 @@
 "ScanQRCode.InvalidDataError.Message" = "Недопустимые данные";
 
 /* Text of the prompt user to setup the camera authorization. */
-"ScanQRCode.PermissionError.Message" = "Пожалуйста, разрешите Karma доступ к камере вашего устройства, открыв ‘Параметры‘ -> ‘Приватность‘ -> ‘Камера‘.";
+"ScanQRCode.PermissionError.Message" = "Пожалуйста, разрешите KARMA доступ к камере вашего устройства, открыв ‘Параметры‘ -> ‘Приватность‘ -> ‘Камера‘.";
 
 /* Title for the QR code scanner view. */
 "ScanQRCode.View.Title" = "Сканировать QR-код";
@@ -1213,19 +1213,19 @@
 "SendTo.NavBar.Title" = "Отправить вкладку";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "У вас нет ни одного устройства, подключенного к этому Аккаунту Karma и доступного для синхронизации.";
+"SendTo.NoDevicesFound.Message" = "У вас нет ни одного устройства, подключенного к этому Аккаунту KARMA и доступного для синхронизации.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "Пожалуйста, откройте Karma, перейдите в Параметры и войдите для продолжения.";
+"SendTo.NotSignedIn.Message" = "Пожалуйста, откройте KARMA, перейдите в Параметры и войдите для продолжения.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "Вы не вошли в свой Аккаунт Karma.";
+"SendTo.NotSignedIn.Title" = "Вы не вошли в свой Аккаунт KARMA.";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "Отправить";
 
-/* The text for the button on the Send to Device page if you are not signed in to Karma Accounts. */
-"SendTo.SignIn.Button" = "Войти в Karma";
+/* The text for the button on the Send to Device page if you are not signed in to KARMA Accounts. */
+"SendTo.SignIn.Button" = "Войти в KARMA";
 
 /* Body of notification shown when the device is sent one or more tabs from an unnamed device. */
 "SentTab_TabArrivingNotification_NoDevice_body" = "С другого устройства поступила новая вкладка.";
@@ -1249,7 +1249,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Нажмите, чтобы начать";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "Синхронизация Karma";
+"SentTab.NoTabArrivingNotification.title" = "Синхронизация KARMA";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Просмотреть";
@@ -1312,7 +1312,7 @@
 "Settings.DataManagement.Title" = "Управление данными";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "Karma прекратит синхронизацию с вашим аккаунтом, но не будет удалять ничего из ваших данных веб-сёрфинга на этом устройстве.";
+"Settings.Disconnect.Body" = "KARMA прекратит синхронизацию с вашим аккаунтом, но не будет удалять ничего из ваших данных веб-сёрфинга на этом устройстве.";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "Отсоединить";
@@ -1381,53 +1381,53 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "Имя устройства";
 
-/* Label used as a section title in the Karma Accounts Settings screen. */
+/* Label used as a section title in the KARMA Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "Параметры синхронизации";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "Аккаунт Karma";
+"Settings.FxA.Title" = "Аккаунт KARMA";
 
 /* General settings section title */
 "Settings.General.SectionName" = "Основные";
 
-/* In the settings menu, on the Karma homepage customization section, this is the description below the section, describing what the options in the section are for. */
-"Settings.Home.Option.Description" = "Выберите, что вы увидите на Домашней странице Karma.";
+/* In the settings menu, on the KARMA homepage customization section, this is the description below the section, describing what the options in the section are for. */
+"Settings.Home.Option.Description" = "Выберите, что вы увидите на Домашней странице KARMA.";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
 "Settings.Home.Option.JumpBackIn" = "Перейти обратно в";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the KARMA homepage on or off */
 "Settings.Home.Option.Pocket" = "Рекомендовано Pocket";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentlySaved" = "Недавно добавленные";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
 "Settings.Home.Option.RecentlyVisited" = "Недавно посещённые";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentSearches" = "Недавние поиски";
 
-/* In the settings menu, in the Karma homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Karma homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the KARMA homepage on or off */
 "Settings.Home.Option.Shortcuts" = "Ярлыки";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage after four hours of inactivity. */
 "Settings.Home.Option.StartAtHome.AfterFourHours" = "Домашняя страница после четырех часов бездействия";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Karma */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Always" = "Домашняя страница";
 
 /* In the settings menu, in the Start at Home customization options, this is text that appears below the section, describing what the section settings do. */
-"Settings.Home.Option.StartAtHome.Description" = "Выберите, что вы увидите, когда вернетесь в Karma.";
+"Settings.Home.Option.StartAtHome.Description" = "Выберите, что вы увидите, когда вернетесь в KARMA.";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Karma */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Never" = "Последнюю вкладку";
 
-/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Karma Homepage. */
+/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the KARMA Homepage. */
 "Settings.Home.Option.StartAtHome.Title" = "Начальный экран";
 
-/* In the settings menu, this is the title of the Karma Homepage customization settings section */
-"Settings.Home.Option.Title" = "Домашнюю страницу Karma";
+/* In the settings menu, this is the title of the KARMA Homepage customization settings section */
+"Settings.Home.Option.Title" = "Домашнюю страницу KARMA";
 
 /* Button in settings to clear the home page. */
 "Settings.HomePage.Clear.Button" = "Очистить";
@@ -1478,10 +1478,10 @@
 "Settings.NewTab.Option.CustomizeFooter2" = "Сохранённые или посещаемые сайты";
 
 /* The title for the section to customize top sites in the new tab settings page. */
-"Settings.NewTab.Option.CustomizeTitle" = "Настроить домашнюю страницу Karma";
+"Settings.NewTab.Option.CustomizeTitle" = "Настроить домашнюю страницу KARMA";
 
-/* Option in settings to show Karma Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "Домашняя страница Karma";
+/* Option in settings to show KARMA Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "Домашняя страница KARMA";
 
 /* Option in the settings to turn off recent bookmarks in the Highlights section */
 "Settings.NewTab.Option.HighlightsBookmarks" = "Недавние закладки";
@@ -1523,7 +1523,7 @@
 "Settings.NewTab.TopSectionNameFooter" = "Выберите, что загружать при открытии новой вкладки";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "При открытии Karma";
+"Settings.OfferClipboardBar.Status" = "При открытии KARMA";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "Запрос открытия скопированных ссылок";
@@ -1547,7 +1547,7 @@
 "Settings.SendUsage.Link" = "Подробнее.";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "Mozilla обязуется собирать только ту информацию, которая необходима для работы Karma и его улучшения в будущем.";
+"Settings.SendUsage.Message" = "Mozilla обязуется собирать только ту информацию, которая необходима для работы KARMA и его улучшения в будущем.";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "Отправлять данные о работе";
@@ -1565,7 +1565,7 @@
 "Settings.Siri.OpenTabShortcut" = "Открыть новую вкладку";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "Используйте команды Siri, чтобы быстро открыть Karma через Siri";
+"Settings.Siri.SectionDescription" = "Используйте команды Siri, чтобы быстро открыть KARMA через Siri";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "Команды Siri";
@@ -1589,7 +1589,7 @@
 "Settings.Studies.Toggle.Link" = "Узнать больше.";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "Karma может время от времени устанавливать и проводить исследования.";
+"Settings.Studies.Toggle.Message" = "KARMA может время от времени устанавливать и проводить исследования.";
 
 /* Toggled OFF to opt-out of studies */
 "Settings.Studies.Toggle.Off" = "Отключено";
@@ -1606,7 +1606,7 @@
 /* In the settings menu, in the Tabs customization section, this is the title for the setting that toggles the Tab Groups feature - where tabs from related searches are grouped - on or off */
 "Settings.Tabs.CustomizeTabsSection.TabGroups" = "Группы вкладок";
 
-/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from Karma hompage */
+/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from KARMA hompage */
 "Settings.Tabs.CustomizeTabsSection.Title" = "Настроить лоток вкладок";
 
 /* In the settings menu, this is the title for the Tabs customization section option */
@@ -1622,7 +1622,7 @@
 "Settings.TrackingProtection.Alert.Title" = "Внимание!";
 
 /* Header description for tracking protection options section where Basic/Strict block list can be selected */
-"Settings.TrackingProtection.BlockListsHeader" = "Вы можете выбрать, какой список будет использовать Karma для блокировки веб-элементов, которые могут отслеживать ваше поведение в Интернете.";
+"Settings.TrackingProtection.BlockListsHeader" = "Вы можете выбрать, какой список будет использовать KARMA для блокировки веб-элементов, которые могут отслеживать ваше поведение в Интернете.";
 
 /* Explanation of basic mode. */
 "Settings.TrackingProtection.Info.BasicTitle" = "Обеспечивает наилучший баланс защиты и производительности.";
@@ -1717,32 +1717,32 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "Данные веб-сайтов";
 
-/* Action label on share extension to add page to the Karma reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "Добавить в список для чтения";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "Добавлено в список для чтения";
 
-/* Action label on share extension to bookmark the page in Karma. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "Добавить страницу в закладки";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "В закладках";
 
-/* Action label on share extension to load the page in Karma when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "Загрузить в фоне";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "Загрузка в Karma";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "Загрузка в KARMA";
 
-/* Action label on share extension to immediately open page in Karma. */
-"ShareExtension.OpenInFirefoxAction.Title" = "Открыть в Karma";
+/* Action label on share extension to immediately open page in KARMA. */
+"ShareExtension.OpenInFirefoxAction.Title" = "Открыть в KARMA";
 
-/* Action label on share extension to immediately open page in Karma in private mode. */
+/* Action label on share extension to immediately open page in KARMA in private mode. */
 "ShareExtension.OpenInPrivateModeAction.Title" = "Открыть в приватном режиме";
 
-/* Action label on share extension to search for the selected text in Karma. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Искать в Karma";
+/* Action label on share extension to search for the selected text in KARMA. */
+"ShareExtension.SeachInFirefoxAction.Title" = "Искать в KARMA";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "Поисковые предложения";
@@ -1779,7 +1779,7 @@
 "Sync.FirstTimeMessage.Label" = "Ваша первая синхронизация может занять некоторое время";
 
 /* String displayed on Sign In to Sync page that allows the user to create a new account. */
-"Sync.NoAccount.Description" = "Нет аккаунта? Создайте его, чтобы синхронизировать Karma между устройствами.";
+"Sync.NoAccount.Description" = "Нет аккаунта? Создайте его, чтобы синхронизировать KARMA между устройствами.";
 
 /* Message displayed when the user's account is syncing with no ellipsis */
 "Sync.Syncing.Label" = "Синхронизация";
@@ -1901,7 +1901,7 @@
 /* The section header for tabs opened yesterday */
 "TabTray.Yesterday.Header" = "Вчера";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Karma reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "The page could not be displayed in Reader View." = "Не удалось отобразить эту страницу в виде для чтения.";
 
 /* Error message in the remote tabs panel */
@@ -1959,13 +1959,13 @@
 "UIMenuItem.PasteGo" = "Вставить и перейти";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "Поиск через Karma";
+"UIMenuItem.SearchWithFirefox" = "Поиск через KARMA";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "непрочитано";
 
 /* Text message in the settings table view */
-"Upgrade Karma to connect" = "Для подключения обновите Karma";
+"Upgrade KARMA to connect" = "Для подключения обновите KARMA";
 
 /* Debug option */
 "Use stage servers" = "Использовать тестовые серверы";
@@ -1976,7 +1976,7 @@
 /* Text message in the settings table view */
 "Verify your email address" = "Проверьте свой адрес эл. почты";
 
-/* Version number of Karma shown in settings */
+/* Version number of KARMA shown in settings */
 "Version %@ (%@)" = "Версия %1$@ (%2$@)";
 
 /* Accessibility label for the main web content view */
@@ -1998,7 +1998,7 @@
 "Yesterday" = "Вчера";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Karma on your other devices." = "На ваших других устройствах в Karma не открыто ни одной вкладки.";
+"You don’t have any tabs open in KARMA on your other devices." = "На ваших других устройствах в KARMA не открыто ни одной вкладки.";
 
 /* Your Rights settings section title */
 "Your Rights" = "Ваши права";
