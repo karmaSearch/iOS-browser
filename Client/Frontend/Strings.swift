@@ -1344,7 +1344,7 @@ extension String {
     public static let SearchSearchEngineSuggestionAccessibilityLabel = MZLocalizedString("Search suggestions from %@", tableName: "Search", comment: "Accessibility label for image of default search engine displayed left to the actual search suggestions from the engine. The parameter substituted for \"%@\" is the name of the search engine. E.g.: Search suggestions from Google", lastUpdated: .unknown)
     public static let SearchSearchSuggestionTapAccessibilityHint = MZLocalizedString("Searches for the suggestion", comment: "Accessibility hint describing the action performed when a search suggestion is clicked", lastUpdated: .unknown)
     public static let SearchSuggestionCellSwitchToTabLabel = MZLocalizedString("Search.Awesomebar.SwitchToTab", value: "Switch to tab", comment: "Search suggestion cell label that allows user to switch to tab which they searched for in url bar", lastUpdated: .unknown)
-    public static let SearchSuggestionHeader = MZLocalizedString("Karma Search", tableName: "Search", comment: "Search suggestions header", lastUpdated: .unknown)
+    public static let SearchSuggestionHeader = MZLocalizedString("KARMA Search", tableName: "Search", comment: "Search suggestions header", lastUpdated: .unknown)
     public static let SearchRemoteTabsHeader = MZLocalizedString("remoteTabs", tableName: "Search", comment: "Search remote tabs header", lastUpdated: .unknown)
     public static let SearchOpenTabsHeader = MZLocalizedString("openedTabs", tableName: "Search", comment: "Search opened tabs header", lastUpdated: .unknown)
     public static let SearchBookmarksAndHistoryHeader = MZLocalizedString("bookmarksAndHistory", tableName: "Search", comment: "Search bookmark and history header", lastUpdated: .unknown)

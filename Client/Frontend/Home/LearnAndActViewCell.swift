@@ -30,26 +30,26 @@ class LearnAndActViewCell: UICollectionViewCell {
     }
     
     private lazy var titleLabel: UILabel = .build { label in
-        label.font = UIFont.customFont(ofSize: 16, weight: .bold)
+        label.font = UIFont.customFont(ofSize: 18, weight: .bold)
         label.textAlignment = .left
         label.textColor =  UIColor.theme.homePanel.learnAndActCellTitleColor
         label.numberOfLines = 2
     }
     
     private lazy var typeLabel: UILabel = .build { label in
-        label.font = UIFont.customFont(ofSize: 10, weight: .bold)
+        label.font = UIFont.customFont(ofSize: 12, weight: .bold)
         label.textAlignment = .left
         label.textColor = UIColor.theme.homePanel.learnAndActTypeColor
     }
     
     private lazy var timeToRead: UILabel = .build { label in
-        label.font = UIFont.customFont(ofSize: 10, weight: .medium)
+        label.font = UIFont.customFont(ofSize: 12, weight: .medium)
         label.textAlignment = .left
         label.textColor = UIColor.theme.homePanel.learnAndActDurationColor
     }
     
     private lazy var descriptionLabel: UILabel = .build { label in
-        label.font = UIFont.customFont(ofSize: 12, weight: .medium)
+        label.font = UIFont.customFont(ofSize: 14, weight: .medium)
         label.textAlignment = .left
         label.textColor = UIColor.theme.homePanel.learnAndActDescriptionColor
         label.numberOfLines = 5
@@ -58,7 +58,7 @@ class LearnAndActViewCell: UICollectionViewCell {
     }
     
     private lazy var linkLabel: UILabel = .build { label in
-        label.font = UIFont.customFont(ofSize: 12, weight: .bold)
+        label.font = UIFont.customFont(ofSize: 14, weight: .bold)
         label.textAlignment = .left
         label.textColor = UIColor.theme.homePanel.learnAndActLinkColor
     }
@@ -149,7 +149,7 @@ class LearnAndActViewCell: UICollectionViewCell {
             make.leading.equalTo(imageView.snp.trailing).offset(padding)
             make.trailing.equalToSuperview().offset(-padding)
             make.bottom.lessThanOrEqualTo(imageView.snp.bottom)
-            make.height.equalTo(13)
+            make.height.equalTo(15)
         }
         
         seprator.snp.makeConstraints { make in

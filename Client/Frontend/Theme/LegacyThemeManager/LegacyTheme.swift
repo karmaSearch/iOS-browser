@@ -207,7 +207,7 @@ class HomePanelColor {
     var learnAndActCellTitleColor: UIColor { UIColor.Photon.DarkGrey90 }
     var learnAndActTypeColor: UIColor { UIColor.Photon.DarkGrey90 }
     var learnAndActDurationColor: UIColor { UIColor(rgb: 0x94A1B2) }
-    var learnAndActDescriptionColor: UIColor { UIColor(rgb: 0x94A1B2) }
+    var learnAndActDescriptionColor: UIColor { UIColor(rgb: 0x242629) }
     var learnAndActLinkColor: UIColor { karmaTintColor }
     
     var searchHeaderColor: UIColor { UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1) }
