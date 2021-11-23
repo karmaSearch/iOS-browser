@@ -1741,8 +1741,8 @@
 /* Action label on share extension to immediately open page in KARMA in private mode. */
 "ShareExtension.OpenInPrivateModeAction.Title" = "Ouvrir en navigation privée";
 
-/* Action label on share extension to search for the selected text in KARMA. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Rechercher dans KARMA";
+/* Action label on share extension to search for the selected text in Karma. */
+"ShareExtension.SeachInFirefoxAction.Title" = "Rechercher avec KARMA";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "Afficher les suggestions";

@@ -48,59 +48,34 @@ import SwiftUI
 //+-------------------------------------------------------+
 
 struct ImageButtonWithLabel: View {
-    var isSmall : Bool
     var link: QuickLink
 
     var paddingValue: CGFloat {
-        if isSmall {
-            return 10.0
-        } else {
-            return 8.0
-        }
+        return 8.0
     }
 
     var body: some View {
-        Link(destination: isSmall ? link.smallWidgetUrl : link.mediumWidgetUrl) {
+        Link(destination: link.mediumWidgetUrl) {
             ZStack(alignment: .leading) {
-                if !isSmall {
-                    ContainerRelativeShape()
+                ContainerRelativeShape()
                         .fill(LinearGradient(gradient: Gradient(colors: link.backgroundColors), startPoint: .bottomLeading, endPoint: .topTrailing))
-                }
+                
                 
                 VStack (alignment: .center, spacing: 50.0){
                     HStack(alignment: .top) {
                         VStack(alignment: .leading){
-                            if isSmall {
-                                Text(link.label)
-                                    .font(.headline)
+                            
+                            Text(link.label)
+                                .font(Font.custom("ProximaNova-Medium", size: 12))
                                     .minimumScaleFactor(0.75)
                                     .layoutPriority(1000)
-                            } else {
-                                Text(link.label)
-                                    .font(.footnote)
-                                    .minimumScaleFactor(0.75)
-                                    .layoutPriority(1000)
-                            }
                                 
                         }
                         Spacer()
-                        if link == .search && isSmall {
-                            Image("search-button")
+                        
+                        Image(link.imageName)
                                 .scaledToFit()
-                                .frame(height: 24.0)
-                        } else {
-                            Image(link.imageName)
-                                .scaledToFit()
-                                .frame(height: 24.0)
-                        }
-                    }
-                    if isSmall {
-                        HStack(alignment: .bottom){
-                            Spacer()
-                            Image("faviconFox")
-                                .scaledToFit()
-                                .frame(height: 24.0)
-                        }
+                        
                     }
                 }
                 .foregroundColor(Color("widgetLabelColors"))
@@ -109,4 +84,5 @@ struct ImageButtonWithLabel: View {
         }
     }
 }
+
 #endif
