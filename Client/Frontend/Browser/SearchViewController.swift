@@ -75,12 +75,6 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
     fileprivate var openedTabs = [Tab]()
     fileprivate var filteredOpenedTabs = [Tab]()
     fileprivate var tabManager: TabManager
-    
-    // Views for displaying the bottom scrollable search engine list. searchEngineScrollView is the
-    // scrollable container; searchEngineScrollViewContent contains the actual set of search engine buttons.
-    fileprivate let searchEngineContainerView = UIView()
-    fileprivate let searchEngineScrollView = ButtonScrollView()
-    fileprivate let searchEngineScrollViewContent = UIView()
 
     fileprivate lazy var bookmarkedBadge: UIImage = {
         return UIImage(named: "bookmark_results")!
@@ -120,27 +114,12 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
         getCachedTabs()
         KeyboardHelper.defaultHelper.addDelegate(self)
 
-        searchEngineContainerView.layer.backgroundColor = SearchViewControllerUX.SearchEngineScrollViewBackgroundColor
-        searchEngineContainerView.layer.shadowRadius = 0
-        searchEngineContainerView.layer.shadowOpacity = 100
-        searchEngineContainerView.layer.shadowOffset = CGSize(width: 0, height: -SearchViewControllerUX.SearchEngineTopBorderWidth)
-        searchEngineContainerView.layer.shadowColor = SearchViewControllerUX.SearchEngineScrollViewBorderColor
-        searchEngineContainerView.clipsToBounds = false
-
-        searchEngineScrollView.decelerationRate = UIScrollView.DecelerationRate.fast
-        searchEngineContainerView.addSubview(searchEngineScrollView)
-        view.addSubview(searchEngineContainerView)
-
         layoutTable()
-
+        
         blur.snp.makeConstraints { make in
             make.edges.equalTo(self.view)
         }
     
-        searchEngineContainerView.snp.makeConstraints { make in
-            make.left.right.bottom.equalToSuperview()
-        }
-
         NotificationCenter.default.addObserver(self, selector: #selector(dynamicFontChanged), name: .DynamicFontChanged, object: nil)
         tableView.register(SearchHeader.self, forHeaderFooterViewReuseIdentifier: "SearchHeader")
     }
@@ -155,19 +134,6 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
         super.viewWillAppear(animated)
         reloadData()
     }
-
-    fileprivate func layoutSearchEngineScrollView() {
-        let keyboardHeight = KeyboardHelper.defaultHelper.currentState?.intersectionHeightForView(self.view) ?? 0
-        searchEngineScrollView.snp.remakeConstraints { make in
-            make.left.right.top.equalToSuperview()
-            if keyboardHeight == 0 {
-                make.bottom.equalTo(view.safeArea.bottom)
-            } else {
-                make.bottom.equalTo(view).offset(-keyboardHeight)
-            }
-        }
-    }
-
 
     var searchEngines: SearchEngines! {
         didSet {
@@ -212,7 +178,7 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
         tableView.snp.remakeConstraints { make in
             make.top.equalTo(self.view.snp.top)
             make.leading.trailing.equalTo(self.view)
-            make.bottom.equalTo(self.searchEngineScrollView.snp.top)
+            make.bottom.equalTo(self.view.snp.bottom)
         }
     }
 
@@ -237,7 +203,6 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
     }
 
     fileprivate func animateSearchEnginesWithKeyboard(_ keyboardState: KeyboardState) {
-        layoutSearchEngineScrollView()
 
         UIView.animate(withDuration: keyboardState.animationDuration, animations: {
             UIView.setAnimationCurve(keyboardState.animationCurve)
