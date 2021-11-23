@@ -36,8 +36,31 @@ enum SentTabAction: String {
 extension AppDelegate {
     func pushNotificationSetup() {
        UNUserNotificationCenter.current().delegate = self
-       SentTabAction.registerActions()
+      // SentTabAction.registerActions()
 
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+            guard error == nil else {
+                return
+            }
+            if granted {
+                // Create the trigger as a repeating event.
+                let content = UNMutableNotificationContent()
+                content.title = "Set Karma as your default browser"
+                content.body = "Click here to install Karma Search as your default browser 🍃"
+                
+                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(600), repeats: true)
+                let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+                
+                let notificationCenter = UNUserNotificationCenter.current()
+                notificationCenter.add(request) { (error) in
+                   if error != nil {
+                      // Handle any errors.
+                   }
+                }
+            }
+        }
+        /*
         NotificationCenter.default.addObserver(forName: .RegisterForPushNotifications, object: nil, queue: .main) { _ in
             UNUserNotificationCenter.current().getNotificationSettings { settings in
                 DispatchQueue.main.async {
@@ -65,7 +88,7 @@ extension AppDelegate {
             if kc.object(forKey: KeychainKey.apnsToken, withAccessibility: .afterFirstUnlock) == nil {
                 NotificationCenter.default.post(name: .RegisterForPushNotifications, object: nil)
             }
-        }
+        }*/
     }
 
     private func openURLsInNewTabs(_ notification: UNNotification) {
@@ -87,20 +110,29 @@ extension AppDelegate {
 extension AppDelegate: UNUserNotificationCenterDelegate {
     // Called when the user taps on a sent-tab notification from the background.
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        openURLsInNewTabs(response.notification)
+        
+        if let urls = response.notification.request.content.userInfo["sentTabs"] as? [NSDictionary] {
+            openURLsInNewTabs(response.notification)
+            return
+        }
+        
     }
 
     // Called when the user receives a tab (or any other notification) while in foreground.
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
 
-        if profile?.prefs.boolForKey(PendingAccountDisconnectedKey) ?? false {
-            profile?.removeAccount()
-            
-            // show the notification
-            completionHandler([.alert, .sound])
-        } else {
-            openURLsInNewTabs(notification)
+        if let urls = notification.request.content.userInfo["sentTabs"] as? [NSDictionary] {
+            if profile?.prefs.boolForKey(PendingAccountDisconnectedKey) ?? false {
+                profile?.removeAccount()
+                
+                // show the notification
+                completionHandler([.alert, .sound])
+            } else {
+                openURLsInNewTabs(notification)
+            }
+            return
         }
+
     }
 }
 
