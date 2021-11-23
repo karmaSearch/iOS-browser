@@ -29,7 +29,6 @@ class SearchHeader: UITableViewHeaderFooterView {
             make.leading.equalTo(self.safeArea.leading).inset(14)
             make.top.centerY.equalToSuperview()
         }
-        contentView.backgroundColor = UIColor.theme.homePanel.searchHeaderColor
     }
     
     required init?(coder aDecoder: NSCoder) {

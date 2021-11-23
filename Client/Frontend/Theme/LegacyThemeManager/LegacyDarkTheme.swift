@@ -5,7 +5,7 @@
 import UIKit
 
 // Convenience reference to these normal mode colors which are used in a few color classes.
-fileprivate let defaultBackground = UIColor.Photon.DarkGrey90
+fileprivate let defaultBackground = UIColor.Photon.Grey80
 fileprivate let defaultSeparator = UIColor.Photon.LightGrey90
 fileprivate let defaultTextAndTint = UIColor.Photon.Grey10
 
@@ -63,7 +63,7 @@ fileprivate class DarkTabTrayColor: TabTrayColor {
     override var cellCloseButton: UIColor { return defaultTextAndTint }
     override var cellTitleBackground: UIColor { return UIColor.Photon.Grey70 }
     override var faviconTint: UIColor { return UIColor.Photon.White100 }
-    override var searchBackground: UIColor { return UIColor.Photon.Grey60 }
+    override var searchBackground: UIColor { return defaultBackground }
 }
 
 fileprivate class DarkEnhancedTrackingProtectionMenuColor: EnhancedTrackingProtectionMenuColor {
@@ -99,7 +99,7 @@ fileprivate class DarkHomePanelColor: HomePanelColor {
     override var toolbarHighlight: UIColor { return UIColor.Photon.Blue20 }
     override var toolbarTint: UIColor { return UIColor.Photon.Grey30 }
     override var topSiteHeaderTitle: UIColor { return UIColor.Photon.White100 }
-    override var panelBackground: UIColor { return UIColor.Photon.Grey80 }
+    override var panelBackground: UIColor { return UIColor.black }
     override var separator: UIColor { return defaultSeparator }
     override var border: UIColor { return UIColor.Photon.Grey60 }
     override var buttonContainerBorder: UIColor { return separator }
@@ -143,7 +143,7 @@ fileprivate class DarkHomePanelColor: HomePanelColor {
     override var learnAndActDurationColor: UIColor { UIColor.Photon.LightGrey90 }
     override var learnAndActDescriptionColor: UIColor { UIColor.Photon.Grey11 }
     
-    override var searchHeaderColor: UIColor { UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1) }
+    override var searchHeaderColor: UIColor { UIColor(red: 0.141, green: 0.149, blue: 0.161, alpha: 1) }
     override var searchTitleHeaderColor: UIColor { UIColor.Photon.White100 }
 }
 

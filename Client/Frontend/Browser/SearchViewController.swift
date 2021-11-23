@@ -29,14 +29,6 @@ private enum SearchListSection: Int, CaseIterable {
 }
 
 private struct SearchViewControllerUX {
-    static var SearchEngineScrollViewBackgroundColor: CGColor { return UIColor.theme.homePanel.toolbarBackground.withAlphaComponent(0.8).cgColor }
-    static let SearchEngineScrollViewBorderColor = UIColor.black.withAlphaComponent(0.2).cgColor
-
-    // TODO: This should use ToolbarHeight in BVC. Fix this when we create a shared theming file.
-    static let EngineButtonHeight: Float = 44
-    static let EngineButtonWidth = EngineButtonHeight * 1.4
-    static let EngineButtonBackgroundColor = UIColor.clear.cgColor
-
     static let SearchImage = "search"
     static let SearchAppendImage = "search-append"
     static let SearchEngineTopBorderWidth = 0.5
@@ -107,19 +99,14 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
 
     override func viewDidLoad() {
         view.backgroundColor = UIColor.theme.homePanel.panelBackground
-        let blur = UIVisualEffectView(effect: UIBlurEffect(style: .light))
-        view.addSubview(blur)
-
+        tableView.backgroundColor = UIColor.theme.homePanel.panelBackground
+        
         super.viewDidLoad()
         getCachedTabs()
         KeyboardHelper.defaultHelper.addDelegate(self)
 
         layoutTable()
         
-        blur.snp.makeConstraints { make in
-            make.edges.equalTo(self.view)
-        }
-    
         NotificationCenter.default.addObserver(self, selector: #selector(dynamicFontChanged), name: .DynamicFontChanged, object: nil)
         tableView.register(SearchHeader.self, forHeaderFooterViewReuseIdentifier: "SearchHeader")
     }
@@ -378,6 +365,7 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
             return nil
         }
         headerView.titleLabel.text = SearchListSection(rawValue: section)?.title
+        headerView.backgroundColor = UIColor.clear
         return headerView
     }
 
@@ -523,6 +511,8 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
                 cell = twoLineCell
             }
         }
+        cell.backgroundColor = UIColor.theme.homePanel.panelBackground
+
         return cell
     }
     
