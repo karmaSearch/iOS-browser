@@ -13,6 +13,7 @@ class KarmaHomeViewCell: UICollectionViewCell {
     private lazy var backgroundImageView: UIImageView = .build { imageView in
         imageView.contentMode = .scaleAspectFill
         imageView.layer.masksToBounds = true
+        imageView.isUserInteractionEnabled = true
     }
 
     private lazy var infoButton: UIButton = .build { button in
@@ -44,12 +45,14 @@ class KarmaHomeViewCell: UICollectionViewCell {
     
     private lazy var autorLabel: UILabel = .build { label in
         label.textColor = UIColor.Photon.Purple70
+        label.isUserInteractionEnabled = true
         label.font = DynamicFontHelper.defaultHelper.DefaultSmallFont
     }
     
     var viewModel: KarmaHomeViewModel = KarmaHomeViewModel()
     
     var openMenu: (() -> Void)?
+    var openLink: ((URL) -> Void)?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -58,8 +61,11 @@ class KarmaHomeViewCell: UICollectionViewCell {
         self.loadImages()
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.hideCredit(_:)))
+        backgroundImageView.addGestureRecognizer(tapGesture)
         
-        contentView.addGestureRecognizer(tapGesture)
+        let showLinkTap = UITapGestureRecognizer(target: self, action: #selector(self.showLink(_:)))
+        creditView.addGestureRecognizer(showLinkTap)
+        
         contentView.addSubviews(backgroundImageView, infoButton, menuButton, logoKarma, creditView)
         creditView.addSubviews(descriptionLabel, autorLabel)
         creditView.isHidden = true
@@ -89,14 +95,14 @@ class KarmaHomeViewCell: UICollectionViewCell {
         
         descriptionLabel.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(5)
-            make.top.equalToSuperview().offset(2)
-            make.bottom.equalToSuperview().offset(-2)
+            make.top.equalToSuperview().offset(5)
+            make.bottom.equalToSuperview().offset(-5)
         }
         autorLabel.snp.makeConstraints { make in
             make.trailing.equalToSuperview().offset(-5)
             make.leading.equalTo(descriptionLabel.snp.trailing)
-            make.top.equalToSuperview().offset(2)
-            make.bottom.equalToSuperview().offset(-2)
+            make.top.equalToSuperview().offset(5)
+            make.bottom.equalToSuperview().offset(-5)
         }
     }
     
@@ -108,7 +114,16 @@ class KarmaHomeViewCell: UICollectionViewCell {
         openMenu?()
     }
     
+    @objc private func showLink(_ sender: UIButton) {
+        if let urlString = viewModel.currentImage?.url,
+           let url = URL(string: urlString){
+            openLink?(url)
+        }
+    }
+    
     @objc private func showCredit(_ sender: UIButton) {
+        guard self.creditView.isHidden == true else { return }
+
         creditView.alpha = 0
         creditView.isHidden = false
         UIView.animate(withDuration: 1) { [weak self] in
@@ -117,6 +132,8 @@ class KarmaHomeViewCell: UICollectionViewCell {
     }
     
     @objc private func hideCredit(_ sender: UIButton) {
+        guard self.creditView.isHidden == false else { return }
+        
         creditView.alpha = 1
         UIView.animate(withDuration: 1) {  [weak self] in
             self?.creditView.alpha = 0

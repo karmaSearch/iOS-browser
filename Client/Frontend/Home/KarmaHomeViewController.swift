@@ -945,6 +945,9 @@ extension KarmaHomeViewController {
         customizeHomeCell.openMenu = { [weak self] in
             self?.homePanelDelegate?.homePanelDidRequestToOpenSettings()
         }
+        customizeHomeCell.openLink = { [weak self] url in
+            self?.homePanelDelegate?.homePanel(didSelectURL: url, visitType: .link, isGoogleTopSite: false)
+        }
         return customizeHomeCell
     }
     

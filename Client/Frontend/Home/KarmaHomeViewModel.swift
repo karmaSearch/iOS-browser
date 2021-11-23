@@ -13,8 +13,10 @@ struct HomeImage {
     var imageName: String
     var infoTitle: String?
     var author: String?
+    var url: String?
 }
 class KarmaHomeViewModel {
+    var currentImage: HomeImage?
     
     func getRandomImage() -> HomeImage {
         if let filePath = Bundle.main.path(forResource: "HomeImage", ofType: "json"),
@@ -26,9 +28,8 @@ class KarmaHomeViewModel {
               let random = Int.random(in: 0..<array.count)
                   
               let randomImage = array[random]
-              return HomeImage(imageName: randomImage["imageName"].stringValue, infoTitle: randomImage["infoText"].stringValue, author: randomImage["author"].stringValue)
-              
-              
+              self.currentImage = HomeImage(imageName: randomImage["imageName"].stringValue, infoTitle: randomImage["infoText"].stringValue, author: randomImage["author"].stringValue, url: randomImage["url"].stringValue)
+              return currentImage!
           }
           catch {
             print(error)

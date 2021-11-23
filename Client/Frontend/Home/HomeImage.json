@@ -3,12 +3,14 @@
         {
         "imageName": "plants",
         "infoText": "Plants by ",
-        "author" : "John Fowler"
+        "author" : "John Fowler",
+        "url" : "https://unsplash.com/@wildhoney"
         },
         {
         "imageName": "toucan",
         "infoText": "Toucan in the rain by ",
-        "author" : "Zdeněk Macháček"
+        "author" : "Zdeněk Macháček",
+        "url" : "https://unsplash.com/@zmachacek"
         }
     ]
 }
