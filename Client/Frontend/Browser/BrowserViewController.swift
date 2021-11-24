@@ -779,6 +779,7 @@ class BrowserViewController: UIViewController {
         })
         view.setNeedsUpdateConstraints()
         urlBar.locationView.reloadButton.reloadButtonState = .disabled
+        navigationToolbar.updateShareStatus(false)
     }
 
     fileprivate func hideFirefoxHome() {
@@ -801,6 +802,7 @@ class BrowserViewController: UIViewController {
                 self.showReaderModeBar(animated: false)
             }
         })
+        navigationToolbar.updateShareStatus(true)
     }
 
     func updateInContentHomePanel(_ url: URL?, focusUrlBar: Bool = false) {
@@ -814,7 +816,6 @@ class BrowserViewController: UIViewController {
 
             if isAboutHomeURL {
                 showFirefoxHome(inline: true)
-
                 if focusUrlBar {
                     if let viewcontroller = presentedViewController as? OnViewDismissable {
                         viewcontroller.onViewDismissed = { [weak self] in

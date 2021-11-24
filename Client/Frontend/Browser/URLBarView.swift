@@ -108,13 +108,6 @@ class URLBarView: UIView {
 
     let line = UIView()
 
-    lazy var tabsButton: TabsButton = {
-        let tabsButton = TabsButton.tabTrayButton()
-        tabsButton.accessibilityIdentifier = "URLBarView.tabsButton"
-        tabsButton.inTopTabs = false
-        return tabsButton
-    }()
-
     fileprivate lazy var progressBar: GradientProgressBar = {
         let progressBar = GradientProgressBar()
         progressBar.clipsToBounds = false
@@ -148,7 +141,8 @@ class URLBarView: UIView {
     var addNewTabButton = ToolbarButton()
     var forwardButton = ToolbarButton()
     var multiStateButton = ToolbarButton()
-
+    var tabsButton = ToolbarButton()
+    var shareButton = ToolbarButton()
     var backButton: ToolbarButton = {
         let backButton = ToolbarButton()
         backButton.accessibilityIdentifier = "URLBarView.backButton"
@@ -579,6 +573,8 @@ class URLBarView: UIView {
 }
 
 extension URLBarView: TabToolbarProtocol {
+   
+
     func privateModeBadge(visible: Bool) {
         if UIDevice.current.userInterfaceIdiom != .pad {
             privateModeBadge.show(visible)
@@ -609,11 +605,15 @@ extension URLBarView: TabToolbarProtocol {
     }
 
     func updateTabCount(_ count: Int, animated: Bool = true) {
-        tabsButton.updateTabCount(count, animated: animated)
+       // tabsButton.updateTabCount(count, animated: animated)
     }
 
     func updateMiddleButtonState(_ state: MiddleButtonState) {
         helper?.setMiddleButtonState(state)
+    }
+    
+    func updateShareStatus(_ canShare: Bool) {
+        shareButton.isEnabled = canShare
     }
 
     func updatePageStatus(_ isWebPage: Bool) {

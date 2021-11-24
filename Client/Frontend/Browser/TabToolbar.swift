@@ -9,15 +9,17 @@ import Shared
 protocol TabToolbarProtocol: AnyObject {
     var tabToolbarDelegate: TabToolbarDelegate? { get set }
     var addNewTabButton: ToolbarButton { get }
-    var tabsButton: TabsButton { get }
+    var tabsButton: ToolbarButton { get }
     var bookmarksButton: ToolbarButton { get }
     var homeButton: ToolbarButton { get }
+    var shareButton: ToolbarButton { get }
     var forwardButton: ToolbarButton { get }
     var backButton: ToolbarButton { get }
     var multiStateButton: ToolbarButton { get }
     var actionButtons: [NotificationThemeable & UIButton] { get }
 
     func updateBackStatus(_ canGoBack: Bool)
+    func updateShareStatus(_ canShare: Bool)
     func updateForwardStatus(_ canGoForward: Bool)
     func updateMiddleButtonState(_ state: MiddleButtonState)
     func updatePageStatus(_ isWebPage: Bool)
@@ -40,6 +42,7 @@ protocol TabToolbarDelegate: AnyObject {
     func tabToolbarDidLongPressTabs(_ tabToolbar: TabToolbarProtocol, button: UIButton)
     func tabToolbarDidPressSearch(_ tabToolbar: TabToolbarProtocol, button: UIButton)
     func tabToolbarDidPressAddNewTab(_ tabToolbar: TabToolbarProtocol, button: UIButton)
+    func tabToolbarDidPressShare(_ tabToolbar: TabToolbarProtocol, button: UIButton)
 }
 
 enum MiddleButtonState {
@@ -115,6 +118,7 @@ open class TabToolbarHelper: NSObject {
 
         toolbar.multiStateButton.addTarget(self, action: #selector(didPressMultiStateButton), for: .touchUpInside)
 
+        toolbar.tabsButton.setImage(UIImage.templateImageNamed("nav-tabcounter"), for: .normal)
         toolbar.tabsButton.addTarget(self, action: #selector(didClickTabs), for: .touchUpInside)
         let longPressGestureTabsButton = UILongPressGestureRecognizer(target: self, action: #selector(didLongPressTabs))
         toolbar.tabsButton.addGestureRecognizer(longPressGestureTabsButton)
@@ -131,10 +135,17 @@ open class TabToolbarHelper: NSObject {
         toolbar.homeButton.accessibilityIdentifier = "TabToolbar.homeButton"
 
         toolbar.bookmarksButton.contentMode = .center
-        toolbar.bookmarksButton.setImage(UIImage.templateImageNamed("menu-panel-Bookmarks"), for: .normal)
+        toolbar.bookmarksButton.setImage(UIImage.templateImageNamed("menu-panel-Books"), for: .normal)
         toolbar.bookmarksButton.accessibilityLabel = .AppMenuButtonAccessibilityLabel
         toolbar.bookmarksButton.addTarget(self, action: #selector(didClickLibrary), for: .touchUpInside)
         toolbar.bookmarksButton.accessibilityIdentifier = "TabToolbar.libraryButton"
+        
+        toolbar.shareButton.contentMode = .center
+        toolbar.shareButton.setImage(UIImage.templateImageNamed("nav-share"), for: .normal)
+        toolbar.shareButton.accessibilityLabel = .AppMenuButtonAccessibilityLabel
+        toolbar.shareButton.addTarget(self, action: #selector(didClickShare), for: .touchUpInside)
+        toolbar.shareButton.accessibilityIdentifier = "TabToolbar.shareButton"
+        
         setTheme(forButtons: toolbar.actionButtons)
     }
 
@@ -174,6 +185,10 @@ open class TabToolbarHelper: NSObject {
 
     func didClickLibrary() {
         toolbar.tabToolbarDelegate?.tabToolbarDidPressBookmarks(toolbar, button: toolbar.bookmarksButton)
+    }
+    
+    func didClickShare() {
+        toolbar.tabToolbarDelegate?.tabToolbarDidPressShare(toolbar, button: toolbar.bookmarksButton)
     }
     
     func didClickAddNewTab() {
@@ -256,7 +271,7 @@ extension ToolbarButton: NotificationThemeable {
     func applyTheme() {
         selectedTintColor = UIColor.theme.toolbarButton.selectedTint
         disabledTintColor = UIColor.theme.toolbarButton.disabledTint
-        unselectedTintColor = UIColor.theme.browser.tint
+        unselectedTintColor = UIColor.theme.toolbarButton.selectedTint
         tintColor = isEnabled ? unselectedTintColor : disabledTintColor
         imageView?.tintColor = tintColor
     }
@@ -265,12 +280,13 @@ extension ToolbarButton: NotificationThemeable {
 class TabToolbar: UIView {
     weak var tabToolbarDelegate: TabToolbarDelegate?
 
-    let tabsButton = TabsButton()
+    let tabsButton = ToolbarButton()
     let addNewTabButton = ToolbarButton()
     let appMenuButton = ToolbarButton()
     let bookmarksButton = ToolbarButton()
     let forwardButton = ToolbarButton()
     let backButton = ToolbarButton()
+    let shareButton = ToolbarButton()
     let multiStateButton = ToolbarButton()
     let actionButtons: [NotificationThemeable & UIButton]
 
@@ -282,7 +298,7 @@ class TabToolbar: UIView {
     private let contentView = UIStackView()
 
     fileprivate override init(frame: CGRect) {
-        actionButtons = [backButton, forwardButton, multiStateButton, addNewTabButton, tabsButton, appMenuButton]
+        actionButtons = [backButton, forwardButton, shareButton, bookmarksButton, tabsButton]
         super.init(frame: frame)
         setupAccessibility()
 
@@ -300,8 +316,6 @@ class TabToolbar: UIView {
 
     override func updateConstraints() {
         privateModeBadge.layout(onButton: tabsButton)
-        appMenuBadge.layout(onButton: appMenuButton)
-        warningMenuBadge.layout(onButton: appMenuButton)
 
         contentView.snp.makeConstraints { make in
             make.leading.trailing.top.equalTo(self)
@@ -356,9 +370,13 @@ extension TabToolbar: TabToolbarProtocol {
         if !appMenuBadge.badge.isHidden { appMenuBadge.show(false) }
         warningMenuBadge.show(setVisible)
     }
-
+    
     func updateBackStatus(_ canGoBack: Bool) {
         backButton.isEnabled = canGoBack
+    }
+
+    func updateShareStatus(_ canShare: Bool) {
+        shareButton.isEnabled = canShare
     }
 
     func updateForwardStatus(_ canGoForward: Bool) {
@@ -374,7 +392,7 @@ extension TabToolbar: TabToolbarProtocol {
     }
 
     func updateTabCount(_ count: Int, animated: Bool) {
-        tabsButton.updateTabCount(count, animated: animated)
+        //tabsButton.updateTabCount(count, animated: animated)
     }
 }
 
