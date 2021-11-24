@@ -51,7 +51,7 @@ class KarmaHomeViewCell: UICollectionViewCell {
     
     var viewModel: KarmaHomeViewModel = KarmaHomeViewModel()
     
-    var openMenu: (() -> Void)?
+    var openMenu: ((UIButton) -> Void)?
     var openLink: ((URL) -> Void)?
     
     override init(frame: CGRect) {
@@ -111,7 +111,7 @@ class KarmaHomeViewCell: UICollectionViewCell {
     }
     
     @objc private func openMenu(_ sender: UIButton) {
-        openMenu?()
+        openMenu?(self.menuButton)
     }
     
     @objc private func showLink(_ sender: UIButton) {

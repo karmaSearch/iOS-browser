@@ -1648,8 +1648,25 @@ extension BrowserViewController: HomePanelDelegate {
         self.urlBar.locationTextField?.becomeFirstResponder()
     }
     
-    func homePanelDidRequestToOpenSettings() {
-        self.openSettings()
+    func homePanelDidRequestToOpenSettings(caller: UIButton) {
+        self.openMenu(button: caller)
+    }
+    
+    func openMenu(button: UIButton) {
+
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+        libraryDrawerViewController?.close(immediately: true)
+        var actions: [[PhotonActionSheetItem]] = []
+        
+        let section0 = getLibraryActions(vcDelegate: self)
+        let section1 = getKarmaActions(vcDelegate: self)
+        var section2 = getOtherPanelActions(vcDelegate: self)
+        section2.append(contentsOf: getSettingsAction(vcDelegate: self))
+        
+        actions.append(contentsOf: [section0, section1, section2])
+
+        presentSheetWith(actions: actions, on: self, from: button)
+        
     }
 }
 

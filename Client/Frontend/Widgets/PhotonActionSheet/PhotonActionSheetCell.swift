@@ -244,7 +244,7 @@ class PhotonActionSheetCell: UITableViewCell {
             } else {
                 if action.iconAlignment == .right {
                     statusIcon.removeFromSuperview()
-                    stackView.addArrangedSubview(statusIcon)
+                    stackView.insertArrangedSubview(statusIcon, at: 0)
                 }
             }
         } else {

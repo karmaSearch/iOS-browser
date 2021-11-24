@@ -10,7 +10,6 @@ protocol TabToolbarProtocol: AnyObject {
     var tabToolbarDelegate: TabToolbarDelegate? { get set }
     var addNewTabButton: ToolbarButton { get }
     var tabsButton: TabsButton { get }
-    var appMenuButton: ToolbarButton { get }
     var bookmarksButton: ToolbarButton { get }
     var homeButton: ToolbarButton { get }
     var forwardButton: ToolbarButton { get }
@@ -36,7 +35,6 @@ protocol TabToolbarDelegate: AnyObject {
     func tabToolbarDidLongPressReload(_ tabToolbar: TabToolbarProtocol, button: UIButton)
     func tabToolbarDidPressStop(_ tabToolbar: TabToolbarProtocol, button: UIButton)
     func tabToolbarDidPressHome(_ tabToolbar: TabToolbarProtocol, button: UIButton)
-    func tabToolbarDidPressMenu(_ tabToolbar: TabToolbarProtocol, button: UIButton)
     func tabToolbarDidPressBookmarks(_ tabToolbar: TabToolbarProtocol, button: UIButton)
     func tabToolbarDidPressTabs(_ tabToolbar: TabToolbarProtocol, button: UIButton)
     func tabToolbarDidLongPressTabs(_ tabToolbar: TabToolbarProtocol, button: UIButton)
@@ -125,12 +123,6 @@ open class TabToolbarHelper: NSObject {
         toolbar.addNewTabButton.accessibilityLabel = .AddTabAccessibilityLabel
         toolbar.addNewTabButton.addTarget(self, action: #selector(didClickAddNewTab), for: .touchUpInside)
         toolbar.addNewTabButton.accessibilityIdentifier = "TabToolbar.addNewTabButton"
-        
-        toolbar.appMenuButton.contentMode = .center
-        toolbar.appMenuButton.setImage(UIImage.templateImageNamed("nav-menu"), for: .normal)
-        toolbar.appMenuButton.accessibilityLabel = .AppMenuButtonAccessibilityLabel
-        toolbar.appMenuButton.addTarget(self, action: #selector(didClickMenu), for: .touchUpInside)
-        toolbar.appMenuButton.accessibilityIdentifier = AccessibilityIdentifiers.BottomToolbar.settingsMenuButton
 
         toolbar.homeButton.contentMode = .center
         toolbar.homeButton.setImage(UIImage.templateImageNamed("menu-Home"), for: .normal)
@@ -176,16 +168,12 @@ open class TabToolbarHelper: NSObject {
         }
     }
 
-    func didClickMenu() {
-        toolbar.tabToolbarDelegate?.tabToolbarDidPressMenu(toolbar, button: toolbar.appMenuButton)
-    }
-
     func didClickHome() {
-        toolbar.tabToolbarDelegate?.tabToolbarDidPressHome(toolbar, button: toolbar.appMenuButton)
+        toolbar.tabToolbarDelegate?.tabToolbarDidPressHome(toolbar, button: toolbar.homeButton)
     }
 
     func didClickLibrary() {
-        toolbar.tabToolbarDelegate?.tabToolbarDidPressBookmarks(toolbar, button: toolbar.appMenuButton)
+        toolbar.tabToolbarDelegate?.tabToolbarDidPressBookmarks(toolbar, button: toolbar.bookmarksButton)
     }
     
     func didClickAddNewTab() {

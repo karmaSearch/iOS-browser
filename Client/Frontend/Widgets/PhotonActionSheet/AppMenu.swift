@@ -10,31 +10,50 @@ extension PhotonActionSheetProtocol {
     //Returns a list of actions which is used to build a menu
     //OpenURL is a closure that can open a given URL in some view controller. It is up to the class using the menu to know how to open it
     func getLibraryActions(vcDelegate: PageOptionsVC) -> [PhotonActionSheetItem] {
-        let bookmarks = PhotonActionSheetItem(title: .AppMenuBookmarks, iconString: "menu-panel-Bookmarks") { _, _ in
+        let bookmarks = PhotonActionSheetItem(title: .AppMenuBookmarks, iconString: "menu-panel-Bookmarks", iconAlignment: .right) { _, _ in
             let bvc = vcDelegate as? BrowserViewController
             bvc?.showLibrary(panel: .bookmarks)
         }
-        let history = PhotonActionSheetItem(title: .AppMenuHistory, iconString: "menu-panel-History") { _, _ in
+        let history = PhotonActionSheetItem(title: .AppMenuHistory, iconString: "menu-panel-History", iconAlignment: .right) { _, _ in
             let bvc = vcDelegate as? BrowserViewController
             bvc?.showLibrary(panel: .history)
         }
-        let downloads = PhotonActionSheetItem(title: .AppMenuDownloads, iconString: "menu-panel-Downloads") { _, _ in
+        let downloads = PhotonActionSheetItem(title: .AppMenuDownloads, iconString: "menu-panel-Downloads", iconAlignment: .right) { _, _ in
             let bvc = vcDelegate as? BrowserViewController
             bvc?.showLibrary(panel: .downloads)
         }
-        let readingList = PhotonActionSheetItem(title: .AppMenuReadingList, iconString: "menu-panel-ReadingList") { _, _ in
-            let bvc = vcDelegate as? BrowserViewController
-            bvc?.showLibrary(panel: .readingList)
-        }
 
-        return [bookmarks, history, downloads, readingList]
+        return [bookmarks, history, downloads]
+    }
+    
+    func getKarmaActions(vcDelegate: PageOptionsVC) -> [PhotonActionSheetItem] {
+        let defaultbrowser = PhotonActionSheetItem(title: .MenuKarmaDefaultBrowser, iconString: "menu-panel-karma-default-browser", iconAlignment: .right) { _, _ in
+            let bvc = vcDelegate as? BrowserViewController
+        }
+        let mission = PhotonActionSheetItem(title: .MenuKarmaMission, iconString: "menu-panel-karma-globe", iconAlignment: .right) { _, _ in
+            let bvc = vcDelegate as? BrowserViewController
+        }
+        let how = PhotonActionSheetItem(title: .MenuKarmaHow, iconString: "menu-panel-karma-how", iconAlignment: .right) { _, _ in
+            let bvc = vcDelegate as? BrowserViewController
+        }
+        let partners = PhotonActionSheetItem(title: .MenuKarmaPartners, iconString: "menu-panel-karma-partners", iconAlignment: .right) { _, _ in
+            let bvc = vcDelegate as? BrowserViewController
+        }
+        let privacy = PhotonActionSheetItem(title: .MenuKarmaPrivacy, iconString: "menu-panel-karma-privacy", iconAlignment: .right) { _, _ in
+            let bvc = vcDelegate as? BrowserViewController
+        }
+        let legal = PhotonActionSheetItem(title: .MenuKarmaTermsOfService, iconString: "menu-panel-karma-legal", iconAlignment: .right) { _, _ in
+            let bvc = vcDelegate as? BrowserViewController
+        }
+        
+        return [defaultbrowser, mission, how, partners, privacy, legal]
     }
     
     // Not part of AppMenu, but left for future use. 
     func getHomeAction(vcDelegate: Self.PageOptionsVC) -> [PhotonActionSheetItem] {
         guard let tab = self.tabManager.selectedTab else { return [] }
         
-        let openHomePage = PhotonActionSheetItem(title: .AppMenuOpenHomePageTitleString, iconString: "menu-Home") { _, _ in
+        let openHomePage = PhotonActionSheetItem(title: .AppMenuOpenHomePageTitleString, iconString: "menu-Home", iconAlignment: .right) { _, _ in
             let page = NewTabAccessors.getHomePage(self.profile.prefs)
             if page == .homePage, let homePageURL = HomeButtonHomePageAccessors.getHomePage(self.profile.prefs) {
                 tab.loadRequest(PrivilegedRequest(url: homePageURL) as URLRequest)
@@ -48,15 +67,8 @@ extension PhotonActionSheetProtocol {
     }
 
     func getSettingsAction(vcDelegate: Self.PageOptionsVC) -> [PhotonActionSheetItem] {
-        // This method is being called when we the user sees the menu, not just when it's constructed.
-        // In that case, we can let sendExposureEvent default to true.
-        let variables = Experiments.shared.getVariables(featureId: .nimbusValidation)
-        // Get the title and icon for this feature from nimbus.
-        // We need to provide defaults if Nimbus doesn't provide them.
-        let title = variables.getText("settings-title") ?? .AppMenuSettingsTitleString
-        let icon = variables.getString("settings-icon") ?? "menu-Settings"
 
-        let openSettings = PhotonActionSheetItem(title: title, iconString: icon) { _, _ in
+        let openSettings = PhotonActionSheetItem(title: .AppMenuSettingsTitleString, iconString: "menu-Settings", iconAlignment: .right) { _, _ in
             let settingsTableViewController = AppSettingsTableViewController()
             settingsTableViewController.profile = self.profile
             settingsTableViewController.tabManager = self.tabManager
@@ -84,7 +96,7 @@ extension PhotonActionSheetProtocol {
         let noImageEnabled = NoImageModeHelper.isActivated(profile.prefs)
         let imageModeTitle: String = noImageEnabled ? .AppMenuShowImageMode : .AppMenuNoImageMode
         let iconString = noImageEnabled ? "menu-ShowImages" : "menu-NoImageMode"
-        let noImageMode = PhotonActionSheetItem(title: imageModeTitle, iconString: iconString, isEnabled: noImageEnabled) { action,_ in
+        let noImageMode = PhotonActionSheetItem(title: imageModeTitle, iconString: iconString, iconAlignment: .right, isEnabled: noImageEnabled, accessory: .Switch) { action,_ in
             NoImageModeHelper.toggle(isEnabled: action.isEnabled, profile: self.profile, tabManager: self.tabManager)
             if noImageEnabled {
                 TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .blockImagesDisabled)
@@ -97,7 +109,7 @@ extension PhotonActionSheetProtocol {
 
         let nightModeEnabled = NightModeHelper.isActivated(profile.prefs)
         let nightModeTitle: String = nightModeEnabled ? .AppMenuTurnOffNightMode : .AppMenuTurnOnNightMode
-        let nightMode = PhotonActionSheetItem(title: nightModeTitle, iconString: "menu-NightMode", isEnabled: nightModeEnabled) { _, _ in
+        let nightMode = PhotonActionSheetItem(title: nightModeTitle, iconString: "menu-NightMode", iconAlignment: .right, isEnabled: nightModeEnabled, accessory: .Switch) { _, _ in
             NightModeHelper.toggle(self.profile.prefs, tabManager: self.tabManager)
 
             if nightModeEnabled {
@@ -119,6 +131,10 @@ extension PhotonActionSheetProtocol {
         }
         items.append(nightMode)
 
+        let feedback = PhotonActionSheetItem(title: .MenuKarmaFeedback, iconString: "menu-panel-karma-feedback", iconAlignment: .right) { _, _ in
+            let bvc = vcDelegate as? BrowserViewController
+        }
+        items.append(feedback)
         return items
     }
 

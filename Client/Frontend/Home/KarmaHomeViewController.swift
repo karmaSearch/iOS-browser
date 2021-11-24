@@ -93,7 +93,7 @@ protocol HomePanelDelegate: AnyObject {
     func homePanelDidRequestToCustomizeHomeSettings()
     func homePanelDidPresentContextualHint(type: ContextualHintViewType)
     func homePanelDidDismissContextualHint(type: ContextualHintViewType)
-    func homePanelDidRequestToOpenSettings()
+    func homePanelDidRequestToOpenSettings(caller: UIButton)
 }
 
 protocol HomePanel: NotificationThemeable {
@@ -951,8 +951,8 @@ extension KarmaHomeViewController {
     private func configureCustomizeKarmaCell(_ cell: UICollectionViewCell, forIndexPath indexPath: IndexPath) -> UICollectionViewCell {
         let customizeHomeCell = cell as! KarmaHomeViewCell
         customizeHomeCell.setNeedsLayout()
-        customizeHomeCell.openMenu = { [weak self] in
-            self?.homePanelDelegate?.homePanelDidRequestToOpenSettings()
+        customizeHomeCell.openMenu = { [weak self] button in
+            self?.homePanelDelegate?.homePanelDidRequestToOpenSettings(caller: button)
         }
         customizeHomeCell.openLink = { [weak self] url in
             self?.homePanelDelegate?.homePanel(didSelectURL: url, visitType: .link, isGoogleTopSite: false)
