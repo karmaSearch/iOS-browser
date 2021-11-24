@@ -28,22 +28,32 @@ extension PhotonActionSheetProtocol {
     
     func getKarmaActions(vcDelegate: PageOptionsVC) -> [PhotonActionSheetItem] {
         let defaultbrowser = PhotonActionSheetItem(title: .MenuKarmaDefaultBrowser, iconString: "menu-panel-karma-default-browser", iconAlignment: .right) { _, _ in
-            let bvc = vcDelegate as? BrowserViewController
+            UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
         }
+        var karmaBaseUrl = "https://about.mykarma.org/"
+        if Locale.current.identifier.contains("fr") {
+            karmaBaseUrl.append(contentsOf: "fr/")
+        }
+        let bvc = vcDelegate as? BrowserViewController
+
         let mission = PhotonActionSheetItem(title: .MenuKarmaMission, iconString: "menu-panel-karma-globe", iconAlignment: .right) { _, _ in
-            let bvc = vcDelegate as? BrowserViewController
+            bvc?.showUrl(url: URL(string: karmaBaseUrl)!)
         }
         let how = PhotonActionSheetItem(title: .MenuKarmaHow, iconString: "menu-panel-karma-how", iconAlignment: .right) { _, _ in
-            let bvc = vcDelegate as? BrowserViewController
+            bvc?.showUrl(url: URL(string: karmaBaseUrl + "what")!)
         }
         let partners = PhotonActionSheetItem(title: .MenuKarmaPartners, iconString: "menu-panel-karma-partners", iconAlignment: .right) { _, _ in
-            let bvc = vcDelegate as? BrowserViewController
+            if Locale.current.identifier == "fr" {
+                bvc?.showUrl(url: URL(string: "https://mykarma.notion.site/Our-Partners-a8cd5944d0e64872ac7f44c8b014a059")!)
+            } else {
+                bvc?.showUrl(url: URL(string: "https://mykarma.notion.site/Nos-partenaires-8c26dd107da341ccb0f0c7216cc2a6d5")!)
+            }
         }
         let privacy = PhotonActionSheetItem(title: .MenuKarmaPrivacy, iconString: "menu-panel-karma-privacy", iconAlignment: .right) { _, _ in
-            let bvc = vcDelegate as? BrowserViewController
+            bvc?.showUrl(url: URL(string: karmaBaseUrl + "legal#privacy")!)
         }
         let legal = PhotonActionSheetItem(title: .MenuKarmaTermsOfService, iconString: "menu-panel-karma-legal", iconAlignment: .right) { _, _ in
-            let bvc = vcDelegate as? BrowserViewController
+            bvc?.showUrl(url: URL(string: karmaBaseUrl + "legal")!)
         }
         
         return [defaultbrowser, mission, how, partners, privacy, legal]

@@ -865,6 +865,11 @@ class BrowserViewController: UIViewController {
         }
         self.present(controller, animated: true, completion: nil)
     }
+    
+    func showUrl(url: URL) {
+        guard let tab = tabManager.selectedTab else { return }
+        finishEditingAndSubmit(url, visitType: VisitType.link, forTab: tab)
+    }
 
     fileprivate func createSearchControllerIfNeeded() {
         guard self.searchController == nil else {
