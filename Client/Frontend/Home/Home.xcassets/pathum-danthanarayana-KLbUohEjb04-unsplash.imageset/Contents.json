@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "plants.png",
+      "filename" : "pathum-danthanarayana-KLbUohEjb04-unsplash.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "pathum-danthanarayana-KLbUohEjb04-unsplash@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "pathum-danthanarayana-KLbUohEjb04-unsplash@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

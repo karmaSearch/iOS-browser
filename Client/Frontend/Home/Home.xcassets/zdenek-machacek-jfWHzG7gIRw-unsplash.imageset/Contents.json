@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "toucan.png",
+      "filename" : "zdenek-machacek-jfWHzG7gIRw-unsplash.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "zdenek-machacek-jfWHzG7gIRw-unsplash@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "zdenek-machacek-jfWHzG7gIRw-unsplash@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
