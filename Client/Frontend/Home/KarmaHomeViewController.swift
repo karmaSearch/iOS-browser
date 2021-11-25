@@ -16,7 +16,7 @@ private let log = Logger.browserLogger
 struct FirefoxHomeUX {
     static let highlightCellHeight: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 250 : 200
     static let jumpBackInCellHeight: CGFloat = 120
-    static let karmaMenuHeight: CGFloat = UIScreen.main.bounds.height/2
+    static let karmaMenuHeight: CGFloat = 200
     static let recentlySavedCellHeight: CGFloat = 136
     static let sectionInsetsForSizeClass = UXSizeClasses(compact: 0, regular: 101, other: 15)
     static let numberOfItemsPerRowForSizeClassIpad = UXSizeClasses(compact: 3, regular: 4, other: 2)
@@ -368,7 +368,7 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
     func applyTheme() {
         self.view.backgroundColor = UIColor.theme.homePanel.topSitesBackground
         topSiteCell.collectionView.reloadData()
-        if let collectionView = self.collectionView, collectionView.numberOfSections > 0, collectionView.numberOfItems(inSection: 0) > 0 {
+        if let collectionView = self.collectionView, collectionView.numberOfSections > 0 {
             collectionView.reloadData()
         }
     }
@@ -539,7 +539,7 @@ extension KarmaHomeViewController {
 
         func cellHeight(_ traits: UITraitCollection, width: CGFloat) -> CGFloat {
             switch self {
-            case .karmaMenu: return FirefoxHomeUX.karmaMenuHeight
+            case .karmaMenu: return traits.horizontalSizeClass != .compact ? FirefoxHomeUX.karmaMenuHeight : width
             case .pocket: return FirefoxHomeUX.highlightCellHeight
             case .jumpBackIn: return FirefoxHomeUX.jumpBackInCellHeight
             case .recentlySaved: return FirefoxHomeUX.recentlySavedCellHeight
@@ -800,7 +800,7 @@ extension KarmaHomeViewController: UICollectionViewDelegateFlowLayout {
             return isRecentlySavedSectionEnabled ? defaultInsets : .zero
         case .learnAndAct:
             return isLearnAndActSectionEnabled ? defaultInsets : .zero
-        case .customizeHome, .karmaMenu:
+        case .customizeHome:
             return isLearnAndActSectionEnabled ? defaultInsets : .zero
         case .karmaMenu:
             return isKarmaHomeSectionEnabled ? defaultInsets : .zero
