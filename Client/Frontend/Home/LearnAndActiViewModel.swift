@@ -43,7 +43,8 @@ struct LearnAndActBloc {
 class LearnAndActiViewModel {
     
     func getDatas(completion: (LearnAndAct) -> Void) {
-        if let filePath = Bundle.main.path(forResource: "learnandact", ofType: "json"),
+        let fileName = Locale.current.identifier.contains("fr") ? "learnandact-fr" : "learnandact"
+        if let filePath = Bundle.main.path(forResource: fileName, ofType: "json"),
            let data = NSData(contentsOfFile: filePath) {
           do {
 

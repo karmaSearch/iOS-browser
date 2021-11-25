@@ -200,6 +200,12 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
         return customCell
     }()
     
+    // Not used for displaying. Only used for calculating layout.
+    lazy var learnAndActCell: LearnAndActViewCell = {
+        let customCell = LearnAndActViewCell(frame: CGRect(width: self.view.frame.size.width, height: 0))
+        return customCell
+    }()
+    
     var pocketStories: [PocketStory] = []
     var learnAndAct: LearnAndAct?
     var hasRecentBookmarks = false
@@ -546,7 +552,7 @@ extension KarmaHomeViewController {
             case .topSites: return 0 //calculated dynamically
             case .libraryShortcuts: return FirefoxHomeUX.libraryShortcutsHeight
             case .customizeHome: return FirefoxHomeUX.customizeHomeHeight
-            case .learnAndAct: return FirefoxHomeUX.learnAndActHeight
+            case .learnAndAct: return 0 //calculated dynamically
             }
         }
 
@@ -592,11 +598,9 @@ extension KarmaHomeViewController {
             case .pocket:
                 let numItems = numberOfItemsForRow(traits)
                 return CGSize(width: floor(((frameWidth - inset) - (FirefoxHomeUX.minimumInsets * (numItems - 1))) / numItems), height: height)
-            case .topSites, .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome:
+            case .topSites, .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome, .learnAndAct:
                 return CGSize(width: frameWidth - inset, height: height)
             case .karmaMenu:
-                return CGSize(width: frameWidth, height: height)
-            case .learnAndAct:
                 return CGSize(width: frameWidth, height: height)
             }
         }
@@ -749,7 +753,12 @@ extension KarmaHomeViewController: UICollectionViewDelegateFlowLayout {
         case .libraryShortcuts:
             let width = min(FirefoxHomeUX.libraryShortcutsMaxWidth, cellSize.width)
             return CGSize(width: width, height: cellSize.height)
-        case .customizeHome, .pocket, .recentlySaved, .karmaMenu, .learnAndAct:
+        case .learnAndAct:
+            guard let learnAndAct = self.learnAndAct?.blocs, !learnAndAct.isEmpty else { return cellSize }
+            learnAndActCell.learnAndAct = learnAndAct[indexPath.row]
+            let height = learnAndActCell.calculateSize(width: cellSize.width)
+            return CGSize(width: cellSize.width, height: height)
+        case .customizeHome, .pocket, .recentlySaved, .karmaMenu:
             return cellSize
 
         }

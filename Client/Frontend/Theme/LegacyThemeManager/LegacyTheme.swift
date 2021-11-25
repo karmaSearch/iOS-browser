@@ -177,7 +177,7 @@ class HomePanelColor {
 
     var topSiteDomain: UIColor { return UIColor.Photon.DarkGrey90 }
     var topSitePin: UIColor { return UIColor.Photon.DarkGrey05 }
-    var topSitesBackground: UIColor { return UIColor.Photon.LightGrey10 }
+    var topSitesBackground: UIColor { return UIColor(rgb: 0xf2f2f7) }
 
     var shortcutBackground: UIColor { return .white }
     var shortcutShadowColor: CGColor { return UIColor(red: 0.23, green: 0.22, blue: 0.27, alpha: 1.0).cgColor }
@@ -209,7 +209,8 @@ class HomePanelColor {
     var learnAndActDurationColor: UIColor { UIColor(rgb: 0x94A1B2) }
     var learnAndActDescriptionColor: UIColor { UIColor(rgb: 0x242629) }
     var learnAndActLinkColor: UIColor { karmaTintColor }
-    
+    var learnAndActBackground: UIColor { UIColor.white }
+
     var searchHeaderColor: UIColor { UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1) }
     var searchTitleHeaderColor: UIColor { UIColor.Photon.DarkGrey70 }
 

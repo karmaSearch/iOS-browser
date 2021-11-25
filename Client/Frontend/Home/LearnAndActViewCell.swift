@@ -14,45 +14,41 @@ import SDWebImageWebPCoder
 class LearnAndActViewCell: UICollectionViewCell {
     private let padding: CGFloat = 10
     private let padding2: CGFloat = 16
-
+    private let textSpacing: CGFloat = 3
+    private let imageHeight: CGFloat = 193
+    private let typeHeight: CGFloat = 24
+    
     private lazy var imageView: UIImageView = .build { imageView in
-        imageView.contentMode = .scaleToFill
-        imageView.layer.cornerRadius = 10
-        imageView.layer.masksToBounds = true
+        imageView.contentMode = .scaleAspectFill
         imageView.isUserInteractionEnabled = false
     }
     
     private lazy var typeView: UIView = .build { view in
-        view.backgroundColor = UIColor.theme.homePanel.karmaTintColor
         view.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner]
         view.layer.cornerRadius = 5
         view.clipsToBounds = true
     }
     
     private lazy var titleLabel: UILabel = .build { label in
-        label.font = UIFont.customFont(ofSize: 18, weight: .bold)
+        label.font = UIFont.customFont(ofSize: 18, weight: .semibold)
         label.textAlignment = .left
-        label.textColor =  UIColor.theme.homePanel.learnAndActCellTitleColor
         label.numberOfLines = 2
     }
     
     private lazy var typeLabel: UILabel = .build { label in
-        label.font = UIFont.customFont(ofSize: 12, weight: .bold)
+        label.font = UIFont.customFont(ofSize: 16, weight: .bold)
         label.textAlignment = .left
-        label.textColor = UIColor.theme.homePanel.learnAndActTypeColor
     }
     
     private lazy var timeToRead: UILabel = .build { label in
         label.font = UIFont.customFont(ofSize: 12, weight: .medium)
         label.textAlignment = .left
-        label.textColor = UIColor.theme.homePanel.learnAndActDurationColor
     }
     
     private lazy var descriptionLabel: UILabel = .build { label in
-        label.font = UIFont.customFont(ofSize: 14, weight: .medium)
+        label.font = UIFont.customFont(ofSize: 16, weight: .medium)
         label.textAlignment = .left
-        label.textColor = UIColor.theme.homePanel.learnAndActDescriptionColor
-        label.numberOfLines = 5
+        label.numberOfLines = 4
         label.setContentHuggingPriority(.defaultHigh, for: .vertical)
         label.clipsToBounds = false
     }
@@ -60,11 +56,16 @@ class LearnAndActViewCell: UICollectionViewCell {
     private lazy var linkLabel: UILabel = .build { label in
         label.font = UIFont.customFont(ofSize: 14, weight: .bold)
         label.textAlignment = .left
-        label.textColor = UIColor.theme.homePanel.learnAndActLinkColor
     }
     
-    private lazy var seprator: UIView = .build { view in
-        view.backgroundColor = UIColor.theme.homePanel.separator
+    private lazy var textContent: UIView = .build { view in
+    }
+    
+    private lazy var textStackView: UIStackView = .build { view in
+        view.spacing = self.textSpacing
+        view.alignment = .leading
+        view.axis = .vertical
+        view.distribution = .equalSpacing
     }
     
     public var learnAndAct: LearnAndActBloc? {
@@ -77,6 +78,8 @@ class LearnAndActViewCell: UICollectionViewCell {
             timeToRead.text = learnAndAct.blogArticleDuration
             descriptionLabel.text = learnAndAct.blogArticleDescription
             linkLabel.text = learnAndAct.blogArticleAction
+            timeToRead.isHidden = learnAndAct.blogArticleDuration.isEmpty
+            
             let WebPCoder = SDImageWebPCoder.shared
             SDImageCodersManager.shared.addCoder(WebPCoder)
             SDWebImageDownloader.shared.setValue("image/webp,image/apng,image/*,*/*;q=0.8", forHTTPHeaderField:"Accept")
@@ -84,82 +87,94 @@ class LearnAndActViewCell: UICollectionViewCell {
             imageView.sd_setImage(with: URL(string: "https://mykarma.org"+learnAndAct.blogArticleImage), completed: nil)
             
             let paragraphStyle = NSMutableParagraphStyle()
-            paragraphStyle.maximumLineHeight = 18
-            paragraphStyle.minimumLineHeight = 18
+            paragraphStyle.maximumLineHeight = 20
+            paragraphStyle.minimumLineHeight = 20
             
             let baselineOffSet = learnAndAct.blogArticleDuration.isEmpty ? 0 : 1
             
             descriptionLabel.attributedText = NSMutableAttributedString(string: learnAndAct.blogArticleDescription, attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle, .baselineOffset: baselineOffSet])
             descriptionLabel.lineBreakMode = .byTruncatingTail
             
-            let paragraphStyleForTitle = NSMutableParagraphStyle()
-            paragraphStyleForTitle.lineHeightMultiple = 0.86
-            titleLabel.attributedText = NSMutableAttributedString(string: learnAndAct.blogArticleTitle, attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyleForTitle])
-            
             descriptionLabel.sizeToFit()
+            applyTheme()
         }
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.contentView.addSubviews(imageView, titleLabel, typeView, timeToRead, timeToRead, descriptionLabel, linkLabel, seprator)
-        
+        self.contentView.addSubviews(imageView, textContent, typeView)
+        textStackView.addArrangedSubview(titleLabel)
+        textStackView.addArrangedSubview(timeToRead)
+        textStackView.addArrangedSubview(descriptionLabel)
+        textStackView.addArrangedSubview(linkLabel)
+        textContent.addSubviews(textStackView)
         typeView.addSubview(typeLabel)
         
         typeView.snp.makeConstraints { make in
-            make.top.equalToSuperview()
+            make.centerY.equalTo(imageView.snp.bottom)
             make.leading.equalToSuperview()
-            make.width.greaterThanOrEqualTo(58)
-            make.height.equalTo(17)
+            make.height.equalTo(typeHeight)
         }
         
         typeLabel.snp.makeConstraints { make in
             make.centerY.centerX.equalToSuperview()
             make.top.equalToSuperview()
-            make.leading.equalToSuperview().offset(padding)
+            make.leading.equalToSuperview().offset(padding2)
         }
         
         imageView.snp.makeConstraints { make in
-            make.width.equalTo(imageView.snp.height)
-            make.top.equalTo(typeView.snp.centerY)
-            make.centerY.equalToSuperview()
-            make.leading.equalTo(padding2)
+            make.height.equalTo(imageHeight)
+            make.top.equalToSuperview()
+            make.leading.trailing.equalToSuperview()
         }
         
-        titleLabel.snp.makeConstraints { make in
-            make.top.equalTo(typeView.snp.top)
-            make.leading.equalTo(imageView.snp.trailing).offset(padding)
-            make.trailing.equalToSuperview().offset(-padding)
+        textContent.snp.makeConstraints { make in
+            make.bottom.equalToSuperview()
+            make.top.equalTo(imageView.snp.bottom).offset(textSpacing)
+            make.leading.trailing.equalToSuperview()
         }
         
-        timeToRead.snp.makeConstraints { make in
-            make.top.equalTo(titleLabel.snp.bottom)
-            make.leading.equalTo(imageView.snp.trailing).offset(padding)
-            make.trailing.equalToSuperview().offset(-padding)
+        textStackView.snp.makeConstraints { make in
+            make.top.equalTo(typeView.snp.bottom)
+            make.bottom.equalToSuperview().offset(-padding2)
+            make.leading.equalToSuperview().offset(padding2)
+            make.centerX.equalToSuperview()
         }
         
-        descriptionLabel.snp.makeConstraints { make in
-            make.top.equalTo(timeToRead.snp.bottom)
-            make.leading.equalTo(imageView.snp.trailing).offset(padding)
-            make.trailing.equalToSuperview().offset(-padding)
-        }
+        contentView.layer.cornerRadius = 10
+        contentView.layer.masksToBounds = true
         
-        linkLabel.snp.makeConstraints { make in
-            make.top.equalTo(descriptionLabel.snp.bottom).offset(1)
-            make.leading.equalTo(imageView.snp.trailing).offset(padding)
-            make.trailing.equalToSuperview().offset(-padding)
-            make.bottom.lessThanOrEqualTo(imageView.snp.bottom)
-            make.height.equalTo(15)
-        }
-        
-        seprator.snp.makeConstraints { make in
-            make.leading.trailing.bottom.equalToSuperview()
-            make.height.equalTo(1)
-        }
+        contentView.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1).cgColor
+        contentView.layer.shadowOpacity = 1
+        contentView.layer.shadowRadius = 12
+        contentView.layer.shadowOffset = CGSize(width: 0, height: 4)
+    }
+    
+    func applyTheme() {
+        typeView.backgroundColor = UIColor.theme.homePanel.karmaTintColor
+        titleLabel.textColor =  UIColor.theme.homePanel.learnAndActCellTitleColor
+        typeLabel.textColor = UIColor.theme.homePanel.learnAndActTypeColor
+        timeToRead.textColor = UIColor.theme.homePanel.learnAndActDurationColor
+        descriptionLabel.textColor = UIColor.theme.homePanel.learnAndActDescriptionColor
+        linkLabel.textColor = UIColor.theme.homePanel.learnAndActLinkColor
+        textContent.backgroundColor = UIColor.theme.homePanel.learnAndActBackground
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func calculateSize(width: CGFloat) -> CGFloat {
+        var size: CGFloat = 0
+        size += imageHeight
+        size += typeHeight / 2 
+        size += textSpacing * 3
+        size += titleLabel.font.calculateHeight(text: titleLabel.text ?? "", width: width - padding2*2)
+        size += (descriptionLabel.text ?? "").isEmpty ? 0 : descriptionLabel.font.calculateHeight(text: descriptionLabel.text ?? "", width: width - padding2*2)
+        size += timeToRead.font.calculateHeight(text: timeToRead.text ?? "", width: width - padding2*2)
+        size += linkLabel.font.calculateHeight(text: linkLabel.text ?? "", width: width - padding2*2)
+        size += padding2
+        return size
     }
     
 }

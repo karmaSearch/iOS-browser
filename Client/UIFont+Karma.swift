@@ -31,4 +31,13 @@ extension UIFont {
     class func customFontKG(ofSize fontSize: CGFloat) -> UIFont {
         return UIFont(name: "KGSecondChancesSolid", size: fontSize)!
     }
+    
+    func calculateHeight(text: String, width: CGFloat) -> CGFloat {
+        let constraintRect = CGSize(width: width, height: CGFloat.greatestFiniteMagnitude)
+        let boundingBox = text.boundingRect(with: constraintRect,
+                                        options: NSStringDrawingOptions.usesLineFragmentOrigin,
+                                            attributes: [NSAttributedString.Key.font: self],
+                                        context: nil)
+        return boundingBox.height
+    }
 }
