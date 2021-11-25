@@ -10,15 +10,15 @@ extension PhotonActionSheetProtocol {
     //Returns a list of actions which is used to build a menu
     //OpenURL is a closure that can open a given URL in some view controller. It is up to the class using the menu to know how to open it
     func getLibraryActions(vcDelegate: PageOptionsVC) -> [PhotonActionSheetItem] {
-        let bookmarks = PhotonActionSheetItem(title: .AppMenuBookmarks, iconString: "menu-panel-Bookmarks", iconAlignment: .right) { _, _ in
+        let bookmarks = PhotonActionSheetItem(title: .AppMenuBookmarks, iconString: "menu-panel-Bookmarks") { _, _ in
             let bvc = vcDelegate as? BrowserViewController
             bvc?.showLibrary(panel: .bookmarks)
         }
-        let history = PhotonActionSheetItem(title: .AppMenuHistory, iconString: "menu-panel-History", iconAlignment: .right) { _, _ in
+        let history = PhotonActionSheetItem(title: .AppMenuHistory, iconString: "menu-panel-History") { _, _ in
             let bvc = vcDelegate as? BrowserViewController
             bvc?.showLibrary(panel: .history)
         }
-        let downloads = PhotonActionSheetItem(title: .AppMenuDownloads, iconString: "menu-panel-Downloads", iconAlignment: .right) { _, _ in
+        let downloads = PhotonActionSheetItem(title: .AppMenuDownloads, iconString: "menu-panel-Downloads") { _, _ in
             let bvc = vcDelegate as? BrowserViewController
             bvc?.showLibrary(panel: .downloads)
         }
@@ -27,7 +27,7 @@ extension PhotonActionSheetProtocol {
     }
     
     func getKarmaActions(vcDelegate: PageOptionsVC) -> [PhotonActionSheetItem] {
-        let defaultbrowser = PhotonActionSheetItem(title: .MenuKarmaDefaultBrowser, iconString: "menu-panel-karma-default-browser", iconAlignment: .right) { _, _ in
+        let defaultbrowser = PhotonActionSheetItem(title: .MenuKarmaDefaultBrowser, iconString: "menu-panel-karma-default-browser") { _, _ in
             UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
         }
         var karmaBaseUrl = "https://about.mykarma.org/"
@@ -36,23 +36,23 @@ extension PhotonActionSheetProtocol {
         }
         let bvc = vcDelegate as? BrowserViewController
 
-        let mission = PhotonActionSheetItem(title: .MenuKarmaMission, iconString: "menu-panel-karma-globe", iconAlignment: .right) { _, _ in
+        let mission = PhotonActionSheetItem(title: .MenuKarmaMission, iconString: "menu-panel-karma-globe") { _, _ in
             bvc?.showUrl(url: URL(string: karmaBaseUrl)!)
         }
-        let how = PhotonActionSheetItem(title: .MenuKarmaHow, iconString: "menu-panel-karma-how", iconAlignment: .right) { _, _ in
+        let how = PhotonActionSheetItem(title: .MenuKarmaHow, iconString: "menu-panel-karma-how") { _, _ in
             bvc?.showUrl(url: URL(string: karmaBaseUrl + "what")!)
         }
-        let partners = PhotonActionSheetItem(title: .MenuKarmaPartners, iconString: "menu-panel-karma-partners", iconAlignment: .right) { _, _ in
+        let partners = PhotonActionSheetItem(title: .MenuKarmaPartners, iconString: "menu-panel-karma-partners") { _, _ in
             if Locale.current.identifier == "fr" {
                 bvc?.showUrl(url: URL(string: "https://mykarma.notion.site/Our-Partners-a8cd5944d0e64872ac7f44c8b014a059")!)
             } else {
                 bvc?.showUrl(url: URL(string: "https://mykarma.notion.site/Nos-partenaires-8c26dd107da341ccb0f0c7216cc2a6d5")!)
             }
         }
-        let privacy = PhotonActionSheetItem(title: .MenuKarmaPrivacy, iconString: "menu-panel-karma-privacy", iconAlignment: .right) { _, _ in
+        let privacy = PhotonActionSheetItem(title: .MenuKarmaPrivacy, iconString: "menu-panel-karma-privacy") { _, _ in
             bvc?.showUrl(url: URL(string: karmaBaseUrl + "legal#privacy")!)
         }
-        let legal = PhotonActionSheetItem(title: .MenuKarmaTermsOfService, iconString: "menu-panel-karma-legal", iconAlignment: .right) { _, _ in
+        let legal = PhotonActionSheetItem(title: .MenuKarmaTermsOfService, iconString: "menu-panel-karma-legal") { _, _ in
             bvc?.showUrl(url: URL(string: karmaBaseUrl + "legal")!)
         }
         
@@ -63,7 +63,7 @@ extension PhotonActionSheetProtocol {
     func getHomeAction(vcDelegate: Self.PageOptionsVC) -> [PhotonActionSheetItem] {
         guard let tab = self.tabManager.selectedTab else { return [] }
         
-        let openHomePage = PhotonActionSheetItem(title: .AppMenuOpenHomePageTitleString, iconString: "menu-Home", iconAlignment: .right) { _, _ in
+        let openHomePage = PhotonActionSheetItem(title: .AppMenuOpenHomePageTitleString, iconString: "menu-Home") { _, _ in
             let page = NewTabAccessors.getHomePage(self.profile.prefs)
             if page == .homePage, let homePageURL = HomeButtonHomePageAccessors.getHomePage(self.profile.prefs) {
                 tab.loadRequest(PrivilegedRequest(url: homePageURL) as URLRequest)
@@ -78,7 +78,7 @@ extension PhotonActionSheetProtocol {
 
     func getSettingsAction(vcDelegate: Self.PageOptionsVC) -> [PhotonActionSheetItem] {
 
-        let openSettings = PhotonActionSheetItem(title: .AppMenuSettingsTitleString, iconString: "menu-Settings", iconAlignment: .right) { _, _ in
+        let openSettings = PhotonActionSheetItem(title: .AppMenuSettingsTitleString, iconString: "menu-Settings") { _, _ in
             let settingsTableViewController = AppSettingsTableViewController()
             settingsTableViewController.profile = self.profile
             settingsTableViewController.tabManager = self.tabManager
@@ -106,7 +106,7 @@ extension PhotonActionSheetProtocol {
         let noImageEnabled = NoImageModeHelper.isActivated(profile.prefs)
         let imageModeTitle: String = noImageEnabled ? .AppMenuShowImageMode : .AppMenuNoImageMode
         let iconString = noImageEnabled ? "menu-ShowImages" : "menu-NoImageMode"
-        let noImageMode = PhotonActionSheetItem(title: imageModeTitle, iconString: iconString, iconAlignment: .right, isEnabled: noImageEnabled, accessory: .Switch) { action,_ in
+        let noImageMode = PhotonActionSheetItem(title: imageModeTitle, iconString: iconString, isEnabled: noImageEnabled, accessory: .Switch) { action,_ in
             NoImageModeHelper.toggle(isEnabled: action.isEnabled, profile: self.profile, tabManager: self.tabManager)
             if noImageEnabled {
                 TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .blockImagesDisabled)
@@ -119,7 +119,7 @@ extension PhotonActionSheetProtocol {
 
         let nightModeEnabled = NightModeHelper.isActivated(profile.prefs)
         let nightModeTitle: String = nightModeEnabled ? .AppMenuTurnOffNightMode : .AppMenuTurnOnNightMode
-        let nightMode = PhotonActionSheetItem(title: nightModeTitle, iconString: "menu-NightMode", iconAlignment: .right, isEnabled: nightModeEnabled, accessory: .Switch) { _, _ in
+        let nightMode = PhotonActionSheetItem(title: nightModeTitle, iconString: "menu-NightMode", isEnabled: nightModeEnabled, accessory: .Switch) { _, _ in
             NightModeHelper.toggle(self.profile.prefs, tabManager: self.tabManager)
 
             if nightModeEnabled {
@@ -141,8 +141,25 @@ extension PhotonActionSheetProtocol {
         }
         items.append(nightMode)
 
-        let feedback = PhotonActionSheetItem(title: .MenuKarmaFeedback, iconString: "menu-panel-karma-feedback", iconAlignment: .right) { _, _ in
-            let bvc = vcDelegate as? BrowserViewController
+        let feedback = PhotonActionSheetItem(title: .MenuKarmaFeedback, iconString: "menu-panel-karma-feedback") { _, _ in
+            let settingsTableViewController = FeedbackViewController()
+            settingsTableViewController.profile = self.profile
+            settingsTableViewController.tabManager = self.tabManager
+            settingsTableViewController.settingsDelegate = vcDelegate
+            
+            let controller = ThemedNavigationController(rootViewController: settingsTableViewController)
+            // On iPhone iOS13 the WKWebview crashes while presenting file picker if its not full screen. Ref #6232
+            if UIDevice.current.userInterfaceIdiom == .phone {
+                controller.modalPresentationStyle = .fullScreen
+            }
+            controller.presentingModalViewControllerDelegate = vcDelegate
+            TelemetryWrapper.recordEvent(category: .action, method: .open, object: .settings)
+            
+            // Wait to present VC in an async dispatch queue to prevent a case where dismissal
+            // of this popover on iPad seems to block the presentation of the modal VC.
+            DispatchQueue.main.async {
+                vcDelegate.present(controller, animated: true, completion: nil)
+            }
         }
         items.append(feedback)
         return items

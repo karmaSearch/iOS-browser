@@ -8,6 +8,8 @@ import Account
 import SwiftKeychainWrapper
 import LocalAuthentication
 import MozillaAppServices
+import StoreKit
+import MessageUI
 
 // This file contains all of the settings available in the main settings screen of the app.
 
@@ -411,15 +413,45 @@ class ShowIntroductionSetting: Setting {
 
 class SendFeedbackSetting: Setting {
     override var title: NSAttributedString? {
-        return NSAttributedString(string: .AppSettingsSendFeedback, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText])
+        return NSAttributedString(string: .MenuKarmaGiveFeedback, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText])
     }
 
     override var url: URL? {
+        //TODO change url
         return URL(string: "https://mozilla.crowdicity.com/")
     }
 
     override func onClick(_ navigationController: UINavigationController?) {
         setUpAndPushSettingsContentViewController(navigationController, self.url)
+    }
+}
+
+class ContactUsSettings: Setting {
+    override var title: NSAttributedString? {
+        return NSAttributedString(string: .MenuKarmaFeedbackContactUs, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText])
+    }
+
+    override func onClick(_ navigationController: UINavigationController?) {
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = UIApplication.shared.delegate as! AppDelegate
+
+        let userAgent = UIDevice.modelName + "(" +  UIDevice.current.systemVersion + ")"
+        let appVersion = AppInfo.appVersion
+        let subject = .MenuKarmaFeedbackContactUsEmailSubject + " " + userAgent + " - " + appVersion
+        mailComposerVC.setToRecipients(["ios_app@mykarma.org"])
+        mailComposerVC.setSubject(subject)
+
+        navigationController?.present(mailComposerVC, animated: true, completion: nil)
+    }
+}
+
+class RateAppSetting: Setting {
+    override var title: NSAttributedString? {
+        return NSAttributedString(string: .MenuKarmaRateAppStore, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText])
+    }
+
+    override func onClick(_ navigationController: UINavigationController?) {
+        SKStoreReviewController.requestReview()
     }
 }
 

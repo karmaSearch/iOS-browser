@@ -113,29 +113,11 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagsP
             SettingSection(title: NSAttributedString(string: .AppSettingsPrivacyTitle), children: privacySettings),
             SettingSection(title: NSAttributedString(string: .AppSettingsSupport), children: [
                 ShowIntroductionSetting(settings: self),
-                SendFeedbackSetting(),
-                SendAnonymousUsageDataSetting(prefs: prefs, delegate: settingsDelegate),
-                StudiesToggleSetting(prefs: prefs, delegate: settingsDelegate),
-                OpenSupportPageSetting(delegate: settingsDelegate),
+                ContactUsSettings(),
             ]),
             SettingSection(title: NSAttributedString(string: .AppSettingsAbout), children: [
                 VersionSetting(settings: self),
                 LicenseAndAcknowledgementsSetting(),
-                YourRightsSetting(),
-                ExportBrowserDataSetting(settings: self),
-                ExportLogDataSetting(settings: self),
-                DeleteExportedDataSetting(settings: self),
-                ForceCrashSetting(settings: self),
-                SlowTheDatabase(settings: self),
-                ForgetSyncAuthStateDebugSetting(settings: self),
-                SentryIDSetting(settings: self),
-                ChangeToChinaSetting(settings: self),
-                ShowEtpCoverSheet(settings: self),
-                ToggleChronTabs(settings: self),
-                TogglePullToRefresh(settings: self),
-                ToggleInactiveTabs(settings: self),
-                ResetJumpBackInContextualHint(settings: self),
-                ExperimentsSettings(settings: self)
             ])]
 
         return settings

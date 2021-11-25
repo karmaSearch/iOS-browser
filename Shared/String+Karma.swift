@@ -25,5 +25,11 @@ extension String {
     public static let MenuKarmaPrivacy = NSLocalizedString("Menu.Karma.Privacy", tableName: "KarmaMenu", bundle: Bundle(for: BundleClass.self), comment: "")
     public static let MenuKarmaTermsOfService = NSLocalizedString("Menu.Karma.TermsOfService", tableName: "KarmaMenu", bundle: Bundle(for: BundleClass.self), comment: "")
     public static let MenuKarmaFeedback = NSLocalizedString("Menu.Karma.Feedback", tableName: "KarmaMenu", bundle: Bundle(for: BundleClass.self), comment: "")
+    
+    //MARK: feedback
+    public static let MenuKarmaGiveFeedback = NSLocalizedString("Menu.Feedback.Give", tableName: "KarmaMenu", bundle: Bundle(for: BundleClass.self), comment: "")
+    public static let MenuKarmaRateAppStore = NSLocalizedString("Menu.Feedback.Rate.AppStore", tableName: "KarmaMenu", bundle: Bundle(for: BundleClass.self), comment: "")
+    public static let MenuKarmaFeedbackContactUs = NSLocalizedString("Menu.Feedback.ContactUs", tableName: "KarmaMenu", bundle: Bundle(for: BundleClass.self), comment: "")
+    public static let MenuKarmaFeedbackContactUsEmailSubject = NSLocalizedString("Menu.Feedback.ContactUs.Subject", tableName: "KarmaMenu", bundle: Bundle(for: BundleClass.self), comment: "")
 
 }

@@ -421,6 +421,9 @@
 		A3B970AF27454B3A00BAA1F4 /* ProximaNova-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3B970A827454B3500BAA1F4 /* ProximaNova-Medium.otf */; };
 		A3B970B027454B3A00BAA1F4 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3B970AC27454B3500BAA1F4 /* ProximaNova-Bold.otf */; };
 		A3B970B127454B3A00BAA1F4 /* ProximaNova-Extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3B970AA27454B3500BAA1F4 /* ProximaNova-Extrabold.otf */; };
+		A3FD6FA0274E9D1900632B2D /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD6F9F274E9D1900632B2D /* FeedbackViewController.swift */; };
+		A3FD6FA2274E9FE700632B2D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FD6FA1274E9FE700632B2D /* StoreKit.framework */; };
+		A3FD6FA4274EA7C000632B2D /* UIDevice+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD6FA3274EA7C000632B2D /* UIDevice+extension.swift */; };
 		A83E5AB71C1D993D0026D912 /* UIPasteboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83E5AB61C1D993D0026D912 /* UIPasteboardExtensions.swift */; };
 		A83E5B1A1C1DA8BF0026D912 /* image.gif in Resources */ = {isa = PBXBuildFile; fileRef = A83E5B181C1DA8BF0026D912 /* image.gif */; };
 		A83E5B1B1C1DA8BF0026D912 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = A83E5B191C1DA8BF0026D912 /* image.png */; };
@@ -2792,6 +2795,9 @@
 		A3E54C1386C753F253BEEB71 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Search.strings; sourceTree = "<group>"; };
 		A3FB49E4AED8F44971799F71 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/FindInPage.strings; sourceTree = "<group>"; };
 		A3FB4ED398FB21FB64A28124 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/ClearHistoryConfirm.strings; sourceTree = "<group>"; };
+		A3FD6F9F274E9D1900632B2D /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		A3FD6FA1274E9FE700632B2D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A3FD6FA3274EA7C000632B2D /* UIDevice+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+extension.swift"; sourceTree = "<group>"; };
 		A4194E688059E39617C7CD55 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/LoginManager.strings; sourceTree = "<group>"; };
 		A41D410A8194798D04F0BDEC /* az */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = az; path = az.lproj/Intro.strings; sourceTree = "<group>"; };
 		A43A44369EB02B3F7A00CA2E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/ClearHistoryConfirm.strings; sourceTree = "<group>"; };
@@ -4289,6 +4295,7 @@
 				E6231C011B90A44F005ABB0D /* libz.tbd in Frameworks */,
 				E4B3348A1BBF23F9004E2BFF /* AdSupport.framework in Frameworks */,
 				3BA9A0231D2C208C00BD418C /* Fuzi.framework in Frameworks */,
+				A3FD6FA2274E9FE700632B2D /* StoreKit.framework in Frameworks */,
 				7BA4A9471C4CED900091D032 /* GCDWebServers.framework in Frameworks */,
 				0B8E0FF41A932BD500161DC3 /* ImageIO.framework in Frameworks */,
 				7BA4A94A1C4CEFC70091D032 /* OnePasswordExtension.framework in Frameworks */,
@@ -4713,6 +4720,7 @@
 				EB9A178D20E525DF00B12184 /* ThemeSettingsController.swift */,
 				66CE54A720FCF6CF00CC310B /* WebsiteDataManagementViewController.swift */,
 				6669B5E1211418A200CA117B /* WebsiteDataSearchResultsViewController.swift */,
+				A3FD6F9F274E9D1900632B2D /* FeedbackViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -5124,6 +5132,7 @@
 		7B604FC11C496005006EEEC3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A3FD6FA1274E9FE700632B2D /* StoreKit.framework */,
 				D05434BF2257DE9900FDE4EF /* Leanplum.framework */,
 				C8E18F1F222EDED000E30E52 /* SafariServices.framework */,
 				C8E18F1D222EDE4400E30E52 /* Accelerate.framework */,
@@ -5840,6 +5849,7 @@
 				A32CC86D2745623A0039113B /* IntroKarma.strings */,
 				A32CC86F274563590039113B /* String+Karma.swift */,
 				A3A2F584274E4C89005706C0 /* KarmaMenu.strings */,
+				A3FD6FA3274EA7C000632B2D /* UIDevice+extension.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -7759,6 +7769,7 @@
 				E65075BC1E37F7AB006961AC /* SupportUtils.swift in Sources */,
 				E65075B61E37F7AB006961AC /* Loader.swift in Sources */,
 				E65075BF1E37F7AB006961AC /* UserAgent.swift in Sources */,
+				A3FD6FA4274EA7C000632B2D /* UIDevice+extension.swift in Sources */,
 				D053D6742211CD53006C6B64 /* KeychainStore.swift in Sources */,
 				E65075C01E37F7AB006961AC /* WeakList.swift in Sources */,
 				E65075AE1E37F7AB006961AC /* UIImageExtensions.swift in Sources */,
@@ -8163,6 +8174,7 @@
 				D3C3696E1CC6B78800348A61 /* LocalRequestHelper.swift in Sources */,
 				E4B423DD1ABA0318007E66C8 /* ReaderModeHandlers.swift in Sources */,
 				D308E4E41A5306F500842685 /* SearchEngines.swift in Sources */,
+				A3FD6FA0274E9D1900632B2D /* FeedbackViewController.swift in Sources */,
 				048B4C8924A53F81001B56E8 /* UIButtonExtensions.swift in Sources */,
 				23AE36632475A0EF00ACB7BA /* ChronologicalTabsViewController.swift in Sources */,
 				3BCE6D3C1CEB9E4D0080928C /* ThirdPartySearchAlerts.swift in Sources */,
