@@ -37,7 +37,7 @@ class DefaultBrowserOnboardingView: UIView {
         button.setTitle(.DefaultBrowserOnboardingButton, for: .normal)
         button.titleLabel?.font = DynamicFontHelper.defaultHelper.DeviceFontLargeBold
         button.setTitleColor(UIColor.Photon.White100, for: .normal)
-        button.setBackgroundColor(UIColor.Photon.Green60, forState: .normal)
+        button.backgroundColor = UIColor.Photon.Green60
         button.clipsToBounds = true
         button.layer.cornerRadius = 12
         button.titleLabel?.adjustsFontSizeToFitWidth = true
@@ -49,7 +49,7 @@ class DefaultBrowserOnboardingView: UIView {
         button.setTitle(.DefaultBrowserOnboardingButtonSkip, for: .normal)
         button.titleLabel?.font = DynamicFontHelper.defaultHelper.DeviceFont
         button.setTitleColor(UIColor.Photon.Green60, for: .normal)
-        button.setBackgroundColor(UIColor.clear, forState: .normal)
+        button.backgroundColor = UIColor.clear
         button.clipsToBounds = true
         button.titleLabel?.adjustsFontSizeToFitWidth = true
         button.titleLabel?.textAlignment = .center

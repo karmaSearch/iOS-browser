@@ -67,7 +67,7 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         button.setTitle(.IntroNextButtonTitle, for: .normal)
         button.titleLabel?.font = UIFont.customFont(ofSize: 15, weight: .medium)
         button.setTitleColor(UIColor.Photon.White100, for: .normal)
-        button.setBackgroundColor(UIColor.Photon.Green60, forState: .normal)
+        button.backgroundColor = UIColor.Photon.Green60
         button.layer.cornerRadius = 12
         button.clipsToBounds = true
         button.titleLabel?.textAlignment = .center
