@@ -6,6 +6,7 @@ import Foundation
 import Storage
 import SnapKit
 import Shared
+import UIKit
 
 // This file is the cells used for the PhotonActionSheet table view.
 
@@ -21,9 +22,10 @@ private struct PhotonActionSheetCellUX {
 }
 
 class PhotonActionSheetCell: UITableViewCell {
-    static let Padding: CGFloat = 16
+    static let Padding: CGFloat = 13
+    static let Spacing: CGFloat = 9
     static let HorizontalPadding: CGFloat = 1
-    static let topBottomPadding: CGFloat = 10
+    static let topBottomPadding: CGFloat = 7
     static let VerticalPadding: CGFloat = 2
     static let IconSize = 16
 
@@ -112,12 +114,20 @@ class PhotonActionSheetCell: UITableViewCell {
 
     lazy var stackView: UIStackView = {
         let stackView = UIStackView()
-        stackView.spacing = PhotonActionSheetCell.Padding
+        stackView.spacing = PhotonActionSheetCell.Spacing
         stackView.alignment = .center
         stackView.axis = .horizontal
         return stackView
     }()
 
+    lazy var background: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.layer.cornerRadius = 5
+        view.clipsToBounds = true
+        return view
+    }()
+    
     override var isSelected: Bool {
         didSet {
             self.selectedOverlay.isHidden = !isSelected
@@ -142,7 +152,6 @@ class PhotonActionSheetCell: UITableViewCell {
 
         isAccessibilityElement = true
         contentView.addSubview(selectedOverlay)
-        backgroundColor = .clear
 
         selectedOverlay.snp.makeConstraints { make in
             make.edges.equalTo(contentView)
@@ -157,8 +166,9 @@ class PhotonActionSheetCell: UITableViewCell {
 
         stackView.addArrangedSubview(textStackView)
         stackView.addArrangedSubview(statusIcon)
+        contentView.addSubview(background)
         contentView.addSubview(stackView)
-
+        
         statusIcon.snp.makeConstraints { make in
             make.size.equalTo(PhotonActionSheetCellUX.StatusIconSize)
         }
@@ -166,7 +176,16 @@ class PhotonActionSheetCell: UITableViewCell {
         let padding = PhotonActionSheetCell.Padding
         let topPadding = PhotonActionSheetCell.topBottomPadding
         stackView.snp.makeConstraints { make in
-            make.edges.equalTo(contentView).inset(UIEdgeInsets(top: topPadding, left: padding, bottom: topPadding, right: padding))
+            make.top.bottom.equalTo(contentView).inset(topPadding)
+            make.leading.equalTo(contentView).inset(padding)
+            make.trailing.equalTo(contentView).inset(padding)
+        }
+        background.snp.makeConstraints { make in
+            make.top.equalTo(stackView).offset(-5)
+            make.bottom.equalTo(stackView).offset(5)
+            make.leading.equalTo(stackView).offset(-2)
+            make.trailing.equalTo(stackView).offset(2)
+            make.height.greaterThanOrEqualTo(33)
         }
         addSubBorder()
         // Hiding bottom border by default
@@ -188,29 +207,37 @@ class PhotonActionSheetCell: UITableViewCell {
     }
     
     func configure(with action: PhotonActionSheetItem) {
+        backgroundColor = UIColor.theme.homePanel.panelBackground
+
         titleLabel.text = action.title
-        titleLabel.textColor = UIColor.theme.tableView.rowText
+        titleLabel.textColor = action.bold ? UIColor.white : UIColor.theme.tableView.rowText
         titleLabel.textColor = action.accessory == .Text ? titleLabel.textColor.withAlphaComponent(0.6) : titleLabel.textColor
         titleLabel.adjustsFontSizeToFitWidth = false
         titleLabel.numberOfLines = 0
         titleLabel.lineBreakMode = .byTruncatingTail
         titleLabel.minimumScaleFactor = 0.5
-
+        stackView.layer.cornerRadius = 5
+        stackView.clipsToBounds = true
+        
         subtitleLabel.text = action.text
         subtitleLabel.textColor = UIColor.theme.tableView.rowText
         subtitleLabel.isHidden = action.text == nil
         subtitleLabel.numberOfLines = 0
-        titleLabel.font = action.bold ? DynamicFontHelper.defaultHelper.DeviceFontLargeBold : DynamicFontHelper.defaultHelper.SemiMediumRegularWeightAS
+        titleLabel.font = action.bold ? DynamicFontHelper.defaultHelper.DeviceFontSmallBold : DynamicFontHelper.defaultHelper.DeviceFontSmall
         accessibilityIdentifier = action.iconString ?? action.accessibilityId
         accessibilityLabel = action.title
         selectionStyle = action.tapHandler != nil ? .default : .none
 
+        background.isHidden = !action.bold
+        background.backgroundColor = action.bold ? UIColor.theme.homePanel.karmaTintColor : UIColor.clear
+
+        
         if let iconName = action.iconString {
             switch action.iconType {
             case .Image:
                 let image = UIImage(named: iconName)?.withRenderingMode(.alwaysTemplate)
                 statusIcon.image = image
-                statusIcon.tintColor = action.iconTint ?? self.tintColor
+                statusIcon.tintColor = action.bold ? UIColor.white : action.iconTint ?? self.tintColor
             case .URL:
                 let image = UIImage(named: iconName)?.createScaled(PhotonActionSheetUX.IconSize)
                 statusIcon.layer.cornerRadius = PhotonActionSheetUX.IconSize.width / 2

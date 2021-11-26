@@ -1600,6 +1600,7 @@ extension BrowserViewController: RecentlyClosedPanelDelegate {
 }
 
 extension BrowserViewController: HomePanelDelegate {
+    
     func homePanelDidRequestToOpenLibrary(panel: LibraryPanelType) {
         showLibrary(panel: panel)
         view.endEditing(true)
@@ -1671,7 +1672,7 @@ extension BrowserViewController: HomePanelDelegate {
         
         actions.append(contentsOf: [section0, section1, section2])
 
-        presentSheetWith(actions: actions, on: self, from: button)
+        presentSheetWith(actions: actions, on: self, from: button, customizeForMenu: true)
         
     }
 }

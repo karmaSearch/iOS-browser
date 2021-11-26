@@ -27,7 +27,7 @@ extension PhotonActionSheetProtocol {
     }
     
     func getKarmaActions(vcDelegate: PageOptionsVC) -> [PhotonActionSheetItem] {
-        let defaultbrowser = PhotonActionSheetItem(title: .MenuKarmaDefaultBrowser, iconString: "menu-panel-karma-default-browser") { _, _ in
+        let defaultbrowser = PhotonActionSheetItem(title: .MenuKarmaDefaultBrowser, iconString: "menu-panel-karma-default-browser", bold: true) { _, _ in
             UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
         }
         var karmaBaseUrl = "https://about.mykarma.org/"

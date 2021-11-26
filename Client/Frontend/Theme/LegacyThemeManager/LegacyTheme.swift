@@ -230,8 +230,8 @@ class GeneralColor {
     var destructiveRed: UIColor { return UIColor.Photon.Red50 }
     var separator: UIColor { return defaultSeparator }
     var settingsTextPlaceholder: UIColor { return UIColor.Photon.Grey40 }
-    var controlTint: UIColor { return UIColor.Photon.Blue40 }
-    var switchToggle: UIColor { return UIColor.Photon.Grey90A40 }
+    var controlTint: UIColor { return UIColor.Photon.Green60 }
+    var switchToggle: UIColor { return UIColor(rgb: 0xc4c4c4) }
 }
 
 class DefaultBrowserCardColor {

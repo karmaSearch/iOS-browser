@@ -432,6 +432,7 @@ class ContactUsSettings: Setting {
     }
 
     override func onClick(_ navigationController: UINavigationController?) {
+        guard MFMailComposeViewController.canSendMail() else { return }
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = UIApplication.shared.delegate as! AppDelegate
 
