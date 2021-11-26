@@ -6,21 +6,11 @@ fastlane_version "1.39.0"
 
 default_platform :ios
 
-
-import_build_tools(
-  url: 'git@github.com:mozilla/firefox-ios-build-tools.git',
-  clone_folder: "../build-tools",
-)
-
-#move all the build tools to the right places
-clone_folder = "../../build-tools"
-sh("rsync -a #{clone_folder}/scripts ../")
-sh("rsync -a #{clone_folder}/fastlane/Appfile Appfile")
-sh("rsync -a #{clone_folder}/fastlane/Snapfile Snapfile")
-sh("rsync -a #{clone_folder}/fastlane/SnapshotHelper.swift SnapshotHelper.swift")
-sh("rsync -a #{clone_folder}/fastlane/scripts .")
-sh("rsync -a #{clone_folder}/fastlane/frames .")
-sh("rsync -a #{clone_folder}/fastlane/templates .")
-
-#import the fastfile
-import "#{clone_folder}/fastlane/BaseFastfile"
+lane :prod do
+ increment_build_number(
+    build_number: latest_testflight_build_number + 1,
+    xcodeproj: "Client.xcodeproj"
+  )
+  build_app(scheme: "Karma", xcargs: "-allowProvisioningUpdates")
+upload_to_testflight
+end

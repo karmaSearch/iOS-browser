@@ -413,8 +413,8 @@
 		A3752C78273E704A008835B1 /* DefaultBrowserOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3752C77273E704A008835B1 /* DefaultBrowserOnboardingView.swift */; };
 		A38C49E2273EAE130074BAFD /* Karma.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A38C49E1273EAE130074BAFD /* Karma.xcconfig */; };
 		A38C49E4273EAEDF0074BAFD /* Karma_Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A38C49E3273EAEDF0074BAFD /* Karma_Debug.xcconfig */; };
-		A3AF700A274FD40A00C8EFA5 /* learnandact-fr.json in Resources */ = {isa = PBXBuildFile; fileRef = A3AF7009274FD40A00C8EFA5 /* learnandact-fr.json */; };
 		A3A2F582274E4C89005706C0 /* KarmaMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3A2F584274E4C89005706C0 /* KarmaMenu.strings */; };
+		A3AF700A274FD40A00C8EFA5 /* learnandact-fr.json in Resources */ = {isa = PBXBuildFile; fileRef = A3AF7009274FD40A00C8EFA5 /* learnandact-fr.json */; };
 		A3B970A7274530FA00BAA1F4 /* LearnAndActHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B970A6274530FA00BAA1F4 /* LearnAndActHeader.swift */; };
 		A3B970AD27454B3A00BAA1F4 /* ProximaNova-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3B970A927454B3500BAA1F4 /* ProximaNova-SemiBold.otf */; };
 		A3B970AE27454B3A00BAA1F4 /* ProximaNova-Medium It.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3B970AB27454B3500BAA1F4 /* ProximaNova-Medium It.otf */; };
@@ -2783,9 +2783,9 @@
 		A38C49E6273EAF890074BAFD /* Karma.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Karma.entitlements; sourceTree = "<group>"; };
 		A38C49E7273EAFE00074BAFD /* KarmaDebug.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = KarmaDebug.entitlements; sourceTree = "<group>"; };
 		A38C49E8273EB0210074BAFD /* KarmaDebug.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = KarmaDebug.entitlements; sourceTree = "<group>"; };
-		A3AF7009274FD40A00C8EFA5 /* learnandact-fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "learnandact-fr.json"; sourceTree = "<group>"; };
 		A3A2F583274E4C89005706C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/KarmaMenu.strings; sourceTree = "<group>"; };
 		A3A2F585274E4C90005706C0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/KarmaMenu.strings; sourceTree = "<group>"; };
+		A3AF7009274FD40A00C8EFA5 /* learnandact-fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "learnandact-fr.json"; sourceTree = "<group>"; };
 		A3B970A6274530FA00BAA1F4 /* LearnAndActHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAndActHeader.swift; sourceTree = "<group>"; };
 		A3B970A827454B3500BAA1F4 /* ProximaNova-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Medium.otf"; sourceTree = "<group>"; };
 		A3B970A927454B3500BAA1F4 /* ProximaNova-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-SemiBold.otf"; sourceTree = "<group>"; };
@@ -11218,6 +11218,7 @@
 				CODE_SIGN_ENTITLEMENTS = Client/Entitlements/KarmaDebug.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 59G3A42UBG;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11575,6 +11576,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 59G3A42UBG;
 				INFOPLIST_FILE = Client/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -11942,6 +11944,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Firefox;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 43AQ936H96;
 				INFOPLIST_FILE = Client/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -12222,6 +12225,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Developer;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				EXCLUDED_SOURCE_FILE_NAMES = CredentialProvider.appex;
 				INFOPLIST_FILE = Client/Info.plist;
@@ -12471,6 +12475,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Beta;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 43AQ936H96;
 				INFOPLIST_FILE = Client/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -12937,6 +12942,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Developer;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

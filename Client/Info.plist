@@ -42,7 +42,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>INIntentsSupported</key>
 	<array>
 		<string>QuickActionIntent</string>
@@ -98,14 +98,14 @@
 		<string>QuickLinkSelectionIntent</string>
 		<string>org.mozilla.ios.firefox.browsing</string>
 	</array>
+	<key>NimbusURL</key>
+	<string>$(NIMBUS_URL)</string>
 	<key>PocketEnvironmentAPIKey</key>
 	<string>$(POCKET_API_KEY)</string>
 	<key>SentryDSN</key>
 	<string>$(SENTRY_DSN)</string>
 	<key>SentryNightlyDSN</key>
 	<string>$(SENTRY_NIGHTLY_DSN)</string>
-	<key>NimbusURL</key>
-	<string>$(NIMBUS_URL)</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>KGSecondChancesSolid.ttf</string>
