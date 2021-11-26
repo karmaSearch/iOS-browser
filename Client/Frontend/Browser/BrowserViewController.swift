@@ -132,6 +132,8 @@ class BrowserViewController: UIViewController {
 
     let downloadQueue = DownloadQueue()
     var isOnlyCmdPressed = false
+    
+    var overlayView: UIView?
 
     fileprivate var shouldShowIntroScreen: Bool { profile.prefs.intForKey(PrefsKeys.IntroSeen) == nil }
 
@@ -1674,6 +1676,17 @@ extension BrowserViewController: HomePanelDelegate {
 
         presentSheetWith(actions: actions, on: self, from: button, customizeForMenu: true)
         
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        if let screenshot = appDelegate.window?.screenshot() {
+            let blurredImage = screenshot.applyBlur(withRadius: 5,
+                                                    blurType: BOXFILTER,
+                                                    tintColor: UIColor.black.withAlphaComponent(0.1),
+                                                    saturationDeltaFactor: 1.8,
+                                                    maskImage: nil)
+            overlayView = UIImageView(image: blurredImage)
+            view.addSubview(overlayView!)
+        }
     }
 }
 
@@ -1907,6 +1920,7 @@ extension BrowserViewController: UIPopoverPresentationControllerDelegate {
     func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
         displayedPopoverController = nil
         updateDisplayedPopoverProperties = nil
+        overlayView?.removeFromSuperview()
     }
 }
 

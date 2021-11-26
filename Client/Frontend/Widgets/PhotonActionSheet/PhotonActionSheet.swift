@@ -253,6 +253,9 @@ class PhotonActionSheet: UIViewController, UITableViewDelegate, UITableViewDataS
     }
 
     @objc func dismiss(_ gestureRecognizer: UIGestureRecognizer?) {
+        if let popoverPresentationController = self.popoverPresentationController {
+            popoverPresentationController.delegate?.popoverPresentationControllerDidDismissPopover?(popoverPresentationController)
+        }
         self.dismiss(animated: true, completion: nil)
     }
 

@@ -244,7 +244,7 @@ class ToolbarButton: UIButton {
 
     override open var isHighlighted: Bool {
         didSet {
-            self.tintColor = isHighlighted ? selectedTintColor : unselectedTintColor
+            self.tintColor = selectedTintColor
         }
     }
 
