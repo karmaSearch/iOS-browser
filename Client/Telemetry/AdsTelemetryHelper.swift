@@ -138,10 +138,10 @@ class AdsTelemetryHelper: TabContentScript {
     // Tracking
     
     public static func trackAdsFoundOnPage(providerName: String) {
-        GleanMetrics.BrowserSearch.withAds["provider-\(providerName)"].add()
+//        GleanMetrics.BrowserSearch.withAds["provider-\(providerName)"].add()
     }
     
     public static func trackAdsClickedOnPage(providerName: String) {
-        GleanMetrics.BrowserSearch.adClicks["provider-\(providerName)"].add()
+  //      GleanMetrics.BrowserSearch.adClicks["provider-\(providerName)"].add()
     }
 }

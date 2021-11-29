@@ -6,7 +6,6 @@ import UIKit
 import Shared
 import Storage
 import MozillaAppServices
-import Telemetry
 
 private enum SearchListSection: Int, CaseIterable {
     case searchSuggestions
@@ -337,7 +336,6 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
             guard let suggestion = suggestions?[indexPath.row] else { return }
             if let url = engine.searchURLForQuery(suggestion) {
                 Telemetry.default.recordSearch(location: .suggestion, searchEngine: engine.engineID ?? "other")
-                GleanMetrics.Search.counts["\(engine.engineID ?? "custom").\(SearchesMeasurement.SearchLocation.suggestion.rawValue)"].add()
                 searchDelegate?.searchViewController(self, didSelectURL: url, searchTerm: suggestion)
             }
         case .openedTabs:
