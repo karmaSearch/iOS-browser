@@ -370,6 +370,7 @@
 		A308B3142755296300381152 /* SearchTelemetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B3122755296100381152 /* SearchTelemetry.swift */; };
 		A308B3152755296300381152 /* AdsTelemetryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B3132755296200381152 /* AdsTelemetryHelper.swift */; };
 		A308B31727553A8300381152 /* FakeTelemetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B31627553A8200381152 /* FakeTelemetry.swift */; };
+		A308B31B27553DE600381152 /* FakeSentry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B31927553D9700381152 /* FakeSentry.swift */; };
 		A3168A67274412D40081E3FF /* SDWebImageWebPCoder in Frameworks */ = {isa = PBXBuildFile; productRef = A3168A66274412D40081E3FF /* SDWebImageWebPCoder */; };
 		A32316502742BB4C00464742 /* KarmaHomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A323164F2742BB4C00464742 /* KarmaHomeViewCell.swift */; };
 		A32316522742C1D800464742 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32316512742C1D800464742 /* Home.xcassets */; };
@@ -2648,6 +2649,7 @@
 		A308B3122755296100381152 /* SearchTelemetry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTelemetry.swift; sourceTree = "<group>"; };
 		A308B3132755296200381152 /* AdsTelemetryHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsTelemetryHelper.swift; sourceTree = "<group>"; };
 		A308B31627553A8200381152 /* FakeTelemetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTelemetry.swift; sourceTree = "<group>"; };
+		A308B31927553D9700381152 /* FakeSentry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSentry.swift; sourceTree = "<group>"; };
 		A310443AAA16D6C092A53FF1 /* af */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = af; path = af.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A3114C1793DE75790B35B80F /* gl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = gl; path = gl.lproj/HistoryPanel.strings; sourceTree = "<group>"; };
 		A323164F2742BB4C00464742 /* KarmaHomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaHomeViewCell.swift; sourceTree = "<group>"; };
@@ -3717,7 +3719,6 @@
 		E42736061EA858CF009C428E /* TabsPayloadTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabsPayloadTests.swift; path = SyncTests/TabsPayloadTests.swift; sourceTree = "<group>"; };
 		E42B477091701B1B5A58B99F /* lv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lv; path = lv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E4424B3B1AC71FB400F44C38 /* FiraSans-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Book.ttf"; sourceTree = "<group>"; };
-		E46175F21EBB73A10021AE8A /* Sentry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sentry.framework; path = Carthage/Build/iOS/Sentry.framework; sourceTree = "<group>"; };
 		E46C44F2A99C2C03F692AFB8 /* sq */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sq; path = sq.lproj/Menu.strings; sourceTree = "<group>"; };
 		E4744CDB87F255C44B05CDB4 /* es-CL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-CL"; path = "es-CL.lproj/Default Browser.strings"; sourceTree = "<group>"; };
 		E47616C61AB74CA600E7DD25 /* ReaderModeBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderModeBarView.swift; sourceTree = "<group>"; };
@@ -4974,7 +4975,6 @@
 				EBCF403C221CBC9A00B38F28 /* MozillaAppServices.framework */,
 				EBCF403A221CBC5B00B38F28 /* SwiftProtobuf.framework */,
 				392E18021FEC4D7B00EBA79C /* MappaMundi.framework */,
-				E46175F21EBB73A10021AE8A /* Sentry.framework */,
 				3B4988CD1E42B01800A12FDA /* SwiftyJSON.framework */,
 				E6231C041B90A472005ABB0D /* libxml2.2.tbd */,
 				E6231C001B90A44F005ABB0D /* libz.tbd */,
@@ -5023,6 +5023,7 @@
 			isa = PBXGroup;
 			children = (
 				A308B31627553A8200381152 /* FakeTelemetry.swift */,
+				A308B31927553D9700381152 /* FakeSentry.swift */,
 			);
 			path = Fake;
 			sourceTree = "<group>";
@@ -7282,7 +7283,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftKeychainWrapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Fuzi.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Sentry.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftProtobuf.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/MozillaAppServices.framework",
 			);
@@ -7449,6 +7449,7 @@
 				E65075BB1E37F7AB006961AC /* RollingFileLogger.swift in Sources */,
 				E650759D1E37F7AB006961AC /* DeviceInfo.swift in Sources */,
 				E65075A51E37F7AB006961AC /* NSFileManagerExtensions.swift in Sources */,
+				A308B31B27553DE600381152 /* FakeSentry.swift in Sources */,
 				E65075A11E37F7AB006961AC /* HashExtensions.swift in Sources */,
 				3964B09A1EA8F06F00F2EEF4 /* FeatureSwitch.swift in Sources */,
 				E65075981E37F7AB006961AC /* Bytes.swift in Sources */,
