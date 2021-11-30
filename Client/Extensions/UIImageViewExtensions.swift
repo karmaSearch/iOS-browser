@@ -33,7 +33,10 @@ public extension UIImageView {
                 // If the background color is clear, we may decide to set our own background based on the theme.
                 let color = bgColor.components.alpha < 0.01 ? UIColor.theme.general.faviconBackground : bgColor
                 self.backgroundColor = color
+                completion()
+                return
             }
+            self.backgroundColor = nil
             completion()
         }
 
@@ -51,7 +54,7 @@ public extension UIImageView {
                     finish(bgColor: defaults.color)
                     return
                 }
-                finish(bgColor: nil)
+                finish(bgColor: img?.getColors().background)
             }
         }
     }

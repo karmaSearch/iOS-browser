@@ -998,27 +998,13 @@ extension KarmaHomeViewController: DataObserverDelegate {
 
             let maxItems = Int(numRows) * self.topSitesManager.numberOfHorizontalItems()
 
-            var sites = Array(result.prefix(maxItems))
+            let sites = Array(result.prefix(maxItems))
 
             // Check if all result items are pinned site
             var pinnedSites = 0
             result.forEach {
                 if let _ = $0 as? PinnedSite {
                     pinnedSites += 1
-                }
-            }
-            // Special case: Adding Google topsite
-            let googleTopSite = GoogleTopSiteHelper(prefs: self.profile.prefs)
-            if !googleTopSite.isHidden, let gSite = googleTopSite.suggestedSiteData() {
-                // Once Google top site is added, we don't remove unless it's explicitly unpinned
-                // Add it when pinned websites are less than max pinned sites
-                if googleTopSite.hasAdded || pinnedSites < maxItems {
-                    sites.insert(gSite, at: 0)
-                    // Purge unwated websites from the end of list
-                    if sites.count > maxItems {
-                        sites.removeLast(sites.count - maxItems)
-                    }
-                    googleTopSite.hasAdded = true
                 }
             }
             self.topSitesManager.content = sites

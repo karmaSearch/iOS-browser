@@ -193,7 +193,7 @@ class HomePageSettingViewController: SettingsTableViewController, FeatureFlagsPr
 class TopSitesRowCountSettingsController: SettingsTableViewController {
     let prefs: Prefs
     var numberOfRows: Int32
-    static let defaultNumberOfRows: Int32 = 2
+    static let defaultNumberOfRows: Int32 = 1
 
     init(prefs: Prefs) {
         self.prefs = prefs

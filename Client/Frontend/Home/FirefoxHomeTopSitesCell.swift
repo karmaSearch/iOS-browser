@@ -13,7 +13,7 @@ private struct TopSiteCellUX {
     static let CellCornerRadius: CGFloat = 8
     static let TitleOffset: CGFloat = 4
     static let OverlayColor = UIColor(white: 0.0, alpha: 0.25)
-    static let IconSize = CGSize(width: 60, height: 60)
+    static let IconSize = CGSize(width: 36, height: 36)
     static let IconCornerRadius: CGFloat = 4
     static let BackgroundSize = CGSize(width: 60, height: 60)
     static let ShadowRadius: CGFloat = 6
@@ -132,7 +132,7 @@ class TopSiteItemCell: UICollectionViewCell, NotificationThemeable {
         url = site.tileURL
 
         if let provider = site.metadata?.providerName {
-            titleLabel.text = provider.lowercased()
+            titleLabel.text = provider
         } else {
             titleLabel.text = site.tileURL.shortDisplayString
         }
