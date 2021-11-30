@@ -157,14 +157,16 @@ class TopSiteItemCell: UICollectionViewCell, NotificationThemeable {
         }
 
         accessibilityLabel = titleLabel.text
-        self.imageView.setFaviconOrDefaultIcon(forSite: site) {}
+        self.imageView.setFaviconOrDefaultIcon(forSite: site) { [weak self] in
+            self?.faviconBG.backgroundColor = self?.imageView.backgroundColor
+        }
 
         applyTheme()
     }
 
     func applyTheme() {
         pinImageView.tintColor = UIColor.theme.homePanel.topSitePin
-        faviconBG.backgroundColor = UIColor.theme.homePanel.shortcutBackground
+        faviconBG.backgroundColor = self.imageView.backgroundColor
         faviconBG.layer.borderColor = TopSiteCellUX.BorderColor.cgColor
         faviconBG.layer.shadowColor = UIColor.theme.homePanel.shortcutShadowColor
         faviconBG.layer.shadowOpacity = UIColor.theme.homePanel.shortcutShadowOpacity
