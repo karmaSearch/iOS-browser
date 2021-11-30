@@ -957,7 +957,6 @@ extension KarmaHomeViewController {
         customizeHomeCell.openLink = { [weak self] url in
             self?.homePanelDelegate?.homePanel(didSelectURL: url, visitType: .link, isGoogleTopSite: false)
         }
-        customizeHomeCell.loadImages()
         customizeHomeCell.applyTheme()
         return customizeHomeCell
     }

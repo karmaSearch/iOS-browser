@@ -55,6 +55,7 @@ class KarmaHomeViewCell: UICollectionViewCell {
         super.init(frame: frame)
         isAccessibilityElement = true
         accessibilityIdentifier = "Home"
+        self.loadImages()
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.hideCredit(_:)))
         backgroundImageView.addGestureRecognizer(tapGesture)
@@ -138,7 +139,7 @@ class KarmaHomeViewCell: UICollectionViewCell {
         }
     }
     
-    func loadImages() {
+    private func loadImages() {
         let image = viewModel.getRandomImage()
         backgroundImageView.image = UIImage(named: image.imageName)
         descriptionLabel.text = image.infoTitle
