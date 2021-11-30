@@ -313,6 +313,7 @@ class BrowserViewController: UIViewController {
     func dismissVisibleMenus() {
         displayedPopoverController?.dismiss(animated: true)
         if let _ = self.presentedViewController as? PhotonActionSheet {
+            self.overlayView?.removeFromSuperview()
             self.presentedViewController?.dismiss(animated: true, completion: nil)
         }
     }
@@ -323,6 +324,7 @@ class BrowserViewController: UIViewController {
             self.displayedPopoverController = nil
         }
         if let _ = self.presentedViewController as? PhotonActionSheet {
+            self.overlayView?.removeFromSuperview()
             self.presentedViewController?.dismiss(animated: true, completion: nil)
         }
     }
