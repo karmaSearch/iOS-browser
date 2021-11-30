@@ -277,6 +277,7 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
         collectionView.translatesAutoresizingMaskIntoConstraints = false
 
         collectionView?.addGestureRecognizer(longPressRecognizer)
+        currentTab?.lastKnownUrl?.absoluteString.hasPrefix("internal://") ?? false ? collectionView?.addGestureRecognizer(tapGestureRecognizer) : nil
         
         let refreshEvents: [Notification.Name] = [.DynamicFontChanged, .HomePanelPrefsChanged, .DisplayThemeChanged]
         refreshEvents.forEach { NotificationCenter.default.addObserver(self, selector: #selector(reload), name: $0, object: nil) }
@@ -380,8 +381,6 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
     }
     
     func reduceSection() {
-        tapGestureRecognizer.isEnabled = true
-        currentTab?.lastKnownUrl?.absoluteString.hasPrefix("internal://") ?? false ? collectionView?.addGestureRecognizer(tapGestureRecognizer) : nil
         let reduceSectionsEnabled = Homescreen().reduceSectionsEnabled
         guard sectionsEnabled != reduceSectionsEnabled else { return }
         sectionsEnabled = reduceSectionsEnabled
@@ -392,7 +391,13 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
     }
     
     func expandSection() {
-        tapGestureRecognizer.isEnabled = false
+        if let gestureRecognizers = collectionView.gestureRecognizers {
+            for (index, gesture) in gestureRecognizers.enumerated() {
+                if gesture.name == FxHomeDevStrings.GestureRecognizers.dismissOverlay {
+                    collectionView.gestureRecognizers?.remove(at: index)
+                }
+            }
+        }
         let fullSectionsEnabled = Homescreen().fullSectionsEnabled
         guard sectionsEnabled != fullSectionsEnabled else { return }
         sectionsEnabled = fullSectionsEnabled
