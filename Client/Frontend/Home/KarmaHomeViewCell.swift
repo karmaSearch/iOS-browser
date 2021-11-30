@@ -33,18 +33,15 @@ class KarmaHomeViewCell: UICollectionViewCell {
     }
     
     private lazy var creditView: UIView = .build { view in
-        view.backgroundColor = UIColor.white
         view.layer.cornerRadius = 4
         view.clipsToBounds = true
     }
     
     private lazy var descriptionLabel: UILabel = .build { label in
-        label.textColor = UIColor.Photon.DarkGrey70
         label.font = DynamicFontHelper.defaultHelper.DefaultSmallFont
     }
     
     private lazy var autorLabel: UILabel = .build { label in
-        label.textColor = UIColor.Photon.Purple70
         label.isUserInteractionEnabled = true
         label.font = DynamicFontHelper.defaultHelper.DefaultSmallFont
     }
@@ -147,5 +144,11 @@ class KarmaHomeViewCell: UICollectionViewCell {
         descriptionLabel.text = image.infoTitle
         autorLabel.text = image.author
         infoButton.isHidden = image.infoTitle == nil && image.author == nil
+    }
+    
+    func applyTheme() {
+        descriptionLabel.textColor = UIColor.theme.homePanel.searchTitleHeaderColor
+        creditView.backgroundColor = UIColor.theme.homePanel.learnAndActBackground
+        autorLabel.textColor = UIColor.Photon.Purple70
     }
 }
