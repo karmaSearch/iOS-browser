@@ -180,8 +180,8 @@ class HomePanelColor {
     var topSitesBackground: UIColor { return UIColor(rgb: 0xf2f2f7) }
 
     var shortcutBackground: UIColor { return UIColor(rgb: 0xf2f2f2) }
-    var shortcutShadowColor: CGColor { return UIColor(red: 0.23, green: 0.22, blue: 0.27, alpha: 1.0).cgColor }
-    var shortcutShadowOpacity: Float { return 0.2 }
+    var shortcutShadowColor: CGColor { return UIColor(red: 0, green: 0, blue: 0, alpha: 0.1).cgColor }
+    var shortcutShadowOpacity: Float { return 1 }
     
     var recentlySavedBookmarkCellBackground: UIColor { return .white}
 

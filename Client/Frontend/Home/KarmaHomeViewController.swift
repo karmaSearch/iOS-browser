@@ -20,7 +20,7 @@ struct FirefoxHomeUX {
     static let recentlySavedCellHeight: CGFloat = 136
     static let sectionInsetsForSizeClass = UXSizeClasses(compact: 0, regular: 101, other: 15)
     static let numberOfItemsPerRowForSizeClassIpad = UXSizeClasses(compact: 3, regular: 4, other: 2)
-    static let spacingBetweenSections: CGFloat = 15
+    static let spacingBetweenSections: CGFloat = 0
     static let sectionInsetsForIpad: CGFloat = 101
     static let minimumInsets: CGFloat = 15
     static let libraryShortcutsHeight: CGFloat = 90
@@ -610,12 +610,6 @@ extension KarmaHomeViewController {
             }
         }
 
-        var headerView: UIView? {
-            let view = ASHeaderView()
-            view.title = title
-            return view
-        }
-
         var cellIdentifier: String {
             switch self {
             case .karmaMenu: return "KarmaMenuCell"
@@ -659,6 +653,11 @@ extension KarmaHomeViewController: UICollectionViewDelegateFlowLayout {
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
         case UICollectionView.elementKindSectionHeader:
+            if Section(indexPath.section) == .learnAndAct {
+                let learnAndActHeader = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "LearnAndActHeader", for: indexPath) as! LearnAndActHeader
+                return learnAndActHeader
+            }
+            
             let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "Header", for: indexPath) as! ASHeaderView
             let title = Section(indexPath.section).title
             headerView.title = title
@@ -717,15 +716,8 @@ extension KarmaHomeViewController: UICollectionViewDelegateFlowLayout {
                 headerView.moreButton.isHidden = true
                 headerView.titleLabel.accessibilityIdentifier = FxHomeAccessibilityIdentifiers.SectionTitles.library
                 return headerView
-            case .customizeHome:
-                headerView.moreButton.isHidden = true
-                return headerView
-            case .karmaMenu:
-                headerView.moreButton.isHidden = true
-                return headerView
-            case .learnAndAct:
-                let learnAndActHeader = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "LearnAndActHeader", for: indexPath) as! LearnAndActHeader
-                return learnAndActHeader
+            default:
+                return UICollectionReusableView()
             }
         default:
             return UICollectionReusableView()

@@ -170,6 +170,8 @@ class TopSiteItemCell: UICollectionViewCell, NotificationThemeable {
         faviconBG.layer.borderColor = TopSiteCellUX.BorderColor.cgColor
         faviconBG.layer.shadowColor = UIColor.theme.homePanel.shortcutShadowColor
         faviconBG.layer.shadowOpacity = UIColor.theme.homePanel.shortcutShadowOpacity
+        faviconBG.layer.shadowOffset = CGSize(width: 0, height: 4)
+
         selectedOverlay.backgroundColor = TopSiteCellUX.OverlayColor
         titleLabel.backgroundColor = UIColor.clear
         titleLabel.textColor = UIColor.theme.homePanel.topSiteDomain

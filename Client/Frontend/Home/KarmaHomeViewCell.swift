@@ -15,6 +15,12 @@ class KarmaHomeViewCell: UICollectionViewCell {
         imageView.layer.masksToBounds = true
         imageView.isUserInteractionEnabled = true
     }
+    
+    private lazy var bgHill: UIImageView = .build { imageView in
+        imageView.contentMode = .scaleAspectFill
+        imageView.image = UIImage(named: "bg-hill")
+        imageView.isUserInteractionEnabled = false
+    }
 
     private lazy var infoButton: UIButton = .build { button in
         button.setImage(UIImage(named: "icon-info"), for: .normal)
@@ -42,7 +48,7 @@ class KarmaHomeViewCell: UICollectionViewCell {
     }
     
     private lazy var autorLabel: UILabel = .build { label in
-        label.isUserInteractionEnabled = true
+        label.isUserInteractionEnabled = false
         label.font = DynamicFontHelper.defaultHelper.DefaultSmallFont
     }
     
@@ -63,12 +69,17 @@ class KarmaHomeViewCell: UICollectionViewCell {
         let showLinkTap = UITapGestureRecognizer(target: self, action: #selector(self.showLink(_:)))
         creditView.addGestureRecognizer(showLinkTap)
         
-        contentView.addSubviews(backgroundImageView, infoButton, menuButton, logoKarma, creditView)
+        contentView.addSubviews(backgroundImageView, infoButton, menuButton, logoKarma, creditView, bgHill)
         creditView.addSubviews(descriptionLabel, autorLabel)
         creditView.isHidden = true
         
         backgroundImageView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
+        }
+        bgHill.snp.makeConstraints { make in
+            make.bottom.equalToSuperview()
+            make.height.equalTo(5)
+            make.leading.trailing.equalToSuperview()
         }
         
         infoButton.snp.makeConstraints { make in
@@ -88,6 +99,7 @@ class KarmaHomeViewCell: UICollectionViewCell {
         creditView.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(20)
             make.centerY.equalTo(infoButton.snp.centerY)
+            make.height.equalTo(30)
         }
         
         descriptionLabel.snp.makeConstraints { make in
@@ -100,6 +112,7 @@ class KarmaHomeViewCell: UICollectionViewCell {
             make.leading.equalTo(descriptionLabel.snp.trailing)
             make.top.equalToSuperview().offset(5)
             make.bottom.equalToSuperview().offset(-5)
+            make.height.equalTo(15)
         }
     }
     
@@ -148,6 +161,7 @@ class KarmaHomeViewCell: UICollectionViewCell {
     }
     
     func applyTheme() {
+        bgHill.tintColor = UIColor.theme.homePanel.topSitesBackground
         descriptionLabel.textColor = UIColor.theme.homePanel.searchTitleHeaderColor
         creditView.backgroundColor = UIColor.theme.homePanel.learnAndActBackground
         autorLabel.textColor = UIColor.Photon.Purple70
