@@ -814,6 +814,8 @@
 /* Label for the button, displayed in the menu, turns off night mode. */
 "Menu.NightModeTurnOff.Label2" = "Désactiver le mode nocturne";
 
+"Menu.NightModeTurnOff.Status" = "Inverser les couleurs du site";
+
 /* Label for the button, displayed in the menu, turns on night mode. */
 "Menu.NightModeTurnOn.Label" = "Activer le mode nocturne";
 

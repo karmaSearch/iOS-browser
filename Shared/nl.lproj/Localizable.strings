@@ -814,6 +814,8 @@
 /* Label for the button, displayed in the menu, turns off night mode. */
 "Menu.NightModeTurnOff.Label2" = "Nachtmodus uitschakelen";
 
+"Menu.NightModeTurnOff.Status" = "Websitekleuren omkeren";
+
 /* Label for the button, displayed in the menu, turns on night mode. */
 "Menu.NightModeTurnOn.Label" = "Nachtmodus inschakelen";
 

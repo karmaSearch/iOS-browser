@@ -50,10 +50,10 @@ extension PhotonActionSheetProtocol {
             }
         }
         let privacy = PhotonActionSheetItem(title: .MenuKarmaPrivacy, iconString: "menu-panel-karma-privacy") { _, _ in
-            bvc?.showUrl(url: URL(string: karmaBaseUrl + "legal#privacy")!)
+            bvc?.showUrl(url: URL(string: karmaBaseUrl + "legal")!)
         }
         let legal = PhotonActionSheetItem(title: .MenuKarmaTermsOfService, iconString: "menu-panel-karma-legal") { _, _ in
-            bvc?.showUrl(url: URL(string: karmaBaseUrl + "legal")!)
+            bvc?.showUrl(url: URL(string: karmaBaseUrl + "legal#imprint")!)
         }
         
         return [defaultbrowser, mission, how, partners, privacy, legal]
@@ -116,30 +116,6 @@ extension PhotonActionSheetProtocol {
         }
 
         items.append(noImageMode)
-
-        let nightModeEnabled = NightModeHelper.isActivated(profile.prefs)
-        let nightModeTitle: String = nightModeEnabled ? .AppMenuTurnOffNightMode : .AppMenuTurnOnNightMode
-        let nightMode = PhotonActionSheetItem(title: nightModeTitle, iconString: "menu-NightMode", isEnabled: nightModeEnabled, accessory: .Switch) { _, _ in
-            NightModeHelper.toggle(self.profile.prefs, tabManager: self.tabManager)
-
-            if nightModeEnabled {
-                TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .nightModeDisabled)
-            } else {
-                TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .nightModeDisabled)
-            }
-
-            // If we've enabled night mode and the theme is normal, enable dark theme
-            if NightModeHelper.isActivated(self.profile.prefs), LegacyThemeManager.instance.currentName == .normal {
-                LegacyThemeManager.instance.current = DarkTheme()
-                NightModeHelper.setEnabledDarkTheme(self.profile.prefs, darkTheme: true)
-            }
-            // If we've disabled night mode and dark theme was activated by it then disable dark theme
-            if !NightModeHelper.isActivated(self.profile.prefs), NightModeHelper.hasEnabledDarkTheme(self.profile.prefs), LegacyThemeManager.instance.currentName == .dark {
-                LegacyThemeManager.instance.current = NormalTheme()
-                NightModeHelper.setEnabledDarkTheme(self.profile.prefs, darkTheme: false)
-            }
-        }
-        items.append(nightMode)
 
         let feedback = PhotonActionSheetItem(title: .MenuKarmaFeedback, iconString: "menu-panel-karma-feedback") { _, _ in
             let settingsTableViewController = FeedbackViewController()

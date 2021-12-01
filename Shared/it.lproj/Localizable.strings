@@ -817,6 +817,8 @@
 /* Label for the button, displayed in the menu, turns on night mode. */
 "Menu.NightModeTurnOn.Label" = "Attiva Modalità notte";
 
+"Menu.NightModeTurnOff.Status" = "Inverti i colori dei siti web";
+
 /* Label for the button, displayed in the menu, turns on night mode. */
 "Menu.NightModeTurnOn.Label2" = "Attiva Modalità notte";
 

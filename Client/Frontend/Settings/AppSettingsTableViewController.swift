@@ -60,9 +60,33 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagsP
         var settings = [SettingSection]()
 
         let prefs = profile.prefs
+        
+        let nightModeEnabled = NightModeHelper.isActivated(profile.prefs)
+        let nightModeTitle: String = nightModeEnabled ? .AppMenuTurnOffNightMode : .AppMenuTurnOnNightMode
+
         var generalSettings: [Setting] = [
             OpenWithSetting(settings: self),
             ThemeSetting(settings: self),
+            BoolSetting(prefs: prefs, prefKey: NightModePrefsKey.NightModeStatus, defaultValue: false,
+                        titleText: nightModeTitle, statusText: .AppMenuTurnOffNightModeStatus, settingDidChange: { isOn in
+                            NightModeHelper.setNightMode(self.profile.prefs, tabManager: self.tabManager, enabled: isOn)
+                            if nightModeEnabled {
+                                TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .nightModeDisabled)
+                            } else {
+                                TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .nightModeDisabled)
+                            }
+
+                            // If we've enabled night mode and the theme is normal, enable dark theme
+                            if NightModeHelper.isActivated(self.profile.prefs), LegacyThemeManager.instance.currentName == .normal {
+                                LegacyThemeManager.instance.current = DarkTheme()
+                                NightModeHelper.setEnabledDarkTheme(self.profile.prefs, darkTheme: true)
+                            }
+                            // If we've disabled night mode and dark theme was activated by it then disable dark theme
+                            if !NightModeHelper.isActivated(self.profile.prefs), NightModeHelper.hasEnabledDarkTheme(self.profile.prefs), LegacyThemeManager.instance.currentName == .dark {
+                                LegacyThemeManager.instance.current = NormalTheme()
+                                NightModeHelper.setEnabledDarkTheme(self.profile.prefs, darkTheme: false)
+                            }
+                        }),
             SiriPageSetting(settings: self),
             BoolSetting(prefs: prefs, prefKey: PrefsKeys.KeyBlockPopups, defaultValue: true,
                         titleText: .AppSettingsBlockPopups),

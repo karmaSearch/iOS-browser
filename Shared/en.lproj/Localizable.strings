@@ -669,6 +669,8 @@
 /* Label for the button, displayed in the menu, turns on night mode. */
 "Menu.NightModeTurnOn.Label" = "Enable Night Mode";
 
+"Menu.NightModeTurnOff.Status" = "Invert website colors";
+
 /* Label for the button, displayed in the menu, hides images on the webpage when pressed. */
 "Menu.NoImageModeBlockImages.Label" = "Block Images";
 

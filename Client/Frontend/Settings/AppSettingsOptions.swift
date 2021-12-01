@@ -417,11 +417,14 @@ class SendFeedbackSetting: Setting {
     }
 
     override var url: URL? {
-        //TODO change url
-        return URL(string: "https://mozilla.crowdicity.com/")
+        if Locale.current.identifier.contains("fr") {
+            return URL(string: "https://form.typeform.com/to/kzYiRqBd")
+        }
+        return URL(string: "https://form.typeform.com/to/UnVXQT9V")
     }
 
     override func onClick(_ navigationController: UINavigationController?) {
+        
         setUpAndPushSettingsContentViewController(navigationController, self.url)
     }
 }
@@ -677,7 +680,10 @@ class PrivacyPolicySetting: Setting {
     }
 
     override var url: URL? {
-        return URL(string: "https://www.mozilla.org/privacy/firefox/")
+        if Locale.current.identifier.contains("fr") {
+            return URL(string: "https://about.mykarma.org/fr/legal")
+        }
+        return URL(string: "https://about.mykarma.org/legal")
     }
 
     override func onClick(_ navigationController: UINavigationController?) {
