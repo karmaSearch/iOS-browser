@@ -86,7 +86,6 @@ class PhotonActionSheet: UIViewController, UITableViewDelegate, UITableViewDataS
         view.accessibilityIdentifier = "Action Sheet"
 
         tableView.backgroundColor = .clear
-        tableView.addObserver(self, forKeyPath: "contentSize", options: .new, context: nil)
         // In a popover the popover provides the blur background
         // Not using a background color allows the view to style correctly with the popover arrow
         if self.popoverPresentationController == nil {
@@ -108,11 +107,11 @@ class PhotonActionSheet: UIViewController, UITableViewDelegate, UITableViewDataS
         }
 
         if style == .popover {
-            let width = UIDevice.current.userInterfaceIdiom == .pad ? 400 : 250
+            let width = UIDevice.current.userInterfaceIdiom == .pad ? 400 : 267
             tableView.snp.makeConstraints { make in
                 make.top.bottom.equalTo(self.view)
                 make.width.equalTo(width)
-                make.leading.trailing.equalTo(self.view)
+                make.leading.trailing.equalTo(self.view).priority(.medium)
             }
         } else {
             tableView.snp.makeConstraints { make in
@@ -167,11 +166,6 @@ class PhotonActionSheet: UIViewController, UITableViewDelegate, UITableViewDataS
             self.tableView.reloadData()
         }
     }
-
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        tableView.removeObserver(self, forKeyPath: "contentSize")
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -206,13 +200,6 @@ class PhotonActionSheet: UIViewController, UITableViewDelegate, UITableViewDataS
             // Pick up the correct/final tableview.contentsize in order to set the height.
             // Without async dispatch, the contentsize is wrong.
             self.view.setNeedsLayout()
-            self.preferredContentSize = self.tableView.contentSize
-        }
-    }
-
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if style == .popover {
-         //   self.preferredContentSize = tableView.contentSize
         }
     }
     
@@ -235,8 +222,10 @@ class PhotonActionSheet: UIViewController, UITableViewDelegate, UITableViewDataS
         tableView.snp.makeConstraints { make in
             heightConstraint?.deactivate()
             // The height of the menu should be no more than 85 percent of the screen
-            heightConstraint = make.height.equalTo(min(self.tableView.contentSize.height, maxHeight * 0.90)).constraint
+            heightConstraint = make.height.equalTo(min(self.tableView.contentSize.height, maxHeight * 0.90)) .priority(.medium).constraint
         }
+        tableView.layoutIfNeeded()
+        self.preferredContentSize = tableView.contentSize
     }
 
     private func applyBackgroundBlur() {

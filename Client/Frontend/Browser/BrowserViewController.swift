@@ -1685,7 +1685,12 @@ extension BrowserViewController: HomePanelDelegate {
                                                     saturationDeltaFactor: 1.8,
                                                     maskImage: nil)
             overlayView = UIImageView(image: blurredImage)
+            overlayView!.alpha = 0
             view.addSubview(overlayView!)
+            UIView.animate(withDuration: 0.5) {
+                self.overlayView!.alpha = 1
+            }
+
         }
     }
 }
