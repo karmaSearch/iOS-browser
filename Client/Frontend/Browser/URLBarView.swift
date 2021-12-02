@@ -95,6 +95,8 @@ class URLBarView: UIView {
         let locationView = TabLocationView()
         locationView.layer.cornerRadius = URLBarViewUX.TextFieldCornerRadius
         locationView.translatesAutoresizingMaskIntoConstraints = false
+        locationView.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+
         locationView.delegate = self
         return locationView
     }()
@@ -119,7 +121,9 @@ class URLBarView: UIView {
         cancelButton.accessibilityLabel = .BackTitle
         cancelButton.addTarget(self, action: #selector(didClickCancel), for: .touchUpInside)
         cancelButton.alpha = 0
-        cancelButton.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+        cancelButton.translatesAutoresizingMaskIntoConstraints = false
+
+        cancelButton.setContentCompressionResistancePriority(.required, for: .horizontal)
         cancelButton.titleLabel?.font = UIFont.customFont(ofSize: 18, weight: .regular)
         return cancelButton
     }()
