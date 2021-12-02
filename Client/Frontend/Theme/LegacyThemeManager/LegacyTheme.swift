@@ -23,7 +23,7 @@ enum BuiltinThemeName: String {
 }
 
 // Convenience reference to these normal mode colors which are used in a few color classes.
-fileprivate let defaultBackground = UIColor.Photon.Grey10
+fileprivate let defaultBackground = UIColor(rgb: 0xf2f2f7)
 fileprivate let defaultSeparator = UIColor.Photon.LightGrey90
 fileprivate let defaultTextAndTint = UIColor.Photon.Grey80 
 
@@ -91,7 +91,7 @@ class BrowserColor {
 // The back/forward/refresh/menu button (bottom toolbar)
 class ToolbarButtonColor {
     var selectedTint: UIColor { return UIColor.Photon.Green60 }
-    var disabledTint: UIColor { return UIColor.Photon.Grey30 }
+    var disabledTint: UIColor { return UIColor.Photon.LightGrey90 }
 }
 
 class LoadingBarColor {
@@ -149,7 +149,7 @@ class TopTabsColor {
 }
 
 class TextFieldColor {
-    var background: UIColor { return UIColor.Photon.LightGrey20 }
+    var background: UIColor { return UIColor.white }
     var backgroundInOverlay: UIColor { return UIColor.Photon.LightGrey20 }
     var textAndTint: UIColor { return defaultTextAndTint }
     var separator: UIColor { return .white }
@@ -177,9 +177,9 @@ class HomePanelColor {
 
     var topSiteDomain: UIColor { return UIColor.Photon.DarkGrey90 }
     var topSitePin: UIColor { return UIColor.Photon.DarkGrey05 }
-    var topSitesBackground: UIColor { return UIColor(rgb: 0xf2f2f7) }
+    var topSitesBackground: UIColor { return defaultBackground }
 
-    var shortcutBackground: UIColor { return UIColor(rgb: 0xf2f2f2) }
+    var shortcutBackground: UIColor { return defaultBackground }
     var shortcutShadowColor: CGColor { return UIColor(red: 0, green: 0, blue: 0, alpha: 0.1).cgColor }
     var shortcutShadowOpacity: Float { return 1 }
     

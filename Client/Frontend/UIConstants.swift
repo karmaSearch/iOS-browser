@@ -22,7 +22,7 @@ public struct UIConstants {
     static let SnackbarButtonHeight: CGFloat = 57
     static let TopToolbarHeight: CGFloat = 56
     static let TopToolbarHeightMax: CGFloat = 75
-    static var ToolbarHeight: CGFloat = 46
+    static var ToolbarHeight: CGFloat = 40
 
     static let SystemBlueColor = UIColor.Photon.Blue40
 

@@ -106,8 +106,6 @@ class URLBarView: UIView {
         return locationContainer
     }()
 
-    let line = UIView()
-
     fileprivate lazy var progressBar: GradientProgressBar = {
         let progressBar = GradientProgressBar()
         progressBar.clipsToBounds = false
@@ -158,11 +156,6 @@ class URLBarView: UIView {
 
         set(newURL) {
             locationView.url = newURL
-            if let url = newURL, InternalURL(url)?.isAboutHomeURL ?? false {
-                line.isHidden = true
-            } else {
-                line.isHidden = false
-            }
         }
     }
 
@@ -187,7 +180,7 @@ class URLBarView: UIView {
     fileprivate func commonInit() {
         locationContainer.addSubview(locationView)
         
-        [scrollToTopButton, line, tabsButton, progressBar, cancelButton,
+        [scrollToTopButton, tabsButton, progressBar, cancelButton,
          homeButton, bookmarksButton, appMenuButton, addNewTabButton, forwardButton, backButton, multiStateButton, locationContainer].forEach {
             addSubview($0)
         }
@@ -204,11 +197,6 @@ class URLBarView: UIView {
     }
 
     fileprivate func setupConstraints() {
-
-        line.snp.makeConstraints { make in
-            make.bottom.leading.trailing.equalTo(self)
-            make.height.equalTo(1)
-        }
 
         scrollToTopButton.snp.makeConstraints { make in
             make.top.equalTo(self)
@@ -505,7 +493,6 @@ class URLBarView: UIView {
         locationContainer.layer.borderColor = borderColor.cgColor
 
         if inOverlayMode {
-            line.isHidden = inOverlayMode
             // Make the editable text field span the entire URL bar, covering the lock and reader icons.
             locationTextField?.snp.remakeConstraints { make in
                 make.edges.equalTo(self.locationView)
@@ -760,7 +747,6 @@ extension URLBarView: NotificationThemeable {
 
         cancelTextColor = UIColor.theme.urlbar.tint
         backgroundColor = UIColor.theme.browser.background
-        line.backgroundColor = UIColor.theme.browser.urlBarDivider
 
         locationBorderColor = UIColor.theme.urlbar.border
         locationView.backgroundColor = inOverlayMode ? UIColor.theme.textField.backgroundInOverlay : UIColor.theme.textField.background

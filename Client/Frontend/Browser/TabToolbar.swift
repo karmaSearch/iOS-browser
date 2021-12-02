@@ -225,7 +225,7 @@ open class TabToolbarHelper: NSObject {
 class ToolbarButton: UIButton {
     var selectedTintColor: UIColor!
     var unselectedTintColor: UIColor!
-    var disabledTintColor = UIColor.Photon.Grey50
+    var disabledTintColor = UIColor.Photon.LightGrey90
 
     // Optionally can associate a separator line that hide/shows along with the button
     weak var separatorLine: UIView?

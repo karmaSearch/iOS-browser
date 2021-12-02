@@ -28,9 +28,11 @@ class LearnAndActHeader: UICollectionReusableView {
         addSubview(imageView)
 
         imageView.snp.makeConstraints { make in
-            make.leading.equalToSuperview().offset(20)
+            make.leading.equalToSuperview().offset(10)
             make.top.equalToSuperview()
-            make.bottom.equalToSuperview().offset(-20)
+            make.height.equalTo(45)
+            make.width.equalTo(185)
+            make.bottom.equalToSuperview().offset(-10)
         }
     }
 

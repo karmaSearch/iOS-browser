@@ -16,9 +16,15 @@ class KarmaHomeViewCell: UICollectionViewCell {
         imageView.isUserInteractionEnabled = true
     }
     
-    private lazy var bgHill: UIImageView = .build { imageView in
+    private lazy var bgHillBottom: UIImageView = .build { imageView in
         imageView.contentMode = .scaleAspectFill
-        imageView.image = UIImage(named: "bg-hill")
+        imageView.image = UIImage(named: "bg-hill-bottom")
+        imageView.isUserInteractionEnabled = false
+    }
+    
+    private lazy var bgHillTop: UIImageView = .build { imageView in
+        imageView.contentMode = .scaleAspectFill
+        imageView.image = UIImage(named: "bg-hill-top")
         imageView.isUserInteractionEnabled = false
     }
 
@@ -69,14 +75,21 @@ class KarmaHomeViewCell: UICollectionViewCell {
         let showLinkTap = UITapGestureRecognizer(target: self, action: #selector(self.showLink(_:)))
         creditView.addGestureRecognizer(showLinkTap)
         
-        contentView.addSubviews(backgroundImageView, infoButton, menuButton, logoKarma, creditView, bgHill)
+        contentView.addSubviews(backgroundImageView, infoButton, menuButton, logoKarma, creditView, bgHillBottom, bgHillTop)
         creditView.addSubviews(descriptionLabel, autorLabel)
         creditView.isHidden = true
         
         backgroundImageView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
-        bgHill.snp.makeConstraints { make in
+        
+        bgHillTop.snp.makeConstraints { make in
+            make.top.equalToSuperview()
+            make.height.equalTo(5)
+            make.leading.trailing.equalToSuperview()
+        }
+        
+        bgHillBottom.snp.makeConstraints { make in
             make.bottom.equalToSuperview()
             make.height.equalTo(5)
             make.leading.trailing.equalToSuperview()
@@ -161,7 +174,8 @@ class KarmaHomeViewCell: UICollectionViewCell {
     }
     
     func applyTheme() {
-        bgHill.tintColor = UIColor.theme.homePanel.topSitesBackground
+        bgHillTop.tintColor = UIColor.theme.homePanel.topSitesBackground
+        bgHillBottom.tintColor = UIColor.theme.homePanel.topSitesBackground
         descriptionLabel.textColor = UIColor.theme.homePanel.searchTitleHeaderColor
         creditView.backgroundColor = UIColor.theme.homePanel.learnAndActBackground
         autorLabel.textColor = UIColor.Photon.Purple70

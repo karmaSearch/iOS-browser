@@ -512,7 +512,7 @@ class BrowserViewController: UIViewController {
         // Make sure that we have a height to actually base our calculations on
         guard urlBar.locationContainer.bounds.height != 0 else { return }
         let locationViewHeight = urlBar.locationView.bounds.height
-        let heightWithPadding = locationViewHeight + 10
+        let heightWithPadding = locationViewHeight + 4
 
         // We have to deactivate the original constraint, and remake the constraint
         // or else funky conflicts happen
