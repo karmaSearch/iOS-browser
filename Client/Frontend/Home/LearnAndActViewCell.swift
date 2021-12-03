@@ -170,8 +170,9 @@ class LearnAndActViewCell: UICollectionViewCell {
         size += typeHeight / 2 
         size += textSpacing * 3
         size += titleLabel.font.calculateHeight(text: titleLabel.text ?? "", width: width - padding2*2)
-        size += (descriptionLabel.text ?? "").isEmpty ? 0 : descriptionLabel.font.calculateHeight(text: descriptionLabel.text ?? "", width: width - padding2*2)
-        size += timeToRead.font.calculateHeight(text: timeToRead.text ?? "", width: width - padding2*2)
+        let sizeOfDescription = descriptionLabel.font.calculateHeight(text: descriptionLabel.text ?? "", width: width - padding2*2)
+        size += min(sizeOfDescription, CGFloat(descriptionLabel.numberOfLines * 20))
+        size += (timeToRead.text ?? "").isEmpty ? 0 : timeToRead.font.calculateHeight(text: timeToRead.text ?? "", width: width - padding2*2)
         size += linkLabel.font.calculateHeight(text: linkLabel.text ?? "", width: width - padding2*2)
         size += padding2
         return size
