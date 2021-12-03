@@ -19,7 +19,7 @@ class KarmaHomeViewModel {
     var currentImage: HomeImage?
     
     func getRandomImage() -> HomeImage {
-        if let filePath = Bundle.main.path(forResource: "HomeImage", ofType: "json"),
+        if let filePath = Bundle.main.path(forResource: "HomeImages", ofType: "json"),
            let data = NSData(contentsOfFile: filePath) {
           do {
 
