@@ -354,6 +354,8 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
                 self.presentedViewController?.dismiss(animated: true, completion: nil)
             }
             self.collectionViewLayout.invalidateLayout()
+            self.reloadAll()
+
             self.collectionView?.reloadData()
         }, completion: { _ in
             if !self.didRotate { self.didRotate = true }

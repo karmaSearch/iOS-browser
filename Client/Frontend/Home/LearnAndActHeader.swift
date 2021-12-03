@@ -17,7 +17,7 @@ import UIKit
 
 // Activity Stream header view
 class LearnAndActHeader: UICollectionReusableView {
-    
+
     lazy var imageView: UIImageView = .build { image in
         image.image = UIImage(named: "learn_and_act_header")
         image.contentMode = .scaleAspectFit
@@ -28,11 +28,11 @@ class LearnAndActHeader: UICollectionReusableView {
         addSubview(imageView)
 
         imageView.snp.makeConstraints { make in
-            make.leading.equalToSuperview().offset(10)
+            make.leading.equalToSuperview().offset(FirefoxHomeHeaderViewUX.insets)
             make.top.equalToSuperview()
             make.height.equalTo(45)
             make.width.equalTo(185)
-            make.bottom.equalToSuperview().offset(-10)
+            make.bottom.equalToSuperview().offset(-FirefoxHomeHeaderViewUX.titleTopInset)
         }
     }
 
