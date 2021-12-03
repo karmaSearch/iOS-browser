@@ -7,10 +7,12 @@ fastlane_version "1.39.0"
 default_platform :ios
 
 lane :prod do
+ ensure_git_status_clean
  increment_build_number(
-    build_number: latest_testflight_build_number + 1,
     xcodeproj: "Client.xcodeproj"
   )
   build_app(scheme: "Karma", xcargs: "-allowProvisioningUpdates")
 upload_to_testflight
+commit_version_bump(xcodeproj: "Client.xcodeproj")
+push_to_git_remote
 end
