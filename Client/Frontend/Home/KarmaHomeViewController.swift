@@ -16,11 +16,11 @@ private let log = Logger.browserLogger
 struct FirefoxHomeUX {
     static let highlightCellHeight: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 250 : 200
     static let jumpBackInCellHeight: CGFloat = 120
-    static let karmaMenuHeight: CGFloat = 200
+    static let karmaMenuHeight: CGFloat = 100
     static let recentlySavedCellHeight: CGFloat = 136
     static let sectionInsetsForSizeClass = UXSizeClasses(compact: 0, regular: 101, other: 15)
     static let numberOfItemsPerRowForSizeClassIpad = UXSizeClasses(compact: 3, regular: 4, other: 2)
-    static let spacingBetweenSections: CGFloat = 0
+    static let spacingBetweenSections: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 24 : 0
     static let sectionInsetsForIpad: CGFloat = 101
     static let minimumInsets: CGFloat = 15
     static let libraryShortcutsHeight: CGFloat = 90
@@ -552,7 +552,7 @@ extension KarmaHomeViewController {
 
         func cellHeight(_ traits: UITraitCollection, width: CGFloat) -> CGFloat {
             switch self {
-            case .karmaMenu: return traits.horizontalSizeClass != .compact ? FirefoxHomeUX.karmaMenuHeight : width
+            case .karmaMenu: return traits.verticalSizeClass == .compact || UIDevice.current.userInterfaceIdiom == .pad ? FirefoxHomeUX.karmaMenuHeight : width
             case .pocket: return FirefoxHomeUX.highlightCellHeight
             case .jumpBackIn: return FirefoxHomeUX.jumpBackInCellHeight
             case .recentlySaved: return FirefoxHomeUX.recentlySavedCellHeight

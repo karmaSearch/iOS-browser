@@ -110,10 +110,44 @@ class LearnAndActViewCell: UICollectionViewCell {
         textContent.addSubviews(textStackView)
         typeView.addSubview(typeLabel)
         
-        typeView.snp.makeConstraints { make in
-            make.centerY.equalTo(imageView.snp.bottom)
-            make.leading.equalToSuperview()
-            make.height.equalTo(typeHeight)
+        if UITraitCollection.current.verticalSizeClass == .compact ||
+            UIDevice.current.userInterfaceIdiom == .pad {
+            typeView.snp.makeConstraints { make in
+                make.leading.equalTo(imageView.snp.trailing)
+                make.top.equalToSuperview()
+                make.height.equalTo(typeHeight)
+            }
+            
+            imageView.snp.makeConstraints { make in
+                make.top.bottom.equalToSuperview()
+                make.trailing.equalTo(contentView.snp.centerX)
+            }
+            
+            textContent.snp.makeConstraints { make in
+                make.bottom.equalToSuperview()
+                make.top.equalToSuperview()
+                make.leading.equalTo(contentView.snp.centerX)
+                make.trailing.equalToSuperview()
+            }
+            
+        } else {
+            typeView.snp.makeConstraints { make in
+                make.centerY.equalTo(imageView.snp.bottom)
+                make.leading.equalToSuperview()
+                make.height.equalTo(typeHeight)
+            }
+            
+            imageView.snp.makeConstraints { make in
+                make.height.equalTo(imageHeight)
+                make.top.equalToSuperview()
+                make.leading.trailing.equalToSuperview()
+            }
+            
+            textContent.snp.makeConstraints { make in
+                make.bottom.equalToSuperview()
+                make.top.equalTo(imageView.snp.bottom).offset(textSpacing)
+                make.leading.trailing.equalToSuperview()
+            }
         }
         
         typeLabel.snp.makeConstraints { make in
@@ -122,24 +156,13 @@ class LearnAndActViewCell: UICollectionViewCell {
             make.leading.equalToSuperview().offset(padding2)
         }
         
-        imageView.snp.makeConstraints { make in
-            make.height.equalTo(imageHeight)
-            make.top.equalToSuperview()
-            make.leading.trailing.equalToSuperview()
-        }
-        
-        textContent.snp.makeConstraints { make in
-            make.bottom.equalToSuperview()
-            make.top.equalTo(imageView.snp.bottom).offset(textSpacing)
-            make.leading.trailing.equalToSuperview()
-        }
-        
         textStackView.snp.makeConstraints { make in
             make.top.equalTo(typeView.snp.bottom)
             make.bottom.equalToSuperview().offset(-padding2)
             make.leading.equalToSuperview().offset(padding2)
             make.centerX.equalToSuperview()
         }
+        
         
         contentView.layer.cornerRadius = 10
         contentView.layer.masksToBounds = true
@@ -150,6 +173,55 @@ class LearnAndActViewCell: UICollectionViewCell {
         contentView.layer.shadowOffset = CGSize(width: 0, height: 4)
     }
     
+    func updateViewConstraints() {
+        if UITraitCollection.current.verticalSizeClass == .compact ||
+            UIDevice.current.userInterfaceIdiom == .pad {
+            typeView.snp.remakeConstraints { make in
+                make.leading.equalTo(imageView.snp.trailing)
+                make.top.equalToSuperview()
+                make.height.equalTo(typeHeight)
+            }
+            
+            imageView.snp.remakeConstraints { make in
+                make.top.bottom.equalToSuperview()
+                make.trailing.equalTo(contentView.snp.centerX)
+            }
+            
+            textContent.snp.remakeConstraints { make in
+                make.bottom.equalToSuperview()
+                make.top.equalToSuperview()
+                make.leading.equalTo(contentView.snp.centerX)
+                make.trailing.equalToSuperview()
+            }
+        } else {
+            typeView.snp.remakeConstraints { make in
+                make.centerY.equalTo(imageView.snp.bottom)
+                make.leading.equalToSuperview()
+                make.height.equalTo(typeHeight)
+            }
+            
+            imageView.snp.remakeConstraints { make in
+                make.height.equalTo(imageHeight)
+                make.top.equalToSuperview()
+                make.leading.trailing.equalToSuperview()
+            }
+            
+            textContent.snp.remakeConstraints { make in
+                make.bottom.equalToSuperview()
+                make.top.equalTo(imageView.snp.bottom).offset(textSpacing)
+                make.leading.trailing.equalToSuperview()
+            }
+        }
+    }
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+
+        if self.traitCollection.verticalSizeClass != previousTraitCollection?.verticalSizeClass
+            || self.traitCollection.horizontalSizeClass != previousTraitCollection?.horizontalSizeClass {
+            updateViewConstraints()
+        }
+    }
+    
     func applyTheme() {
         typeView.backgroundColor = UIColor.theme.homePanel.karmaTintColor
         titleLabel.textColor =  UIColor.theme.homePanel.learnAndActCellTitleColor
@@ -158,6 +230,7 @@ class LearnAndActViewCell: UICollectionViewCell {
         descriptionLabel.textColor = UIColor.theme.homePanel.learnAndActDescriptionColor
         linkLabel.textColor = UIColor.theme.homePanel.learnAndActLinkColor
         textContent.backgroundColor = UIColor.theme.homePanel.learnAndActBackground
+        contentView.backgroundColor = UIColor.theme.homePanel.learnAndActBackground
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -165,6 +238,10 @@ class LearnAndActViewCell: UICollectionViewCell {
     }
     
     func calculateSize(width: CGFloat) -> CGFloat {
+        if UITraitCollection.current.verticalSizeClass == .compact ||
+            UIDevice.current.userInterfaceIdiom == .pad {
+            return 180
+        }
         var size: CGFloat = 0
         size += imageHeight
         size += typeHeight / 2 
