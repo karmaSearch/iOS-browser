@@ -84,7 +84,7 @@ class LearnAndActViewCell: UICollectionViewCell {
             SDImageCodersManager.shared.addCoder(WebPCoder)
             SDWebImageDownloader.shared.setValue("image/webp,image/apng,image/*,*/*;q=0.8", forHTTPHeaderField:"Accept")
             
-            imageView.sd_setImage(with: URL(string: "https://about.mykarma.org"+learnAndAct.blogArticleImage), completed: nil)
+            imageView.sd_setImage(with: URL(string: "https://about.mykarma.org"+learnAndAct.blogArticleImage), placeholderImage: UIImage(named: learnAndAct.defaultImageName), completed: nil)
             
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.maximumLineHeight = 20

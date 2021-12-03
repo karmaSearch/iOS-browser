@@ -35,7 +35,13 @@ struct LearnAndActBloc {
         blogArticleDescription = param["blog_article_description"].stringValue
         blogArticleAction = param["blog_article_action"].stringValue
         blogArticleActionURL = param["blog_article_action_url"].stringValue
-
+    }
+    
+    var defaultImageName: String {
+        if blocType.lowercased() == "learn" || blocType.lowercased() == "comprendre" {
+            return "learn-crash-test"
+        }
+        return "act-crash-test"
     }
 }
 
