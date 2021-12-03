@@ -105,11 +105,12 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagsP
                         statusText: .SettingsShowLinkPreviewsStatus)
         ]
 
-        if #available(iOS 14.0, *) {
-            settings += [
-                SettingSection(footerTitle: NSAttributedString(string: String.DefaultBrowserCardDescription), children: [DefaultBrowserSetting()])
-            ]
-        }
+        // DISABLE DEFAULT BROWSER
+//        if #available(iOS 14.0, *) {
+//            settings += [
+//                SettingSection(footerTitle: NSAttributedString(string: String.DefaultBrowserCardDescription), children: [DefaultBrowserSetting()])
+//            ]
+//        }
 
 
         settings += [ SettingSection(title: NSAttributedString(string: .SettingsGeneralSectionTitle), children: generalSettings)]

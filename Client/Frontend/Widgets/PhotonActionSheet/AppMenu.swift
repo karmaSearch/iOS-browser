@@ -55,8 +55,8 @@ extension PhotonActionSheetProtocol {
         let legal = PhotonActionSheetItem(title: .MenuKarmaTermsOfService, iconString: "menu-panel-karma-legal") { _, _ in
             bvc?.showUrl(url: URL(string: karmaBaseUrl + "legal#imprint")!)
         }
-        
-        return [defaultbrowser, mission, how, partners, privacy, legal]
+        // DISABLE DEFAULT BROWSER
+        return [/*defaultbrowser, */mission, how, partners, privacy, legal]
     }
     
     // Not part of AppMenu, but left for future use. 

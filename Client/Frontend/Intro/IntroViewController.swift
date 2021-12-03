@@ -155,11 +155,15 @@ class IntroViewController: UIViewController, OnViewDismissable {
             
             self.scrollView.isHidden = true
             self.pageControl.isHidden = true
-            self.defaultBrowserView.isHidden = false
-            self.defaultBrowserView.alpha = 0
-            UIView.animate(withDuration: 1) {
-                self.defaultBrowserView.alpha = 1
-            }
+            
+            // DISABLE DEFAULT BROWSER
+//            self.defaultBrowserView.isHidden = false
+//            self.defaultBrowserView.alpha = 0
+//            UIView.animate(withDuration: 1) {
+//                self.defaultBrowserView.alpha = 1
+//            }
+            self.didFinishClosure?(self, nil)
+
         }
         
         welcomeCard.nextClosure = { [weak self] in
