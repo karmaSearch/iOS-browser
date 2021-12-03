@@ -266,7 +266,7 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
         return true
     }
     
-    private let learnAndActViewModel = LearnAndActiViewModel()
+    private let learnAndActViewModel = LearnAndActViewModel()
 
     // MARK: - Initializers
     init(profile: Profile) {
