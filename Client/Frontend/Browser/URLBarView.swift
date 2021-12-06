@@ -425,6 +425,8 @@ class URLBarView: UIView {
     }
 
     func enterOverlayMode(_ locationText: String?, pasted: Bool, search: Bool) {
+        guard !inOverlayMode else { return }
+
         createLocationTextField()
 
         // Show the overlay mode UI, which includes hiding the locationView and replacing it
@@ -459,6 +461,7 @@ class URLBarView: UIView {
     }
 
     func leaveOverlayMode(didCancel cancel: Bool = false) {
+        guard inOverlayMode else { return }
         locationTextField?.resignFirstResponder()
         animateToOverlayState(overlayMode: false, didCancel: cancel)
         delegate?.urlBarDidLeaveOverlayMode(self)

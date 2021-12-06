@@ -166,7 +166,6 @@ class TopSiteItemCell: UICollectionViewCell, NotificationThemeable {
 
     func applyTheme() {
         pinImageView.tintColor = UIColor.theme.homePanel.topSitePin
-        faviconBG.backgroundColor = self.imageView.backgroundColor
         faviconBG.layer.borderColor = TopSiteCellUX.BorderColor.cgColor
         faviconBG.layer.shadowColor = UIColor.theme.homePanel.shortcutShadowColor
         faviconBG.layer.shadowOpacity = UIColor.theme.homePanel.shortcutShadowOpacity
