@@ -1394,5 +1394,40 @@
     "image_url": "zillow-com.png",
     "background_color": "#98c554",
     "domain": "zillow.com"
+  },
+  {
+    "title": "Compassion in world farming",
+    "url": "https://www.ciwf.com/",
+    "image_url": "ciwf.png",
+    "background_color": "#ffffff",
+    "domain": "ciwf.com"
+  },
+  {
+    "title": "rewild",
+    "url": "http://www.rewild.org/",
+    "image_url": "rewild.png",
+    "background_color": "#ffffff",
+    "domain": "rewild.org"
+  },
+  {
+    "title": "aspas nature",
+    "url": "https://www.aspas-nature.org/",
+    "image_url": "aspas.png",
+    "background_color": "#edc91b", 
+    "domain": "aspas-nature.org"
+  },
+  {
+    "title": "notreaffaireatous",
+    "url": "https://notreaffaireatous.org/",
+    "image_url": "notreaffaireatous.png",
+    "background_color": "#81b4d6",
+    "domain": "notreaffaireatous.org"
+  },
+  {
+    "title": "fresquedelabiodiversite",
+    "url": "https://www.fresquedelabiodiversite.org/",
+    "image_url": "fresquedelabiodiversite.png",
+    "background_color": "#ffffff",
+    "domain": "fresquedelabiodiversite.org"
   }
 ]

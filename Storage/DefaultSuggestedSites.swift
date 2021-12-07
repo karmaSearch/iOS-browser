@@ -36,44 +36,80 @@ open class DefaultSuggestedSites {
     public static let sites = [
         "default": [
             SuggestedSiteData(
-                url: "https://m.facebook.com/",
-                bgColor: "0x385185",
-                imageUrl: "asset://suggestedsites_facebook",
+                url: "https://www.rewild.org/",
+                bgColor: "0xffffff",
+                imageUrl: "",
                 faviconUrl: "asset://defaultFavicon",
                 trackingId: 632,
-                title: .DefaultSuggestedFacebook
+                title: "Rewild"
             ),
             SuggestedSiteData(
-                url: "https://m.youtube.com/",
-                bgColor: "0xcd201f",
-                imageUrl: "asset://suggestedsites_youtube",
+                url: "https://www.ciwf.com/",
+                bgColor: "0x0bab47",
+                imageUrl: "",
                 faviconUrl: "asset://defaultFavicon",
                 trackingId: 631,
-                title: .DefaultSuggestedYouTube
+                title: "Compassion in world farming"
             ),
             SuggestedSiteData(
-                url: "https://www.amazon.com/",
-                bgColor: "0x000000",
-                imageUrl: "asset://suggestedsites_amazon",
+                url: "https://www.wcs.org/",
+                bgColor: "0x1e1d1d",
+                imageUrl: "",
                 faviconUrl: "asset://defaultFavicon",
                 trackingId: 630,
-                title: .DefaultSuggestedAmazon
+                title: "Wildlife Conservation Society"
+            )
+        ],
+        "en-GB": [
+            SuggestedSiteData(
+                url: "https://www.rewild.org/",
+                bgColor: "0xffffff",
+                imageUrl: "",
+                faviconUrl: "asset://defaultFavicon",
+                trackingId: 632,
+                title: "Rewild"
             ),
             SuggestedSiteData(
-                url: "https://www.wikipedia.org/",
-                bgColor: "0x000000",
-                imageUrl: "asset://suggestedsites_wikipedia",
+                url: "https://www.ciwf.com/",
+                bgColor: "0x0bab47",
+                imageUrl: "",
                 faviconUrl: "asset://defaultFavicon",
-                trackingId: 629,
-                title: .DefaultSuggestedWikipedia
+                trackingId: 631,
+                title: "Compassion in world farming"
             ),
             SuggestedSiteData(
-                url: "https://mobile.twitter.com/",
-                bgColor: "0x55acee",
-                imageUrl: "asset://suggestedsites_twitter",
+                url: "https://www.peta.org.uk/",
+                bgColor: "0x1e1d1d",
+                imageUrl: "",
                 faviconUrl: "asset://defaultFavicon",
-                trackingId: 628,
-                title: .DefaultSuggestedTwitter
+                trackingId: 630,
+                title: "Peta"
+            )
+        ],
+        "fr_FR": [
+            SuggestedSiteData(
+                url: "https://www.aspas-nature.org/",
+                bgColor: "0xffffff",
+                imageUrl: "",
+                faviconUrl: "asset://defaultFavicon",
+                trackingId: 633,
+                title: "Aspas"
+            ),
+            SuggestedSiteData(
+                url: "https://notreaffaireatous.org/",
+                bgColor: "0xffffff",
+                imageUrl: "",
+                faviconUrl: "asset://defaultFavicon",
+                trackingId: 634,
+                title: "notreaffaireatous"
+            ),
+            SuggestedSiteData(
+                url: "https://www.fresquedelabiodiversite.org/",
+                bgColor: "0xffffff",
+                imageUrl: "",
+                faviconUrl: "asset://defaultFavicon",
+                trackingId: 635,
+                title: "fresquedelabiodiversite"
             )
         ],
         "zh_CN": [
