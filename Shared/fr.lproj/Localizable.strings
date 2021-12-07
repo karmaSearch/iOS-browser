@@ -825,6 +825,8 @@
 /* Label for the button, displayed in the menu, hides images on the webpage when pressed. */
 "Menu.NoImageModeBlockImages.Label" = "Bloquer les images";
 
+"Menu.NoImageModeBlockImages.Status" = "Ne pas afficher les images sur les sites";
+
 /* Label for the button, displayed in the menu, shows images on the webpage when pressed. */
 "Menu.NoImageModeShowImages.Label" = "Bloquer les images";
 

@@ -62,7 +62,10 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagsP
         let prefs = profile.prefs
         
         let nightModeEnabled = NightModeHelper.isActivated(profile.prefs)
+        let noImageEnabled = NoImageModeHelper.isActivated(profile.prefs)
+
         let nightModeTitle: String = nightModeEnabled ? .AppMenuTurnOffNightMode : .AppMenuTurnOnNightMode
+        let imageModeTitle: String = noImageEnabled ? .AppMenuShowImageMode : .AppMenuNoImageMode
 
         var generalSettings: [Setting] = [
             OpenWithSetting(settings: self),
@@ -88,6 +91,9 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagsP
                             }
                         }),
             SiriPageSetting(settings: self),
+            BoolSetting(prefs: prefs, prefKey: PrefsKeys.KeyNoImageModeStatus, defaultValue: false, titleText: imageModeTitle, statusText: .AppMenuNoImageStatus, settingDidChange: { isOn in
+                self.tabManager.tabs.forEach { $0.noImageMode = isOn }
+            }),
             BoolSetting(prefs: prefs, prefKey: PrefsKeys.KeyBlockPopups, defaultValue: true,
                         titleText: .AppSettingsBlockPopups),
            ]
