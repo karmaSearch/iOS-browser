@@ -818,13 +818,13 @@
 "Menu.NightModeTurnOn.Label" = "Enable Night Mode";
 
 /* Label for the button, displayed in the menu, turns on night mode. */
-"Menu.NightModeTurnOn.Label2" = "Turn on Night Mode";
+"Menu.NightModeTurnOn.Label2" = "Enable Night Mode";
 
 /* Label for the button, displayed in the menu, hides images on the webpage when pressed. */
 "Menu.NoImageModeBlockImages.Label" = "Block Images";
 
 /* Label for the button, displayed in the menu, shows images on the webpage when pressed. */
-"Menu.NoImageModeShowImages.Label" = "Show Images";
+"Menu.NoImageModeShowImages.Label" = "Block Images";
 
 /* Label for title in page action menu. */
 "Menu.PageActions.Title" = "Page Actions";
@@ -1589,7 +1589,7 @@
 "Settings.Studies.Toggle.Link" = "Learn More.";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "KARMA may install and run studies from time to time.";
+"Settings.Studies.Toggle.Message" = "Mozilla may install and run studies from time to time.";
 
 /* Toggled OFF to opt-out of studies */
 "Settings.Studies.Toggle.Off" = "Off";
@@ -1742,7 +1742,7 @@
 "ShareExtension.OpenInPrivateModeAction.Title" = "Open in Private Mode";
 
 /* Action label on share extension to search for the selected text in KARMA. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Search in KARMA";
+"ShareExtension.SeachInFirefoxAction.Title" = "Search with KARMA";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "Show Search Suggestions";

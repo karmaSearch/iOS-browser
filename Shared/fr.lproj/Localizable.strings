@@ -812,9 +812,9 @@
 "Menu.ManageAccount.Label" = "Gérer le compte %@";
 
 /* Label for the button, displayed in the menu, turns off night mode. */
-"Menu.NightModeTurnOff.Label2" = "Désactiver le mode nocturne";
+"Menu.NightModeTurnOff.Label2" = "Activer le mode nocturne";
 
-"Menu.NightModeTurnOff.Status" = "Inverser les couleurs du site";
+"Menu.NightModeTurnOff.Status" = "Inverse les couleurs des sites consultés";
 
 /* Label for the button, displayed in the menu, turns on night mode. */
 "Menu.NightModeTurnOn.Label" = "Activer le mode nocturne";
@@ -826,7 +826,7 @@
 "Menu.NoImageModeBlockImages.Label" = "Bloquer les images";
 
 /* Label for the button, displayed in the menu, shows images on the webpage when pressed. */
-"Menu.NoImageModeShowImages.Label" = "Afficher les images";
+"Menu.NoImageModeShowImages.Label" = "Bloquer les images";
 
 /* Label for title in page action menu. */
 "Menu.PageActions.Title" = "Actions pour la page";
@@ -1142,7 +1142,7 @@
 "Search" = "Recherche";
 
 /* The text shown in the URL bar on about:home */
-"Search or enter address" = "Recherche avec KARMA";
+"Search or enter address" = "Rechercher sur le Web avec KARMA";
 
 /* Search suggestion cell label that allows user to switch to tab which they searched for in url bar */
 "Search.Awesomebar.SwitchToTab" = "Aller à l’onglet";
@@ -1591,7 +1591,7 @@
 "Settings.Studies.Toggle.Link" = "En savoir plus.";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "KARMA peut installer et lancer des études de temps en temps.";
+"Settings.Studies.Toggle.Message" = "Mozilla peut installer et lancer des études de temps en temps.";
 
 /* Toggled OFF to opt-out of studies */
 "Settings.Studies.Toggle.Off" = "Désactivées";

@@ -32,10 +32,10 @@
 "Intro.Slides.Mail.Title" = "Plus de choix pour vos courriels";
 
 /* Description for the 'Private Browsing' panel in the First Run tour. */
-"Intro.Slides.Private.Description" = "Appuyez sur l’icône de masque pour passer en mode de navigation privée.";
+"Intro.Slides.Private.Description" = "Appuyez sur l’icône de masque pour passer en mode navigation privée.";
 
 /* Title for the third panel 'Private Browsing' in the First Run tour. */
-"Intro.Slides.Private.Title" = "Naviguez comme si personne ne vous regardait";
+"Intro.Slides.Private.Title" = "Naviguez comme si personne ne vous observait";
 
 /* Description for the third item in the table related to safe syncing with a KARMA account */
 "Intro.Slides.Safe.Sync.Description" = "Protégez vos identifiants et vos données partout où vous utilisez KARMA.";
@@ -50,7 +50,7 @@
 "Intro.Slides.Search.Title" = "Recherchez à votre manière";
 
 /* Description for the 'Sync' panel in the First Run tour. */
-"Intro.Slides.TrailheadSync.Description" = "Connectez-vous à votre compte pour lancer la synchronisation et accéder à d’autres fonctions.";
+"Intro.Slides.TrailheadSync.Description" = "Connectez-vous à votre compte pour lancer la synchronisation et accéder à d’autres fonctionnalités.";
 
 /* Title for the second panel 'Sync' in the First Run tour. */
 "Intro.Slides.TrailheadSync.Title.v2" = "Synchronisez vos marque-pages, votre historique et vos mots de passe avec votre téléphone.";

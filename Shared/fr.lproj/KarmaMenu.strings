@@ -1,12 +1,12 @@
 "Menu.Karma.DefaultBrowser"  = "Définir KARMA comme navigateur par défaut";
 "Menu.Karma.Mission" = "Notre Mission";
-"Menu.Karma.How" = "Comment ça marche";
-"Menu.Karma.Partners" = "Nos partenaires";
-"Menu.Karma.Privacy" = "Vie privée";
-"Menu.Karma.TermsOfService" = "Conditions d'utilisation";
-"Menu.Karma.Feedback" = "Vos commentaires";
+"Menu.Karma.How" = "Comment ça Marche";
+"Menu.Karma.Partners" = "Nos Partenaires";
+"Menu.Karma.Privacy" = "Vie Privée";
+"Menu.Karma.TermsOfService" = "Conditions d'Utilisation";
+"Menu.Karma.Feedback" = "Vos Commentaires";
 
 "Menu.Feedback.Give" = "Donnez votre avis";
-"Menu.Feedback.Rate.AppStore" = "Notez l'app sur l'Appstore";
-"Menu.Feedback.ContactUs" = "Contactez nous";
-"Menu.Feedback.ContactUs.Subject" = "Demande depuis iOS";
+"Menu.Feedback.Rate.AppStore" = "Notez KARMA sur l'Appstore";
+"Menu.Feedback.ContactUs" = "Contactez-nous";
+"Menu.Feedback.ContactUs.Subject" = "Demande depuis iOS app";

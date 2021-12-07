@@ -669,7 +669,7 @@
 /* Label for the button, displayed in the menu, turns on night mode. */
 "Menu.NightModeTurnOn.Label" = "Enable Night Mode";
 
-"Menu.NightModeTurnOff.Status" = "Invert website colors";
+"Menu.NightModeTurnOff.Status" = "Invert websites colors";
 
 /* Label for the button, displayed in the menu, hides images on the webpage when pressed. */
 "Menu.NoImageModeBlockImages.Label" = "Block Images";
@@ -1433,7 +1433,7 @@
 "ShareExtension.OpenInPrivateModeAction.Title" = "Open in Private Mode";
 
 /* Action label on share extension to search for the selected text in KARMA. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Search in KARMA";
+"ShareExtension.SeachInFirefoxAction.Title" = "Search with KARMA";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "Show Search Suggestions";

@@ -1,12 +1,12 @@
 "Menu.Karma.DefaultBrowser"  = "Set KARMA as my default browser";
 "Menu.Karma.Mission" = "Our Mission";
-"Menu.Karma.How" = "How it works";
+"Menu.Karma.How" = "How it Works";
 "Menu.Karma.Partners" = "Partners";
 "Menu.Karma.Privacy" = "Privacy";
-"Menu.Karma.TermsOfService" = "Terms of service";
-"Menu.Karma.Feedback" = "Your feedback";
+"Menu.Karma.TermsOfService" = "Terms of Service";
+"Menu.Karma.Feedback" = "Your Feedback";
 
 "Menu.Feedback.Give" = "Give us your feedback";
 "Menu.Feedback.Rate.AppStore" = "Rate our app on the Appstore";
 "Menu.Feedback.ContactUs" = "Contact us";
-"Menu.Feedback.ContactUs.Subject" = "Enquiry on iOS";
+"Menu.Feedback.ContactUs.Subject" = "Enquiry on iOS app";

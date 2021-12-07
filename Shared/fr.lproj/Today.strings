@@ -44,7 +44,7 @@
 "TodayWidget.NewPrivateTabButtonLabelV2" = "Rechercher dans un onglet privé";
 
 /* Open New Tab button label */
-"TodayWidget.NewSearchButtonLabelV1" = "Rechercher dans KARMA";
+"TodayWidget.NewSearchButtonLabelV1" = "Rechercher avec KARMA";
 
 /* Open New Tab button label */
 "TodayWidget.NewTabButtonLabelV1" = "Nouvelle recherche";
@@ -104,10 +104,10 @@
 "TodayWidget.QuickViewOpenTabsSubLabel" = "KARMA - Onglets ouverts";
 
 /* Title for small size widget which allows users to search in KARMA. Do not translate the word KARMA. */
-"TodayWidget.SearchInFirefoxTitle" = "Rechercher dans KARMA";
+"TodayWidget.SearchInFirefoxTitle" = "Rechercher avec KARMA";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInFirefoxV2" = "Rechercher dans KARMA";
+"TodayWidget.SearchInFirefoxV2" = "Rechercher avec KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Rechercher dans un onglet privé";

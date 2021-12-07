@@ -11,7 +11,7 @@
 "Menu.SendLinkToDevice" = "Envoyer le lien à un appareil";
 
 /* String describing the action of opening the last added bookmark from the home screen Quick Actions via 3D Touch */
-"Open Last Bookmark" = "Dernier marque-page";
+"Open Last Bookmark" = "Ouvrir le dernier marque-page";
 
 /* String describing the action of opening the last tab sent to KARMA from the home screen Quick Actions via 3D Touch */
 "Open Last Tab" = "Ouvrir le dernier onglet";
