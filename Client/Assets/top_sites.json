@@ -1410,6 +1410,13 @@
     "domain": "rewild.org"
   },
   {
+    "title": "wcs",
+    "url": "https://www.wcs.org/",
+    "image_url": "wcs.png",
+    "background_color": "#202020",
+    "domain": "wcs.org"
+  },
+  {
     "title": "aspas nature",
     "url": "https://www.aspas-nature.org/",
     "image_url": "aspas.png",
