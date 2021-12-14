@@ -674,7 +674,7 @@
 /* Label for the button, displayed in the menu, hides images on the webpage when pressed. */
 "Menu.NoImageModeBlockImages.Label" = "Block Images";
 
-"Menu.NoImageModeBlockImages.Status" = "Do not display images on sites";
+"Menu.NoImageModeBlockImages.Status" = "Disable images on visited sites";
 
 /* Label for title in page action menu. */
 "Menu.PageActions.Title" = "Page Actions";

@@ -32,7 +32,7 @@ class LearnAndActHeader: UICollectionReusableView {
             make.top.equalToSuperview()
             make.height.equalTo(45)
             make.width.equalTo(185)
-            make.bottom.equalToSuperview().offset(-FirefoxHomeHeaderViewUX.titleTopInset)
+            make.bottom.equalToSuperview().offset(-FirefoxHomeHeaderViewUX.insets)
         }
     }
 

@@ -56,8 +56,6 @@ class TopSiteItemCell: UICollectionViewCell, NotificationThemeable {
         let view = UIView()
         view.layer.cornerRadius = TopSiteCellUX.CellCornerRadius
         view.layer.borderWidth = TopSiteCellUX.BorderWidth
-        view.layer.shadowOffset = CGSize(width: 0, height: 2)
-        view.layer.shadowRadius = TopSiteCellUX.ShadowRadius
         return view
     }()
 

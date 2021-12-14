@@ -275,7 +275,8 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
         collectionView?.delegate = self
         collectionView?.dataSource = self
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-
+        flowLayout.minimumLineSpacing = 25
+        
         collectionView?.addGestureRecognizer(longPressRecognizer)
         currentTab?.lastKnownUrl?.absoluteString.hasPrefix("internal://") ?? false ? collectionView?.addGestureRecognizer(tapGestureRecognizer) : nil
         
@@ -389,7 +390,7 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
         if let collectionView = self.collectionView{
             collectionView.reloadData()
         }
-
+        reloadAll()
     }
     
     func expandSection() {
@@ -406,6 +407,7 @@ class KarmaHomeViewController: UICollectionViewController, HomePanel, FeatureFla
         if let collectionView = self.collectionView{
             collectionView.reloadData()
         }
+        reloadAll()
     }
 
     func scrollToTop(animated: Bool = false) {
@@ -993,9 +995,12 @@ extension KarmaHomeViewController: DataObserverDelegate {
             self.topSitesManager.currentTraits = self.view.traitCollection
 
             let numRows = max(self.profile.prefs.intForKey(PrefsKeys.NumberOfTopSiteRows) ?? TopSitesRowCountSettingsController.defaultNumberOfRows, 1)
-
-            let maxItems = Int(numRows) * self.topSitesManager.numberOfHorizontalItems()
-
+            
+            let fullSectionsEnabled = Homescreen().fullSectionsEnabled
+            
+            let numLines = self.sectionsEnabled == fullSectionsEnabled ? 1 : 2
+            let maxItems = Int(numRows) * self.topSitesManager.numberOfHorizontalItems() * numLines
+            
             let sites = Array(result.prefix(maxItems))
 
             // Check if all result items are pinned site
