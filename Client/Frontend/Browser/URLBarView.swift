@@ -12,7 +12,7 @@ private struct URLBarViewUX {
 
     static let LocationLeftPadding: CGFloat = 13
     static let Padding: CGFloat = 10
-    static let LocationHeight: CGFloat = 40
+    static let LocationHeight: CGFloat = 34
     static let ButtonHeight: CGFloat = 44
     static let LocationContentOffset: CGFloat = 8
     static let TextFieldCornerRadius: CGFloat = 11
@@ -95,7 +95,7 @@ class URLBarView: UIView {
         let locationView = TabLocationView()
         locationView.layer.cornerRadius = URLBarViewUX.TextFieldCornerRadius
         locationView.translatesAutoresizingMaskIntoConstraints = false
-        locationView.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        locationView.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
 
         locationView.delegate = self
         return locationView
@@ -123,7 +123,7 @@ class URLBarView: UIView {
         cancelButton.alpha = 0
         cancelButton.translatesAutoresizingMaskIntoConstraints = false
 
-        cancelButton.setContentCompressionResistancePriority(.required, for: .horizontal)
+        cancelButton.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         cancelButton.titleLabel?.font = UIFont.customFont(ofSize: 18, weight: .regular)
         return cancelButton
     }()
@@ -264,14 +264,16 @@ class URLBarView: UIView {
             make.centerY.equalTo(self)
             make.size.equalTo(URLBarViewUX.ButtonHeight)
         }
-
+        var cancelWidth = cancelButton.titleLabel?.font.calculateWidth(text: cancelButton.titleLabel?.text ?? "", height: URLBarViewUX.ButtonHeight)  ?? 0
+        cancelWidth = cancelWidth + URLBarViewUX.Padding*2 + 5
         cancelButton.snp.makeConstraints { make in
             make.trailing.equalTo(self.safeArea.trailing)
             make.centerY.equalTo(self.locationContainer)
             make.height.equalTo(URLBarViewUX.ButtonHeight)
+            make.width.equalTo(cancelWidth)
         }
-        cancelButton.contentEdgeInsets.left = URLBarViewUX.Padding*2
-        cancelButton.contentEdgeInsets.right = URLBarViewUX.Padding*2
+        cancelButton.contentEdgeInsets.left = URLBarViewUX.Padding
+        cancelButton.contentEdgeInsets.right = URLBarViewUX.Padding
         
         privateModeBadge.layout(onButton: tabsButton)
         appMenuBadge.layout(onButton: appMenuButton)
@@ -759,6 +761,16 @@ extension URLBarView: NotificationThemeable {
         locationView.backgroundColor = inOverlayMode ? UIColor.theme.textField.backgroundInOverlay : UIColor.theme.textField.background
         locationContainer.backgroundColor = UIColor.theme.textField.background
 
+        if ((locationTextField?.isFirstResponder) != nil) {
+            locationContainer.layer.shadowColor = UIColor.clear.cgColor
+        } else {
+            locationContainer.layer.shadowColor = UIColor.theme.urlbar.shadow.cgColor
+        }
+        locationContainer.layer.shadowOpacity = 1
+        locationContainer.layer.shadowRadius = 4
+        locationContainer.layer.shadowOffset = CGSize(width: 1, height: 1)
+        locationContainer.clipsToBounds = false
+        
         privateModeBadge.badge.tintBackground(color: UIColor.theme.browser.background)
         appMenuBadge.badge.tintBackground(color: UIColor.theme.browser.background)
         warningMenuBadge.badge.tintBackground(color: UIColor.theme.browser.background)

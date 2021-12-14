@@ -36,6 +36,7 @@ fileprivate class DarkURLBarColor: URLBarColor {
         return (labelMode: color.withAlphaComponent(0.25), textFieldMode: color)
 
     }
+    override var shadow: UIColor { return UIColor(red: 1, green: 1, blue: 1, alpha: 0.5) }
 
     override func activeBorder(_ isPrivate: Bool) -> UIColor {
         return !isPrivate ? UIColor.Photon.Blue20A40 : UIColor.Defaults.MobilePrivatePurple

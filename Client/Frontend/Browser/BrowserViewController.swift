@@ -512,7 +512,7 @@ class BrowserViewController: UIViewController {
         // Make sure that we have a height to actually base our calculations on
         guard urlBar.locationContainer.bounds.height != 0 else { return }
         let locationViewHeight = urlBar.locationView.bounds.height
-        let heightWithPadding = locationViewHeight + 4
+        let heightWithPadding = locationViewHeight + 7
 
         // We have to deactivate the original constraint, and remake the constraint
         // or else funky conflicts happen
@@ -781,6 +781,7 @@ class BrowserViewController: UIViewController {
         })
         view.setNeedsUpdateConstraints()
         urlBar.locationView.reloadButton.reloadButtonState = .disabled
+        urlBar.locationView.searchImage.isHidden = false
         navigationToolbar.updateShareStatus(false)
     }
 
@@ -804,6 +805,7 @@ class BrowserViewController: UIViewController {
                 self.showReaderModeBar(animated: false)
             }
         })
+        urlBar.locationView.searchImage.isHidden = true
         navigationToolbar.updateShareStatus(true)
     }
 

@@ -34,6 +34,7 @@ private struct TabLocationViewUX {
     static let ReaderModeButtonWidth: CGFloat = 34
     static let ButtonSize: CGFloat = 44
     static let URLBarPadding = 4
+    static let SearchIconSize = 14
 }
 
 class TabLocationView: UIView {
@@ -90,16 +91,17 @@ class TabLocationView: UIView {
         let urlTextField = DisplayTextField()
 
         // Prevent the field from compressing the toolbar buttons on the 4S in landscape.
-        urlTextField.setContentCompressionResistancePriority(UILayoutPriority(rawValue: 250), for: .horizontal) 
+        urlTextField.setContentCompressionResistancePriority(UILayoutPriority(rawValue: 250), for: .horizontal)
+
         urlTextField.attributedPlaceholder = self.placeholder
         urlTextField.accessibilityIdentifier = "url"
         urlTextField.accessibilityActionsSource = self
         urlTextField.font = UIConstants.DefaultChromeFont
         urlTextField.backgroundColor = .clear
         urlTextField.accessibilityLabel = "Address Bar"
-        urlTextField.font = UIFont.preferredFont(forTextStyle: .body)
+        urlTextField.font = UIFont.customFont(ofSize: 18)
         urlTextField.adjustsFontForContentSizeCategory = true
-
+        urlTextField.textAlignment = .center
         // Remove the default drop interaction from the URL text field so that our
         // custom drop interaction on the BVC can accept dropped URLs.
         if let dropInteraction = urlTextField.textDropInteraction {
@@ -107,6 +109,12 @@ class TabLocationView: UIView {
         }
 
         return urlTextField
+    }()
+    
+    lazy var searchImage: UIImageView = {
+        let image = UIImageView(image: UIImage(named: "quickSearch"))
+        image.isHidden = true
+        return image
     }()
 
     lazy var trackingProtectionButton: UIButton = {
@@ -191,14 +199,16 @@ class TabLocationView: UIView {
 
         pageOptionsButton.separatorLine = separatorLineForPageOptions
 
-        let subviews = [trackingProtectionButton, space1px, urlTextField, readerModeButton, reloadButton, separatorLineForPageOptions, pageOptionsButton]
+        let subviews = [trackingProtectionButton, space1px, searchImage, urlTextField, readerModeButton, reloadButton, separatorLineForPageOptions, pageOptionsButton]
         contentView = UIStackView(arrangedSubviews: subviews)
         contentView.distribution = .fill
         contentView.alignment = .center
         addSubview(contentView)
 
         contentView.snp.makeConstraints { make in
-            make.edges.equalTo(self)
+            make.centerX.equalTo(self)
+            make.leading.greaterThanOrEqualTo(10)
+            make.top.bottom.equalTo(self)
         }
 
         trackingProtectionButton.snp.makeConstraints { make in
@@ -223,6 +233,11 @@ class TabLocationView: UIView {
         reloadButton.snp.makeConstraints { make in
             make.width.equalTo(TabLocationViewUX.ReaderModeButtonWidth)
             make.height.equalTo(TabLocationViewUX.ButtonSize)
+        }
+        
+        searchImage.snp.makeConstraints { make in
+            make.width.equalTo(TabLocationViewUX.SearchIconSize)
+            make.height.equalTo(TabLocationViewUX.SearchIconSize)
         }
 
         // Setup UIDragInteraction to handle dragging the location

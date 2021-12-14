@@ -40,4 +40,13 @@ extension UIFont {
                                         context: nil)
         return boundingBox.height
     }
+    
+    func calculateWidth(text: String, height: CGFloat) -> CGFloat {
+        let constraintRect = CGSize(width: CGFloat.greatestFiniteMagnitude, height: height)
+        let boundingBox = text.boundingRect(with: constraintRect,
+                                        options: NSStringDrawingOptions.usesLineFragmentOrigin,
+                                            attributes: [NSAttributedString.Key.font: self],
+                                        context: nil)
+        return boundingBox.width
+    }
 }
