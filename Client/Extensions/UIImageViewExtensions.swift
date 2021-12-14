@@ -55,9 +55,8 @@ public extension UIImageView {
                     return
                 }
                 if let img = img {
-                    img.getColors(scaleDownSize: CGSize(width: 60, height: 60), completionHandler: { colors in
-                        finish(bgColor: colors.background)
-                    })
+                    let colors =  img.getColors(scaleDownSize: CGSize(width: 30, height: 30))
+                    finish(bgColor: colors.background)
                 } else {
                     finish(bgColor: nil)
                 }
