@@ -35,6 +35,6 @@ class KarmaHomeViewModel {
             print(error)
           }
         }
-        return HomeImage(imageName: "animal18", infoTitle: nil, author: nil)
+        return HomeImage(imageName: "48.Zdenek Machacek", infoTitle: nil, author: nil)
     }
 }
