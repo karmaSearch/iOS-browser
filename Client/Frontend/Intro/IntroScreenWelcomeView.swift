@@ -47,7 +47,7 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         label.textColor = UIColor.Photon.LightGrey90
         label.font = UIFont.customFont(ofSize: 15, weight: .medium)
         label.textAlignment = .center
-        label.numberOfLines = 2
+        label.numberOfLines = 3
         label.baselineAdjustment = .alignCenters
         return label
     }()
