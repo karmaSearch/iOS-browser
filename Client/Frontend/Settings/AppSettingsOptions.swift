@@ -412,10 +412,10 @@ class ShowIntroductionSetting: Setting {
 }
 
 class SendFeedbackSetting: Setting {
-    override var title: NSAttributedString? {
-        return NSAttributedString(string: .MenuKarmaGiveFeedback, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText])
+    init(delegate: SettingsDelegate?) {
+        super.init(title: NSAttributedString(string: .MenuKarmaGiveFeedback, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText]),
+                   footerTitle: nil, cellHeight: nil, delegate: delegate, enabled: nil)
     }
-
     override var url: URL? {
         if Locale.current.identifier.contains("fr") {
             return URL(string: "https://form.typeform.com/to/kzYiRqBd")
@@ -424,8 +424,11 @@ class SendFeedbackSetting: Setting {
     }
 
     override func onClick(_ navigationController: UINavigationController?) {
-        
-        setUpAndPushSettingsContentViewController(navigationController, self.url)
+        navigationController?.dismiss(animated: true) {
+            if let url = self.url {
+                self.delegate?.settingsOpenURLInNewTab(url)
+            }
+        }
     }
 }
 

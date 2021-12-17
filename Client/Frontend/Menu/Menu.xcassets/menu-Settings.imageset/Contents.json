@@ -1,19 +1,8 @@
 {
   "images" : [
     {
-      "filename" : "carbon_settings-adjust.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "carbon_settings-adjust@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "filename" : "carbon_settings-adjust@3x.png",
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "carbon_settings-adjust.pdf",
+      "idiom" : "universal"
     }
   ],
   "info" : {

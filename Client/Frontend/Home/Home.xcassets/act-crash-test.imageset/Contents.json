@@ -1,15 +1,16 @@
 {
   "images" : [
     {
-      "filename" : "Act crash test.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "ACt imaeg bug 1@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "ACt imaeg bug 1@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

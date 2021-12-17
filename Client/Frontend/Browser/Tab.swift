@@ -178,9 +178,8 @@ class Tab: NSObject {
     }
     
     var isFxHomeTab: Bool {
-        if let numberOfUrls = self.sessionData?.urls.count,
-           let offset = self.sessionData?.currentPage,
-           let url = self.sessionData?.urls[numberOfUrls - 1 + offset],
+        
+        if let url = self.url,
            url.absoluteString.hasPrefix("internal://") {
             return true
         }

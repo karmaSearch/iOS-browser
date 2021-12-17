@@ -250,6 +250,9 @@ class BrowserViewController: UIViewController {
             toolbar?.applyUIMode(isPrivate: tabManager.selectedTab?.isPrivate ?? false)
             toolbar?.applyTheme()
             toolbar?.addNewTabButton.isHidden = true
+            if let tab = tabManager.selectedTab {
+                toolbar?.updateShareStatus(!tab.isFxHomeTab)
+            }
             toolbar?.updateMiddleButtonState(currentMiddleButtonState ?? .search)
             updateTabCountUsingTabManager(self.tabManager)
         }
@@ -630,6 +633,10 @@ class BrowserViewController: UIViewController {
             show(toast: toast, afterWaiting: ButtonToastUX.ToastDelay)
         }
         showQueuedAlertIfAvailable()
+        
+        if let tab = tabManager.selectedTab {
+            toolbar?.updateShareStatus(!tab.isFxHomeTab)
+        }
     }
 
     // THe logic for shouldShowWhatsNewTab is as follows: If we do not have the LatestAppVersionProfileKey in

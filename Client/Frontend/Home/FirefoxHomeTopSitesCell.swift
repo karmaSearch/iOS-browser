@@ -204,7 +204,7 @@ private struct ASHorizontalScrollCellUX {
     static let TopSiteCellIdentifier = "TopSiteItemCell"
     static let TopSiteEmptyCellIdentifier = "TopSiteItemEmptyCell"
 
-    static let TopSiteItemSize = CGSize(width: 65, height: 90)
+    static let TopSiteItemSize = CGSize(width: 65, height: 100)
     static let MinimumInsets: CGFloat = 4
     static let VerticalInsets: CGFloat = 16
 }
