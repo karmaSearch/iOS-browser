@@ -1714,3 +1714,4 @@
 /* Relative date for yesterday. */
 "yesterday" = "yesterday";
 
+"cannotsendemail" = "This device cannot send email";

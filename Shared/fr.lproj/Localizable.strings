@@ -2010,3 +2010,4 @@
 /* Tile title for YouTube */
 "YouTube" = "YouTube";
 
+"cannotsendemail" = "Cet iPhone n'est pas configuré pour envoyer des emails";

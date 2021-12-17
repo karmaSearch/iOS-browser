@@ -438,7 +438,14 @@ class ContactUsSettings: Setting {
     }
 
     override func onClick(_ navigationController: UINavigationController?) {
-        guard MFMailComposeViewController.canSendMail() else { return }
+        guard MFMailComposeViewController.canSendMail() else {
+            let alert = UIAlertController(title: NSLocalizedString("cannotsendemail", tableName: "Localizable", bundle: Strings.bundle, comment: ""), message: "", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: .CancelString, style: .cancel, handler: { _ in
+                
+            }))
+            navigationController?.present(alert, animated: true, completion: nil)
+            return
+        }
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = UIApplication.shared.delegate as! AppDelegate
 
