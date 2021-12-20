@@ -55,24 +55,21 @@ class DefaultBrowserOnboardingViewModel {
     }
     
     static func shouldShowDefaultBrowserOnboarding(userPrefs: Prefs) -> Bool {
-        return false
-        // DISABLE DEFAULT BROWSER
-
         // Only show on fresh install
-//        guard InstallType.get() == .fresh else { return false }
-//        // Show on 3rd session
-//        let maxSessionCount = 3
-//        var shouldShow = false
-//        // Get the session count from preferences
-//        let currentSessionCount = userPrefs.intForKey(PrefsKeys.SessionCount) ?? 0
-//        let didShow = UserDefaults.standard.bool(forKey: PrefsKeys.KeyDidShowDefaultBrowserOnboarding)
-//        guard !didShow else { return false }
-//
-//        if currentSessionCount == maxSessionCount && currentSessionCount != 0 {
-//            shouldShow = true
-//            UserDefaults.standard.set(true, forKey: PrefsKeys.KeyDidShowDefaultBrowserOnboarding)
-//        }
-//
-//        return shouldShow
+        guard InstallType.get() == .fresh else { return false }
+        // Show on 3rd session
+        let maxSessionCount = 3
+        var shouldShow = false
+        // Get the session count from preferences
+        let currentSessionCount = userPrefs.intForKey(PrefsKeys.SessionCount) ?? 0
+        let didShow = UserDefaults.standard.bool(forKey: PrefsKeys.KeyDidShowDefaultBrowserOnboarding)
+        guard !didShow else { return false }
+        
+        if currentSessionCount == maxSessionCount && currentSessionCount != 0 {
+            shouldShow = true
+            UserDefaults.standard.set(true, forKey: PrefsKeys.KeyDidShowDefaultBrowserOnboarding)
+        }
+
+        return shouldShow
     }
 }
