@@ -37,6 +37,12 @@ class NotificationService: UNNotificationServiceExtension {
             return
         }
 
+        let isLocalNotification = NotificationScheduler.NotificationType.allCases.contains { $0 ==  request.identifier }
+        if isLocalNotification {
+            UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
+            return 
+        }
+         
         let queue = profile.queue
         let display = SyncDataDisplay(content: content, contentHandler: contentHandler, tabQueue: queue)
         self.display = display

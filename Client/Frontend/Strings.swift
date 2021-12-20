@@ -1235,6 +1235,8 @@ extension String {
     public static let DefaultBrowserOnboardingDescriptionStep3 = MZLocalizedString("DefaultBrowserOnboarding.Description3", tableName: "Default Browser", value: "3. Select Firefox", comment: "Description for default browser onboarding card.", lastUpdated: .unknown)
     public static let DefaultBrowserOnboardingButton = MZLocalizedString("DefaultBrowserOnboarding.Button", tableName: "Default Browser", value: "Choose KARMA", comment: "Button string to open settings that allows user to switch their default browser to Firefox.", lastUpdated: .unknown)
     public static let DefaultBrowserOnboardingButtonSkip = MZLocalizedString("DefaultBrowserOnboarding.Button.Skip", tableName: "Default Browser", value: "Not now", comment: "Button string to skip", lastUpdated: .unknown)
+    public static let DefaultBrowserPushTitle = MZLocalizedString("DefaultBrowser.Push.Title", tableName: "Default Browser", value: "Set as Default Browser", comment: "Push title for setting Firefox as default browser.", lastUpdated: .unknown)
+    public static let DefaultBrowserPushMessage = MZLocalizedString("DefaultBrowser.Push.Message", tableName: "Default Browser", value: "Set as Default Browser", comment: "Push message for setting Firefox as default browser.", lastUpdated: .unknown)
     
 }
 

@@ -44,51 +44,9 @@ extension AppDelegate {
                 return
             }
             if granted {
-                // Create the trigger as a repeating event.
-                let content = UNMutableNotificationContent()
-                content.title = "Set Karma as your default browser"
-                content.body = "Click here to install Karma Search as your default browser 🍃"
-                
-                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(600), repeats: true)
-                let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-                
-                let notificationCenter = UNUserNotificationCenter.current()
-                notificationCenter.add(request) { (error) in
-                   if error != nil {
-                      // Handle any errors.
-                   }
-                }
+                NotificationScheduler.firstTimeSchedule()
             }
         }
-        /*
-        NotificationCenter.default.addObserver(forName: .RegisterForPushNotifications, object: nil, queue: .main) { _ in
-            UNUserNotificationCenter.current().getNotificationSettings { settings in
-                DispatchQueue.main.async {
-                    if settings.authorizationStatus != .denied {
-                        UIApplication.shared.registerForRemoteNotifications()
-                    }
-                }
-            }
-        }
-
-        // If we see our local device with a pushEndpointExpired flag, clear the APNS token and re-register.
-        NotificationCenter.default.addObserver(forName: .constellationStateUpdate, object: nil, queue: nil) { notification in
-            if let newState = notification.userInfo?["newState"] as? ConstellationState {
-                if newState.localDevice?.pushEndpointExpired ?? false {
-                    KeychainWrapper.sharedAppContainerKeychain.removeObject(forKey: KeychainKey.apnsToken, withAccessibility: .afterFirstUnlock)
-                    NotificationCenter.default.post(name: .RegisterForPushNotifications, object: nil)
-                }
-            }
-        }
-
-        // Use sync event as a periodic check for the apnsToken.
-        // The notification service extension can clear this token if there is an error, and the main app can detect this and re-register.
-        NotificationCenter.default.addObserver(forName: .ProfileDidStartSyncing, object: nil, queue: .main) { _ in
-            let kc = KeychainWrapper.sharedAppContainerKeychain
-            if kc.object(forKey: KeychainKey.apnsToken, withAccessibility: .afterFirstUnlock) == nil {
-                NotificationCenter.default.post(name: .RegisterForPushNotifications, object: nil)
-            }
-        }*/
     }
 
     private func openURLsInNewTabs(_ notification: UNNotification) {

@@ -10,3 +10,5 @@
 /* Menu option for setting KARMA as default browser. */
 "Settings.DefaultBrowserMenuItem" = "Set up KARMA as your default browser !";
 
+"DefaultBrowser.Push.Title" = "Set Karma as your default browser";
+"DefaultBrowser.Push.Message" = "Click here to install Karma Search as your default browser 🍃";
