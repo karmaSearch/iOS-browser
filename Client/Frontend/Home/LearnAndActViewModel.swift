@@ -52,7 +52,7 @@ class LearnAndActViewModel {
     
     func getDatas(completion: @escaping (LearnAndAct) -> Void) {
         let fileName = Locale.current.identifier.contains("fr") ? "learnandact_fr" : "learnandact_en"
-        let repoString = "https://about.mykarma.org/i18n/iOS_app/"
+        let repoString = "https://about.karmasearch.org/i18n/iOS_app/"
         guard let url = URL(string: repoString + fileName + ".json") else { return }
         
         if let cacheVersison = LearnAndActViewModel.cache.object(forKey: cacheKey) {

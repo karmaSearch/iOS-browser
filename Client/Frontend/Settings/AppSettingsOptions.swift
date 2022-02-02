@@ -418,9 +418,9 @@ class SendFeedbackSetting: Setting {
     }
     override var url: URL? {
         if Locale.current.identifier.contains("fr") {
-            return URL(string: "https://form.typeform.com/to/kzYiRqBd")
+            return URL(string: "https://tally.so/r/mePEJn")
         }
-        return URL(string: "https://form.typeform.com/to/UnVXQT9V")
+        return URL(string: "https://tally.so/r/m65xon")
     }
 
     override func onClick(_ navigationController: UINavigationController?) {
@@ -691,9 +691,9 @@ class PrivacyPolicySetting: Setting {
 
     override var url: URL? {
         if Locale.current.identifier.contains("fr") {
-            return URL(string: "https://about.mykarma.org/fr/legal")
+            return URL(string: "https://about.karmasearch.org/fr/legal")
         }
-        return URL(string: "https://about.mykarma.org/legal")
+        return URL(string: "https://about.karmasearch.org/legal")
     }
 
     override func onClick(_ navigationController: UINavigationController?) {

@@ -30,7 +30,7 @@ extension PhotonActionSheetProtocol {
         let defaultbrowser = PhotonActionSheetItem(title: .MenuKarmaDefaultBrowser, iconString: "menu-panel-karma-default-browser", bold: true) { _, _ in
             UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
         }
-        var karmaBaseUrl = "https://about.mykarma.org/"
+        var karmaBaseUrl = "https://about.karmasearch.org/"
         if Locale.current.identifier.contains("fr") {
             karmaBaseUrl.append(contentsOf: "fr/")
         }

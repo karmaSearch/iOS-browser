@@ -31,12 +31,6 @@
         "url" : "https://unsplash.com/@rkatieb"
         },
         {
-        "imageName": "43.Phoenix Han",
-        "infoText": "Pig by ",
-        "author" : "Phoenix Han",
-        "url" : "https://unsplash.com/@phienix_han"
-        },
-        {
         "imageName": "42.Philip Brown",
         "infoText": "Broad-billed Hummingbird by ",
         "author" : "Philip Brown",
@@ -61,12 +55,6 @@
         "url" : "https://unsplash.com/@manfang"
         },
         {
-        "imageName": "38.Luke Stackpoole",
-        "infoText": "Day on the farm by ",
-        "author" : "Luke Stackpoole",
-        "url" : "https://unsplash.com/@withluke"
-        },
-        {
         "imageName": "37.Luke Stackpoole",
         "infoText": "Sheep by ",
         "author" : "Luke Stackpoole",
@@ -77,12 +65,6 @@
         "infoText": "Cow by ",
         "author" : "Kseniya Konovets",
         "url" : "https://unsplash.com/@konovetsk"
-        },
-        {
-        "imageName": "35.Kjell Jostein Sivertsen",
-        "infoText": "Lamb by ",
-        "author" : "Kjell Jostein Sivertsen",
-        "url" : "https://unsplash.com/@kjelljostein"
         },
         {
         "imageName": "34.Jonathan Pie",
@@ -101,12 +83,6 @@
         "infoText": "Langur monkey by ",
         "author" : "Jeffrey Hamilton",
         "url" : "https://unsplash.com/@pistos"
-        },
-        {
-        "imageName": "31.Jason Leung",
-        "infoText": "Rooster by ",
-        "author" : "Jason Leung",
-        "url" : "https://unsplash.com/@ninjason"
         },
         {
         "imageName": "30.James Lee",
@@ -173,12 +149,6 @@
         "infoText": "Flamingo by ",
         "author" : "Gaetano Cessati",
         "url" : "https://unsplash.com/@gaetanocessati"
-        },
-        {
-        "imageName": "19.Emre Coban",
-        "infoText": "Calf by ",
-        "author" : "Emre Coban",
-        "url" : "https://unsplash.com/@emrecob"
         },
         {
         "imageName": "18.Dustin Humes",

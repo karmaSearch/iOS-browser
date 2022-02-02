@@ -1,0 +1,8 @@
+itc_team_id("123740562") # App Store Connect Team ID
+team_id("59G3A42UBG") # Developer Portal Team ID
+
+app_identifier "com.mykarma.karmasearch"
+ 
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
