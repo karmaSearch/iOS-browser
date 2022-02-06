@@ -400,6 +400,7 @@
 		A3FD6FA0274E9D1900632B2D /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD6F9F274E9D1900632B2D /* FeedbackViewController.swift */; };
 		A3FD6FA2274E9FE700632B2D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FD6FA1274E9FE700632B2D /* StoreKit.framework */; };
 		A3FD6FA4274EA7C000632B2D /* UIDevice+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD6FA3274EA7C000632B2D /* UIDevice+extension.swift */; };
+		A3FFE2CF27B044F400A3C55C /* Amithen.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3FFE2CE27B044F400A3C55C /* Amithen.ttf */; };
 		A83E5AB71C1D993D0026D912 /* UIPasteboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83E5AB61C1D993D0026D912 /* UIPasteboardExtensions.swift */; };
 		A83E5B1A1C1DA8BF0026D912 /* image.gif in Resources */ = {isa = PBXBuildFile; fileRef = A83E5B181C1DA8BF0026D912 /* image.gif */; };
 		A83E5B1B1C1DA8BF0026D912 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = A83E5B191C1DA8BF0026D912 /* image.png */; };
@@ -2690,6 +2691,7 @@
 		A3FD6F9F274E9D1900632B2D /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		A3FD6FA1274E9FE700632B2D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		A3FD6FA3274EA7C000632B2D /* UIDevice+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+extension.swift"; sourceTree = "<group>"; };
+		A3FFE2CE27B044F400A3C55C /* Amithen.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amithen.ttf; sourceTree = "<group>"; };
 		A4194E688059E39617C7CD55 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/LoginManager.strings; sourceTree = "<group>"; };
 		A41D410A8194798D04F0BDEC /* az */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = az; path = az.lproj/Intro.strings; sourceTree = "<group>"; };
 		A43A44369EB02B3F7A00CA2E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/ClearHistoryConfirm.strings; sourceTree = "<group>"; };
@@ -6250,6 +6252,7 @@
 		F84B22391A0914A300AAB793 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				A3FFE2CE27B044F400A3C55C /* Amithen.ttf */,
 				A32CC87627464C400039113B /* ProximaNova-Regular.otf */,
 				A32CC8732745663E0039113B /* KGSecondChancesSolid.ttf */,
 				A32CC871274566060039113B /* KGSecondChancesSketch.ttf */,
@@ -7208,6 +7211,7 @@
 				EBE7635820ADCB7600E27F2D /* SendTo.xcassets in Resources */,
 				E4ECCDAE1AB131770005E717 /* FiraSans-Medium.ttf in Resources */,
 				C8954A4C2729AD31001C7283 /* FxColours.xcassets in Resources */,
+				A3FFE2CF27B044F400A3C55C /* Amithen.ttf in Resources */,
 				A38C49E4273EAEDF0074BAFD /* Karma_Debug.xcconfig in Resources */,
 				EBC9D38922D4D56F0011D881 /* disconnect-block-cookies-advertising.json in Resources */,
 				D0E17FB6201F847600F1FCB5 /* FxASignIn.js in Resources */,
