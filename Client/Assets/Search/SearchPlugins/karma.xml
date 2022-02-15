@@ -5,16 +5,16 @@
 <SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
 <ShortName>karma</ShortName>
 <Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAhGVYSWZNTQAqAAAACAAFARIAAwAAAAEAAQAAARoABQAAAAEAAABKARsABQAAAAEAAABSASgAAwAAAAEAAgAAh2kABAAAAAEAAABaAAAAAAAAAEgAAAABAAAASAAAAAEAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAEKADAAQAAAABAAAAEAAAAADHbxzxAAAACXBIWXMAAAsTAAALEwEAmpwYAAABWWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNi4wLjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyI+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgoZXuEHAAAC+0lEQVQ4EWVTS2gUQRB93T0zO4m6m2w2G/8ixouJiFGDqIEY0Kuf6MGTB/O5RA+K3oScBQUxl6wf8KDgwYufoxqNChrjBxKVGMUviW52o7LZnZ2Z7rZ6EkGwYKqbnlevqut1MRjTvRysV5lt4/OejVqjE+At9KPenNE6Tm4QXFwYXX92aPZoNob9G9ww3NPPHKuLuxZUWUL7YYTljoUK14HvBfDLfub1hr7uvyQs2pDb9vzYPZZ0W8N8UWpASUAEWnIBgjCmhuUvuYK5fHGqWnj5mYEXTWe3m9iIIDnU3Z+vKnYh53l05FIALTaq+TxMaz/KcWL+Bgx7X3DH/+Y5tTWuP/Uzg+bL3QyP9ze3J9c+6Ui0ybLyRUC5AxVgws/hpfcJLhEdWbIHjVWrMROWcOnzDbwrT8qyJcVQ4esmqyFWd+idKKAxsVotrUiLKN2c84mIMw6LzR4/mnqB+4U3SPAKlYjHhTvDOy0HomXSK2LZ65PiWl07dqQ3o9qJQ5EUDrcjKqUVTr+/ghO566ixFqIELYp5jjXKamFrhnt8mwlbEmgk/IEVVgpn6vZg9+K2qEGM+vGlOInlI0ex1V6Egg5BTabKGAKtAs4IFkLBBjFaaZxK78KWmnUEUvQZKPA494o8AwlLWB2tAf03JtLdmw+wmFWrpFTEyLJ+FlezD7BAcjQkVmGiNIW9H/uxUsyDPxdEcYpiiFGOcdoP8pgwuaRDDfsQ/sJd7y2KkhQliwkbC7mDMl3RVDtn0sSQDZqrnFdeaH5xU7BjOi6qkA9/R9ikk8Dx1E6MyRwq59RgGty8VKrjIh9p6ntGTzYjkpWGcjatlqSAExEYVyY5wZxIGYMRqUqhy0FmdNO5p1Ed2czTW6mDTa1WsrJelXyZZVwuh83SIs5uf3+Ijqmbap2Ih6YHhHHCXHFgdGPfPkP+/zDFrC475uCjV8B0KR896fUVtZB0Z0XDZKod/W+Y/hnnhqHDzZrrQ+aBueD1RroS1DjJOmj6Za5sMv+d4j88A1gBb2dkGwAAAABJRU5ErkJggg==</Image>
-<Url type="application/x-suggestions+json" template="https://api.mykarma.org/search/autocomplete">
+<Url type="application/x-suggestions+json" template="https://api.karmasearch.org/search/autocomplete">
   <Param name="query" value="{searchTerms}"/>
   <Param name="language" value="{moz:locale}"/>
 </Url>
 <!-- this is effectively x-moz-phonesearch, but search service expects a text/html entry -->
-<Url type="text/html" method="GET" template="https://mykarma.org/search">
+<Url type="text/html" method="GET" template="https://karmasearch.org/search">
   <Param name="q" value="{searchTerms}"/>
   <Param name="pc" value="MOZW"/>
   <Param name="form" value="MOZWSB"/>
 </Url>
 <!-- tablet search not supported -->
-<SearchForm>https://mykarma.org</SearchForm>
+<SearchForm>https://karmasearch.org</SearchForm>
 </SearchPlugin>
