@@ -18,16 +18,17 @@ import UIKit
 // Activity Stream header view
 class LearnAndActHeader: UICollectionReusableView {
 
-    lazy var imageView: UIImageView = .build { image in
-        image.image = UIImage(named: "learn_and_act_header")
-        image.contentMode = .scaleAspectFit
+    lazy var label: UILabel = .build { label in
+        label.text = "Learn & Act"
+        label.font = UIFont(name: "Amithen", size: 38)!
+        label.textColor = UIColor.Photon.Green60
     }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        addSubview(imageView)
+        addSubview(label)
 
-        imageView.snp.makeConstraints { make in
+        label.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(FirefoxHomeHeaderViewUX.insets)
             make.top.equalToSuperview()
             make.height.equalTo(45)
