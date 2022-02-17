@@ -36,79 +36,41 @@ open class DefaultSuggestedSites {
     public static let sites = [
         "default": [
             SuggestedSiteData(
-                url: "https://www.rewild.org/",
-                bgColor: "0xffffff",
-                imageUrl: "",
-                faviconUrl: "asset://defaultFavicon",
-                trackingId: 632,
-                title: "Rewild"
-            ),
-            SuggestedSiteData(
-                url: "https://www.ciwf.com/",
-                bgColor: "0x0bab47",
-                imageUrl: "",
-                faviconUrl: "asset://defaultFavicon",
-                trackingId: 631,
-                title: "Compassion in world farming"
-            ),
-            SuggestedSiteData(
-                url: "https://www.wcs.org/",
-                bgColor: "0x1e1d1d",
-                imageUrl: "",
-                faviconUrl: "asset://defaultFavicon",
-                trackingId: 630,
-                title: "Wildlife Conservation Society"
-            )
-        ],
-        "en-GB": [
-            SuggestedSiteData(
-                url: "https://www.rewild.org/",
-                bgColor: "0xffffff",
-                imageUrl: "",
-                faviconUrl: "asset://defaultFavicon",
-                trackingId: 632,
-                title: "Rewild"
-            ),
-            SuggestedSiteData(
-                url: "https://www.ciwf.com/",
-                bgColor: "0x0bab47",
-                imageUrl: "",
-                faviconUrl: "asset://defaultFavicon",
-                trackingId: 631,
-                title: "Compassion in world farming"
-            ),
-            SuggestedSiteData(
-                url: "https://www.peta.org.uk/",
-                bgColor: "0x1e1d1d",
-                imageUrl: "",
-                faviconUrl: "asset://defaultFavicon",
-                trackingId: 630,
-                title: "Peta"
-            )
-        ],
-        "fr_FR": [
-            SuggestedSiteData(
-                url: "https://www.aspas-nature.org/",
+                url: "https://about.karmasearch.org/",
                 bgColor: "0xffffff",
                 imageUrl: "",
                 faviconUrl: "asset://defaultFavicon",
                 trackingId: 633,
-                title: "Aspas"
-            ),
+                title: "Our Mission"
+            )
+          
+        ],
+        "en-GB": [
             SuggestedSiteData(
-                url: "https://notreaffaireatous.org/",
+                url: "https://about.karmasearch.org/",
                 bgColor: "0xffffff",
                 imageUrl: "",
                 faviconUrl: "asset://defaultFavicon",
-                trackingId: 634,
-                title: "notreaffaireatous"
+                trackingId: 633,
+                title: "Our Mission"
+            )
+           
+        ],
+        "fr_FR": [
+            SuggestedSiteData(
+                url: "https://about.karmasearch.org/",
+                bgColor: "0xffffff",
+                imageUrl: "",
+                faviconUrl: "asset://defaultFavicon",
+                trackingId: 633,
+                title: "Notre Mission"
             ),
             SuggestedSiteData(
                 url: "https://www.fresquedelabiodiversite.org/",
                 bgColor: "0xffffff",
                 imageUrl: "",
                 faviconUrl: "asset://defaultFavicon",
-                trackingId: 635,
+                trackingId: 634,
                 title: "fresquedelabiodiversite"
             )
         ],
