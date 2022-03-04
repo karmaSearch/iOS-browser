@@ -30,4 +30,5 @@
 /* Menu option for setting KARMA as default browser. */
 "Settings.DefaultBrowserMenuItem" = "Définir KARMA comme navigateur par défaut";
 
-
+"DefaultBrowser.Push.Title" = "Définir KARMA comme navigateur par défaut";
+"DefaultBrowser.Push.Message" = "Cliquez ici pour définir KARMA comme navigateur par défaut 🍃";
