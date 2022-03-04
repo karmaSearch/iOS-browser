@@ -69,9 +69,13 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     // Called when the user taps on a sent-tab notification from the background.
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         
-        if let urls = response.notification.request.content.userInfo["sentTabs"] as? [NSDictionary] {
+        let isLocalNotification = NotificationScheduler.NotificationType.allCases.contains { $0.rawValue ==  response.notification.request.identifier }
+
+        if (response.notification.request.content.userInfo["sentTabs"] as? [NSDictionary]) != nil {
             openURLsInNewTabs(response.notification)
             return
+        } else if isLocalNotification {
+            UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
         }
         
     }
@@ -79,7 +83,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     // Called when the user receives a tab (or any other notification) while in foreground.
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
 
-        if let urls = notification.request.content.userInfo["sentTabs"] as? [NSDictionary] {
+        if (notification.request.content.userInfo["sentTabs"] as? [NSDictionary]) != nil {
             if profile?.prefs.boolForKey(PendingAccountDisconnectedKey) ?? false {
                 profile?.removeAccount()
                 
