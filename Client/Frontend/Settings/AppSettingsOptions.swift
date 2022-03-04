@@ -4,7 +4,6 @@
 
 import Foundation
 import Shared
-import Account
 import SwiftKeychainWrapper
 import LocalAuthentication
 import MozillaAppServices
@@ -599,7 +598,7 @@ class LoginsSetting: Setting {
         guard let navController = navigationController else { return }
         let navigationHandler: ((_ url: URL?) -> Void) = { url in
             guard let url = url else { return }
-            UIApplication.shared.keyWindow?.rootViewController?.dismiss(animated: true, completion: nil)
+            UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.rootViewController?.dismiss(animated: true, completion: nil)
             self.delegate?.settingsOpenURLInNewTab(url)
         }
 
@@ -735,11 +734,6 @@ class ChinaSyncServiceSetting: Setting {
 
     @objc func switchValueChanged(_ toggle: UISwitch) {
         TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .chinaServerSwitch)
-        guard profile.rustFxA.hasAccount() else {
-            prefs.setObject(toggle.isOn, forKey: prefKey)
-            RustFirefoxAccounts.reconfig(prefs: profile.prefs)
-            return
-        }
 
         // Show confirmation dialog for the user to sign out of FxA
 
@@ -748,7 +742,6 @@ class ChinaSyncServiceSetting: Setting {
         let ok = UIAlertAction(title: .OKString, style: .default) { _ in
             self.prefs.setObject(toggle.isOn, forKey: self.prefKey)
             self.profile.removeAccount()
-            RustFirefoxAccounts.reconfig(prefs: self.profile.prefs)
         }
         let cancel = UIAlertAction(title: .CancelString, style: .default) { _ in
             toggle.setOn(!toggle.isOn, animated: true)

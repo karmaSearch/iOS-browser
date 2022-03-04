@@ -102,7 +102,7 @@ class NotificationScheduler {
         
         let notificationCenter = UNUserNotificationCenter.current()
         notificationCenter.add(request) { (error) in
-           if error != nil {
+           if let error = error {
               print(error)
            }
         }

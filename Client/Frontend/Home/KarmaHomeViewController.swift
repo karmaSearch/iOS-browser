@@ -576,7 +576,7 @@ extension KarmaHomeViewController {
                 currentTraits = UITraitCollection(horizontalSizeClass: .compact)
             }
             var insets = FirefoxHomeUX.sectionInsetsForSizeClass[currentTraits.horizontalSizeClass]
-            let window = UIApplication.shared.keyWindow
+            let window = UIApplication.shared.windows.first
             let safeAreaInsets = window?.safeAreaInsets.left ?? 0
             insets += FirefoxHomeUX.minimumInsets + safeAreaInsets
             return insets
@@ -586,10 +586,10 @@ extension KarmaHomeViewController {
             switch self {
             case .pocket:
                 var numItems: CGFloat = FirefoxHomeUX.numberOfItemsPerRowForSizeClassIpad[traits.horizontalSizeClass]
-                if UIApplication.shared.statusBarOrientation.isPortrait {
+                if !UIWindow.isLandscape {
                     numItems = numItems - 1
                 }
-                if traits.horizontalSizeClass == .compact && UIApplication.shared.statusBarOrientation.isLandscape {
+                if traits.horizontalSizeClass == .compact && UIWindow.isLandscape {
                     numItems = numItems - 1
                 }
 
@@ -834,10 +834,10 @@ extension KarmaHomeViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         var numItems: CGFloat = FirefoxHomeUX.numberOfItemsPerRowForSizeClassIpad[self.traitCollection.horizontalSizeClass]
-        if UIApplication.shared.statusBarOrientation.isPortrait {
+        if !UIWindow.isLandscape {
             numItems = numItems - 1
         }
-        if self.traitCollection.horizontalSizeClass == .compact && UIApplication.shared.statusBarOrientation.isLandscape {
+        if self.traitCollection.horizontalSizeClass == .compact && UIWindow.isLandscape {
             numItems = numItems - 1
         }
 
