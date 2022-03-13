@@ -27,9 +27,7 @@ extension PhotonActionSheetProtocol {
     }
     
     func getKarmaActions(vcDelegate: PageOptionsVC) -> [PhotonActionSheetItem] {
-        let defaultbrowser = PhotonActionSheetItem(title: .MenuKarmaDefaultBrowser, iconString: "menu-panel-karma-default-browser", bold: true) { _, _ in
-            UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
-        }
+
         var karmaBaseUrl = "https://about.karmasearch.org/"
         if Locale.current.identifier.contains("fr") {
             karmaBaseUrl.append(contentsOf: "fr/")
@@ -56,7 +54,7 @@ extension PhotonActionSheetProtocol {
             bvc?.showUrl(url: URL(string: karmaBaseUrl + "legal#imprint")!)
         }
         
-        return [defaultbrowser, mission, how, partners, privacy, legal]
+        return [mission, how, partners, privacy, legal]
     }
     
     // Not part of AppMenu, but left for future use. 
