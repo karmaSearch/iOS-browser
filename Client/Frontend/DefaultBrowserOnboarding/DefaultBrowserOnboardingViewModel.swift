@@ -74,6 +74,9 @@ class DefaultBrowserOnboardingViewModel {
     }
     
     static func shouldShowDefaultBrowserOnboarding(userPrefs: Prefs) -> Bool {
+        guard #available(iOS 14, *) else {
+            return false
+        }
         // Only show on fresh install
         guard InstallType.get() == .fresh else { return false }
         

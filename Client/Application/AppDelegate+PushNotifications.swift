@@ -35,6 +35,9 @@ enum SentTabAction: String {
 
 extension AppDelegate {
     func pushNotificationSetup() {
+        guard #available(iOS 14, *) else {
+            return 
+        }
        UNUserNotificationCenter.current().delegate = self
       // SentTabAction.registerActions()
 

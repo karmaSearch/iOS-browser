@@ -94,7 +94,9 @@ class IntroViewController: UIViewController, OnViewDismissable {
     private func initialViewSetup() {
         view.backgroundColor = UIColor.Photon.DarkGrey90
         setupIntroView()
-        setUpDefaultBrowser()
+        if #available(iOS 14, *) {
+            setUpDefaultBrowser()
+        }
     }
     
     //onboarding intro view
