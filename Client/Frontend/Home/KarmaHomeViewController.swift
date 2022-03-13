@@ -1150,7 +1150,7 @@ extension KarmaHomeViewController: DataObserverDelegate {
             TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .pocketStory, value: nil, extras: [key : "\(index)"])
         case .learnAndAct:
             if let bloc = learnAndAct?.blocs {
-                site = Site(url: bloc[index].blogArticleActionURL, title: bloc[index].blogArticleTitle)
+                site = Site(url: bloc[index].link, title: bloc[index].title)
             }
         case .topSites, .libraryShortcuts, .jumpBackIn, .recentlySaved, .customizeHome, .karmaMenu:
             return
@@ -1245,7 +1245,7 @@ extension KarmaHomeViewController: HomePanelContextMenu {
             return Site(url: pocketStories[indexPath.row].url.absoluteString, title: pocketStories[indexPath.row].title)
         case .learnAndAct:
             if let blocs = learnAndAct?.blocs {
-                return Site(url: blocs[indexPath.row].blogArticleActionURL, title: blocs[indexPath.row].blogArticleTitle)
+                return Site(url: blocs[indexPath.row].link, title: blocs[indexPath.row].title)
             }
             return nil
         case .topSites:

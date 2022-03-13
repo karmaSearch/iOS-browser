@@ -73,26 +73,26 @@ class LearnAndActViewCell: UICollectionViewCell {
             guard let learnAndAct = learnAndAct else {
                 return
             }
-            titleLabel.text = learnAndAct.blogArticleTitle
-            typeLabel.text = learnAndAct.blocType.uppercased()
-            timeToRead.text = learnAndAct.blogArticleDuration
-            descriptionLabel.text = learnAndAct.blogArticleDescription
-            linkLabel.text = learnAndAct.blogArticleAction
-            timeToRead.isHidden = learnAndAct.blogArticleDuration.isEmpty
+            titleLabel.text = learnAndAct.title
+            typeLabel.text = learnAndAct.type.uppercased()
+            timeToRead.text = learnAndAct.duration
+            descriptionLabel.text = learnAndAct.description
+            linkLabel.text = learnAndAct.action
+            timeToRead.isHidden = learnAndAct.duration.isEmpty
             
             let WebPCoder = SDImageWebPCoder.shared
             SDImageCodersManager.shared.addCoder(WebPCoder)
             SDWebImageDownloader.shared.setValue("image/webp,image/apng,image/*,*/*;q=0.8", forHTTPHeaderField:"Accept")
             
-            imageView.sd_setImage(with: URL(string: "https://about.karmasearch.org"+learnAndAct.blogArticleImage), placeholderImage: UIImage(named: learnAndAct.defaultImageName), completed: nil)
+            imageView.sd_setImage(with: URL(string: learnAndAct.mobileImage), placeholderImage: UIImage(named: learnAndAct.defaultImageName), completed: nil)
             
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.maximumLineHeight = 20
             paragraphStyle.minimumLineHeight = 20
             
-            let baselineOffSet = learnAndAct.blogArticleDuration.isEmpty ? 0 : 1
+            let baselineOffSet = learnAndAct.duration.isEmpty ? 0 : 1
             
-            descriptionLabel.attributedText = NSMutableAttributedString(string: learnAndAct.blogArticleDescription, attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle, .baselineOffset: baselineOffSet])
+            descriptionLabel.attributedText = NSMutableAttributedString(string: learnAndAct.description, attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle, .baselineOffset: baselineOffSet])
             descriptionLabel.lineBreakMode = .byTruncatingTail
             
             descriptionLabel.sizeToFit()

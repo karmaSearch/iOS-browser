@@ -10,35 +10,22 @@ import Foundation
 import SwiftyJSON
 
 class LearnAndAct: NSObject {
-    let blogLearnAndActDescription, blogLearnAndActNumberOfContent: String
-    let blocs: [LearnAndActBloc]
+    var blocs: [LearnAndActBloc] = []
     
-    init(param: JSON) {
-        blogLearnAndActDescription = param["blog_learn_and_act_description"].stringValue
-        blogLearnAndActNumberOfContent = param["blog_learn_and_act_number_of_content"].stringValue
-        blocs = param["blocs"].arrayValue.map { LearnAndActBloc(param: $0)}
+    init(blocs: [LearnAndActBloc]){
+        self.blocs = blocs
     }
     
 }
 
 // MARK: - Bloc
-struct LearnAndActBloc {
-    let blocType, blogArticleDuration, blogArticleImage, blogArticleTitle: String
-    let blogArticleDescription, blogArticleAction: String
-    let blogArticleActionURL: String
-    
-    init(param: JSON) {
-        blocType = param["bloc_type"].stringValue
-        blogArticleDuration = param["blog_article_duration"].stringValue
-        blogArticleImage = param["blog_article_image"].stringValue
-        blogArticleTitle = param["blog_article_title"].stringValue
-        blogArticleDescription = param["blog_article_description"].stringValue
-        blogArticleAction = param["blog_article_action"].stringValue
-        blogArticleActionURL = param["blog_article_action_url"].stringValue
-    }
+struct LearnAndActBloc: Decodable {
+    let type, duration, mobileImage, title: String
+    let description, action: String
+    let link: String
     
     var defaultImageName: String {
-        if blocType.lowercased() == "learn" || blocType.lowercased() == "comprendre" {
+        if type.lowercased() == "learn" {
             return "learn-crash-test"
         }
         return "act-crash-test"
@@ -51,8 +38,8 @@ class LearnAndActViewModel {
     static let cache = NSCache<NSString, LearnAndAct>()
     
     func getDatas(completion: @escaping (LearnAndAct) -> Void) {
-        let fileName = Locale.current.identifier.contains("fr") ? "learnandact_fr" : "learnandact_en"
-        let repoString = "https://about.karmasearch.org/i18n/iOS_app/"
+        let fileName = Locale.current.identifier.contains("fr") ? "learn-and-act-fr" : "learn-and-act-en"
+        let repoString = "https://storage.googleapis.com/learn-and-act-and-images.appspot.com/L%26A/json/"
         guard let url = URL(string: repoString + fileName + ".json") else { return }
         
         if let cacheVersison = LearnAndActViewModel.cache.object(forKey: cacheKey) {
@@ -65,9 +52,10 @@ class LearnAndActViewModel {
                     return
                 }
                 do {
-                    let json = try JSON(data: data)
+                    let list = try JSONDecoder().decode([LearnAndActBloc].self, from: data)
+                    
                     DispatchQueue.main.async {
-                        let object = LearnAndAct(param: json)
+                        let object = LearnAndAct(blocs: list)
                         LearnAndActViewModel.cache.setObject(object, forKey: self.cacheKey)
                         completion(object)
                     }
