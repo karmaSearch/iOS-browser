@@ -94,7 +94,8 @@ class DefaultBrowserOnboardingViewController: UIViewController, OnViewDismissabl
         
         contentView.snp.makeConstraints { make in
             make.bottom.equalToSuperview()
-            make.height.equalToSuperview().multipliedBy(0.5)
+            make.height.equalTo(558).priority(.medium)
+            make.height.lessThanOrEqualToSuperview()
             make.leading.trailing.equalToSuperview()
         }
         

@@ -2,7 +2,9 @@
 "DefaultBrowserCard.Button" = "Choose KARMA";
 
 /* Description for small card shown that allows user to switch their default browser to KARMA. */
-"DefaultBrowserCard.Description" = "Websites will be opened by KARMA so that you can help protect biodiversity and improve animal welfare.";
+"DefaultBrowserCard.Description" = "Websites will be opened by KARMA so that you can help protect biodiversity and improve animal welfare
+
+Click on “Default Browser App” then choose KARMA and that’s it !";
 
 /* Title for small card shown that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Title" = "Switch Your Default Browser";

@@ -102,7 +102,7 @@ class DefaultBrowserOnboardingView: UIView {
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview()
             make.top.equalTo(chooseButton.snp.bottom).offset(10)
-            make.bottom.equalToSuperview()
+            make.bottom.equalToSuperview().offset(-60)
             make.height.equalTo(36)
         }
     }

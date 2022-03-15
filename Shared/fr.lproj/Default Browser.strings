@@ -5,7 +5,10 @@
 "DefaultBrowserCard.Button.v2" = "Me montrer comment";
 
 /* Description for small card shown that allows user to switch their default browser to KARMA. */
-"DefaultBrowserCard.Description" = "Faites en sorte que les liens des sites web, des courriels et des messages s’ouvrent automatiquement dans KARMA.";
+"DefaultBrowserCard.Description" = "Les liens internet s’ouvriront automatiquement avec KARMA
+et vos recherches financeront la protection du Vivant !
+
+Cliquez sur “App du navigateur par défaut” puis choisissez KARMA et c’est tout !";
 
 /* Title for small card shown that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Title" = "Changez de navigateur par défaut";
