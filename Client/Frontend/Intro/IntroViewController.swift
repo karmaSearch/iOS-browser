@@ -28,7 +28,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
 
     private lazy var welcomeCard1: IntroScreenWelcomeView = {
         let welcomeCardView = IntroScreenWelcomeView()
-        welcomeCardView.setData(title: .IntroSlidesTitle1, description: .IntroSlidesSubTitle1, icon: "welcome-icon-1", background: "welcome-background-1")
+        welcomeCardView.setData(title: .IntroSlidesTitle1, description: .IntroSlidesSubTitle1, icon: "welcome-icon-1" ,aspas: .IntroSlidesAspasLogo , l214:.IntroSlidesL214Logo, naat:.IntroSlidesNaatLogo, background: "welcome-background-1")
         welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
         welcomeCardView.clipsToBounds = true
         return welcomeCardView
@@ -36,7 +36,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
     
     private lazy var welcomeCard2: IntroScreenWelcomeView = {
         let welcomeCardView = IntroScreenWelcomeView()
-        welcomeCardView.setData(title: .IntroSlidesTitle2, description: .IntroSlidesSubTitle2,  icon: "welcome-icon-2", background: "welcome-background-2")
+        welcomeCardView.setData(title: .IntroSlidesTitle2, description: .IntroSlidesSubTitle2,  icon: "welcome-icon-2",aspas: .IntroSlidesBlackLogo , l214:.IntroSlidesBlackLogo, naat:.IntroSlidesBlackLogo, background: "welcome-background-2")
         welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
         welcomeCardView.clipsToBounds = true
         return welcomeCardView
@@ -44,7 +44,21 @@ class IntroViewController: UIViewController, OnViewDismissable {
     
     private lazy var welcomeCard3: IntroScreenWelcomeView = {
         let welcomeCardView = IntroScreenWelcomeView()
-        welcomeCardView.setData(title: .IntroSlidesTitle3, description: .IntroSlidesSubTitle3, icon: "welcome-icon-3", background: "welcome-background-3", isLast: true)
+        if Locale.current.identifier.contains("fr") {
+            welcomeCardView.setData(title: .IntroSlidesTitle3, description: .IntroSlidesSubTitle3, icon: "welcome-icon-3",aspas: .IntroSlidesBlackLogo , l214:.IntroSlidesBlackLogo, naat:.IntroSlidesBlackLogo, background: "welcome-background-3")
+        }
+        else{
+            welcomeCardView.setData(title: .IntroSlidesTitle3, description: .IntroSlidesSubTitle3, icon: "welcome-icon-3",aspas: .IntroSlidesBlackLogo , l214:.IntroSlidesBlackLogo, naat:.IntroSlidesBlackLogo, background: "welcome-background-3", isLast: true)
+        }
+       
+        welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
+        welcomeCardView.clipsToBounds = true
+        return welcomeCardView
+    }()
+    
+    private lazy var welcomeCard4: IntroScreenWelcomeView = {
+        let welcomeCardView = IntroScreenWelcomeView()
+        welcomeCardView.setData(title: .IntroSlidesTitle4, description: .IntroSlidesSubTitle4, icon: "welcome-icon-4", aspas: .IntroSlidesBlackLogo , l214:.IntroSlidesBlackLogo, naat:.IntroSlidesBlackLogo, background: "welcome-background-4", isLast: true)
         welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
         welcomeCardView.clipsToBounds = true
         return welcomeCardView
@@ -108,7 +122,13 @@ class IntroViewController: UIViewController, OnViewDismissable {
         
         // Constraints
         setUpScrollView()
-        setUpCarousel()
+        if Locale.current.identifier.contains("fr") {
+            setUpCarouselFR()
+        }
+        else{
+            setUpCarousel()
+        }
+        
     }
     
     private func setUpScrollView() {
@@ -121,7 +141,32 @@ class IntroViewController: UIViewController, OnViewDismissable {
     }
     
     private func setUpCarousel() {
+        
         [welcomeCard1, welcomeCard2, welcomeCard3].forEach { view in
+            carouselStackView.addArrangedSubview(view)
+            setupWelcomeCard(welcomeCard: view)
+        }
+
+        view.addSubviews(pageControl)
+
+        NSLayoutConstraint.activate([
+            carouselStackView.topAnchor.constraint(equalTo: scrollView.topAnchor),
+            carouselStackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
+            carouselStackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
+            carouselStackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+            carouselStackView.heightAnchor.constraint(equalTo: scrollView.heightAnchor),
+            pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            pageControl.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30)
+        ])
+        
+        pageControl.numberOfPages = carouselStackView.arrangedSubviews.count
+        pageControl.currentPage = 0
+        
+    }
+    
+    private func setUpCarouselFR() {
+        
+        [welcomeCard1, welcomeCard2, welcomeCard3, welcomeCard4].forEach { view in
             carouselStackView.addArrangedSubview(view)
             setupWelcomeCard(welcomeCard: view)
         }

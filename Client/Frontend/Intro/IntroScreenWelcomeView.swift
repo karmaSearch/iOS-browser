@@ -32,10 +32,29 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         return logo
     }()
     
+    private lazy var aspasLogo: UIImageView = {
+        let imgView = UIImageView()
+        imgView.contentMode = .scaleAspectFit
+        imgView.clipsToBounds = true
+        return imgView
+    }()
+    private lazy var l214Logo: UIImageView = {
+        let imgView = UIImageView()
+        imgView.contentMode = .scaleAspectFit
+        imgView.clipsToBounds = true
+        return imgView
+    }()
+    private lazy var naatLogo: UIImageView = {
+        let imgView = UIImageView()
+        imgView.contentMode = .scaleAspectFit
+        imgView.clipsToBounds = true
+        return imgView
+    }()
+    
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
-        label.font = UIFont.customFont(ofSize: 24, weight: .bold)
+        label.font = UIFont.customFontKG(ofSize: 24)
         label.textAlignment = .center
         label.adjustsFontSizeToFitWidth = true
         label.setContentHuggingPriority(.defaultHigh, for: .vertical)
@@ -45,7 +64,7 @@ class IntroScreenWelcomeView: UIView, CardTheme {
     private lazy var subTitleLabelPage1: UILabel = {
         let label = UILabel()
         label.textColor = UIColor.Photon.LightGrey90
-        label.font = UIFont.customFont(ofSize: 15, weight: .medium)
+        label.font = UIFont.customFont(ofSize: 18, weight: .medium)
         label.textAlignment = .center
         label.numberOfLines = 3
         label.baselineAdjustment = .alignCenters
@@ -56,7 +75,7 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         let closeButton = UIButton()
         closeButton.tintColor = UIColor.Photon.Grey11
         closeButton.setTitle(.IntroButtonSkip, for: .normal)
-        closeButton.titleLabel?.font = UIFont.customFont(ofSize: 15, weight: .medium)
+        closeButton.titleLabel?.font = UIFont.customFont(ofSize: 18, weight: .medium)
         closeButton.setImage(UIImage(named: "skip-right-arrow"), for: .normal)
         closeButton.semanticContentAttribute = .forceRightToLeft
         return closeButton
@@ -68,7 +87,7 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         button.titleLabel?.font = UIFont.customFont(ofSize: 15, weight: .medium)
         button.setTitleColor(UIColor.Photon.White100, for: .normal)
         button.backgroundColor = UIColor.Photon.Green60
-        button.layer.cornerRadius = 12
+        button.layer.cornerRadius = 20
         button.clipsToBounds = true
         button.titleLabel?.textAlignment = .center
         button.accessibilityIdentifier = "nextOnboardingButton"
@@ -98,11 +117,14 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         TelemetryWrapper.recordEvent(category: .action, method: .view, object: .welcomeScreenView)
     }
     
-    func setData(title: String, description: String, icon: String, background: String, isLast: Bool = false) {
+    func setData(title: String, description: String, icon: String, aspas: String, l214:String, naat: String, background: String, isLast: Bool = false) {
         self.titleLabel.text = title
         self.subTitleLabelPage1.text = description
         self.animalsBackgroundImage.image = UIImage(named: background)
         self.iconImage.image = UIImage(named: icon)
+        self.aspasLogo.image = UIImage(named: aspas)
+        self.l214Logo.image = UIImage(named: l214)
+        self.naatLogo.image = UIImage(named: naat)
         self.isLast = isLast
         self.closeButton.isHidden = isLast
     }
@@ -113,7 +135,7 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         backgroundColor = .white
         // View setup
         main2panel.axis = .vertical
-        main2panel.distribution = .fillEqually
+        main2panel.distribution = .fill
         bottomHolder.backgroundColor = UIColor.Photon.DarkGrey90
         
         addSubview(main2panel)
@@ -132,42 +154,79 @@ class IntroScreenWelcomeView: UIView, CardTheme {
             make.centerX.equalToSuperview()
             make.top.equalTo(safeArea.top).inset(30)
         }
-
+    
         animalsBackgroundImage.snp.makeConstraints { make in
             make.edges.equalToSuperview()
+            make.height.equalTo(main2panel.snp.height).multipliedBy(0.45)
+            
         }
         
         // bottomHolder
         main2panel.addArrangedSubview(bottomHolder)
         
-        [iconImage, titleLabel, subTitleLabelPage1, nextButton].forEach {
-             bottomHolder.addSubview($0)
-        }
         
+        
+
+            
+            [iconImage, titleLabel, subTitleLabelPage1, nextButton, aspasLogo, naatLogo, l214Logo].forEach {
+                 bottomHolder.addSubview($0)
+            }
+            
+            aspasLogo.snp.makeConstraints { make in
+                make.left.equalToSuperview().inset(160)
+                make.top.equalTo(subTitleLabelPage1.snp.bottom).offset(5)
+                
+                make.height.equalTo(aspasLogo.snp.width).multipliedBy(0.20)
+                
+            }
+            naatLogo.snp.makeConstraints { make in
+                make.top.equalTo(subTitleLabelPage1.snp.bottom).offset(5)
+                make.centerX.equalToSuperview()
+                
+                make.height.equalTo(naatLogo.snp.width).multipliedBy(0.20)
+            }
+            l214Logo.snp.makeConstraints { make in
+                make.top.equalTo(subTitleLabelPage1.snp.bottom).offset(5)
+                make.right.equalToSuperview().inset(160)
+               
+                make.height.equalTo(l214Logo.snp.width).multipliedBy(0.20)
+                
+            }
+            nextButton.addTarget(self, action: #selector(nextAction), for: .touchUpInside)
+            nextButton.snp.makeConstraints { make in
+                make.left.right.equalToSuperview().inset(60)
+                make.top.equalTo(aspasLogo.snp.bottom).offset(20)
+                make.bottom.equalToSuperview().inset(120).priority(.medium)
+                make.height.equalTo(40)
+            }
+            
+            subTitleLabelPage1.snp.makeConstraints { make in
+                make.left.right.equalToSuperview().inset(40)
+                make.top.equalTo(titleLabel.snp.bottom).offset(10)
+            }
+         
+            
+            
+          
+        
+        
+        
+      
         iconImage.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.greaterThanOrEqualToSuperview().inset(10)
-            make.top.equalToSuperview().inset(40).priority(.medium)
+            make.top.greaterThanOrEqualToSuperview().inset(5)
+            make.top.equalToSuperview().inset(20).priority(.medium)
             make.height.equalTo(iconImage.snp.width).multipliedBy(0.44)
         }
+       
         
         titleLabel.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(20)
             make.top.equalTo(iconImage.snp.bottom).offset(20)
         }
         
-        subTitleLabelPage1.snp.makeConstraints { make in
-            make.left.right.equalToSuperview().inset(60)
-            make.top.equalTo(titleLabel.snp.bottom).offset(10)
-        }
         
-        nextButton.addTarget(self, action: #selector(nextAction), for: .touchUpInside)
-        nextButton.snp.makeConstraints { make in
-            make.left.right.equalToSuperview().inset(60)
-            make.top.equalTo(subTitleLabelPage1.snp.bottom).offset(20)
-            make.bottom.equalToSuperview().inset(100).priority(.medium)
-            make.height.equalTo(31)
-        }
+        
         addSubview(closeButton)
         closeButton.addTarget(self, action: #selector(handleCloseButtonTapped), for: .touchUpInside)
         closeButton.snp.makeConstraints { make in
@@ -180,7 +239,6 @@ class IntroScreenWelcomeView: UIView, CardTheme {
     private func setUpCurveBackground() {
         let curve = UIImageView(image: UIImage(named: "bg-curves"))
         imageHolder.addSubview(curve)
-        
         curve.snp.makeConstraints { make in
             make.bottom.equalToSuperview()
             make.leading.equalToSuperview()

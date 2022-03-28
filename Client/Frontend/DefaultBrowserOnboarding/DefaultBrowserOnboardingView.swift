@@ -9,16 +9,12 @@
 import UIKit
 
 class DefaultBrowserOnboardingView: UIView {
-    private lazy var logoImage: UIImageView = .build { imgView in
-        imgView.contentMode = .scaleToFill
-        imgView.clipsToBounds = true
-        imgView.image = UIImage(named: "default-browser-logo")
-    }
+  
     
     private lazy var titleLabel: UILabel = .build { label in
         label.textColor = .white
         label.text = .DefaultBrowserMenuItem
-        label.font = UIFont.customFontKG(ofSize: 20)
+        label.font = UIFont.customFontKG(ofSize: 25)
         label.textAlignment = .center
         label.numberOfLines = 2
         label.adjustsFontSizeToFitWidth = true
@@ -27,11 +23,25 @@ class DefaultBrowserOnboardingView: UIView {
     private lazy var subTitleLabelPage: UILabel = .build { label in
         label.textColor = UIColor.Photon.LightGrey90
         label.text = .DefaultBrowserCardDescription
-        label.font = DynamicFontHelper.defaultHelper.DeviceFont
+        label.font = UIFont.customFont(ofSize: 17)
         label.textAlignment = .center
         label.adjustsFontSizeToFitWidth = true
-        label.numberOfLines = 0
+        label.numberOfLines = 2
     }
+    
+    private lazy var logoImage: UIImageView = .build { imgView in
+        imgView.contentMode = .scaleToFill
+        imgView.clipsToBounds = true
+        if Locale.current.identifier.contains("fr") {
+            imgView.image = UIImage(named: "default-browser-logo-fr")
+            
+        }else{
+            imgView.image = UIImage(named: "default-browser-logo")
+            
+        }
+        
+    }
+    
     
     private lazy var chooseButton: UIButton = .build { button in
         button.setTitle(.DefaultBrowserOnboardingButton, for: .normal)
@@ -39,7 +49,7 @@ class DefaultBrowserOnboardingView: UIView {
         button.setTitleColor(UIColor.Photon.White100, for: .normal)
         button.backgroundColor = UIColor.Photon.Green60
         button.clipsToBounds = true
-        button.layer.cornerRadius = 12
+        button.layer.cornerRadius = 20
         button.titleLabel?.adjustsFontSizeToFitWidth = true
         button.titleLabel?.textAlignment = .center
         button.addTarget(self, action: #selector(self.goToSettingsAction), for: .touchUpInside)
@@ -74,35 +84,40 @@ class DefaultBrowserOnboardingView: UIView {
     // MARK: View setup
     private func initialViewSetup() {
 
-        let stackView = UIStackView(arrangedSubviews: [logoImage, titleLabel, subTitleLabelPage])
-        stackView.alignment = .center
-        stackView.axis = .vertical
-        stackView.distribution = .equalSpacing
+       
         
-        addSubviews(stackView, chooseButton, notNowButton)
+        addSubviews(titleLabel,subTitleLabelPage, logoImage, chooseButton, notNowButton)
         
-        stackView.snp.makeConstraints { make in
-            make.top.equalToSuperview()
-            make.leading.trailing.equalToSuperview()
+        titleLabel.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(10)
+            make.left.right.equalToSuperview()
+            make.centerX.equalToSuperview()
+        }
+        subTitleLabelPage.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(titleLabel.snp.bottom).offset(30)
+            make.left.right.equalToSuperview().inset(10)
+            
         }
         
         logoImage.snp.makeConstraints { make in
-            make.height.equalTo(111)
-            make.width.equalTo(111)
+            make.centerX.equalToSuperview()
+            make.top.equalTo(subTitleLabelPage.snp.bottom).offset(50)
+            
         }
         
         chooseButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview()
-            make.top.equalTo(stackView.snp.bottom).offset(30)
+            make.top.equalTo(logoImage.snp.bottom).offset(60)
             make.height.equalTo(36)
         }
         
         notNowButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.leading.trailing.equalToSuperview()
+            
             make.top.equalTo(chooseButton.snp.bottom).offset(10)
-            make.bottom.equalToSuperview().offset(-60)
+            make.bottom.equalToSuperview().offset(30)
             make.height.equalTo(36)
         }
     }
