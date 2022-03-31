@@ -12,10 +12,7 @@ extension String {
     //MARK: INTRO
     public static let IntroSlidesTitle1 = NSLocalizedString("Intro.Slides.Title.1", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
     public static let IntroSlidesSubTitle1 = NSLocalizedString("Intro.Slides.SubTitle.1", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
-    public static let IntroSlidesAspasLogo = NSLocalizedString("Intro.Slides.AspasLogo", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
-    public static let IntroSlidesBlackLogo = NSLocalizedString("Intro.Slides.BlackLogo", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
-    public static let IntroSlidesL214Logo = NSLocalizedString("Intro.Slides.L214Logo", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
-    public static let IntroSlidesNaatLogo = NSLocalizedString("Intro.Slides.NaatLogo", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
+
     public static let IntroSlidesTitle2 = NSLocalizedString("Intro.Slides.Title.2", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
     public static let IntroSlidesSubTitle2 = NSLocalizedString("Intro.Slides.SubTitle.2", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
     public static let IntroSlidesTitle3 = NSLocalizedString("Intro.Slides.Title.3", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")

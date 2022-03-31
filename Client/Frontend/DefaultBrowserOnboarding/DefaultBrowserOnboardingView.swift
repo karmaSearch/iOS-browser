@@ -17,29 +17,20 @@ class DefaultBrowserOnboardingView: UIView {
         label.font = UIFont.customFontKG(ofSize: 25)
         label.textAlignment = .center
         label.numberOfLines = 2
-        label.adjustsFontSizeToFitWidth = true
     }
     
     private lazy var subTitleLabelPage: UILabel = .build { label in
         label.textColor = UIColor.Photon.LightGrey90
         label.text = .DefaultBrowserCardDescription
-        label.font = UIFont.customFont(ofSize: 17)
+        label.font = UIFont.customFont(ofSize: 15)
         label.textAlignment = .center
-        label.adjustsFontSizeToFitWidth = true
-        label.numberOfLines = 2
+        label.numberOfLines = 0
     }
     
-    private lazy var logoImage: UIImageView = .build { imgView in
-        imgView.contentMode = .scaleToFill
+    private lazy var screenshotImage: UIImageView = .build { imgView in
+        imgView.contentMode = .scaleAspectFit
         imgView.clipsToBounds = true
-        if Locale.current.identifier.contains("fr") {
-            imgView.image = UIImage(named: "default-browser-logo-fr")
-            
-        }else{
-            imgView.image = UIImage(named: "default-browser-logo")
-            
-        }
-        
+        imgView.image = UIImage(named: "default-browser-logo")
     }
     
     
@@ -83,41 +74,41 @@ class DefaultBrowserOnboardingView: UIView {
     
     // MARK: View setup
     private func initialViewSetup() {
-
-       
         
-        addSubviews(titleLabel,subTitleLabelPage, logoImage, chooseButton, notNowButton)
+        addSubviews(titleLabel,subTitleLabelPage, screenshotImage, chooseButton, notNowButton)
         
         titleLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(10)
-            make.left.right.equalToSuperview()
+            make.top.equalToSuperview().offset(20)
             make.centerX.equalToSuperview()
+            make.leading.equalToSuperview().offset(30)
         }
+        
         subTitleLabelPage.snp.makeConstraints { make in
+            make.top.equalTo(titleLabel.snp.bottom).offset(10)
             make.centerX.equalToSuperview()
-            make.top.equalTo(titleLabel.snp.bottom).offset(30)
-            make.left.right.equalToSuperview().inset(10)
-            
+            make.leading.equalTo(titleLabel.snp.leading)
+            make.bottom.equalTo(screenshotImage.snp.top).offset(-20)
         }
         
-        logoImage.snp.makeConstraints { make in
+        screenshotImage.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalTo(subTitleLabelPage.snp.bottom).offset(50)
-            
+            make.leading.equalToSuperview().offset(30)
+            make.centerY.equalToSuperview()
         }
         
+        screenshotImage.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
+
         chooseButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.leading.trailing.equalToSuperview()
-            make.top.equalTo(logoImage.snp.bottom).offset(60)
+            make.leading.equalToSuperview().offset(60)
+            make.top.equalTo(screenshotImage.snp.bottom).offset(40)
+            make.bottom.equalTo(chooseButton.snp.bottom).offset(-10)
             make.height.equalTo(36)
         }
         
         notNowButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            
-            make.top.equalTo(chooseButton.snp.bottom).offset(10)
-            make.bottom.equalToSuperview().offset(30)
+            make.bottom.equalToSuperview().offset(-30)
             make.height.equalTo(36)
         }
     }

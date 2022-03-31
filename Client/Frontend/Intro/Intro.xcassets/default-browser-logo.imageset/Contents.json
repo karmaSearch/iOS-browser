@@ -1,7 +1,6 @@
 {
   "images" : [
     {
-      "filename" : "Group 648.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -14,10 +13,30 @@
       "filename" : "Group 6483x.png",
       "idiom" : "universal",
       "scale" : "3x"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "fr",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "default-browser-logo@2x.png",
+      "idiom" : "universal",
+      "locale" : "fr",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "default-browser-logo@3x.png",
+      "idiom" : "universal",
+      "locale" : "fr",
+      "scale" : "3x"
     }
   ],
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "localizable" : true
   }
 }

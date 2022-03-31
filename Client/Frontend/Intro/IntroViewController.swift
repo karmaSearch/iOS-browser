@@ -28,7 +28,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
 
     private lazy var welcomeCard1: IntroScreenWelcomeView = {
         let welcomeCardView = IntroScreenWelcomeView()
-        welcomeCardView.setData(title: .IntroSlidesTitle1, description: .IntroSlidesSubTitle1, icon: "welcome-icon-1" ,aspas: .IntroSlidesAspasLogo , l214:.IntroSlidesL214Logo, naat:.IntroSlidesNaatLogo, background: "welcome-background-1")
+        welcomeCardView.setData(title: .IntroSlidesTitle1, description: .IntroSlidesSubTitle1, icon: "welcome-icon-1" , logos: ["aspas-logo", "l214-logo", "naat-logo"], background: "welcome-background-1")
         welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
         welcomeCardView.clipsToBounds = true
         return welcomeCardView
@@ -36,7 +36,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
     
     private lazy var welcomeCard2: IntroScreenWelcomeView = {
         let welcomeCardView = IntroScreenWelcomeView()
-        welcomeCardView.setData(title: .IntroSlidesTitle2, description: .IntroSlidesSubTitle2,  icon: "welcome-icon-2",aspas: .IntroSlidesBlackLogo , l214:.IntroSlidesBlackLogo, naat:.IntroSlidesBlackLogo, background: "welcome-background-2")
+        welcomeCardView.setData(title: .IntroSlidesTitle2, description: .IntroSlidesSubTitle2,  icon: "welcome-icon-2", background: "welcome-background-2")
         welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
         welcomeCardView.clipsToBounds = true
         return welcomeCardView
@@ -44,13 +44,8 @@ class IntroViewController: UIViewController, OnViewDismissable {
     
     private lazy var welcomeCard3: IntroScreenWelcomeView = {
         let welcomeCardView = IntroScreenWelcomeView()
-        if Locale.current.identifier.contains("fr") {
-            welcomeCardView.setData(title: .IntroSlidesTitle3, description: .IntroSlidesSubTitle3, icon: "welcome-icon-3",aspas: .IntroSlidesBlackLogo , l214:.IntroSlidesBlackLogo, naat:.IntroSlidesBlackLogo, background: "welcome-background-3")
-        }
-        else{
-            welcomeCardView.setData(title: .IntroSlidesTitle3, description: .IntroSlidesSubTitle3, icon: "welcome-icon-3",aspas: .IntroSlidesBlackLogo , l214:.IntroSlidesBlackLogo, naat:.IntroSlidesBlackLogo, background: "welcome-background-3", isLast: true)
-        }
-       
+        let isLast = !Locale.current.identifier.contains("fr")
+        welcomeCardView.setData(title: .IntroSlidesTitle3, description: .IntroSlidesSubTitle3, icon: "welcome-icon-3", background: "welcome-background-3", isLast: isLast)
         welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
         welcomeCardView.clipsToBounds = true
         return welcomeCardView
@@ -58,7 +53,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
     
     private lazy var welcomeCard4: IntroScreenWelcomeView = {
         let welcomeCardView = IntroScreenWelcomeView()
-        welcomeCardView.setData(title: .IntroSlidesTitle4, description: .IntroSlidesSubTitle4, icon: "welcome-icon-4", aspas: .IntroSlidesBlackLogo , l214:.IntroSlidesBlackLogo, naat:.IntroSlidesBlackLogo, background: "welcome-background-4", isLast: true)
+        welcomeCardView.setData(title: .IntroSlidesTitle4, description: .IntroSlidesSubTitle4, icon: "welcome-icon-4", background: "welcome-background-4", isLast: true)
         welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
         welcomeCardView.clipsToBounds = true
         return welcomeCardView
@@ -219,11 +214,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
     private func setUpDefaultBrowser() {
         view.addSubviews(defaultBrowserView)
         defaultBrowserView.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.centerX.equalToSuperview()
-            make.top.greaterThanOrEqualToSuperview().offset(40)
-            make.height.equalTo(445).priority(.medium)
-            make.leading.equalToSuperview().offset(40)
+            make.edges.equalToSuperview()
         }
         
         defaultBrowserView.isHidden = true

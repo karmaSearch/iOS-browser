@@ -8,7 +8,7 @@ import SnapKit
 import Shared
 
 class IntroScreenWelcomeView: UIView, CardTheme {
-
+    
     // Views
     private lazy var animalsBackgroundImage: UIImageView = {
         let imgView = UIImageView()
@@ -30,25 +30,6 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         logo.clipsToBounds = true
         
         return logo
-    }()
-    
-    private lazy var aspasLogo: UIImageView = {
-        let imgView = UIImageView()
-        imgView.contentMode = .scaleAspectFit
-        imgView.clipsToBounds = true
-        return imgView
-    }()
-    private lazy var l214Logo: UIImageView = {
-        let imgView = UIImageView()
-        imgView.contentMode = .scaleAspectFit
-        imgView.clipsToBounds = true
-        return imgView
-    }()
-    private lazy var naatLogo: UIImageView = {
-        let imgView = UIImageView()
-        imgView.contentMode = .scaleAspectFit
-        imgView.clipsToBounds = true
-        return imgView
     }()
     
     private lazy var titleLabel: UILabel = {
@@ -80,7 +61,7 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         closeButton.semanticContentAttribute = .forceRightToLeft
         return closeButton
     }()
-
+    
     private lazy var nextButton: UIButton = {
         let button = UIButton()
         button.setTitle(.IntroNextButtonTitle, for: .normal)
@@ -94,12 +75,15 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         return button
     }()
     
-    private var isLast: Bool = false
+    var isLast: Bool = false
     
     // Helper views
     let main2panel = UIStackView()
     let imageHolder = UIView()
     let bottomHolder = UIView()
+    let contentHolder = UIStackView()
+    let logoHolder = UIStackView()
+    
     // Closure delegates
     var closeClosure: (() -> Void)?
     var nextClosure: (() -> Void)?
@@ -117,18 +101,26 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         TelemetryWrapper.recordEvent(category: .action, method: .view, object: .welcomeScreenView)
     }
     
-    func setData(title: String, description: String, icon: String, aspas: String, l214:String, naat: String, background: String, isLast: Bool = false) {
+    func setData(title: String, description: String, icon: String, logos: [String] = [], background: String, isLast: Bool = false) {
         self.titleLabel.text = title
         self.subTitleLabelPage1.text = description
         self.animalsBackgroundImage.image = UIImage(named: background)
         self.iconImage.image = UIImage(named: icon)
-        self.aspasLogo.image = UIImage(named: aspas)
-        self.l214Logo.image = UIImage(named: l214)
-        self.naatLogo.image = UIImage(named: naat)
+        self.logoHolder.isHidden = logos.isEmpty
+        
+        self.logoHolder.arrangedSubviews.forEach {  $0.removeFromSuperview() }
+        logos.forEach { logo in
+            let imgView = UIImageView()
+            imgView.contentMode = .scaleAspectFit
+            imgView.clipsToBounds = true
+            imgView.image = UIImage(named: logo)
+            self.logoHolder.addArrangedSubview(imgView)
+        }
+        
+        self.logoHolder.isHidden = false
         self.isLast = isLast
         self.closeButton.isHidden = isLast
     }
-    
     // MARK: View setup
     private func initialViewSetup() {
         // Background colour setup
@@ -137,6 +129,12 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         main2panel.axis = .vertical
         main2panel.distribution = .fill
         bottomHolder.backgroundColor = UIColor.Photon.DarkGrey90
+        contentHolder.axis = .vertical
+        contentHolder.distribution = .fill
+        contentHolder.spacing = 15
+        logoHolder.axis = .horizontal
+        logoHolder.distribution = .fillEqually
+        logoHolder.spacing = 30
         
         addSubview(main2panel)
         main2panel.snp.makeConstraints { make in
@@ -154,78 +152,44 @@ class IntroScreenWelcomeView: UIView, CardTheme {
             make.centerX.equalToSuperview()
             make.top.equalTo(safeArea.top).inset(30)
         }
-    
+        
         animalsBackgroundImage.snp.makeConstraints { make in
             make.edges.equalToSuperview()
-            make.height.equalTo(main2panel.snp.height).multipliedBy(0.45)
-            
+            make.height.equalTo(main2panel.snp.height).multipliedBy(0.45).priority(.medium)
         }
+        animalsBackgroundImage.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
         
         // bottomHolder
         main2panel.addArrangedSubview(bottomHolder)
         
+        [iconImage, contentHolder, nextButton].forEach {
+            bottomHolder.addSubviews($0)
+        }
         
+        [titleLabel, subTitleLabelPage1, logoHolder].forEach {
+            contentHolder.addArrangedSubview($0)
+        }
         
-
-            
-            [iconImage, titleLabel, subTitleLabelPage1, nextButton, aspasLogo, naatLogo, l214Logo].forEach {
-                 bottomHolder.addSubview($0)
-            }
-            
-            aspasLogo.snp.makeConstraints { make in
-                make.left.equalToSuperview().inset(160)
-                make.top.equalTo(subTitleLabelPage1.snp.bottom).offset(5)
-                
-                make.height.equalTo(aspasLogo.snp.width).multipliedBy(0.20)
-                
-            }
-            naatLogo.snp.makeConstraints { make in
-                make.top.equalTo(subTitleLabelPage1.snp.bottom).offset(5)
-                make.centerX.equalToSuperview()
-                
-                make.height.equalTo(naatLogo.snp.width).multipliedBy(0.20)
-            }
-            l214Logo.snp.makeConstraints { make in
-                make.top.equalTo(subTitleLabelPage1.snp.bottom).offset(5)
-                make.right.equalToSuperview().inset(160)
-               
-                make.height.equalTo(l214Logo.snp.width).multipliedBy(0.20)
-                
-            }
-            nextButton.addTarget(self, action: #selector(nextAction), for: .touchUpInside)
-            nextButton.snp.makeConstraints { make in
-                make.left.right.equalToSuperview().inset(60)
-                make.top.equalTo(aspasLogo.snp.bottom).offset(20)
-                make.bottom.equalToSuperview().inset(120).priority(.medium)
-                make.height.equalTo(40)
-            }
-            
-            subTitleLabelPage1.snp.makeConstraints { make in
-                make.left.right.equalToSuperview().inset(40)
-                make.top.equalTo(titleLabel.snp.bottom).offset(10)
-            }
-         
-            
-            
-          
+        nextButton.addTarget(self, action: #selector(nextAction), for: .touchUpInside)
         
+        contentHolder.snp.makeConstraints { make in
+            make.left.right.equalToSuperview().inset(40)
+            make.top.equalTo(iconImage.snp.bottom).offset(20)
+        }
         
+        nextButton.snp.makeConstraints { make in
+            make.left.right.equalToSuperview().inset(60)
+            make.top.equalTo(contentHolder.snp.bottom).offset(20)
+            make.bottom.equalToSuperview().inset(100)
+            make.height.equalTo(40)
+        }
         
-      
         iconImage.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.greaterThanOrEqualToSuperview().inset(5)
             make.top.equalToSuperview().inset(20).priority(.medium)
             make.height.equalTo(iconImage.snp.width).multipliedBy(0.44)
         }
-       
-        
-        titleLabel.snp.makeConstraints { make in
-            make.left.right.equalToSuperview().inset(20)
-            make.top.equalTo(iconImage.snp.bottom).offset(20)
-        }
-        
-        
         
         addSubview(closeButton)
         closeButton.addTarget(self, action: #selector(handleCloseButtonTapped), for: .touchUpInside)
@@ -233,7 +197,7 @@ class IntroScreenWelcomeView: UIView, CardTheme {
             make.bottom.equalTo(safeArea.bottom).inset(15)
             make.right.equalToSuperview().inset(15)
         }
-
+        
     }
     
     private func setUpCurveBackground() {
