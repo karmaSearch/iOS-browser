@@ -377,7 +377,6 @@
 		A32316552742CDDD00464742 /* KarmaHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32316542742CDDD00464742 /* KarmaHomeViewModel.swift */; };
 		A32316582743EF7400464742 /* LearnAndActViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32316572743EF7400464742 /* LearnAndActViewCell.swift */; };
 		A323165A2743F76B00464742 /* LearnAndActViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32316592743F76B00464742 /* LearnAndActViewModel.swift */; };
-		A323165C2743F80700464742 /* learnandact.json in Resources */ = {isa = PBXBuildFile; fileRef = A323165B2743F80600464742 /* learnandact.json */; };
 		A32CC86827455A9F0039113B /* UIFont+Karma.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32CC86527455A700039113B /* UIFont+Karma.swift */; };
 		A32CC86B2745623A0039113B /* IntroKarma.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32CC86D2745623A0039113B /* IntroKarma.strings */; };
 		A32CC870274563590039113B /* String+Karma.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32CC86F274563590039113B /* String+Karma.swift */; };
@@ -390,7 +389,6 @@
 		A38C49E2273EAE130074BAFD /* Karma.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A38C49E1273EAE130074BAFD /* Karma.xcconfig */; };
 		A38C49E4273EAEDF0074BAFD /* Karma_Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A38C49E3273EAEDF0074BAFD /* Karma_Debug.xcconfig */; };
 		A3A2F582274E4C89005706C0 /* KarmaMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3A2F584274E4C89005706C0 /* KarmaMenu.strings */; };
-		A3AF700A274FD40A00C8EFA5 /* learnandact-fr.json in Resources */ = {isa = PBXBuildFile; fileRef = A3AF7009274FD40A00C8EFA5 /* learnandact-fr.json */; };
 		A3B970A7274530FA00BAA1F4 /* LearnAndActHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B970A6274530FA00BAA1F4 /* LearnAndActHeader.swift */; };
 		A3B970AD27454B3A00BAA1F4 /* ProximaNova-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3B970A927454B3500BAA1F4 /* ProximaNova-SemiBold.otf */; };
 		A3B970AE27454B3A00BAA1F4 /* ProximaNova-Medium It.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3B970AB27454B3500BAA1F4 /* ProximaNova-Medium It.otf */; };
@@ -2659,7 +2657,6 @@
 		A32316542742CDDD00464742 /* KarmaHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaHomeViewModel.swift; sourceTree = "<group>"; };
 		A32316572743EF7400464742 /* LearnAndActViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAndActViewCell.swift; sourceTree = "<group>"; };
 		A32316592743F76B00464742 /* LearnAndActViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAndActViewModel.swift; sourceTree = "<group>"; };
-		A323165B2743F80600464742 /* learnandact.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = learnandact.json; sourceTree = "<group>"; };
 		A32CC86527455A700039113B /* UIFont+Karma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Karma.swift"; sourceTree = "<group>"; };
 		A32CC86C2745623A0039113B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/IntroKarma.strings; sourceTree = "<group>"; };
 		A32CC86E274562410039113B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/IntroKarma.strings; sourceTree = "<group>"; };
@@ -2678,7 +2675,6 @@
 		A38C49E8273EB0210074BAFD /* KarmaDebug.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = KarmaDebug.entitlements; sourceTree = "<group>"; };
 		A3A2F583274E4C89005706C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/KarmaMenu.strings; sourceTree = "<group>"; };
 		A3A2F585274E4C90005706C0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/KarmaMenu.strings; sourceTree = "<group>"; };
-		A3AF7009274FD40A00C8EFA5 /* learnandact-fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "learnandact-fr.json"; sourceTree = "<group>"; };
 		A3B970A6274530FA00BAA1F4 /* LearnAndActHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAndActHeader.swift; sourceTree = "<group>"; };
 		A3B970A827454B3500BAA1F4 /* ProximaNova-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Medium.otf"; sourceTree = "<group>"; };
 		A3B970A927454B3500BAA1F4 /* ProximaNova-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-SemiBold.otf"; sourceTree = "<group>"; };
@@ -6225,7 +6221,6 @@
 		F84B22211A09122500AAB793 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				A3AF7009274FD40A00C8EFA5 /* learnandact-fr.json */,
 				3BB50E1F1D627539004B33DF /* KarmaHomeViewController.swift */,
 				74821F8D1DAD8F1300EEEA72 /* FirefoxHomeHighlightCell.swift */,
 				96F626FF2669B0D100C82340 /* FxHomeRecentlySavedCollectionCell.swift */,
@@ -6244,7 +6239,6 @@
 				A32316572743EF7400464742 /* LearnAndActViewCell.swift */,
 				A32316512742C1D800464742 /* Home.xcassets */,
 				A3F62F01275A58BD0062F248 /* HomeImages.json */,
-				A323165B2743F80600464742 /* learnandact.json */,
 				A32316542742CDDD00464742 /* KarmaHomeViewModel.swift */,
 				A32316592743F76B00464742 /* LearnAndActViewModel.swift */,
 				A3B970A6274530FA00BAA1F4 /* LearnAndActHeader.swift */,
@@ -7161,7 +7155,6 @@
 				0BA1E0301B051A07007675AF /* NetError.css in Resources */,
 				A3B970B127454B3A00BAA1F4 /* ProximaNova-Extrabold.otf in Resources */,
 				3BC659491E5BA4AE006D560F /* TopSites in Resources */,
-				A3AF700A274FD40A00C8EFA5 /* learnandact-fr.json in Resources */,
 				E4B7B77E1A793CF20022C5E0 /* FiraSans-SemiBold.ttf in Resources */,
 				F84B220B1A0910F600AAB793 /* Images.xcassets in Resources */,
 				F35B8D2B1D6380EA008E3D61 /* SessionRestore.html in Resources */,
@@ -7198,7 +7191,6 @@
 				D30684F11C84F12A002D8D82 /* SearchPlugins in Resources */,
 				74821FFE1DB6D3AC00EEEA72 /* MailSchemes.plist in Resources */,
 				FA9294011D6584A200AC8D33 /* QRCode.xcassets in Resources */,
-				A323165C2743F80700464742 /* learnandact.json in Resources */,
 				EBC9D38822D4D56F0011D881 /* disconnect-block-cookies-social.json in Resources */,
 				D308EE561CBF0BF5006843F2 /* CertError.css in Resources */,
 				A3F62EFF275A58BD0062F248 /* HomeImages.json in Resources */,
