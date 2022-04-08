@@ -1,8 +1,8 @@
 {
   "default": {
-    "searchDefault": "karma",
+    "searchDefault": "karmasearch",
     "visibleDefaultEngines": [
-      "karma"
+      "karmasearch"
     ]
   }
 }

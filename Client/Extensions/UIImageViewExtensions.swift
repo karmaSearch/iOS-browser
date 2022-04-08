@@ -54,13 +54,7 @@ public extension UIImageView {
                     finish(bgColor: defaults.color)
                     return
                 }
-                if let img = img {
-                    let colors =  img.getColors(scaleDownSize: CGSize(width: 30, height: 30))
-                    finish(bgColor: colors.background)
-                } else {
-                    finish(bgColor: nil)
-                }
-                
+                finish(bgColor: nil)
             }
         }
     }

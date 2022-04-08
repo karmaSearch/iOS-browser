@@ -23,7 +23,7 @@ enum BuiltinThemeName: String {
 }
 
 // Convenience reference to these normal mode colors which are used in a few color classes.
-fileprivate let defaultBackground = UIColor(rgb: 0xf2f2f7)
+fileprivate let defaultBackground = UIColor.Photon.White100
 fileprivate let defaultSeparator = UIColor.Photon.LightGrey90
 fileprivate let defaultTextAndTint = UIColor.Photon.Grey80 
 
@@ -181,7 +181,7 @@ class HomePanelColor {
     var topSitesBackground: UIColor { return defaultBackground }
 
     var shortcutBackground: UIColor { return defaultBackground }
-    var shortcutShadowColor: CGColor { return UIColor(red: 0, green: 0, blue: 0, alpha: 0.1).cgColor }
+    var shortcutShadowColor: CGColor { return UIColor(red: 0, green: 0, blue: 0, alpha: 0.15).cgColor }
     var shortcutShadowOpacity: Float { return 1 }
     
     var recentlySavedBookmarkCellBackground: UIColor { return .white}

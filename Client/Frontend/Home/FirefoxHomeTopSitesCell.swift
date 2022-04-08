@@ -13,9 +13,9 @@ private struct TopSiteCellUX {
     static let CellCornerRadius: CGFloat = 8
     static let TitleOffset: CGFloat = 4
     static let OverlayColor = UIColor(white: 0.0, alpha: 0.25)
-    static let IconSize = CGSize(width: 36, height: 36)
+    static let IconSize = CGSize(width: 50, height: 50)
     static let IconCornerRadius: CGFloat = 4
-    static let BackgroundSize = CGSize(width: 60, height: 60)
+    static let BackgroundSize = CGSize(width: 56, height: 56)
     static let ShadowRadius: CGFloat = 6
     static let BorderColor = UIColor(white: 0, alpha: 0.1)
     static let BorderWidth: CGFloat = 0.5
@@ -155,19 +155,18 @@ class TopSiteItemCell: UICollectionViewCell, NotificationThemeable {
         }
 
         accessibilityLabel = titleLabel.text
-        self.imageView.setFaviconOrDefaultIcon(forSite: site) { [weak self] in
-            self?.faviconBG.backgroundColor = self?.imageView.backgroundColor
-        }
+        self.imageView.setFaviconOrDefaultIcon(forSite: site) {}
 
         applyTheme()
     }
 
     func applyTheme() {
         pinImageView.tintColor = UIColor.theme.homePanel.topSitePin
+        faviconBG.backgroundColor = UIColor.theme.homePanel.shortcutBackground
         faviconBG.layer.borderColor = TopSiteCellUX.BorderColor.cgColor
         faviconBG.layer.shadowColor = UIColor.theme.homePanel.shortcutShadowColor
         faviconBG.layer.shadowOpacity = UIColor.theme.homePanel.shortcutShadowOpacity
-        faviconBG.layer.shadowOffset = CGSize(width: 0, height: 4)
+        faviconBG.layer.shadowOffset = CGSize(width: 0, height: 3)
 
         selectedOverlay.backgroundColor = TopSiteCellUX.OverlayColor
         titleLabel.backgroundColor = UIColor.clear

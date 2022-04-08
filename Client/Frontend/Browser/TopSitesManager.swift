@@ -42,6 +42,11 @@ struct TopSitesHandler {
                 }
                 let domain = URL(string: site.url)?.shortDisplayString
                 return defaultSites.find { $0.title.lowercased() == domain } ?? site
+            }.filter { site in
+                if let domain = URL(string: site.url)?.shortDisplayString.lowercased() {
+                    return profile.searchEngines.orderedEngines.first { domain == $0.shortName } == nil
+                }
+                return false
             }
             
             deferred.fill(newSites)
