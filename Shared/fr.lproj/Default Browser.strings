@@ -30,5 +30,5 @@
 /* Menu option for setting KARMA as default browser. */
 "Settings.DefaultBrowserMenuItem" = "Faîtes de KARMA votre navigateur par défaut";
 
-"DefaultBrowser.Push.Title" = "Avez vous fait de KARMA votre navigateur par défaut ?";
-"DefaultBrowser.Push.Message" = "Cliquez ici pour protéger le Vivant dès que vous surfez sur le web ! 🍃";
+"DefaultBrowser.Push.Title" = "Protégez le Vivant avec KARMA 🦉";
+"DefaultBrowser.Push.Message" = "Cliquez ici pour faire de KARMA votre navigateur par défaut";

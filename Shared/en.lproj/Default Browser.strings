@@ -10,5 +10,5 @@
 /* Menu option for setting KARMA as default browser. */
 "Settings.DefaultBrowserMenuItem" = "Set up KARMA as your default browser !";
 
-"DefaultBrowser.Push.Title" = "Is KARMA your default browser?";
-"DefaultBrowser.Push.Message" = "Click here to protect biodiversity and animal welfare while surfing the web! 🍃";
+"DefaultBrowser.Push.Title" = "Protect biodiversity and animal welfare with KARMA🦉";
+"DefaultBrowser.Push.Message" = "Click here to set KARMA as your default browser";
