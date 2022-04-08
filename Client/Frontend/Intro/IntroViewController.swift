@@ -195,12 +195,14 @@ class IntroViewController: UIViewController, OnViewDismissable {
             let currentPage = self.pageControl.currentPage
             TelemetryWrapper.recordEvent(category: .action, method: .press, object: .dismissedOnboarding, extras: ["slide-num": currentPage])
             
-            self.scrollView.isHidden = true
-            self.pageControl.isHidden = true
-            self.defaultBrowserView.isHidden = false
-            self.defaultBrowserView.alpha = 0
-            UIView.animate(withDuration: 1) {
-                self.defaultBrowserView.alpha = 1
+            if #available(iOS 14, *) {
+
+                self.scrollView.isHidden = true
+                self.pageControl.isHidden = true
+                self.defaultBrowserView.isHidden = false
+
+            } else {
+                self.didFinishClosure?(self, nil)
             }
         }
         

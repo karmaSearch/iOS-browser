@@ -84,7 +84,9 @@ class LearnAndActViewCell: UICollectionViewCell {
             SDImageCodersManager.shared.addCoder(WebPCoder)
             SDWebImageDownloader.shared.setValue("image/webp,image/apng,image/*,*/*;q=0.8", forHTTPHeaderField:"Accept")
             
-            imageView.sd_setImage(with: URL(string: learnAndAct.mobileImage), placeholderImage: UIImage(named: learnAndAct.defaultImageName), completed: nil)
+            let url = learnAndAct.mobileImage.replaceFirstOccurrence(of: " ", with: "%20")
+            imageView.sd_setImage(with: URL(string: url), placeholderImage: UIImage(named: learnAndAct.defaultImageName), completed: nil)
+            
             
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.maximumLineHeight = 20
@@ -120,13 +122,14 @@ class LearnAndActViewCell: UICollectionViewCell {
             
             imageView.snp.makeConstraints { make in
                 make.top.bottom.equalToSuperview()
-                make.trailing.equalTo(contentView.snp.centerX)
+                make.leading.equalToSuperview()
+                make.width.equalTo(imageView.snp.height).multipliedBy(1.5)
             }
             
             textContent.snp.makeConstraints { make in
                 make.bottom.equalToSuperview()
                 make.top.equalToSuperview()
-                make.leading.equalTo(contentView.snp.centerX)
+                make.left.equalTo(imageView.snp.right)
                 make.trailing.equalToSuperview()
             }
             
@@ -184,13 +187,14 @@ class LearnAndActViewCell: UICollectionViewCell {
             
             imageView.snp.remakeConstraints { make in
                 make.top.bottom.equalToSuperview()
-                make.trailing.equalTo(contentView.snp.centerX)
+                make.leading.equalToSuperview()
+                make.width.equalTo(imageView.snp.height).multipliedBy(1.5)
             }
             
             textContent.snp.remakeConstraints { make in
                 make.bottom.equalToSuperview()
                 make.top.equalToSuperview()
-                make.leading.equalTo(contentView.snp.centerX)
+                make.left.equalTo(imageView.snp.right)
                 make.trailing.equalToSuperview()
             }
         } else {

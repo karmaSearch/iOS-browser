@@ -20,7 +20,7 @@ class LearnAndAct: NSObject {
 
 // MARK: - Bloc
 struct LearnAndActBloc: Decodable {
-    let type, duration, mobileImage, title: String
+    let type, duration, mobileImage, desktopImage, title: String
     let description, action: String
     let link: String
     
