@@ -395,7 +395,6 @@
 		A3B970AF27454B3A00BAA1F4 /* ProximaNova-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3B970A827454B3500BAA1F4 /* ProximaNova-Medium.otf */; };
 		A3B970B027454B3A00BAA1F4 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3B970AC27454B3500BAA1F4 /* ProximaNova-Bold.otf */; };
 		A3B970B127454B3A00BAA1F4 /* ProximaNova-Extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3B970AA27454B3500BAA1F4 /* ProximaNova-Extrabold.otf */; };
-		A3F62EFF275A58BD0062F248 /* HomeImages.json in Resources */ = {isa = PBXBuildFile; fileRef = A3F62F01275A58BD0062F248 /* HomeImages.json */; };
 		A3FD6FA0274E9D1900632B2D /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD6F9F274E9D1900632B2D /* FeedbackViewController.swift */; };
 		A3FD6FA2274E9FE700632B2D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FD6FA1274E9FE700632B2D /* StoreKit.framework */; };
 		A3FD6FA4274EA7C000632B2D /* UIDevice+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD6FA3274EA7C000632B2D /* UIDevice+extension.swift */; };
@@ -2682,8 +2681,6 @@
 		A3B970AB27454B3500BAA1F4 /* ProximaNova-Medium It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Medium It.otf"; sourceTree = "<group>"; };
 		A3B970AC27454B3500BAA1F4 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
 		A3E54C1386C753F253BEEB71 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Search.strings; sourceTree = "<group>"; };
-		A3F62F00275A58BD0062F248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/HomeImages.json; sourceTree = "<group>"; };
-		A3F62F02275A58C30062F248 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = fr; path = fr.lproj/HomeImages.json; sourceTree = "<group>"; };
 		A3FB49E4AED8F44971799F71 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/FindInPage.strings; sourceTree = "<group>"; };
 		A3FB4ED398FB21FB64A28124 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/ClearHistoryConfirm.strings; sourceTree = "<group>"; };
 		A3FD6F9F274E9D1900632B2D /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
@@ -6238,7 +6235,6 @@
 				A323164F2742BB4C00464742 /* KarmaHomeViewCell.swift */,
 				A32316572743EF7400464742 /* LearnAndActViewCell.swift */,
 				A32316512742C1D800464742 /* Home.xcassets */,
-				A3F62F01275A58BD0062F248 /* HomeImages.json */,
 				A32316542742CDDD00464742 /* KarmaHomeViewModel.swift */,
 				A32316592743F76B00464742 /* LearnAndActViewModel.swift */,
 				A3B970A6274530FA00BAA1F4 /* LearnAndActHeader.swift */,
@@ -7193,7 +7189,6 @@
 				FA9294011D6584A200AC8D33 /* QRCode.xcassets in Resources */,
 				EBC9D38822D4D56F0011D881 /* disconnect-block-cookies-social.json in Resources */,
 				D308EE561CBF0BF5006843F2 /* CertError.css in Resources */,
-				A3F62EFF275A58BD0062F248 /* HomeImages.json in Resources */,
 				C8399D9122DE5E5200EFA5CA /* disconnect-block-advertising.json in Resources */,
 				43A5643923CD1E1C00B6857D /* Update.xcassets in Resources */,
 				C8399D9322DE5E5B00EFA5CA /* disconnect-block-analytics.json in Resources */,
@@ -9915,15 +9910,6 @@
 				A3A2F585274E4C90005706C0 /* fr */,
 			);
 			name = KarmaMenu.strings;
-			sourceTree = "<group>";
-		};
-		A3F62F01275A58BD0062F248 /* HomeImages.json */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A3F62F00275A58BD0062F248 /* Base */,
-				A3F62F02275A58C30062F248 /* fr */,
-			);
-			name = HomeImages.json;
 			sourceTree = "<group>";
 		};
 		AA3047F884B6BA22989FD627 /* Search.strings */ = {

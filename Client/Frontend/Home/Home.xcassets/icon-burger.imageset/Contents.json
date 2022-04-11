@@ -1,17 +1,16 @@
 {
   "images" : [
     {
-      "filename" : "Button Burger.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Button Burger@2x.png",
+      "filename" : "icon-burger@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Button Burger@3x.png",
+      "filename" : "icon-burger@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

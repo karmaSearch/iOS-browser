@@ -16,7 +16,7 @@ private let log = Logger.browserLogger
 struct FirefoxHomeUX {
     static let highlightCellHeight: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 250 : 200
     static let jumpBackInCellHeight: CGFloat = 120
-    static let karmaMenuHeight: CGFloat = 100
+    static let karmaMenuHeight: CGFloat = 36
     static let recentlySavedCellHeight: CGFloat = 136
     static let sectionInsetsForSizeClass = UXSizeClasses(compact: 0, regular: 101, other: 15)
     static let numberOfItemsPerRowForSizeClassIpad = UXSizeClasses(compact: 3, regular: 4, other: 2)
@@ -554,7 +554,7 @@ extension KarmaHomeViewController {
 
         func cellHeight(_ traits: UITraitCollection, width: CGFloat) -> CGFloat {
             switch self {
-            case .karmaMenu: return traits.verticalSizeClass == .compact || UIDevice.current.userInterfaceIdiom == .pad ? FirefoxHomeUX.karmaMenuHeight : width
+            case .karmaMenu: return FirefoxHomeUX.karmaMenuHeight
             case .pocket: return FirefoxHomeUX.highlightCellHeight
             case .jumpBackIn: return FirefoxHomeUX.jumpBackInCellHeight
             case .recentlySaved: return FirefoxHomeUX.recentlySavedCellHeight
@@ -955,10 +955,6 @@ extension KarmaHomeViewController {
         customizeHomeCell.openMenu = { [weak self] button in
             self?.homePanelDelegate?.homePanelDidRequestToOpenSettings(caller: button)
         }
-        customizeHomeCell.openLink = { [weak self] url in
-            self?.homePanelDelegate?.homePanel(didSelectURL: url, visitType: .link, isGoogleTopSite: false)
-        }
-        customizeHomeCell.applyTheme()
         return customizeHomeCell
     }
     
