@@ -11,11 +11,12 @@ private struct URLBarViewUX {
     static let TextFieldActiveBorderColor = UIColor.Photon.Blue40
 
     static let LocationLeftPadding: CGFloat = 13
+    static let LocationTopPadding: CGFloat = 13
     static let Padding: CGFloat = 10
-    static let LocationHeight: CGFloat = 34
+    static let LocationHeight: CGFloat = 40
     static let ButtonHeight: CGFloat = 44
     static let LocationContentOffset: CGFloat = 8
-    static let TextFieldCornerRadius: CGFloat = 11
+    static let TextFieldCornerRadius: CGFloat = 50
     static let TextFieldBorderWidth: CGFloat = 0
     static let TextFieldBorderWidthSelected: CGFloat = 8
     static let ProgressBarHeight: CGFloat = 3
@@ -285,8 +286,8 @@ class URLBarView: UIView {
         if inOverlayMode {
             self.locationContainer.layer.borderWidth = URLBarViewUX.TextFieldBorderWidth
             self.locationContainer.snp.remakeConstraints { make in
-                make.height.greaterThanOrEqualTo(URLBarViewUX.LocationHeight+2)
-                make.leading.equalTo(self).inset(URLBarViewUX.LocationLeftPadding-1)
+                make.height.greaterThanOrEqualTo(URLBarViewUX.LocationHeight)
+                make.leading.equalTo(self).inset(URLBarViewUX.LocationLeftPadding)
                 make.trailing.equalTo(self.cancelButton.snp.leading)
                 make.centerY.equalTo(self)
             }
@@ -335,7 +336,7 @@ class URLBarView: UIView {
 
         guard let locationTextField = locationTextField else { return }
 
-        locationTextField.font = UIFont.customFont(ofSize: 18, weight: .medium)
+        locationTextField.font = UIFont.customFont(ofSize: 18, weight: .semibold)
         locationTextField.adjustsFontForContentSizeCategory = true
         locationTextField.clipsToBounds = true
         locationTextField.translatesAutoresizingMaskIntoConstraints = false
@@ -755,7 +756,7 @@ extension URLBarView: NotificationThemeable {
         addNewTabButton.applyTheme()
 
         cancelTextColor = UIColor.theme.urlbar.tint
-        backgroundColor = UIColor.theme.browser.background
+        backgroundColor = UIColor.theme.urlbar.background
 
         locationBorderColor = UIColor.theme.urlbar.border
         locationView.backgroundColor = inOverlayMode ? UIColor.theme.textField.backgroundInOverlay : UIColor.theme.textField.background

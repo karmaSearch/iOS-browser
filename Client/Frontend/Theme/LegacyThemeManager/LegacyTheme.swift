@@ -60,7 +60,8 @@ class URLBarColor {
         return !isPrivate ? UIColor.clear : UIColor.Defaults.MobilePrivatePurple
     }
     var tint: UIColor { return UIColor.Photon.Green60 }
-    var shadow: UIColor { return  UIColor(red: 0, green: 0, blue: 0, alpha: 0.25) }
+    var shadow: UIColor { return  UIColor.clear }
+    var background: UIColor { return UIColor(colorString: "F1F1F5") }
 
     // This text selection color is used in two ways:
     // 1) <UILabel>.background = textSelectionHighlight.withAlphaComponent(textSelectionHighlightAlpha)
@@ -155,8 +156,8 @@ class TopTabsColor {
 
 class TextFieldColor {
     var background: UIColor { return UIColor.white }
-    var backgroundInOverlay: UIColor { return UIColor.Photon.LightGrey20 }
-    var textAndTint: UIColor { return defaultTextAndTint }
+    var backgroundInOverlay: UIColor { return UIColor.clear }
+    var textAndTint: UIColor { return UIColor.Photon.DarkGrey10 }
     var separator: UIColor { return .white }
 }
 
@@ -192,7 +193,7 @@ class HomePanelColor {
 
     var activityStreamHeaderText: UIColor { return UIColor.Photon.DarkGrey90 }
     var activityStreamHeaderButton: UIColor { return UIColor.Photon.Blue50 }
-    var activityStreamCellTitle: UIColor { return UIColor.Photon.DarkGrey90 }
+    var activityStreamCellTitle: UIColor { return UIColor.black }
     var activityStreamCellDescription: UIColor { return UIColor.Photon.DarkGrey05 }
 
     var readingListActive: UIColor { return defaultTextAndTint }
@@ -215,10 +216,12 @@ class HomePanelColor {
     var learnAndActDescriptionColor: UIColor { UIColor(rgb: 0x242629) }
     var learnAndActLinkColor: UIColor { karmaTintColor }
     var learnAndActBackground: UIColor { UIColor.white }
+    var learnAndActTitleDescription: UIColor { UIColor.Photon.Grey80 }
 
     var searchHeaderColor: UIColor { UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1) }
     var searchTitleHeaderColor: UIColor { UIColor.Photon.DarkGrey70 }
 
+    var menuColor: UIColor { defaultTextAndTint }
 }
 
 class SnackBarColor {

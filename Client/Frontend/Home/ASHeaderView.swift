@@ -26,8 +26,8 @@ class ASHeaderView: UICollectionReusableView {
 
     lazy var titleLabel: UILabel = .build { label in
         label.text = self.title
-        label.textColor = UIColor.theme.homePanel.activityStreamHeaderText
-        label.font = UIFont.customFont(ofSize: 22, weight: .bold)
+        label.textColor = UIColor.theme.homePanel.activityStreamCellTitle
+        label.font = UIFont.customFont(ofSize: 20, weight: .semibold)
         
         label.adjustsFontForContentSizeCategory = true
         label.numberOfLines = 0
@@ -75,9 +75,9 @@ class ASHeaderView: UICollectionReusableView {
             moreButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -6),
             moreButton.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -titleInsets),
 
-            titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 5),
+            titleLabel.topAnchor.constraint(equalTo: topAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: moreButton.leadingAnchor, constant: -FirefoxHomeHeaderViewUX.titleTopInset),
-            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5),
+            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -titleInsets),
         ])
         moreButton.setContentCompressionResistancePriority(.required, for: .horizontal)
         titleLabel.setContentHuggingPriority(.fittingSizeLevel, for: .horizontal)

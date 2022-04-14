@@ -84,7 +84,7 @@ class TabLocationView: UIView {
     }
 
     lazy var placeholder: NSAttributedString = {
-        return NSAttributedString(string: .TabLocationURLPlaceholder, attributes: [NSAttributedString.Key.foregroundColor: UIColor.Photon.Grey50, .font: UIFont.customFont(ofSize: 18, weight: .medium)])
+        return NSAttributedString(string: .TabLocationURLPlaceholder, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.textField.textAndTint, .font: UIFont.customFont(ofSize: 18, weight: .semibold)])
     }()
 
     lazy var urlTextField: UITextField = {
@@ -99,7 +99,7 @@ class TabLocationView: UIView {
         urlTextField.font = UIConstants.DefaultChromeFont
         urlTextField.backgroundColor = .clear
         urlTextField.accessibilityLabel = "Address Bar"
-        urlTextField.font = UIFont.customFont(ofSize: 18)
+        urlTextField.font = UIFont.customFont(ofSize: 18, weight: .semibold)
         urlTextField.adjustsFontForContentSizeCategory = true
         urlTextField.textAlignment = .center
         // Remove the default drop interaction from the URL text field so that our
@@ -114,6 +114,7 @@ class TabLocationView: UIView {
     lazy var searchImage: UIImageView = {
         let image = UIImageView(image: UIImage(named: "quickSearch"))
         image.isHidden = true
+        image.tintColor = UIColor.theme.textField.textAndTint
         return image
     }()
 

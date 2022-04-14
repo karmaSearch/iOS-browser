@@ -47,7 +47,7 @@ class TopSiteItemCell: UICollectionViewCell, NotificationThemeable {
     lazy fileprivate var titleLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.textAlignment = .center
-        titleLabel.font = DynamicFontHelper.defaultHelper.DefaultSmallFontBold
+        titleLabel.font = DynamicFontHelper.defaultHelper.DefaultSmallFont
         titleLabel.preferredMaxLayoutWidth = TopSiteCellUX.BackgroundSize.width + TopSiteCellUX.ShadowRadius
         return titleLabel
     }()
@@ -102,7 +102,7 @@ class TopSiteItemCell: UICollectionViewCell, NotificationThemeable {
         }
 
         faviconBG.snp.makeConstraints { make in
-            make.top.centerX.equalTo(contentView)
+            make.top.equalTo(contentView).offset(8)
             make.size.equalTo(TopSiteCellUX.BackgroundSize)
         }
 
@@ -189,7 +189,7 @@ class EmptyTopsiteDecorationCell: UICollectionReusableView {
         super.init(frame: frame)
         addSubview(emptyBG)
         emptyBG.snp.makeConstraints { make in
-            make.top.centerX.equalToSuperview()
+            make.top.equalToSuperview().offset(8)
             make.size.equalTo(TopSiteCellUX.BackgroundSize)
         }
     }
@@ -203,9 +203,9 @@ private struct ASHorizontalScrollCellUX {
     static let TopSiteCellIdentifier = "TopSiteItemCell"
     static let TopSiteEmptyCellIdentifier = "TopSiteItemEmptyCell"
 
-    static let TopSiteItemSize = CGSize(width: 65, height: 100)
-    static let MinimumInsets: CGFloat = 4
-    static let VerticalInsets: CGFloat = 16
+    static let TopSiteItemSize = CGSize(width: 65, height: 170)
+    static let MinimumInsets: CGFloat = 7
+    static let VerticalInsets: CGFloat = 50
 }
 
 /*

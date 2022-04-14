@@ -1668,3 +1668,8 @@ extension String {
     // Home screen
     public static let RecentlyVisitedRemoveButtonTitle = MZLocalizedString("ActivityStream.RecentlyVisited.RemoveButton.Title", value: "Remove", comment: "When long pressing an item in the Recently Visited section, this is the title of the button that appears, letting the user know to remove that particular item from the menu.", lastUpdated: .v39)
 }
+
+extension String {
+    public static let LearnAndActSubTitle = MZLocalizedString("learnandact_subtitle", value: "Get the latest news and take action! ", comment: "In the settings menu, this is the title of the Firefox Homepage customization settings section", lastUpdated: .unknown)
+
+}

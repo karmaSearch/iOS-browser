@@ -169,11 +169,14 @@ class LearnAndActViewCell: UICollectionViewCell {
         
         contentView.layer.cornerRadius = 10
         contentView.layer.masksToBounds = true
-        
-        contentView.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1).cgColor
-        contentView.layer.shadowOpacity = 1
-        contentView.layer.shadowRadius = 12
-        contentView.layer.shadowOffset = CGSize(width: 0, height: 4)
+
+    }
+    
+    func addShadow() {
+        layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1).cgColor
+        layer.shadowOpacity = 1
+        layer.shadowRadius = 12
+        layer.shadowOffset = CGSize(width: 0, height: 4)
     }
     
     func updateViewConstraints() {

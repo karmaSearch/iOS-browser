@@ -14,6 +14,7 @@ class KarmaHomeViewCell: UICollectionViewCell {
     private lazy var menuButton: UIButton = .build { button in
         button.setImage(UIImage(named: "icon-burger"), for: .normal)
         button.addTarget(self, action: #selector(self.openMenu(_:)), for: .touchUpInside)
+        button.tintColor = LegacyThemeManager.instance.current.homePanel.menuColor
     }
     var viewModel: KarmaHomeViewModel = KarmaHomeViewModel()
     

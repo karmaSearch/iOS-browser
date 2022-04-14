@@ -20,20 +20,30 @@ class LearnAndActHeader: UICollectionReusableView {
 
     lazy var label: UILabel = .build { label in
         label.text = "Learn & Act"
-        label.font = UIFont(name: "Amithen", size: 38)!
+        label.font = UIFont(name: "Amithen", size: 45)!
         label.textColor = UIColor.Photon.Green60
+    }
+    
+    lazy var subTitleLabel: UILabel = .build { label in
+        label.text = .LearnAndActSubTitle
+        label.font = UIFont.customFont(ofSize: 15, weight: .regular)
+        label.textColor = LegacyThemeManager.instance.current.homePanel.learnAndActTitleDescription
     }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        addSubview(label)
+        addSubviews(label, subTitleLabel)
 
         label.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(FirefoxHomeHeaderViewUX.insets)
             make.top.equalToSuperview()
-            make.height.equalTo(45)
-            make.width.equalTo(185)
-            make.bottom.equalToSuperview().offset(-FirefoxHomeHeaderViewUX.insets)
+        }
+        
+        subTitleLabel.snp.makeConstraints { make in
+            make.leading.equalToSuperview().offset(FirefoxHomeHeaderViewUX.insets)
+            make.top.equalTo(label.snp.bottom).offset(-10)
+
+            make.bottom.equalToSuperview().offset(-10)
         }
     }
 

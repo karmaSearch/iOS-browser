@@ -36,7 +36,7 @@ fileprivate class DarkURLBarColor: URLBarColor {
         return (labelMode: color.withAlphaComponent(0.25), textFieldMode: color)
 
     }
-    override var shadow: UIColor { return UIColor.clear }
+    override var background: UIColor { return UIColor.Photon.DarkGrey90 }
 
     override func activeBorder(_ isPrivate: Bool) -> UIColor {
         return !isPrivate ? UIColor.Photon.Blue20A40 : UIColor.Defaults.MobilePrivatePurple
@@ -88,7 +88,7 @@ fileprivate class DarkTopTabsColor: TopTabsColor {
 }
 
 fileprivate class DarkTextFieldColor: TextFieldColor {
-    override var background: UIColor { return UIColor.Photon.DarkGrey40 }
+    override var background: UIColor { return UIColor.Photon.DarkGrey30 }
     override var backgroundInOverlay: UIColor { return self.background }
 
     override var textAndTint: UIColor { return defaultTextAndTint }
@@ -145,9 +145,11 @@ fileprivate class DarkHomePanelColor: HomePanelColor {
     override var learnAndActDurationColor: UIColor { UIColor.Photon.LightGrey90 }
     override var learnAndActDescriptionColor: UIColor { UIColor.Photon.Grey11 }
     override var learnAndActBackground: UIColor { UIColor.Photon.DarkGrey70 }
+    override var learnAndActTitleDescription: UIColor { UIColor.Photon.Grey11 }
 
     override var searchHeaderColor: UIColor { UIColor(red: 0.141, green: 0.149, blue: 0.161, alpha: 1) }
     override var searchTitleHeaderColor: UIColor { UIColor.Photon.White100 }
+    override var menuColor: UIColor { UIColor.Photon.White100 }
 }
 
 fileprivate class DarkSnackBarColor: SnackBarColor {
