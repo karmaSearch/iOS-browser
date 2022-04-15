@@ -42,9 +42,9 @@ extension PhotonActionSheetProtocol {
         }
         let partners = PhotonActionSheetItem(title: .MenuKarmaPartners, iconString: "menu-panel-karma-partners") { _, _ in
             if Locale.current.identifier == "fr" {
-                bvc?.showUrl(url: URL(string: "https://mykarma.notion.site/Our-Partners-a8cd5944d0e64872ac7f44c8b014a059")!)
+                bvc?.showUrl(url: URL(string: karmaBaseUrl + "partners")!)
             } else {
-                bvc?.showUrl(url: URL(string: "https://mykarma.notion.site/Nos-partenaires-8c26dd107da341ccb0f0c7216cc2a6d5")!)
+                bvc?.showUrl(url: URL(string: karmaBaseUrl + "our-partners")!)
             }
         }
         let privacy = PhotonActionSheetItem(title: .MenuKarmaPrivacy, iconString: "menu-panel-karma-privacy") { _, _ in
