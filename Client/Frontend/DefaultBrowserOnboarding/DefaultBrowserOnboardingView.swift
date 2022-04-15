@@ -78,7 +78,7 @@ class DefaultBrowserOnboardingView: UIView {
         addSubviews(titleLabel,subTitleLabelPage, screenshotImage, chooseButton, notNowButton)
         
         titleLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(20)
+            make.top.equalTo(safeArea.top).offset(20)
             make.centerX.equalToSuperview()
             make.leading.equalToSuperview().offset(30)
         }
@@ -87,13 +87,12 @@ class DefaultBrowserOnboardingView: UIView {
             make.top.equalTo(titleLabel.snp.bottom).offset(10)
             make.centerX.equalToSuperview()
             make.leading.equalTo(titleLabel.snp.leading)
-            make.bottom.equalTo(screenshotImage.snp.top).offset(-20)
         }
         
         screenshotImage.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.leading.equalToSuperview().offset(30)
-            make.centerY.equalToSuperview()
+            make.leading.greaterThanOrEqualToSuperview().offset(30)
+            make.top.greaterThanOrEqualTo(subTitleLabelPage.snp.bottom).offset(20)
         }
         
         screenshotImage.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
@@ -102,7 +101,7 @@ class DefaultBrowserOnboardingView: UIView {
             make.centerX.equalToSuperview()
             make.leading.equalToSuperview().offset(60)
             make.top.equalTo(screenshotImage.snp.bottom).offset(40)
-            make.bottom.equalTo(chooseButton.snp.bottom).offset(-10)
+            make.bottom.equalTo(notNowButton.snp.top).offset(-10)
             make.height.equalTo(36)
         }
         

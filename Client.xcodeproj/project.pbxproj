@@ -386,6 +386,7 @@
 		A32CC8792746AF4A0039113B /* SearchHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32CC8782746AF490039113B /* SearchHeader.swift */; };
 		A32E45262770D9E200CCF07F /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E45252770D9E100CCF07F /* NotificationScheduler.swift */; };
 		A3752C78273E704A008835B1 /* DefaultBrowserOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3752C77273E704A008835B1 /* DefaultBrowserOnboardingView.swift */; };
+		A3852E482808867800F8FDE6 /* IntroTutoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3852E472808867800F8FDE6 /* IntroTutoView.swift */; };
 		A38C49E2273EAE130074BAFD /* Karma.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A38C49E1273EAE130074BAFD /* Karma.xcconfig */; };
 		A38C49E4273EAEDF0074BAFD /* Karma_Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A38C49E3273EAEDF0074BAFD /* Karma_Debug.xcconfig */; };
 		A3A2F582274E4C89005706C0 /* KarmaMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3A2F584274E4C89005706C0 /* KarmaMenu.strings */; };
@@ -2666,6 +2667,7 @@
 		A32CC8782746AF490039113B /* SearchHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeader.swift; sourceTree = "<group>"; };
 		A32E45252770D9E100CCF07F /* NotificationScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
 		A3752C77273E704A008835B1 /* DefaultBrowserOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBrowserOnboardingView.swift; sourceTree = "<group>"; };
+		A3852E472808867800F8FDE6 /* IntroTutoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroTutoView.swift; sourceTree = "<group>"; };
 		A38C49E1273EAE130074BAFD /* Karma.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Karma.xcconfig; path = Configuration/Karma.xcconfig; sourceTree = "<group>"; };
 		A38C49E3273EAEDF0074BAFD /* Karma_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Karma_Debug.xcconfig; path = Configuration/Karma_Debug.xcconfig; sourceTree = "<group>"; };
 		A38C49E5273EAF690074BAFD /* KarmaApplication.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = KarmaApplication.entitlements; sourceTree = "<group>"; };
@@ -5600,6 +5602,7 @@
 				E49943F61AE69EDD00BF9DE4 /* Intro.xcassets */,
 				435D7CC4246209AA0043ACB9 /* IntroViewController.swift */,
 				4334145624C6378B001541F3 /* IntroScreenWelcomeView.swift */,
+				A3852E472808867800F8FDE6 /* IntroTutoView.swift */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -7868,6 +7871,7 @@
 				CEFA977E1FAA6B490016F365 /* SyncContentSettingsViewController.swift in Sources */,
 				2386E4E624F8358E0072EF17 /* DefaultBrowserCard.swift in Sources */,
 				C8954A542729AD9D001C7283 /* CustomTheme.swift in Sources */,
+				A3852E482808867800F8FDE6 /* IntroTutoView.swift in Sources */,
 				E60D03181D511398002FE3F6 /* SyncStatusResolver.swift in Sources */,
 				435D660723D7962C0046EFA2 /* UpdateCoverSheetTableViewCell.swift in Sources */,
 				C4E3983D1D21F1E7004E89BA /* TopTabsViews.swift in Sources */,

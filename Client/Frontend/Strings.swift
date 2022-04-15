@@ -1026,6 +1026,8 @@ extension String {
     public static let IntroNextButtonTitle = MZLocalizedString("Intro.Slides.Button.Next", tableName: "Intro", value: "Next", comment: "Next button on the first intro screen.", lastUpdated: .unknown)
     public static let IntroSignInButtonTitle = MZLocalizedString("Intro.Slides.Button.SignIn", tableName: "Intro", value: "Sign In", comment: "Sign in to Firefox account button on second intro screen.", lastUpdated: .unknown)
     public static let IntroSignUpButtonTitle = MZLocalizedString("Intro.Slides.Button.SignUp", tableName: "Intro", value: "Sign Up", comment: "Sign up to Firefox account button on second intro screen.", lastUpdated: .unknown)
+    public static let IntroTutorialTitle = MZLocalizedString("Intro.Slides.Tutorial.title", tableName: "Intro", value: "Browse as usual", comment: "", lastUpdated: .unknown)
+    public static let IntroButtonTitleLast = MZLocalizedString("Intro.Slides.Button.Title.Last", tableName: "Intro", value: "Search in KARMA", comment: "", lastUpdated: .unknown)
 }
 
 // MARK: - Keyboard short cuts

@@ -117,14 +117,11 @@ class IntroScreenWelcomeView: UIView, CardTheme {
             self.logoHolder.addArrangedSubview(imgView)
         }
         
-        self.logoHolder.isHidden = false
         self.isLast = isLast
         self.closeButton.isHidden = isLast
     }
     // MARK: View setup
     private func initialViewSetup() {
-        // Background colour setup
-        backgroundColor = .white
         // View setup
         main2panel.axis = .vertical
         main2panel.distribution = .fill

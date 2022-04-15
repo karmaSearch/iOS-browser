@@ -28,7 +28,15 @@ class IntroViewController: UIViewController, OnViewDismissable {
 
     private lazy var welcomeCard1: IntroScreenWelcomeView = {
         let welcomeCardView = IntroScreenWelcomeView()
-        welcomeCardView.setData(title: .IntroSlidesTitle1, description: .IntroSlidesSubTitle1, icon: "welcome-icon-1" , logos: ["aspas-logo", "l214-logo", "naat-logo"], background: "welcome-background-1")
+        let logos: [String] = {
+            if Locale.current.identifier.contains("fr") {
+                return ["aspas-logo", "l214-logo", "naat-logo"]
+            } else {
+                return []
+            }
+        }()
+
+        welcomeCardView.setData(title: .IntroSlidesTitle1, description: .IntroSlidesSubTitle1, icon: "welcome-icon-1" , logos: logos, background: "welcome-background-1")
         welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
         welcomeCardView.clipsToBounds = true
         return welcomeCardView
@@ -44,16 +52,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
     
     private lazy var welcomeCard3: IntroScreenWelcomeView = {
         let welcomeCardView = IntroScreenWelcomeView()
-        let isLast = !Locale.current.identifier.contains("fr")
-        welcomeCardView.setData(title: .IntroSlidesTitle3, description: .IntroSlidesSubTitle3, icon: "welcome-icon-3", background: "welcome-background-3", isLast: isLast)
-        welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
-        welcomeCardView.clipsToBounds = true
-        return welcomeCardView
-    }()
-    
-    private lazy var welcomeCard4: IntroScreenWelcomeView = {
-        let welcomeCardView = IntroScreenWelcomeView()
-        welcomeCardView.setData(title: .IntroSlidesTitle4, description: .IntroSlidesSubTitle4, icon: "welcome-icon-4", background: "welcome-background-4", isLast: true)
+        welcomeCardView.setData(title: .IntroSlidesTitle3, description: .IntroSlidesSubTitle3, icon: "welcome-icon-3", background: "welcome-background-3", isLast: false)
         welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
         welcomeCardView.clipsToBounds = true
         return welcomeCardView
@@ -64,6 +63,30 @@ class IntroViewController: UIViewController, OnViewDismissable {
         view.translatesAutoresizingMaskIntoConstraints = true
         view.layoutSubviews()
         return view
+    }()
+    
+    private lazy var tutorialCard1: IntroTutoView = {
+        let tutoCardView = IntroTutoView()
+        tutoCardView.setData(screenshotImage: "screenshot_tuto_1", isLast: false)
+        tutoCardView.translatesAutoresizingMaskIntoConstraints = false
+        tutoCardView.clipsToBounds = true
+        return tutoCardView
+    }()
+    
+    private lazy var tutorialCard2: IntroTutoView = {
+        let tutoCardView = IntroTutoView()
+        tutoCardView.setData(screenshotImage: "screenshot_tuto_2", isLast: false)
+        tutoCardView.translatesAutoresizingMaskIntoConstraints = false
+        tutoCardView.clipsToBounds = true
+        return tutoCardView
+    }()
+    
+    private lazy var tutorialCard3: IntroTutoView = {
+        let tutoCardView = IntroTutoView()
+        tutoCardView.setData(screenshotImage: "screenshot_tuto_3", isLast: true)
+        tutoCardView.translatesAutoresizingMaskIntoConstraints = false
+        tutoCardView.clipsToBounds = true
+        return tutoCardView
     }()
     
     private lazy var pageControl: UIPageControl = {
@@ -117,12 +140,8 @@ class IntroViewController: UIViewController, OnViewDismissable {
         
         // Constraints
         setUpScrollView()
-        if Locale.current.identifier.contains("fr") {
-            setUpCarouselFR()
-        }
-        else{
-            setUpCarousel()
-        }
+
+        setUpCarousel()
         
     }
     
@@ -134,6 +153,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
             scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
     }
+
     
     private func setUpCarousel() {
         
@@ -141,29 +161,10 @@ class IntroViewController: UIViewController, OnViewDismissable {
             carouselStackView.addArrangedSubview(view)
             setupWelcomeCard(welcomeCard: view)
         }
-
-        view.addSubviews(pageControl)
-
-        NSLayoutConstraint.activate([
-            carouselStackView.topAnchor.constraint(equalTo: scrollView.topAnchor),
-            carouselStackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-            carouselStackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-            carouselStackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-            carouselStackView.heightAnchor.constraint(equalTo: scrollView.heightAnchor),
-            pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            pageControl.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30)
-        ])
         
-        pageControl.numberOfPages = carouselStackView.arrangedSubviews.count
-        pageControl.currentPage = 0
-        
-    }
-    
-    private func setUpCarouselFR() {
-        
-        [welcomeCard1, welcomeCard2, welcomeCard3, welcomeCard4].forEach { view in
+        [tutorialCard1, tutorialCard2, tutorialCard3].forEach { view in
             carouselStackView.addArrangedSubview(view)
-            setupWelcomeCard(welcomeCard: view)
+            setupIntroCard(introCard: view)
         }
 
         view.addSubviews(pageControl)
@@ -213,6 +214,36 @@ class IntroViewController: UIViewController, OnViewDismissable {
         }
     }
     
+    private func setupIntroCard(introCard: IntroTutoView) {
+        NSLayoutConstraint.activate([
+            introCard.heightAnchor.constraint(equalTo: carouselStackView.heightAnchor),
+            introCard.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
+        ])
+
+        // Close button action
+        introCard.closeClosure = { [weak self] in
+            guard let self = self else { return }
+            let currentPage = self.pageControl.currentPage
+            TelemetryWrapper.recordEvent(category: .action, method: .press, object: .dismissedOnboarding, extras: ["slide-num": currentPage])
+            
+            if #available(iOS 14, *) {
+
+                self.scrollView.isHidden = true
+                self.pageControl.isHidden = true
+                self.defaultBrowserView.isHidden = false
+
+            } else {
+                self.didFinishClosure?(self, nil)
+            }
+        }
+        
+        introCard.nextClosure = { [weak self] in
+            guard let self = self else { return }
+            self.pageControl.currentPage += 1
+            self.pageChanged(self.pageControl, animated: false)
+        }
+    }
+    
     private func setUpDefaultBrowser() {
         view.addSubviews(defaultBrowserView)
         defaultBrowserView.snp.makeConstraints { make in
@@ -232,12 +263,12 @@ class IntroViewController: UIViewController, OnViewDismissable {
         }
     }
     
-    @objc func pageChanged(_ sender: UIPageControl) {
+    @objc func pageChanged(_ sender: UIPageControl, animated: Bool = true) {
         let page: Int = sender.currentPage
         var frame: CGRect = self.scrollView.frame
         frame.origin.x = frame.size.width * CGFloat(page)
         frame.origin.y = 0
-        self.scrollView.scrollRectToVisible(frame, animated: true)
+        self.scrollView.scrollRectToVisible(frame, animated: animated)
     }
     
     @objc private func goToSettings() {
@@ -268,7 +299,7 @@ extension IntroViewController {
 // MARK: UIScrollViewDelegate
 extension IntroViewController: UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        let page : Int = Int(round(scrollView.contentOffset.x / 320))
+        let page : Int = Int(round(scrollView.contentOffset.x / scrollView.frame.width))
         pageControl.currentPage = page
     }
 }
