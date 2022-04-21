@@ -41,11 +41,7 @@ extension PhotonActionSheetProtocol {
             bvc?.showUrl(url: URL(string: karmaBaseUrl + "what")!)
         }
         let partners = PhotonActionSheetItem(title: .MenuKarmaPartners, iconString: "menu-panel-karma-partners") { _, _ in
-            if Locale.current.identifier == "fr" {
-                bvc?.showUrl(url: URL(string: karmaBaseUrl + "partners")!)
-            } else {
-                bvc?.showUrl(url: URL(string: karmaBaseUrl + "our-partners")!)
-            }
+            bvc?.showUrl(url: URL(string: karmaBaseUrl + "partners")!)
         }
         let privacy = PhotonActionSheetItem(title: .MenuKarmaPrivacy, iconString: "menu-panel-karma-privacy") { _, _ in
             bvc?.showUrl(url: URL(string: karmaBaseUrl + "legal")!)
