@@ -67,6 +67,4 @@
 /* The button that opens the sign in page for sync. See http://mzl.la/1T8gxwo */
 "Turn on Sync…" = "Turn on Sync…";
 
-/* Title for the first panel 'Tutorial' in the First Run tour. */
-"Intro.Slides.Tutorial.title" = "Browse as usual";
-"Intro.Slides.Button.Title.Last" = "Search in KARMA";
+

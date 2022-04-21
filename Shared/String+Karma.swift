@@ -21,6 +21,9 @@ extension String {
     public static let IntroSlidesSubTitle4 = NSLocalizedString("Intro.Slides.SubTitle.4", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
     public static let IntroButtonSkip = NSLocalizedString("Intro.Button.Skip", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
     
+    public static let IntroTutorialTitle = NSLocalizedString("Intro.Slides.Tutorial.title", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
+    public static let IntroButtonTitleLast = NSLocalizedString("Intro.Slides.Button.Title.Last", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
+    
     //MARK: Menu
     public static let MenuKarmaDefaultBrowser = NSLocalizedString("Menu.Karma.DefaultBrowser", tableName: "KarmaMenu", bundle: Bundle(for: BundleClass.self), comment: "")
     public static let MenuKarmaMission = NSLocalizedString("Menu.Karma.Mission", tableName: "KarmaMenu", bundle: Bundle(for: BundleClass.self), comment: "")

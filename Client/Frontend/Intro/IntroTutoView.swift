@@ -95,7 +95,7 @@ class IntroTutoView: UIView, CardTheme {
         
         screenshotImage.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.leading.greaterThanOrEqualToSuperview().offset(30)
+            make.leading.greaterThanOrEqualToSuperview().offset(10)
             make.top.equalTo(titleLabel.snp.bottom).offset(20)
         }
         

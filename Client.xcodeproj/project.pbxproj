@@ -2682,6 +2682,8 @@
 		A3B970AA27454B3500BAA1F4 /* ProximaNova-Extrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Extrabold.otf"; sourceTree = "<group>"; };
 		A3B970AB27454B3500BAA1F4 /* ProximaNova-Medium It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Medium It.otf"; sourceTree = "<group>"; };
 		A3B970AC27454B3500BAA1F4 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		A3E029C12811B11D002F3286 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/KarmaMenu.strings; sourceTree = "<group>"; };
+		A3E029C22811B11D002F3286 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/IntroKarma.strings; sourceTree = "<group>"; };
 		A3E54C1386C753F253BEEB71 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Search.strings; sourceTree = "<group>"; };
 		A3FB49E4AED8F44971799F71 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/FindInPage.strings; sourceTree = "<group>"; };
 		A3FB4ED398FB21FB64A28124 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/ClearHistoryConfirm.strings; sourceTree = "<group>"; };
@@ -9903,6 +9905,7 @@
 			children = (
 				A32CC86C2745623A0039113B /* en */,
 				A32CC86E274562410039113B /* fr */,
+				A3E029C22811B11D002F3286 /* es */,
 			);
 			name = IntroKarma.strings;
 			sourceTree = "<group>";
@@ -9912,6 +9915,7 @@
 			children = (
 				A3A2F583274E4C89005706C0 /* en */,
 				A3A2F585274E4C90005706C0 /* fr */,
+				A3E029C12811B11D002F3286 /* es */,
 			);
 			name = KarmaMenu.strings;
 			sourceTree = "<group>";

@@ -16,7 +16,7 @@ class DefaultBrowserOnboardingView: UIView {
         label.text = .DefaultBrowserMenuItem
         label.font = UIFont.customFontKG(ofSize: 25)
         label.textAlignment = .center
-        label.numberOfLines = 2
+        label.numberOfLines = 0
     }
     
     private lazy var subTitleLabelPage: UILabel = .build { label in
@@ -91,8 +91,8 @@ class DefaultBrowserOnboardingView: UIView {
         
         screenshotImage.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.leading.greaterThanOrEqualToSuperview().offset(30)
-            make.top.greaterThanOrEqualTo(subTitleLabelPage.snp.bottom).offset(20)
+            make.leading.greaterThanOrEqualToSuperview().offset(20)
+            make.top.equalTo(subTitleLabelPage.snp.bottom).offset(20)
         }
         
         screenshotImage.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
@@ -100,7 +100,7 @@ class DefaultBrowserOnboardingView: UIView {
         chooseButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.leading.equalToSuperview().offset(60)
-            make.top.equalTo(screenshotImage.snp.bottom).offset(40)
+            make.top.greaterThanOrEqualTo(screenshotImage.snp.bottom).offset(40)
             make.bottom.equalTo(notNowButton.snp.top).offset(-10)
             make.height.equalTo(36)
         }
