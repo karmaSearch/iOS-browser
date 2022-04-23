@@ -52,16 +52,6 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         return label
     }()
     
-    private var closeButton: UIButton = {
-        let closeButton = UIButton()
-        closeButton.tintColor = UIColor.Photon.Grey11
-        closeButton.setTitle(.IntroButtonSkip, for: .normal)
-        closeButton.titleLabel?.font = UIFont.customFont(ofSize: 18, weight: .medium)
-        closeButton.setImage(UIImage(named: "skip-right-arrow"), for: .normal)
-        closeButton.semanticContentAttribute = .forceRightToLeft
-        return closeButton
-    }()
-    
     private lazy var nextButton: UIButton = {
         let button = UIButton()
         button.setTitle(.IntroNextButtonTitle, for: .normal)
@@ -74,9 +64,7 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         button.accessibilityIdentifier = "nextOnboardingButton"
         return button
     }()
-    
-    var isLast: Bool = false
-    
+        
     // Helper views
     let main2panel = UIStackView()
     let imageHolder = UIView()
@@ -85,7 +73,6 @@ class IntroScreenWelcomeView: UIView, CardTheme {
     let logoHolder = UIStackView()
     
     // Closure delegates
-    var closeClosure: (() -> Void)?
     var nextClosure: (() -> Void)?
     
     
@@ -101,7 +88,7 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         TelemetryWrapper.recordEvent(category: .action, method: .view, object: .welcomeScreenView)
     }
     
-    func setData(title: String, description: String, icon: String, logos: [String] = [], background: String, isLast: Bool = false) {
+    func setData(title: String, description: String, icon: String, logos: [String] = [], background: String) {
         self.titleLabel.text = title
         self.subTitleLabelPage1.text = description
         self.animalsBackgroundImage.image = UIImage(named: background)
@@ -117,8 +104,6 @@ class IntroScreenWelcomeView: UIView, CardTheme {
             self.logoHolder.addArrangedSubview(imgView)
         }
         
-        self.isLast = isLast
-        self.closeButton.isHidden = isLast
     }
     // MARK: View setup
     private func initialViewSetup() {
@@ -177,7 +162,7 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         nextButton.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(60)
             make.top.equalTo(contentHolder.snp.bottom).offset(20)
-            make.bottom.equalToSuperview().inset(100)
+            make.bottom.equalTo(safeArea.bottom).inset(60)
             make.height.equalTo(40)
         }
         
@@ -186,13 +171,6 @@ class IntroScreenWelcomeView: UIView, CardTheme {
             make.top.greaterThanOrEqualToSuperview().inset(5)
             make.top.equalToSuperview().inset(20).priority(.medium)
             make.height.equalTo(iconImage.snp.width).multipliedBy(0.44)
-        }
-        
-        addSubview(closeButton)
-        closeButton.addTarget(self, action: #selector(handleCloseButtonTapped), for: .touchUpInside)
-        closeButton.snp.makeConstraints { make in
-            make.bottom.equalTo(safeArea.bottom).inset(15)
-            make.right.equalToSuperview().inset(15)
         }
         
     }
@@ -208,21 +186,11 @@ class IntroScreenWelcomeView: UIView, CardTheme {
     }
     
     // MARK: Button Actions
-    @objc func handleCloseButtonTapped() {
-        TelemetryWrapper.recordEvent(category: .action, method: .press, object: .welcomeScreenClose)
-        closeClosure?()
-    }
     
     @objc private func nextAction() {
         TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .welcomeScreenNext)
-        if isLast {
-            closeClosure?()
-        } else {
-            nextClosure?()
-        }
-    }
-    
-    @objc private func dismissAnimated() {
-        closeClosure?()
+        
+        nextClosure?()
+        
     }
 }

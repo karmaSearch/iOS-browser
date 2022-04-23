@@ -31,16 +31,6 @@ class IntroTutoView: UIView, CardTheme {
         return label
     }()
     
-    private var closeButton: UIButton = {
-        let closeButton = UIButton()
-        closeButton.tintColor = UIColor.Photon.Grey11
-        closeButton.setTitle(.IntroButtonSkip, for: .normal)
-        closeButton.titleLabel?.font = UIFont.customFont(ofSize: 18, weight: .medium)
-        closeButton.setImage(UIImage(named: "skip-right-arrow"), for: .normal)
-        closeButton.semanticContentAttribute = .forceRightToLeft
-        return closeButton
-    }()
-    
     private lazy var nextButton: UIButton = {
         let button = UIButton()
         button.setTitle(.IntroNextButtonTitle, for: .normal)
@@ -53,14 +43,11 @@ class IntroTutoView: UIView, CardTheme {
         button.accessibilityIdentifier = "nextOnboardingButton"
         return button
     }()
-    
-    var isLast: Bool = false
-    
+        
     // Helper views
     let bottomHolder = UIView()
     
     // Closure delegates
-    var closeClosure: (() -> Void)?
     var nextClosure: (() -> Void)?
     
     
@@ -76,16 +63,14 @@ class IntroTutoView: UIView, CardTheme {
         TelemetryWrapper.recordEvent(category: .action, method: .view, object: .welcomeScreenView)
     }
     
-    func setData(screenshotImage: String, isLast: Bool = false) {
+    func setData(screenshotImage: String, titleButton: String) {
         self.screenshotImage.image = UIImage(named: screenshotImage)
-        let title: String = isLast ? .IntroButtonTitleLast : .IntroNextButtonTitle
-        self.nextButton.setTitle(title, for: .normal)
-        self.isLast = isLast
+        self.nextButton.setTitle(titleButton, for: .normal)
     }
     // MARK: View setup
     private func initialViewSetup() {
         
-        addSubviews(titleLabel, screenshotImage, nextButton, closeButton)
+        addSubviews(titleLabel, screenshotImage, nextButton)
         
         titleLabel.snp.makeConstraints { make in
             make.top.equalTo(safeArea.top).offset(20)
@@ -104,34 +89,16 @@ class IntroTutoView: UIView, CardTheme {
         nextButton.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(60)
             make.top.equalTo(screenshotImage.snp.bottom).offset(40)
-            make.bottom.equalToSuperview().inset(100)
+            make.bottom.equalTo(safeArea.bottom).inset(60)
             make.height.equalTo(40)
         }
         nextButton.addTarget(self, action: #selector(nextAction), for: .touchUpInside)
-        closeButton.addTarget(self, action: #selector(handleCloseButtonTapped), for: .touchUpInside)
-        closeButton.snp.makeConstraints { make in
-            make.bottom.equalTo(safeArea.bottom).inset(15)
-            make.right.equalToSuperview().inset(15)
-        }
         
-    }
-    
-    // MARK: Button Actions
-    @objc func handleCloseButtonTapped() {
-        TelemetryWrapper.recordEvent(category: .action, method: .press, object: .welcomeScreenClose)
-        closeClosure?()
     }
     
     @objc private func nextAction() {
         TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .welcomeScreenNext)
-        if isLast {
-            closeClosure?()
-        } else {
-            nextClosure?()
-        }
-    }
-    
-    @objc private func dismissAnimated() {
-        closeClosure?()
+        nextClosure?()
+        
     }
 }

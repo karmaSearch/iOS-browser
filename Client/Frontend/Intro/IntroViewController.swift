@@ -25,6 +25,16 @@ class IntroViewController: UIViewController, OnViewDismissable {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
+    
+    private lazy var closeButton: UIButton = {
+        let closeButton = UIButton()
+        closeButton.tintColor = UIColor.Photon.Grey11
+        closeButton.setTitle(.IntroButtonSkip, for: .normal)
+        closeButton.titleLabel?.font = UIFont.customFont(ofSize: 18, weight: .medium)
+        closeButton.setImage(UIImage(named: "skip-right-arrow"), for: .normal)
+        closeButton.semanticContentAttribute = .forceRightToLeft
+        return closeButton
+    }()
 
     private lazy var welcomeCard1: IntroScreenWelcomeView = {
         let welcomeCardView = IntroScreenWelcomeView()
@@ -52,7 +62,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
     
     private lazy var welcomeCard3: IntroScreenWelcomeView = {
         let welcomeCardView = IntroScreenWelcomeView()
-        welcomeCardView.setData(title: .IntroSlidesTitle3, description: .IntroSlidesSubTitle3, icon: "welcome-icon-3", background: "welcome-background-3", isLast: false)
+        welcomeCardView.setData(title: .IntroSlidesTitle3, description: .IntroSlidesSubTitle3, icon: "welcome-icon-3", background: "welcome-background-3")
         welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
         welcomeCardView.clipsToBounds = true
         return welcomeCardView
@@ -67,7 +77,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
     
     private lazy var tutorialCard1: IntroTutoView = {
         let tutoCardView = IntroTutoView()
-        tutoCardView.setData(screenshotImage: "screenshot_tuto_1", isLast: false)
+        tutoCardView.setData(screenshotImage: "screenshot_tuto_1", titleButton: .IntroNextButtonTitle)
         tutoCardView.translatesAutoresizingMaskIntoConstraints = false
         tutoCardView.clipsToBounds = true
         return tutoCardView
@@ -75,7 +85,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
     
     private lazy var tutorialCard2: IntroTutoView = {
         let tutoCardView = IntroTutoView()
-        tutoCardView.setData(screenshotImage: "screenshot_tuto_2", isLast: false)
+        tutoCardView.setData(screenshotImage: "screenshot_tuto_2", titleButton: .IntroNextButtonTitle)
         tutoCardView.translatesAutoresizingMaskIntoConstraints = false
         tutoCardView.clipsToBounds = true
         return tutoCardView
@@ -83,7 +93,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
     
     private lazy var tutorialCard3: IntroTutoView = {
         let tutoCardView = IntroTutoView()
-        tutoCardView.setData(screenshotImage: "screenshot_tuto_3", isLast: true)
+        tutoCardView.setData(screenshotImage: "screenshot_tuto_3", titleButton: .IntroButtonTitleLast)
         tutoCardView.translatesAutoresizingMaskIntoConstraints = false
         tutoCardView.clipsToBounds = true
         return tutoCardView
@@ -137,6 +147,12 @@ class IntroViewController: UIViewController, OnViewDismissable {
         view.addSubviews(scrollView)
         scrollView.addSubview(carouselStackView)
         
+        view.addSubview(closeButton)
+        closeButton.addTarget(self, action: #selector(handleCloseButtonTapped), for: .touchUpInside)
+        closeButton.snp.makeConstraints { make in
+            make.bottom.equalTo(view.safeArea.bottom).inset(15)
+            make.right.equalToSuperview().inset(15)
+        }
         
         // Constraints
         setUpScrollView()
@@ -189,28 +205,11 @@ class IntroViewController: UIViewController, OnViewDismissable {
             welcomeCard1.heightAnchor.constraint(equalTo: carouselStackView.heightAnchor),
             welcomeCard1.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
         ])
-
-        // Close button action
-        welcomeCard.closeClosure = { [weak self] in
-            guard let self = self else { return }
-            let currentPage = self.pageControl.currentPage
-            TelemetryWrapper.recordEvent(category: .action, method: .press, object: .dismissedOnboarding, extras: ["slide-num": currentPage])
-            
-            if #available(iOS 14, *) {
-
-                self.scrollView.isHidden = true
-                self.pageControl.isHidden = true
-                self.defaultBrowserView.isHidden = false
-
-            } else {
-                self.didFinishClosure?(self, nil)
-            }
-        }
         
         welcomeCard.nextClosure = { [weak self] in
             guard let self = self else { return }
-            self.pageControl.currentPage += 1
-            self.pageChanged(self.pageControl)
+            
+            self.goToNextPage()
         }
     }
     
@@ -219,28 +218,10 @@ class IntroViewController: UIViewController, OnViewDismissable {
             introCard.heightAnchor.constraint(equalTo: carouselStackView.heightAnchor),
             introCard.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
         ])
-
-        // Close button action
-        introCard.closeClosure = { [weak self] in
-            guard let self = self else { return }
-            let currentPage = self.pageControl.currentPage
-            TelemetryWrapper.recordEvent(category: .action, method: .press, object: .dismissedOnboarding, extras: ["slide-num": currentPage])
-            
-            if #available(iOS 14, *) {
-
-                self.scrollView.isHidden = true
-                self.pageControl.isHidden = true
-                self.defaultBrowserView.isHidden = false
-
-            } else {
-                self.didFinishClosure?(self, nil)
-            }
-        }
         
         introCard.nextClosure = { [weak self] in
             guard let self = self else { return }
-            self.pageControl.currentPage += 1
-            self.pageChanged(self.pageControl, animated: false)
+            self.goToNextPage()
         }
     }
     
@@ -263,11 +244,22 @@ class IntroViewController: UIViewController, OnViewDismissable {
         }
     }
     
+    private func goToNextPage() {
+        if self.pageControl.currentPage == self.pageControl.numberOfPages-1 {
+            self.handleCloseButtonTapped()
+        } else {
+            let isAnimated = self.pageControl.currentPage < 3
+            self.pageControl.currentPage += 1
+            self.pageChanged(self.pageControl, animated: isAnimated)
+        }
+    }
+    
     @objc func pageChanged(_ sender: UIPageControl, animated: Bool = true) {
         let page: Int = sender.currentPage
         var frame: CGRect = self.scrollView.frame
         frame.origin.x = frame.size.width * CGFloat(page)
         frame.origin.y = 0
+        self.closeButton.isHidden = (page == sender.numberOfPages-1)
         self.scrollView.scrollRectToVisible(frame, animated: animated)
     }
     
@@ -275,6 +267,20 @@ class IntroViewController: UIViewController, OnViewDismissable {
         viewModel.goToSettings?()
         UserDefaults.standard.set(true, forKey: "DidDismissDefaultBrowserCard") // Don't show default browser card if this button is clicked
         TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .goToSettingsDefaultBrowserOnboarding)
+    }
+    
+    @objc func handleCloseButtonTapped() {
+        let currentPage = self.pageControl.currentPage
+        TelemetryWrapper.recordEvent(category: .action, method: .press, object: .dismissedOnboarding, extras: ["slide-num": currentPage])
+        
+        if #available(iOS 14, *) {
+            self.scrollView.isHidden = true
+            self.pageControl.isHidden = true
+            self.defaultBrowserView.isHidden = false
+            self.closeButton.isHidden = true
+        } else {
+            self.didFinishClosure?(self, nil)
+        }
     }
     
 }
