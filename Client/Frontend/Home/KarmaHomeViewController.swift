@@ -801,7 +801,8 @@ extension KarmaHomeViewController: UICollectionViewDelegateFlowLayout {
         case .pocket:
             return pocketStories.isEmpty ? .zero : defaultInsets
         case .topSites:
-            return isTopSitesSectionEnabled ? defaultInsets : .zero
+            let topSitesInset =  UIEdgeInsets(top: 0, left: insets, bottom: FirefoxHomeUX.spacingBetweenSections+70, right: insets)
+            return isTopSitesSectionEnabled ? topSitesInset : .zero
         case .libraryShortcuts:
             return isYourLibrarySectionEnabled ? defaultInsets : .zero
         case .jumpBackIn:
@@ -1154,7 +1155,7 @@ extension KarmaHomeViewController: DataObserverDelegate {
         }
 
         if let site = site {
-            showSiteWithURLHandler(URL(string: site.url)!)
+            showSiteWithURLHandler(URIFixup.getURL(site.url)!)
         }
     }
 }

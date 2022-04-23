@@ -103,6 +103,7 @@ class TopSiteItemCell: UICollectionViewCell, NotificationThemeable {
 
         faviconBG.snp.makeConstraints { make in
             make.top.equalTo(contentView).offset(8)
+            make.centerX.equalTo(contentView)
             make.size.equalTo(TopSiteCellUX.BackgroundSize)
         }
 
@@ -203,7 +204,7 @@ private struct ASHorizontalScrollCellUX {
     static let TopSiteCellIdentifier = "TopSiteItemCell"
     static let TopSiteEmptyCellIdentifier = "TopSiteItemEmptyCell"
 
-    static let TopSiteItemSize = CGSize(width: 65, height: 170)
+    static let TopSiteItemSize = CGSize(width: 65, height: 100)
     static let MinimumInsets: CGFloat = 7
     static let VerticalInsets: CGFloat = 50
 }
