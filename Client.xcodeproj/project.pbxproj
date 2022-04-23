@@ -396,6 +396,7 @@
 		A3B970AF27454B3A00BAA1F4 /* ProximaNova-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3B970A827454B3500BAA1F4 /* ProximaNova-Medium.otf */; };
 		A3B970B027454B3A00BAA1F4 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3B970AC27454B3500BAA1F4 /* ProximaNova-Bold.otf */; };
 		A3B970B127454B3A00BAA1F4 /* ProximaNova-Extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3B970AA27454B3500BAA1F4 /* ProximaNova-Extrabold.otf */; };
+		A3E029CA2811C4C0002F3286 /* KarmaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E029C92811C4C0002F3286 /* KarmaConfig.swift */; };
 		A3FD6FA0274E9D1900632B2D /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD6F9F274E9D1900632B2D /* FeedbackViewController.swift */; };
 		A3FD6FA2274E9FE700632B2D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FD6FA1274E9FE700632B2D /* StoreKit.framework */; };
 		A3FD6FA4274EA7C000632B2D /* UIDevice+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD6FA3274EA7C000632B2D /* UIDevice+extension.swift */; };
@@ -2684,6 +2685,7 @@
 		A3B970AC27454B3500BAA1F4 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
 		A3E029C12811B11D002F3286 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/KarmaMenu.strings; sourceTree = "<group>"; };
 		A3E029C22811B11D002F3286 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/IntroKarma.strings; sourceTree = "<group>"; };
+		A3E029C92811C4C0002F3286 /* KarmaConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaConfig.swift; sourceTree = "<group>"; };
 		A3E54C1386C753F253BEEB71 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Search.strings; sourceTree = "<group>"; };
 		A3FB49E4AED8F44971799F71 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/FindInPage.strings; sourceTree = "<group>"; };
 		A3FB4ED398FB21FB64A28124 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/ClearHistoryConfirm.strings; sourceTree = "<group>"; };
@@ -6198,6 +6200,7 @@
 				EB9A179720E69A7E00B12184 /* Theme */,
 				D0FCF7EE1FE44E15004A7995 /* UserContent */,
 				D38A1BEB1A9FA2CA00F6A386 /* Widgets */,
+				A3E029C92811C4C0002F3286 /* KarmaConfig.swift */,
 			);
 			path = Frontend;
 			sourceTree = "<group>";
@@ -7808,6 +7811,7 @@
 				A32316552742CDDD00464742 /* KarmaHomeViewModel.swift in Sources */,
 				39EF4363260CEE5E0011E22E /* ExperimentConstants.swift in Sources */,
 				745DAB3F1CDAB09E00D44181 /* HistoryBackButton.swift in Sources */,
+				A3E029CA2811C4C0002F3286 /* KarmaConfig.swift in Sources */,
 				EB9A179D20E69A7F00B12184 /* LegacyTheme.swift in Sources */,
 				CA03B26A247F1D9E00382B62 /* BreachAlertsClient.swift in Sources */,
 				43DDB96C240995A70058A068 /* ETPModel.swift in Sources */,

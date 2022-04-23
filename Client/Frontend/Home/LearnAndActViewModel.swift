@@ -38,7 +38,7 @@ class LearnAndActViewModel {
     static let cache = NSCache<NSString, LearnAndAct>()
     
     func getDatas(completion: @escaping (LearnAndAct) -> Void) {
-        let fileName = Locale.current.identifier.contains("fr") ? "learn-and-act-fr" : "learn-and-act-en"
+        let fileName = "learn-and-act-" + KarmaLanguage.getSupportedLanguageIdentifier()
         let repoString = "https://storage.googleapis.com/learn-and-act-and-images.appspot.com/L%26A/json/"
         guard let url = URL(string: repoString + fileName + ".json") else { return }
         

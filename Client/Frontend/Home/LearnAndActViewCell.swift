@@ -83,10 +83,8 @@ class LearnAndActViewCell: UICollectionViewCell {
             let WebPCoder = SDImageWebPCoder.shared
             SDImageCodersManager.shared.addCoder(WebPCoder)
             SDWebImageDownloader.shared.setValue("image/webp,image/apng,image/*,*/*;q=0.8", forHTTPHeaderField:"Accept")
-            
-            let url = learnAndAct.mobileImage.replaceFirstOccurrence(of: " ", with: "%20")
-            imageView.sd_setImage(with: URL(string: url), placeholderImage: UIImage(named: learnAndAct.defaultImageName), completed: nil)
-            
+            let url = URL(string: learnAndAct.mobileImage.fixfileNameOnUrl())
+            imageView.sd_setImage(with: url, placeholderImage: UIImage(named: learnAndAct.defaultImageName), completed: nil)
             
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.maximumLineHeight = 20
@@ -262,4 +260,20 @@ class LearnAndActViewCell: UICollectionViewCell {
         return size
     }
     
+}
+
+extension String {
+    // remove space or accent on file name
+    func fixfileNameOnUrl() -> String {
+        var urlSplitBySlash = self.split(separator: "/")
+        if let fileName = urlSplitBySlash.last?.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) {
+            urlSplitBySlash.removeLast()
+            
+            var urlSplitBySlashMapped = urlSplitBySlash.map { String($0)}
+            urlSplitBySlashMapped.append(fileName)
+            return String(urlSplitBySlashMapped.joined(separator: "/"))
+            
+        }
+        return self
+    }
 }
