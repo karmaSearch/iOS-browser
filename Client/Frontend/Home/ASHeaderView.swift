@@ -77,7 +77,7 @@ class ASHeaderView: UICollectionReusableView {
 
             titleLabel.topAnchor.constraint(equalTo: topAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: moreButton.leadingAnchor, constant: -FirefoxHomeHeaderViewUX.titleTopInset),
-            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -titleInsets),
+            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -FirefoxHomeUX.minimumInsets),
         ])
         moreButton.setContentCompressionResistancePriority(.required, for: .horizontal)
         titleLabel.setContentHuggingPriority(.fittingSizeLevel, for: .horizontal)

@@ -11,6 +11,11 @@ import UIKit
 
 class KarmaHomeViewCell: UICollectionViewCell {
 
+    private lazy var logoImageView: UIImageView = .build { imageView in
+        imageView.contentMode = .scaleAspectFill
+        imageView.layer.masksToBounds = true
+        imageView.image = UIImage(named: "karma_logo")
+    }
     private lazy var menuButton: UIButton = .build { button in
         button.setImage(UIImage(named: "icon-burger"), for: .normal)
         button.addTarget(self, action: #selector(self.openMenu(_:)), for: .touchUpInside)
@@ -25,11 +30,15 @@ class KarmaHomeViewCell: UICollectionViewCell {
         isAccessibilityElement = true
         accessibilityIdentifier = "Home"
         
-        contentView.addSubview(menuButton)
+        contentView.addSubviews(menuButton, logoImageView)
         
         menuButton.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(24)
-            make.trailing.equalToSuperview().inset(24)
+            make.top.bottom.trailing.equalToSuperview()
+        }
+        
+        logoImageView.snp.makeConstraints { make in
+            make.top.greaterThanOrEqualToSuperview()
+            make.centerX.centerY.equalToSuperview()
         }
     }
     

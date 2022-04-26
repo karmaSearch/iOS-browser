@@ -28,7 +28,7 @@
 "DefaultBrowserOnboarding.Screenshot" = "App du navigateur par défaut";
 
 /* Menu option for setting KARMA as default browser. */
-"Settings.DefaultBrowserMenuItem" = "Faîtes de KARMA votre navigateur par défaut";
+"Settings.DefaultBrowserMenuItem" = "Faites de KARMA votre navigateur par défaut";
 
 "DefaultBrowser.Push.Title" = "Protégez le Vivant avec KARMA 🦉";
 "DefaultBrowser.Push.Message" = "Cliquez ici pour faire de KARMA votre navigateur par défaut";
