@@ -32,11 +32,7 @@ class EmptyPrivateTabsView: UIView {
         label.preferredMaxLayoutWidth = EmptyPrivateTabsViewUX.MaxDescriptionWidth
         label.text = .TabTrayPrivateBrowsingDescription
     }
-    let learnMoreButton: UIButton = .build { button in
-        button.setTitle( .PrivateBrowsingLearnMore, for: [])
-        button.setTitleColor(UIColor.theme.tabTray.privateModeLearnMore, for: [])
-        button.titleLabel?.font = EmptyPrivateTabsViewUX.LearnMoreFont
-    }
+    
     let iconImageView: UIImageView = .build { imageView in
         imageView.image = UIImage.templateImageNamed("largePrivateMask")
         imageView.tintColor = UIColor.Photon.Grey60
@@ -47,7 +43,7 @@ class EmptyPrivateTabsView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        addSubviews(iconImageView, titleLabel, descriptionLabel, learnMoreButton)
+        addSubviews(iconImageView, titleLabel, descriptionLabel)
         
         NSLayoutConstraint.activate([
             iconImageView.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -70),
@@ -60,9 +56,6 @@ class EmptyPrivateTabsView: UIView {
             
             descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: CGFloat(EmptyPrivateTabsViewUX.TextMargin)),
             descriptionLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
-            
-            learnMoreButton.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: CGFloat(EmptyPrivateTabsViewUX.LearnMoreMargin)),
-            learnMoreButton.centerXAnchor.constraint(equalTo: centerXAnchor),
         ])
 
         applyTheme()

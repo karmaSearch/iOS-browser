@@ -1398,7 +1398,7 @@ extension String {
     public static let TabTrayCloseAllTabsPromptCancel = MZLocalizedString("Cancel", comment: "Label for Cancel button", lastUpdated: .unknown)
     public static let TabTrayPrivateLearnMore = MZLocalizedString("Learn More", tableName: "PrivateBrowsing", comment: "Text button displayed when there are no tabs open while in private mode", lastUpdated: .unknown)
     public static let TabTrayPrivateBrowsingTitle = MZLocalizedString("Private Browsing", tableName: "PrivateBrowsing", comment: "Title displayed for when there are no open tabs while in private mode", lastUpdated: .unknown)
-    public static let TabTrayPrivateBrowsingDescription =  MZLocalizedString("Firefox won’t remember any of your history or cookies, but new bookmarks will be saved.", tableName: "PrivateBrowsing", comment: "Description text displayed when there are no open tabs while in private mode", lastUpdated: .unknown)
+    public static let TabTrayPrivateBrowsingDescription =  MZLocalizedString("KARMA won’t remember any of your history or cookies, but new bookmarks will be saved.", tableName: "PrivateBrowsing", comment: "Description text displayed when there are no open tabs while in private mode", lastUpdated: .unknown)
     public static let TabTrayAddTabAccessibilityLabel = MZLocalizedString("Add Tab", comment: "Accessibility label for the Add Tab button in the Tab Tray.", lastUpdated: .unknown)
     public static let TabTrayCloseAccessibilityCustomAction = MZLocalizedString("Close", comment: "Accessibility label for action denoting closing a tab in tab list (tray)", lastUpdated: .unknown)
     public static let TabTraySwipeToCloseAccessibilityHint = MZLocalizedString("Swipe right or left with three fingers to close the tab.", comment: "Accessibility hint for tab tray's displayed tab.", lastUpdated: .unknown)
@@ -1450,7 +1450,7 @@ extension String {
     public static let RemoteTabEmptyStateInstructionsSyncTabsPasswordsString = MZLocalizedString("Sync your tabs, passwords and more.", comment: "Text displayed when the Sync home panel is empty, describing the features provided by Sync to invite the user to log in.", lastUpdated: .unknown)
     public static let RemoteTabEmptyStateInstructionsGetTabsBookmarksPasswordsString = MZLocalizedString("Get your open tabs, bookmarks, and passwords from your other devices.", comment: "A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing.", lastUpdated: .unknown)
 
-    public static let RemoteTabErrorNoTabs = MZLocalizedString("You don’t have any tabs open in Firefox on your other devices.", comment: "Error message in the remote tabs panel", lastUpdated: .unknown)
+    public static let RemoteTabErrorNoTabs = MZLocalizedString("You don’t have any tabs open in KARMA on your other devices.", comment: "Error message in the remote tabs panel", lastUpdated: .unknown)
     public static let RemoteTabErrorFailedToSync = MZLocalizedString("There was a problem accessing tabs from your other devices. Try again in a few moments.", comment: "Error message in the remote tabs panel", lastUpdated: .unknown)
     public static let RemoteTabLastSync = MZLocalizedString("Last synced: %@", comment: "Remote tabs last synced time. Argument is the relative date string.", lastUpdated: .unknown)
     public static let RemoteTabComputerAccessibilityLabel = MZLocalizedString("computer", comment: "Accessibility label for Desktop Computer (PC) image in remote tabs list", lastUpdated: .unknown)
@@ -1509,7 +1509,7 @@ extension String {
 extension String {
     public static let PrivateBrowsingLearnMore = MZLocalizedString("Learn More", tableName: "PrivateBrowsing", comment: "Text button displayed when there are no tabs open while in private mode", lastUpdated: .unknown)
     public static let PrivateBrowsingTitle = MZLocalizedString("Private Browsing", tableName: "PrivateBrowsing", comment: "Title displayed for when there are no open tabs while in private mode", lastUpdated: .unknown)
-    public static let PrivateBrowsingDescription = MZLocalizedString("Firefox won’t remember any of your history or cookies, but new bookmarks will be saved.", tableName: "PrivateBrowsing", comment: "Description text displayed when there are no open tabs while in private mode", lastUpdated: .unknown)
+    public static let PrivateBrowsingDescription = MZLocalizedString("KARMA won’t remember any of your history or cookies, but new bookmarks will be saved.", tableName: "PrivateBrowsing", comment: "Description text displayed when there are no open tabs while in private mode", lastUpdated: .unknown)
 }
 
 // MARK: - Advanced Account Setting
