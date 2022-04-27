@@ -91,7 +91,7 @@ fileprivate class DarkTextFieldColor: TextFieldColor {
     override var background: UIColor { return UIColor.Photon.DarkGrey30 }
     override var backgroundInOverlay: UIColor { return self.background }
 
-    override var textAndTint: UIColor { return defaultTextAndTint }
+    override var textAndTint: UIColor { return UIColor.Photon.Grey11 }
     override var separator: UIColor { return super.separator.withAlphaComponent(0.3) }
 }
 

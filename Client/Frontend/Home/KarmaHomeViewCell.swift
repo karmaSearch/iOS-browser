@@ -40,6 +40,8 @@ class KarmaHomeViewCell: UICollectionViewCell {
             make.top.greaterThanOrEqualToSuperview()
             make.centerX.centerY.equalToSuperview()
         }
+        
+        applyTheme()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -48,6 +50,11 @@ class KarmaHomeViewCell: UICollectionViewCell {
     
     @objc private func openMenu(_ sender: UIButton) {
         openMenu?(self.menuButton)
+    }
+    
+    func applyTheme() {
+        logoImageView.image = UIImage(named: "karma_logo")
+        menuButton.tintColor = LegacyThemeManager.instance.current.homePanel.menuColor
     }
     
 }

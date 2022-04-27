@@ -357,7 +357,6 @@ class URLBarView: UIView {
         }
 
         locationTextField.applyTheme()
-        locationTextField.backgroundColor = UIColor.theme.textField.backgroundInOverlay
     }
 
     override func becomeFirstResponder() -> Bool {

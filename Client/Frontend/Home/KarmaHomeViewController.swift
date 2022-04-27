@@ -956,6 +956,7 @@ extension KarmaHomeViewController {
         customizeHomeCell.openMenu = { [weak self] button in
             self?.homePanelDelegate?.homePanelDidRequestToOpenSettings(caller: button)
         }
+        customizeHomeCell.applyTheme()
         return customizeHomeCell
     }
     
