@@ -16,8 +16,9 @@ class KarmaLanguage {
     static func getSupportedLanguageIdentifier() -> String {
         if (karmaSupportedLanguagesIdentifier.contains {
             Locale.current.identifier.contains($0)
-        }) {
-            return Locale.current.collatorIdentifier ?? karmaDefaultLanguageIdentifier
+        }), let firstPartIdentifier = Locale.current.identifier.split(separator: "_").first {
+            
+            return String(firstPartIdentifier)
         }
         
         return karmaDefaultLanguageIdentifier
