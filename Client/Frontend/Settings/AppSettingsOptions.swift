@@ -458,16 +458,18 @@ class ContactUsSettings: Setting {
 }
 
 class RateAppSetting: Setting {
-    init(delegate: SettingsDelegate?) {
-        super.init(title: NSAttributedString(string: .MenuKarmaRateAppStore, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText]),
-                   footerTitle: nil, cellHeight: nil, delegate: delegate, enabled: nil)
+    override var title: NSAttributedString? {
+        return NSAttributedString(string: .MenuKarmaRateAppStore, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText])
     }
 
     override func onClick(_ navigationController: UINavigationController?) {
         
-        guard let writeReviewURL = URL(string: "https://apps.apple.com/app/id1596470046?action=write-review")
-                else { fatalError("Expected a valid URL") }
-        self.delegate?.settingsOpenURLInNewTab(writeReviewURL)
+        navigationController?.dismiss(animated: true) {
+            if let url = URL(string: "https://apps.apple.com/app/id1596470046?action=write-review") {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        }
+
         
     }
 }
