@@ -7,7 +7,6 @@ import Shared
 import SwiftKeychainWrapper
 import LocalAuthentication
 import MozillaAppServices
-import StoreKit
 import MessageUI
 
 // This file contains all of the settings available in the main settings screen of the app.
@@ -459,12 +458,17 @@ class ContactUsSettings: Setting {
 }
 
 class RateAppSetting: Setting {
-    override var title: NSAttributedString? {
-        return NSAttributedString(string: .MenuKarmaRateAppStore, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText])
+    init(delegate: SettingsDelegate?) {
+        super.init(title: NSAttributedString(string: .MenuKarmaRateAppStore, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText]),
+                   footerTitle: nil, cellHeight: nil, delegate: delegate, enabled: nil)
     }
 
     override func onClick(_ navigationController: UINavigationController?) {
-        SKStoreReviewController.requestReview()
+        
+        guard let writeReviewURL = URL(string: "https://apps.apple.com/app/id1596470046?action=write-review")
+                else { fatalError("Expected a valid URL") }
+        self.delegate?.settingsOpenURLInNewTab(writeReviewURL)
+        
     }
 }
 

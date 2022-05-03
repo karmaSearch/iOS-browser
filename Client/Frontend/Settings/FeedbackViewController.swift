@@ -28,7 +28,7 @@ class FeedbackViewController: SettingsTableViewController, FeatureFlagsProtocol 
         return [
             SettingSection(children: [
                 SendFeedbackSetting(delegate: self.settingsDelegate),
-                RateAppSetting(),
+                RateAppSetting(delegate: self.settingsDelegate),
                 ContactUsSettings()
             ])]
     }
