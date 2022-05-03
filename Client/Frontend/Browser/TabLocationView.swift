@@ -83,9 +83,9 @@ class TabLocationView: UIView {
         }
     }
 
-    lazy var placeholder: NSAttributedString = {
+    var placeholder: NSAttributedString {
         return NSAttributedString(string: .TabLocationURLPlaceholder, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.textField.textAndTint, .font: UIFont.customFont(ofSize: 18, weight: .semibold)])
-    }()
+    }
 
     lazy var urlTextField: UITextField = {
         let urlTextField = DisplayTextField()
@@ -112,9 +112,8 @@ class TabLocationView: UIView {
     }()
     
     lazy var searchImage: UIImageView = {
-        let image = UIImageView(image: UIImage(named: "quickSearch"))
+        let image = UIImageView(image: UIImage.templateImageNamed("quickSearch"))
         image.isHidden = true
-        image.tintColor = UIColor.theme.textField.textAndTint
         return image
     }()
 
@@ -373,6 +372,7 @@ extension TabLocationView: AccessibilityActionsSource {
 
 extension TabLocationView: NotificationThemeable {
     func applyTheme() {
+        urlTextField.attributedPlaceholder = self.placeholder
         urlTextField.textColor = UIColor.theme.textField.textAndTint
         readerModeButton.selectedTintColor = UIColor.theme.urlbar.readerModeButtonSelected
         readerModeButton.unselectedTintColor = UIColor.theme.urlbar.readerModeButtonUnselected
@@ -383,6 +383,8 @@ extension TabLocationView: NotificationThemeable {
         separatorLineForPageOptions.backgroundColor = UIColor.Photon.Grey40
 
         trackingProtectionButton.tintColor = pageOptionsButton.tintColor
+
+        searchImage.tintColor = UIColor.theme.textField.textAndTint
 
         let color = LegacyThemeManager.instance.currentName == .dark ? UIColor(white: 0.3, alpha: 0.6): UIColor.theme.textField.background
         menuBadge.badge.tintBackground(color: color)
