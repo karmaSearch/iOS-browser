@@ -307,5 +307,7 @@ extension IntroViewController: UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let page : Int = Int(round(scrollView.contentOffset.x / scrollView.frame.width))
         pageControl.currentPage = page
+        self.closeButton.isHidden = (page == pageControl.numberOfPages-1)
+
     }
 }

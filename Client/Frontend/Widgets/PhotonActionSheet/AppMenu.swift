@@ -47,7 +47,11 @@ extension PhotonActionSheetProtocol {
             bvc?.showUrl(url: URL(string: karmaBaseUrl + "legal")!)
         }
         let legal = PhotonActionSheetItem(title: .MenuKarmaTermsOfService, iconString: "menu-panel-karma-legal") { _, _ in
-            bvc?.showUrl(url: URL(string: karmaBaseUrl + "legal#imprint")!)
+            if Locale.current.identifier.contains("fr") {
+                bvc?.showUrl(url: URL(string: "https://mykarma.notion.site/Conditions-d-utilisation-c5f461f440b3475cbac000dc10d8527e")!)
+            } else {
+                bvc?.showUrl(url: URL(string: karmaBaseUrl + "https://mykarma.notion.site/Terms-of-service-e73514e7789b4f98b8883f88dbd11b32")!)
+            }
         }
         
         return [mission, how, partners, privacy, legal]
