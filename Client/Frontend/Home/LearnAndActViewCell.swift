@@ -158,7 +158,7 @@ class LearnAndActViewCell: UICollectionViewCell {
         }
         
         textStackView.snp.makeConstraints { make in
-            make.top.equalTo(typeView.snp.bottom)
+            make.top.equalTo(typeView.snp.bottom).offset(4)
             make.bottom.equalToSuperview().offset(-padding2)
             make.leading.equalToSuperview().offset(padding2)
             make.centerX.equalToSuperview()

@@ -108,6 +108,8 @@ class URLBarView: UIView {
         locationContainer.backgroundColor = .clear
         return locationContainer
     }()
+    
+    let line = UIView()
 
     fileprivate lazy var progressBar: GradientProgressBar = {
         let progressBar = GradientProgressBar()
@@ -185,7 +187,7 @@ class URLBarView: UIView {
     fileprivate func commonInit() {
         locationContainer.addSubview(locationView)
         
-        [scrollToTopButton, tabsButton, progressBar, cancelButton,
+        [scrollToTopButton, line, tabsButton, progressBar, cancelButton,
          homeButton, bookmarksButton, appMenuButton, addNewTabButton, forwardButton, backButton, multiStateButton, locationContainer].forEach {
             addSubview($0)
         }
@@ -202,6 +204,11 @@ class URLBarView: UIView {
     }
 
     fileprivate func setupConstraints() {
+        
+        line.snp.makeConstraints { make in
+            make.bottom.leading.trailing.equalTo(self)
+            make.height.equalTo(1)
+        }
 
         scrollToTopButton.snp.makeConstraints { make in
             make.top.equalTo(self)
@@ -756,6 +763,7 @@ extension URLBarView: NotificationThemeable {
 
         cancelTextColor = UIColor.theme.urlbar.tint
         backgroundColor = UIColor.theme.urlbar.background
+        line.backgroundColor = UIColor.theme.browser.urlBarDivider
 
         locationBorderColor = UIColor.theme.urlbar.border
         locationView.backgroundColor = inOverlayMode ? UIColor.theme.textField.backgroundInOverlay : UIColor.theme.textField.background

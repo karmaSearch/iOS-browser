@@ -47,7 +47,7 @@ class TopSiteItemCell: UICollectionViewCell, NotificationThemeable {
     lazy fileprivate var titleLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.textAlignment = .center
-        titleLabel.font = DynamicFontHelper.defaultHelper.DefaultSmallFont
+        titleLabel.font = UIFont.customFont(ofSize: 13, weight: .regular)
         titleLabel.preferredMaxLayoutWidth = TopSiteCellUX.BackgroundSize.width + TopSiteCellUX.ShadowRadius
         return titleLabel
     }()

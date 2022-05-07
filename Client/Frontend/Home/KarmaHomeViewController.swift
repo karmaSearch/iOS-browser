@@ -801,7 +801,7 @@ extension KarmaHomeViewController: UICollectionViewDelegateFlowLayout {
         case .pocket:
             return pocketStories.isEmpty ? .zero : defaultInsets
         case .topSites:
-            let topSitesInset =  UIEdgeInsets(top: 0, left: insets, bottom: FirefoxHomeUX.spacingBetweenSections+70, right: insets)
+            let topSitesInset =  UIEdgeInsets(top: 0, left: insets, bottom: FirefoxHomeUX.spacingBetweenSections+55, right: insets)
             return isTopSitesSectionEnabled ? topSitesInset : .zero
         case .libraryShortcuts:
             return isYourLibrarySectionEnabled ? defaultInsets : .zero

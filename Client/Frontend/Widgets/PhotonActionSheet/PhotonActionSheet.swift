@@ -107,11 +107,11 @@ class PhotonActionSheet: UIViewController, UITableViewDelegate, UITableViewDataS
         }
 
         if style == .popover {
-            let width = UIDevice.current.userInterfaceIdiom == .pad ? 400 : 267
+            let width = UIDevice.current.userInterfaceIdiom == .pad ? 400 : 273
             tableView.snp.makeConstraints { make in
-                make.top.bottom.equalTo(self.view)
+                make.top.bottom.leading.equalTo(self.view)
                 make.width.equalTo(width)
-                make.leading.trailing.equalTo(self.view).priority(.medium)
+                make.centerX.equalTo(self.view.snp.centerX).priority(.medium)
             }
         } else {
             tableView.snp.makeConstraints { make in

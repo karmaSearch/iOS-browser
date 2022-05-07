@@ -1682,8 +1682,6 @@ extension BrowserViewController: HomePanelDelegate {
         
         actions.append(contentsOf: [section0, section1, section2])
 
-        presentSheetWith(actions: actions, on: self, from: button, customizeForMenu: true)
-        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
         if let screenshot = appDelegate.window?.screenshot() {
@@ -1700,6 +1698,9 @@ extension BrowserViewController: HomePanelDelegate {
             }
 
         }
+        presentSheetWith(actions: actions, on: self, from: button, customizeForMenu: true)
+        
+
     }
 }
 

@@ -45,6 +45,7 @@ fileprivate class DarkURLBarColor: URLBarColor {
 
 fileprivate class DarkBrowserColor: BrowserColor {
     override var background: UIColor { return defaultBackground }
+    override var urlBarDivider: UIColor { return UIColor.clear }
     override var tint: UIColor { return defaultTextAndTint }
 }
 
