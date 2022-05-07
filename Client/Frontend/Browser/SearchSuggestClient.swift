@@ -47,7 +47,7 @@ class SearchSuggestClient {
                 return
             }
 
-            let json = try? JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed) as? Dictionary<String, Any>
+            let json = try? JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed) as? [String]
 
             guard let json = json, !json.isEmpty else {
                 let error = NSError(domain: SearchSuggestClientErrorDomain, code: SearchSuggestClientErrorInvalidResponse, userInfo: nil)
@@ -55,19 +55,7 @@ class SearchSuggestClient {
                 return
             }
             
-           
-            
-            guard  let suggestions = json["suggestionGroups"] as? [[String: Any]],
-                   let first = suggestions.first,
-                   let searchSuggestions = first["searchSuggestions"] as? [[String: Any]] else {
-                       let error = NSError(domain: SearchSuggestClientErrorDomain, code: SearchSuggestClientErrorInvalidResponse, userInfo: nil)
-                       callback(nil, error)
-                       return
-                   }
-            
-            let suggest = searchSuggestions.map { dic in
-                dic["displayText"] as! String
-            }
+            let suggest = json
             callback(suggest, nil)
         }
         task?.resume()
