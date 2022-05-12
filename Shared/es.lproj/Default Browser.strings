@@ -1,17 +1,19 @@
 /* Button string to open settings that allows user to switch their default browser to KARMA. */
-"DefaultBrowserCard.Button" = "Ir a Ajustes";
+"DefaultBrowserCard.Button" = "Seleccionar KARMA";
 
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Aprender cómo";
 
 /* Description for small card shown that allows user to switch their default browser to KARMA. */
-"DefaultBrowserCard.Description" = "Configura enlaces de sitios web, correos electrónicos y mensajes para que se abran automáticamente en KARMA.";
+"DefaultBrowserCard.Description" = "Abre los enlaces Internet con la aplicación KARMA y contribuyes a proteger la biodiversidad y el bienestar animal.";
 
 /* Title for small card shown that allows user to switch their default browser to KARMA. */
-"DefaultBrowserCard.Title" = "Cambia tu navegador predeterminado";
+"DefaultBrowserCard.Title" = "Selecciona  KARMA como navegador predeterminado";
 
 /* Button string to open settings that allows user to switch their default browser to KARMA. */
-"DefaultBrowserOnboarding.Button" = "Ir a ajustes";
+"DefaultBrowserOnboarding.Button" = "Seleccionar KARMA";
+
+"DefaultBrowserOnboarding.Button.Skip" = "Ahora no";
 
 /* Description for default browser onboarding card. */
 "DefaultBrowserOnboarding.Description1" = "1. Ir a ajustes";
