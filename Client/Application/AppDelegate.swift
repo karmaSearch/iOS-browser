@@ -238,7 +238,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIViewControllerRestorati
             .font: UIFont.customFont(ofSize: 19, weight: .semibold)
         ]
 
-        
+        pushNotificationSetup()
 
         // user research variable setup for Chron tabs user research
         _ = ChronTabsUserResearch()
@@ -260,15 +260,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIViewControllerRestorati
                 InstallType.updateCurrentVersion(version: AppInfo.appVersion)
                 // Profile setup
                 profile.prefs.setString(AppInfo.appVersion, forKey: LatestAppVersionProfileKey)
-                pushNotificationSetup()
 
             } else if profile.prefs.boolForKey(PrefsKeys.KeySecondRun) == nil {
                 profile.prefs.setBool(true, forKey: PrefsKeys.KeySecondRun)
             }
         }
 
-        NotificationScheduler.saveAppLaunch()
-        NotificationScheduler.checkSchedule()
+        DefaultNotificationScheduler.saveAppLaunch()
+        DefaultNotificationScheduler.checkSchedule()
         
         BGTaskScheduler.shared.register(forTaskWithIdentifier: "org.mozilla.ios.sync.part1", using: DispatchQueue.global()) { task in
             guard self.profile?.hasSyncableAccount() ?? false else {

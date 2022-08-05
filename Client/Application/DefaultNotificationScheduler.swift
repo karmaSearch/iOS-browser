@@ -9,38 +9,46 @@
 import Foundation
 import NotificationCenter
 
-class NotificationScheduler {
-    enum NotificationType: String, CaseIterable {
-        case TwoDaysAfterInstall
-        case OneMonthAfterInstall
-        case SixMonthsAfterInstall
+enum DefaultBrowserNotification: String, CaseIterable {
+    case TwoDaysAfterInstall
+    case OneMonthAfterInstall
+    case SixMonthsAfterInstall
 
-        var numberOfDaysAfterInstall: Int {
-            switch self {
-            case .TwoDaysAfterInstall: return 2
-            case .OneMonthAfterInstall: return 30
-            case .SixMonthsAfterInstall: return 30*6
-            }
+    var numberOfDaysAfterInstall: Int {
+        switch self {
+        case .TwoDaysAfterInstall: return 2
+        case .OneMonthAfterInstall: return 30
+        case .SixMonthsAfterInstall: return 30*6
         }
-        
-        var timeInterval: TimeInterval {
-            return TimeInterval(60*60*24*numberOfDaysAfterInstall)
-        }
-        
-        var delayOfNonOpenedBeforePush: Int {
-            switch self {
-            case .TwoDaysAfterInstall: return 1
-            case .OneMonthAfterInstall: return 7
-            case .SixMonthsAfterInstall: return 7
-            }
-        }
-        
     }
     
+    var timeInterval: TimeInterval {
+        return TimeInterval(60*60*24*numberOfDaysAfterInstall)
+    }
+    
+    var delayOfNonOpenedBeforePush: Int {
+        switch self {
+        case .TwoDaysAfterInstall: return 1
+        case .OneMonthAfterInstall: return 7
+        case .SixMonthsAfterInstall: return 7
+        }
+    }
+    
+}
+
+class DefaultNotificationScheduler {
+
     static func firstTimeSchedule() {
-        NotificationType.allCases.forEach {
+        guard #available(iOS 14, *) else {
+            return
+        }
+        guard !UserDefaults.standard.bool(forKey: "DefaultNotificationScheduler") else {
+            return
+        }
+        DefaultBrowserNotification.allCases.forEach {
             self.addNotificationInterval(notificationType: $0)
         }
+        UserDefaults.standard.set(true, forKey: "DefaultNotificationScheduler")
     }
     
     static func checkSchedule() {
@@ -53,7 +61,7 @@ class NotificationScheduler {
             let previousRequest = requests.first,
            let lastOpen = (UserDefaults.standard.array(forKey: "DATES_OF_LAUNCH") as? [String])?.last,
            let lastOpenDate = formatter.date(from: lastOpen),
-           let notificationType = NotificationType(rawValue: previousRequest.identifier) {
+           let notificationType = DefaultBrowserNotification(rawValue: previousRequest.identifier) {
             
             
             let sceduleDate = dateOfFistInstall.addingTimeInterval(notificationType.timeInterval)
@@ -92,7 +100,7 @@ class NotificationScheduler {
     }
     
     
-    private static func addNotificationInterval(notificationType: NotificationType) {
+    private static func addNotificationInterval(notificationType: DefaultBrowserNotification) {
         let content = UNMutableNotificationContent()
         content.title = .DefaultBrowserPushTitle
         content.body = .DefaultBrowserPushMessage

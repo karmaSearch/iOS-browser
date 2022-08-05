@@ -384,7 +384,9 @@
 		A32CC8742745663F0039113B /* KGSecondChancesSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A32CC8732745663E0039113B /* KGSecondChancesSolid.ttf */; };
 		A32CC87727464C400039113B /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A32CC87627464C400039113B /* ProximaNova-Regular.otf */; };
 		A32CC8792746AF4A0039113B /* SearchHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32CC8782746AF490039113B /* SearchHeader.swift */; };
-		A32E45262770D9E200CCF07F /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E45252770D9E100CCF07F /* NotificationScheduler.swift */; };
+		A32E45262770D9E200CCF07F /* DefaultNotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E45252770D9E100CCF07F /* DefaultNotificationScheduler.swift */; };
+		A35CCB9E289C0D56000F640E /* DockNotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35CCB9D289C0D56000F640E /* DockNotificationScheduler.swift */; };
+		A35CCBA1289C1258000F640E /* Karma.strings in Resources */ = {isa = PBXBuildFile; fileRef = A35CCBA3289C1258000F640E /* Karma.strings */; };
 		A3752C78273E704A008835B1 /* DefaultBrowserOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3752C77273E704A008835B1 /* DefaultBrowserOnboardingView.swift */; };
 		A3852E482808867800F8FDE6 /* IntroTutoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3852E472808867800F8FDE6 /* IntroTutoView.swift */; };
 		A38C49E2273EAE130074BAFD /* Karma.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A38C49E1273EAE130074BAFD /* Karma.xcconfig */; };
@@ -2666,7 +2668,11 @@
 		A32CC8732745663E0039113B /* KGSecondChancesSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KGSecondChancesSolid.ttf; sourceTree = "<group>"; };
 		A32CC87627464C400039113B /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
 		A32CC8782746AF490039113B /* SearchHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeader.swift; sourceTree = "<group>"; };
-		A32E45252770D9E100CCF07F /* NotificationScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
+		A32E45252770D9E100CCF07F /* DefaultNotificationScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultNotificationScheduler.swift; sourceTree = "<group>"; };
+		A35CCB9D289C0D56000F640E /* DockNotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockNotificationScheduler.swift; sourceTree = "<group>"; };
+		A35CCBA2289C1258000F640E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Karma.strings; sourceTree = "<group>"; };
+		A35CCBA4289C127E000F640E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Karma.strings; sourceTree = "<group>"; };
+		A35CCBA5289C128E000F640E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Karma.strings; sourceTree = "<group>"; };
 		A3752C77273E704A008835B1 /* DefaultBrowserOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBrowserOnboardingView.swift; sourceTree = "<group>"; };
 		A3852E472808867800F8FDE6 /* IntroTutoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroTutoView.swift; sourceTree = "<group>"; };
 		A38C49E1273EAE130074BAFD /* Karma.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Karma.xcconfig; path = Configuration/Karma.xcconfig; sourceTree = "<group>"; };
@@ -5675,6 +5681,7 @@
 				A32CC86F274563590039113B /* String+Karma.swift */,
 				A3A2F584274E4C89005706C0 /* KarmaMenu.strings */,
 				A3FD6FA3274EA7C000632B2D /* UIDevice+extension.swift */,
+				A35CCBA3289C1258000F640E /* Karma.strings */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -5771,12 +5778,13 @@
 		E652F6F91BF66A79007FFDD6 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				A32E45252770D9E100CCF07F /* NotificationScheduler.swift */,
+				A32E45252770D9E100CCF07F /* DefaultNotificationScheduler.swift */,
 				F84B21E51A0910F600AAB793 /* AppDelegate.swift */,
 				39EF4377260CF5A30011E22E /* AppDelegate+Experiments.swift */,
 				EB9854FD2422686F0040F24B /* AppDelegate+PushNotifications.swift */,
 				EB98550024226EF60040F24B /* AppDelegate+SyncSentTabs.swift */,
 				D3BE7B451B054F8600641031 /* TestAppDelegate.swift */,
+				A35CCB9D289C0D56000F640E /* DockNotificationScheduler.swift */,
 			);
 			name = Delegates;
 			sourceTree = "<group>";
@@ -7028,6 +7036,7 @@
 				D58A202925C9D96400105D25 /* BookmarkPanel.strings in Resources */,
 				A32CC86B2745623A0039113B /* IntroKarma.strings in Resources */,
 				D59643EE25C9B8E000EAB8B9 /* Search.strings in Resources */,
+				A35CCBA1289C1258000F640E /* Karma.strings in Resources */,
 				D59643E825C9B8E000EAB8B9 /* Default Browser.strings in Resources */,
 				D59643EC25C9B8E000EAB8B9 /* Localizable.strings in Resources */,
 				D59643E525C9B8E000EAB8B9 /* AuthenticationManager.strings in Resources */,
@@ -7819,7 +7828,7 @@
 				435D660523D794B90046EFA2 /* UpdateViewModel.swift in Sources */,
 				D0152245229855A8009DE753 /* OneLineCellAndFooter.swift in Sources */,
 				F018F84C2719AE8300B9A52D /* ThemedDefaultNavigationController.swift in Sources */,
-				A32E45262770D9E200CCF07F /* NotificationScheduler.swift in Sources */,
+				A32E45262770D9E200CCF07F /* DefaultNotificationScheduler.swift in Sources */,
 				D3B6923F1B9F9A58004B87A4 /* FindInPageHelper.swift in Sources */,
 				F85C7F122721048E004BDBA4 /* Layout.swift in Sources */,
 				39EF4378260CF5A30011E22E /* AppDelegate+Experiments.swift in Sources */,
@@ -7969,6 +7978,7 @@
 				A3B970A7274530FA00BAA1F4 /* LearnAndActHeader.swift in Sources */,
 				D8EFFA0C1FF5B1FA001D3A09 /* NavigationRouter.swift in Sources */,
 				C849E46326B9C3AF00260F0B /* EnhancedTrackingProtectionVM.swift in Sources */,
+				A35CCB9E289C0D56000F640E /* DockNotificationScheduler.swift in Sources */,
 				D0E55C4F1FB4FD23006DC274 /* FormPostHelper.swift in Sources */,
 				E650754E1E37F6AE006961AC /* GeometryExtensions.swift in Sources */,
 				D3972BF41C22412B00035B87 /* TitleActivityItemProvider.swift in Sources */,
@@ -9912,6 +9922,16 @@
 				A3E029C22811B11D002F3286 /* es */,
 			);
 			name = IntroKarma.strings;
+			sourceTree = "<group>";
+		};
+		A35CCBA3289C1258000F640E /* Karma.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A35CCBA2289C1258000F640E /* fr */,
+				A35CCBA4289C127E000F640E /* es */,
+				A35CCBA5289C128E000F640E /* en */,
+			);
+			name = Karma.strings;
 			sourceTree = "<group>";
 		};
 		A3A2F584274E4C89005706C0 /* KarmaMenu.strings */ = {

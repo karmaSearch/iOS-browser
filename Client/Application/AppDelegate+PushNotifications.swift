@@ -35,9 +35,7 @@ enum SentTabAction: String {
 
 extension AppDelegate {
     func pushNotificationSetup() {
-        guard #available(iOS 14, *) else {
-            return 
-        }
+
        UNUserNotificationCenter.current().delegate = self
       // SentTabAction.registerActions()
 
@@ -47,7 +45,9 @@ extension AppDelegate {
                 return
             }
             if granted {
-                NotificationScheduler.firstTimeSchedule()
+                DefaultNotificationScheduler.firstTimeSchedule()
+                DockNotificationScheduler.firstTimeSchedule()
+
             }
         }
     }
@@ -72,13 +72,21 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     // Called when the user taps on a sent-tab notification from the background.
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         
-        let isLocalNotification = NotificationScheduler.NotificationType.allCases.contains { $0.rawValue ==  response.notification.request.identifier }
-
+        let isDefaultBrowserNotification = DefaultBrowserNotification.allCases.contains { $0.rawValue ==  response.notification.request.identifier }
+        let isDockNotification = DockNotification.allCases.contains { $0.rawValue ==  response.notification.request.identifier }
+        
         if (response.notification.request.content.userInfo["sentTabs"] as? [NSDictionary]) != nil {
             openURLsInNewTabs(response.notification)
             return
-        } else if isLocalNotification {
+        } else if isDefaultBrowserNotification {
             UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
+        } else if isDockNotification {
+            if Locale.current.identifier.contains("fr") {
+                receivedURLs.append(URL(string: "https://about.karmasearch.org/fr/dock_ios")!)
+            } else {
+                receivedURLs.append(URL(string: "https://about.karmasearch.org/dock_ios")!)
+            }
+            BrowserViewController.foregroundBVC().loadQueuedTabs(receivedURLs: receivedURLs)
         }
         
     }
