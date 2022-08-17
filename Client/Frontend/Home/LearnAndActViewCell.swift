@@ -32,7 +32,7 @@ class LearnAndActViewCell: UICollectionViewCell {
     private lazy var titleLabel: UILabel = .build { label in
         label.font = UIFont.customFont(ofSize: 18, weight: .semibold)
         label.textAlignment = .left
-        label.numberOfLines = 2
+        label.numberOfLines = 3
     }
     
     private lazy var typeLabel: UILabel = .build { label in
