@@ -11,10 +11,10 @@
 "Copy" = "কপি";
 
 /* Label describing when the current login was created with the timestamp as the parameter. */
-"Created %@" = "@% এ তৈরি করা";
+"Created %@" = "%@ এ তৈরি করা";
 
 /* Label for the button used to delete the current login. */
-"Delete" = "মুছুন";
+"Delete" = "মুছে ফেলুন";
 
 /* Label for the button used to deselect all logins. */
 "Deselect All" = "সবগুলো অনির্বাচিত করুন";

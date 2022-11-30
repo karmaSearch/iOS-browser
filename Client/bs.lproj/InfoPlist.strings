@@ -1,9 +1,13 @@
+/* (No Comment) */
+"New Private Tab" = "Novi privatni tab";
+
+/* (No Comment) */
+"New Tab" = "Novi tab";
+
 /* Privacy - Camera Usage Description */
 "NSCameraUsageDescription" = "Ovo vam omogućava slikanje i otpremanje fotografija.";
 
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+/* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "Web stranice koje posjećujete mogu zahtjevati vašu lokaciju.";
 
 /* Privacy - Microphone Usage Description */
@@ -13,11 +17,5 @@
 "NSPhotoLibraryAddUsageDescription" = "Ovo vam omogućava da sačuvate fotografije.";
 
 /* (No Comment) */
-"ShortcutItemTitleNewPrivateTab" = "Novi privatni tab";
-
-/* (No Comment) */
-"ShortcutItemTitleNewTab" = "Novi tab";
-
-/* (No Comment) */
-"ShortcutItemTitleQRCode" = "Skenirajte QR kod";
+"Scan QR Code" = "Skenirajte QR kod";
 

@@ -4,26 +4,8 @@
 /* Close Private Tabs */
 "TodayWidget.ClosePrivateTabsLabelV2" = "Luk private faneblade";
 
-/* Close Private Tabs */
-"TodayWidget.ClosePrivateTabsLabelV3" = "Luk private faneblade";
-
-/* Copied Link from clipboard displayed */
-"TodayWidget.CopiedLinkLabelFromPasteBoardV1" = "Kopieret link fra udklipsholder";
-
-/* Quick Actions drop down menu item for lear Private Tabs when widget enters edit mode and drop down menu expands */
-"TodayWidget.DropDownMenuItemClearPrivateTabs" = "Ryd private faneblade";
-
-/* Quick Actions drop down menu item for Go to Copied Link when widget enters edit mode and drop down menu expands */
-"TodayWidget.DropDownMenuItemGoToCopiedLink" = "Gå til kopieret link";
-
-/* Quick Actions drop down menu item for new private search when widget enters edit mode and drop down menu expands */
-"TodayWidget.DropDownMenuItemNewPrivateSearch" = "Ny privat søgning";
-
-/* Quick Actions drop down menu item for new search when widget enters edit mode and drop down menu expands */
-"TodayWidget.DropDownMenuItemNewSearch" = "Ny søgning";
-
-/* Description for medium size widget to add KARMA Shortcut to home screen */
-"TodayWidget.FirefoxShortcutGalleryDescription" = "Tilføj KARMA-genveje til din startskærm.";
+/* Description for medium size widget to add Firefox Shortcut to home screen */
+"TodayWidget.FirefoxShortcutGalleryDescription" = "Tilføj Firefox-genveje til din startskærm.";
 
 /* Go to link pasted on the clipboard */
 "TodayWidget.GoToCopiedLinkLabelV1" = "Gå til kopieret link";
@@ -31,20 +13,8 @@
 /* Go to copied link */
 "TodayWidget.GoToCopiedLinkLabelV2" = "Gå til kopieret link";
 
-/* Go To Copied Link text pasted on the clipboard but this string doesn't have new line character */
-"TodayWidget.GoToCopiedLinkLabelV3" = "Gå til kopieret link";
-
-/* Go to copied link */
-"TodayWidget.GoToCopiedLinkLabelV4" = "Gå til kopieret link";
-
 /* %d represents number and it becomes something like +5 more where 5 is the number of open tabs in tab tray beyond what is displayed in the widget */
 "TodayWidget.MoreTabsLabel" = "+%d til…";
-
-/* Open New Private Tab button label for medium size action */
-"TodayWidget.NewPrivateTabButtonLabelV2" = "Søg i privat faneblad";
-
-/* Open New Tab button label */
-"TodayWidget.NewSearchButtonLabelV1" = "Søg i KARMA";
 
 /* Open New Tab button label */
 "TodayWidget.NewTabButtonLabelV1" = "Ny søgning";
@@ -52,44 +22,20 @@
 /* Label that is shown when there are no tabs opened in tab tray i.e. Empty State */
 "TodayWidget.NoOpenTabsLabel" = "Ingen åbne faneblade.";
 
-/* Label that is shown when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.NoOpenTabsLabelV2" = "Ingen åbne faneblade";
-
-/* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenFirefoxLabel" = "Åbn KARMA";
-
-/* Description for KARMA Pocket stories widget in Gallery View where user can add it to home screen. Pocket is the name of another app. */
-"TodayWidget.PocketWidgetGalleryDescription" = "Opdag fascinerende og tankevækkende historier fra internettet, udvalgt af Pocket.";
-
-/* Sub label for medium size KARMA Pocket stories widge widget. Pocket is the name of another app. */
-"TodayWidget.PocketWidgetSubLabel" = "KARMA - Anbefalet af Pocket";
-
-/* Title for KARMA Pocket stories widget in Gallery View where user can add it to home screen. Pocket is the name of another app. */
-"TodayWidget.PocketWidgetTitle" = "Anbefalet af Pocket";
+/* Open Firefox when there are no tabs opened in tab tray i.e. Empty State */
+"TodayWidget.OpenFirefoxLabel" = "Åbn Firefox";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Privat søgning";
 
-/* Quick action description when widget enters edit mode */
-"TodayWidget.QuickActionDescription" = "Vælg en KARMA-genvej for at tilføje den til din startskærm.";
-
-/* Quick Actions left label text for dropdown menu when widget enters edit mode */
-"TodayWidget.QuickActionDropDownMenu" = "Hurtig handling";
-
 /* Description for small size widget to add it to home screen */
-"TodayWidget.QuickActionGalleryDescription" = "Tilføj en KARMA-genvej til din startskærm. Efter at du har tilføjet en ny widget, skal du trykke og holde for at redigere den og vælge en anden genvej.";
+"TodayWidget.QuickActionGalleryDescription" = "Tilføj en Firefox-genvej til din startskærm. Efter at du har tilføjet en ny widget, skal du trykke og holde for at redigere den og vælge en anden genvej.";
 
 /* Quick Actions title when widget enters edit mode */
 "TodayWidget.QuickActionsGalleryTitle" = "Hurtige handlinger";
 
-/* KARMA shortcuts title when widget enters edit mode. Do not translate the word KARMA. */
-"TodayWidget.QuickActionsGalleryTitleV2" = "KARMA-genveje";
-
-/* Sub label for medium size quick action widget */
-"TodayWidget.QuickActionsSubLabel" = "KARMA - Hurtige handlinger";
-
-/* Description for Quick View widget in Gallery View where user can add it to home screen */
-"TodayWidget.QuickViewGalleryDescription" = "Få adgang til dine åbne faneblade direkte på din startskærm.";
+/* Firefox shortcuts title when widget enters edit mode. Do not translate the word Firefox. */
+"TodayWidget.QuickActionsGalleryTitleV2" = "Firefox-genveje";
 
 /* Description for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryDescriptionV2" = "Tilføj genveje til dine åbne faneblade.";
@@ -97,39 +43,18 @@
 /* Title for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryTitle" = "Hurtigt overblik";
 
-/* Description for Quick View widget in Gallery View where user can add it to home screen */
-"TodayWidget.QuickViewLargeGalleryDescription" = "Tilføj genveje til dine åbne faneblade.";
-
-/* Sub label for Top Sites widget */
-"TodayWidget.QuickViewOpenTabsSubLabel" = "KARMA - Åbn faneblade";
-
-/* Title for small size widget which allows users to search in KARMA. Do not translate the word KARMA. */
-"TodayWidget.SearchInFirefoxTitle" = "Søg i KARMA";
-
-/* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInFirefoxV2" = "Søg i KARMA";
+/* Search in Firefox. Do not translate the word Firefox */
+"TodayWidget.SearchInFirefoxV2" = "Søg i Firefox";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Søg i private faneblade";
 
-/* Description for top sites widget to add KARMA top sites shotcuts to home screen */
+/* Description for top sites widget to add Firefox top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryDescription" = "Tilføj genveje til ofte og senest besøgte websteder.";
 
-/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
+/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "Mest besøgte websider";
 
-/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
+/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitleV2" = "Genveje til websteder";
-
-/* Sub label for Top Sites widget */
-"TodayWidget.TopSitesSubLabel" = "KARMA - Mest besøgte websider";
-
-/* Sub label for Shortcuts widget */
-"TodayWidget.TopSitesSubLabel2" = "KARMA - webstedsgenveje";
-
-/* View More for Quick View widget in Gallery View where we don't know how many tabs might be opened */
-"TodayWidget.ViewMore" = "Se flere";
-
-/* View More… for KARMA Pocket stories widget where we don't know how many articles are available. */
-"TodayWidget.ViewMoreDots" = "Se flere…";
 

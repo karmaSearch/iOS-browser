@@ -1,11 +1,11 @@
 /* Setting for closing private tabs */
-"Close Private Tabs" = "ᱱᱤᱡᱮᱨᱟᱠ ᱴᱮᱵ ᱠᱚ ᱵᱚᱸᱫᱚ";
+"Close Private Tabs" = "ᱱᱤᱡᱮᱨᱟᱠ ᱴᱮᱵᱽ ᱠᱚ ᱵᱚᱸᱫᱚ";
 
 /* Context menu option for opening a link in a new private tab */
-"ContextMenu.OpenInNewPrivateTabButtonTitle" = "ᱱᱟᱶᱟ ᱱᱤᱡᱮᱨᱟᱠ ᱴᱮᱵ ᱨᱮ ᱡᱷᱤᱜ ᱢᱮ";
+"ContextMenu.OpenInNewPrivateTabButtonTitle" = "ᱱᱟᱶᱟ ᱱᱤᱡᱮᱨᱟᱠ ᱴᱮᱵᱽ ᱨᱮ ᱡᱷᱤᱜ ᱢᱮ";
 
 /* Description text displayed when there are no open tabs while in private mode */
-"KARMA won’t remember any of your history or cookies, but new bookmarks will be saved." = "KARMA ᱫᱚ ᱟᱢᱟᱜ ᱦᱤᱛᱟᱹᱞ ᱟᱨ ᱠᱩᱠᱤ ᱠᱚ ᱵᱟᱭ ᱩᱭᱦᱟᱹᱨ ᱟᱭ, ᱦᱮᱞᱮ ᱱᱟᱶᱟ ᱵᱩᱠᱢᱟᱨᱠ ᱫᱚ ᱥᱟᱸᱪᱟᱣ ᱜᱮᱭᱟ ᱾";
+"Firefox won’t remember any of your history or cookies, but new bookmarks will be saved." = "Firefox ᱫᱚ ᱟᱢᱟᱜ ᱦᱤᱛᱟᱹᱞ ᱟᱨ ᱠᱩᱠᱤ ᱠᱚ ᱵᱟᱭ ᱩᱭᱦᱟᱹᱨ ᱟᱭ, ᱦᱮᱞᱮ ᱱᱟᱶᱟ ᱵᱩᱠᱢᱟᱨᱠ ᱫᱚ ᱥᱟᱧᱪᱟᱣ ᱜᱮᱭᱟ ᱾";
 
 /* Text button displayed when there are no tabs open while in private mode */
 "Learn More" = "ᱰᱷᱮᱨ ᱥᱮᱲᱟᱭ ᱢᱮ";

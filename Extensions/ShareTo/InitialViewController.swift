@@ -1,6 +1,6 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import UIKit
 import SnapKit
@@ -85,7 +85,7 @@ class InitialViewController: UIViewController {
     override func viewDidLoad() {
         UIDevice.current.beginGeneratingDeviceOrientationNotifications()
         super.viewDidLoad()
-    
+
         view.backgroundColor = .clear
 
         // iPad drop shadow removal hack!
@@ -158,11 +158,15 @@ class InitialViewController: UIViewController {
 
 extension InitialViewController: ShareControllerDelegate {
     func finish(afterDelay: TimeInterval) {
-        UIView.animate(withDuration: 0.2, delay: afterDelay, options: [], animations: {
-            self.view.alpha = 0
-        }, completion: { _ in
-            self.extensionContext?.completeRequest(returningItems: [], completionHandler: nil)
-        })
+        UIView.animate(
+            withDuration: 0.2,
+            delay: afterDelay,
+            options: [],
+            animations: {
+                self.view.alpha = 0
+            }, completion: { _ in
+                self.extensionContext?.completeRequest(returningItems: [], completionHandler: nil)
+            })
     }
 
     func getValidExtensionContext() -> NSExtensionContext? {
@@ -175,4 +179,3 @@ extension InitialViewController: ShareControllerDelegate {
         embedController?.navigationController.view.alpha = 0
     }
 }
-

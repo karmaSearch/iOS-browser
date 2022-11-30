@@ -1,13 +1,14 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import Foundation
 
 class EnhancedTrackingProtectionDetailsVC: UIViewController {
 
     // MARK: - UI
-
+    private let scrollView: UIScrollView = .build { scrollView in }
+    private let baseView: UIView = .build { view in }
     private let siteTitleLabel: UILabel = .build { label in
         label.font = ETPMenuUX.Fonts.websiteTitle
     }
@@ -59,11 +60,14 @@ class EnhancedTrackingProtectionDetailsVC: UIViewController {
 
     // MARK: - Variables
     var viewModel: EnhancedTrackingProtectionDetailsVM
+    var notificationCenter: NotificationProtocol
 
     // MARK: - View Lifecycle
 
-    init(viewModel: EnhancedTrackingProtectionDetailsVM) {
+    init(with viewModel: EnhancedTrackingProtectionDetailsVM,
+         and notificationCenter: NotificationProtocol = NotificationCenter.default) {
         self.viewModel = viewModel
+        self.notificationCenter = notificationCenter
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -73,13 +77,13 @@ class EnhancedTrackingProtectionDetailsVC: UIViewController {
     }
 
     deinit {
-        NotificationCenter.default.removeObserver(self)
+        notificationCenter.removeObserver(self)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        setupNotifications()
+        setupNotifications(forObserver: self, observing: [.DisplayThemeChanged])
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -89,25 +93,35 @@ class EnhancedTrackingProtectionDetailsVC: UIViewController {
     }
 
     private func setupView() {
-        view.addSubviews(siteTitleLabel, closeButton)
+        view.addSubview(scrollView)
+        scrollView.addSubview(baseView)
+        baseView.addSubviews(siteTitleLabel, closeButton)
         closeButton.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
 
         siteInfoSection.addSubviews(siteInfoImage, siteInfoTitleLabel, siteInfoURLLabel)
-        view.addSubview(siteInfoSection)
+        baseView.addSubview(siteInfoSection)
 
         connectionView.addSubviews(connectionImage, connectionStatusLabel, connectionVerifierLabel)
-        view.addSubview(connectionView)
+        baseView.addSubview(connectionView)
 
         NSLayoutConstraint.activate([
+            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            baseView.topAnchor.constraint(equalTo: scrollView.topAnchor),
+            baseView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
+            baseView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
+            baseView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
             siteTitleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             siteTitleLabel.centerYAnchor.constraint(equalTo: closeButton.centerYAnchor),
 
-            closeButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -ETPMenuUX.UX.gutterDistance),
-            closeButton.topAnchor.constraint(equalTo: view.topAnchor, constant: ETPMenuUX.UX.gutterDistance),
+            closeButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -ETPMenuUX.UX.gutterDistance),
+            closeButton.topAnchor.constraint(equalTo: baseView.topAnchor, constant: ETPMenuUX.UX.gutterDistance),
 
-            siteInfoSection.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: ETPMenuUX.UX.gutterDistance),
+            siteInfoSection.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: ETPMenuUX.UX.gutterDistance),
             siteInfoSection.topAnchor.constraint(equalTo: closeButton.bottomAnchor, constant: 33),
-            siteInfoSection.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -ETPMenuUX.UX.gutterDistance),
+            siteInfoSection.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -ETPMenuUX.UX.gutterDistance),
             siteInfoSection.bottomAnchor.constraint(equalTo: siteInfoURLLabel.bottomAnchor, constant: 12),
 
             siteInfoImage.leadingAnchor.constraint(equalTo: siteInfoSection.leadingAnchor, constant: 13),
@@ -123,9 +137,10 @@ class EnhancedTrackingProtectionDetailsVC: UIViewController {
             siteInfoURLLabel.topAnchor.constraint(equalTo: siteInfoTitleLabel.bottomAnchor, constant: 2),
             siteInfoURLLabel.trailingAnchor.constraint(equalTo: siteInfoSection.trailingAnchor, constant: -21),
 
-            connectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: ETPMenuUX.UX.gutterDistance),
+            connectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: ETPMenuUX.UX.gutterDistance),
             connectionView.topAnchor.constraint(equalTo: siteInfoSection.bottomAnchor, constant: 36),
-            connectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -ETPMenuUX.UX.gutterDistance),
+            connectionView.bottomAnchor.constraint(equalTo: baseView.bottomAnchor),
+            connectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -ETPMenuUX.UX.gutterDistance),
             connectionView.heightAnchor.constraint(equalToConstant: 60),
 
             connectionImage.centerYAnchor.constraint(equalTo: connectionView.centerYAnchor),
@@ -144,19 +159,6 @@ class EnhancedTrackingProtectionDetailsVC: UIViewController {
 //            connectionVerifierLabel.trailingAnchor.constraint(equalTo: connectionView.trailingAnchor, constant: -21),
 //            connectionVerifierLabel.heightAnchor.constraint(equalToConstant: 20),
         ])
-    }
-
-    private func setupNotifications() {
-        NotificationCenter.default.addObserver(self, selector: #selector(handleNotifications), name: .DisplayThemeChanged, object: nil)
-    }
-
-    @objc private func handleNotifications(_ notification: Notification) {
-        switch notification.name {
-        case .DisplayThemeChanged:
-            applyTheme()
-        default:
-            break
-        }
     }
 
     private func updateViewDetails() {
@@ -189,5 +191,16 @@ extension EnhancedTrackingProtectionDetailsVC: NotificationThemeable {
         }
         connectionVerifierLabel.textColor = UIColor.theme.etpMenu.subtextColor
         setNeedsStatusBarAppearanceUpdate()
+    }
+}
+
+// MARK: - Notifiable
+extension EnhancedTrackingProtectionDetailsVC: Notifiable {
+    func handleNotifications(_ notification: Notification) {
+        switch notification.name {
+        case .DisplayThemeChanged:
+            applyTheme()
+        default: break
+        }
     }
 }

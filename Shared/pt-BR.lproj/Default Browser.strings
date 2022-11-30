@@ -1,16 +1,13 @@
-/* Button string to open settings that allows user to switch their default browser to KARMA. */
-"DefaultBrowserCard.Button" = "Ir para configurações";
-
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Saiba como";
 
-/* Description for small card shown that allows user to switch their default browser to KARMA. */
-"DefaultBrowserCard.Description" = "Abra links, emails e mensagens automaticamente no KARMA.";
+/* Description for small home tab banner shown that allows user to switch their default browser to Firefox. */
+"DefaultBrowserCard.Description" = "Abra links, emails e mensagens automaticamente no Firefox.";
 
-/* Title for small card shown that allows user to switch their default browser to KARMA. */
+/* Title for small home tab banner shown that allows user to switch their default browser to Firefox. */
 "DefaultBrowserCard.Title" = "Mude o navegador padrão";
 
-/* Button string to open settings that allows user to switch their default browser to KARMA. */
+/* Button string to open settings that allows user to switch their default browser to Firefox. */
 "DefaultBrowserOnboarding.Button" = "Ir para configurações";
 
 /* Description for default browser onboarding card. */
@@ -20,11 +17,11 @@
 "DefaultBrowserOnboarding.Description2" = "2. Toque em App navegador padrão";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Selecione o KARMA";
+"DefaultBrowserOnboarding.Description3" = "3. Selecione o Firefox";
 
-/* Text for the screenshot of the iOS system settings page for KARMA. */
+/* Text for the screenshot of the iOS system settings page for Firefox. */
 "DefaultBrowserOnboarding.Screenshot" = "App navegador padrão";
 
-/* Menu option for setting KARMA as default browser. */
+/* Menu option for setting Firefox as default browser. */
 "Settings.DefaultBrowserMenuItem" = "Definir como navegador padrão";
 

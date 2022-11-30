@@ -1,23 +1,21 @@
-/* Privacy - Camera Usage Description */
-"NSCameraUsageDescription" = "רכיב זה מאפשר לך לצלם ולהעלות תמונות.";
+/* (No Comment) */
+"New Private Tab" = "לשונית פרטית חדשה";
 
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+/* (No Comment) */
+"New Tab" = "לשונית חדשה";
+
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "‏Firefox משתמש במצלמה שלך כדי לסרוק קודי QR, לצלם תמונות ולהקליט סרטונים.";
+
+/* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "אתרים אליהם נכנסים עשויים לבקש את המיקום של המשתמש.";
 
 /* Privacy - Microphone Usage Description */
-"NSMicrophoneUsageDescription" = "רכיב זה מאפשר לך להסריט ולהעלות סרטונים.";
+"NSMicrophoneUsageDescription" = "‏Firefox משתמש במיקרופון שלך כדי להקליט ולהעלות אודיו.";
 
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "זה מאפשר לך לשמור תמונות.";
 
 /* (No Comment) */
-"ShortcutItemTitleNewPrivateTab" = "לשונית פרטית חדשה";
-
-/* (No Comment) */
-"ShortcutItemTitleNewTab" = "לשונית חדשה";
-
-/* (No Comment) */
-"ShortcutItemTitleQRCode" = "סריקת קוד QR";
+"Scan QR Code" = "סריקת קוד QR";
 

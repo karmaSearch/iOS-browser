@@ -1,6 +1,6 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 // Monadic bind/flatMap operator for Deferred.
 precedencegroup MonadicBindPrecedence {
@@ -139,9 +139,9 @@ public func effect<T, U>(_ f: @escaping (T) -> U) -> (T) -> Deferred<Maybe<T>> {
     }
 }
 // Prevents "Cannot convert call result type '(_) -> Deferred<Maybe<_>>' to expected type '() -> Deferred<Maybe<Void>>"
-// SE-0029 introduced this behavour
+// SE-0029 introduced this behaviour
 // https://github.com/apple/swift-evolution/blob/master/proposals/0029-remove-implicit-tuple-splat.md
-public func effect(_ f: @escaping (Swift.Void) -> Void) -> (() -> Success) {
+public func effect(_ f: @escaping (Swift.Void) -> Void) -> () -> Success {
     return {
         f(())
         return succeed()

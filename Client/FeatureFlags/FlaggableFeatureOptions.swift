@@ -1,6 +1,6 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import Foundation
 
@@ -9,13 +9,13 @@ import Foundation
 /// the FlaggableFeatureOptions protocol.
 protocol FlaggableFeatureOptions { }
 
-enum UserFeaturePreference: String, FlaggableFeatureOptions {
-    case enabled
-    case disabled
-}
-
 enum StartAtHomeSetting: String, FlaggableFeatureOptions {
     case afterFourHours
     case always
     case disabled
+}
+
+enum WallpaperVersion: String, FlaggableFeatureOptions {
+    case legacy
+    case v1
 }

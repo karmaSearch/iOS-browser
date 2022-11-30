@@ -1,9 +1,8 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import UIKit
-import SDWebImage
 import Shared
 
 protocol SearchEnginePickerDelegate: AnyObject {
@@ -18,8 +17,8 @@ class SearchSettingsTableViewController: ThemedTableViewController {
     fileprivate let NumberOfItemsInSectionDefault = 2
     fileprivate let SectionOrder = 1
     fileprivate let NumberOfSections = 2
-    fileprivate let IconSize = CGSize(width: OpenSearchEngine.PreferredIconSize, height: OpenSearchEngine.PreferredIconSize)
-    fileprivate let SectionHeaderIdentifier = "SectionHeaderIdentifier"
+    fileprivate let IconSize = CGSize(width: OpenSearchEngine.UX.preferredIconSize,
+                                      height: OpenSearchEngine.UX.preferredIconSize)
 
     fileprivate var showDeletion = false
 
@@ -46,15 +45,19 @@ class SearchSettingsTableViewController: ThemedTableViewController {
         // So that we push the default search engine controller on selection.
         tableView.allowsSelectionDuringEditing = true
 
-        tableView.register(ThemedTableSectionHeaderFooterView.self, forHeaderFooterViewReuseIdentifier: SectionHeaderIdentifier)
+        tableView.register(ThemedTableSectionHeaderFooterView.self,
+                           forHeaderFooterViewReuseIdentifier: ThemedTableSectionHeaderFooterView.cellIdentifier)
 
         // Insert Done button if being presented outside of the Settings Nav stack
         if !(self.navigationController is ThemedNavigationController) {
             self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: .SettingsSearchDoneButton, style: .done, target: self, action: #selector(self.dismissAnimated))
         }
 
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: .SettingsSearchEditButton, style: .plain, target: self,
-                                                                 action: #selector(beginEditing))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            title: .SettingsSearchEditButton,
+            style: .plain,
+            target: self,
+            action: #selector(beginEditing))
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -122,12 +125,12 @@ class SearchSettingsTableViewController: ThemedTableViewController {
             } else {
                 cell.editingAccessoryType = .disclosureIndicator
                 cell.accessibilityLabel = .SettingsAddCustomEngineTitle
-                cell.accessibilityIdentifier = "customEngineViewButton"
+                cell.accessibilityIdentifier = AccessibilityIdentifiers.Settings.Search.customEngineViewButton
                 cell.textLabel?.text = .SettingsAddCustomEngine
             }
         }
 
-        // So that the seperator line goes all the way to the left edge.
+        // So that the separator line goes all the way to the left edge.
         cell.separatorInset = .zero
 
         return cell
@@ -191,7 +194,7 @@ class SearchSettingsTableViewController: ThemedTableViewController {
                 v.backgroundColor = UIColor.clear
             }
         }
-        
+
         // Change re-order control tint color to match app theme
         for subViewA in cell.subviews where subViewA.classForCoder.description() == "UITableViewCellReorderControl" {
             for subViewB in subViewA.subviews {
@@ -204,7 +207,7 @@ class SearchSettingsTableViewController: ThemedTableViewController {
     }
 
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 44
+        return UITableView.automaticDimension
     }
 
     override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
@@ -212,7 +215,8 @@ class SearchSettingsTableViewController: ThemedTableViewController {
     }
 
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: SectionHeaderIdentifier) as! ThemedTableSectionHeaderFooterView
+        guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: ThemedTableSectionHeaderFooterView.cellIdentifier) as? ThemedTableSectionHeaderFooterView else { return nil }
+
         var sectionTitle: String
         if section == SectionDefault {
             sectionTitle = .SearchSettingsDefaultSearchEngineTitle
@@ -225,9 +229,7 @@ class SearchSettingsTableViewController: ThemedTableViewController {
     }
 
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        guard let footerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: SectionHeaderIdentifier) as? ThemedTableSectionHeaderFooterView else {
-            return nil
-        }
+        guard let footerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: ThemedTableSectionHeaderFooterView.cellIdentifier) as? ThemedTableSectionHeaderFooterView else { return nil }
 
         footerView.applyTheme()
         return footerView
@@ -257,7 +259,7 @@ class SearchSettingsTableViewController: ThemedTableViewController {
             return sourceIndexPath
         }
 
-        //Can't drag/drop over "Add Custom Engine button"
+        // Can't drag/drop over "Add Custom Engine button"
         if sourceIndexPath.item + 1 == model.orderedEngines.count || proposedDestinationIndexPath.item + 1 == model.orderedEngines.count {
             return sourceIndexPath
         }
@@ -339,7 +341,10 @@ extension SearchSettingsTableViewController: SearchEnginePickerDelegate {
             model.defaultEngine = engine
             updateSearchIcon?()
             self.tableView.reloadData()
-            TelemetryWrapper.recordEvent(category: .action, method: .change, object: .setting, extras: ["pref": "defaultSearchEngine", "to": engine.engineID ?? "custom"])
+
+            let extras = [TelemetryWrapper.EventExtraKey.preference.rawValue: "defaultSearchEngine",
+                          TelemetryWrapper.EventExtraKey.preferenceChanged.rawValue: engine.engineID ?? "custom"]
+            TelemetryWrapper.recordEvent(category: .action, method: .change, object: .setting, extras: extras)
         }
         _ = navigationController?.popViewController(animated: true)
     }

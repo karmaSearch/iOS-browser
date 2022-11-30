@@ -1,6 +1,6 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import Foundation
 
@@ -38,7 +38,7 @@ open class MenuHelper: NSObject {
         let openAndFillItem = UIMenuItem(title: .MenuHelperOpenAndFill, action: MenuHelper.SelectorOpenAndFill)
         let findInPageItem = UIMenuItem(title: .MenuHelperFindInPage, action: MenuHelper.SelectorFindInPage)
         let searchItem = UIMenuItem(title: .MenuHelperSearchWithFirefox, action: MenuHelper.SelectorSearchWithFirefox)
-      
+
         UIMenuController.shared.menuItems = [pasteAndGoItem, copyItem, revealPasswordItem, hidePasswordItem, openAndFillItem, findInPageItem, searchItem]
     }
 }

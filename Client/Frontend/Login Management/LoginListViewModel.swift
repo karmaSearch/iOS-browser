@@ -1,11 +1,15 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import Foundation
 import Storage
 import Shared
 import AuthenticationServices
+
+struct NewSearchInProgressError: MaybeErrorType {
+    public let description: String
+}
 
 // MARK: - Main View Model
 // Login List View Model
@@ -14,6 +18,7 @@ final class LoginListViewModel {
     private(set) var profile: Profile
     private(set) var isDuringSearchControllerDismiss = false
     private(set) var count = 0
+    private(set) var hasData: Bool = false
     weak var searchController: UISearchController?
     weak var delegate: LoginViewModelDelegate?
     private(set) var activeLoginQuery: Deferred<Maybe<[LoginRecord]>>?
@@ -42,7 +47,7 @@ final class LoginListViewModel {
 
     func loadLogins(_ query: String? = nil, loginDataSource: LoginDataSource) {
         // Fill in an in-flight query and re-query
-        activeLoginQuery?.fillIfUnfilled(Maybe(success: []))
+        activeLoginQuery?.fillIfUnfilled(Maybe(failure: NewSearchInProgressError(description: "Updated search string provided")))
         activeLoginQuery = queryLogins(query ?? "")
         activeLoginQuery! >>== self.setLogins
         // Loading breaches is a heavy operation hence loading it once per opening logins screen
@@ -105,9 +110,10 @@ final class LoginListViewModel {
 
     func indexPathForLogin(_ login: LoginRecord) -> IndexPath? {
         let title = self.helper.titleForLogin(login)
-        guard let section = self.titles.firstIndex(of: title), let row = self.loginRecordSections[title]?.firstIndex(of: login) else {
-            return nil
-        }
+        guard let section = self.titles.firstIndex(of: title),
+              let row = self.loginRecordSections[title]?.firstIndex(of: login)
+        else { return nil }
+
         return IndexPath(row: row, section: section+1)
     }
 
@@ -124,13 +130,18 @@ final class LoginListViewModel {
         // NB: Make sure we call the callback on the main thread so it can be synced up with a reloadData to
         //     prevent race conditions between data/UI indexing.
         return self.helper.computeSectionsFromLogins(logins).uponQueue(.main) { result in
-            guard let (titles, sections) = result.successValue, logins.count > 0 else {
+            guard let (titles, sections) = result.successValue,
+                  !logins.isEmpty
+            else {
                 self.count = 0
+                self.hasData = false
                 self.titles = []
                 self.loginRecordSections = [:]
                 return
             }
+
             self.count = logins.count
+            self.hasData = !logins.isEmpty
             self.titles = titles
             self.loginRecordSections = sections
 
@@ -141,7 +152,7 @@ final class LoginListViewModel {
             }
         }
     }
-    
+
     public func save(loginRecord: LoginEntry) -> Deferred<Maybe<String>> {
         return profile.logins.addLogin(login: loginRecord)
     }

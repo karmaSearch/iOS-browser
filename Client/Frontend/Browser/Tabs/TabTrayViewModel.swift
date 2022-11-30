@@ -1,11 +1,50 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import Shared
 import Storage
 
 class TabTrayViewModel {
+
+    enum Segment: Int, CaseIterable {
+        case tabs
+        case privateTabs
+        case syncedTabs
+
+        var navTitle: String {
+            switch self {
+            case .tabs:
+                return .TabTrayV2Title
+            case .privateTabs:
+                return .TabTrayPrivateBrowsingTitle
+            case .syncedTabs:
+                return .AppMenu.AppMenuSyncedTabsTitleString
+            }
+        }
+
+        var label: String {
+            switch self {
+            case .tabs:
+                return String.TabTraySegmentedControlTitlesTabs
+            case .privateTabs:
+                return String.TabTraySegmentedControlTitlesPrivateTabs
+            case .syncedTabs:
+                return String.TabTraySegmentedControlTitlesSyncedTabs
+            }
+        }
+
+        var image: UIImage? {
+            switch self {
+            case .tabs:
+                return UIImage(named: ImageIdentifiers.navTabCounter)
+            case .privateTabs:
+                return UIImage(named: ImageIdentifiers.privateMaskSmall)
+            case .syncedTabs:
+                return UIImage(named: ImageIdentifiers.syncedDevicesIcon)
+            }
+        }
+    }
 
     let profile: Profile
     let tabManager: TabManager
@@ -13,31 +52,28 @@ class TabTrayViewModel {
     // Tab Tray Views
     let tabTrayView: TabTrayViewDelegate
 
+    var segmentToFocus: TabTrayViewModel.Segment?
+
     var normalTabsCount: String {
         (tabManager.normalTabs.count < 100) ? tabManager.normalTabs.count.description : "\u{221E}"
     }
 
-    init(tabTrayDelegate: TabTrayDelegate? = nil, profile: Profile, showChronTabs: Bool = false, tabToFocus: Tab? = nil) {
+    init(tabTrayDelegate: TabTrayDelegate? = nil,
+         profile: Profile,
+         tabToFocus: Tab? = nil,
+         tabManager: TabManager,
+         segmentToFocus: TabTrayViewModel.Segment? = nil) {
         self.profile = profile
-        self.tabManager = BrowserViewController.foregroundBVC().tabManager
+        self.tabManager = tabManager
 
-        if showChronTabs {
-            self.tabTrayView = ChronologicalTabsViewController(tabTrayDelegate: tabTrayDelegate, profile: self.profile)
-        } else {
-            self.tabTrayView = GridTabViewController(tabManager: self.tabManager, profile: profile, tabTrayDelegate: tabTrayDelegate, tabToFocus: tabToFocus)
-        }
+        self.tabTrayView = GridTabViewController(tabManager: self.tabManager, profile: profile, tabTrayDelegate: tabTrayDelegate, tabToFocus: tabToFocus)
+        self.segmentToFocus = segmentToFocus
     }
 
     func navTitle(for segmentIndex: Int, foriPhone: Bool) -> String? {
         if foriPhone {
-            switch segmentIndex {
-            case 0, 1:
-                return .TabTrayV2Title
-            case 2:
-                return .AppMenuSyncedTabsTitleString
-            default:
-                return nil
-            }
+            let segment = TabTrayViewModel.Segment(rawValue: segmentIndex)
+            return segment?.navTitle
         }
         return nil
     }

@@ -1,6 +1,6 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 import UIKit
 
 enum LegacyThemeManagerPrefs: String {
@@ -15,8 +15,10 @@ class LegacyThemeManager {
 
     var current: LegacyTheme = themeFrom(name: UserDefaults.standard.string(forKey: LegacyThemeManagerPrefs.themeName.rawValue)) {
         didSet {
-            UserDefaults.standard.set(current.name, forKey: LegacyThemeManagerPrefs.themeName.rawValue)
-            NotificationCenter.default.post(name: .DisplayThemeChanged, object: nil)
+            ensureMainThread {
+                UserDefaults.standard.set(self.current.name, forKey: LegacyThemeManagerPrefs.themeName.rawValue)
+                NotificationCenter.default.post(name: .DisplayThemeChanged, object: nil)
+            }
         }
     }
 
@@ -33,6 +35,7 @@ class LegacyThemeManager {
     var automaticBrightnessIsOn: Bool = UserDefaults.standard.bool(forKey: LegacyThemeManagerPrefs.automaticSwitchIsOn.rawValue) {
         didSet {
             UserDefaults.standard.set(automaticBrightnessIsOn, forKey: LegacyThemeManagerPrefs.automaticSwitchIsOn.rawValue)
+            guard automaticBrightnessIsOn else { return }
             updateCurrentThemeBasedOnScreenBrightness()
         }
     }
@@ -70,9 +73,9 @@ class LegacyThemeManager {
         let screenLessThanPref = Float(UIScreen.main.brightness) < prefValue
 
         if screenLessThanPref, self.currentName == .normal {
-            self.current = DarkTheme()
+            self.current = LegacyDarkTheme()
         } else if !screenLessThanPref, self.currentName == .dark {
-            self.current = NormalTheme()
+            self.current = LegacyNormalTheme()
         }
     }
 
@@ -82,12 +85,12 @@ class LegacyThemeManager {
     }
 }
 
-fileprivate func themeFrom(name: String?) -> LegacyTheme {
-    guard let name = name, let theme = BuiltinThemeName(rawValue: name) else { return NormalTheme() }
+private func themeFrom(name: String?) -> LegacyTheme {
+    guard let name = name, let theme = BuiltinThemeName(rawValue: name) else { return LegacyNormalTheme() }
     switch theme {
     case .dark:
-        return DarkTheme()
+        return LegacyDarkTheme()
     default:
-        return NormalTheme()
+        return LegacyNormalTheme()
     }
 }

@@ -1,12 +1,16 @@
+/* (No Comment) */
+"New Private Tab" = "Taba prìobhaideach ùr";
+
+/* (No Comment) */
+"New Tab" = "Taba ùr";
+
 /* Privacy - Camera Usage Description */
 "NSCameraUsageDescription" = "Bheir seo comas dhut dealbhan a thogail is a luchdadh suas.";
 
 /* Privacy - Face ID Usage Description */
 "NSFaceIDUsageDescription" = "Feumaidh KARMA Face ID mus fhaigh e cothrom air na clàraidhean a-steach a shàbhail thu.";
 
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+/* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "Dh’fhaoidte gun iarr làraichean-lìn air an tadhal thu d’ ionad.";
 
 /* Privacy - Microphone Usage Description */
@@ -16,11 +20,5 @@
 "NSPhotoLibraryAddUsageDescription" = "Bheir seo comas dhut dealbhan a shàbhaladh.";
 
 /* (No Comment) */
-"ShortcutItemTitleNewPrivateTab" = "Taba prìobhaideach ùr";
-
-/* (No Comment) */
-"ShortcutItemTitleNewTab" = "Taba ùr";
-
-/* (No Comment) */
-"ShortcutItemTitleQRCode" = "Sganaich còd QR";
+"Scan QR Code" = "Sganaich còd QR";
 

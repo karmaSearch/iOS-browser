@@ -1,26 +1,24 @@
+/* (No Comment) */
+"New Private Tab" = "Iccer uslig amaynut";
+
+/* (No Comment) */
+"New Tab" = "Iccer amaynut";
+
 /* Privacy - Camera Usage Description */
 "NSCameraUsageDescription" = "Ayagi ad k-isireg tuṭṭfa d usali n tvidyutin.";
 
 /* Privacy - Face ID Usage Description */
 "NSFaceIDUsageDescription" = "KARMA yesra Face ID i wakken ad yekcem ɣer yinekcamen-ik·im yettuskelsen.";
 
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+/* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "Ismal web iɣer trezzuḍ zemren ad sutren adig-inek.";
 
 /* Privacy - Microphone Usage Description */
-"NSMicrophoneUsageDescription" = "Ayagi ad k-isireg asider d usali n tvidyutin.";
+"NSMicrophoneUsageDescription" = "Ayagi ad k-isireg asader d usali n tvidyutin.";
 
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "Aya ad k-yeǧǧ ad teskelseḍ tiwlafin-inek.";
 
 /* (No Comment) */
-"ShortcutItemTitleNewPrivateTab" = "Iccer uslig amaynut";
-
-/* (No Comment) */
-"ShortcutItemTitleNewTab" = "Iccer amaynut";
-
-/* (No Comment) */
-"ShortcutItemTitleQRCode" = "Semḍen Tangalt QR";
+"Scan QR Code" = "Semḍen Tangalt QR";
 

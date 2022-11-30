@@ -1,6 +1,6 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 #if canImport(WidgetKit)
 import WidgetKit
@@ -10,18 +10,18 @@ struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
         return SimpleEntry(date: Date())
     }
-    
+
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> Void) {
         let entry = SimpleEntry(date: Date())
         completion(entry)
     }
-    
+
     func getTimeline(in context: Context, completion: @escaping (Timeline<SimpleEntry>) -> Void) {
         let entries = [SimpleEntry(date: Date())]
         let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
     }
-    
+
     public typealias Entry = SimpleEntry
 }
 
@@ -29,7 +29,7 @@ struct SimpleEntry: TimelineEntry {
     public let date: Date
 }
 
-struct SearchQuickLinksEntryView : View {
+struct SearchQuickLinksEntryView: View {
     @ViewBuilder
     var body: some View {
         VStack {

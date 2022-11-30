@@ -8,9 +8,9 @@ Download on the [App Store](https://itunes.apple.com/app/firefox-web-browser/id9
 This branch (main)
 -----------
 
-This branch works with [Xcode 13.0](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.xip), Swift 5.5 and supports iOS 13 and above.
+This branch works only with [Xcode 13.4.1](https://developer.apple.com/download/all/?q=xcode), Swift 5.5.2 and supports iOS 13 and above.
 
-*Please note:* due to dependency issues, development of Firefox-iOS is currently only supported on Intel based Macs, and not Apple Silicon based Macs.
+*Please note:* Both Intel and M1 macs are supported 🎉 and we use swift package manager.
 
 Please make sure you aim your pull requests in the right direction.
 
@@ -20,10 +20,9 @@ Building the code
 -----------------
 
 1. Install the latest [Xcode developer tools](https://developer.apple.com/xcode/downloads/) from Apple.
-1. Install Carthage, Node, and a Python 3 virtualenv for localization scripts:
+1. Install, [Brew](https://brew.sh), Node, and a Python3 virtualenv for localization scripts:
     ```shell
     brew update
-    brew install carthage
     brew install node
     pip3 install virtualenv
     ```
@@ -31,13 +30,17 @@ Building the code
     ```shell
     git clone https://github.com/karmaSearch/iOS-browser/
     ```
-1. Pull in the project dependencies:
+1. Install Node.js dependencies, build user scripts and update content blocker:
     ```shell
     cd iOS-browser
     sh ./bootstrap.sh
     ```
 1. Open `Client.xcodeproj` in Xcode.
 1. Build the `Karma` scheme in Xcode.
+
+Note: In case you have dependencies issues with SPM, you can try:
+- Xcode -> File -> Packages -> Reset Package Caches
+- Xcode -> File -> Packages -> Resolve Package Versions
 
 Building User Scripts
 -----------------

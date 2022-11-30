@@ -1,26 +1,24 @@
+/* (No Comment) */
+"New Private Tab" = "Yeni gizli sekme";
+
+/* (No Comment) */
+"New Tab" = "Yeni sekme";
+
 /* Privacy - Camera Usage Description */
-"NSCameraUsageDescription" = "Fotoğraf çekmenizi ve yüklemenizi sağlar.";
+"NSCameraUsageDescription" = "Firefox, QR kodlarını taramak, fotoğraf ve video çekmek için kameranızı kullanır.";
 
 /* Privacy - Face ID Usage Description */
 "NSFaceIDUsageDescription" = "KARMA, kayıtlı hesaplarınıza erişmek için Face ID gerektirir.";
 
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+/* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "Ziyaret ettiğiniz web siteleri konumunuzu isteyebilir.";
 
 /* Privacy - Microphone Usage Description */
-"NSMicrophoneUsageDescription" = "Video çekmenizi ve yüklemenizi sağlar.";
+"NSMicrophoneUsageDescription" = "Firefox, ses kaydetmek ve yüklemek için mikrofonunuzu kullanır.";
 
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "Fotoğraf kaydetmenize olanak sağlar.";
 
 /* (No Comment) */
-"ShortcutItemTitleNewPrivateTab" = "Yeni gizli sekme";
-
-/* (No Comment) */
-"ShortcutItemTitleNewTab" = "Yeni sekme";
-
-/* (No Comment) */
-"ShortcutItemTitleQRCode" = "QR kodu tara";
+"Scan QR Code" = "QR kodu tara";
 

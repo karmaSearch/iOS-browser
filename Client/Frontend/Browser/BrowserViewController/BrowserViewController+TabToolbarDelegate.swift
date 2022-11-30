@@ -1,11 +1,13 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import Shared
+import UIKit
 
 extension BrowserViewController: TabToolbarDelegate, PhotonActionSheetProtocol {
     func tabToolbarDidPressHome(_ tabToolbar: TabToolbarProtocol, button: UIButton) {
+        userHasPressedHomeButton = true
         let page = NewTabAccessors.getHomePage(self.profile.prefs)
         if page == .homePage, let homePageURL = HomeButtonHomePageAccessors.getHomePage(self.profile.prefs) {
             tabManager.selectedTab?.loadRequest(PrivilegedRequest(url: homePageURL) as URLRequest)
@@ -17,28 +19,30 @@ extension BrowserViewController: TabToolbarDelegate, PhotonActionSheetProtocol {
 
     func tabToolbarDidPressLibrary(_ tabToolbar: TabToolbarProtocol, button: UIButton) {
     }
-    
+
     func tabToolbarDidPressReload(_ tabToolbar: TabToolbarProtocol, button: UIButton) {
         tabManager.selectedTab?.reload()
     }
-    
+
     func tabToolbarDidLongPressReload(_ tabToolbar: TabToolbarProtocol, button: UIButton) {
         guard let tab = tabManager.selectedTab else { return }
-        
+
         let urlActions = self.getRefreshLongPressMenu(for: tab)
         guard !urlActions.isEmpty else { return }
-        
+
         let generator = UIImpactFeedbackGenerator(style: .heavy)
         generator.impactOccurred()
-        let shouldSuppress = UIDevice.current.userInterfaceIdiom != .pad
-        
-        presentSheetWith(actions: [urlActions], on: self, from: button, suppressPopover: shouldSuppress)
+
+        let shouldSuppress = UIDevice.current.userInterfaceIdiom == .pad
+        let style: UIModalPresentationStyle = shouldSuppress ? .popover : .overCurrentContext
+        let viewModel = PhotonActionSheetViewModel(actions: [urlActions], closeButtonTitle: .CloseButtonTitle, modalStyle: style)
+        presentSheetWith(viewModel: viewModel, on: self, from: button)
     }
-    
+
     func tabToolbarDidPressStop(_ tabToolbar: TabToolbarProtocol, button: UIButton) {
         tabManager.selectedTab?.stop()
     }
-    
+
     func tabToolbarDidPressBack(_ tabToolbar: TabToolbarProtocol, button: UIButton) {
         tabManager.selectedTab?.goBack()
     }
@@ -66,7 +70,7 @@ extension BrowserViewController: TabToolbarDelegate, PhotonActionSheetProtocol {
             showLibrary(panel: .bookmarks)
         }
     }
-    
+
     func tabToolbarDidPressAddNewTab(_ tabToolbar: TabToolbarProtocol, button: UIButton) {
         let isPrivate = tabManager.selectedTab?.isPrivate ?? false
         tabManager.selectTab(tabManager.addTab(nil, isPrivate: isPrivate))
@@ -78,7 +82,7 @@ extension BrowserViewController: TabToolbarDelegate, PhotonActionSheetProtocol {
         TelemetryWrapper.recordEvent(category: .action, method: .press, object: .tabToolbar, value: .tabView)
     }
 
-    func getTabToolbarLongPressActionsForModeSwitching() -> [PhotonActionSheetItem] {
+    func getTabToolbarLongPressActionsForModeSwitching() -> [PhotonRowActions] {
         guard let selectedTab = tabManager.selectedTab else { return [] }
         let count = selectedTab.isPrivate ? tabManager.normalTabs.count : tabManager.privateTabs.count
         let infinity = "\u{221E}"
@@ -91,12 +95,19 @@ extension BrowserViewController: TabToolbarDelegate, PhotonActionSheetProtocol {
             }
         }
 
-        let privateBrowsingMode = PhotonActionSheetItem(title: .privateBrowsingModeTitle, iconString: "nav-tabcounter", iconType: .TabsButton, tabCount: tabCount) { _, _ in
+        let privateBrowsingMode = SingleActionViewModel(title: .KeyboardShortcuts.PrivateBrowsingMode,
+                                                        iconString: "nav-tabcounter",
+                                                        iconType: .TabsButton,
+                                                        tabCount: tabCount) { _ in
             action()
-        }
-        let normalBrowsingMode = PhotonActionSheetItem(title: .normalBrowsingModeTitle, iconString: "nav-tabcounter", iconType: .TabsButton, tabCount: tabCount) { _, _ in
+        }.items
+
+        let normalBrowsingMode = SingleActionViewModel(title: .KeyboardShortcuts.NormalBrowsingMode,
+                                                       iconString: "nav-tabcounter",
+                                                       iconType: .TabsButton,
+                                                       tabCount: tabCount) { _ in
             action()
-        }
+        }.items
 
         if let tab = self.tabManager.selectedTab {
             return tab.isPrivate ? [normalBrowsingMode] : [privateBrowsingMode]
@@ -104,19 +115,24 @@ extension BrowserViewController: TabToolbarDelegate, PhotonActionSheetProtocol {
         return [privateBrowsingMode]
     }
 
-    func getMoreTabToolbarLongPressActions() -> [PhotonActionSheetItem] {
-        let newTab = PhotonActionSheetItem(title: .NewTabTitle, iconString: "quick_action_new_tab", iconType: .Image) { _, _ in
+    func getMoreTabToolbarLongPressActions() -> [PhotonRowActions] {
+        let newTab = SingleActionViewModel(title: .KeyboardShortcuts.NewTab, iconString: ImageIdentifiers.newTab, iconType: .Image) { _ in
             let shouldFocusLocationField = NewTabAccessors.getNewTabPage(self.profile.prefs) == .blankPage
             self.openBlankNewTab(focusLocationField: shouldFocusLocationField, isPrivate: false)
-        }
-        let newPrivateTab = PhotonActionSheetItem(title: .NewPrivateTabTitle, iconString: "quick_action_new_tab", iconType: .Image) { _, _ in
+        }.items
+
+        let newPrivateTab = SingleActionViewModel(title: .KeyboardShortcuts.NewPrivateTab, iconString: ImageIdentifiers.newTab, iconType: .Image) { _ in
             let shouldFocusLocationField = NewTabAccessors.getNewTabPage(self.profile.prefs) == .blankPage
-            self.openBlankNewTab(focusLocationField: shouldFocusLocationField, isPrivate: true)}
-        let closeTab = PhotonActionSheetItem(title: .CloseTabTitle, iconString: "tab_close", iconType: .Image) { _, _ in
+            self.openBlankNewTab(focusLocationField: shouldFocusLocationField, isPrivate: true)
+        }.items
+
+        let closeTab = SingleActionViewModel(title: .KeyboardShortcuts.CloseCurrentTab, iconString: "tab_close", iconType: .Image) { _ in
             if let tab = self.tabManager.selectedTab {
-                self.tabManager.removeTabAndUpdateSelectedIndex(tab)
+                self.tabManager.removeTab(tab)
                 self.updateTabCountUsingTabManager(self.tabManager)
-            }}
+            }
+        }.items
+
         if let tab = self.tabManager.selectedTab {
             return tab.isPrivate ? [newPrivateTab, closeTab] : [newTab, closeTab]
         }
@@ -124,17 +140,16 @@ extension BrowserViewController: TabToolbarDelegate, PhotonActionSheetProtocol {
     }
 
     func tabToolbarDidLongPressTabs(_ tabToolbar: TabToolbarProtocol, button: UIButton) {
-        guard self.presentedViewController == nil else {
-            return
-        }
-        var actions: [[PhotonActionSheetItem]] = []
+        guard self.presentedViewController == nil else { return }
+        var actions: [[PhotonRowActions]] = []
         actions.append(getTabToolbarLongPressActionsForModeSwitching())
         actions.append(getMoreTabToolbarLongPressActions())
 
         let generator = UIImpactFeedbackGenerator(style: .heavy)
         generator.impactOccurred()
 
-        presentSheetWith(actions: actions, on: self, from: button, suppressPopover: true)
+        let viewModel = PhotonActionSheetViewModel(actions: actions, closeButtonTitle: .CloseButtonTitle, modalStyle: .overCurrentContext)
+        presentSheetWith(viewModel: viewModel, on: self, from: button)
     }
 
     func showBackForwardList() {
@@ -159,3 +174,42 @@ extension BrowserViewController: TabToolbarDelegate, PhotonActionSheetProtocol {
     }
 }
 
+// MARK: - ToolbarActionMenuDelegate
+extension BrowserViewController: ToolBarActionMenuDelegate {
+
+    func updateToolbarState() {
+        updateToolbarStateForTraitCollection(view.traitCollection)
+    }
+
+    func showViewController(viewController: UIViewController) {
+        presentWithModalDismissIfNeeded(viewController, animated: true)
+    }
+
+    func showToast(message: String, toastAction: MenuButtonToastAction, url: String?) {
+        switch toastAction {
+        case .removeBookmark:
+            let toast = ButtonToast(labelText: message, buttonText: .UndoString, textAlignment: .left) { isButtonTapped in
+                isButtonTapped ? self.addBookmark(url: url ?? "") : nil
+            }
+            show(toast: toast)
+        default:
+            SimpleToast().showAlertWithText(message, bottomContainer: webViewContainer)
+        }
+    }
+
+    func showMenuPresenter(url: URL, tab: Tab, view: UIView) {
+        presentActivityViewController(url, tab: tab, sourceView: view, sourceRect: view.bounds, arrowDirection: .up)
+    }
+
+    func showFindInPage() {
+        updateFindInPageVisibility(visible: true)
+    }
+
+    func showCustomizeHomePage() {
+        showSettingsWithDeeplink(to: .customizeHomepage)
+    }
+
+    func showWallpaperSettings() {
+        showSettingsWithDeeplink(to: .wallpaper)
+    }
+}

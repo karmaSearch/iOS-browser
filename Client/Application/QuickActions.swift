@@ -1,6 +1,6 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import Foundation
 import Storage
@@ -23,10 +23,6 @@ enum ShortcutType: String {
     var type: String {
         return Bundle.main.bundleIdentifier! + ".\(self.rawValue)"
     }
-}
-
-protocol QuickActionHandlerDelegate {
-    func handleShortCutItemType(_ type: ShortcutType, userData: [String: NSSecureCoding]?)
 }
 
 class QuickActions: NSObject {
@@ -52,7 +48,11 @@ class QuickActions: NSObject {
         QuickActions.sharedInstance.addDynamicApplicationShortcutItemOfType(type, withUserData: userData, toApplication: application)
     }
 
-    @discardableResult func addDynamicApplicationShortcutItemOfType(_ type: ShortcutType, withUserData userData: [String: String] = [String: String](), toApplication application: UIApplication) -> Bool {
+    @discardableResult func addDynamicApplicationShortcutItemOfType(
+        _ type: ShortcutType,
+        withUserData userData: [String: String] = [String: String](),
+        toApplication application: UIApplication
+    ) -> Bool {
         // add the quick actions version so that it is always in the user info
         var userData: [String: String] = userData
         userData[QuickActions.QuickActionsVersionKey] = QuickActions.QuickActionsVersion
@@ -63,7 +63,7 @@ class QuickActions: NSObject {
                 localizedTitle: .QuickActionsLastBookmarkTitle,
                 localizedSubtitle: userData[QuickActions.TabTitleKey],
                 icon: UIApplicationShortcutIcon(templateImageName: "quick_action_last_bookmark"),
-                userInfo: userData as [String : NSSecureCoding]
+                userInfo: userData as [String: NSSecureCoding]
             )
             if let index = (dynamicShortcutItems.firstIndex { $0.type == ShortcutType.openLastBookmark.type }) {
                 dynamicShortcutItems[index] = openLastBookmarkShortcut
@@ -80,7 +80,8 @@ class QuickActions: NSObject {
 
     func removeDynamicApplicationShortcutItemOfType(_ type: ShortcutType, fromApplication application: UIApplication) {
         guard var dynamicShortcutItems = application.shortcutItems,
-            let index = (dynamicShortcutItems.firstIndex { $0.type == type.type }) else { return }
+              let index = (dynamicShortcutItems.firstIndex { $0.type == type.type })
+        else { return }
 
         dynamicShortcutItems.remove(at: index)
         application.shortcutItems = dynamicShortcutItems
@@ -105,8 +106,6 @@ class QuickActions: NSObject {
             handleOpenNewTab(withBrowserViewController: browserViewController, isPrivate: false)
         case .newPrivateTab:
             handleOpenNewTab(withBrowserViewController: browserViewController, isPrivate: true)
-        // even though we're removing OpenLastTab, it's possible that someone will use an existing last tab quick action to open the app
-        // the first time after upgrading, so we should still handle it
         case .openLastBookmark:
             if let urlToOpen = (userData?[QuickActions.TabURLKey] as? String)?.asURL {
                 handleOpenURL(withBrowserViewController: browserViewController, urlToOpen: urlToOpen)
@@ -134,6 +133,7 @@ class QuickActions: NSObject {
         let qrCodeViewController = QRCodeViewController()
         qrCodeViewController.qrCodeDelegate = vc
         let controller = UINavigationController(rootViewController: qrCodeViewController)
+        vc.presentedViewController?.dismiss(animated: true)
         vc.present(controller, animated: true, completion: nil)
     }
 }

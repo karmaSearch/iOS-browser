@@ -1,12 +1,16 @@
+/* (No Comment) */
+"New Private Tab" = "แท็บส่วนตัวใหม่";
+
+/* (No Comment) */
+"New Tab" = "แท็บใหม่";
+
 /* Privacy - Camera Usage Description */
 "NSCameraUsageDescription" = "สิ่งนี้ช่วยให้คุณถ่ายและอัปโหลดรูปถ่าย";
 
 /* Privacy - Face ID Usage Description */
 "NSFaceIDUsageDescription" = "Firefox ต้องใช้ Face ID เพื่อเข้าถึงการเข้าสู่ระบบที่คุณบันทึกไว้";
 
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+/* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "เว็บไซต์ที่คุณเยี่ยมชมอาจขอตำแหน่งที่ตั้งของคุณ";
 
 /* Privacy - Microphone Usage Description */
@@ -16,11 +20,5 @@
 "NSPhotoLibraryAddUsageDescription" = "สิ่งนี้ช่วยให้คุณบันทึกรูปถ่าย";
 
 /* (No Comment) */
-"ShortcutItemTitleNewPrivateTab" = "แท็บส่วนตัวใหม่";
-
-/* (No Comment) */
-"ShortcutItemTitleNewTab" = "แท็บใหม่";
-
-/* (No Comment) */
-"ShortcutItemTitleQRCode" = "สแกนรหัส QR";
+"Scan QR Code" = "สแกนรหัส QR";
 

@@ -1,6 +1,6 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import Foundation
 
@@ -52,14 +52,12 @@ public class PushRegistration: NSObject, NSCoding {
               let channelID = json["channelID"].string else {
             return nil
         }
-        guard let defaultSubscription = try? PushSubscription(channelID: channelID, endpoint: endpoint) else {
-            return nil
-        }
+        guard let defaultSubscription = try? PushSubscription(channelID: channelID, endpoint: endpoint) else { return nil }
         return PushRegistration(uaid: uaid, secret: secret, subscriptions: [defaultSubscriptionID: defaultSubscription])
     }
 }
 
-fileprivate let defaultSubscriptionID = "defaultSubscription"
+private let defaultSubscriptionID = "defaultSubscription"
 /// Small NSCodable class for persisting a channel subscription.
 /// We use NSCoder because we expect it to be stored in the profile.
 public class PushSubscription: NSObject, NSCoding {

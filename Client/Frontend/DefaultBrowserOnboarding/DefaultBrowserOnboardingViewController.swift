@@ -1,6 +1,6 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import Foundation
 import UIKit
@@ -8,13 +8,14 @@ import Shared
 import SnapKit
 
 class DefaultBrowserOnboardingViewController: UIViewController, OnViewDismissable {
-    
+
     // MARK: - Properties
-    
-    var onViewDismissed: (() -> Void)? = nil
+
+    var onViewDismissed: (() -> Void)?
     // Public constants
     let viewModel = DefaultBrowserOnboardingViewModel()
     let theme = LegacyThemeManager.instance
+
     // Private vars
     
     // Orientation independent screen size
@@ -38,33 +39,33 @@ class DefaultBrowserOnboardingViewController: UIViewController, OnViewDismissabl
 
     // Used to set the part of text in center 
     private var containerView = UIView()
-    
+
     // MARK: - Inits
-    
+
     init() {
         super.init(nibName: nil, bundle: nil)
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     // MARK: - Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
         initialViewSetup()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         // Portrait orientation: lock enable
-        AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
+        OrientationLockUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         // Portrait orientation: lock disable
-        AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.all)
+        OrientationLockUtility.lockOrientation(UIInterfaceOrientationMask.all)
     }
 
     override func viewDidDisappear(_ animated: Bool) {
@@ -72,7 +73,7 @@ class DefaultBrowserOnboardingViewController: UIViewController, OnViewDismissabl
         onViewDismissed?()
         onViewDismissed = nil
     }
-    
+
     func initialViewSetup() {
         contentView.addSubviews(defaultBrowserView)
         view.addSubview(contentView)
@@ -85,11 +86,7 @@ class DefaultBrowserOnboardingViewController: UIViewController, OnViewDismissabl
         // Constraints
         setupView()
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
-    
+
     private func setupView() {
         
         contentView.snp.makeConstraints { make in
@@ -115,16 +112,16 @@ class DefaultBrowserOnboardingViewController: UIViewController, OnViewDismissabl
         }
         
     }
-    
+
     // Button Actions
     @objc private func dismissAnimated() {
         self.dismiss(animated: true, completion: nil)
         TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .dismissDefaultBrowserOnboarding)
     }
-    
+
     @objc private func goToSettings() {
         viewModel.goToSettings?()
-        UserDefaults.standard.set(true, forKey: "DidDismissDefaultBrowserCard") // Don't show default browser card if this button is clicked
+        UserDefaults.standard.set(true, forKey: PrefsKeys.DidDismissDefaultBrowserMessage) // Don't show default browser card if this button is clicked
         TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .goToSettingsDefaultBrowserOnboarding)
     }
     

@@ -1,16 +1,13 @@
-/* Button string to open settings that allows user to switch their default browser to KARMA. */
-"DefaultBrowserCard.Button" = "Gå till Inställningar";
-
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Lär dig hur";
 
-/* Description for small card shown that allows user to switch their default browser to KARMA. */
-"DefaultBrowserCard.Description" = "Ställ in länkar från webbplatser, e-post och meddelanden så att de öppnas automatiskt i KARMA.";
+/* Description for small home tab banner shown that allows user to switch their default browser to Firefox. */
+"DefaultBrowserCard.Description" = "Ställ in länkar från webbplatser, e-post och meddelanden så att de öppnas automatiskt i Firefox.";
 
-/* Title for small card shown that allows user to switch their default browser to KARMA. */
+/* Title for small home tab banner shown that allows user to switch their default browser to Firefox. */
 "DefaultBrowserCard.Title" = "Ändra din standardwebbläsare";
 
-/* Button string to open settings that allows user to switch their default browser to KARMA. */
+/* Button string to open settings that allows user to switch their default browser to Firefox. */
 "DefaultBrowserOnboarding.Button" = "Gå till inställningar";
 
 /* Description for default browser onboarding card. */
@@ -20,11 +17,11 @@
 "DefaultBrowserOnboarding.Description2" = "2. Tryck på Standardwebbläsar-app";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Välj KARMA";
+"DefaultBrowserOnboarding.Description3" = "3. Välj Firefox";
 
-/* Text for the screenshot of the iOS system settings page for KARMA. */
+/* Text for the screenshot of the iOS system settings page for Firefox. */
 "DefaultBrowserOnboarding.Screenshot" = "Standardwebbläsar-app ";
 
-/* Menu option for setting KARMA as default browser. */
+/* Menu option for setting Firefox as default browser. */
 "Settings.DefaultBrowserMenuItem" = "Ange som standardwebbläsare";
 

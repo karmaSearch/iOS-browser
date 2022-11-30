@@ -38,7 +38,7 @@ final class ContentBlockerGenTests: XCTestCase {
         let categories = json["categories"]! as! [String: Any]
         let category = categories[CategoryTitle.Advertising.rawValue] as! [Any]
         var result = [String]()
-        category.forEach() {
+        category.forEach {
             result += contentBlocker.handleCategoryItem($0, action: .blockAll)
         }
 
@@ -48,7 +48,9 @@ final class ContentBlockerGenTests: XCTestCase {
         XCTAssert(result.first! == test)
     }
 
+    // swiftlint:disable empty_xctest_method
     static var allTests = [
         ("testParsing", testParsing),
     ]
+    // swiftlint:enable empty_xctest_method
 }

@@ -1,12 +1,16 @@
+/* (No Comment) */
+"New Private Tab" = "Új privát lap";
+
+/* (No Comment) */
+"New Tab" = "Új lap";
+
 /* Privacy - Camera Usage Description */
 "NSCameraUsageDescription" = "Ez lehetővé teszi, hogy fényképeket készítsen és töltsön fel.";
 
 /* Privacy - Face ID Usage Description */
 "NSFaceIDUsageDescription" = "A KARMA a Face ID-t igényli a mentett bejelentkezések eléréséhez.";
 
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+/* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "A meglátogatott webhelyek kérhetik az Ön helyét.";
 
 /* Privacy - Microphone Usage Description */
@@ -16,11 +20,5 @@
 "NSPhotoLibraryAddUsageDescription" = "Ezzel lementheti a képeket.";
 
 /* (No Comment) */
-"ShortcutItemTitleNewPrivateTab" = "Új privát lap";
-
-/* (No Comment) */
-"ShortcutItemTitleNewTab" = "Új lap";
-
-/* (No Comment) */
-"ShortcutItemTitleQRCode" = "QR-kód leolvasása";
+"Scan QR Code" = "QR-kód leolvasása";
 

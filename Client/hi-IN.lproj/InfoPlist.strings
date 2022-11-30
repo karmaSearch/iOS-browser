@@ -1,12 +1,16 @@
+/* (No Comment) */
+"New Private Tab" = "नया निजी टैब";
+
+/* (No Comment) */
+"New Tab" = "नया टैब";
+
 /* Privacy - Camera Usage Description */
 "NSCameraUsageDescription" = "यह आपको तस्वीरें लेने और अपलोड करने देता है।";
 
 /* Privacy - Face ID Usage Description */
 "NSFaceIDUsageDescription" = "KARMA को आपके सहेजे गए लॉगिन तक पहुंचने के लिए फेस आईडी की ज़रूरत है।";
 
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+/* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "आपके द्वारा देखे गए वेबसाइट आपके स्थान का अनुरोध कर सकते हैं।";
 
 /* Privacy - Microphone Usage Description */
@@ -16,11 +20,5 @@
 "NSPhotoLibraryAddUsageDescription" = "यह आपको फोटो सहेजने देता है।";
 
 /* (No Comment) */
-"ShortcutItemTitleNewPrivateTab" = "नया निजी टैब";
-
-/* (No Comment) */
-"ShortcutItemTitleNewTab" = "नया टैब";
-
-/* (No Comment) */
-"ShortcutItemTitleQRCode" = "QR कोड स्कैन करें";
+"Scan QR Code" = "QR कोड स्कैन करें";
 

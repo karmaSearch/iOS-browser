@@ -1,6 +1,6 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import Account
 import Shared
@@ -57,13 +57,11 @@ class NotificationService: UNNotificationServiceExtension {
             // Rather than changing tabQueue, we manually nil it out here.
             self.display?.tabQueue = nil
 
-            profile?._shutdown()
+            profile?.shutdown()
             consoleLog("push didFinish end")
         }
 
-        guard let display = self.display else {
-            return
-        }
+        guard let display = self.display else { return }
 
         display.messageDelivered = false
         display.displayNotification(what, profile: profile, with: error)
@@ -80,7 +78,7 @@ class NotificationService: UNNotificationServiceExtension {
 }
 
 class SyncDataDisplay {
-    var contentHandler: ((UNNotificationContent) -> Void)
+    var contentHandler: (UNNotificationContent) -> Void
     var notificationContent: UNMutableNotificationContent
 
     var tabQueue: TabQueue?
@@ -90,7 +88,7 @@ class SyncDataDisplay {
         self.contentHandler = contentHandler
         self.notificationContent = content
         self.tabQueue = tabQueue
-        Sentry.shared.setup(sendUsageData: true)
+        SentryIntegration.shared.setup(sendUsageData: true)
     }
 
     func displayNotification(_ message: PushMessage? = nil, profile: ExtensionProfile?, with error: PushMessageError? = nil) {
@@ -139,22 +137,23 @@ extension SyncDataDisplay {
     }
 
     func displayAccountVerifiedNotification() {
-        Sentry.shared.send(message: "SentTab error: account not verified")
+        SentryIntegration.shared.send(message: "SentTab error: account not verified")
         #if MOZ_CHANNEL_BETA || DEBUG
             presentNotification(title: .SentTab_NoTabArrivingNotification_title, body: "DEBUG: Account Verified")
             return
-        #endif
+        #else
         presentNotification(title: .SentTab_NoTabArrivingNotification_title, body: .SentTab_NoTabArrivingNotification_body)
+        #endif
     }
 
     func displayUnknownMessageNotification(debugInfo: String) {
-        Sentry.shared.send(message: "SentTab error: \(debugInfo)")
+        SentryIntegration.shared.send(message: "SentTab error: \(debugInfo)")
         #if MOZ_CHANNEL_BETA || DEBUG
             presentNotification(title: .SentTab_NoTabArrivingNotification_title, body: "DEBUG: " + debugInfo)
             return
-        #endif
-
+        #else
         presentNotification(title: .SentTab_NoTabArrivingNotification_title, body: .SentTab_NoTabArrivingNotification_body)
+        #endif
     }
 }
 
@@ -184,14 +183,14 @@ extension SyncDataDisplay {
         let title: String
         let body: String
 
-        if tabs.count == 0 {
+        if tabs.isEmpty {
             title = .SentTab_NoTabArrivingNotification_title
             #if MOZ_CHANNEL_BETA || DEBUG
                 body = "DEBUG: Sent Tabs with no tab"
             #else
                 body = .SentTab_NoTabArrivingNotification_body
             #endif
-            Sentry.shared.send(message: "SentTab error: no tab")
+            SentryIntegration.shared.send(message: "SentTab error: no tab")
         } else {
             let deviceNames = Set(tabs.compactMap { $0["deviceName"] as? String })
             if let deviceName = deviceNames.first, deviceNames.count == 1 {
@@ -205,7 +204,7 @@ extension SyncDataDisplay {
                 // because we have only just introduced "displayURL" as a key.
                 body = (tabs[0]["displayURL"] as? String) ??
                     (tabs[0]["url"] as! String)
-            } else if deviceNames.count == 0 {
+            } else if deviceNames.isEmpty {
                 body = .SentTab_TabArrivingNotification_NoDevice_body
             } else {
                 body = String(format: .SentTab_TabArrivingNotification_WithDevice_body, AppInfo.displayName)

@@ -1,12 +1,16 @@
+/* (No Comment) */
+"New Private Tab" = "Llingüeta privada nueva";
+
+/* (No Comment) */
+"New Tab" = "Llingüeta nueva";
+
 /* Privacy - Camera Usage Description */
 "NSCameraUsageDescription" = "KARMA usa la cámara pa escaniar códigos QR y facer semeyes y vídeos.";
 
 /* Privacy - Face ID Usage Description */
 "NSFaceIDUsageDescription" = "KARMA rique Face ID p'acceder a los anicios de sesión guardaos.";
 
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+/* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "Los sitios web que visites puen solicitate l'allugamientu.";
 
 /* Privacy - Microphone Usage Description */
@@ -16,11 +20,5 @@
 "NSPhotoLibraryAddUsageDescription" = "Esto déxate guardar les semeyes.";
 
 /* (No Comment) */
-"ShortcutItemTitleNewPrivateTab" = "Llingüeta privada nueva";
-
-/* (No Comment) */
-"ShortcutItemTitleNewTab" = "Llingüeta nueva";
-
-/* (No Comment) */
-"ShortcutItemTitleQRCode" = "Escaniar un códigu QR";
+"Scan QR Code" = "Escaniar un códigu QR";
 

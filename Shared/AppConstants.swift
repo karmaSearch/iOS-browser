@@ -1,12 +1,11 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import UIKit
 
 public enum AppName: String, CustomStringConvertible {
     case shortName = "KARMA"
-    case longName = "KARMA Search"
 
     public var description: String {
         return self.rawValue
@@ -38,10 +37,14 @@ public struct KeychainKey {
 }
 
 public struct AppConstants {
-    public static let IsRunningTest = NSClassFromString("XCTestCase") != nil || ProcessInfo.processInfo.arguments.contains(LaunchArguments.Test)
+    public static let isRunningTest = NSClassFromString("XCTestCase") != nil
+    || AppConstants.isRunningUITests
+    || AppConstants.isRunningPerfTests
 
-    public static let IsRunningPerfTest = NSClassFromString("XCTestCase") != nil || ProcessInfo.processInfo.arguments.contains(LaunchArguments.PerformanceTest)
-    
+    public static let isRunningUITests = ProcessInfo.processInfo.arguments.contains(LaunchArguments.Test)
+
+    public static let isRunningPerfTests = ProcessInfo.processInfo.arguments.contains(LaunchArguments.PerformanceTest)
+
     public static let FxAiOSClientId = "1b1a3e44c54fbb58"
 
     /// Build Channel.
@@ -94,7 +97,7 @@ public struct AppConstants {
 
     /// The maximum length of a bookmark description stored by Firefox. Shared with Places on desktop.
     public static let DB_DESCRIPTION_LENGTH_MAX = 1024
-    
+
     /// Fixed short version for nightly builds
     public static let NIGHTLY_APP_VERSION = "9000"
 }

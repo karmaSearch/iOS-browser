@@ -1,69 +1,12 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import UIKit
 import Storage
 
 struct SiteTableViewControllerUX {
-    static let HeaderHeight = CGFloat(32)
-    static let RowHeight = CGFloat(44)
-    static let HeaderFont = UIFont.customFont(ofSize: 12, weight: UIFont.Weight.medium)
-    static let HeaderTextMargin = CGFloat(16)
-}
-
-class SiteTableViewHeader: UITableViewHeaderFooterView, NotificationThemeable {
-    let titleLabel: UILabel = .build { label in
-        label.font = DynamicFontHelper.defaultHelper.DeviceFontMediumBold
-        label.textColor = UIColor.theme.tableView.headerTextDark
-    }
-    fileprivate let bordersHelper = ThemedHeaderFooterViewBordersHelper()
-
-    override var textLabel: UILabel? {
-        return titleLabel
-    }
-
-    override init(reuseIdentifier: String?) {
-        super.init(reuseIdentifier: reuseIdentifier)
-        
-        translatesAutoresizingMaskIntoConstraints = false
-        contentView.addSubview(titleLabel)
-
-        bordersHelper.initBorders(view: self.contentView)
-        setDefaultBordersValues()
-
-        NSLayoutConstraint.activate([
-            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: CGFloat(SiteTableViewControllerUX.HeaderTextMargin)),
-            titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
-        ])
-
-        applyTheme()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        setDefaultBordersValues()
-        applyTheme()
-    }
-
-    func applyTheme() {
-        titleLabel.textColor = UIColor.theme.tableView.headerTextDark
-        contentView.backgroundColor = UIColor.theme.tableView.selectedBackground
-        bordersHelper.applyTheme()
-    }
-
-    func showBorder(for location: ThemedHeaderFooterViewBordersHelper.BorderLocation, _ show: Bool) {
-        bordersHelper.showBorder(for: location, show)
-    }
-
-    func setDefaultBordersValues() {
-        bordersHelper.showBorder(for: .top, true)
-        bordersHelper.showBorder(for: .bottom, true)
-    }
+    static let RowHeight: CGFloat = 44
 }
 
 /**
@@ -71,9 +14,6 @@ class SiteTableViewHeader: UITableViewHeaderFooterView, NotificationThemeable {
  */
 @objcMembers
 class SiteTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, NotificationThemeable {
-    let CellIdentifier = "CellIdentifier"
-    let OneLineCellIdentifier = "OneLineCellIdentifier"
-    let HeaderIdentifier = "HeaderIdentifier"
     let profile: Profile
 
     var data: Cursor<Site> = Cursor<Site>(status: .success, msg: "No data set")
@@ -81,22 +21,26 @@ class SiteTableViewController: UIViewController, UITableViewDelegate, UITableVie
         guard let self = self else { return }
         table.delegate = self
         table.dataSource = self
-        table.register(TwoLineImageOverlayCell.self, forCellReuseIdentifier: self.CellIdentifier)
-        table.register(OneLineTableViewCell.self, forCellReuseIdentifier: self.OneLineCellIdentifier)
-        table.register(SiteTableViewHeader.self, forHeaderFooterViewReuseIdentifier: self.HeaderIdentifier)
+        table.register(TwoLineImageOverlayCell.self, forCellReuseIdentifier: TwoLineImageOverlayCell.cellIdentifier)
+        table.register(OneLineTableViewCell.self, forCellReuseIdentifier: OneLineTableViewCell.cellIdentifier)
+        table.register(SiteTableViewHeader.self, forHeaderFooterViewReuseIdentifier: SiteTableViewHeader.cellIdentifier)
         table.layoutMargins = .zero
         table.keyboardDismissMode = .onDrag
         table.accessibilityIdentifier = "SiteTable"
         table.cellLayoutMarginsFollowReadableWidth = false
         table.estimatedRowHeight = SiteTableViewControllerUX.RowHeight
         table.setEditing(false, animated: false)
-        
-        if let _ = self as? HomePanelContextMenu {
+
+        if let _ = self as? LibraryPanelContextMenu {
             table.dragDelegate = self
         }
-        
+
         // Set an empty footer to prevent empty cells from appearing in the list.
         table.tableFooterView = UIView()
+
+        if #available(iOS 15.0, *) {
+            table.sectionHeaderTopPadding = 0
+        }
     }
 
     private override init(nibName: String?, bundle: Bundle?) {
@@ -116,11 +60,7 @@ class SiteTableViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.addSubview(tableView)
-        tableView.snp.makeConstraints { make in
-            make.edges.equalTo(self.view)
-            return
-        }
+        setupView()
     }
 
     deinit {
@@ -139,12 +79,21 @@ class SiteTableViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         tableView.setEditing(false, animated: false)
-        coordinator.animate(alongsideTransition: { context in
-            //The AS context menu does not behave correctly. Dismiss it when rotating.
-            if let _ = self.presentedViewController as? PhotonActionSheet {
-                self.presentedViewController?.dismiss(animated: true, completion: nil)
-            }
-        }, completion: nil)
+        // The AS context menu does not behave correctly. Dismiss it when rotating.
+        if let _ = self.presentedViewController as? PhotonActionSheet {
+            self.presentedViewController?.dismiss(animated: true, completion: nil)
+        }
+    }
+
+    private func setupView() {
+        view.addSubview(tableView)
+
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
     }
 
     func reloadData() {
@@ -160,7 +109,7 @@ class SiteTableViewController: UIViewController, UITableViewDelegate, UITableVie
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: TwoLineImageOverlayCell.cellIdentifier, for: indexPath)
         if self.tableView(tableView, hasFullWidthSeparatorForRowAtIndexPath: indexPath) {
             cell.separatorInset = .zero
         }
@@ -169,7 +118,7 @@ class SiteTableViewController: UIViewController, UITableViewDelegate, UITableVie
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return tableView.dequeueReusableHeaderFooterView(withIdentifier: HeaderIdentifier)
+        return tableView.dequeueReusableHeaderFooterView(withIdentifier: SiteTableViewHeader.cellIdentifier)
     }
 
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
@@ -180,7 +129,7 @@ class SiteTableViewController: UIViewController, UITableViewDelegate, UITableVie
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return SiteTableViewControllerUX.HeaderHeight
+        return UITableView.automaticDimension
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -204,11 +153,15 @@ class SiteTableViewController: UIViewController, UITableViewDelegate, UITableVie
 }
 
 extension SiteTableViewController: UITableViewDragDelegate {
-    func tableView(_ tableView: UITableView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
-        guard let homePanelVC = self as? HomePanelContextMenu, let site = homePanelVC.getSiteDetails(for: indexPath), let url = URL(string: site.url), let itemProvider = NSItemProvider(contentsOf: url) else {
-            return []
-        }
 
+    func tableView(_ tableView: UITableView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
+        guard let panelVC = self as? LibraryPanelContextMenu,
+              let site = panelVC.getSiteDetails(for: indexPath),
+              let url = URL(string: site.url), let itemProvider = NSItemProvider(contentsOf: url)
+        else { return [] }
+
+        // Telemetry is being sent to legacy, need to add it to metrics.yml
+        // Value should be something else than .homePanel
         TelemetryWrapper.recordEvent(category: .action, method: .drag, object: .url, value: .homePanel)
 
         let dragItem = UIDragItem(itemProvider: itemProvider)

@@ -1,11 +1,11 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import Foundation
 import Shared
 import WebKit
-import MozillaAppServices
+import Glean
 
 public enum BasicSearchProvider: String {
     case google
@@ -23,7 +23,7 @@ public struct SearchProviderModel {
     let codePrefixes: [String]
     let followOnParams: [String]
     let extraAdServersRegexps: [String]
-    
+
     public static let searchProviderList = [
         SearchProviderModel(
             name: BasicSearchProvider.google.rawValue,
@@ -91,13 +91,13 @@ extension SearchProviderModel {
                 adUrls.append(url)
             }
         }
-        
+
         return adUrls
     }
 }
 
 class AdsTelemetryHelper: TabContentScript {
-    
+
     fileprivate weak var tab: Tab?
 
     class func name() -> String {
@@ -115,32 +115,33 @@ class AdsTelemetryHelper: TabContentScript {
     func userContentController(_ userContentController: WKUserContentController, didReceiveScriptMessage message: WKScriptMessage) {
         guard
             let provider = getProviderForMessage(message: message),
-            let body = message.body as? [String : Any],
+            let body = message.body as? [String: Any],
             let urls = body["urls"] as? [String] else { return }
         let adUrls = provider.listAdUrls(urls: urls)
         if !adUrls.isEmpty {
             AdsTelemetryHelper.trackAdsFoundOnPage(providerName: provider.name)
             tab?.adsProviderName = provider.name
             tab?.adsTelemetryUrlList = adUrls
+            tab?.adsTelemetryRedirectUrlList.removeAll()
         }
     }
-    
+
     private func getProviderForMessage(message: WKScriptMessage) -> SearchProviderModel? {
-        guard let body = message.body as? [String : Any], let url = body["url"] as? String else { return nil }
+        guard let body = message.body as? [String: Any], let url = body["url"] as? String else { return nil }
         for provider in SearchProviderModel.searchProviderList {
             guard url.range(of: provider.regexp, options: .regularExpression) != nil else { continue }
             return provider
         }
-        
+
         return nil
     }
-    
+
     // Tracking
-    
+
     public static func trackAdsFoundOnPage(providerName: String) {
 //        GleanMetrics.BrowserSearch.withAds["provider-\(providerName)"].add()
     }
-    
+
     public static func trackAdsClickedOnPage(providerName: String) {
   //      GleanMetrics.BrowserSearch.adClicks["provider-\(providerName)"].add()
     }

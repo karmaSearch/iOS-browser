@@ -20,82 +20,33 @@
 "ActivityStream.ContextMenu.AddToShortcuts" = "მალსახმობებში დამატება";
 
 /* The title for the pinning a topsite action */
-"ActivityStream.ContextMenu.PinTopsite" = "რჩეულ საიტებში მიმაგრება";
-
-/* The title for the pinning a topsite action */
 "ActivityStream.ContextMenu.PinTopsite2" = "მიმაგრება";
-
-/* The title for removing a shortcut action */
-"ActivityStream.ContextMenu.RemoveFromShortcuts" = "მოცილება მალსახმობებიდან";
-
-/* The title for removing a pinned topsite action */
-"ActivityStream.ContextMenu.RemovePinTopsite" = "მიმაგრებული საიტის მოხსნა";
 
 /* The title for the unpinning a topsite action */
 "ActivityStream.ContextMenu.UnpinTopsite" = "მოხსნა";
 
-/* The description of a highlight if it is a site the user has bookmarked */
-"ActivityStream.Highlights.Bookmark" = "ჩანიშნული";
-
-/* The description of a highlight if it is a site the user has visited */
-"ActivityStream.Highlights.Visited" = "მონახულებული";
-
 /* Title for the Jump Back In section. This section allows users to jump back in to a recently viewed tab */
 "ActivityStream.JumpBackIn.SectionTitle" = "წინაზე გადასვლა";
 
-/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
+/* On the Firefox homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
 "ActivityStream.JumpBackIn.TabGroup.SiteCount" = "ჩანართები: %d";
-
-/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists, the Tab Group item title will be 'Your search for \"video games\"'. The %@ sign is a placeholder for the actual search the user did. */
-"ActivityStream.JumpBackIn.TabGroup.Title" = "მოძიებული „%@“";
 
 /* A string used to signify the start of the Recently Saved section in Home Screen. */
 "ActivityStream.Library.Title" = "ბოლოს შენახული";
 
-/* Section title label for recently bookmarked websites */
-"ActivityStream.NewRecentBookmarks.Title" = "ბოლოს ჩანიშნული";
-
-/* The link that shows more Pocket trending stories */
-"ActivityStream.Pocket.MoreLink" = "სხვა";
-
-/* Section title label for Recommended by Pocket section */
-"ActivityStream.Pocket.SectionTitle" = "Pocket-იდან შემოთავაზებული";
-
-/* Section title label for Recommended by Pocket section */
-"ActivityStream.Pocket.SectionTitle2" = "გთავაზობთ Pocket";
-
-/* The description of a Pocket Story */
-"ActivityStream.Pocket.Trending" = "ბევრი ნახვებით";
-
 /* Section title label for recently visited websites */
 "ActivityStream.RecentHistory.Title" = "ბოლოს მონახულებული";
-
-/* Section title for the Recently Saved section. This shows websites that have had a save action. Right now it is just bookmarks but it could be used for other things like the reading list in the future. */
-"ActivityStream.RecentlySaved.SectionTitle" = "ბოლოს შენახული";
-
-/* This button will open the library showing all the users bookmarks */
-"ActivityStream.RecentlySaved.ShowAll" = "ყველას ჩვენება";
-
-/* When long pressing an item in the Recently Visited section, this is the title of the button that appears, letting the user know to remove that particular item from the menu. */
-"ActivityStream.RecentlyVisited.RemoveButton.Title" = "მოცილება";
 
 /* Section title label for Shortcuts */
 "ActivityStream.Shortcuts.SectionTitle" = "მალსახმობები";
 
-/* label showing how many rows of topsites are shown. %d represents a number */
-"ActivityStream.TopSites.RowCount" = "რიგი: %d";
-
 /* The title for the setting page which lets you select the number of top site rows */
 "ActivityStream.TopSites.RowSettingFooter" = "რიგის მითითება";
-
-/* Section title label for Top Sites */
-"ActivityStream.TopSites.SectionTitle" = "რჩეული საიტები";
 
 /* Accessibility label for the Add Tab button in the Tab Tray. */
 "Add Tab" = "ჩანართის დამატება";
 
-/* Accessibility label for action adding current page to reading list.
-   Name for button adding current article to reading list in reader mode */
+/* Name for button adding current article to reading list in reader mode */
 "Add to Reading List" = "წასაკითხებში დამატება";
 
 /* Accessibility message e.g. spoken by VoiceOver after the current page gets added to the Reading List using the Reader View button, e.g. by long-pressing it or by its accessibility custom action. */
@@ -113,6 +64,12 @@
 /* Accessibility label for address and search field, both words (Address, Search) are therefore nouns. */
 "Address and Search" = "მისამართი და ძიება";
 
+/* Accessibility label for action adding current page to reading list. */
+"Address.Bar.ReadingList.v106" = "წასაკითხებში დამატება";
+
+/* Accessibility label for the Address Bar, where a user can enter the search they wish to make */
+"Address.Bar.v99" = "მისამართების ველი";
+
 /* Used as a button label for crash dialog prompt */
 "Always Send" = "გაგზავნა ყოველთვის";
 
@@ -122,23 +79,11 @@
 /* Authentication prompt title */
 "Authentication required" = "საჭიროებს ანგარიშის მონაცემებს";
 
-/* Description for button to suggest searching with a search engine. First argument is the name of the search engine to select */
-"Awesomebar.SearchWithEngine.Description" = "საძიებოდ გამოიყენეთ %@ მისამართების ველიდანვე";
-
-/* Title for button to suggest searching with a search engine. First argument is the name of the search engine to select */
-"Awesomebar.SearchWithEngine.Title" = "საძიებოდ %@";
-
 /* Accessibility label for the Back button in the tab toolbar. */
 "Back" = "წინა";
 
 /* Block pop-up windows setting */
 "Block Pop-up Windows" = "ამომხტომი ფანჯრების შეზღუდვა";
-
-/* The header title for the fields when editing a Bookmark */
-"Bookmark.BookmarkDetail.FieldsHeader.Bookmark.Title" = "სანიშნი";
-
-/* The header title for the fields when editing a Folder */
-"Bookmark.BookmarkDetail.FieldsHeader.Folder.Title" = "საქაღალდე";
 
 /* The label for the Title field when editing a bookmark */
 "Bookmark.DetailFieldTitle.Label" = "სათაური";
@@ -161,11 +106,8 @@
 /* The label to show the location of the folder where the bookmark is located */
 "Bookmarks.Folder.Label" = "საქაღალდე";
 
-/* The label for the location of the new folder */
-"Bookmarks.FolderLocation.Label" = "მდებარეობა";
-
-/* The label for the title of the new folder */
-"Bookmarks.FolderName.Label" = "საქაღალდის სახელი";
+/* A label indicating all bookmarks grouped under the category 'Desktop Bookmarks'. */
+"Bookmarks.Menu.DesktopBookmarks" = "კომპიუტერის სანიშნები";
 
 /* The button to create a new bookmark */
 "Bookmarks.NewBookmark.Label" = "ახალი სანიშნი";
@@ -179,19 +121,13 @@
 /* The label for the title of a bookmark */
 "Bookmarks.Title.Label" = "დასახელება";
 
-/* The label for the URL of a bookmark */
-"Bookmarks.URL.Label" = "URL";
-
-/* Status label for the empty Bookmarks state. */
-"BookmarksPanel.EmptyState.Title" = "თქვენ მიერ ჩანიშნული გვერდები გამოჩნდება აქ.";
-
 /* Describes the date on which the breach occurred */
 "BreachAlerts.BreachDate" = "მიტაცების თარიღია";
 
 /* Description of what a breach is */
 "BreachAlerts.Description" = "პაროლები გამჟღავნდა ან მიიტაცეს თქვენი ბოლოს ცვლილების შემდგომ. ანგარიშის დასაცავად, შედით საიტზე და კვლავ შეცვალეთ პაროლი.";
 
-/* Link to monitor.KARMA.com to learn more about breached passwords */
+/* Link to monitor.firefox.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "ვრცლად";
 
 /* Leads to a link to the breached website */
@@ -224,14 +160,8 @@
 /* Accessibility label (used by assistive technology) notifying the user that the tab is being closed. */
 "Closing tab" = "ჩანართი იხურება";
 
-/* Accessibility label for Desktop Computer (PC) image in remote tabs list */
-"computer" = "კომპიუტერი";
-
 /* Context menu item for bookmarking a link URL */
 "ContextMenu.BookmarkLinkButtonTitle" = "ბმულის ჩანიშვნა";
-
-/* The button text in the Button Toast for switching to a fresh New Private Tab. */
-"ContextMenu.ButtonToast.NewPrivateTabOpened.ButtonText" = "გადართვა";
 
 /* The label text in the Button Toast for switching to a fresh New Private Tab. */
 "ContextMenu.ButtonToast.NewPrivateTabOpened.LabelText" = "ახალი პირადი ჩანართი გაიხსნა";
@@ -257,24 +187,32 @@
 /* Context menu item for opening a link in a new tab */
 "ContextMenu.OpenInNewTabButtonTitle" = "გახსნა ახალ ჩანართში";
 
-/* Context menu item for opening a link in a new private tab */
-"ContextMenu.OpenLinkInNewPrivateTabButtonTitle" = "ბმულის გახსნა ახალ პირად ჩანართში";
-
-/* Context menu item for opening a link in a new tab */
-"ContextMenu.OpenLinkInNewTabButtonTitle" = "ბმულის გახსნა ახალ ჩანართში";
-
 /* Context menu item for saving an image */
 "ContextMenu.SaveImageButtonTitle" = "სურათის შენახვა";
 
 /* Context menu item for sharing a link URL */
 "ContextMenu.ShareLinkButtonTitle" = "ბმულის გაზიარება";
 
-/* Contextual hints are little popups that appear for the users informing them of new features. This one talks about the more personalized home feature. */
-"ContextualHints.Homepage.PersonalizedHome" = "KARMA-ის მორგებული საწყისი გვერდით, შეძლებთ მარტივად განაგრძოთ იქიდან, სადაც შეჩერდით. იპოვეთ ბოლოს გახსნილი ჩანართები, სანიშნები და მოძიებული გვერდები.";
+/* Contextual hints are little popups that appear for the users informing them of new features. This one introduces search bar placement to existing users. It tells them that the search bar can now be moved to the bottom of the screen. */
+"ContextualHint.SearchBarPlacement.ExistingUsers" = "ახლა უკვე შეგიძლიათ ხელსაწყოების ქვემოთ გადატანა, მოხერხებულად გამოყენებისთვის";
 
-/* Contextual hints are little popups that appear for the users informing them of new features. This one is the call to action for the inactive tabs contextual popup.
-   Contextual hints are little popups that appear for the users informing them of new features. This one talks about the inactive tabs feature. */
-"ContextualHints.TabTray.InactiveTabs" = "ორი კვირის მოუნახულებელი ჩანართები, აქ გადმოვა.";
+/* Contextual hints are little popups that appear for the users informing them of new features. This one introduces search bar placement to new users. It tells them that by default, the search bar will appear at the bottom of the device. */
+"ContextualHint.SearchBarPlacement.NewUsers" = "ტექსტის მოხერხებულად შეყვანისთვის, ხელსაწყოები ნაგულისხმევად ქვემოთაა განთავსებული.";
+
+/* Contextual hints are little popups that appear for the users informing them of new features. This one talks about the more personalized home feature. */
+"ContextualHints.FirefoxHomepage.JumpBackIn.PersonalizedHomeOldCopy.v106" = "Firefox-ის მორგებული საწყისი გვერდით შეძლებთ, მარტივად განაგრძოთ იქიდან, სადაც შეჩერდით. იპოვეთ ბოლოს გახსნილი ჩანართები, სანიშნები და მოძიებული გვერდები.";
+
+/* Contextual hints are little popups that appear for the users informing them of new features. This one is a call to action for the popup describing search bar placement. It indicates a user can navigate to the settings page that allows them to customize the placement of the search bar. */
+"ContextualHints.SearchBarPlacement.CallToAction" = "ხელსაწყოთა ზოლის პარამეტრები";
+
+/* Contextual hints are little popups that appear for the users informing them of new features. This one talks about the inactive tabs feature. */
+"ContextualHints.TabTray.InactiveTabs" = "ორი კვირის მოუნახულებელი ჩანართები აქ გადმოვა.";
+
+/* Contextual hints are little popups that appear for the users informing them of new features. This one is the call to action for the inactive tabs contextual popup. */
+"ContextualHints.TabTray.InactiveTabs.CallToAction" = "გამორთვა პარამეტრებიდან";
+
+/* Accessibility label for action denoting closing contextual hint. */
+"ContextualHintsCloseButtonAccessibility.v105" = "დახურვა";
 
 /* Accessibility message e.g. spoken by VoiceOver after adding current webpage to the Reading List failed. */
 "Could not add page to Reading list" = "გვერდის წასაკითხებში დამატება ვერ ხერხდება";
@@ -284,12 +222,6 @@
 
 /* Error message that is shown in settings when there was a problem loading */
 "Could not load page." = "ჩატვირთვა ვერ მოხერხდა.";
-
-/* Description for the new dark mode change in the version 22 app release. It describes the new automatic dark theme and how to change the theme settings. */
-"CoverSheet.v22.DarkMode.Description" = "iOS 13 ვერსიის მომხმარებელთათვის, KARMA ახლა უკვე თავისთავად გადაერთვება მუქ იერსახეზე, როცა ტელეფონში მუქი რეჟიმი იქნება დაყენებული. შესაცვლელად, იხილეთ პარამეტრები > იერსახე.";
-
-/* Title for the new dark mode change in the version 22 app release. */
-"CoverSheet.v22.DarkMode.Title" = "მუქი იერსახე ახლა უკვე მოიცავს მუქ კლავიატურასა და ჩატვირთვის ეკრანს.";
 
 /* Description for the new ETP mode i.e. standard vs strict */
 "CoverSheet.v24.ETP.Description" = "თვალთვალისგან გაძლიერებული ჩაშენებული დაცვა, გეხმარებათ შეაჩეროთ რეკლამები, თვალი გადევნონ. ჩართეთ მკაცრი რეჟიმი კიდევ უფრო მეტი მეთვალყურის, რეკლამის ან ამომხტომის შესაზღუდად.";
@@ -309,10 +241,11 @@
 /* Accessibility label for button decreasing font size in display settings of reader mode */
 "Decrease text size" = "ტექსტის ზომის შემცირება";
 
-/* Accessibility label for default search engine setting.
-   Title for default search engine picker.
-   Title for default search engine settings section. */
+/* Title for default search engine picker. */
 "Default Search Engine" = "ნაგულისხმევი საძიებო სისტემა";
+
+/* Accessibility label for action denoting closing default browser home tab banner. */
+"DefaultBrowserCloseButtonAccessibility.v102" = "დახურვა";
 
 /* Name for display settings button in reader mode. Display in the meaning of presentation, not monitor. */
 "Display Settings" = "ეკრანის პარამეტრები";
@@ -341,17 +274,11 @@
 /* Alert dialog title when the user taps the cancel download icon. */
 "Downloads.CancelDialog.Title" = "ჩამოტვირთვის გაუქმება";
 
-/* The message displayed to a user when they try and perform the download of an asset that KARMA cannot currently handle. */
-"Downloads.Error.Message" = "ჩამოტვირთვები ჯერ არაა მხარდაჭერილი KARMA-ში.";
-
 /* The label text in the Download Cancelled toast for showing confirmation that the download was cancelled. */
 "Downloads.Toast.Cancelled.LabelText" = "ჩამოტვირთვა გაუქმებულია";
 
 /* The label text in the Download Failed toast for showing confirmation that the download has failed. */
 "Downloads.Toast.Failed.LabelText" = "ჩამოტვირთვა ვერ მოხერხდა";
-
-/* The button to retry a failed download from the Download Failed toast. */
-"Downloads.Toast.Failed.RetryButton" = "გამეორება";
 
 /* The button to open a new tab with the Downloads home panel */
 "Downloads.Toast.GoToDownloads.Button" = "ჩამოტვირთვები";
@@ -387,7 +314,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "შესაძლოა არაა სწორად გამართული, ან თავდამსხმელმა ხელყო. განაგრძეთ, საკუთარი რისკის ფასად.";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "%@-ის მფლობელს არასათანადოდ აქვს ვებსაიტი გამართული. ინფორმაციის მოპარვისგან დაცვის მიზნით, KARMA ამ საიტს არ დაუკავშირდება.";
+"ErrorPages.CertWarning.Description" = "%@-ის მფლობელს არასათანადოდ აქვს ვებსაიტი გამართული. ინფორმაციის მოპარვისგან დაცვის მიზნით, Firefox ამ საიტს არ დაუკავშირდება.";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "კავშირი სანდო არაა";
@@ -407,89 +334,77 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for KARMA about:home page in tab history list */
-"KARMA.HomePage.Title" = "KARMA საწყისი გვერდი";
+/* Title for firefox about:home page in tab history list */
+"Firefox.HomePage.Title" = "Firefox საწყისი გვერდი";
 
-/* A button at bottom of the KARMA homepage that, when clicked, takes users straight to the settings options, where they can customize the KARMA Home page */
+/* A button at bottom of the Firefox homepage that, when clicked, takes users straight to the settings options, where they can customize the Firefox Home page */
 "FirefoxHome.CustomizeHomeButton.Title" = "საწყისი გვერდის მორგება";
+
+/* At the end of the Pocket section on the Firefox Homepage, this button appears and indicates tapping it will navigate the user to more Pocket Stories. */
+"FirefoxHome.Pocket.DiscoverMore" = "აღმოაჩინეთ მეტი";
+
+/* On each Pocket Stories on the Firefox Homepage, this label appears and indicates the number of minutes to read an article. Minutes should be abbreviated due to space constraints. %d represents the number of minutes */
+"FirefoxHome.Pocket.Minutes.v99" = "%d წთ";
+
+/* This is the title of the Pocket section on Firefox Homepage. */
+"FirefoxHome.Pocket.SectionTitle" = "მეტად სააზროვნო მასალები";
+
+/* When a user taps and holds on an item from the Recently Visited section, this label will appear indicating the option to remove that item. */
+"FirefoxHome.RecentHistory.Remove" = "მოცილება";
+
+/* Label showing how many sites there is in a search group. %d represents a number */
+"FirefoxHomepage.Common.SitesCount.v101" = "საიტები: %d";
+
+/* The title for the Settings context menu action for sponsored tiles in the Firefox home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
+"FirefoxHomepage.ContextualMenu.Settings.v101" = "პარამეტრები";
+
+/* The title for the Sponsored Content context menu action for sponsored tiles in the Firefox home page shortcuts section. Clicking this brings the users to a support page where users can learn more about Sponsored content and how it works. */
+"FirefoxHomepage.ContextualMenu.SponsoredContent.v101" = "ჩვენი დამფინანსებლები და თქვენი პირადულობა";
+
+/* Accessibility action title to open the synced tab for tab pickup on the Firefox homepage in the Jump Back In section. */
+"FirefoxHomepage.JumpBackIn.TabPickup.OpenTab.A11y.v106" = "დასინქრონებული ჩანართის გახსნა";
+
+/* Button title shown for tab pickup on the Firefox homepage in the Jump Back In section. */
+"FirefoxHomepage.JumpBackIn.TabPickup.ShowAll.ButtonTitle.v104" = "ყველა დასინქრონებულის ნახვა";
+
+/* If a user is signed in, and a sync has been performed to collect their recent tabs from other signed in devices, their most recent tab from another device can now appear in the Jump Back In section. This label specifically points out which cell inside the Jump Back In section shows that synced tab. */
+"FirefoxHomepage.JumpBackIn.TabPickup.v104" = "ამოკრეფილი ჩანართები";
+
+/* This string will show under the description on pocket story, indicating that the story is sponsored. */
+"FirefoxHomepage.Pocket.Sponsored.v103" = "დაფინანსებული";
+
+/* This string will show under a shortcuts tile on the firefox home page, indicating that the tile is a sponsored tile. Space is limited, please keep as short as possible. */
+"FirefoxHomepage.Shortcuts.Sponsored.v100" = "დაფინანსებული";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "მომდევნო";
 
-/* Label stating how to disconnect account */
-"FxA.AccountVerificationDetails" = "ელფოსტა არასწორია? გაწყვიტეთ კავშირი ქვემოთ და დაიწყეთ ხელახლა.";
+/* Settings section title for Firefox Account */
+"FxA.FirefoxAccount" = "Firefox-ანგარიში";
 
-/* Label stating your account is not verified */
-"FxA.AccountVerificationRequired" = "საჭიროა ანგარიშის დამოწმება";
-
-/* Message explaining that user needs to check email for KARMA Account verfication link. */
-"FxA.AccountVerificationRequiredSurface" = "საჭიროა %@ ანგარიშის დამოწმება. შეამოწმეთ თქვენი ელფოსტა, რომელზეც გამოიგზავნება დასადასტურებელი ბმული KARMA-ისგან.";
-
-/* Button label to connect another device to Sync */
-"FxA.ConnectAnotherDevice" = "სხვა მოწყობილობის დაკავშირება";
-
-/* Settings section title for KARMA Account */
-"FxA.FirefoxAccount" = "KARMA-ანგარიში";
-
-/* Button label to go to KARMA Account settings */
+/* Button label to go to Firefox Account settings */
 "FxA.ManageAccount" = "ანგარიშის და მოწყობილობების მართვა";
 
 /* Label when no internet is present */
 "FxA.NoInternetConnection" = "ინტერნეტთან კავშირი არ არის";
 
-/* Button label to open Sync preferences */
-"FxA.OpenSyncPreferences" = "სინქრონიზაციის პარამეტრები";
-
-/* Instructions shown on qr code scanning view */
-"fxa.qr-scanning-view.instructions" = "წააკითხეთ QR-კოდი, რომელიც ჩანს საიტზე KARMA.com/pair";
-
-/* Remove button is displayed on KARMA account page under certain scenarios where user would like to remove their account. */
-"FxA.RemoveAccount" = "მოცილება";
-
-/* Description string for alert view that gets presented when user tries to remove an account. */
-"FxA.RemoveAccountAlertMessage" = "ამ მოწყობილობასთან დაკავშირებული KARMA-ანგარიშის მოცილება, სხვა მომხმარებლით შესასვლელად.";
-
-/* Remove account alert is the final confirmation before user removes their KARMA account */
-"FxA.RemoveAccountAlertTitle" = "ანგარიშის მოცილება";
-
-/* Button label to resend email */
-"FxA.ResendEmail" = "ელფოსტის ხელახლა გაგზავნა";
-
 /* FxA sign in view subtitle */
 "fxa.signin.camera-signin" = "შედით კამერის მეშვეობით";
 
-/* FxA sign in create account label. */
-"fxa.signin.create-account-pt-1" = "დაასინქრონეთ KARMA მოწყობილობებს შორის საერთო ანგარიშით.";
-
-/* FxA sign in create account label. This will be linked to the site to create an account. */
-"fxa.signin.create-account-pt-2" = "შექმენით KARMA-ანგარიში.";
-
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "გახსენით კომპიუტერში KARMA და იხილეთ გვერდი KARMA.com/pair";
+"fxa.signin.qr-link-instruction" = "ჩართეთ კომპიუტერში Firefox და გახსენით გვერდი firefox.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "მზადაა წასაკითხად";
 
-/* FxA sign in view title */
-"fxa.signin.turn-on-sync" = "ჩართეთ Sync";
-
 /* FxA sign in view email login button */
 "fxa.signin.use-email-instead" = "ელფოსტით შესვლა სანაცვლოდ";
 
-/* Button label to sign into Sync */
-"FxA.SignIntoSync" = "დასინქრონება – შესვლა";
-
-/* Label explaining what sync does */
-"FxA.SyncExplain" = "მიიღეთ წვდომა თქვენს ჩანართებთან, სანიშნებთან და პაროლებთან, ყველა თქვენი მოწყობილობიდან.";
-
-/* Button label to Sync your KARMA Account */
+/* Button label to Sync your Firefox Account */
 "FxA.SyncNow" = "დასინქრონება ახლავე";
 
-/* Call to action for sign into sync button */
-"FxA.TakeYourWebWithYou" = "წაიყოლეთ თქვენი მონაცემები თან";
-
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "KARMA Sync დაკავშირებულია %@-სთან";
+"FxAPush_DeviceConnected_body" = "Firefox Sync დაკავშირებულია %@-სთან";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Sync დაკავშირებულია";
@@ -498,7 +413,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ წარმატებით გამოითიშა.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "მოწყობილობა წარმატებით გამოითიშა KARMA Sync-იდან.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "მოწყობილობა წარმატებით გამოითიშა Firefox Sync-იდან.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "დასინქრონება გათიშულია";
@@ -507,10 +422,10 @@
 "FxAPush_DeviceDisconnected_title" = "დასინქრონება გათიშულია";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "მოწყობილობა გამოთიშულია KARMA-სინქრონიზაციიდან";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "მოწყობილობა გამოთიშულია Firefox-სინქრონიზაციიდან";
 
-/* A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing. */
-"Get your open tabs, bookmarks, and passwords from your other devices." = "მიიღეთ წვდომა თქვენს გახსნილ ჩანართებთან, სანიშნებთან და პაროლებთან, ყველა თქვენი მოწყობილობიდან.";
+/* On the firefox homepage, the string read by the voice over prompt for accessibility, for the button which changes the wallpaper */
+"FxHomepage.Wallpaper.ButtonLabel.v99" = "Firefox-ლოგო, ფონის შეცვლა.";
 
 /* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
 "Help" = "დახმარება";
@@ -533,9 +448,6 @@
 /* Button to perform action to clear history for yesterday and today */
 "HistoryPanel.ClearHistoryMenuOptionTodayAndYesterday" = "დღეს და გუშინ";
 
-/* Title for popup action menu to clear recent history. */
-"HistoryPanel.ClearHistoryMenuTitle" = "უახლესი ისტორიის გასუფთავებით, წაიშლება მონახულებული გვერდები, ფუნთუშები და სხვა მონაცემები.";
-
 /* Title for the History Panel empty state. */
 "HistoryPanel.EmptyState.Title" = "ბოლოს მონახულებული ვებსაიტები გამოჩნდება აქ.";
 
@@ -545,17 +457,8 @@
 /* Description for the empty synced tabs 'not signed in' state in the History Panel */
 "HistoryPanel.EmptySyncedTabsPanelNotSignedInState.Description" = "შედით თქვენი სხვა მოწყობილობებიდან ჩანართების სიის სანახავად.";
 
-/* Description for the empty synced tabs 'not yet verified' state in the History Panel */
-"HistoryPanel.EmptySyncedTabsPanelNotYetVerifiedState.Description" = "თქვენი ანგარიში საჭიროებს დამოწმებას.";
-
-/* Description for the empty synced tabs 'single device Sync' state in the History Panel */
-"HistoryPanel.EmptySyncedTabsPanelSingleDeviceSyncState.Description" = "გსურთ სხვა მოწყობილობების ჩანართების ნახვა აქ?";
-
-/* Description for the empty synced tabs 'tab sync disabled' state in the History Panel */
-"HistoryPanel.EmptySyncedTabsPanelTabSyncDisabledState.Description" = "ჩართეთ ჩანართების სინქრონიზაცია თქვენი სხვა მოწყობილობებიდან ჩანართების სიის სანახავად.";
-
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "ისტორია";
@@ -563,26 +466,8 @@
 /* Title for the Recently Closed button in the History Panel */
 "HistoryPanel.RecentlyClosedTabsButton.Title" = "ახლახან დახურული";
 
-/* Description that corresponds with a number of devices connected for the Synced Tabs Cell in the History Panel */
-"HistoryPanel.SyncedTabsCell.Description.Pluralized" = "%d მოწყობილობაა დაკავშირებული";
-
-/* Title for the Synced Tabs Cell in the History Panel */
-"HistoryPanel.SyncedTabsCell.Title" = "დასინქრონებული მოწყობილობები";
-
 /* Accessibility label for the tab toolbar indicating the Home button. */
 "Home" = "საწყისი გვერდი";
-
-/* Button cancelling changes setting the home page for the first time. */
-"HomePage.Set.Dialog.Cancel" = "გაუქმება";
-
-/* Alert dialog body when the user opens the home page for the first time. */
-"HomePage.Set.Dialog.Message" = "ამის შეცვლა, ნებისმიერ დროს შეგეძლებათ პარამეტრებიდან";
-
-/* Button accepting changes setting the home page for the first time. */
-"HomePage.Set.Dialog.OK" = "საწყისი გვერდის დაყენება";
-
-/* Alert dialog title when the user opens the home page for the first time. */
-"HomePage.Set.Dialog.Title" = "გსურთ, ამ ვებგვერდის საწყის გვერდად დაყენება?";
 
 /* The title for the Bookmark context menu action for sites in Home Panels */
 "HomePanel.ContextMenu.Bookmark" = "ჩანიშვნა";
@@ -591,7 +476,7 @@
 "HomePanel.ContextMenu.DeleteFromHistory" = "ისტორიიდან წაშლა";
 
 /* The title for the Open in New Private Tab context menu action for sites in Home Panels */
-"HomePanel.ContextMenu.OpenInNewPrivateTab" = "გახსნა პირად ჩანართში";
+"HomePanel.ContextMenu.OpenInNewPrivateTab.v101" = "გახსნა პირად ჩანართში";
 
 /* The title for the Open in New Tab context menu action for sites in Home Panels */
 "HomePanel.ContextMenu.OpenInNewTab" = "გახსნა ახალ ჩანართში";
@@ -605,50 +490,41 @@
 /* The title for the Share context menu action for sites in Home Panels */
 "HomePanel.ContextMenu.Share" = "გაზიარება";
 
-/* Label to display in the Discoverability overlay for keyboard shortcuts */
+/* A label indicating the keyboard shortcut to navigate backwards, through session history, inside the current tab. This label is displayed in the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
 "Hotkeys.Back.DiscoveryTitle" = "წინა";
 
-/* Label to display in the Discoverability overlay for keyboard shortcuts */
+/* A label indicating the keyboard shortcut of closing the current tab a user is in. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
 "Hotkeys.CloseTab.DiscoveryTitle" = "ჩანართის დახურვა";
 
-/* Label to display in the Discoverability overlay for keyboard shortcuts */
+/* A label indicating the keyboard shortcut of finding text a user desires within a page. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
 "Hotkeys.Find.DiscoveryTitle" = "ძიება";
 
-/* Label to display in the Discoverability overlay for keyboard shortcuts */
+/* A label indicating the keyboard shortcut of switching to a subsequent tab. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
 "Hotkeys.Forward.DiscoveryTitle" = "მომდევნო";
 
-/* Label to display in the Discoverability overlay for keyboard shortcuts */
+/* A label indicating the keyboard shortcut of creating a new private tab. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
 "Hotkeys.NewPrivateTab.DiscoveryTitle" = "ახალი პირადი ჩანართი";
 
-/* Label to display in the Discoverability overlay for keyboard shortcuts */
+/* A label indicating the keyboard shortcut of creating a new tab. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
 "Hotkeys.NewTab.DiscoveryTitle" = "ახალი ჩანართი";
 
-/* Label to switch to normal browsing mode */
+/* A label indicating the keyboard shortcut of switching from Private Browsing to Normal Browsing Mode. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
 "Hotkeys.NormalMode.DiscoveryTitle" = "ჩვეულებრივი თვალიერება";
 
-/* Label to switch to private browsing mode */
+/* A label indicating the keyboard shortcut of switching from Normal Browsing mode to Private Browsing Mode. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
 "Hotkeys.PrivateMode.DiscoveryTitle" = "პირადი თვალიერება";
 
-/* Label to display in the Discoverability overlay for keyboard shortcuts */
+/* A label indicating the keyboard shortcut of reloading the current page. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
 "Hotkeys.Reload.DiscoveryTitle" = "გვერდის ხელახლა გახსნა";
 
-/* Label to display in the Discoverability overlay for keyboard shortcuts */
+/* A label indicating the keyboard shortcut of directly accessing the URL, location, bar. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
 "Hotkeys.SelectLocationBar.DiscoveryTitle" = "მისამართების ველზე გადასვლა";
 
-/* Label to display in the Discoverability overlay for keyboard shortcuts */
+/* A label indicating the keyboard shortcut of switching to a subsequent tab. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
 "Hotkeys.ShowNextTab.DiscoveryTitle" = "შემდეგი ჩანართის ჩვენება";
 
-/* Label to display in the Discoverability overlay for keyboard shortcuts */
+/* A label indicating the keyboard shortcut of switching to a tab immediately preceding to the currently selected tab. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
 "Hotkeys.ShowPreviousTab.DiscoveryTitle" = "წინა ჩანართის ჩვენება";
-
-/* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This string is for the button the user must tap in order to turn on the Auto close feature */
-"InactiveTabs.TabTray.AutoClosePrompt.ButtonTitle" = "თვითდახურვის ჩართვა";
-
-/* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This string describes what happens if you elect to turn on this option. */
-"InactiveTabs.TabTray.AutoClosePrompt.Content" = "KARMA დახურავს ჩანართებს, რომლებიც არ გინახავთ მთელი თვეში.";
-
-/* In the Tabs Tray, in the Inactive Tabs section, a prompt may come up about auto-closing tabs. This is the title of that Auto Close prompt */
-"InactiveTabs.TabTray.AutoClosePrompt.Title" = "დაიხუროს ერთ თვეში?";
 
 /* In the Tabs Tray, in the Inactive Tabs section, this is the button the user must tap in order to close all inactive tabs. */
 "InactiveTabs.TabTray.CloseButtonTitle" = "ყველა უქმი ჩანართის დახურვა";
@@ -659,14 +535,95 @@
 /* Relative time for a tab that was visited within the last few moments. */
 "just now" = "ახლახან";
 
-/* History tableview section header */
+/* A label indicating the keyboard shortcut of resetting a web page's view to the standard viewing size. This label is displayed in the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
+"Keyboard.Shortcuts.ActualSize" = "საწყისი ზომა";
+
+/* A label indicating the keyboard shortcut of adding the currently viewing web page as a bookmark. This label is displayed in the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
+"Keyboard.Shortcuts.AddBookmark" = "სანიშნის დამატება";
+
+/* A label indicating the keyboard shortcut of clearing recent history. This label is displayed in the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
+"Keyboard.Shortcuts.ClearRecentHistory" = "უახლესი ისტორიის გასუფთავება";
+
+/* A label indicating the keyboard shortcut of finding text a user desires within a page again. This label is displayed in the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
+"Keyboard.Shortcuts.FindAgain" = "კვლავძიება";
+
+/* A label indicating a grouping of related keyboard shortcuts describing actions a user can do with Bookmarks. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
+"Keyboard.Shortcuts.Section.Bookmark" = "სანიშნები";
+
+/* A label indicating a grouping of related keyboard shortcuts describing actions a user can do with History. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
+"Keyboard.Shortcuts.Section.History" = "ისტორია";
+
+/* A label indicating a grouping of related keyboard shortcuts describing actions a user can do with locally saved items. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
+"Keyboard.Shortcuts.Section.Tools" = "ხელსაწყოები";
+
+/* A label indicating a grouping of related keyboard shortcuts describing actions a user can take when navigating between their availale set of tabs. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
+"Keyboard.Shortcuts.Section.Window" = "ფანჯარა";
+
+/* A label indicating the keyboard shortcut of opening the application's settings menu. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
+"Keyboard.Shortcuts.Settings" = "პარამეტრები";
+
+/* A label indicating the keyboard shortcut of showing all bookmarks. This label is displayed in the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
+"Keyboard.Shortcuts.ShowBookmarks" = "სანიშნების ჩვენება";
+
+/* A label indcating the keyboard shortcut of showing all downloads. This label is displayed in the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
+"Keyboard.Shortcuts.ShowDownloads" = "ჩამოტვირთვების ჩვენება";
+
+/* A label indicating the keyboard shortcut to switch from the current tab to the first tab. This label is displayed in the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
+"Keyboard.Shortcuts.ShowFirstTab" = "პირველი ჩანართის ჩვენება";
+
+/* A label indicating the keyboard shortcut of showing all history. This label is displayed in the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
+"Keyboard.Shortcuts.ShowHistory" = "ისტორიის ჩვენება";
+
+/* A label indicating the keyboard shortcut switch from your current tab to the last tab. This label is displayed in the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
+"Keyboard.Shortcuts.ShowLastTab" = "ბოლო ჩანართის ჩვენება";
+
+/* A label indicating the keyboard shortcut of enlarging the view of the current web page. This label is displayed in the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
+"Keyboard.Shortcuts.ZoomIn" = "მიახლოება";
+
+/* A label indicating the keyboard shortcut of shrinking the view of the current web page. This label is displayed in the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
+"Keyboard.Shortcuts.ZoomOut" = "დაშორება";
+
+/* This label is meant to signify the section containing a group of items from the past thirty days. */
 "Last month" = "ბოლო თვე";
 
-/* Remote tabs last synced time. Argument is the relative date string. */
-"Last synced: %@" = "ბოლო დასინქრონება: %@";
-
-/* History tableview section header */
+/* This label is meant to signify the section containing a group of items from the past seven days. */
 "Last week" = "ბოლო კვირა";
+
+/* Panel accessibility label */
+"LibraryPanel.Accessibility.Bookmarks.v106" = "სანიშნები";
+
+/* Panel accessibility label */
+"LibraryPanel.Accessibility.History.v106" = "ისტორია";
+
+/* Within the History Panel, users can delete search group sites history. They can cancel this action by pressing a cancel button. */
+"LibraryPanel.History.ClearGroupedTabsCancel.v100" = "გაუქმება";
+
+/* Within the History Panel, users can delete search group sites history. They need to confirm the action by pressing the delete button. */
+"LibraryPanel.History.ClearGroupedTabsDelete.v100" = "წაშლა";
+
+/* Within the History Panel, users can delete search group sites history. %@ represents the search group name. */
+"LibraryPanel.History.ClearGroupedTabsTitle.v100" = "წაიშალოს ყველა, რომელთაც შეიცავს %@?";
+
+/* Within the History Panel, users can open an action menu to clear recent history. */
+"LibraryPanel.History.ClearHistoryMenuTitle.v100" = "წაიშლება ისტორია (მათ შორის, სხვა მოწყობილობიდან დასინქრონებული), ფუნთუშები და მონახულებული გვერდების მონაცემები.";
+
+/* Within the history panel, a user can navigate into a screen with only grouped history items. Within that screen, a user can now swipe to delete a single item in the list. This label informs the user of a deletion action on the item. */
+"LibraryPanel.History.DeleteGroupedItem.v104" = "წაშლა";
+
+/* In the history panel, users will be able to search terms in their browsing history. This label is shown when there is no results after querying the search terms in the user's history. */
+"LibraryPanel.History.NoHistoryFound.v99" = "ისტორია არაა";
+
+/* In the history panel, this is the title on the button that navigates the user to a screen showing their recently closed tabs. */
+"LibraryPanel.History.RecentlyClosedTabs.v99" = "ბოლოს დახურული ჩანართები";
+
+/* In the history panel, users will be able to search terms in their browsing history. This placeholder text inside the search component will indicate that a user can search through their browsing history. */
+"LibraryPanel.History.SearchHistoryPlaceholder.v99" = "შეიყვანეთ საძიებო ფრაზა";
+
+/* Within the History Panel, users can see the option of viewing their history from synced tabs. */
+"LibraryPanel.History.SyncedHistory.v100" = "დასინქრონებული ისტორია";
+
+/* This label is meant to signify the section containing a group of items that are older than thirty days. */
+"LibraryPanel.Section.Older" = "უფრო ძველი";
 
 /* Settings item that opens a tab containing the licenses. See http://mzl.la/1NSAWCG */
 "Licenses" = "ლიცენზიები";
@@ -674,10 +631,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "ნათელი";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
 "Load original page" = "ჩვეულებრივი გვერდის გახსნა";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
 "Loading content…" = "შიგთავსის ჩატვირთვა…";
 
 /* Authentication prompt log in button */
@@ -686,11 +643,29 @@
 /* Toggle logins syncing setting */
 "Logins" = "ანგარიშები";
 
-/* Login detail view field name for the last modified date */
-"LoginsDetailView.LoginModified" = "შეცვლილი";
+/* Title of the Learn More button that links to a support page about device passcode requirements. */
+"Logins.DevicePasscodeRequired.LearnMoreButtonTitle" = "ვრცლად";
 
-/* Title for the login detail view */
-"LoginsDetailView.LoginTitle" = "ანგარიში";
+/* Message shown when you enter Logins & Passwords without having a device passcode set. */
+"Logins.DevicePasscodeRequired.Message" = "ანგარიშებისა და პაროლების დამახსოვრებისა და თვითშევსებისთვის, ჩართეთ Face ID, Touch ID ან მიუთითეთ კოდი.";
+
+/* Title of the Continue button. */
+"Logins.Onboarding.ContinueButtonTitle" = "განაგრძეთ";
+
+/* Title of the Learn More button that links to a support page about device passcode requirements. */
+"Logins.Onboarding.LearnMoreButtonTitle" = "ვრცლად";
+
+/* Warning message shown when you try to enable or use native AutoFill without a device passcode setup */
+"Logins.PasscodeRequirement.Warning" = "თვითშევსებით სარგებლობისთვის Firefox-ში, ჩართული უნდა გქონდეთ მოწყობილობის კოდი.";
+
+/* Label displaying welcome view tagline under the title */
+"Logins.WelcomeView.Tagline" = "თან წაიყოლეთ თქვენი პაროლები ყველგან";
+
+/* Label displaying welcome view title */
+"Logins.WelcomeView.Title2" = "პაროლების თვითშევსება Firefox-ში";
+
+/* Title of the big blue button to enable AutoFill */
+"Logins.WelcomeView.TurnOnAutoFill" = "თვითშევსების ჩართვა";
 
 /* Button to not save the user's password */
 "LoginsHelper.DontSave.Button" = "შენახვის გარეშე";
@@ -716,20 +691,11 @@
 /* Button to update the user's password */
 "LoginsHelper.Update.Button" = "განახლება";
 
-/* For filtering the login list, search only the login names */
-"LoginsList.LoginsListFilterLogin" = "ანგარიში";
-
-/* For filtering the login list, search both website and login names. */
-"LoginsList.LoginsListFilterSearchAll" = "ყველა";
-
-/* For filtering the login list, search only the website names */
-"LoginsList.LoginsListFilterWebsite" = "ვებსაიტი";
-
 /* Placeholder test for search box in logins list view. */
 "LoginsList.LoginsListSearchPlaceholder" = "ფილტრი";
 
 /* Label shown when there are no logins to list */
-"LoginsList.NoLoginsFound.Description" = "შენახული ანგარიშები აქ გამოჩნდება. თუ სხვა მოწყობილობის KARMA-ზე ინახავთ, შედით თქვენი KARMA-ანგარიშით.";
+"LoginsList.NoLoginsFound.Description" = "შენახული ანგარიშები აქ გამოჩნდება. თუ სხვა მოწყობილობის Firefox-ზე ინახავთ, შედით თქვენი Firefox-ანგარიშით.";
 
 /* Label shown when there are no logins saved */
 "LoginsList.NoLoginsFound.Title" = "მონაცემები ვერ მოიძებნა";
@@ -753,30 +719,34 @@
 "LoginsList.Title" = "შენახული ანგარიშები";
 
 /* Restore Tabs Prompt Description */
-"Looks like KARMA crashed previously. Would you like to restore your tabs?" = "როგორც ჩანს, KARMA წინა ჯერზე უეცრად გაითიშა. გსურთ, ჩანართების აღდგენა?";
+"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "როგორც ჩანს, Firefox წინა ჯერზე უეცრად გაითიშა. გსურთ, ჩანართების აღდგენა?";
 
-/* Name for Mark as read button in reader mode
-   Title for the button that marks a reading list item as read */
+/* Title for the button that marks a reading list item as read */
 "Mark as Read" = "წაკითხულად მონიშვნა";
 
-/* Name for Mark as unread button in reader mode
-   Title for the button that marks a reading list item as unread */
+/* Title for the button that marks a reading list item as unread */
 "Mark as Unread" = "წაუკითხავად მონიშვნა";
+
+/* Long label for the add bookmark button displayed in the menu. Pressing this button bookmarks the current page. */
+"Menu.AddBookmark.AlternateLabel.v99" = "სანიშნის დამატება";
 
 /* Toast displayed to the user after a bookmark has been added. */
 "Menu.AddBookmark.Confirm" = "ჩანიშნულია";
 
-/* Toast displayed to the user after adding the item to the Top Sites. */
-"Menu.AddPin.Confirm" = "მიმაგრებული რჩეულ საიტებში";
+/* Label for the add bookmark button in the menu. Pressing this button bookmarks the current page. Please keep the text as short as possible for this label. */
+"Menu.AddBookmark.Label.v99" = "დამატება";
 
 /* Toast displayed to the user after adding the item to the Shortcuts. */
 "Menu.AddPin.Confirm2" = "მალსახმობებში დამატება";
 
+/* Label for the add to reading list button in the menu. Pressing this button adds the current page to the reading list. Please keep the text as short as possible for this label. */
+"Menu.AddReadingList.Label.v99" = "დამატება";
+
 /* Toast displayed to the user after adding the item to their reading list. */
 "Menu.AddToReadingList.Confirm" = "დამატებულია წასაკითხებში";
 
-/* Label for the button, displayed in the menu, takes you to sync sign in when pressed. */
-"Menu.BackUpAndSync.Label" = "მარქაფი და დასინქრონება";
+/* Label for the add to shortcuts button in the menu. Pressing this button pins the current website as a shortcut on the home page. */
+"Menu.AddToShortcuts.v99" = "მალსახმობებში დამატება";
 
 /* Label for the button, displayed in the menu, takes you to to bookmarks screen when pressed. */
 "Menu.Bookmarks.Label" = "სანიშნები";
@@ -785,49 +755,34 @@
 "Menu.Copy.Title" = "მისამართის ასლი";
 
 /* Toast displayed to user after copy url pressed. */
-"Menu.CopyURL.Confirm" = "URL-ს ასლი აღებულია";
+"Menu.CopyURL.Confirm" = "ბმულის ასლი აღებულია";
+
+/* Label for the customize homepage button in the menu page. Pressing this button takes users to the settings options, where they can customize the Firefox Home page */
+"Menu.CustomizeHomePage.v99" = "საწყისი გვერდის მორგება";
 
 /* Label for the button, displayed in the menu, takes you to to Downloads screen when pressed. */
 "Menu.Downloads.Label" = "ჩამოტვირთვები";
 
 /* A switch to disable enhanced tracking protection inside the menu. */
-"Menu.EnhancedTrackingProtectionOff.Title" = "თვალთვალისგან გაძლიერებული დაცვა გამორთულია ამ საიტზე.";
+"Menu.EnhancedTrackingProtectionOff.Title" = "დაცვა გამორთულია ამ საიტზე";
 
 /* A switch to enable enhanced tracking protection inside the menu. */
-"Menu.EnhancedTrackingProtectionOn.Title" = "თვალთვალისგან გაძლიერებული დაცვა ჩართულია ამ საიტზე.";
+"Menu.EnhancedTrackingProtectionOn.Title" = "დაცვა ჩართულია ამ საიტზე";
 
-/* Description for having standard ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStandardWithITP.Title" = "KARMA ზღუდავს საიტთაშორის, სოცქსელის, კრიპტო, ამომცნობ და მეთვალყურე შიგთავსს.";
-
-/* Description for having strict ETP protection with ITP offered in iOS14+ */
-"Menu.EnhancedTrackingProtectionStrictWithITP.Title" = "KARMA ზღუდავს საიტთაშორის, სოცქსელის, კრიპტო, ამომცნობ და მეთვალყურე შიგთავსს.";
+/* Label for the help button in the menu page. Pressing this button opens the support page https://support.mozilla.org/en-US/products/ios */
+"Menu.Help.v99" = "დახმარება";
 
 /* Label for the button, displayed in the menu, takes you to to History screen when pressed. */
 "Menu.History.Label" = "ისტორია";
 
-/* Label for the button displayed in the menu used to stop the reload of the webpage */
-"Menu.Library.StopReload" = "შეწყვეტა";
-
-/* Label for the button, displayed in the menu, takes you to screen to manage account when pressed. First argument is the display name for the current account */
-"Menu.ManageAccount.Label" = "მართვა ანგარიშის %@";
+/* Label for the new tab button in the menu page. Pressing this button opens a new tab. */
+"Menu.NewTab.v99" = "ახალი ჩანართი";
 
 /* Label for the button, displayed in the menu, turns off night mode. */
 "Menu.NightModeTurnOff.Label2" = "ღამის რეჟიმის გამორთვა";
 
 /* Label for the button, displayed in the menu, turns on night mode. */
-"Menu.NightModeTurnOn.Label" = "ღამის რეჟიმის ჩართვა";
-
-/* Label for the button, displayed in the menu, turns on night mode. */
 "Menu.NightModeTurnOn.Label2" = "ღამის რეჟიმის ჩართვა";
-
-/* Label for the button, displayed in the menu, hides images on the webpage when pressed. */
-"Menu.NoImageModeBlockImages.Label" = "სურათების შეზღუდვა";
-
-/* Label for the button, displayed in the menu, shows images on the webpage when pressed. */
-"Menu.NoImageModeShowImages.Label" = "სურათების ჩვენება";
-
-/* Label for title in page action menu. */
-"Menu.PageActions.Title" = "ვებგვერდზე მოქმედებები";
 
 /* Label for the button, displayed in the menu, takes you to to passwords screen when pressed. */
 "Menu.Passwords.Label" = "პაროლები";
@@ -839,7 +794,7 @@
 "Menu.PasteAndGo.Title" = "ჩასმა და გადასვლა";
 
 /* Label for the button, displayed in the menu, takes you to to Reading List screen when pressed. */
-"Menu.ReadingList.Label" = "საკითხავი სია";
+"Menu.ReadingList.Label" = "წასაკითხი";
 
 /* Label for the button, displayed in the menu, used to reload the current website without Tracking Protection */
 "Menu.ReloadWithoutTrackingProtection.Title" = "დაცვის გარეშე გახსნა ხელახლა";
@@ -850,44 +805,50 @@
 /* Toast displayed to the user after a bookmark has been removed. */
 "Menu.RemoveBookmark.Confirm" = "სანიშნი მოცილებულია";
 
-/* Toast displayed to the user after removing the item from the Top Sites. */
-"Menu.RemovePin.Confirm" = "მოცილება რჩეული საიტებიდან";
+/* Label for the remove bookmark button in the menu. Pressing this button remove the current page from the bookmarks. Please keep the text as short as possible for this label. */
+"Menu.RemoveBookmark.Label.v99" = "მოცილება";
+
+/* Label for the remove from shortcuts button in the menu. Pressing this button removes the current website from the shortcut pins on the home page. */
+"Menu.RemovedFromShortcuts.v99" = "მოცილება მალსახმობებიდან";
 
 /* Toast displayed to the user after removing the item to the Shortcuts. */
-"Menu.RemovePin.Confirm2" = "მოცილდა მალსახმობებიდან";
+"Menu.RemovePin.Confirm2.v99" = "მოცილებულია მალსახმობებიდან";
+
+/* Long label for the remove from reading list button in the menu. Pressing this button removes the current page from the reading list. */
+"Menu.RemoveReadingList.AlternateLabel.v99" = "წასაკითხებიდან მოცილება";
+
+/* Toast displayed to confirm to the user that his reading list item was correctly removed. */
+"Menu.RemoveReadingList.Confirm.v99" = "მოცილებულია წასაკითხებიდან";
+
+/* Label for the remove from reading list button in the menu. Pressing this button removes the current page from the reading list. Please keep the text as short as possible for this label. */
+"Menu.RemoveReadingList.Label.v99" = "მოცილება";
+
+/* Label for the share button in the menu page. Pressing this button open the share menu to share the current website. */
+"Menu.Share.v99" = "გაზიარება";
+
+/* Label for the Firefox Sync button in the menu page. Pressing this button open the sign in to Firefox page service to sync and save data. */
+"Menu.SyncAndSaveData.v103" = "დასინქრონება და შენახვა";
 
 /* Toast displayed to the user after a tab has been sent successfully. */
 "Menu.TabSent.Confirm" = "ჩანართი გაიგზავნა";
 
-/* Title on tracking protection menu for blocked items. */
-"Menu.TrackingProtection.BlockedTitle" = "შეიზღუდა";
+/* Accessibility label for the Bookmark button on the toolbar. Pressing this button opens the bookmarks menu */
+"Menu.Toolbar.Bookmarks.AccessibilityLabel.v99" = "სანიშნები";
+
+/* Accessibility label for the Home button on the toolbar. Pressing this button brings the user to the home page. */
+"Menu.Toolbar.Home.AccessibilityLabel.v99" = "საწყისი გვერდი";
 
 /* String to let users know the site verifier, where the placeholder represents the SSL certificate signer. */
 "Menu.TrackingProtection.Details.Verifier" = "დამმოწმებელია %@";
 
-/* Message in menu when no trackers blocked. */
-"Menu.TrackingProtection.NoTrackersBlockedTitle" = "ამ გვერდზე მეთვალყურეები, რომელთაც KARMA ცნობს, არ აღმოჩენილა.";
-
 /* The title for tracking protection settings */
 "Menu.TrackingProtection.ProtectionSettings.Title" = "დაცვის პარამეტრები";
-
-/* Title on tracking protection menu showing the domain. eg. Protections for mozilla.org */
-"Menu.TrackingProtection.TitlePrefix" = "დაცვა საიტისთვის %@";
 
 /* The title that shows the number of content cookies blocked */
 "Menu.TrackingProtectionBlockedContent.Title" = "თვალის მდევნელი შიგთავსი";
 
 /* The title that shows the number of social URLs blocked */
 "Menu.TrackingProtectionBlockedSocial.Title" = "სოცქსელის მეთვალყურეები";
-
-/* Description of the Tracking protection menu when TP is blocking parts of the page */
-"Menu.TrackingProtectionBlocking.Description" = "KARMA ზღუდავს საიტის იმ ნაწილებს, რომლებსაც თქვენს მოქმედებებზე თვალყურის დევნება შეუძლია.";
-
-/* The description of the Tracking Protection menu item when tracking is enabled */
-"Menu.TrackingProtectionBlockingDisabled.Description" = "მეთვალყურეების შეზღუდვა";
-
-/* The title that shows the number of cross-site cookies blocked */
-"Menu.TrackingProtectionCrossSiteCookies.Title" = "საიტთაშორისი მეთვალყურე ფუნთუშები";
 
 /* The title that shows the number of cross-site URLs blocked */
 "Menu.TrackingProtectionCrossSiteTrackers.Title" = "საიტთაშორისი მეთვალყურეები";
@@ -896,7 +857,7 @@
 "Menu.TrackingProtectionCryptominersBlocked.Title" = "კრიპტოვალუტის გამომმუშავებლები";
 
 /* Description of content trackers. */
-"Menu.TrackingProtectionDescription.ContentTrackers" = "საიტები, ზოგჯერ გარე ბმულებიდან ტვირთავს რეკლამებს, ვიდეოებსა და სხვა ფარული მეთვალყურეების შემცველ მასალას. მათი შეზღუდვით, საიტი კი უფრო სწრაფად ჩაიტვირთება, თუმცა ღილაკებმა, ანგარიშისა და სხვა შესავსებმა ველებმა, შეიძლება აღარ იმუშაოს.";
+"Menu.TrackingProtectionDescription.ContentTrackers" = "საიტები, ზოგჯერ გარე ბმულებიდან ტვირთავს რეკლამებს, ვიდეოებსა და სხვა ფარული მეთვალყურეების შემცველ მასალას. მათი შეზღუდვით, საიტი კი უფრო სწრაფად ჩაიტვირთება, თუმცა ღილაკებმა, ანგარიშისა და სხვა შესავსებმა ველებმა შეიძლება, აღარ იმუშაოს.";
 
 /* Description of cross-site trackers. */
 "Menu.TrackingProtectionDescription.CrossSiteNew" = "ეს ფუნთუშები თან დაგყვებათ საიტებზე და აგროვებს მონაცემებს, თუ რას აკეთებთ ინტერნეტში. მათ იყენებს გარეშე მხარეები, სარეკლამო და კვლევითი დაწესებულებები.";
@@ -910,47 +871,8 @@
 /* Description of social network trackers. */
 "Menu.TrackingProtectionDescription.SocialNetworksNew" = "სოციალური ქსელები ათავსებს მეთვალყურეებს სხვადასხვა საიტებზე, თქვენი დახასიათების უკეთ და სრულყოფილად შესადგენად. მათი შეზღუდვის შედეგად, ამ ქსელების მფლობელ დაწესებულებებს, ნაკლები წვდომა ექნება ინტერნეტში თქვენს მოქმედებებზე.";
 
-/* The button that disabled TP for a site. */
-"Menu.TrackingProtectionDisable1.Title" = "გამორთვა ამ საიტზე";
-
-/* The confirmation toast once tracking protection has been disabled */
-"Menu.TrackingProtectionDisabled.Title" = "თვალთვალისგან დაცვა გამოირთო ამ საიტზე.";
-
-/* A button to enable tracking protection inside the menu. */
-"Menu.TrackingProtectionEnable.Title" = "თვალთვალისგან დაცვის ჩართვა";
-
-/* A button to enable tracking protection inside the menu. */
-"Menu.TrackingProtectionEnable1.Title" = "ჩართვა ამ საიტზე";
-
-/* The confirmation toast once tracking protection has been enabled */
-"Menu.TrackingProtectionEnabled.Title" = "თვალთვალისგან დაცვა ჩაირთო ამ საიტზე.";
-
 /* The title that shows the number of fingerprinting scripts blocked */
 "Menu.TrackingProtectionFingerprintersBlocked.Title" = "მომხმარებლის ამომცნობები";
-
-/* Title for list of domains blocked by category type. eg.  Blocked `CryptoMiners` */
-"Menu.TrackingProtectionListTitle.CrossSiteCookies" = "შეიზღუდა საიტთაშორისი მეთვალყურე ფუნთუშები";
-
-/* Title for list of domains blocked by category type. eg.  Blocked `CryptoMiners` */
-"Menu.TrackingProtectionListTitle.Cryptominers" = "შეიზღუდა კრიპტოვალუტის გამომმუშავებლები";
-
-/* Title for list of domains blocked by category type. eg.  Blocked `CryptoMiners` */
-"Menu.TrackingProtectionListTitle.Fingerprinters" = "შეიზღუდა მომხმარებლის ამომცნობები";
-
-/* Title for list of domains blocked by category type. eg.  Blocked `CryptoMiners` */
-"Menu.TrackingProtectionListTitle.Social" = "შეიზღუდა სოციალური ქსელების მეთვალყურეები";
-
-/* more info about what tracking protection is about */
-"Menu.TrackingProtectionMoreInfo.Description" = "იხილეთ ვრცლად, თუ როგორ ზღუდავს თვალთვალისგან დაცვა ინტერნეტში მეთვალყურე ელემენტებს, რომელიც აღრიცხავს თქვენს მონაცემებს, საიტების მონახულებისას.";
-
-/* The description of the Tracking Protection menu item when no scripts are blocked but tracking protection is enabled. */
-"Menu.TrackingProtectionNoBlocking.Description" = "ამ გვერდზე მეთვალყურე ელემენტები არ აღმოჩენილა.";
-
-/* label for the menu item to show when the website is whitelisted from blocking trackers. */
-"Menu.TrackingProtectionOption.WhiteListOnDescription" = "საიტი შეიცავს ნაწილებს, რომელიც შესაძლოა თქვენს მოქმედებებს აღრიცხავდეს. დაცვა ამჟამად, გამორთული გაქვთ.";
-
-/* label for the menu item that lets you remove a website from the tracking protection whitelist */
-"Menu.TrackingProtectionWhitelistRemove.Title" = "ჩართვა ამ საიტზე";
 
 /* The title for the option to view the What's new page. */
 "Menu.WhatsNew.Title" = "რა სიახლეებია";
@@ -967,8 +889,7 @@
 /* Accessibility label for the navigation toolbar displayed at the bottom of the screen. */
 "Navigation Toolbar" = "ნავიგაციის ხელსაწყოთა ზოლი";
 
-/* Accessibility label for the New Tab button in the tab toolbar.
-   Accessibility Label for the tab toolbar New tab button */
+/* Accessibility label for the New Tab button in the tab toolbar. */
 "New Tab" = "ახალი ჩანართი";
 
 /* Restore Tabs Negative Action */
@@ -983,33 +904,68 @@
 /* Restore Tabs Affirmative Action */
 "Okay" = "კარგი";
 
-/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the button, on the bottom of the card, used to get back to browsing on KARMA by dismissing the onboarding card */
+/* Describes the action on the first onboarding page in our Onboarding screen. This string will be on a button so user can continue the onboarding. */
+"Onboarding.IntroAction.v102" = "დაიწყეთ";
+
+/* String used to describes what Firefox is on the first onboarding page in our Onboarding screens. Indie means small independant. */
+"Onboarding.IntroDescriptionPart1.v102" = "დამოუკიდებელი. არამომგებიანი. მუდამ.";
+
+/* String used to describes what Firefox is on the first onboarding page in our Onboarding screens. */
+"Onboarding.IntroDescriptionPart2.v102" = "ერთგული საკუთარი პირობისა და საყოველთაო ინტერნეტის გაუმჯობესებისა.";
+
+/* Describes an action on some of the Onboarding screen, including the wallpaper onboarding screen. This string will be on a button so user can skip that onboarding page. */
+"Onboarding.LaterAction.v102" = "ახლა არა";
+
+/* String used to describes the description of what Firefox is on the Sync onboarding page for 106 version in our Onboarding screens. */
+"Onboarding.Sync.Description.v106" = "გამოიყოლეთ ჩანართები და სანიშნები სხვა მოწყობილობიდან, რომ განაგრძოთ იქიდანვე, სადაც გაჩერდით.";
+
+/* String used to describes the option to skip the Sync sign in during onboarding for 106 version in Firefox Onboarding screens. */
+"Onboarding.Sync.Skip.Action.v106" = "გამოტოვება";
+
+/* String used to describes the title of what Firefox is on the Sync onboarding page for 106 version in our Onboarding screens. */
+"Onboarding.Sync.Title.v106" = "მოქნილად გადაერთეთ ტელეფონიდან ლეპტოპზე და უკან";
+
+/* Describes an action on the sync onboarding page in our Onboarding screens. This string will be on a button so user can sign up or login directly in the onboarding. */
+"Onboarding.SyncAction.v102" = "შექმენით ან შედით ანგარიშზე";
+
+/* Description for the sync onboarding page in our Onboarding screens. The user will be able to setup their Firefox sync account from that screen. */
+"Onboarding.SyncDescription.v102" = "ჩანართებისა და სანიშნების თვითდასინქრონება მოწყობილობებზე შეუფერხებლად გადასვლისთვის.";
+
+/* Title for the sync onboarding page in our Onboarding screens. The user will be able to setup their Firefox sync account from that screen. 'Stay in the flow' means that a person is fully immersed in an activity. The user will sync with their Firefox sync account to stay connected and immersed in the activity they are doing. */
+"Onboarding.SyncTitle.v102" = "დაასინქრონეთ საქმისგან მოუცდენლად";
+
+/* Accessibility label for the wallpaper onboarding modal displayed on top of the homepage. This describes to the user that which type of wallpaper they are seeing. */
+"Onboarding.Wallpaper.Accessibility.Classic.v106" = "ჩვეული ფონი";
+
+/* Accessibility label for the wallpaper onboarding modal displayed on top of the homepage. This describes to the user that which type of wallpaper they are seeing. */
+"Onboarding.Wallpaper.Accessibility.LimitedEdition.v106" = "ფონი „შეზღუდული რაოდენობით“";
+
+/* Description for the wallpaper onboarding modal displayed on top of the homepage. This describes to the user that they can set a wallpaper. */
+"Onboarding.Wallpaper.Action.v106" = "სხვა გაფორმების მოძიება";
+
+/* Description for the wallpaper onboarding modal displayed on top of the homepage. This describes to the user that they can choose different wallpapers. */
+"Onboarding.Wallpaper.Description.v106" = "აირჩიეთ ფონი, რომელიც შთაგაგონებთ.";
+
+/* Title for the wallpaper onboarding modal displayed on top of the homepage. This describes to the user that they can choose different wallpapers. */
+"Onboarding.Wallpaper.Title.v106" = "შეაფერადეთ";
+
+/* Description for the wallpaper onboarding page in our Onboarding screens. This describes to the user that they can set a wallpaper. */
+"Onboarding.WallpaperAction.v102" = "ფონის დაყენება";
+
+/* Title for the wallpaper onboarding page in our Onboarding screens. This describes to the user that they can choose different wallpapers. */
+"Onboarding.WallpaperTitle.v102" = "აირჩიეთ Firefox-ფონი";
+
+/* String used to describes the description of what Firefox is on the welcome onboarding page for 106 version in our Onboarding screens. */
+"Onboarding.Welcome.Description.v106" = "Firefox ხალხს აყენებს მოგებაზე წინ და გამუდმებით იცავს თქვენს პირადულობას.";
+
+/* String used to describes the title of what Firefox is on the welcome onboarding page for 106 version in our Onboarding screens. */
+"Onboarding.Welcome.Title.v106" = "კეთილი იყოს თქვენი ფეხი დამოუკიდებელ ინტერნეტსივრცეში";
+
+/* On the onboarding card letting users know what's new in this version of Firefox, this is the title for the button, on the bottom of the card, used to get back to browsing on Firefox by dismissing the onboarding card */
 "Onboarding.WhatsNew.Button.Title" = "დაიწყეთ მოგზაურობა";
 
-/* On the onboarding card, letting users know what's new in this version of KARMA, this is a general description that appears under the title for what the card is about. */
-"Onboarding.WhatsNew.Description" = "მარტივად განაგრძეთ იქიდან, სადაც შეჩერდით.";
-
-/* On the onboarding card, letting users know what's new in this version of KARMA, this is the description for the Jump Back In bullet point */
-"Onboarding.WhatsNew.PersonalizedHome.Description" = "გადადით გახსნილ ჩანართებზე, სანიშნებსა და მონახულებულ გვერდებზე.";
-
-/* On the onboarding card letting users know what's new in this version of KARMA, this is the descripion of the Recent Searches bullet point on the card */
-"Onboarding.WhatsNew.RecentSearches.Description" = "კვლავ მოინახულეთ ბოლოს მოძიებულები, საწყისი გვერდიდან.";
-
-/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the Recent Searches bullet point on the card */
-"Onboarding.WhatsNew.RecentSearches.Title" = "ბოლოს მოძიებული";
-
-/* On the onboarding card letting users know what's new in this version of KARMA, this is the description for the Tab Group bullet point on the card */
-"Onboarding.WhatsNew.TabGroups.Description" = "გვერდები იმავე საძიებოდან, ერთად დაჯგუფდება.";
-
-/* On the onboarding card, letting users know what's new in this version of KARMA, this is the title for the Tab Group bullet point on the card */
-"Onboarding.WhatsNew.TabGroups.Title" = "მოწესრიგებული ჩანართის ჯგუფები";
-
-/* On the onboarding card, letting users know what's new in this version of KARMA, this is the title for the Jump Back In bullet point on the card
-   The title for the new onboarding card letting users know what is new in KARMA iOS */
-"Onboarding.WhatsNew.Title" = "რა სიახლეებითაა KARMA";
-
 /* Title for prompt displayed to user after the app crashes */
-"Oops! KARMA crashed" = "ჰმ! KARMA უეცრად გაითიშა";
+"Oops! Firefox crashed" = "ჰმ! Firefox უეცრად გაითიშა";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "სტატიების, კითხვის რეჟიმში გასახსნელად, შეეხეთ წიგნის ნიშანს, როცა მისამართების ველში გამოჩნდება.";
@@ -1020,35 +976,20 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "გახსნილი ჩანართები";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
-"OpenURL.Error.Message" = "KARMA ვერ ახერხებს გვერდის გახსნას, რადგან არასწორი მისამართი აქვს.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app. */
+"OpenURL.Error.Message" = "Firefox ვერ ახერხებს გვერდის გახსნას, რადგან არასწორი მისამართი აქვს.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "გვერდი ვერ იხსნება";
 
-/* Accessibility label for the Page Options menu button */
-"Page Options Menu" = "გვერდის პარამეტრების მენიუ";
-
-/* Accessibility label for the Library panel's bottom toolbar containing a list of the home panels (top sites, bookmarks, history, remote tabs, reading list). */
-"Panel Chooser" = "ხელსაწყოთა არის არჩევა";
-
 /* Password textbox in Authentication prompt */
 "Password" = "პაროლი";
-
-/* Error message shown in the remote tabs panel */
-"PasswordAutoFill.NoPasswordsFoundTitle" = "თქვენ არ გაქვთ ანგარიშების დასინქრონებული მონაცემები KARMA-ანგარიშიდან";
-
-/* Header for the list of credentials table */
-"PasswordAutoFill.PasswordsListTitle" = "ანგარიშების ხელმისაწვდომი მონაცემები:";
-
-/* Title of the extension that shows KARMA passwords */
-"PasswordAutoFill.SectionTitle" = "KARMA-ის ანგარიშების მონაცემები";
 
 /* See http://mzl.la/1G7uHo7 */
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "ამის საშუალებით, შეგეძლებათ სურათის ფოტოგალერეაში შენახვა.";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "KARMA ცდილობს თქვენს სურათებთან წვდომის მიღებას";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Firefox ცდილობს თქვენს სურათებთან წვდომის მიღებას";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "დახურვა";
@@ -1056,7 +997,7 @@
 /* Privacy section title */
 "Privacy" = "პირადულობა";
 
-/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
+/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
 "Privacy Policy" = "პირადულობის დებულება";
 
 /* This is the value for a label that indicates if a user is on an unencrypted website. */
@@ -1068,6 +1009,9 @@
 /* Title for quick-search engines settings section. */
 "Quick-Search Engines" = "სწრაფი ძიების სისტემები";
 
+/* A label indicating the action that a user can rate the Firefox app in the App store. */
+"Ratings.Settings.RateOnAppStore" = "შეაფასეთ App Store-ში";
+
 /* Accessibility label for read article in reading list. It's a past participle - functions as an adjective. */
 "read" = "წაკითხული";
 
@@ -1076,6 +1020,12 @@
 
 /* Accessibility message e.g. spoken by VoiceOver when Reader Mode becomes available. */
 "ReaderMode.Available.VoiceOverAnnouncement" = "კითხვის რეჟიმი ხელმისაწვდომია";
+
+/* Name for Mark as read button in reader mode */
+"ReaderModeBar.MarkAsRead.v106" = "წაკითხულად მონიშვნა";
+
+/* Name for Mark as unread button in reader mode */
+"ReaderModeBar.MarkAsUnread.v106" = "წასაკითხად მონიშვნა";
 
 /* Panel accessibility label */
 "Reading list" = "წასაკითხი";
@@ -1107,9 +1057,6 @@
 /* Reopen alert title shown at home page. */
 "ReopenAlert.Title" = "ბოლოს დახურულის აღდგენა";
 
-/* Hardware shortcut to reopen the last closed tab, from the tab or the tab tray. Shown in the Discoverability overlay when the hardware Command Key is held down. */
-"ReopenClosedTab.KeyCodeTitle" = "დახურული ჩანართის აღდგენა";
-
 /* Accessibility label for button resetting font size in display settings of reader mode */
 "Reset text size" = "საწყის ზომაზე დაბრუნება";
 
@@ -1128,15 +1075,13 @@
 /* Text of the prompt that is shown to the user when the data is invalid */
 "ScanQRCode.InvalidDataError.Message" = "მონაცემი არასწორია";
 
-/* Text of the prompt user to setup the camera authorization. */
-"ScanQRCode.PermissionError.Message" = "გთხოვთ, დართოთ KARMA-ს კამერასთან წვდომის ნება ‘პარამეტრებიდან’-> ‘პირადულობა’ -> ‘კამერა’.";
+/* Text of the prompt to setup the camera authorization for the Scan QR Code feature. */
+"ScanQRCode.PermissionError.Message.v100" = "გადადით მოწყობილობის „პარამეტრებში“ > „Firefox“. დართეთ Firefox-ს კამერასთან წვდომის ნება.";
 
 /* Title for the QR code scanner view. */
 "ScanQRCode.View.Title" = "QR კოდის წაკითხვა";
 
-/* Accessibility Label for the tab toolbar Search button
-   Navigation title for search settings.
-   Open search section of settings */
+/* Open search section of settings */
 "Search" = "ძიება";
 
 /* The text shown in the URL bar on about:home */
@@ -1144,6 +1089,9 @@
 
 /* Search suggestion cell label that allows user to switch to tab which they searched for in url bar */
 "Search.Awesomebar.SwitchToTab" = "ჩანართზე გადასვლა";
+
+/* When making a new search from the awesome bar, suggestions appear to the user as they write new letters in their search. Different types of suggestions can appear. This string will be used as a header to separate Firefox suggestions from normal suggestions. */
+"Search.SuggestSectionTitle.v102" = "Firefox-შეთავაზება";
 
 /* The message that asks the user to Add the search provider explaining where the search engine will appear */
 "Search.ThirdPartyEngines.AddMessage" = "ახალი საძიებო სისტემა გამოჩნდება, სწრაფი ძიების ველში.";
@@ -1178,11 +1126,14 @@
 /* The confirmation button */
 "Search.ThirdPartyEngines.OK" = "კარგი";
 
-/* Accessibility hint describing the action performed when a search suggestion is clicked */
-"Searches for the suggestion" = "ძიების შემოთავაზებები";
+/* Accessibility label for default search engine setting. */
+"SearchSettings.Accessibility.DefaultSearchEngine.v106" = "ნაგულისხმევი საძიებო";
 
-/* Accessibility label for the lock icon, which is only present if the connection is secure */
-"Secure connection" = "დაცული კავშირი";
+/* Title for default search engine settings section. */
+"SearchSettings.Title.DefaultSearchEngine.v106" = "ნაგულისხმევი საძიებო";
+
+/* Navigation title for search settings. */
+"SearchSettings.Title.Search.v106" = "ძიება";
 
 /* Message displayed in the crash dialog above the buttons used to select when sending reports */
 "Send a crash report so Mozilla can fix the problem?" = "მოგვახსენებთ, უეცარი გათიშვის შესახებ, რომ Mozilla-მ შეძლოს ხარვეზის აღმოფხვრა?";
@@ -1193,9 +1144,11 @@
 /* Used as a button label for crash dialog prompt */
 "Send Report" = "მოხსენება";
 
-/* Button title for cancelling share screen
-   Close button in top navigation bar */
+/* Button title for cancelling share screen */
 "SendTo.Cancel.Button" = "გაუქმება";
+
+/* Close button in top navigation bar */
+"SendTo.Close.Button" = "დახურვა";
 
 /* Header for the list of devices table */
 "SendTo.DeviceList.Text" = "ხელმისაწვდომი მოწყობილობები:";
@@ -1213,19 +1166,16 @@
 "SendTo.NavBar.Title" = "ჩანართის გაგზავნა";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "KARMA-ანგარიშთან, არცერთი სხვა მოწყობილობა არ გაქვთ დაკავშირებული, დასინქრონებისთვის.";
+"SendTo.NoDevicesFound.Message" = "Firefox-ანგარიშთან, არცერთი სხვა მოწყობილობა არ გაქვთ დაკავშირებული, დასინქრონებისთვის.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "გასაგრძელებლად გთხოვთ, გახსნათ KARMA, გადახვიდეთ პარამეტრებზე და შეხვიდეთ ანგარიშზე.";
+"SendTo.NotSignedIn.Message" = "გასაგრძელებლად გთხოვთ, გახსნათ Firefox, გადახვიდეთ პარამეტრებზე და შეხვიდეთ ანგარიშზე.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "თქვენ არ ხართ შესული KARMA-ანგარიშზე.";
+"SendTo.NotSignedIn.Title" = "თქვენ არ ხართ შესული Firefox-ანგარიშზე.";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "გაგზავნა";
-
-/* The text for the button on the Send to Device page if you are not signed in to KARMA Accounts. */
-"SendTo.SignIn.Button" = "შესვლა KARMA-ში";
 
 /* Body of notification shown when the device is sent one or more tabs from an unnamed device. */
 "SentTab_TabArrivingNotification_NoDevice_body" = "ახალი ჩანართი სხვა მოწყობილობიდანაა დასინქრონებული.";
@@ -1239,17 +1189,11 @@
 /* Title of notification shown when the device is sent one or more tabs from the named device. %@ is the placeholder for the device name. This device name will be localized by that device. */
 "SentTab_TabArrivingNotification_WithDevice_title" = "ჩანართი მიღებულია %@";
 
-/* Label for an action used to add one or more tabs recieved from a notification to the reading list. */
-"SentTab.AddToReadingListAction.Title" = "წასაკითხებში დამატება";
-
-/* Label for an action used to bookmark one or more tabs from a notification. */
-"SentTab.BookmarkAction.title" = "ჩანიშვნა";
-
 /* Body of notification received after a spurious message from FxA has been received. */
 "SentTab.NoTabArrivingNotification.body" = "შეეხეთ დასაწყებად";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "ჩვენება";
@@ -1279,12 +1223,12 @@
 "Settings.AddCustomEngine.TitlePlaceholder" = "საძიებო სისტემა";
 
 /* The title for URL Field */
-"Settings.AddCustomEngine.URLLabel" = "URL";
+"Settings.AddCustomEngine.URLLabel" = "ბმული";
 
 /* The placeholder for URL Field when saving a custom search engine */
-"Settings.AddCustomEngine.URLPlaceholder" = "URL (%s აღნიშნავს საძიებო ტექსტს)";
+"Settings.AddCustomEngine.URLPlaceholder" = "მისამართი (%s აღნიშნავს საძიებო ტექსტს)";
 
-/* Button in Data Management that clears private data for the selected items. */
+/* Button in Data Management that clears all items. */
 "Settings.ClearAllWebsiteData.Clear.Button" = "საიტების ყველა მონაცემის წაშლა";
 
 /* Button in settings that clears private data for the selected items. */
@@ -1292,9 +1236,6 @@
 
 /* Label used as an item in Settings. When touched it will open a dialog prompting the user to make sure they want to clear all of their private data. */
 "Settings.ClearPrivateData.SectionName" = "პირად მონაცემთა გასუფთავება";
-
-/* Title displayed in header of the setting panel. */
-"Settings.ClearPrivateData.Title" = "პირად მონაცემთა გასუფთავება";
 
 /* Button in Data Management that clears private data for the selected items. Parameter is the number of items to be cleared */
 "Settings.ClearSelectedWebsiteData.ClearSelected.Button" = "გასუფთავება: %1$@";
@@ -1312,7 +1253,7 @@
 "Settings.DataManagement.Title" = "მონაცემთა მართვა";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "KARMA შეწყვეტს ამ ანგარიშის სინქრონიზაციას, მაგრამ ამ მოწყობილობიდან დათვალიერების მონაცემები არ წაიშლება.";
+"Settings.Disconnect.Body" = "Firefox შეწყვეტს ამ ანგარიშის სინქრონიზაციას, მაგრამ ამ მოწყობილობიდან დათვალიერების მონაცემები არ წაიშლება.";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "გამოთიშვა სინქრონიზაციიდან";
@@ -1347,14 +1288,16 @@
 /* Display (theme) settings footer describing how the brightness slider works. */
 "Settings.DisplayTheme.SectionFooter" = "იერსახე ავტომატურად შეიცვლება თქვენი ეკრანის სიკაშკაშის მიხედვით. შეგიძლიათ მიუთითოთ დონეები, რომლის საფუძველზეც შეიცვლება გაფორმება. რგოლი აჩვენებს თქვენი ეკრანის სიკაშკაშის მიმდინარე დონეს.";
 
+/* Display (theme) settings label to show if automatically switch theme is enabled. */
+"Settings.DisplayTheme.StatusTitle" = "თვითშერჩევა";
+
 /* Switch mode settings section title */
 "Settings.DisplayTheme.SwitchMode.SectionHeader" = "გადართვის რეჟიმი";
 
 /* Display (theme) settings switch subtitle, explaining the title 'Automatically'. */
 "Settings.DisplayTheme.SwitchSubtitle" = "ავტომატურად შეცვლა ეკრანის სიკაშკაშის მიხედვით";
 
-/* Display (theme) settings label to show if automatically switch theme is enabled.
-   Display (theme) settings switch to choose whether to set the dark mode manually, or automatically based on the brightness slider. */
+/* Display (theme) settings switch to choose whether to set the dark mode manually, or automatically based on the brightness slider. */
 "Settings.DisplayTheme.SwitchTitle" = "ავტომატური";
 
 /* System theme settings section title */
@@ -1369,146 +1312,158 @@
 /* Title in main app settings for Theme settings */
 "Settings.DisplayTheme.Title.v2" = "იერსახე";
 
-/* DNT Settings option for always on */
-"Settings.DNT.OptionAlwaysOn" = "ყოველთვის";
-
-/* DNT Settings option for only turning on when Tracking Protection is also on */
-"Settings.DNT.OptionOnWithTP" = "მხოლოდ, თვალთვალისგან დაცვის დროს";
-
-/* DNT Settings title */
-"Settings.DNT.Title" = "საიტებისთვის „არ მითვალთვალო“ მოთხოვნის გაგზავნა";
-
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "მოწყობილობის სახელი";
 
-/* Label used as a section title in the KARMA Accounts Settings screen. */
+/* Label used as a section title in the Firefox Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "სინქრონიზაციის პარამეტრები";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "KARMA-ანგარიში";
+"Settings.FxA.Title" = "Firefox-ანგარიში";
 
 /* General settings section title */
 "Settings.General.SectionName" = "მთავარი";
 
-/* In the settings menu, on the KARMA homepage customization section, this is the description below the section, describing what the options in the section are for. */
-"Settings.Home.Option.Description" = "აირჩიეთ, რა ჩანდეს KARMA-ის საწყის გვერდზე.";
+/* This is the description below the settings section located in the menu under customize current homepage. It describes what the options in the section are for. */
+"Settings.Home.Current.Description.v101" = "აირჩიეთ, რა გამოჩნდეს საწყის გვერდზე.";
 
-/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
+/* In the settings menu, on the Firefox homepage customization section, this is the description below the section, describing what the options in the section are for. */
+"Settings.Home.Option.Description.v101" = "აირჩიეთ, რა დაემატოს Firefox-ის საწყის გვერდზე.";
+
+/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
 "Settings.Home.Option.JumpBackIn" = "წინაზე გადასვლა";
 
-/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the KARMA homepage on or off */
+/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Firefox homepage on or off */
 "Settings.Home.Option.Pocket" = "გთავაზობთ Pocket";
 
-/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the KARMA homepage on or off */
+/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Firefox homepage on or off */
 "Settings.Home.Option.RecentlySaved" = "ბოლოს შენახული";
 
-/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
+/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
 "Settings.Home.Option.RecentlyVisited" = "ბოლოს ნანახი";
 
-/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recent Searches section on the KARMA homepage on or off */
-"Settings.Home.Option.RecentSearches" = "ბოლოს მოძიებული";
-
-/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the KARMA homepage on or off */
+/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Firefox homepage on or off */
 "Settings.Home.Option.Shortcuts" = "მალსახმობები";
+
+/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to turn the Pocket Sponsored Stories on the Firefox homepage on or off */
+"Settings.Home.Option.SponsoredPocket.v103" = "დაფინანსებული ამბები";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage after four hours of inactivity. */
 "Settings.Home.Option.StartAtHome.AfterFourHours" = "საწყისი გვერდი ოთხი საათის უქმობის შემდეგ";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up KARMA */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Firefox */
 "Settings.Home.Option.StartAtHome.Always" = "საწყისი გვერდი";
 
 /* In the settings menu, in the Start at Home customization options, this is text that appears below the section, describing what the section settings do. */
-"Settings.Home.Option.StartAtHome.Description" = "აირჩიეთ, რა გამოჩნდეს KARMA-ში დაბრუნებისას.";
+"Settings.Home.Option.StartAtHome.Description" = "აირჩიეთ, რა გამოჩნდეს Firefox-ში დაბრუნებისას.";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up KARMA */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Firefox */
 "Settings.Home.Option.StartAtHome.Never" = "ბოლო ჩანართი";
 
-/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the KARMA Homepage. */
+/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Firefox Homepage. */
 "Settings.Home.Option.StartAtHome.Title" = "საწყისი ეკრანი";
 
-/* In the settings menu, this is the title of the KARMA Homepage customization settings section */
-"Settings.Home.Option.Title" = "KARMA საწყისი გვერდი";
+/* In the settings menu, this is the title of the Firefox Homepage customization settings section */
+"Settings.Home.Option.Title.v101" = "ჩაემატოს საწყის გვერდზე";
 
-/* Button in settings to clear the home page. */
-"Settings.HomePage.Clear.Button" = "გასუფთავება";
+/* In the settings menu, on the Firefox homepage customization section, this is the title for the option that allows users to access the wallpaper settings for the application. */
+"Settings.Home.Option.Wallpaper" = "ფონი";
+
+/* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string for the amethyst firefox wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.AmethystWallpaper.v99" = "Firefox-ფონი, ამეთვისტოს მოხატულობა.";
+
+/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the beach hills firefox wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.BeachHillsWallpaper.v100" = "Firefox-ფონი, სანაპირო მაღლობების მოხატულობა.";
+
+/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the cerulean firefox wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.CeruleanWallpaper.v99" = "Firefox-ფონი, ლაჟვარდოვანი მოხატულობა.";
+
+/* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string for the default wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.DefaultWallpaper.v99" = "ნაგულისხმევი სუფთა ფონი.";
+
+/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the sunrise firefox wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.SunriseWallpaper.v99" = "Firefox-ფონი, რიჟრაჟის მოხატულობა.";
+
+/* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string of the toggle for turning wallpaper cycling shortcut on or off on the homepage. */
+"Settings.Home.Option.Wallpaper.Accessibility.ToggleButton" = "საწყისი გვერდის ფონის წრიულად ცვლა";
+
+/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the twilight hills firefox wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.TwilightHillsWallpaper.v100" = "Firefox-ფონი, შებინდებული მაღლობების მოხატულობა.";
+
+/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of the group of wallpapers that are always available to the user. The %@ will be replaced by the app name and thus doesn't need translation. */
+"Settings.Home.Option.Wallpaper.Classic.Title.v106" = "ჩვეული %@";
+
+/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of the section that allows users to change the wallpaper settings for the application. */
+"Settings.Home.Option.Wallpaper.CollectionTitle" = "ᲡᲐᲬᲧᲘᲡᲘ ᲔᲙᲠᲐᲜᲘ";
+
+/* In the settings menu, on the Firefox wallpaper customization screen, this is the button title of the group of wallpapers that are seasonally available to the user. */
+"Settings.Home.Option.Wallpaper.LearnMore.v106" = "ვრცლად";
+
+/* In the settings menu, on the Firefox wallpaper customization screen, this is the default description of the group of wallpapers that are seasonally available to the user. */
+"Settings.Home.Option.Wallpaper.LimitedEdition.Default.Description.v106" = "ახალი ნაკრების მოსინჯვა.";
+
+/* In the settings menu, on the Firefox wallpaper customization screen, this is the description of the group of wallpapers that are seasonally available to the user. */
+"Settings.Home.Option.Wallpaper.LimitedEdition.IndependentVoices.Description.v106" = "ახალი ნაკრები „დამოუკიდებელი ხმები“.";
+
+/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of the group of wallpapers that are seasonally available to the user. */
+"Settings.Home.Option.Wallpaper.LimitedEdition.Title.v106" = "შეზღუდული გამოცემა";
+
+/* In the settings menu, on the Firefox wallpaper customization screen, this is the string titling the switch button's function, which allows a user to toggle wallpaper switching from the homepage logo on or off. */
+"Settings.Home.Option.Wallpaper.SwitchTitle.v99" = "შეცვალეთ ფონი Firefox-ის საწყისი გვერდის ნიშანზე შეხებით";
+
+/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of that screen, which allows users to change the wallpaper settings for the application. */
+"Settings.Home.Option.Wallpaper.Title" = "ფონი";
+
+/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of toast that comes up when the user changes wallpaper, which lets them know that the wallpaper has been updated. */
+"Settings.Home.Option.Wallpaper.UpdatedToast" = "ფონი განახლებულია!";
+
+/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of the button found on the toast that comes up once the user changes wallpaper, and allows users to dismiss the settings page. In this case, consider View as a verb - the action of dismissing settings and seeing the wallpaper. */
+"Settings.Home.Option.Wallpaper.UpdatedToastButton" = "ნახვა";
 
 /* Label used as an item in Settings. When touched it will open a dialog to configure the home page and its uses. */
 "Settings.HomePage.SectionName" = "საწყისი გვერდი";
 
-/* Title displayed in header of the setting panel. */
-"Settings.HomePage.Title" = "საწყისი გვერდის პარამეტრები";
+/* This string is the title of the setting button which can be clicked to open a page to customize the number of rows in the shortcuts section */
+"Settings.Homepage.Shortcuts.Rows.v100" = "რიგი";
 
-/* Placeholder text in the homepage setting when no homepage has been set. */
-"Settings.HomePage.URL.Placeholder" = "მიუთითეთ გვერდი";
+/* This string is the title of the page to customize the number of rows in the shortcuts section */
+"Settings.Homepage.Shortcuts.RowsPageTitle.v100" = "რიგი";
+
+/* Users can disable or enable shortcuts related settings. This string is the title of the page to change your shortcuts settings. */
+"Settings.Homepage.Shortcuts.ShortcutsPageTitle.v100" = "მალსახმობები";
+
+/* This string is the title of the toggle to disable the shortcuts section in the settings page. */
+"Settings.Homepage.Shortcuts.ShortcutsToggle.v100" = "მალსახმობები";
+
+/* This string is the title of the toggle to disable the sponsored shortcuts functionnality which can be enabled in the shortcut sections. This toggle is in the settings page. */
+"Settings.Homepage.Shortcuts.SponsoredShortcutsToggle.v100" = "დაფინანსებული მალსახმობები";
+
+/* Toggled OFF to hide the shortcuts section */
+"Settings.Homepage.Shortcuts.ToggleOff.v100" = "გამორთ.";
+
+/* Toggled ON to show the shortcuts section */
+"Settings.Homepage.Shortcuts.ToggleOn.v100" = "ჩართ.";
 
 /* Title of the setting section containing the URL of the current home page. */
 "Settings.HomePage.URL.Title" = "მიმდინარე საწყისი გვერდი";
 
-/* Button in settings to use the current link on the clipboard as home page. */
-"Settings.HomePage.UseCopiedLink.Button" = "აღებული ბმულის ასლის გამოყენება";
-
 /* Button in settings to use the current page as home page. */
 "Settings.HomePage.UseCurrent.Button" = "მიმდინარე გვერდის გამოყენება";
-
-/* Button in settings to use the default home page. If no default is set, then this button isn't shown. */
-"Settings.HomePage.UseDefault.Button" = "ნაგულისხმების გამოყენება";
 
 /* Title for the logins and passwords screen. Translation could just use 'Logins' if the title is too long */
 "Settings.LoginsAndPasswordsTitle" = "ანგარიშები და პაროლები";
 
 /* Label used to set a custom url as the new tab option (homepage). */
-"Settings.NewTab.CustomURL" = "მითითებული URL";
-
-/* A description in settings of what the new tab choice means */
-"Settings.NewTab.Description" = "ახალი ჩანართის გახსნისას:";
-
-/* The title of the section in newtab that lets you modify the topsites panel */
-"Settings.NewTab.Option.ASTitle" = "რჩეული საიტების მორგება";
+"Settings.NewTab.CustomURL" = "შერჩეული ბმული";
 
 /* Option in settings to show a blank page when you open a new tab */
 "Settings.NewTab.Option.BlankPage" = "ცარიელი გვერდი";
 
-/* Option in settings to show bookmarks when you open a new tab */
-"Settings.NewTab.Option.Bookmarks" = "სანიშნები";
-
-/* The footer for the section to customize top sites in the new tab settings page. */
-"Settings.NewTab.Option.CustomizeFooter" = "ხშირად მონახულებული საიტები";
-
-/* The footer for the section to customize top sites in the new tab settings page. */
-"Settings.NewTab.Option.CustomizeFooter2" = "საიტები, რომლებსაც ინახავთ ან სტუმრობთ";
-
-/* The title for the section to customize top sites in the new tab settings page. */
-"Settings.NewTab.Option.CustomizeTitle" = "KARMA-ის საწყისი გვერდის მორგება";
-
-/* Option in settings to show KARMA Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "KARMA საწყისი";
-
-/* Option in the settings to turn off recent bookmarks in the Highlights section */
-"Settings.NewTab.Option.HighlightsBookmarks" = "ბოლოს ჩანიშნული";
-
-/* Option in settings to turn off history in the highlights section */
-"Settings.NewTab.Option.HighlightsHistory" = "მონახულებული";
-
-/* Option in settings to show history when you open a new tab */
-"Settings.NewTab.Option.History" = "ისტორია";
+/* Option in settings to show Firefox Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "Firefox საწყისი";
 
 /* Option in settings to show your homepage when you open a new tab */
 "Settings.NewTab.Option.HomePage" = "საწყისი გვერდი";
-
-/* Option in settings to turn on off pocket recommendations */
-"Settings.NewTab.Option.Pocket" = "Pocket-იდან შემოთავაზებული";
-
-/* Footer caption for pocket settings */
-"Settings.NewTab.Option.PocketFooter" = "ყველაფერი საუკეთესო ინტერნეტიდან.";
-
-/* Option in settings to show reading list when you open a new tab */
-"Settings.NewTab.Option.ReadingList" = "წასაკითხების ჩვენება";
-
-/* Option in settings to turn on off pocket recommendations First argument is the pocket brand name */
-"Settings.NewTab.Option.RecommendedByPocket" = "გთავაზობთ %@";
-
-/* Descriptoin for the option in settings to turn on off pocket recommendations. First argument is the pocket brand name, second argument is the pocket product name. */
-"Settings.NewTab.Option.RecommendedByPocketDescription" = "გამორჩეული მასალები, რომელთაც %1$@ გთავაზობთ, %2$@-ოჯახის ნაწილი";
 
 /* Label used as an item in Settings. When touched it will open a dialog to configure the new tab behavior. */
 "Settings.NewTab.SectionName" = "ახალი ჩანართი";
@@ -1522,8 +1477,11 @@
 /* Footer at the bottom of the New Tab screen after entering New Tab in settings */
 "Settings.NewTab.TopSectionNameFooter" = "აირჩიეთ რისი ხილვა გსურთ ახალი ჩანართის გახსნისას";
 
+/* Label for the block images toggle displayed in the settings menu. Enabling this toggle will hide images on any webpage the user visits. */
+"Settings.NoImageModeBlockImages.Label.v99" = "სურათების შეზღუდვა";
+
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "KARMA-ის გახსნისას";
+"Settings.OfferClipboardBar.Status" = "Firefox-ის გახსნისას";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "აღებულ ბმულებზე გადასვლის შემოთავაზება";
@@ -1533,6 +1491,18 @@
 
 /* Label used as an item in Settings. When touched it will open a dialog to configure the open with (mail links) behavior. */
 "Settings.OpenWith.SectionName" = "ელფოსტის პროგრამა";
+
+/* Touch ID prompt subtitle when accessing logins and passwords */
+"Settings.Passwords.FingerPrintReason.v103" = "პაროლებთან წვდომა თითის ანაბეჭდით.";
+
+/* Message shown when you enter Passwords screen for the first time. It explains how password are protected in the Firefox for iOS application. */
+"Settings.Passwords.OnboardingMessage.v103" = "თქვენი პაროლების დასაცავად გამოიყენება Face ID, Touch ID ან მოწყობილობის კოდი.";
+
+/* Setting that appears in the Passwords screen to enable the built-in password manager so users can save their passwords. */
+"Settings.Passwords.SavePasswords.v103" = "პაროლების შენახვა";
+
+/* Title for the passwords screen. */
+"Settings.Passwords.Title.v103" = "პაროლები";
 
 /* Setting to enable the built-in password manager */
 "Settings.SaveLogins.Title" = "ანგარიშის მონაცემების შენახვა";
@@ -1547,7 +1517,7 @@
 "Settings.SendUsage.Link" = "ვრცლად.";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "Mozilla აღრიცხავს მხოლოდ იმ მონაცემებს, რომლებიც საჭიროა KARMA-ის გასაუმჯობესებლად.";
+"Settings.SendUsage.Message" = "Mozilla აღრიცხავს მხოლოდ იმ მონაცემებს, რომლებიც საჭიროა Firefox-ის გასაუმჯობესებლად.";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "მონაცემების აღრიცხვა";
@@ -1565,88 +1535,76 @@
 "Settings.Siri.OpenTabShortcut" = "ახალი ჩანართის გახსნა";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "Siri-ს მალსახმობების გამოყენება, KARMA-ის სწრაფად გახსნისთვის";
+"Settings.Siri.SectionDescription" = "Siri-ს მალსახმობების გამოყენება, Firefox-ის სწრაფად გახსნისთვის";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "Siri-ს მალსახმობები";
-
-/* Section title for all studies that are currently active */
-"Settings.Studies.Active.SectionName" = "მოქმედი";
-
-/* Section title for all studies that are completed */
-"Settings.Studies.Completed.SectionName" = "დასრულებულია";
-
-/* Button title displayed next to each study allowing the user to opt-out of the study */
-"Settings.Studies.Remove.Button" = "მოცილება";
-
-/* Title displayed in header of the Studies panel */
-"Settings.Studies.SectionName" = "კვლევები";
-
-/* Label used as an item in Settings. Tapping on this item takes you to the Studies panel */
-"Settings.Studies.Title" = "კვლევები";
 
 /* Title for a link that explains what Mozilla means by Studies */
 "Settings.Studies.Toggle.Link" = "იხილეთ ვრცლად.";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "KARMA დროდადრო აყენებს და ატარებს კვლევებს.";
-
-/* Toggled OFF to opt-out of studies */
-"Settings.Studies.Toggle.Off" = "გამორთ.";
-
-/* Toggled ON to participate in studies */
-"Settings.Studies.Toggle.On" = "ჩართ.";
+"Settings.Studies.Toggle.Message" = "Firefox დროდადრო აყენებს და ატარებს კვლევებს.";
 
 /* Label used as a toggle item in Settings. When this is off, the user is opting out of all studies. */
 "Settings.Studies.Toggle.Title" = "კვლევები";
 
-/* In the settings menu, in the Tabs customization section, this is the title for the setting that toggles the Inactive Tabs feature, a separate section of inactive tabs that appears in the Tab Tray, on or off */
+/* Ddescription that appears in the settings screen to explain what Firefox Sync is useful for. */
+"Settings.Sync.ButtonDescription.v103" = "შედით ანგარიშზე, რომ დაასინქრონოთ თქვენი ჩანართები, სანიშნები, პაროლები და სხვ.";
+
+/* Button label that appears in the settings to prompt the user to sign in to Firefox for iOS sync service to sync and save data. */
+"Settings.Sync.ButtonTitle.v103" = "დასინქრონება და შენახვა";
+
+/* Title for the page where the user sign in to their Firefox Sync account. */
+"Settings.Sync.SignInView.Title.v103" = "დასინქრონება და შენახვა";
+
+/* This is the description for the setting that toggles the Inactive Tabs feature in the settings menu under the Tabs customization section. Inactive tabs are a separate section of tabs that appears in the Tab Tray, which can be enabled or not */
 "Settings.Tabs.CustomizeTabsSection.InactiveTabs" = "უქმი ჩანართები";
+
+/* This is the description for the setting that toggles the Inactive Tabs feature in the settings menu under the Tabs customization section. Inactive tabs are a separate section of tabs that appears in the Tab Tray, which can be enabled or not */
+"Settings.Tabs.CustomizeTabsSection.InactiveTabsDescription.v101" = "ორი კვირის მოუნახულებელი ჩანართები გადმოვა უქმეების არეში.";
 
 /* In the settings menu, in the Tabs customization section, this is the title for the setting that toggles the Tab Groups feature - where tabs from related searches are grouped - on or off */
 "Settings.Tabs.CustomizeTabsSection.TabGroups" = "ჩანართის ჯგუფები";
 
-/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from KARMA hompage */
+/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from firefox hompage */
 "Settings.Tabs.CustomizeTabsSection.Title" = "ჩანართების არის მორგება";
 
 /* In the settings menu, this is the title for the Tabs customization section option */
 "Settings.Tabs.Title" = "ჩანართები";
 
+/* In the settings menu, in the Toolbar customization section, this label indicates that selecting this will make the toolbar appear at the bottom of the screen. */
+"Settings.Toolbar.Bottom" = "ქვემოთ";
+
+/* In the settings menu, this label indicates that there is an option of customizing the Toolbar appearance. */
+"Settings.Toolbar.SettingsTitle" = "ხელსაწყოთა ზოლი";
+
+/* In the settings menu, in the Toolbar customization section, this label indicates that selecting this will make the toolbar appear at the top of the screen. */
+"Settings.Toolbar.Top" = "ზემოთ";
+
 /* Dismiss button for the tracker protection alert. */
 "Settings.TrackingProtection.Alert.Button" = "კარგი, გასაგებია";
 
 /* Decription for the tracker protection alert. */
-"Settings.TrackingProtection.Alert.Description" = "თუ საიტი არ მუშაობს სათანადოდ, შეეხეთ ფარის ნიშანს მისამართების ველში, თვალთვალისგან გაძლიერებული დაცვის გამოსართავად ამ გვერდზე.";
+"Settings.TrackingProtection.Alert.Description" = "თუ საიტი არ მუშაობს სათანადოდ, შეეხეთ ფარის ნიშანს მისამართების ველში, თვალთვალისგან გაძლიერებული დაცვის გამოსართავად აღნიშნულ გვერდზე.";
 
 /* Title for the tracker protection alert. */
 "Settings.TrackingProtection.Alert.Title" = "ყურადღება!";
 
-/* Header description for tracking protection options section where Basic/Strict block list can be selected */
-"Settings.TrackingProtection.BlockListsHeader" = "აირჩიეთ სია, რომლის მიხედვითაც KARMA შეზღუდავს ვებგვერდის იმ ნაწილებს, რომელიც შეიძლება თვალყურს ადევნებდეს თქვენს მოქმედებებს.";
-
-/* Explanation of basic mode. */
-"Settings.TrackingProtection.Info.BasicTitle" = "წონასწორული, უსაფრთხოებასა და წარმადობას შორის";
-
 /* The Title on info view which shows a list of all blocked websites */
 "Settings.TrackingProtection.Info.BlocksTitle" = "შეზღუდული";
 
-/* Explanation of strict mode. */
-"Settings.TrackingProtection.Info.StrictTitle" = "გთავაზობთ უფრო ძლიერ დაცვას, მაგრამ შეიძლება გამოიწვიოს ზოგიერთი საიტის დაზიანება.";
-
 /* 'Learn more' info link on the Tracking Protection settings screen. */
 "Settings.TrackingProtection.LearnMore" = "იხილეთ ვრცლად";
-
-/* 'More Info' link on the Tracking Protection settings screen. */
-"Settings.TrackingProtection.MoreInfo" = "ვრცლად…";
 
 /* Additional information about your Enhanced Tracking Protection */
 "Settings.TrackingProtection.ProtectionCellFooter" = "ამცირებს მიზნობრივ რეკლამებს და გეხმარებათ აირიდოთ სარეკლამოებისგან თვალის დევნება.";
 
 /* Footer information for tracker protection level. */
-"Settings.TrackingProtection.ProtectionLevel.Footer" = "თუ საიტი არ მუშაობს სათანადოდ, შეეხეთ ფარის ნიშანს მისამართების ველში, თვალთვალისგან გაძლიერებული დაცვის გამოსართავად ამ გვერდზე.";
+"Settings.TrackingProtection.ProtectionLevel.Footer" = "თუ საიტი არ მუშაობს სათანადოდ, შეეხეთ ფარის ნიშანს მისამართების ველში, თვალთვალისგან გაძლიერებული დაცვის გამოსართავად აღნიშნულ გვერდზე.";
 
 /* Description for standard level tracker protection */
-"Settings.TrackingProtection.ProtectionLevelStandard.Description" = "საიტის სათანადო მუშაობისთვის, ზოგიერთი მეთვალყურე დაიშვება.";
+"Settings.TrackingProtection.ProtectionLevelStandard.Description" = "საიტის სათანადო მუშაობისთვის, ზოგიერთი მეთვალყურე ნებადართულია.";
 
 /* Description for strict level tracker protection */
 "Settings.TrackingProtection.ProtectionLevelStrict.Description" = "შეიზღუდება მეტი მეთვალყურე, რეკლამა, ამომხტომი. გვერდები სწრაფად ჩაიტვირთება, თუმცა შესაძლოა, გაუმართავად იმუშაოს.";
@@ -1657,53 +1615,17 @@
 /* Row in top-level of settings that gets tapped to show the tracking protection settings detail view. */
 "Settings.TrackingProtection.SectionName" = "თვალთვალისგან დაცვა";
 
-/* Additional information about the strict level setting */
-"Settings.TrackingProtection.StrictLevelInfoFooter" = "მეთვალყურეების შეზღუდვამ, შეიძლება იმოქმედოს ზოგიერთი საიტის შესაძლებლობებზე.";
-
 /* Tracking protection settings option for using the basic blocklist. */
 "Settings.TrackingProtectionOption.BasicBlockList" = "ჩვეულებრივი (ნაგულისხმევი)";
-
-/* Tracking protection settings option description for using the basic blocklist. */
-"Settings.TrackingProtectionOption.BlockListBasicDescription" = "საიტის გამართულად მუშაობითვის, მეთვალყურეების ნაწილი დაშვებულია.";
 
 /* Tracking protection settings option for using the strict blocklist. */
 "Settings.TrackingProtectionOption.BlockListStrict" = "მკაცრი";
 
-/* Tracking protection settings option description for using the strict blocklist. */
-"Settings.TrackingProtectionOption.BlockListStrictDescription" = "ცნობილი მეთვალყურეების შეზღუდვა. საიტების ნაწილმა, შეიძლება ვერ იმუშაოს გამართულად.";
-
-/* Description label shown on tracking protection options screen. */
-"Settings.TrackingProtectionOption.EnabledStateFooterLabel" = "თვალთვალი ეწოდება თქვენი მოქმედებების აღრიცხვას, სხვადასხვა საიტების მონახულებისას.";
-
 /* Settings option to specify that Tracking Protection is on */
 "Settings.TrackingProtectionOption.NormalBrowsingLabelOn" = "თვალთვალისგან გაძლიერებული დაცვა";
 
-/* Translation settings footer describing how language detection and translation happens. */
-"Settings.TranslateSnackBar.SectionFooter" = "გვერდის ენა დადგენილია მოწყობილობაზე და შემოთავაზებულია თარგმანი ცალკე მომსახურების მიერ.";
-
-/* Translation settings section title */
-"Settings.TranslateSnackBar.SectionHeader" = "მომსახურებები";
-
-/* Switch to choose if the language of a page is detected and offer to translate. */
-"Settings.TranslateSnackBar.SwitchSubtitle" = "თარგმნის შემოთავაზება ნებისმიერ საიტზე, რომლის ენაც განსხვავდება თქვენი ნაგულისხმევი ენისგან.";
-
-/* Switch to choose if the language of a page is detected and offer to translate. */
-"Settings.TranslateSnackBar.SwitchTitle" = "თარგმნის შემოთავაზება";
-
-/* Title in main app settings for Translation toast settings */
-"Settings.TranslateSnackBar.Title" = "თარგმნა";
-
 /* Title of link to help page to find out how to solve Sync issues */
 "Settings.TroubleShootSync.Title" = "ხარვეზების აღმოფხვრა";
-
-/* Button to delete website in search results */
-"Settings.WebsiteData.ButtonDelete" = "წაშლა";
-
-/* Button to exit edit website search results */
-"Settings.WebsiteData.ButtonDone" = "მზადაა";
-
-/* Button to edit website search results */
-"Settings.WebsiteData.ButtonEdit" = "ჩასწორება";
 
 /* Button shows all websites on website data tableview */
 "Settings.WebsiteData.ButtonShowMore" = "ვრცლად";
@@ -1717,38 +1639,34 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "საიტის მონაცემები";
 
-/* Action label on share extension to add page to the KARMA reading list. */
+/* Action label on share extension to add page to the Firefox reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "წასაკითხებში დამატება";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "წასაკითხებში დამატებულია";
 
-/* Action label on share extension to bookmark the page in KARMA. */
+/* Action label on share extension to bookmark the page in Firefox. */
 "ShareExtension.BookmarkThisPageAction.Title" = "გვერდის ჩანიშვნა";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "ჩანიშნულია";
 
-/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in Firefox when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "ფონურად ჩატვირთვა";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "იტვირთება KARMA-ში";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "იტვირთება Firefox-ში";
 
-/* Action label on share extension to immediately open page in KARMA. */
-"ShareExtension.OpenInFirefoxAction.Title" = "KARMA-ში გახსნა";
+/* Action label on share extension to immediately open page in Firefox. */
+"ShareExtension.OpenInFirefoxAction.Title" = "Firefox-ში გახსნა";
 
-/* Action label on share extension to immediately open page in KARMA in private mode. */
-"ShareExtension.OpenInPrivateModeAction.Title" = "პირად რეჟიმში გახსნა";
-
-/* Action label on share extension to search for the selected text in KARMA. */
-"ShareExtension.SeachInFirefoxAction.Title" = "KARMA-ში მოძიება";
+/* Action label on share extension to search for the selected text in Firefox. */
+"ShareExtension.SeachInFirefoxAction.Title" = "Firefox-ში მოძიება";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "ძიების შემოთავაზების ჩვენება";
 
-/* Accessibility label for the tabs button in the (top) tab toolbar
-   Accessibility Label for the tabs button in the tab toolbar */
+/* Accessibility label for the tabs button in the (top) tab toolbar */
 "Show Tabs" = "ჩანართების გამოჩენა";
 
 /* Show the on-boarding screen again from the settings */
@@ -1763,64 +1681,16 @@
 /* Accessibility hint for tab tray's displayed tab. */
 "Swipe right or left with three fingers to close the tab." = "ჩანართის დასახურად, გაასრიალეთ სამი თითი მარჯვნივ, ან მარცხნივ.";
 
-/* Hardware shortcut for non-private tab or tab. Shown in the Discoverability overlay when the hardware Command Key is held down. */
-"SwitchToNonPBM.KeyCodeTitle" = "ჩვეულებრივი თვალიერება";
-
-/* Hardware shortcut switch to the private browsing tab or tab tray. Shown in the Discoverability overlay when the hardware Command Key is held down. */
-"SwitchToPBM.KeyCodeTitle" = "პირადი თვალიერება";
-
-/* Text displayed when the Sync home panel is empty, describing the features provided by Sync to invite the user to log in. */
-"Sync your tabs, bookmarks, passwords and more." = "დაასინქრონეთ თქვენი ჩანართები, სანიშნები, პაროლები და ა. შ.";
-
-/* Text displayed when the Sync home panel is empty, describing the features provided by Sync to invite the user to log in. */
-"Sync your tabs, passwords and more." = "დაასინქრონეთ თქვენი ჩანართები, პაროლები და ა. შ.";
-
-/* Message displayed when the user syncs for the first time */
-"Sync.FirstTimeMessage.Label" = "პირველმა დასინქრონებამ, შესაძლოა ოდნავ დიდხანს გასტანოს";
-
-/* String displayed on Sign In to Sync page that allows the user to create a new account. */
-"Sync.NoAccount.Description" = "არ გაქვთ ანგარიში? შექმენით და დაასინქრონეთ KARMA მოწყობილობებზე.";
-
-/* Message displayed when the user's account is syncing with no ellipsis */
-"Sync.Syncing.Label" = "სინქრონდება";
-
 /* Message displayed when the user's account is syncing with ellipsis at the end */
 "Sync.SyncingEllipsis.Label" = "სინქრონდება…";
-
-/* Panel accessibility label */
-"Synced Tabs" = "სინქრონული";
-
-/* The Bookmark sync component, used in SyncState.Partial.Title */
-"SyncState.Bookmark.Title" = "სანიშნები";
-
-/* The Remote Clients sync component, used in SyncState.Partial.Title */
-"SyncState.Clients.Title" = "დაშორებული მოწყობილობები";
-
-/* Title for Sync status message when synchronization failed to complete */
-"SyncState.Failed.Title" = "დასინქრონება ვერ მოხერხდა";
-
-/* The History sync component, used in SyncState.Partial.Title */
-"SyncState.History.Title" = "ისტორია";
-
-/* The Logins sync component, used in SyncState.Partial.Title */
-"SyncState.Logins.Title" = "ანგარიშის მონაცემები";
-
-/* Title for Sync status message when Sync failed to start. */
-"SyncState.NotStarted.Title" = "დასინქრონება მიუწვდომელია";
 
 /* Title for Sync status message when Sync failed due to being offline */
 "SyncState.Offline.Title" = "დასინქრონება კავშირგარეშეა";
 
-/* Title for Sync status message when a component of Sync failed to complete, where %@ represents the name of the component, i.e. Sync is experiencing issues syncing Bookmarks */
-"SyncState.Partial.Title" = "ხარვეზები, %@ს დასინქრონებისას";
-
-/* The Tabs sync component, used in SyncState.Partial.Title */
-"SyncState.Tabs.Title" = "ჩანართები";
-
 /* Message spoken by VoiceOver saying the position of the single currently visible tab in Tabs Tray, along with the total number of tabs. E.g. \"Tab 2 of 5\" says that tab 2 is visible (and is the only visible tab), out of 5 tabs total. */
 "Tab %@ of %@" = "%1$@ ჩანართი, %2$@-იდან";
 
-/* Hardware shortcut to open the tab tray from a tab. Shown in the Discoverability overlay when the hardware Command Key is held down. */
+/* A label indicating the keyboard shortcut of showing the tab tray. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
 "Tab.ShowTabTray.KeyCodeTitle" = "ყველა ჩანართის ჩვენება";
 
 /* Message spoken by VoiceOver saying the range of tabs that are currently visible in Tabs Tray, along with the total number of tabs. E.g. \"Tabs 8 to 10 of 15\" says tabs 8, 9 and 10 are visible, out of 15 tabs total. */
@@ -1835,50 +1705,32 @@
 /* The label indicating that all the tabs were closed */
 "Tabs.DeleteAllUndo.Title" = "%d ჩანართი დაიხურა";
 
-/* The placeholder text for the tab search bar */
-"Tabs.Search.PlaceholderText" = "ძიების ჩანართები";
+/* Accessibility title for the inactive tabs section button when section is closed. This section groups all tabs that haven't been used in a while. */
+"TabsTray.InactiveTabs.SectionTitle.Closed.Accessibility.v103" = "უქმი ჩანართების ნახვა";
+
+/* Accessibility title for the inactive tabs section button when section is open. This section groups all tabs that haven't been used in a while. */
+"TabsTray.InactiveTabs.SectionTitle.Opened.Accessibility.v103" = "უქმი ჩანართების დამალვა";
+
+/* Accessibility Label for the tab toolbar Search button */
+"TabToolbar.Accessibility.Search.v106" = "ძიება";
 
 /* Accessibility label for the Add Tab button in the Tab Tray. */
 "TabTray.AddTab.Button" = "ჩანართის დამატება";
 
-/* Hardware shortcut to close all tabs from the tab tray. Shown in the Discoverability overlay when the hardware Command Key is held down. */
+/* A label indicating the keyboard shortcut of closing all tabs from the tab tray. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
 "TabTray.CloseAllTabs.KeyCodeTitle" = "ყველა ჩანართის დახურვა";
-
-/* Hardware shortcut to close the selected tab from the tab tray. Shown in the Discoverability overlay when the hardware Command Key is held down. */
-"TabTray.CloseTab.KeyCodeTitle" = "არჩეული ჩანართების გახსნა";
 
 /* Accessibility label for the currently selected tab. */
 "TabTray.CurrentSelectedTab.A11Y" = "ამჟამად შერჩეული ჩანართი.";
 
+/* In the tab tray, when tab groups appear and there exist tabs that don't belong to any group, those tabs are listed under this header as \"Others\" */
+"TabTray.Header.FilteredTabs.SectionHeader" = "სხვა";
+
 /* Title for the inactive tabs section. This section groups all tabs that haven't been used in a while. */
 "TabTray.InactiveTabs.SectionTitle" = "უქმი ჩანართები";
 
-/* The section header for tabs opened last week */
-"TabTray.LastWeek.Header" = "წინა კვირის";
-
-/* The title on the button to copy the tab address. */
-"TabTray.MoreMenu.Copy" = "ასლი";
-
-/* The section header for tabs opened before last week */
-"TabTray.Older.Header" = "უფრო ძველი";
-
-/* Hardware shortcut to open a new tab from the tab tray. Shown in the Discoverability overlay when the hardware Command Key is held down. */
+/* A label indicating the keyboard shortcut of opening a new tab in the tab tray. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
 "TabTray.OpenNewTab.KeyCodeTitle" = "ახალი ჩანართის გახსნა";
-
-/* Hardware shortcut open the selected tab from the tab tray. Shown in the Discoverability overlay when the hardware Command Key is held down. */
-"TabTray.OpenSelectedTab.KeyCodeTitle" = "არჩეული ჩანართების გახსნა";
-
-/* In the Tabs Tray, summoned from the homepage, the title for the section containing non-grouped tabs, which will appear below grouped tabs */
-"TabTray.OtherTabs.Title" = "სხვა ჩანართები";
-
-/* The title for the tab tray in private mode */
-"TabTray.PrivateTitle" = "პირადი ჩანართები";
-
-/* Describes what the Recently Closed tabs behavior is for users unfamiliar with it. */
-"TabTray.RecentlyClosed.Description" = "ჩანართები აქ დარჩება 30 დღით. შემდეგ კი თავადვე დაიხურება.";
-
-/* Title for the recently closed tabs section. This section shows a list of all the tabs that have been recently closed. */
-"TabTray.RecentlyClosed.SectionTitle" = "ბოლოს დახურული";
 
 /* The title on the button to look at private tabs. */
 "TabTray.SegmentedControlTitles.PrivateTabs" = "პირადი";
@@ -1889,19 +1741,13 @@
 /* The title on the button to look at regular tabs. */
 "TabTray.SegmentedControlTitles.Tabs" = "ჩანართები";
 
-/* The button title to see more options to perform on the tab. */
-"TabTray.SwipeMenu.More" = "სხვა";
-
 /* The title for the tab tray */
 "TabTray.Title" = "გახსნილი ჩანართები";
 
-/* The section header for tabs opened today */
-"TabTray.Today.Header" = "დღეს";
+/* Accessibility Label for the tabs button in the tab toolbar */
+"TabTrayButtons.Accessibility.ShowTabs.v106" = "ჩანართების გამოჩენა";
 
-/* The section header for tabs opened yesterday */
-"TabTray.Yesterday.Header" = "გუშინ";
-
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
 "The page could not be displayed in Reader View." = "გვერდის კითხვის რეჟიმში ჩვენება შეუძლებელია.";
 
 /* Error message in the remote tabs panel */
@@ -1913,6 +1759,9 @@
 /* Relative date for date in past week. */
 "this week" = "ამ კვირაში";
 
+/* Relative date for yesterday. */
+"TimeConstants.Yesterday.v106" = "გუშინ";
+
 /* label for Not Now button */
 "Toasts.NotNow" = "ახლა არა";
 
@@ -1922,7 +1771,7 @@
 /* Label for button to undo the action just performed */
 "Toasts.Undo" = "დაბრუნება";
 
-/* History tableview section header */
+/* This label is meant to signify the section containing a group of items from the current day. */
 "Today" = "დღეს";
 
 /* Relative date for date older than a minute. */
@@ -1933,12 +1782,6 @@
 
 /* Accessibility label for the Close All Tabs menu button. */
 "Toolbar.Menu.CloseAllTabs" = "ყველა ჩანართის დახურვა";
-
-/* Description label for the empty Top Sites state. */
-"TopSites.EmptyState.Description" = "ხშირად მონახულებული საიტები გამოჩნდება აქ.";
-
-/* The title for the empty Top Sites state */
-"TopSites.EmptyState.Title" = "მოგესალმებათ რჩეული საიტები";
 
 /* Button shown in editing mode to remove this site from the top sites panel. */
 "TopSites.RemovePage.Button" = "გვერდის მოცილება — %@";
@@ -1959,13 +1802,28 @@
 "UIMenuItem.PasteGo" = "ჩასმა და გადასვლა";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "KARMA-ში მოძიება";
+"UIMenuItem.SearchWithFirefox" = "Firefox-ში მოძიება";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "წასაკითხი";
 
-/* Text message in the settings table view */
-"Upgrade KARMA to connect" = "დასაკავშირებლად განაახლეთ KARMA";
+/* Describes an action on the sync upgrade page in our Upgrade screens. This string will be on a button so user can sign up or login directly in the upgrade. */
+"Upgrade.SyncSign.Action.v106" = "შესვლა";
+
+/* Description string used to to sign in to sync in the Upgrade screens. This screen is shown after user upgrades Firefox version. */
+"Upgrade.SyncSign.Description.v106" = "განაგრძეთ, სადაც გაჩერდით სხვა მოწყობილობიდან ჩანართების წამოღებით ახლა უკვე საწყის გვერდზე.";
+
+/* Title string used to sign in to sync in the Upgrade screens. This screen is shown after user upgrades Firefox version. */
+"Upgrade.SyncSign.Title.v106" = "ეკრანებს შორის გადართვა ჯერ არნახული სიმარტივით";
+
+/* Describes the action on the first upgrade page in the Upgrade screen. This string will be on a button so user can continue the Upgrade. */
+"Upgrade.Welcome.Action.v106" = "დაიწყეთ";
+
+/* Description string used to welcome back users in the Upgrade screens. This screen is shown after user upgrades Firefox version. */
+"Upgrade.Welcome.Description.v106" = "ახალი ფერები. გაუმჯობესებული პირადულობა. ხალხის მოგებაზე წინ დაყენება მუდამ.";
+
+/* Title string used to welcome back users in the Upgrade screens. This screen is shown after user upgrades Firefox version. */
+"Upgrade.Welcome.Title.v106" = "კეთილი იყოს თქვენი ფეხი მეტად პირად ინტერნეტსივრცეში";
 
 /* Debug option */
 "Use stage servers" = "საცდელი სერვერების გამოყენება";
@@ -1973,11 +1831,23 @@
 /* Username textbox in Authentication prompt */
 "Username" = "მომხმარებლის სახელი";
 
-/* Text message in the settings table view */
-"Verify your email address" = "ელფოსტის მისამართის დამოწმება";
+/* The message of the error displayed to a user when they trying to change a wallpaper failed. */
+"Wallpaper.Change.Error.Body.v106" = "რაღაც ხარვეზი აქვს ამ ფონს.";
 
-/* Version number of KARMA shown in settings */
-"Version %@ (%@)" = "%1$@ ვერსია (%2$@)";
+/* The title of the error displayed when changing wallpaper fails. */
+"Wallpaper.Change.Error.Title.v106" = "ფონის შეცვლა ვერ მოხერხდა";
+
+/* The message of the error displayed to a user when they try change a wallpaper that failed downloading. */
+"Wallpaper.Download.Error.Body.v106" = "რაღაც ხარვეზი წარმოიშვა ჩამოტვირთვისას.";
+
+/* The title of the error displayed if download fails when changing a wallpaper. */
+"Wallpaper.Download.Error.Title.v106" = "ფონის ჩამოტვირთვა ვერ მოხერხდა";
+
+/* An action for the error displayed to a user when they trying to change a wallpaper failed. */
+"Wallpaper.Error.Dismiss.v106" = "გაუქმება";
+
+/* Action displayed when changing wallpaper fails. */
+"Wallpaper.Error.TryAgain.v106" = "ხელახლა ცდა";
 
 /* Accessibility label for the main web content view */
 "Web content" = "ვებშიგთავსი";
@@ -1994,11 +1864,11 @@
 /* Relative date for yesterday. */
 "yesterday" = "გუშინ";
 
-/* History tableview section header */
+/* This label is meant to signify the section containing a group of items from the past 24 hours. */
 "Yesterday" = "გუშინ";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in KARMA on your other devices." = "თქვენ არ გაქვთ, KARMA-ის გახსნილი ჩანართები, სხვა მოწყობილობებზე.";
+"You don’t have any tabs open in Firefox on your other devices." = "თქვენ არ გაქვთ, Firefox-ის გახსნილი ჩანართები, სხვა მოწყობილობებზე.";
 
 /* Your Rights settings section title */
 "Your Rights" = "თქვენი უფლებები";

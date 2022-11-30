@@ -1,6 +1,6 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import Foundation
 
@@ -30,13 +30,26 @@ class ButtonToast: Toast {
         }
     }
 
-    init(labelText: String, descriptionText: String? = nil, imageName: String? = nil, buttonText: String? = nil, backgroundColor: UIColor = SimpleToastUX.ToastDefaultColor, textAlignment: NSTextAlignment = .left, completion: ((_ buttonPressed: Bool) -> Void)? = nil) {
+    init(
+        labelText: String,
+        descriptionText: String? = nil,
+        imageName: String? = nil,
+        buttonText: String? = nil,
+        backgroundColor: UIColor = SimpleToastUX.ToastDefaultColor,
+        textAlignment: NSTextAlignment = .left,
+        completion: ((_ buttonPressed: Bool) -> Void)? = nil, autoDismissCompletion: (() -> Void)? = nil
+    ) {
         super.init(frame: .zero)
 
         self.completionHandler = completion
+        self.didDismissWithoutTapHandler = autoDismissCompletion
 
         self.clipsToBounds = true
-        let createdToastView = createView(labelText, descriptionText: descriptionText, imageName: imageName, buttonText: buttonText, textAlignment: textAlignment)
+        let createdToastView = createView(labelText,
+                                          descriptionText: descriptionText,
+                                          imageName: imageName,
+                                          buttonText: buttonText,
+                                          textAlignment: textAlignment)
         self.addSubview(createdToastView)
 
         self.toastView.backgroundColor = backgroundColor

@@ -1,15 +1,18 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import Foundation
 import Shared
-
 @_exported import MozillaAppServices
 
 private let log = Logger.syncLogger
 
-public class RustPlaces {
+public protocol BookmarksHandler {
+    func getRecentBookmarks(limit: UInt, completion: @escaping ([BookmarkItemData]) -> Void)
+}
+
+public class RustPlaces: BookmarksHandler {
     let databasePath: String
 
     let writerQueue: DispatchQueue
@@ -23,10 +26,12 @@ public class RustPlaces {
     public fileprivate(set) var isOpen: Bool = false
 
     private var didAttemptToMoveToBackup = false
+    private var notificationCenter: NotificationCenter
 
-    public init(databasePath: String) {
+    public init(databasePath: String,
+                notificationCenter: NotificationCenter = NotificationCenter.default) {
         self.databasePath = databasePath
-
+        self.notificationCenter = notificationCenter
         self.writerQueue = DispatchQueue(label: "RustPlaces writer queue: \(databasePath)", attributes: [])
         self.readerQueue = DispatchQueue(label: "RustPlaces reader queue: \(databasePath)", attributes: [])
     }
@@ -35,17 +40,21 @@ public class RustPlaces {
         do {
             api = try PlacesAPI(path: databasePath)
             isOpen = true
+            notificationCenter.post(name: .RustPlacesOpened, object: nil)
             return nil
         } catch let err as NSError {
             if let placesError = err as? PlacesError {
-                switch placesError {
-                case .panic(let message):
-                    Sentry.shared.sendWithStacktrace(message: "Panicked when opening Rust Places database", tag: SentryTag.rustPlaces, severity: .error, description: message)
-                default:
-                    Sentry.shared.sendWithStacktrace(message: "Unspecified or other error when opening Rust Places database", tag: SentryTag.rustPlaces, severity: .error, description: placesError.localizedDescription)
-                }
+                SentryIntegration.shared.sendWithStacktrace(
+                    message: "Places error when opening Rust Places database",
+                    tag: SentryTag.rustPlaces,
+                    severity: .error,
+                    description: placesError.localizedDescription)
             } else {
-                Sentry.shared.sendWithStacktrace(message: "Unknown error when opening Rust Places database", tag: SentryTag.rustPlaces, severity: .error, description: err.localizedDescription)
+                SentryIntegration.shared.sendWithStacktrace(
+                    message: "Unknown error when opening Rust Places database",
+                    tag: SentryTag.rustPlaces,
+                    severity: .error,
+                    description: err.localizedDescription)
             }
 
             return err
@@ -65,7 +74,7 @@ public class RustPlaces {
 
         writerQueue.async {
             guard self.isOpen else {
-                deferred.fill(Maybe(failure: PlacesError.connUseAfterAPIClosed as MaybeErrorType))
+                deferred.fill(Maybe(failure: PlacesApiError.connUseAfterApiClosed as MaybeErrorType))
                 return
             }
 
@@ -81,7 +90,7 @@ public class RustPlaces {
                     deferred.fill(Maybe(failure: error as MaybeErrorType))
                 }
             } else {
-                deferred.fill(Maybe(failure: PlacesError.connUseAfterAPIClosed as MaybeErrorType))
+                deferred.fill(Maybe(failure: PlacesApiError.connUseAfterApiClosed as MaybeErrorType))
             }
         }
 
@@ -93,7 +102,7 @@ public class RustPlaces {
 
         readerQueue.async {
             guard self.isOpen else {
-                deferred.fill(Maybe(failure: PlacesError.connUseAfterAPIClosed as MaybeErrorType))
+                deferred.fill(Maybe(failure: PlacesApiError.connUseAfterApiClosed as MaybeErrorType))
                 return
             }
 
@@ -113,7 +122,7 @@ public class RustPlaces {
                     deferred.fill(Maybe(failure: error as MaybeErrorType))
                 }
             } else {
-                deferred.fill(Maybe(failure: PlacesError.connUseAfterAPIClosed as MaybeErrorType))
+                deferred.fill(Maybe(failure: PlacesApiError.connUseAfterApiClosed as MaybeErrorType))
             }
         }
 
@@ -145,23 +154,37 @@ public class RustPlaces {
         do {
             try api?.migrateBookmarksFromBrowserDb(path: browserDB.databasePath)
         } catch let err as NSError {
-            Sentry.shared.sendWithStacktrace(message: "Error encountered while migrating bookmarks from BrowserDB", tag: SentryTag.rustPlaces, severity: .error, description: err.localizedDescription)
+            SentryIntegration.shared.sendWithStacktrace(
+                message: "Error encountered while migrating bookmarks from BrowserDB",
+                tag: SentryTag.rustPlaces,
+                severity: .error,
+                description: err.localizedDescription)
         }
     }
 
-    public func getBookmarksTree(rootGUID: GUID, recursive: Bool) -> Deferred<Maybe<BookmarkNode?>> {
+    public func getBookmarksTree(rootGUID: GUID, recursive: Bool) -> Deferred<Maybe<BookmarkNodeData?>> {
         return withReader { connection in
             return try connection.getBookmarksTree(rootGUID: rootGUID, recursive: recursive)
         }
     }
 
-    public func getBookmark(guid: GUID) -> Deferred<Maybe<BookmarkNode?>> {
+    public func getBookmark(guid: GUID) -> Deferred<Maybe<BookmarkNodeData?>> {
         return withReader { connection in
             return try connection.getBookmark(guid: guid)
         }
     }
 
-    public func getRecentBookmarks(limit: UInt) -> Deferred<Maybe<[BookmarkItem]>> {
+    public func getRecentBookmarks(limit: UInt, completion: @escaping ([BookmarkItemData]) -> Void) {
+        let deferredResponse = withReader { connection in
+            return try connection.getRecentBookmarks(limit: limit)
+        }
+
+        deferredResponse.upon { result in
+            completion(result.successValue ?? [])
+        }
+    }
+
+    public func getRecentBookmarks(limit: UInt) -> Deferred<Maybe<[BookmarkItemData]>> {
         return withReader { connection in
             return try connection.getRecentBookmarks(limit: limit)
         }
@@ -173,7 +196,7 @@ public class RustPlaces {
         }
     }
 
-    public func getBookmarksWithURL(url: String) -> Deferred<Maybe<[BookmarkItem]>> {
+    public func getBookmarksWithURL(url: String) -> Deferred<Maybe<[BookmarkItemData]>> {
         return withReader { connection in
             return try connection.getBookmarksWithURL(url: url)
         }
@@ -189,7 +212,7 @@ public class RustPlaces {
         }
     }
 
-    public func searchBookmarks(query: String, limit: UInt) -> Deferred<Maybe<[BookmarkItem]>> {
+    public func searchBookmarks(query: String, limit: UInt) -> Deferred<Maybe<[BookmarkItemData]>> {
         return withReader { connection in
             return try connection.searchBookmarks(query: query, limit: limit)
         }
@@ -226,29 +249,35 @@ public class RustPlaces {
                     return deferMaybe(error)
                 }
 
+                self.notificationCenter.post(name: .BookmarksUpdated, object: self)
                 return succeed()
             }
         }
     }
 
-    public func createFolder(parentGUID: GUID, title: String, position: UInt32? = nil) -> Deferred<Maybe<GUID>> {
+    public func createFolder(parentGUID: GUID, title: String,
+                             position: UInt32?) -> Deferred<Maybe<GUID>> {
         return withWriter { connection in
             return try connection.createFolder(parentGUID: parentGUID, title: title, position: position)
         }
     }
-    
 
-    public func createSeparator(parentGUID: GUID, position: UInt32? = nil) -> Deferred<Maybe<GUID>> {
+    public func createSeparator(parentGUID: GUID,
+                                position: UInt32?) -> Deferred<Maybe<GUID>> {
         return withWriter { connection in
             return try connection.createSeparator(parentGUID: parentGUID, position: position)
         }
     }
 
-
     @discardableResult
-    public func createBookmark(parentGUID: GUID, url: String, title: String?, position: UInt32? = nil) -> Deferred<Maybe<GUID>> {
+    public func createBookmark(parentGUID: GUID,
+                               url: String,
+                               title: String?,
+                               position: UInt32?) -> Deferred<Maybe<GUID>> {
         return withWriter { connection in
-            return try connection.createBookmark(parentGUID: parentGUID, url: url, title: title, position: position)
+            let response = try connection.createBookmark(parentGUID: parentGUID, url: url, title: title, position: position)
+            self.notificationCenter.post(name: .BookmarksUpdated, object: self)
+            return response
         }
     }
 
@@ -259,7 +288,7 @@ public class RustPlaces {
     }
 
     public func reopenIfClosed() -> NSError? {
-        var error: NSError?  = nil
+        var error: NSError?
 
         writerQueue.sync {
             guard !isOpen else { return }
@@ -270,14 +299,8 @@ public class RustPlaces {
         return error
     }
 
-    public func interrupt() {
-        api?.interrupt()
-    }
-
     public func forceClose() -> NSError? {
-        var error: NSError? = nil
-
-        api?.interrupt()
+        var error: NSError?
 
         writerQueue.sync {
             guard isOpen else { return }
@@ -293,7 +316,7 @@ public class RustPlaces {
 
         writerQueue.async {
             guard self.isOpen else {
-                deferred.fill(Maybe(failure: PlacesError.connUseAfterAPIClosed as MaybeErrorType))
+                deferred.fill(Maybe(failure: PlacesApiError.connUseAfterApiClosed as MaybeErrorType))
                 return
             }
 
@@ -302,12 +325,17 @@ public class RustPlaces {
                 deferred.fill(Maybe(success: ()))
             } catch let err as NSError {
                 if let placesError = err as? PlacesError {
-                    switch placesError {
-                    case .panic(let message):
-                        Sentry.shared.sendWithStacktrace(message: "Panicked when syncing Places database", tag: SentryTag.rustPlaces, severity: .error, description: message)
-                    default:
-                        Sentry.shared.sendWithStacktrace(message: "Unspecified or other error when syncing Places database", tag: SentryTag.rustPlaces, severity: .error, description: placesError.localizedDescription)
-                    }
+                    SentryIntegration.shared.sendWithStacktrace(
+                        message: "Places error when syncing Places database",
+                        tag: SentryTag.rustPlaces,
+                        severity: .error,
+                        description: placesError.localizedDescription)
+                } else {
+                    SentryIntegration.shared.sendWithStacktrace(
+                        message: "Unknown error when opening Rust Places database",
+                        tag: SentryTag.rustPlaces,
+                        severity: .error,
+                        description: err.localizedDescription)
                 }
 
                 deferred.fill(Maybe(failure: err))
@@ -322,7 +350,7 @@ public class RustPlaces {
 
         writerQueue.async {
             guard self.isOpen else {
-                deferred.fill(Maybe(failure: PlacesError.connUseAfterAPIClosed as MaybeErrorType))
+                deferred.fill(Maybe(failure: PlacesApiError.connUseAfterApiClosed as MaybeErrorType))
                 return
             }
 
@@ -354,33 +382,84 @@ public class RustPlaces {
             return try connection.queryHistoryMetadata(query: query, limit: limit)
         }
     }
-    
+
     /**
         Title observations must be made first for any given url. Observe one fact at a time (e.g. just the viewTime, or just the documentType).
      */
     public func noteHistoryMetadataObservation(key: HistoryMetadataKey, observation: HistoryMetadataObservation) -> Deferred<Maybe<Void>> {
         return withWriter { connection in
             if let title = observation.title {
-                return try connection.noteHistoryMetadataObservationTitle(key: key, title: title)
+                let response: Void = try connection.noteHistoryMetadataObservationTitle(key: key, title: title)
+                self.notificationCenter.post(name: .HistoryUpdated, object: nil)
+                return response
             }
             if let documentType = observation.documentType {
-                return try connection.noteHistoryMetadataObservationDocumentType(key: key, documentType: documentType)
+                let response: Void = try connection.noteHistoryMetadataObservationDocumentType(key: key, documentType: documentType)
+                self.notificationCenter.post(name: .HistoryUpdated, object: nil)
+                return response
             }
             if let viewTime = observation.viewTime {
-                return try connection.noteHistoryMetadataObservationViewTime(key: key, viewTime: viewTime)
+                let response: Void = try connection.noteHistoryMetadataObservationViewTime(key: key, viewTime: viewTime)
+                self.notificationCenter.post(name: .HistoryUpdated, object: nil)
+                return response
             }
         }
     }
 
     public func deleteHistoryMetadataOlderThan(olderThan: Int64) -> Deferred<Maybe<Void>> {
         return withWriter { connection in
-            return try connection.deleteHistoryMetadataOlderThan(olderThan: olderThan)
+            let response: Void = try connection.deleteHistoryMetadataOlderThan(olderThan: olderThan)
+            self.notificationCenter.post(name: .HistoryUpdated, object: nil)
+            return response
+        }
+    }
+
+    private func deleteHistoryMetadata(since startDate: Int64) -> Deferred<Maybe<Void>> {
+        let now = Date().toMillisecondsSince1970()
+        return withWriter { connection in
+            return try connection.deleteVisitsBetween(start: startDate, end: now)
+        }
+    }
+
+    public func deleteHistoryMetadata(
+        since startDate: Int64,
+        completion: @escaping (Bool) -> Void
+    ) {
+        let deferredResponse = deleteHistoryMetadata(since: startDate)
+        deferredResponse.upon { result in
+            completion(result.isSuccess)
+        }
+    }
+
+    private func migrateHistory(dbPath: String, lastSyncTimestamp: Int64) -> Deferred<Maybe<HistoryMigrationResult>> {
+        return withWriter { connection in
+            return try connection.migrateHistoryFromBrowserDb(path: dbPath, lastSyncTimestamp: lastSyncTimestamp)
+        }
+    }
+
+    public func migrateHistory(dbPath: String, lastSyncTimestamp: Int64, completion: @escaping (HistoryMigrationResult) -> Void, errCallback: @escaping (Error?) -> Void) {
+        _ = reopenIfClosed()
+        let deferredResponse = self.migrateHistory(dbPath: dbPath, lastSyncTimestamp: lastSyncTimestamp)
+        deferredResponse.upon { result in
+            guard result.isSuccess, let result = result.successValue else {
+                errCallback(result.failureValue)
+                return
+            }
+            completion(result)
         }
     }
 
     public func deleteHistoryMetadata(key: HistoryMetadataKey) -> Deferred<Maybe<Void>> {
         return withWriter { connection in
-            return try connection.deleteHistoryMetadata(key: key)
+            let response: Void = try connection.deleteHistoryMetadata(key: key)
+            self.notificationCenter.post(name: .HistoryUpdated, object: nil)
+            return response
+        }
+    }
+
+    public func deleteVisitsFor(url: Url) -> Deferred<Maybe<Void>> {
+        return withWriter { connection in
+            return try connection.deleteVisitsFor(url: url)
         }
     }
 }

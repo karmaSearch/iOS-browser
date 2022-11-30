@@ -1,9 +1,13 @@
+/* (No Comment) */
+"New Private Tab" = "புதிய தனிப்பயன் கீற்று";
+
+/* (No Comment) */
+"New Tab" = "புதிய கீற்று";
+
 /* Privacy - Camera Usage Description */
 "NSCameraUsageDescription" = "படங்களை எடுத்து பதிவேற்றச் செய்கிறது.";
 
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+/* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "வலைதள பக்கங்கள் உங்கள் இடத்தை கேட்கலாம்.";
 
 /* Privacy - Microphone Usage Description */
@@ -13,11 +17,5 @@
 "NSPhotoLibraryAddUsageDescription" = "இது உங்களை படம் சேமிக்க விடுகிறது.";
 
 /* (No Comment) */
-"ShortcutItemTitleNewPrivateTab" = "புதிய தனிப்பயன் கீற்று";
-
-/* (No Comment) */
-"ShortcutItemTitleNewTab" = "புதிய கீற்று";
-
-/* (No Comment) */
-"ShortcutItemTitleQRCode" = "சதுர குறியீட்டை வருடு";
+"Scan QR Code" = "சதுர குறியீட்டை வருடு";
 

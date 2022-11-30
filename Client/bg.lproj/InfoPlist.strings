@@ -1,9 +1,13 @@
+/* (No Comment) */
+"New Private Tab" = "Нов поверителен раздел";
+
+/* (No Comment) */
+"New Tab" = "Нов раздел";
+
 /* Privacy - Camera Usage Description */
 "NSCameraUsageDescription" = "От тук може да правите и качвате снимки.";
 
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+/* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "Страниците, които посещавате може да поискат вашето местоположение.";
 
 /* Privacy - Microphone Usage Description */
@@ -13,11 +17,5 @@
 "NSPhotoLibraryAddUsageDescription" = "От тук може да запазвате снимки.";
 
 /* (No Comment) */
-"ShortcutItemTitleNewPrivateTab" = "Нов поверителен раздел";
-
-/* (No Comment) */
-"ShortcutItemTitleNewTab" = "Нов раздел";
-
-/* (No Comment) */
-"ShortcutItemTitleQRCode" = "Сканиране на QR код";
+"Scan QR Code" = "Сканиране на QR код";
 

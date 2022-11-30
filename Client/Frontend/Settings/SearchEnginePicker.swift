@@ -1,6 +1,6 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import UIKit
 
@@ -24,7 +24,9 @@ class SearchEnginePicker: ThemedTableViewController {
         let engine = engines[indexPath.item]
         let cell = ThemedTableViewCell()
         cell.textLabel?.text = engine.shortName
-        cell.imageView?.image = engine.image.createScaled(CGSize(width: OpenSearchEngine.PreferredIconSize, height: OpenSearchEngine.PreferredIconSize))
+        let size = CGSize(width: OpenSearchEngine.UX.preferredIconSize,
+                          height: OpenSearchEngine.UX.preferredIconSize)
+        cell.imageView?.image = engine.image.createScaled(size)
         if engine.shortName == selectedSearchEngineName {
             cell.accessoryType = .checkmark
         }

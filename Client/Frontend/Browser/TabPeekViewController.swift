@@ -1,6 +1,6 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import UIKit
 import Shared
@@ -29,28 +29,25 @@ class TabPeekViewController: UIViewController, WKNavigationDelegate {
     fileprivate var webView: WKWebView?
 
     // Preview action items.
-    override var previewActionItems: [UIPreviewActionItem] {
-        get {
-            return previewActions
-        }
-    }
+    override var previewActionItems: [UIPreviewActionItem] { return previewActions }
 
     lazy var previewActions: [UIPreviewActionItem] = {
         var actions = [UIPreviewActionItem]()
 
         let urlIsTooLongToSave = self.tab?.urlIsTooLong ?? false
+        let isHomeTab = self.tab?.isFxHomeTab ?? false
         if !self.ignoreURL && !urlIsTooLongToSave {
-            if !self.isBookmarked {
+            if !self.isBookmarked && !isHomeTab {
                 actions.append(UIPreviewAction(title: .TabPeekAddToBookmarks, style: .default) { [weak self] previewAction, viewController in
                     guard let wself = self, let tab = wself.tab else { return }
                     wself.delegate?.tabPeekDidAddBookmark(tab)
-                    })
+                })
             }
             if self.hasRemoteClients {
-                actions.append(UIPreviewAction(title: .SendToDeviceTitle, style: .default) { [weak self] previewAction, viewController in
+                actions.append(UIPreviewAction(title: .AppMenu.TouchActions.SendToDeviceTitle, style: .default) { [weak self] previewAction, viewController in
                     guard let wself = self, let clientPicker = wself.fxaDevicePicker else { return }
                     wself.delegate?.tabPeekRequestsPresentationOf(clientPicker)
-                    })
+                })
             }
             // only add the copy URL action if we don't already have 3 items in our list
             // as we are only allowed 4 in total and we always want to display close tab
@@ -58,14 +55,14 @@ class TabPeekViewController: UIViewController, WKNavigationDelegate {
                 actions.append(UIPreviewAction(title: .TabPeekCopyUrl, style: .default) {[weak self] previewAction, viewController in
                     guard let wself = self, let url = wself.tab?.canonicalURL else { return }
                     UIPasteboard.general.url = url
-                    SimpleToast().showAlertWithText(.AppMenuCopyURLConfirmMessage, bottomContainer: wself.view)
+                    SimpleToast().showAlertWithText(.AppMenu.AppMenuCopyURLConfirmMessage, bottomContainer: wself.view)
                 })
             }
         }
         actions.append(UIPreviewAction(title: .TabPeekCloseTab, style: .destructive) { [weak self] previewAction, viewController in
             guard let wself = self, let tab = wself.tab else { return }
             wself.delegate?.tabPeekDidCloseTab(tab)
-            })
+        })
 
         return actions
     }()
@@ -74,29 +71,32 @@ class TabPeekViewController: UIViewController, WKNavigationDelegate {
         var actions = [UIAction]()
 
         let urlIsTooLongToSave = self.tab?.urlIsTooLong ?? false
+        let isHomeTab = self.tab?.isFxHomeTab ?? false
         if !self.ignoreURL && !urlIsTooLongToSave {
-            if !self.isBookmarked {
-                actions.append(UIAction(title: .TabPeekAddToBookmarks, image: UIImage.templateImageNamed("menu-Bookmark"), identifier: nil) { [weak self] _ in
+            if !self.isBookmarked && !isHomeTab {
+                actions.append(UIAction(title: .TabPeekAddToBookmarks, image: UIImage.templateImageNamed(ImageIdentifiers.addToBookmark), identifier: nil) { [weak self] _ in
                     guard let wself = self, let tab = wself.tab else { return }
                     wself.delegate?.tabPeekDidAddBookmark(tab)
-                    })
+                })
             }
             if self.hasRemoteClients {
-                actions.append(UIAction(title: .SendToDeviceTitle, image: UIImage.templateImageNamed("menu-Send"), identifier: nil) { [weak self] _ in
+                actions.append(UIAction(title: .AppMenu.TouchActions.SendToDeviceTitle, image: UIImage.templateImageNamed("menu-Send"), identifier: nil) { [weak self] _ in
                     guard let wself = self, let clientPicker = wself.fxaDevicePicker else { return }
                     wself.delegate?.tabPeekRequestsPresentationOf(clientPicker)
-                    })
+                })
             }
-            actions.append(UIAction(title: .TabPeekCopyUrl, image: UIImage.templateImageNamed("menu-Copy-Link"), identifier: nil) {[weak self] _ in
+            actions.append(UIAction(title: .TabPeekCopyUrl, image: UIImage.templateImageNamed(ImageIdentifiers.copyLink), identifier: nil) { [weak self] _ in
                 guard let wself = self, let url = wself.tab?.canonicalURL else { return }
                 UIPasteboard.general.url = url
-                SimpleToast().showAlertWithText(.AppMenuCopyURLConfirmMessage, bottomContainer: wself.view)
+                SimpleToast().showAlertWithText(.AppMenu.AppMenuCopyURLConfirmMessage, bottomContainer: wself.view)
             })
         }
-        actions.append(UIAction(title: .TabPeekCloseTab, image: UIImage.templateImageNamed("menu-CloseTabs"), identifier: nil) { [weak self] _ in
+        actions.append(UIAction(title: .TabPeekCloseTab,
+                                image: UIImage.templateImageNamed(ImageIdentifiers.closeTap),
+                                identifier: nil) { [weak self] _ in
             guard let wself = self, let tab = wself.tab else { return }
             wself.delegate?.tabPeekDidCloseTab(tab)
-            })
+        })
 
         return UIMenu(title: "", children: actions)
     }
@@ -124,9 +124,11 @@ class TabPeekViewController: UIViewController, WKNavigationDelegate {
         }
         // if there is no screenshot, load the URL in a web page
         // otherwise just show the screenshot
-        setupWebView(tab?.webView)
-        guard let screenshot = tab?.screenshot else { return }
-        setupWithScreenshot(screenshot)
+        if let screenshot = tab?.screenshot {
+            setupWithScreenshot(screenshot)
+        } else {
+            setupWebView(tab?.webView)
+        }
     }
 
     fileprivate func setupWithScreenshot(_ screenshot: UIImage) {
@@ -142,7 +144,11 @@ class TabPeekViewController: UIViewController, WKNavigationDelegate {
     }
 
     fileprivate func setupWebView(_ webView: WKWebView?) {
-        guard let webView = webView, let url = webView.url, !isIgnoredURL(url) else { return }
+        guard let webView = webView,
+              let url = webView.url,
+              !isIgnoredURL(url)
+        else { return }
+
         let clonedWebView = WKWebView(frame: webView.frame, configuration: webView.configuration)
         clonedWebView.allowsLinkPreview = false
         clonedWebView.accessibilityLabel = previewAccessibilityLabel
@@ -160,22 +166,16 @@ class TabPeekViewController: UIViewController, WKNavigationDelegate {
     func setState(withProfile browserProfile: BrowserProfile, clientPickerDelegate: DevicePickerViewControllerDelegate) {
         assert(Thread.current.isMainThread)
 
-        guard let tab = self.tab else {
-            return
-        }
+        guard let tab = self.tab else { return }
 
-        guard let displayURL = tab.url?.absoluteString, !displayURL.isEmpty else {
-            return
-        }
+        guard let displayURL = tab.url?.absoluteString, !displayURL.isEmpty else { return }
 
         browserProfile.places.isBookmarked(url: displayURL) >>== { isBookmarked in
             self.isBookmarked = isBookmarked
         }
 
         browserProfile.remoteClientsAndTabs.getClientGUIDs().uponQueue(.main) {
-            guard let clientGUIDs = $0.successValue else {
-                return
-            }
+            guard let clientGUIDs = $0.successValue else { return }
 
             self.hasRemoteClients = !clientGUIDs.isEmpty
             let clientPickerController = DevicePickerViewController()

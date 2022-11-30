@@ -1,6 +1,6 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import Foundation
 import SnapKit
@@ -64,7 +64,7 @@ class TabsButton: UIButton {
     }()
 
     fileprivate lazy var borderView: UIImageView = {
-        let border = UIImageView(image: UIImage(named: "nav-tabcounter")?.withRenderingMode(.alwaysTemplate))
+        let border = UIImageView(image: UIImage(named: ImageIdentifiers.navTabCounter)?.withRenderingMode(.alwaysTemplate))
         border.tintColor = UIColor.theme.browser.tint
         return border
     }()
@@ -103,7 +103,7 @@ class TabsButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
 
-    @objc override func clone() -> UIView {
+    func createTabsButton() -> TabsButton {
         let button = TabsButton()
 
         button.accessibilityLabel = accessibilityLabel
@@ -116,7 +116,7 @@ class TabsButton: UIButton {
 
         button.labelBackground.backgroundColor = labelBackground.backgroundColor
         button.labelBackground.layer.cornerRadius = labelBackground.layer.cornerRadius
-        
+
         return button
     }
 
@@ -127,9 +127,7 @@ class TabsButton: UIButton {
         countToBe = ""//(count < 100) ? count.description : infinity
 
         // only animate a tab count change if the tab count has actually changed
-        guard currentCount != count.description || (clonedTabsButton?.countLabel.text ?? count.description) != count.description else {
-            return
-        }
+        guard currentCount != count.description || (clonedTabsButton?.countLabel.text ?? count.description) != count.description else { return }
 
         // Re-entrancy guard: if this code is running just update the tab count value without starting another animation.
         if isUpdatingTabCount {
@@ -147,8 +145,7 @@ class TabsButton: UIButton {
             insideButton.layer.removeAllAnimations()
         }
 
-        // make a 'clone' of the tabs button
-        let newTabsButton = clone() as! TabsButton
+        let newTabsButton = createTabsButton()
 
         self.clonedTabsButton = newTabsButton
         newTabsButton.frame = self.bounds
@@ -218,4 +215,3 @@ extension TabsButton: NotificationThemeable {
         }
     }
 }
-

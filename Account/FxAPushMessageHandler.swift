@@ -1,13 +1,12 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import Shared
-import SwiftyJSON
 import SyncTelemetry
 import Account
-import SwiftKeychainWrapper
 import os.log
+import MozillaAppServices
 
 private let log = Logger.syncLogger
 
@@ -31,7 +30,7 @@ extension FxAPushMessageHandler {
     /// This method then decrypts it according to the content-encoding (aes128gcm or aesgcm)
     /// and then effects changes on the logged in account.
     @discardableResult func handle(userInfo: [AnyHashable: Any]) -> PushMessageResult {
-        let keychain = KeychainWrapper.sharedAppContainerKeychain
+        let keychain = MZKeychainWrapper.sharedClientAppContainerKeychain
         guard let pushReg = keychain.object(forKey: KeychainKey.fxaPushRegistration) as? PushRegistration else {
             return deferMaybe(PushMessageError.accountError)
         }
@@ -39,9 +38,8 @@ extension FxAPushMessageHandler {
         let subscription = pushReg.defaultSubscription
 
         guard let encoding = userInfo["con"] as? String, // content-encoding
-            let payload = userInfo["body"] as? String else {
-                return deferMaybe(PushMessageError.messageIncomplete("missing con or body"))
-        }
+              let payload = userInfo["body"] as? String
+        else { return deferMaybe(PushMessageError.messageIncomplete("missing con or body")) }
         // ver == endpointURL path, chid == channel id, aps == alert text and content_available.
 
         let plaintext: String?
@@ -57,7 +55,7 @@ extension FxAPushMessageHandler {
 
         guard let string = plaintext else {
             // The app will detect this missing, and re-register. see AppDelegate+PushNotifications.swift.
-            keychain.removeObject(forKey: KeychainKey.apnsToken, withAccessibility: .afterFirstUnlock)
+            keychain.removeObject(forKey: KeychainKey.apnsToken, withAccessibility: MZKeychainItemAccessibility.afterFirstUnlock)
             return deferMaybe(PushMessageError.notDecrypted)
         }
 
@@ -78,7 +76,12 @@ extension FxAPushMessageHandler {
                 }
                 if events.count > 1 {
                     // Log to the console for debugging release builds
-                    os_log("%{public}@", log: OSLog(subsystem: "org.mozilla.firefox", category: "firefoxnotificationservice"), type: OSLogType.debug, "Multiple events arrived, only handling the first event.")
+                    os_log(
+                        "%{public}@",
+                        log: OSLog(subsystem: "org.mozilla.firefox",
+                                   category: "firefoxnotificationservice"),
+                        type: OSLogType.debug,
+                        "Multiple events arrived, only handling the first event.")
                 }
                 switch firstEvent {
                 case .commandReceived(let deviceCommand):
@@ -144,7 +147,7 @@ enum PushMessageType: String {
 }
 
 enum PushMessage: Equatable {
-    case commandReceived(tab: [String : String])
+    case commandReceived(tab: [String: String])
     case deviceConnected(String)
     case deviceDisconnected(String?)
     case profileUpdated
@@ -156,11 +159,11 @@ enum PushMessage: Equatable {
 
     var messageType: PushMessageType {
         switch self {
-        case .commandReceived(_):
+        case .commandReceived:
             return .commandReceived
-        case .deviceConnected(_):
+        case .deviceConnected:
             return .deviceConnected
-        case .deviceDisconnected(_):
+        case .deviceDisconnected:
             return .deviceDisconnected
         case .thisDeviceDisconnected:
             return .deviceDisconnected
@@ -173,7 +176,7 @@ enum PushMessage: Equatable {
         }
     }
 
-    public static func ==(lhs: PushMessage, rhs: PushMessage) -> Bool {
+    public static func == (lhs: PushMessage, rhs: PushMessage) -> Bool {
         guard lhs.messageType == rhs.messageType else {
             return false
         }

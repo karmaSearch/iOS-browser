@@ -1,6 +1,6 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import Shared
 import Storage
@@ -8,7 +8,7 @@ import Sync
 import XCGLogger
 import UserNotifications
 import Account
-import SwiftKeychainWrapper
+import MozillaAppServices
 
 private let log = Logger.browserLogger
 
@@ -28,7 +28,11 @@ enum SentTabAction: String {
         let viewAction = UNNotificationAction(identifier: SentTabAction.view.rawValue, title: .SentTabViewActionTitle, options: .foreground)
 
         // Register ourselves to handle the notification category set by NotificationService for APNS notifications
-        let sentTabCategory = UNNotificationCategory(identifier: "org.mozilla.ios.SentTab.placeholder", actions: [viewAction], intentIdentifiers: [], options: UNNotificationCategoryOptions(rawValue: 0))
+        let sentTabCategory = UNNotificationCategory(
+            identifier: "org.mozilla.ios.SentTab.placeholder",
+            actions: [viewAction],
+            intentIdentifiers: [],
+            options: UNNotificationCategoryOptions(rawValue: 0))
         UNUserNotificationCenter.current().setNotificationCategories([sentTabCategory])
     }
 }
@@ -61,8 +65,8 @@ extension AppDelegate {
         }
 
         // Check if the app is foregrounded, _also_ verify the BVC is initialized. Most BVC functions depend on viewDidLoad() having run –if not, they will crash.
-        if UIApplication.shared.applicationState == .active && BrowserViewController.foregroundBVC().isViewLoaded {
-            BrowserViewController.foregroundBVC().loadQueuedTabs(receivedURLs: receivedURLs)
+        if UIApplication.shared.applicationState == .active && browserViewController.isViewLoaded {
+            browserViewController.loadQueuedTabs(receivedURLs: receivedURLs)
             receivedURLs.removeAll()
         }
     }
@@ -116,6 +120,6 @@ extension AppDelegate {
 
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         print("failed to register. \(error)")
-        Sentry.shared.send(message: "Failed to register for APNS")
+        SentryIntegration.shared.send(message: "Failed to register for APNS")
     }
 }

@@ -1,6 +1,6 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import UIKit
 
@@ -22,9 +22,12 @@ protocol RecentlyClosedPanelDelegate: AnyObject {
 }
 
 class RecentlyClosedTabsPanel: UIViewController, LibraryPanel {
+
     weak var libraryPanelDelegate: LibraryPanelDelegate?
+    var state: LibraryPanelMainState = .history(state: .inFolder)
     var recentlyClosedTabsDelegate: RecentlyClosedPanelDelegate?
     let profile: Profile
+    var bottomToolbarItems: [UIBarButtonItem] = [UIBarButtonItem]()
 
     fileprivate lazy var tableViewController = RecentlyClosedTabsPanelSiteTableViewController(profile: profile)
 
@@ -50,7 +53,7 @@ class RecentlyClosedTabsPanel: UIViewController, LibraryPanel {
         tableViewController.didMove(toParent: self)
 
         self.view.addSubview(tableViewController.view)
-        
+
         NSLayoutConstraint.activate([
             tableViewController.view.topAnchor.constraint(equalTo: view.topAnchor),
             tableViewController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -95,14 +98,14 @@ class RecentlyClosedTabsPanelSiteTableViewController: SiteTableViewController {
         twoLineCell.descriptionLabel.isHidden = false
         twoLineCell.titleLabel.text = tab.title
         twoLineCell.titleLabel.isHidden = tab.title?.isEmpty ?? true ? true : false
-        twoLineCell.descriptionLabel.text = displayURL.absoluteDisplayString        
+        twoLineCell.descriptionLabel.text = displayURL.absoluteDisplayString
         twoLineCell.leftImageView.layer.borderColor = RecentlyClosedPanelUX.IconBorderColor.cgColor
         twoLineCell.leftImageView.layer.borderWidth = RecentlyClosedPanelUX.IconBorderWidth
         twoLineCell.leftImageView.contentMode = .center
         twoLineCell.leftImageView.setImageAndBackground(forIcon: site, website: displayURL) { [weak twoLineCell] in
             twoLineCell?.leftImageView.image = twoLineCell?.leftImageView.image?.createScaled(RecentlyClosedPanelUX.IconSize)
         }
-        
+
         return twoLineCell
     }
 
@@ -126,6 +129,15 @@ class RecentlyClosedTabsPanelSiteTableViewController: SiteTableViewController {
         return self.recentlyClosedTabs.count
     }
 
+    // MARK: - Libray Toolbar actions
+    func handleBackButton() {
+        // no implementation needed
+    }
+
+    func handleDoneButton() {
+        // no implementation needed
+    }
+
 }
 
 extension RecentlyClosedTabsPanelSiteTableViewController: LibraryPanelContextMenu {
@@ -145,7 +157,7 @@ extension RecentlyClosedTabsPanelSiteTableViewController: LibraryPanelContextMen
         return site
     }
 
-    func getContextMenuActions(for site: Site, with indexPath: IndexPath) -> [PhotonActionSheetItem]? {
+    func getContextMenuActions(for site: Site, with indexPath: IndexPath) -> [PhotonRowActions]? {
         guard let libraryPanelDelegate = libraryPanelDelegate else {
             return getRecentlyClosedTabContexMenuActions(for: site, recentlyClosedPanelDelegate: recentlyClosedTabsDelegate)
         }

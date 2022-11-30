@@ -1,7 +1,6 @@
-
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import UIKit
 import Shared
@@ -9,7 +8,7 @@ import Storage
 import SnapKit
 import Account
 
-protocol DevicePickerViewControllerDelegate {
+protocol DevicePickerViewControllerDelegate: AnyObject {
     func devicePickerViewControllerDidCancel(_ devicePickerViewController: DevicePickerViewController)
     func devicePickerViewController(_ devicePickerViewController: DevicePickerViewController, didPickDevices devices: [RemoteDevice])
 }
@@ -26,7 +25,7 @@ private struct DevicePickerViewControllerUX {
     static let DeviceRowTextPaddingRight = CGFloat(50)
 }
 
-fileprivate enum LoadingState {
+private enum LoadingState {
     case loading
     case loaded
 }
@@ -64,8 +63,7 @@ class DevicePickerViewController: UITableViewController {
 
         tableView.allowsSelection = true
 
-        notification = NotificationCenter.default.addObserver(forName: Notification.Name.constellationStateUpdate
-        , object: nil, queue: .main) { [weak self ] _ in
+        notification = NotificationCenter.default.addObserver(forName: Notification.Name.constellationStateUpdate, object: nil, queue: .main) { [weak self ] _ in
             self?.loadList()
             self?.refreshControl?.endRefreshing()
         }
@@ -95,14 +93,19 @@ class DevicePickerViewController: UITableViewController {
 
             let currentIds = self.devices.map { $0.id ?? "" }.sorted()
             let newIds = state.remoteDevices.map { $0.id }.sorted()
-            if currentIds.count > 0, currentIds == newIds {
+            if !currentIds.isEmpty, currentIds == newIds {
                 return
             }
 
-            self.devices = state.remoteDevices.map { d in
-                let t = "\(d.deviceType)"
-                let lastAccessTime = d.lastAccessTime == nil ? nil : UInt64(clamping: d.lastAccessTime!)
-                return RemoteDevice(id: d.id, name: d.displayName, type: t, isCurrentDevice: d.isCurrentDevice, lastAccessTime: lastAccessTime, availableCommands: nil)
+            self.devices = state.remoteDevices.map { device in
+                let typeString = "\(device.deviceType)"
+                let lastAccessTime = device.lastAccessTime == nil ? nil : UInt64(clamping: device.lastAccessTime!)
+                return RemoteDevice(id: device.id,
+                                    name: device.displayName,
+                                    type: typeString,
+                                    isCurrentDevice: device.isCurrentDevice,
+                                    lastAccessTime: lastAccessTime,
+                                    availableCommands: nil)
             }
 
             if self.devices.isEmpty {
@@ -210,7 +213,7 @@ class DevicePickerViewController: UITableViewController {
             // Re-open the profile if it was shutdown. This happens when we run from an app extension, where we must
             // make sure that the profile is only open for brief moments of time.
             if profile.isShutdown && Bundle.main.bundleURL.pathExtension == "appex" {
-                profile._reopen()
+                profile.reopen()
             }
             return profile
         }
@@ -260,15 +263,15 @@ class DevicePickerTableViewHeaderCell: UITableViewCell {
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        addSubview(nameLabel)
+        contentView.addSubview(nameLabel)
         nameLabel.font = DevicePickerViewControllerUX.TableHeaderTextFont
         nameLabel.text = .SendToDevicesListTitle
         nameLabel.textColor = DevicePickerViewControllerUX.TableHeaderTextColor
 
         nameLabel.snp.makeConstraints { (make) -> Void in
-            make.left.equalTo(DevicePickerViewControllerUX.TableHeaderTextPaddingLeft)
-            make.centerY.equalTo(self)
-            make.right.equalTo(self)
+            make.left.equalTo(contentView).offset(DevicePickerViewControllerUX.TableHeaderTextPaddingLeft)
+            make.centerY.equalTo(contentView)
+            make.right.equalTo(contentView)
         }
 
         preservesSuperviewLayoutMargins = false

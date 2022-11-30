@@ -1,6 +1,6 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import UIKit
 
@@ -76,7 +76,7 @@ class SlideOverPresentationController: UIPresentationController {
         blurEffectView.frame = containerView!.bounds
     }
 
-    @objc func dismissController(){
+    @objc func dismissController() {
         presentedViewController.dismiss(animated: true, completion: nil)
     }
 }

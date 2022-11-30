@@ -35,7 +35,7 @@
 "Modified %@" = "Ostatnia modyfikacja: %@";
 
 /* Label displayed when no logins are found after searching. */
-"No logins found" = "Brak danych logowania";
+"No logins found" = "Nie odnaleziono danych logowania";
 
 /* Open and Fill website text selection menu item */
 "Open & Fill" = "Otwórz i wypełnij";
@@ -51,6 +51,9 @@
 
 /* Accessibility label for the search input field in the Logins list */
 "Search Input Field" = "Pole wyszukiwania";
+
+/* Title for the search field at the top of the Logins list screen */
+"SearchInput.Title.Search.v106" = "Szukaj";
 
 /* Label for the button used to select all logins. */
 "Select All" = "Zaznacz wszystko";

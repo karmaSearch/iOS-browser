@@ -1,9 +1,13 @@
+/* (No Comment) */
+"New Private Tab" = "Nueva pestanya privada";
+
+/* (No Comment) */
+"New Tab" = "Nueva pestanya";
+
 /* Privacy - Camera Usage Description */
 "NSCameraUsageDescription" = "Esto te permite de fer fotos y de puyar-las.";
 
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+/* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "Los puestos web que vesites pueden solicitar conoixer lo tuyo plazamiento.";
 
 /* Privacy - Microphone Usage Description */
@@ -13,11 +17,5 @@
 "NSPhotoLibraryAddUsageDescription" = "Esto te permite d'alzar fotos.";
 
 /* (No Comment) */
-"ShortcutItemTitleNewPrivateTab" = "Nueva pestanya privada";
-
-/* (No Comment) */
-"ShortcutItemTitleNewTab" = "Nueva pestanya";
-
-/* (No Comment) */
-"ShortcutItemTitleQRCode" = "Escaniar codigo QR";
+"Scan QR Code" = "Escaniar codigo QR";
 

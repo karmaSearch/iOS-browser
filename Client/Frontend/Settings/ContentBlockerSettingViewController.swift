@@ -1,6 +1,6 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import Foundation
 import Shared
@@ -159,21 +159,35 @@ class ContentBlockerSettingViewController: SettingsTableViewController {
     override func generateSettings() -> [SettingSection] {
         let strengthSetting: [CheckmarkSetting] = BlockingStrength.allOptions.map { option in
             let id = BlockingStrength.accessibilityId(for: option)
-            let setting = CheckmarkSetting(title: NSAttributedString(string: option.settingTitle), style: .leftSide, subtitle: NSAttributedString(string: option.settingSubtitle), accessibilityIdentifier: id, isChecked: {
-                return option == self.currentBlockingStrength
-            }, onChecked: {
-                self.currentBlockingStrength = option
-                self.prefs.setString(self.currentBlockingStrength.rawValue, forKey: ContentBlockingConfig.Prefs.StrengthKey)
-                TabContentBlocker.prefsChanged()
-                self.tableView.reloadData()
-                
-                TelemetryWrapper.recordEvent(category: .action, method: .change, object: .setting, extras: ["pref": "ETP-strength", "to": option.rawValue])
-                
-                if option == .strict {
-                    let alert = UIAlertController(title: .TrackerProtectionAlertTitle, message: .TrackerProtectionAlertDescription, preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: .TrackerProtectionAlertButton, style: .default, handler: nil))
-                    self.present(alert, animated: true)
-                }
+            let setting = CheckmarkSetting(
+                title: NSAttributedString(string: option.settingTitle),
+                style: .leftSide,
+                subtitle: NSAttributedString(string: option.settingSubtitle),
+                accessibilityIdentifier: id,
+                isChecked: { return option == self.currentBlockingStrength },
+                onChecked: {
+                    self.currentBlockingStrength = option
+                    self.prefs.setString(self.currentBlockingStrength.rawValue,
+                                         forKey: ContentBlockingConfig.Prefs.StrengthKey)
+                    TabContentBlocker.prefsChanged()
+                    self.tableView.reloadData()
+
+                    let extras = [TelemetryWrapper.EventExtraKey.preference.rawValue: "ETP-strength",
+                                  TelemetryWrapper.EventExtraKey.preferenceChanged.rawValue: option.rawValue]
+                    TelemetryWrapper.recordEvent(category: .action,
+                                                 method: .change,
+                                                 object: .setting,
+                                                 extras: extras)
+
+                    if option == .strict {
+                        let alert = UIAlertController(title: .TrackerProtectionAlertTitle,
+                                                      message: .TrackerProtectionAlertDescription,
+                                                      preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: .TrackerProtectionAlertButton,
+                                                      style: .default,
+                                                      handler: nil))
+                        self.present(alert, animated: true)
+                    }
             })
 
             setting.onAccessoryButtonTapped = {
@@ -185,12 +199,16 @@ class ContentBlockerSettingViewController: SettingsTableViewController {
             return setting
         }
 
-        let enabledSetting = BoolSetting(prefs: profile.prefs, prefKey: ContentBlockingConfig.Prefs.EnabledKey, defaultValue: ContentBlockingConfig.Defaults.NormalBrowsing, attributedTitleText: NSAttributedString(string: .TrackingProtectionEnableTitle)) { [weak self] enabled in
-            TabContentBlocker.prefsChanged()
-            strengthSetting.forEach { item in
-                item.enabled = enabled
-            }
-            self?.tableView.reloadData()
+        let enabledSetting = BoolSetting(
+            prefs: profile.prefs,
+            prefKey: ContentBlockingConfig.Prefs.EnabledKey,
+            defaultValue: ContentBlockingConfig.Defaults.NormalBrowsing,
+            attributedTitleText: NSAttributedString(string: .TrackingProtectionEnableTitle)) { [weak self] enabled in
+                TabContentBlocker.prefsChanged()
+                strengthSetting.forEach { item in
+                    item.enabled = enabled
+                }
+                self?.tableView.reloadData()
         }
 
         let firstSection = SettingSection(title: nil, footerTitle: NSAttributedString(string: .TrackingProtectionCellFooter), children: [enabledSetting])
@@ -207,6 +225,7 @@ class ContentBlockerSettingViewController: SettingsTableViewController {
     // The first section header gets a More Info link
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let _defaultFooter = super.tableView(tableView, viewForFooterInSection: section) as? ThemedTableSectionHeaderFooterView
+
         guard let defaultFooter = _defaultFooter, section > 0 else {
             return _defaultFooter
         }
@@ -218,8 +237,9 @@ class ContentBlockerSettingViewController: SettingsTableViewController {
         // TODO: Get a dedicated string for this.
         let title: String = .TrackerProtectionLearnMore
 
+        let font = DynamicFontHelper.defaultHelper.preferredFont(withTextStyle: .subheadline, size: 12.0)
         var attributes = [NSAttributedString.Key: AnyObject]()
-        attributes[NSAttributedString.Key.font] = UIFont.customFont(ofSize: 12, weight: UIFont.Weight.regular)
+        attributes[NSAttributedString.Key.font] = font
         attributes[NSAttributedString.Key.foregroundColor] = UIColor.theme.general.highlightBlue
 
         let button = UIButton()
@@ -234,6 +254,10 @@ class ContentBlockerSettingViewController: SettingsTableViewController {
         }
 
         return defaultFooter
+    }
+
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return UITableView.automaticDimension
     }
 
     @objc func moreInfoTapped() {

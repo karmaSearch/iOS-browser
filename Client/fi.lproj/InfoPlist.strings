@@ -1,26 +1,24 @@
+/* (No Comment) */
+"New Private Tab" = "Uusi yksityinen välilehti";
+
+/* (No Comment) */
+"New Tab" = "Uusi välilehti";
+
 /* Privacy - Camera Usage Description */
-"NSCameraUsageDescription" = "Näin voit ottaa ja ladata kuvia.";
+"NSCameraUsageDescription" = "Firefox käyttää kameraasi skannatakseen QR-koodeja ja ottaakseen valokuvia ja videoita.";
 
 /* Privacy - Face ID Usage Description */
 "NSFaceIDUsageDescription" = "KARMA vaatii Face ID:n, jotta voit käyttää tallennettuja kirjautumistietoja.";
 
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+/* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "Vierailemasi sivustot voivat kysyä lupaa sijaintiisi.";
 
 /* Privacy - Microphone Usage Description */
-"NSMicrophoneUsageDescription" = "Näin voit ottaa ja ladata videoita.";
+"NSMicrophoneUsageDescription" = "Firefox käyttää mikrofoniasi tallentamaan ja lähettämään ääntä.";
 
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "Näin voit tallentaa kuvia.";
 
 /* (No Comment) */
-"ShortcutItemTitleNewPrivateTab" = "Uusi yksityinen välilehti";
-
-/* (No Comment) */
-"ShortcutItemTitleNewTab" = "Uusi välilehti";
-
-/* (No Comment) */
-"ShortcutItemTitleQRCode" = "Skannaa QR-koodi";
+"Scan QR Code" = "Skannaa QR-koodi";
 

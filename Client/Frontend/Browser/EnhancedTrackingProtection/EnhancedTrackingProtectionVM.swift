@@ -1,6 +1,6 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import Shared
 import Storage
@@ -9,7 +9,6 @@ class EnhancedTrackingProtectionMenuVM {
 
     // MARK: - Variables
     var tab: Tab
-    var tabManager: TabManager
     var profile: Profile
     var onOpenSettingsTapped: (() -> Void)?
 
@@ -51,11 +50,9 @@ class EnhancedTrackingProtectionMenuVM {
 
     // MARK: - Initializers
 
-    init(tab: Tab, profile: Profile, tabManager: TabManager) {
+    init(tab: Tab, profile: Profile) {
         self.tab = tab
         self.profile = profile
-        self.tabManager = tabManager
-        
     }
 
     // MARK: - Functions

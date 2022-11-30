@@ -1,9 +1,13 @@
+/* (No Comment) */
+"New Private Tab" = "New Private Tab";
+
+/* (No Comment) */
+"New Tab" = "New Tab";
+
 /* Privacy - Camera Usage Description */
 "NSCameraUsageDescription" = "This lets you take and upload photos.";
 
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+/* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "Websites you visit may request your location.";
 
 /* Privacy - Microphone Usage Description */
@@ -13,11 +17,5 @@
 "NSPhotoLibraryAddUsageDescription" = "This lets you save photos.";
 
 /* (No Comment) */
-"ShortcutItemTitleNewPrivateTab" = "New Private Tab";
-
-/* (No Comment) */
-"ShortcutItemTitleNewTab" = "New Tab";
-
-/* (No Comment) */
-"ShortcutItemTitleQRCode" = "Scan QR Code";
+"Scan QR Code" = "Scan QR Code";
 
