@@ -1,8 +1,8 @@
-/* Sign in to Firefox account button on second intro screen. */
+/* Sign in to KARMA account button on second intro screen. */
 "Intro.Slides.Button.SignIn" = "Přizjewić";
 
 /* Title for the first panel 'Welcome' in the First Run tour. */
-"Intro.Slides.Welcome.Title.v2" = "Witajće k Firefox";
+"Intro.Slides.Welcome.Title.v2" = "Witajće k KARMA";
 
 /* See http://mzl.la/1T8gxwo */
 "Start Browsing" = "Přehladować započeć";

@@ -5,3 +5,11 @@
 "Intro.Slides.Title.3" = "Entender y actuar";
 "Intro.Slides.SubTitle.3" = "Artículos para informarte, palancas para actuar";
 "Intro.Button.Skip" = "Saltar";
+
+"Intro.Slides.Button.Next" = "Siguiente";
+
+"DefaultBrowserOnboarding.Button" = "Seleccionar KARMA";
+
+"DefaultBrowserOnboarding.Button.Skip" = "Ahora no";
+"Settings.DefaultBrowserMenuItem" = "Establecer como navegador predeterminado";
+"DefaultBrowserCard.Description" = "Abre los enlaces Internet con la aplicación KARMA y contribuyes a proteger la biodiversidad y el bienestar animal.";

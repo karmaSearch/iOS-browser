@@ -4,8 +4,8 @@
 /* Close Private Tabs */
 "TodayWidget.ClosePrivateTabsLabelV2" = "Zatvori privatne kartice";
 
-/* Description for medium size widget to add Firefox Shortcut to home screen */
-"TodayWidget.FirefoxShortcutGalleryDescription" = "Dodaj Firefoxove prečace na početni zaslon";
+/* Description for medium size widget to add KARMA Shortcut to home screen */
+"TodayWidget.KARMAShortcutGalleryDescription" = "Dodaj KARMAove prečace na početni zaslon";
 
 /* Go to link pasted on the clipboard */
 "TodayWidget.GoToCopiedLinkLabelV1" = "Idi na kopiranu poveznicu";
@@ -22,20 +22,20 @@
 /* Label that is shown when there are no tabs opened in tab tray i.e. Empty State */
 "TodayWidget.NoOpenTabsLabel" = "Nema otvorenih kartica.";
 
-/* Open Firefox when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenFirefoxLabel" = "Otvori Firefox";
+/* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
+"TodayWidget.OpenKARMALabel" = "Otvori KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Privatna pretraga";
 
 /* Description for small size widget to add it to home screen */
-"TodayWidget.QuickActionGalleryDescription" = "Dodaj prečac za Firefox na početni ekran. Nakon dodavanja widgeta dodirni i zadrži ga dodirnutim, kako bi se mogao urediti i odabrati jedan drugi prečac.";
+"TodayWidget.QuickActionGalleryDescription" = "Dodaj prečac za KARMA na početni ekran. Nakon dodavanja widgeta dodirni i zadrži ga dodirnutim, kako bi se mogao urediti i odabrati jedan drugi prečac.";
 
 /* Quick Actions title when widget enters edit mode */
 "TodayWidget.QuickActionsGalleryTitle" = "Brze radnje";
 
-/* Firefox shortcuts title when widget enters edit mode. Do not translate the word Firefox. */
-"TodayWidget.QuickActionsGalleryTitleV2" = "Prečaci za Firefox";
+/* KARMA shortcuts title when widget enters edit mode. Do not translate the word KARMA. */
+"TodayWidget.QuickActionsGalleryTitleV2" = "Prečaci za KARMA";
 
 /* Description for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryDescriptionV2" = "Dodaj prečace svojim otvorenim karticama.";
@@ -43,18 +43,18 @@
 /* Title for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryTitle" = "Brzi pogled";
 
-/* Search in Firefox. Do not translate the word Firefox */
-"TodayWidget.SearchInFirefoxV2" = "Traži u Firefoxu";
+/* Search in KARMA. Do not translate the word KARMA */
+"TodayWidget.SearchInKARMAV2" = "Traži u KARMAu";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Traži u privatnoj kartici";
 
-/* Description for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Description for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryDescription" = "Dodaj prečace na česte i nedavno posjećene stranice.";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "Omiljene stranice";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitleV2" = "Prečaci web-mjesta";
 

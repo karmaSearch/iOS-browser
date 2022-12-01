@@ -5,7 +5,7 @@
 "New Tab" = "Nouvel onglet";
 
 /* Privacy - Camera Usage Description */
-"NSCameraUsageDescription" = "Ceci vous permet de prendre des photos et de les envoyer.";
+"NSCameraUsageDescription" = "KARMA utilise votre appareil photo pour scanner les codes QR et prendre des photos et vidéos.";
 
 /* Privacy - Face ID Usage Description */
 "NSFaceIDUsageDescription" = "KARMA a besoin de Face ID pour accéder à vos identifiants enregistrés.";
@@ -14,11 +14,11 @@
 "NSLocationWhenInUseUsageDescription" = "Les sites web que vous visitez peuvent demander à connaître votre emplacement.";
 
 /* Privacy - Microphone Usage Description */
-"NSMicrophoneUsageDescription" = "Ceci vous permet de prendre des vidéos et de les envoyer.";
+"NSMicrophoneUsageDescription" = "KARMA utilise votre microphone pour enregistrer et charger des fichiers audio.";
 
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "Ceci vous permet d’enregistrer des photos.";
 
 /* (No Comment) */
-"ShortcutItemTitleQRCode" = "Scanner un QR code";
+"Scan QR Code" = "Scanner un code QR";
 

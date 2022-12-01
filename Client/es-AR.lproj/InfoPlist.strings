@@ -14,7 +14,7 @@
 "NSLocationWhenInUseUsageDescription" = "Los sitios web que visités pueden solicitar tu ubicación.";
 
 /* Privacy - Microphone Usage Description */
-"NSMicrophoneUsageDescription" = "Firefox usa tu micrófono para grabar y cargar audio.";
+"NSMicrophoneUsageDescription" = "KARMA usa tu micrófono para grabar y cargar audio.";
 
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "Esto te permite guardar las fotos.";

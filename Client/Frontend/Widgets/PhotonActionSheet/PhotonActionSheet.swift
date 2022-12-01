@@ -52,7 +52,6 @@ class PhotonActionSheet: UIViewController {
     let viewModel: PhotonActionSheetViewModel
     private var constraints = [NSLayoutConstraint]()
     var notificationCenter: NotificationProtocol = NotificationCenter.default
-    private var customizeForMenu: Bool = false
 
     private lazy var closeButton: UIButton = .build { button in
         button.setTitle(.CloseButtonTitle, for: .normal)
@@ -71,12 +70,11 @@ class PhotonActionSheet: UIViewController {
 
     // MARK: - Init
 
-    init(viewModel: PhotonActionSheetViewModel, customizeForMenu: Bool = false) {
+    init(viewModel: PhotonActionSheetViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
 
         title = viewModel.title
-        self.customizeForMenu = customizeForMenu
         modalPresentationStyle = viewModel.modalStyle
         closeButton.setTitle(viewModel.closeButtonTitle, for: .normal)
         tableView.estimatedRowHeight = UX.RowHeight
@@ -100,6 +98,7 @@ class PhotonActionSheet: UIViewController {
         view.accessibilityIdentifier = "Action Sheet"
 
         tableView.backgroundColor = .clear
+        tableView.addObserver(self, forKeyPath: "contentSize", options: .new, context: nil)
         // In a popover the popover provides the blur background
         // Not using a background color allows the view to style correctly with the popover arrow
         if self.popoverPresentationController == nil {
@@ -406,18 +405,10 @@ extension PhotonActionSheet: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        if customizeForMenu && section == actions.count - 1 {
-            return 80
-        }
         return 0
     }
 
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        if customizeForMenu && section == actions.count - 1 {
-            let imageView = UIImageView(image: UIImage(named: "menu-footer-ants"))
-            imageView.backgroundColor = UIColor.theme.homePanel.panelBackground
-            return imageView
-        }
         return UIView()
     }
 

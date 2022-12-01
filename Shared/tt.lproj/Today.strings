@@ -4,8 +4,8 @@
 /* Close Private Tabs */
 "TodayWidget.ClosePrivateTabsLabelV2" = "Хосусый\nтабларны ябу";
 
-/* Description for medium size widget to add Firefox Shortcut to home screen */
-"TodayWidget.FirefoxShortcutGalleryDescription" = "Өй экранына Firefox ярлыкларын өстәгез.";
+/* Description for medium size widget to add KARMA Shortcut to home screen */
+"TodayWidget.KARMAShortcutGalleryDescription" = "Өй экранына KARMA ярлыкларын өстәгез.";
 
 /* Go to link pasted on the clipboard */
 "TodayWidget.GoToCopiedLinkLabelV1" = "Копияләнгән сылтамага күчү";
@@ -22,20 +22,20 @@
 /* Label that is shown when there are no tabs opened in tab tray i.e. Empty State */
 "TodayWidget.NoOpenTabsLabel" = "Ачык таблар юк.";
 
-/* Open Firefox when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenFirefoxLabel" = "Firefox-ны ачу";
+/* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
+"TodayWidget.OpenKARMALabel" = "KARMA-ны ачу";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Хосусый эзләү";
 
 /* Description for small size widget to add it to home screen */
-"TodayWidget.QuickActionGalleryDescription" = "Өй экранына Firefox ярлыгын өстәгез. Виджетны өстәгәннән соң, аны үзгәртү өчен өстенә басып торыгыз һәм бүтән бер ярлык сайлагыз.";
+"TodayWidget.QuickActionGalleryDescription" = "Өй экранына KARMA ярлыгын өстәгез. Виджетны өстәгәннән соң, аны үзгәртү өчен өстенә басып торыгыз һәм бүтән бер ярлык сайлагыз.";
 
 /* Quick Actions title when widget enters edit mode */
 "TodayWidget.QuickActionsGalleryTitle" = "Тиз гамәлләр";
 
-/* Firefox shortcuts title when widget enters edit mode. Do not translate the word Firefox. */
-"TodayWidget.QuickActionsGalleryTitleV2" = "Firefox ярлыклары";
+/* KARMA shortcuts title when widget enters edit mode. Do not translate the word KARMA. */
+"TodayWidget.QuickActionsGalleryTitleV2" = "KARMA ярлыклары";
 
 /* Description for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryDescriptionV2" = "Ачык табларыгызга ярлыклар өстәгез.";
@@ -43,15 +43,15 @@
 /* Title for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryTitle" = "Тиз карау";
 
-/* Search in Firefox. Do not translate the word Firefox */
-"TodayWidget.SearchInFirefoxV2" = "Firefox-та\nэзләү";
+/* Search in KARMA. Do not translate the word KARMA */
+"TodayWidget.SearchInKARMAV2" = "KARMA-та\nэзләү";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Хосусый\nтабта эзләү";
 
-/* Description for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Description for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryDescription" = "Еш һәм cоңгы каралган сайтларга ярлыклар өстәгез.";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "Төп сайтлар";
 

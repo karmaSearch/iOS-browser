@@ -5,7 +5,7 @@
 "New Tab" = "لسان جديد";
 
 /* Privacy - Camera Usage Description */
-"NSCameraUsageDescription" = "يستعمل Firefox كمرتك لمسح رموز QR رقميًا والتقاط الصور والڤِديوهات.";
+"NSCameraUsageDescription" = "يستعمل KARMA كمرتك لمسح رموز QR رقميًا والتقاط الصور والڤِديوهات.";
 
 /* Privacy - Face ID Usage Description */
 "NSFaceIDUsageDescription" = "يطلب KARMA تفعيل Face ID للوصول إلى جلسات الولوج المحفوظة لديك.";
@@ -14,7 +14,7 @@
 "NSLocationWhenInUseUsageDescription" = "يمكن أن تطلب منك المواقع التي تزورها معرفة مكانك.";
 
 /* Privacy - Microphone Usage Description */
-"NSMicrophoneUsageDescription" = "يستعمل Firefox الميكروفون لتسجيل الصوت ورفعه.";
+"NSMicrophoneUsageDescription" = "يستعمل KARMA الميكروفون لتسجيل الصوت ورفعه.";
 
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "يتيح لك هذا حفظ الصور.";

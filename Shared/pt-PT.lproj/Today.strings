@@ -4,8 +4,8 @@
 /* Close Private Tabs */
 "TodayWidget.ClosePrivateTabsLabelV2" = "Fechar separadores privados";
 
-/* Description for medium size widget to add Firefox Shortcut to home screen */
-"TodayWidget.FirefoxShortcutGalleryDescription" = "Adicionar atalhos do Firefox ao seu ecrã inicial.";
+/* Description for medium size widget to add KARMA Shortcut to home screen */
+"TodayWidget.KARMAShortcutGalleryDescription" = "Adicionar atalhos do KARMA ao seu ecrã inicial.";
 
 /* Go to link pasted on the clipboard */
 "TodayWidget.GoToCopiedLinkLabelV1" = "Ir para a ligação copiada";
@@ -22,20 +22,20 @@
 /* Label that is shown when there are no tabs opened in tab tray i.e. Empty State */
 "TodayWidget.NoOpenTabsLabel" = "Sem separadores abertos.";
 
-/* Open Firefox when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenFirefoxLabel" = "Abrir o Firefox";
+/* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
+"TodayWidget.OpenKARMALabel" = "Abrir o KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Pesquisa privada";
 
 /* Description for small size widget to add it to home screen */
-"TodayWidget.QuickActionGalleryDescription" = "Adicione um atalho do Firefox ao seu ecrã inicial. Depois de adicionar o widget, toque e aguarde para o editar e selecione um atalho diferente.";
+"TodayWidget.QuickActionGalleryDescription" = "Adicione um atalho do KARMA ao seu ecrã inicial. Depois de adicionar o widget, toque e aguarde para o editar e selecione um atalho diferente.";
 
 /* Quick Actions title when widget enters edit mode */
 "TodayWidget.QuickActionsGalleryTitle" = "Ações rápidas";
 
-/* Firefox shortcuts title when widget enters edit mode. Do not translate the word Firefox. */
-"TodayWidget.QuickActionsGalleryTitleV2" = "Atalhos do Firefox";
+/* KARMA shortcuts title when widget enters edit mode. Do not translate the word KARMA. */
+"TodayWidget.QuickActionsGalleryTitleV2" = "Atalhos do KARMA";
 
 /* Description for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryDescriptionV2" = "Adicione atalhos para os seus separadores abertos.";
@@ -43,18 +43,18 @@
 /* Title for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryTitle" = "Vista rápida";
 
-/* Search in Firefox. Do not translate the word Firefox */
-"TodayWidget.SearchInFirefoxV2" = "Pesquisar no Firefox";
+/* Search in KARMA. Do not translate the word KARMA */
+"TodayWidget.SearchInKARMAV2" = "Pesquisar no KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Pesquisar num separador privado";
 
-/* Description for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Description for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryDescription" = "Adicione atalhos para sites visitados com frequência e recentemente.";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "Sites principais";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitleV2" = "Atalhos para sites";
 

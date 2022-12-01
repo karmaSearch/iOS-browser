@@ -6,7 +6,7 @@ import Shared
 import Storage
 import CoreSpotlight
 import SDWebImage
-
+import MessageUI
 let LatestAppVersionProfileKey = "latestAppVersion"
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -82,9 +82,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
             widgetManager = TopSitesWidgetManager(topSitesProvider: topSitesProvider)
         }
-
-        DefaultNotificationScheduler.saveAppLaunch()
-        DefaultNotificationScheduler.checkSchedule()
 
         return true
     }
@@ -290,5 +287,12 @@ extension AppDelegate {
         guard builder.system == .main else { return }
 
         menuBuilderHelper?.mainMenu(for: builder)
+    }
+}
+
+
+extension AppDelegate: MFMailComposeViewControllerDelegate {
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
     }
 }

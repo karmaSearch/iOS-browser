@@ -75,7 +75,7 @@ class TelemetryWrapper: TelemetryWrapperProtocol {
     }
 
     func setup(profile: Profile) {
-        /*migratePathComponentInDocumentsDirectory("MozTelemetry-Default-core", to: .cachesDirectory)
+        migratePathComponentInDocumentsDirectory("MozTelemetry-Default-core", to: .cachesDirectory)
         migratePathComponentInDocumentsDirectory("MozTelemetry-Default-mobile-event", to: .cachesDirectory)
         migratePathComponentInDocumentsDirectory("eventArray-MozTelemetry-Default-mobile-event.json", to: .cachesDirectory)
 
@@ -162,12 +162,12 @@ class TelemetryWrapper: TelemetryWrapperProtocol {
         legacyTelemetry.add(pingBuilderType: MobileEventPingBuilder.self)
 
         // Initialize Glean
-        initGlean(profile, sendUsageData: sendUsageData)*/
+        initGlean(profile, sendUsageData: sendUsageData)
     }
 
     func initGlean(_ profile: Profile, sendUsageData: Bool) {
         // Get the legacy telemetry ID and record it in Glean for the deletion-request ping
-      /*  if let uuidString = UserDefaults.standard.string(forKey: "telemetry-key-prefix-clientId"), let uuid = UUID(uuidString: uuidString) {
+        if let uuidString = UserDefaults.standard.string(forKey: "telemetry-key-prefix-clientId"), let uuid = UUID(uuidString: uuidString) {
             GleanMetrics.LegacyIds.clientId.set(uuid)
         }
 
@@ -194,12 +194,11 @@ class TelemetryWrapper: TelemetryWrapperProtocol {
             name: UIApplication.didFinishLaunchingNotification,
             object: nil
         )
-       */
     }
 
     // Sets hashed fxa sync device id for glean deletion ping
     func setSyncDeviceId() {
-     /*   guard let prefs = profile?.prefs else { return }
+        guard let prefs = profile?.prefs else { return }
         // Grab our token so we can use the hashed_fxa_uid and clientGUID from our scratchpad for deletion-request ping
         RustFirefoxAccounts.shared.syncAuthState.token(Date.now(), canBeExpired: true) >>== { (token, kSync) in
             let scratchpadPrefs = prefs.branch("sync.scratchpad")
@@ -207,7 +206,7 @@ class TelemetryWrapper: TelemetryWrapperProtocol {
 
             let deviceId = (scratchpad.clientGUID + token.hashedFxAUID).sha256.hexEncodedString
             GleanMetrics.Deletion.syncDeviceId.set(deviceId)
-        }*/
+        }
     }
     @objc func recordFinishedLaunchingPreferenceMetrics(notification: NSNotification) {
         guard let profile = self.profile else { return }
@@ -222,7 +221,7 @@ class TelemetryWrapper: TelemetryWrapperProtocol {
     // Function for recording metrics that are better recorded when going to background due
     // to the particular measurement, or availability of the information.
     @objc func recordEnteredBackgroundPreferenceMetrics(notification: NSNotification) {
-        /*guard let profile = self.profile else { assert(false); return; }
+        guard let profile = self.profile else { assert(false); return; }
 
         // Record default search engine setting
         let searchEngines = SearchEngines(prefs: profile.prefs, files: profile.files)
@@ -302,7 +301,7 @@ class TelemetryWrapper: TelemetryWrapperProtocol {
             // https://mozilla.github.io/glean/book/reference/metrics/index.html#label-format)
             GleanMetrics.WallpaperAnalytics.themedWallpaper[currentWallpaper.id.lowercased()].add()
         }
-*/
+
     }
 
     @objc func uploadError(notification: NSNotification) {
@@ -634,7 +633,7 @@ extension TelemetryWrapper {
     }
 
     static func gleanRecordEvent(category: EventCategory, method: EventMethod, object: EventObject, value: EventValue? = nil, extras: [String: Any]? = nil) {
-        /*switch (category, method, object, value, extras) {
+        switch (category, method, object, value, extras) {
         // MARK: Bookmarks
         case (.action, .view, .bookmarksPanel, let from?, _):
             GleanMetrics.Bookmarks.viewList[from.rawValue].add()
@@ -1268,7 +1267,7 @@ extension TelemetryWrapper {
 
         default:
             recordUninstrumentedMetrics(category: category, method: method, object: object, value: value, extras: extras)
-        }*/
+        }
     }
 
     private static func recordUninstrumentedMetrics(

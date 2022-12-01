@@ -1,13 +1,13 @@
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Μάθετε πώς";
 
-/* Description for small home tab banner shown that allows user to switch their default browser to Firefox. */
-"DefaultBrowserCard.Description" = "Ρύθμιση συνδέσμων ιστοσελίδων, email και μηνυμάτων ώστε να ανοίγουν στο Firefox.";
+/* Description for small home tab banner shown that allows user to switch their default browser to KARMA. */
+"DefaultBrowserCard.Description" = "Ρύθμιση συνδέσμων ιστοσελίδων, email και μηνυμάτων ώστε να ανοίγουν στο KARMA.";
 
-/* Title for small home tab banner shown that allows user to switch their default browser to Firefox. */
+/* Title for small home tab banner shown that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Title" = "Αλλαγή κύριου φυλλομετρητή";
 
-/* Button string to open settings that allows user to switch their default browser to Firefox. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserOnboarding.Button" = "Μετάβαση στις ρυθμίσεις";
 
 /* Description for default browser onboarding card. */
@@ -17,11 +17,11 @@
 "DefaultBrowserOnboarding.Description2" = "2. Πατήστε \"Προεπιλεγμένο πρόγραμμα περιήγησης εφαρμογών\"";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Επιλέξτε το Firefox";
+"DefaultBrowserOnboarding.Description3" = "3. Επιλέξτε το KARMA";
 
-/* Text for the screenshot of the iOS system settings page for Firefox. */
+/* Text for the screenshot of the iOS system settings page for KARMA. */
 "DefaultBrowserOnboarding.Screenshot" = "Προεπιλεγμένο πρόγραμμα περιήγησης εφαρμογών";
 
-/* Menu option for setting Firefox as default browser. */
+/* Menu option for setting KARMA as default browser. */
 "Settings.DefaultBrowserMenuItem" = "Ορισμός ως κύριος φυλλομετρητής";
 

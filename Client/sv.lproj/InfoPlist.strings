@@ -5,7 +5,7 @@
 "New Tab" = "Ny flik";
 
 /* Privacy - Camera Usage Description */
-"NSCameraUsageDescription" = "Firefox använder din kamera för att skanna QR-koder och ta foton och video.";
+"NSCameraUsageDescription" = "KARMA använder din kamera för att skanna QR-koder och ta foton och video.";
 
 /* Privacy - Face ID Usage Description */
 "NSFaceIDUsageDescription" = "KARMA kräver Face ID för att komma åt dina sparade inloggningar.";
@@ -14,7 +14,7 @@
 "NSLocationWhenInUseUsageDescription" = "Webbsidor du besöker kan be om din plats.";
 
 /* Privacy - Microphone Usage Description */
-"NSMicrophoneUsageDescription" = "Firefox använder din mikrofon för att spela in och ladda upp ljud.";
+"NSMicrophoneUsageDescription" = "KARMA använder din mikrofon för att spela in och ladda upp ljud.";
 
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "Detta gör det möjligt att spara bilder.";

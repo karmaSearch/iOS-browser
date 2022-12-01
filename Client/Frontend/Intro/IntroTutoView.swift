@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import Shared
 
-class IntroTutoView: UIView, CardTheme {
+class IntroTutoView: UIView {
     
     // Views
     private lazy var screenshotImage: UIImageView = {
@@ -60,7 +60,6 @@ class IntroTutoView: UIView, CardTheme {
         super.init(frame: frame)
         
         initialViewSetup()
-        TelemetryWrapper.recordEvent(category: .action, method: .view, object: .welcomeScreenView)
     }
     
     func setData(screenshotImage: String, titleButton: String) {
@@ -97,7 +96,6 @@ class IntroTutoView: UIView, CardTheme {
     }
     
     @objc private func nextAction() {
-        TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .welcomeScreenNext)
         nextClosure?()
         
     }

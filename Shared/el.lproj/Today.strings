@@ -4,8 +4,8 @@
 /* Close Private Tabs */
 "TodayWidget.ClosePrivateTabsLabelV2" = "Κλείσιμο ιδιωτικών καρτελών";
 
-/* Description for medium size widget to add Firefox Shortcut to home screen */
-"TodayWidget.FirefoxShortcutGalleryDescription" = "Προσθήκη συντομεύσεων Firefox στην αρχική οθόνη.";
+/* Description for medium size widget to add KARMA Shortcut to home screen */
+"TodayWidget.KARMAShortcutGalleryDescription" = "Προσθήκη συντομεύσεων KARMA στην αρχική οθόνη.";
 
 /* Go to link pasted on the clipboard */
 "TodayWidget.GoToCopiedLinkLabelV1" = "Μετάβαση στον αντιγραμμένο σύνδεσμο";
@@ -22,20 +22,20 @@
 /* Label that is shown when there are no tabs opened in tab tray i.e. Empty State */
 "TodayWidget.NoOpenTabsLabel" = "Καμία ανοικτή καρτέλα.";
 
-/* Open Firefox when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenFirefoxLabel" = "Άνοιγμα Firefox";
+/* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
+"TodayWidget.OpenKARMALabel" = "Άνοιγμα KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Ιδιωτική αναζήτηση";
 
 /* Description for small size widget to add it to home screen */
-"TodayWidget.QuickActionGalleryDescription" = "Προσθέστε μια συντόμευση Firefox στην αρχική οθόνη. Αφού προσθέσετε το γραφικό στοιχείο, πατήστε παρατεταμένα για επεξεργασία και επιλογή διαφορετικής συντόμευσης.";
+"TodayWidget.QuickActionGalleryDescription" = "Προσθέστε μια συντόμευση KARMA στην αρχική οθόνη. Αφού προσθέσετε το γραφικό στοιχείο, πατήστε παρατεταμένα για επεξεργασία και επιλογή διαφορετικής συντόμευσης.";
 
 /* Quick Actions title when widget enters edit mode */
 "TodayWidget.QuickActionsGalleryTitle" = "Γρήγορες ενέργειες";
 
-/* Firefox shortcuts title when widget enters edit mode. Do not translate the word Firefox. */
-"TodayWidget.QuickActionsGalleryTitleV2" = "Συντομεύσεις Firefox";
+/* KARMA shortcuts title when widget enters edit mode. Do not translate the word KARMA. */
+"TodayWidget.QuickActionsGalleryTitleV2" = "Συντομεύσεις KARMA";
 
 /* Description for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryDescriptionV2" = "Προσθήκη συντομεύσεων για ανοικτές καρτέλες.";
@@ -43,18 +43,18 @@
 /* Title for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryTitle" = "Γρήγορη προβολή";
 
-/* Search in Firefox. Do not translate the word Firefox */
-"TodayWidget.SearchInFirefoxV2" = "Αναζήτηση στο Firefox";
+/* Search in KARMA. Do not translate the word KARMA */
+"TodayWidget.SearchInKARMAV2" = "Αναζήτηση στο KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Αναζήτηση σε ιδιωτική καρτέλα";
 
-/* Description for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Description for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryDescription" = "Προσθήκη συντομεύσεων για συχνές και πρόσφατες σελίδες.";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "Δημοφιλείς σελίδες";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitleV2" = "Συντομεύσεις ιστοσελίδων";
 

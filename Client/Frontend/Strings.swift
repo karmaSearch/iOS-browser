@@ -1039,6 +1039,7 @@ extension String {
                 value: "Block Images",
                 comment: "Label for the block images toggle displayed in the settings menu. Enabling this toggle will hide images on any webpage the user visits.",
                 lastUpdated: .v99)
+
         }
 
         public struct Passwords {

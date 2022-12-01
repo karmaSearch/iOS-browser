@@ -51,6 +51,7 @@ class TabTrayViewModel {
 
     // Tab Tray Views
     let tabTrayView: TabTrayViewDelegate
+    let syncedTabsController: RemoteTabsPanel
 
     var segmentToFocus: TabTrayViewModel.Segment?
 
@@ -67,6 +68,7 @@ class TabTrayViewModel {
         self.tabManager = tabManager
 
         self.tabTrayView = GridTabViewController(tabManager: self.tabManager, profile: profile, tabTrayDelegate: tabTrayDelegate, tabToFocus: tabToFocus)
+        self.syncedTabsController = RemoteTabsPanel(profile: self.profile)
         self.segmentToFocus = segmentToFocus
     }
 
@@ -77,7 +79,10 @@ class TabTrayViewModel {
         }
         return nil
     }
-    
+
+    func reloadRemoteTabs() {
+        syncedTabsController.forceRefreshTabs()
+    }
 }
 
 // MARK: - Actions
@@ -88,5 +93,9 @@ extension TabTrayViewModel {
 
     @objc func didTapAddTab(_ sender: UIBarButtonItem) {
         tabTrayView.performToolbarAction(.addTab, sender: sender)
+    }
+
+    @objc func didTapSyncTabs(_ sender: UIBarButtonItem) {
+        reloadRemoteTabs()
     }
 }

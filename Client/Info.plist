@@ -24,7 +24,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>$(MARKETING_VERSION)</string>
+	<string>107.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -91,7 +91,7 @@
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Websites you visit may request your location.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Firefox uses your microphone to record and upload audio.</string>
+	<string>KARMA uses your microphone to record and upload audio.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>This lets you save photos.</string>
 	<key>NSUserActivityTypes</key>
@@ -99,8 +99,6 @@
 		<string>QuickActionIntent</string>
 		<string>org.mozilla.ios.firefox.browsing</string>
 	</array>
-	<key>NimbusURL</key>
-	<string>$(NIMBUS_URL)</string>
 	<key>PocketEnvironmentAPIKey</key>
 	<string>$(POCKET_API_KEY)</string>
 	<key>AdjustAppToken</key>

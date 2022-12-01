@@ -271,7 +271,6 @@ class IntroViewController: UIViewController, OnViewDismissable {
     
     @objc func handleCloseButtonTapped() {
         let currentPage = self.pageControl.currentPage
-        TelemetryWrapper.recordEvent(category: .action, method: .press, object: .dismissedOnboarding, extras: ["slide-num": currentPage])
         
         if #available(iOS 14, *) {
             self.scrollView.isHidden = true

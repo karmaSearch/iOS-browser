@@ -77,6 +77,25 @@ extension BrowserViewController: TabToolbarDelegate, PhotonActionSheetProtocol {
         focusLocationTextField(forTab: tabManager.selectedTab)
     }
 
+    func tabToolbarDidPressMenu(_ tabToolbar: TabToolbarProtocol, button: UIButton) {
+        // Ensure that any keyboards or spinners are dismissed before presenting the menu
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+        libraryDrawerViewController?.close(immediately: true)
+
+        let menuHelper = MainMenuActionHelper(profile: profile,
+                                              tabManager: tabManager,
+                                              buttonView: button,
+                                              showFXASyncAction: presentSignInViewController)
+        menuHelper.delegate = self
+        menuHelper.menuActionDelegate = self
+
+        menuHelper.getToolbarActions(navigationController: navigationController) { actions in
+            let shouldInverse = PhotonActionSheetViewModel.hasInvertedMainMenu(trait: self.traitCollection, isBottomSearchBar: self.isBottomSearchBar)
+            let viewModel = PhotonActionSheetViewModel(actions: actions, modalStyle: .popover, isMainMenu: true, isMainMenuInverted: shouldInverse)
+            self.presentSheetWith(viewModel: viewModel, on: self, from: button)
+        }
+    }
+
     func tabToolbarDidPressTabs(_ tabToolbar: TabToolbarProtocol, button: UIButton) {
         showTabTray()
         TelemetryWrapper.recordEvent(category: .action, method: .press, object: .tabToolbar, value: .tabView)
@@ -165,12 +184,6 @@ extension BrowserViewController: TabToolbarDelegate, PhotonActionSheetProtocol {
 
     func tabToolbarDidPressSearch(_ tabToolbar: TabToolbarProtocol, button: UIButton) {
         focusLocationTextField(forTab: tabManager.selectedTab)
-    }
-    
-    func tabToolbarDidPressShare(_ tabToolbar: TabToolbarProtocol, button: UIButton) {
-        guard let tab = tabManager.selectedTab, let url = tab.url else { return }
-
-        self.presentActivityViewController(url as URL, sourceView: self.view, sourceRect: button.frame, arrowDirection: .any)
     }
 }
 

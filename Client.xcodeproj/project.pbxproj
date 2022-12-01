@@ -677,6 +677,17 @@
 		96EB6C4027DBEE9800A9D159 /* SearchGroupedItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EB6C3F27DBEE9800A9D159 /* SearchGroupedItemsViewController.swift */; };
 		96EB6C4327DC205D00A9D159 /* SearchGroupedItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EB6C4227DC205D00A9D159 /* SearchGroupedItemsViewModel.swift */; };
 		96F8DA49280452CA00E53239 /* GleanPlumbContextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8DA48280452CA00E53239 /* GleanPlumbContextProvider.swift */; };
+		A3286FC82938C3A5001C5838 /* UIDevice+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3286FC72938C3A5001C5838 /* UIDevice+extension.swift */; };
+		A32FD03F2937AFDA0072CD43 /* DefaultBrowserOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32FD03E2937AFDA0072CD43 /* DefaultBrowserOnboardingView.swift */; };
+		A32FD0422937B07A0072CD43 /* IntroTutoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32FD0402937B0790072CD43 /* IntroTutoView.swift */; };
+		A32FD0432937B07A0072CD43 /* IntroScreenWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32FD0412937B07A0072CD43 /* IntroScreenWelcomeView.swift */; };
+		A32FD0452937B21E0072CD43 /* String+Karma.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32FD0442937B21D0072CD43 /* String+Karma.swift */; };
+		A32FD04C2937B2B10072CD43 /* KarmaMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD0462937B2B00072CD43 /* KarmaMenu.strings */; };
+		A32FD04D2937B2B10072CD43 /* KarmaMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD0462937B2B00072CD43 /* KarmaMenu.strings */; };
+		A32FD04E2937B2B10072CD43 /* IntroKarma.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD0482937B2B10072CD43 /* IntroKarma.strings */; };
+		A32FD04F2937B2B10072CD43 /* IntroKarma.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD0482937B2B10072CD43 /* IntroKarma.strings */; };
+		A32FD0502937B2B10072CD43 /* Karma.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD04A2937B2B10072CD43 /* Karma.strings */; };
+		A32FD0512937B2B10072CD43 /* Karma.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD04A2937B2B10072CD43 /* Karma.strings */; };
 		A3A8716C29379E8B00C76AC2 /* UIFont+Karma.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8716B29379E8B00C76AC2 /* UIFont+Karma.swift */; };
 		A3A8717629379ECE00C76AC2 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8716D29379ECB00C76AC2 /* ProximaNova-Bold.otf */; };
 		A3A8717729379ECE00C76AC2 /* ProximaNova-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8716E29379ECB00C76AC2 /* ProximaNova-Medium.otf */; };
@@ -688,6 +699,7 @@
 		A3A8717D29379ECE00C76AC2 /* ProximaNova-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8717429379ECD00C76AC2 /* ProximaNova-SemiBold.otf */; };
 		A3A8717E29379ECE00C76AC2 /* ProximaNova-Medium It.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8717529379ECD00C76AC2 /* ProximaNova-Medium It.otf */; };
 		A3A8717F29379F2000C76AC2 /* UIFont+Karma.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8716B29379E8B00C76AC2 /* UIFont+Karma.swift */; };
+		A3A871812937A8DD00C76AC2 /* ETPCoverSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A871802937A8DC00C76AC2 /* ETPCoverSheetViewController.swift */; };
 		A83E5AB71C1D993D0026D912 /* UIPasteboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83E5AB61C1D993D0026D912 /* UIPasteboard+Extension.swift */; };
 		A83E5B1A1C1DA8BF0026D912 /* image.gif in Resources */ = {isa = PBXBuildFile; fileRef = A83E5B181C1DA8BF0026D912 /* image.gif */; };
 		A83E5B1B1C1DA8BF0026D912 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = A83E5B191C1DA8BF0026D912 /* image.png */; };
@@ -3642,6 +3654,20 @@
 		A2EB40E886489AD91CD2F8D1 /* eu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = eu; path = eu.lproj/Today.strings; sourceTree = "<group>"; };
 		A310443AAA16D6C092A53FF1 /* af */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = af; path = af.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A3114C1793DE75790B35B80F /* gl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = gl; path = gl.lproj/HistoryPanel.strings; sourceTree = "<group>"; };
+		A3286FC72938C3A5001C5838 /* UIDevice+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+extension.swift"; sourceTree = "<group>"; };
+		A32FD03E2937AFDA0072CD43 /* DefaultBrowserOnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultBrowserOnboardingView.swift; sourceTree = "<group>"; };
+		A32FD0402937B0790072CD43 /* IntroTutoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroTutoView.swift; sourceTree = "<group>"; };
+		A32FD0412937B07A0072CD43 /* IntroScreenWelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroScreenWelcomeView.swift; sourceTree = "<group>"; };
+		A32FD0442937B21D0072CD43 /* String+Karma.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Karma.swift"; sourceTree = "<group>"; };
+		A32FD0472937B2B00072CD43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/KarmaMenu.strings; sourceTree = "<group>"; };
+		A32FD0492937B2B10072CD43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/IntroKarma.strings; sourceTree = "<group>"; };
+		A32FD04B2937B2B10072CD43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Karma.strings; sourceTree = "<group>"; };
+		A32FD0522937B2CF0072CD43 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/IntroKarma.strings; sourceTree = "<group>"; };
+		A32FD0532937B2CF0072CD43 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Karma.strings; sourceTree = "<group>"; };
+		A32FD0542937B2E30072CD43 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/IntroKarma.strings; sourceTree = "<group>"; };
+		A32FD0552937B2E30072CD43 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Karma.strings; sourceTree = "<group>"; };
+		A32FD0562937B2F40072CD43 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/KarmaMenu.strings; sourceTree = "<group>"; };
+		A32FD0572937B3020072CD43 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/KarmaMenu.strings; sourceTree = "<group>"; };
 		A3A8716B29379E8B00C76AC2 /* UIFont+Karma.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Karma.swift"; sourceTree = "<group>"; };
 		A3A8716D29379ECB00C76AC2 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
 		A3A8716E29379ECB00C76AC2 /* ProximaNova-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Medium.otf"; sourceTree = "<group>"; };
@@ -3652,6 +3678,7 @@
 		A3A8717329379ECD00C76AC2 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
 		A3A8717429379ECD00C76AC2 /* ProximaNova-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-SemiBold.otf"; sourceTree = "<group>"; };
 		A3A8717529379ECD00C76AC2 /* ProximaNova-Medium It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Medium It.otf"; sourceTree = "<group>"; };
+		A3A871802937A8DC00C76AC2 /* ETPCoverSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETPCoverSheetViewController.swift; sourceTree = "<group>"; };
 		A3E54C1386C753F253BEEB71 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Search.strings; sourceTree = "<group>"; };
 		A3FB49E4AED8F44971799F71 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/FindInPage.strings; sourceTree = "<group>"; };
 		A3FB4ED398FB21FB64A28124 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/ClearHistoryConfirm.strings; sourceTree = "<group>"; };
@@ -5581,6 +5608,7 @@
 		23ED80FD25C899D700D0E9D5 /* DefaultBrowserOnboarding */ = {
 			isa = PBXGroup;
 			children = (
+				A32FD03E2937AFDA0072CD43 /* DefaultBrowserOnboardingView.swift */,
 				431C0CA825C890E500395CE4 /* DefaultBrowserOnboardingViewModel.swift */,
 				23ED80FE25C89C9800D0E9D5 /* DefaultBrowserOnboardingViewController.swift */,
 			);
@@ -6184,6 +6212,7 @@
 		43DDB967240870AC0058A068 /* EnhancedTrackingProtection */ = {
 			isa = PBXGroup;
 			children = (
+				A3A871802937A8DC00C76AC2 /* ETPCoverSheetViewController.swift */,
 				43446CE5240D9F3000F5C643 /* ETP.xcassets */,
 				43DDB96B240995A70058A068 /* ETPModel.swift */,
 				43DDB97524099F200058A068 /* ETPViewModel.swift */,
@@ -7688,6 +7717,8 @@
 		E49943F31AE6879C00BF9DE4 /* Intro */ = {
 			isa = PBXGroup;
 			children = (
+				A32FD0412937B07A0072CD43 /* IntroScreenWelcomeView.swift */,
+				A32FD0402937B0790072CD43 /* IntroTutoView.swift */,
 				E49943F61AE69EDD00BF9DE4 /* Intro.xcassets */,
 				435D7CC4246209AA0043ACB9 /* IntroViewController.swift */,
 				21A7C44D283539170071D996 /* IntroViewModel.swift */,
@@ -7704,6 +7735,11 @@
 		E4E0BB141AFBC9E4008D6260 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				A3286FC72938C3A5001C5838 /* UIDevice+extension.swift */,
+				A32FD0482937B2B10072CD43 /* IntroKarma.strings */,
+				A32FD04A2937B2B10072CD43 /* Karma.strings */,
+				A32FD0462937B2B00072CD43 /* KarmaMenu.strings */,
+				A32FD0442937B21D0072CD43 /* String+Karma.swift */,
 				5FDA464727F20C9C0060E924 /* Generated */,
 				514A4C83AE17612AF3025498 /* 3DTouchActions.strings */,
 				E65075621E37F7AB006961AC /* Accessibility.swift */,
@@ -9444,6 +9480,8 @@
 			files = (
 				D59643F125C9B8E000EAB8B9 /* ErrorPages.strings in Resources */,
 				43470D0828B39AF80034F500 /* JumpBackIn.strings in Resources */,
+				A32FD04D2937B2B10072CD43 /* KarmaMenu.strings in Resources */,
+				A32FD0512937B2B10072CD43 /* Karma.strings in Resources */,
 				D59643EF25C9B8E000EAB8B9 /* PrivateBrowsing.strings in Resources */,
 				D59643EB25C9B8E000EAB8B9 /* ClearHistoryConfirm.strings in Resources */,
 				D59643E725C9B8E000EAB8B9 /* Intro.strings in Resources */,
@@ -9459,6 +9497,7 @@
 				D59643F025C9B8E000EAB8B9 /* ClearPrivateDataConfirm.strings in Resources */,
 				D59643E325C9B8E000EAB8B9 /* ClearPrivateData.strings in Resources */,
 				D59643ED25C9B8E000EAB8B9 /* FindInPage.strings in Resources */,
+				A32FD04F2937B2B10072CD43 /* IntroKarma.strings in Resources */,
 				D59643F425C9B8E000EAB8B9 /* Today.strings in Resources */,
 				D59643F225C9B8E000EAB8B9 /* Shared.strings in Resources */,
 				D58A202F25C9D96400105D25 /* BookmarkPanelDeleteConfirm.strings in Resources */,
@@ -9580,6 +9619,7 @@
 				D308EE561CBF0BF5006843F2 /* CertError.css in Resources */,
 				C8399D9122DE5E5200EFA5CA /* disconnect-block-advertising.json in Resources */,
 				E1AF3566286DE5F800960045 /* SmokeXCUITests.xctestplan in Resources */,
+				A32FD0502937B2B10072CD43 /* Karma.strings in Resources */,
 				43A5643923CD1E1C00B6857D /* Update.xcassets in Resources */,
 				C8399D9322DE5E5B00EFA5CA /* disconnect-block-analytics.json in Resources */,
 				E1AF3561286DE5F800960045 /* Smoketest4.xctestplan in Resources */,
@@ -9604,6 +9644,8 @@
 				D0FCF8071FE4772D004A7995 /* MainFrameAtDocumentEnd.js in Resources */,
 				EB84945822D4FA8A0004C2E2 /* disconnect-block-cryptomining.json in Resources */,
 				A3A8717629379ECE00C76AC2 /* ProximaNova-Bold.otf in Resources */,
+				A32FD04C2937B2B10072CD43 /* KarmaMenu.strings in Resources */,
+				A32FD04E2937B2B10072CD43 /* IntroKarma.strings in Resources */,
 				E4D6BEB91A0930EC00F538BD /* LaunchScreen.xib in Resources */,
 				A3A8717729379ECE00C76AC2 /* ProximaNova-Medium.otf in Resources */,
 				2F44FB2D1A9D5D8500FD20CC /* FiraSans-BoldItalic.ttf in Resources */,
@@ -9990,6 +10032,7 @@
 				E65075931E37F7AB006961AC /* AppConstants.swift in Sources */,
 				E65075B81E37F7AB006961AC /* NotificationConstants.swift in Sources */,
 				E65075AC1E37F7AB006961AC /* StringExtensions.swift in Sources */,
+				A32FD0452937B21E0072CD43 /* String+Karma.swift in Sources */,
 				E65075951E37F7AB006961AC /* GeneralUtils.swift in Sources */,
 				E683F0C21E93D4E90035D990 /* DictionaryExtensions.swift in Sources */,
 				288A2DB51AB8B38D0023ABC3 /* Error.swift in Sources */,
@@ -10005,6 +10048,7 @@
 				E65075BF1E37F7AB006961AC /* UserAgent.swift in Sources */,
 				D053D6742211CD53006C6B64 /* KeychainStore.swift in Sources */,
 				E65075C01E37F7AB006961AC /* WeakList.swift in Sources */,
+				A3286FC82938C3A5001C5838 /* UIDevice+extension.swift in Sources */,
 				E65075AE1E37F7AB006961AC /* UIImageExtensions.swift in Sources */,
 				C8CFF4E422F9FDB6002CC6BD /* effective_tld_names.swift in Sources */,
 				E65075A21E37F7AB006961AC /* HexExtensions.swift in Sources */,
@@ -10431,6 +10475,7 @@
 				5A47CFF52860FB8900B2B7BF /* AppLaunchUtil.swift in Sources */,
 				C8B0F5ED283B7C9F007AE65D /* PocketStandardCell.swift in Sources */,
 				D04CD74A216CF86B004FF5B0 /* SiriShortcuts.swift in Sources */,
+				A32FD03F2937AFDA0072CD43 /* DefaultBrowserOnboardingView.swift in Sources */,
 				EB9A179F20E6C1A200B12184 /* ThemedWidgets.swift in Sources */,
 				E68E39BE1C46F42000B85F42 /* AppSettingsTableViewController.swift in Sources */,
 				E1A6AB4628CA6A4C00EBEBDD /* String+Extension.swift in Sources */,
@@ -10851,9 +10896,11 @@
 				8AB8573727D951640075C173 /* HomeLogoHeaderViewModel.swift in Sources */,
 				D3C744CD1A687D6C004CE85D /* URIFixup.swift in Sources */,
 				21112968289480630082C08B /* HomepageMessageCardViewModel.swift in Sources */,
+				A3A871812937A8DD00C76AC2 /* ETPCoverSheetViewController.swift in Sources */,
 				5A43EC9328CBC25F003155A3 /* Themable.swift in Sources */,
 				E12BD0AC28AC37F00029AAF0 /* UIColor+Extension.swift in Sources */,
 				E4A961181AC041C40069AD6F /* ReadabilityService.swift in Sources */,
+				A32FD0432937B07A0072CD43 /* IntroScreenWelcomeView.swift in Sources */,
 				21371FA428AA7A8D00BC3F37 /* OnboardingViewModel.swift in Sources */,
 				D3BE7B261B054D4400641031 /* main.swift in Sources */,
 				21A7C44E283539170071D996 /* IntroViewModel.swift in Sources */,
@@ -10912,6 +10959,7 @@
 				C8F457AA1F1FDD9B000CB895 /* BrowserViewController+KeyCommands.swift in Sources */,
 				59A68FD5260B8D520F890F4A /* ReaderPanel.swift in Sources */,
 				C849E46126B9C39B00260F0B /* EnhancedTrackingProtectionVC.swift in Sources */,
+				A32FD0422937B07A0072CD43 /* IntroTutoView.swift in Sources */,
 				E40FAB0C1A7ABB77009CB80D /* WebServer.swift in Sources */,
 				59A68D66379CFA85C4EAF00B /* TwoLineCellAndFooter.swift in Sources */,
 				8A04136928258DF600D20B10 /* SponsoredTileTelemetry.swift in Sources */,
@@ -13094,6 +13142,36 @@
 				43DC319F28B39F100034E6DF /* si */,
 			);
 			name = LoginManager.strings;
+			sourceTree = "<group>";
+		};
+		A32FD0462937B2B00072CD43 /* KarmaMenu.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A32FD0472937B2B00072CD43 /* en */,
+				A32FD0562937B2F40072CD43 /* es */,
+				A32FD0572937B3020072CD43 /* fr */,
+			);
+			name = KarmaMenu.strings;
+			sourceTree = "<group>";
+		};
+		A32FD0482937B2B10072CD43 /* IntroKarma.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A32FD0492937B2B10072CD43 /* en */,
+				A32FD0522937B2CF0072CD43 /* fr */,
+				A32FD0542937B2E30072CD43 /* es */,
+			);
+			name = IntroKarma.strings;
+			sourceTree = "<group>";
+		};
+		A32FD04A2937B2B10072CD43 /* Karma.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A32FD04B2937B2B10072CD43 /* en */,
+				A32FD0532937B2CF0072CD43 /* fr */,
+				A32FD0552937B2E30072CD43 /* es */,
+			);
+			name = Karma.strings;
 			sourceTree = "<group>";
 		};
 		AA3047F884B6BA22989FD627 /* Search.strings */ = {

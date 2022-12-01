@@ -20,6 +20,13 @@ extension String {
     public static let IntroSlidesTitle4 = NSLocalizedString("Intro.Slides.Title.4", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
     public static let IntroSlidesSubTitle4 = NSLocalizedString("Intro.Slides.SubTitle.4", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
     public static let IntroButtonSkip = NSLocalizedString("Intro.Button.Skip", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
+    public static let IntroNextButtonTitle = NSLocalizedString("Intro.Slides.Button.Next", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
+    public static let DefaultBrowserOnboardingButtonSkip = NSLocalizedString("DefaultBrowserOnboarding.Button.Skip", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
+    public static let DefaultBrowserOnboardingButtonKARMA = NSLocalizedString("DefaultBrowserOnboarding.Button", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
+    
+    public static let DefaultBrowserMenuItemKARMA = NSLocalizedString("Settings.DefaultBrowserMenuItem", tableName: "IntroKarma", value: "Set as Default Browser", comment: "Menu option for setting Firefox as default browser.")
+    public static let DefaultBrowserCardDescription = NSLocalizedString("DefaultBrowserCard.Description", tableName: "IntroKarma", value: "Set links from websites, emails, and Messages to open automatically in Firefox.", comment: "Description for small card shown that allows user to switch their default browser to Firefox.")
+    
     
     public static let IntroTutorialTitle = NSLocalizedString("Intro.Slides.Tutorial.title", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
     public static let IntroButtonTitleLast = NSLocalizedString("Intro.Slides.Button.Title.Last", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
@@ -45,5 +52,12 @@ extension String {
     //MARK: Push
     public static let DockPushTitle = NSLocalizedString("Dock.Push.Title", tableName: "Karma", bundle: Bundle(for: BundleClass.self), comment: "")
     public static let DockPushMessage = NSLocalizedString("Dock.Push.Message", tableName: "Karma", bundle: Bundle(for: BundleClass.self), comment: "")
+    
+    
+    public static let AppMenuTurnOffNightModeStatus = NSLocalizedString("Menu.NightModeTurnOff.Status", tableName: "Karma", bundle: Bundle(for: BundleClass.self), comment: "")
+    
+    
+    public static let AppMenuNoImageStatus = NSLocalizedString(
+        "Menu.NoImageModeBlockImages.Status", tableName: "Karma", bundle: Bundle(for: BundleClass.self), comment: "")
 
 }

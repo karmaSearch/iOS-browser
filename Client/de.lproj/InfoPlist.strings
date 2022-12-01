@@ -5,7 +5,7 @@
 "New Tab" = "Neuer Tab";
 
 /* Privacy - Camera Usage Description */
-"NSCameraUsageDescription" = "Firefox verwendet Ihre Kamera, um QR-Codes zu scannen sowie Fotos und Videos aufzunehmen.";
+"NSCameraUsageDescription" = "KARMA verwendet Ihre Kamera, um QR-Codes zu scannen sowie Fotos und Videos aufzunehmen.";
 
 /* Privacy - Face ID Usage Description */
 "NSFaceIDUsageDescription" = "KARMA benötigt Face ID, um auf Ihre gespeicherten Zugangsdaten zuzugreifen.";
@@ -14,7 +14,7 @@
 "NSLocationWhenInUseUsageDescription" = "Von Ihnen besuchte Websites können Ihren Standort abfragen.";
 
 /* Privacy - Microphone Usage Description */
-"NSMicrophoneUsageDescription" = "Firefox verwendet Ihr Mikrofon, um Audio aufzunehmen und hochzuladen.";
+"NSMicrophoneUsageDescription" = "KARMA verwendet Ihr Mikrofon, um Audio aufzunehmen und hochzuladen.";
 
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "Damit können Sie Fotos speichern.";

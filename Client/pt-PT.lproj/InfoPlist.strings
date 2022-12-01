@@ -5,7 +5,7 @@
 "New Tab" = "Novo separador";
 
 /* Privacy - Camera Usage Description */
-"NSCameraUsageDescription" = "O Firefox utiliza a sua câmara para digitalizar códigos QR e tirar fotos e vídeos.";
+"NSCameraUsageDescription" = "O KARMA utiliza a sua câmara para digitalizar códigos QR e tirar fotos e vídeos.";
 
 /* Privacy - Face ID Usage Description */
 "NSFaceIDUsageDescription" = "O KARMA necessita do Face ID para aceder às suas credenciais guardadas.";
@@ -14,7 +14,7 @@
 "NSLocationWhenInUseUsageDescription" = "Os websites que visita poderão solicitar a sua localização.";
 
 /* Privacy - Microphone Usage Description */
-"NSMicrophoneUsageDescription" = "O Firefox permite-lhe usar o seu microfone para gravar e carregar áudio.";
+"NSMicrophoneUsageDescription" = "O KARMA permite-lhe usar o seu microfone para gravar e carregar áudio.";
 
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "Isto deixa-lhe guardar fotos.";

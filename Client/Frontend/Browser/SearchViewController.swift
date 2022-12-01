@@ -17,6 +17,14 @@ private enum SearchListSection: Int, CaseIterable {
 }
 
 private struct SearchViewControllerUX {
+    static var SearchEngineScrollViewBackgroundColor: CGColor { return UIColor.theme.homePanel.toolbarBackground.withAlphaComponent(0.8).cgColor }
+    static let SearchEngineScrollViewBorderColor = UIColor.black.withAlphaComponent(0.2).cgColor
+
+    // TODO: This should use ToolbarHeight in BVC. Fix this when we create a shared theming file.
+    static let EngineButtonHeight: Float = 44
+    static let EngineButtonWidth = EngineButtonHeight * 1.4
+    static let EngineButtonBackgroundColor = UIColor.clear.cgColor
+
     static let SearchImage = "search"
     static let SearchAppendImage = "search-append"
     static let SearchEngineTopBorderWidth = 0.5
@@ -63,6 +71,11 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
     private var searchHighlights = [HighlightItem]()
     private var highlightManager: HistoryHighlightsManagerProtocol
 
+    // Views for displaying the bottom scrollable search engine list. searchEngineScrollView is the
+    // scrollable container; searchEngineScrollViewContent contains the actual set of search engine buttons.
+    private let searchEngineContainerView = UIView()
+    private let searchEngineScrollView = ButtonScrollView()
+    private let searchEngineScrollViewContent = UIView()
 
     private lazy var bookmarkedBadge: UIImage = {
         return UIImage(named: "bookmark_results")!
@@ -107,20 +120,40 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
 
     override func viewDidLoad() {
         view.backgroundColor = UIColor.theme.homePanel.panelBackground
-        tableView.backgroundColor = UIColor.theme.homePanel.panelBackground
-        
+        let blur = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+        view.addSubview(blur)
+
         super.viewDidLoad()
         getCachedTabs()
         KeyboardHelper.defaultHelper.addDelegate(self)
 
+        searchEngineContainerView.layer.backgroundColor = SearchViewControllerUX.SearchEngineScrollViewBackgroundColor
+        searchEngineContainerView.layer.shadowRadius = 0
+        searchEngineContainerView.layer.shadowOpacity = 100
+        searchEngineContainerView.layer.shadowOffset = CGSize(width: 0, height: -SearchViewControllerUX.SearchEngineTopBorderWidth)
+        searchEngineContainerView.layer.shadowColor = SearchViewControllerUX.SearchEngineScrollViewBorderColor
+        searchEngineContainerView.clipsToBounds = false
+
+        searchEngineScrollView.decelerationRate = UIScrollView.DecelerationRate.fast
+        searchEngineContainerView.addSubview(searchEngineScrollView)
+        view.addSubview(searchEngineContainerView)
+
+        searchEngineScrollViewContent.layer.backgroundColor = UIColor.clear.cgColor
+        searchEngineScrollView.addSubview(searchEngineScrollViewContent)
+
         layoutTable()
+        layoutSearchEngineScrollView()
+        layoutSearchEngineScrollViewContent()
 
         blur.snp.makeConstraints { make in
             make.edges.equalTo(self.view)
         }
 
+        searchEngineContainerView.snp.makeConstraints { make in
+            make.leading.trailing.bottom.equalToSuperview()
+        }
+
         NotificationCenter.default.addObserver(self, selector: #selector(dynamicFontChanged), name: .DynamicFontChanged, object: nil)
-        tableView.register(SearchHeader.self, forHeaderFooterViewReuseIdentifier: "SearchHeader")
     }
 
     private func loadSearchHighlights() {
@@ -146,7 +179,41 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        reloadSearchEngines()
         reloadData()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        searchFeature.recordExposure()
+    }
+
+    private func layoutSearchEngineScrollView() {
+        let keyboardHeight = KeyboardHelper.defaultHelper.currentState?.intersectionHeightForView(self.view) ?? 0
+        searchEngineScrollView.snp.remakeConstraints { make in
+            make.leading.trailing.top.equalToSuperview()
+            if keyboardHeight == 0 {
+                make.bottom.equalTo(view.safeArea.bottom)
+            } else {
+                let offset = viewModel.isBottomSearchBar ? 0 : keyboardHeight
+                make.bottom.equalTo(view).offset(-offset)
+            }
+        }
+    }
+
+    private func layoutSearchEngineScrollViewContent() {
+        searchEngineScrollViewContent.snp.remakeConstraints { make in
+            make.center.equalTo(self.searchEngineScrollView).priority(10)
+            // left-align the engines on iphones, center on ipad
+            if UIScreen.main.traitCollection.horizontalSizeClass == .compact {
+                make.leading.equalTo(self.searchEngineScrollView).priority(1000)
+            } else {
+                make.leading.greaterThanOrEqualTo(self.searchEngineScrollView).priority(1000)
+            }
+            make.trailing.lessThanOrEqualTo(self.searchEngineScrollView).priority(1000)
+            make.top.equalTo(self.searchEngineScrollView)
+            make.bottom.equalTo(self.searchEngineScrollView)
+        }
     }
 
     var searchEngines: SearchEngines! {
@@ -162,6 +229,8 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
                 suggestClient = SearchSuggestClient(searchEngine: searchEngines.defaultEngine, userAgent: ua)
             }
 
+            // Reload the footer list of search engines.
+            reloadSearchEngines()
         }
     }
 
@@ -189,18 +258,95 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
     }
 
     private func layoutTable() {
-// Note: We remove and re-add tableview from superview so that we can update
-// the constraints to be aligned with Search Engine Scroll View top anchor
-tableView.removeFromSuperview()
-view.addSubviews(tableView)
-NSLayoutConstraint.activate([
-tableView.topAnchor.constraint(equalTo: view.topAnchor),
-tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-tableView.bottomAnchor.constraint(equalTo: searchEngineScrollView.topAnchor)
-])
-}
+        // Note: We remove and re-add tableview from superview so that we can update
+        // the constraints to be aligned with Search Engine Scroll View top anchor
+        tableView.removeFromSuperview()
+        view.addSubviews(tableView)
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: searchEngineScrollView.topAnchor)
+        ])
+    }
 
+    func reloadSearchEngines() {
+        searchEngineScrollViewContent.subviews.forEach { $0.removeFromSuperview() }
+        var leftEdge = searchEngineScrollViewContent.snp.leading
+
+        // search settings icon
+        let searchButton = UIButton()
+        searchButton.setImage(UIImage(named: "quickSearch"), for: [])
+        searchButton.imageView?.contentMode = .center
+        searchButton.layer.backgroundColor = SearchViewControllerUX.EngineButtonBackgroundColor
+        searchButton.addTarget(self, action: #selector(didClickSearchButton), for: .touchUpInside)
+        searchButton.accessibilityLabel = String(format: .SearchSettingsAccessibilityLabel)
+
+        searchEngineScrollViewContent.addSubview(searchButton)
+        searchButton.snp.makeConstraints { make in
+            make.size.equalTo(SearchViewControllerUX.FaviconSize)
+            // offset the left edge to align with search results
+            make.leading.equalTo(leftEdge).offset(SearchViewControllerUX.SuggestionMargin * 2)
+            make.top.equalTo(self.searchEngineScrollViewContent).offset(SearchViewControllerUX.SuggestionMargin)
+            make.bottom.equalTo(self.searchEngineScrollViewContent).offset(-SearchViewControllerUX.SuggestionMargin)
+        }
+
+        // search engines
+        leftEdge = searchButton.snp.trailing
+
+        for engine in quickSearchEngines {
+            let engineButton = UIButton()
+            engineButton.setImage(engine.image, for: [])
+            engineButton.imageView?.contentMode = .scaleAspectFit
+            engineButton.imageView?.layer.cornerRadius = 4
+            engineButton.layer.backgroundColor = SearchViewControllerUX.EngineButtonBackgroundColor
+            engineButton.addTarget(self, action: #selector(didSelectEngine), for: .touchUpInside)
+            engineButton.accessibilityLabel = String(format: .SearchSearchEngineAccessibilityLabel, engine.shortName)
+
+            engineButton.imageView?.snp.makeConstraints { make in
+                make.width.height.equalTo(SearchViewControllerUX.FaviconSize)
+                return
+            }
+
+            searchEngineScrollViewContent.addSubview(engineButton)
+            engineButton.snp.makeConstraints { make in
+                make.width.equalTo(SearchViewControllerUX.EngineButtonWidth)
+                make.height.equalTo(SearchViewControllerUX.EngineButtonHeight)
+                make.leading.equalTo(leftEdge)
+                make.top.equalTo(self.searchEngineScrollViewContent)
+                make.bottom.equalTo(self.searchEngineScrollViewContent)
+                if engine === self.searchEngines.quickSearchEngines.last {
+                    make.trailing.equalTo(self.searchEngineScrollViewContent)
+                }
+            }
+            leftEdge = engineButton.snp.trailing
+        }
+    }
+
+    func didSelectEngine(_ sender: UIButton) {
+        // The UIButtons are the same cardinality and order as the array of quick search engines.
+        // Subtract 1 from index to account for magnifying glass accessory.
+        guard let index = searchEngineScrollViewContent.subviews.firstIndex(of: sender) else {
+            assertionFailure()
+            return
+        }
+
+        let engine = quickSearchEngines[index - 1]
+
+        guard let url = engine.searchURLForQuery(searchQuery) else {
+            assertionFailure()
+            return
+        }
+
+        Telemetry.default.recordSearch(location: .quickSearch, searchEngine: engine.engineID ?? "other")
+        GleanMetrics.Search.counts["\(engine.engineID ?? "custom").\(SearchesMeasurement.SearchLocation.quickSearch.rawValue)"].add()
+
+        searchDelegate?.searchViewController(self, didSelectURL: url, searchTerm: "")
+    }
+
+    func didClickSearchButton() {
+        self.searchDelegate?.presentSearchSettingsController()
+    }
 
     func keyboardHelper(_ keyboardHelper: KeyboardHelper, keyboardWillShowWithState state: KeyboardState) {
         animateSearchEnginesWithKeyboard(state)
@@ -219,6 +365,7 @@ tableView.bottomAnchor.constraint(equalTo: searchEngineScrollView.topAnchor)
         // The height of the suggestions row may change, so call reloadData() to recalculate cell heights.
         coordinator.animate(alongsideTransition: { _ in
             self.tableView.reloadData()
+            self.layoutSearchEngineScrollViewContent()
         }, completion: nil)
     }
 
@@ -382,6 +529,7 @@ tableView.bottomAnchor.constraint(equalTo: searchEngineScrollView.topAnchor)
             guard let suggestion = suggestions[safe: indexPath.row] else { return }
             if let url = engine.searchURLForQuery(suggestion) {
                 Telemetry.default.recordSearch(location: .suggestion, searchEngine: engine.engineID ?? "other")
+                GleanMetrics.Search.counts["\(engine.engineID ?? "custom").\(SearchesMeasurement.SearchLocation.suggestion.rawValue)"].add()
                 searchDelegate?.searchViewController(self, didSelectURL: url, searchTerm: suggestion)
             }
         case .openedTabs:
@@ -410,15 +558,6 @@ tableView.bottomAnchor.constraint(equalTo: searchEngineScrollView.topAnchor)
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return super.tableView(tableView, heightForRowAt: indexPath)
-    }
-    
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "SearchHeader") as? SearchHeader else {
-            return nil
-        }
-        headerView.titleLabel.text = SearchListSection(rawValue: section)?.title
-        headerView.backgroundColor = UIColor.clear
-        return headerView
     }
 
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -489,7 +628,7 @@ tableView.bottomAnchor.constraint(equalTo: searchEngineScrollView.topAnchor)
     }
 
     func getAttributedBoldSearchSuggestions(searchPhrase: String, query: String) -> NSAttributedString {
-        let boldAttributes = [NSAttributedString.Key.font: UIFont.customFont(ofSize: DynamicFontHelper().DefaultStandardFont.pointSize)]
+        let boldAttributes = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: DynamicFontHelper().DefaultStandardFont.pointSize)]
         let regularAttributes = [NSAttributedString.Key.font: DynamicFontHelper().DefaultStandardFont]
         let attributedString = NSMutableAttributedString(string: "", attributes: regularAttributes)
         let phraseString = NSAttributedString(string: searchPhrase, attributes: regularAttributes)
@@ -509,8 +648,9 @@ tableView.bottomAnchor.constraint(equalTo: searchEngineScrollView.topAnchor)
         case .searchSuggestions:
             if let site = suggestions?[indexPath.row] {
                 oneLineCell.titleLabel.text = site
-                oneLineCell.titleLabel.attributedText = getAttributedBoldSearchSuggestions(searchPhrase: site, query: savedQuery)
-                
+                if Locale.current.languageCode == "en" {
+                    oneLineCell.titleLabel.attributedText = getAttributedBoldSearchSuggestions(searchPhrase: site, query: savedQuery)
+                }
                 oneLineCell.leftImageView.contentMode = .center
                 oneLineCell.leftImageView.layer.borderWidth = 0
                 oneLineCell.leftImageView.image = UIImage(named: SearchViewControllerUX.SearchImage)
@@ -596,8 +736,6 @@ tableView.bottomAnchor.constraint(equalTo: searchEngineScrollView.topAnchor)
             twoLineCell.accessoryView = nil
             cell = twoLineCell
         }
-        cell.backgroundColor = UIColor.theme.homePanel.panelBackground
-
         return cell
     }
 

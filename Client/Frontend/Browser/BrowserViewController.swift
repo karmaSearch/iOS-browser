@@ -9,6 +9,7 @@ import WebKit
 import Shared
 import Storage
 import SnapKit
+import XCGLogger
 import Account
 import MobileCoreServices
 import Telemetry
@@ -71,6 +72,7 @@ class BrowserViewController: UIViewController {
     var isCrashAlertShowing: Bool = false
     var currentMiddleButtonState: MiddleButtonState?
     fileprivate var customSearchBarButton: UIBarButtonItem?
+    var updateState: TabUpdateState = .coldStart
     var openedUrlFromExternalSource = false
     var passBookHelper: OpenPassBookHelper?
 
@@ -123,6 +125,7 @@ class BrowserViewController: UIViewController {
 
     var scrollController = TabScrollingController()
     private var keyboardState: KeyboardState?
+    var hasTriedToPresentETPAlready = false
     var pendingToast: Toast? // A toast that might be waiting for BVC to appear before displaying
     var downloadToast: DownloadToast? // A toast that is showing the combined download progress
 
@@ -166,17 +169,14 @@ class BrowserViewController: UIViewController {
 
     fileprivate var shouldShowIntroScreen: Bool { profile.prefs.intForKey(PrefsKeys.IntroSeen) == nil }
 
-    init(
-        profile: Profile,
-        tabManager: TabManager,
-        themeManager: ThemeManager = AppContainer.shared.resolve(),
-        ratingPromptManager: RatingPromptManager = AppContainer.shared.resolve()
-    ) {
+    init(profile: Profile,
+         tabManager: TabManager,
+         themeManager: ThemeManager = AppContainer.shared.resolve()) {
         self.profile = profile
         self.tabManager = tabManager
         self.themeManager = themeManager
-        self.ratingPromptManager = ratingPromptManager
         self.readerModeCache = DiskReaderModeCache.sharedInstance
+        self.ratingPromptManager = RatingPromptManager(profile: profile)
 
         let contextViewModel = ContextualHintViewModel(forHintType: .toolbarLocation,
                                                        with: profile)
@@ -326,7 +326,7 @@ class BrowserViewController: UIViewController {
 
     func dismissVisibleMenus() {
         displayedPopoverController?.dismiss(animated: true)
-        if self.presentedViewController as? PhotonActionSheet != nil {
+        if let _ = self.presentedViewController as? PhotonActionSheet {
             self.presentedViewController?.dismiss(animated: true, completion: nil)
         }
     }
@@ -336,7 +336,7 @@ class BrowserViewController: UIViewController {
             self.updateDisplayedPopoverProperties = nil
             self.displayedPopoverController = nil
         }
-        if self.presentedViewController as? PhotonActionSheet != nil {
+        if let _ = self.presentedViewController as? PhotonActionSheet {
             self.presentedViewController?.dismiss(animated: true, completion: nil)
         }
     }
@@ -370,17 +370,6 @@ class BrowserViewController: UIViewController {
     @objc func appDidBecomeActiveNotification() {
         // Re-show any components that might have been hidden because they were being displayed
         // as part of a private mode tab
-        UIView.animate(withDuration: 0.2, delay: 0, options: UIView.AnimationOptions(), animations: {
-            self.webViewContainer.alpha = 1
-            self.urlBar.locationContainer.alpha = 1
-            self.karmaHomeViewController?.view.alpha = 1
-            self.topTabsViewController?.switchForegroundStatus(isInForeground: true)
-            self.presentedViewController?.popoverPresentationController?.containerView?.alpha = 1
-            self.presentedViewController?.view.alpha = 1
-        }, completion: { _ in
-            self.webViewContainerBackdrop.alpha = 0
-            self.view.sendSubviewToBack(self.webViewContainerBackdrop)
-        })
         UIView.animate(
             withDuration: 0.2,
             delay: 0,
@@ -459,7 +448,10 @@ class BrowserViewController: UIViewController {
         let dropInteraction = UIDropInteraction(delegate: self)
         view.addInteraction(dropInteraction)
 
-        updateLegacyTheme()
+        if !NightModeHelper.isActivated(profile.prefs) && LegacyThemeManager.instance.systemThemeIsOn {
+            let userInterfaceStyle = traitCollection.userInterfaceStyle
+            LegacyThemeManager.instance.current = userInterfaceStyle == .dark ? LegacyDarkTheme() : LegacyNormalTheme()
+        }
 
         searchTelemetry = SearchTelemetry()
 
@@ -575,9 +567,7 @@ class BrowserViewController: UIViewController {
     }
 
     private func prepareURLOnboardingContextualHint() {
-        guard contextHintVC.shouldPresentHint(),
-              featureFlags.isFeatureEnabled(.contextualHintForToolbar, checking: .buildOnly)
-        else { return }
+        guard contextHintVC.shouldPresentHint() else { return }
 
         contextHintVC.configure(
             anchor: urlBar,
@@ -651,18 +641,12 @@ class BrowserViewController: UIViewController {
             themeManager.systemThemeChanged()
         }
 
-        if traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
-            updateLegacyTheme()
-        }
-
-        setupMiddleButtonStatus(isLoading: false)
-    }
-
-    private func updateLegacyTheme() {
-        if !NightModeHelper.isActivated(profile.prefs) && LegacyThemeManager.instance.systemThemeIsOn {
+        if traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection), LegacyThemeManager.instance.systemThemeIsOn {
             let userInterfaceStyle = traitCollection.userInterfaceStyle
             LegacyThemeManager.instance.current = userInterfaceStyle == .dark ? LegacyDarkTheme() : LegacyNormalTheme()
         }
+
+        setupMiddleButtonStatus(isLoading: false)
     }
 
     // MARK: - Constraints
@@ -958,7 +942,6 @@ class BrowserViewController: UIViewController {
         homepageViewController.homePanelDelegate = self
         homepageViewController.libraryPanelDelegate = self
         homepageViewController.browserBarViewDelegate = self
-        homepageViewController.sendToDeviceDelegate = self
         self.homepageViewController = homepageViewController
         addChild(homepageViewController)
         view.addSubview(homepageViewController.view)
@@ -1153,13 +1136,11 @@ class BrowserViewController: UIViewController {
                                       title: shareItem.title,
                                       position: 0)
 
-        var userData = [QuickActionInfos.tabURLKey: shareItem.url]
+        var userData = [QuickActions.TabURLKey: shareItem.url]
         if let title = shareItem.title {
-            userData[QuickActionInfos.tabTitleKey] = title
+            userData[QuickActions.TabTitleKey] = title
         }
-        QuickActionsImplementation().addDynamicApplicationShortcutItemOfType(.openLastBookmark,
-                                                                             withUserData: userData,
-                                                                             toApplication: .shared)
+        QuickActions.sharedInstance.addDynamicApplicationShortcutItemOfType(.openLastBookmark, withUserData: userData, toApplication: .shared)
 
         showBookmarksToast()
     }
@@ -1335,8 +1316,10 @@ class BrowserViewController: UIViewController {
         if let url = tab.url {
             if url.isReaderModeURL {
                 showReaderModeBar(animated: false)
+                NotificationCenter.default.addObserver(self, selector: #selector(dynamicFontChanged), name: .DynamicFontChanged, object: nil)
             } else {
                 hideReaderModeBar(animated: false)
+                NotificationCenter.default.removeObserver(self, name: .DynamicFontChanged, object: nil)
             }
 
             updateInContentHomePanel(url as URL, focusUrlBar: focusUrlBar)
@@ -1470,16 +1453,9 @@ class BrowserViewController: UIViewController {
     }
 
     func presentActivityViewController(_ url: URL, tab: Tab? = nil, sourceView: UIView?, sourceRect: CGRect, arrowDirection: UIPopoverArrowDirection) {
-        presentShareSheet(url, tab: tab, sourceView: sourceView, sourceRect: sourceRect, arrowDirection: arrowDirection)
-    }
-
-    func presentShareSheet(_ url: URL, tab: Tab? = nil, sourceView: UIView?, sourceRect: CGRect, arrowDirection: UIPopoverArrowDirection) {
         let helper = ShareExtensionHelper(url: url, tab: tab)
-        let controller = helper.createActivityViewController({ [unowned self] completed, activityType in
-            if activityType == CustomActivityAction.sendToDevice.actionType {
-                self.showSendToDevice()
-            }
 
+        let controller = helper.createActivityViewController({ [unowned self] completed, _ in
             // After dismissing, check to see if there were any prompts we queued up
             self.showQueuedAlertIfAvailable()
 
@@ -1498,29 +1474,6 @@ class BrowserViewController: UIViewController {
         }
 
         presentWithModalDismissIfNeeded(controller, animated: true)
-    }
-
-    private func showSendToDevice() {
-        guard let selectedTab = tabManager.selectedTab,
-              let url = selectedTab.url
-        else { return }
-
-        let themeColors = themeManager.currentTheme.colors
-        let colors = SendToDeviceHelper.Colors(defaultBackground: themeColors.layer1,
-                                               textColor: themeColors.textPrimary,
-                                               iconColor: themeColors.iconPrimary)
-        let shareItem = ShareItem(url: url.absoluteString,
-                                  title: selectedTab.title,
-                                  favicon: selectedTab.displayFavicon)
-
-        let helper = SendToDeviceHelper(shareItem: shareItem,
-                                        profile: profile,
-                                        colors: colors,
-                                        delegate: self)
-        let viewController = helper.initialViewController()
-
-        TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .sendToDevice)
-        showViewController(viewController: viewController)
     }
 
     @objc func openSettings() {
@@ -1697,7 +1650,7 @@ extension BrowserViewController {
             return VisitType.link
         }
 
-        if self.ignoredNavigation.remove(navigation) != nil {
+        if let _ = self.ignoredNavigation.remove(navigation) {
             return nil
         }
 
@@ -1956,7 +1909,6 @@ extension BrowserViewController: SearchViewControllerDelegate {
         searchSettingsTableViewController.profile = self.profile
         // Update search icon when the searchengine changes
         searchSettingsTableViewController.updateSearchIcon = {
-            self.urlBar.updateSearchEngineImage()
             self.searchController?.reloadSearchEngines()
             self.searchController?.reloadData()
         }
@@ -2196,6 +2148,43 @@ extension BrowserViewController {
         }
     }
 
+    func presentETPCoverSheetViewController(_ force: Bool = false) {
+        guard !hasTriedToPresentETPAlready else { return }
+
+        hasTriedToPresentETPAlready = true
+        let cleanInstall = ETPViewModel.isCleanInstall(userPrefs: profile.prefs)
+        let shouldShow = ETPViewModel.shouldShowETPCoverSheet(userPrefs: profile.prefs, isCleanInstall: cleanInstall)
+
+        guard force || shouldShow else { return }
+
+        let etpCoverSheetViewController = ETPCoverSheetViewController()
+        if topTabsVisible {
+            etpCoverSheetViewController.preferredContentSize = CGSize(
+                width: ViewControllerConsts.PreferredSize.UpdateViewController.width,
+                height: ViewControllerConsts.PreferredSize.UpdateViewController.height)
+            etpCoverSheetViewController.modalPresentationStyle = .formSheet
+        } else {
+            etpCoverSheetViewController.modalPresentationStyle = .fullScreen
+        }
+        etpCoverSheetViewController.viewModel.startBrowsing = {
+            etpCoverSheetViewController.dismiss(animated: true) {
+                if self.navigationController?.viewControllers.count ?? 0 > 1 {
+                    _ = self.navigationController?.popToRootViewController(animated: true)
+                }
+            }
+        }
+        etpCoverSheetViewController.viewModel.goToSettings = {
+            etpCoverSheetViewController.dismiss(animated: true) {
+                let settingsTableViewController = ContentBlockerSettingViewController(prefs: self.profile.prefs)
+                settingsTableViewController.profile = self.profile
+                settingsTableViewController.tabManager = self.tabManager
+                settingsTableViewController.settingsDelegate = self
+                self.presentThemedViewController(navItemLocation: .Left, navItemText: .Close, vcBeingPresented: settingsTableViewController, topTabsVisible: self.topTabsVisible)
+            }
+        }
+        present(etpCoverSheetViewController, animated: true, completion: nil)
+    }
+
     // Default browser onboarding
     func presentDBOnboardingViewController(_ force: Bool = false) {
         guard #available(iOS 14.0, *) else { return }
@@ -2253,11 +2242,23 @@ extension BrowserViewController {
     }
 
     private func showProperIntroVC() {
-        let introViewModel = IntroViewModel()
-        let introViewController = IntroViewController(viewModel: introViewModel, profile: profile)
-        introViewController.didFinishFlow = {
+        let introViewController = IntroViewController()
+        introViewController.didFinishClosure = { controller, fxaLoginFlow in
             self.profile.prefs.setInt(1, forKey: PrefsKeys.IntroSeen)
-            introViewController.dismiss(animated: true)
+            controller.dismiss(animated: true) {
+                if self.navigationController?.viewControllers.count ?? 0 > 1 {
+                    _ = self.navigationController?.popToRootViewController(animated: true)
+                }
+                if let flow = fxaLoginFlow {
+                    let fxaParams = FxALaunchParams(query: ["entrypoint": "firstrun"])
+                    self.presentSignInViewController(fxaParams, flowType: flow, referringPage: .onboarding)
+                }
+            }
+        }
+        introViewController.viewModel.goToSettings = {
+            introViewController.dismiss(animated: true) {
+                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
+            }
         }
         self.introVCPresentHelper(introViewController: introViewController)
     }
@@ -2398,7 +2399,7 @@ extension BrowserViewController: ContextMenuHelperDelegate {
                 })
 
                 makeURLSession(userAgent: UserAgent.fxaUserAgent, configuration: URLSessionConfiguration.default).dataTask(with: url) { (data, response, error) in
-                    guard validatedHTTPResponse(response, statusCode: 200..<300) != nil else {
+                    guard let _ = validatedHTTPResponse(response, statusCode: 200..<300) else {
                         application.endBackgroundTask(taskId)
                         return
                     }
@@ -2439,7 +2440,7 @@ extension BrowserViewController: ContextMenuHelperDelegate {
         }
 
         if let dialogTitle = dialogTitle {
-            if dialogTitle.asURL != nil {
+            if let _ = dialogTitle.asURL {
                 actionSheetController.title = dialogTitle.ellipsize(maxLength: UX.ActionSheetTitleMaxLength)
             } else {
                 actionSheetController.title = dialogTitle
@@ -2453,8 +2454,7 @@ extension BrowserViewController: ContextMenuHelperDelegate {
 
     fileprivate func getImageData(_ url: URL, success: @escaping (Data) -> Void) {
         makeURLSession(userAgent: UserAgent.fxaUserAgent, configuration: URLSessionConfiguration.default).dataTask(with: url) { (data, response, error) in
-            if validatedHTTPResponse(response, statusCode: 200..<300) != nil,
-               let data = data {
+            if let _ = validatedHTTPResponse(response, statusCode: 200..<300), let data = data {
                 success(data)
             }
         }.resume()
@@ -2566,11 +2566,13 @@ extension BrowserViewController: TabTrayDelegate {
 extension BrowserViewController: NotificationThemeable {
     func applyTheme() {
         guard self.isViewLoaded else { return }
-        // TODO: Clean up after FXIOS-5109
         let ui: [NotificationThemeable?] = [urlBar,
                                             toolbar,
                                             readerModeBar,
                                             topTabsViewController,
+                                            homepageViewController,
+                                            searchController,
+                                            libraryViewController,
                                             libraryDrawerViewController]
         ui.forEach { $0?.applyTheme() }
 
@@ -2590,8 +2592,8 @@ extension BrowserViewController: NotificationThemeable {
             urlBar.locationView.tabDidChangeContentBlocking($0)
         }
 
-        guard let contentScript = tabManager.selectedTab?.getContentScript(name: ReaderMode.name()) else { return }
-        applyThemeForPreferences(profile.prefs, contentScript: contentScript)
+        guard let contentScript = self.tabManager.selectedTab?.getContentScript(name: ReaderMode.name()) else { return }
+        appyThemeForPreferences(profile.prefs, contentScript: contentScript)
     }
 }
 
@@ -2615,7 +2617,7 @@ extension BrowserViewController: TopTabsDelegate {
 
     func topTabsDidTogglePrivateMode() {
         libraryDrawerViewController?.close(immediately: true)
-        guard tabManager.selectedTab != nil else { return }
+        guard let _ = tabManager.selectedTab else { return }
         urlBar.leaveOverlayMode()
     }
 
@@ -2625,10 +2627,8 @@ extension BrowserViewController: TopTabsDelegate {
     }
 }
 
-extension BrowserViewController: DevicePickerViewControllerDelegate, InstructionsViewDelegate {
-
-    func dismissInstructionsView() {
-        self.navigationController?.presentedViewController?.dismiss(animated: true)
+extension BrowserViewController: DevicePickerViewControllerDelegate, InstructionsViewControllerDelegate {
+    func instructionsViewControllerDidClose(_ instructionsViewController: InstructionsViewController) {
         self.popToBVC()
     }
 
@@ -2637,8 +2637,8 @@ extension BrowserViewController: DevicePickerViewControllerDelegate, Instruction
     }
 
     func devicePickerViewController(_ devicePickerViewController: DevicePickerViewController, didPickDevices devices: [RemoteDevice]) {
-        guard let shareItem = devicePickerViewController.shareItem else { return }
-
+        guard let tab = tabManager.selectedTab, let url = tab.canonicalURL?.displayURL?.absoluteString else { return }
+        let shareItem = ShareItem(url: url, title: tab.title, favicon: tab.displayFavicon)
         guard shareItem.isShareable else {
             let alert = UIAlertController(title: .SendToErrorTitle, message: .SendToErrorMessage, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: .SendToErrorOKButton, style: .default) { _ in self.popToBVC()})
@@ -2691,16 +2691,13 @@ extension BrowserViewController: FeatureFlaggable {
 }
 
 extension BrowserViewController {
-    /// This method now returns the BrowserViewController associated with the scene.
-    /// We currently have a single scene app setup, so this will change as we introduce support for multiple scenes.
     public static func foregroundBVC() -> BrowserViewController {
-        guard let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate else {
-            /// Currently, we have a single scene app. If we're here, there's no scene or window.
-            /// This should be impossible, and fatal.
-            fatalError("Unable to fetch the Scene.")
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate,
+              let browserViewController = appDelegate.browserViewController else {
+            fatalError("Unable unwrap BrowserViewController")
         }
 
-        return sceneDelegate.browserViewController
+        return browserViewController
     }
 }
 
@@ -2736,11 +2733,5 @@ extension BrowserViewController {
                                      method: .invertColors,
                                      object: .app,
                                      extras: [TelemetryWrapper.EventExtraKey.isInvertColorsEnabled.rawValue: UIAccessibility.isInvertColorsEnabled.description])
-        TelemetryWrapper.recordEvent(category: .action,
-                                     method: .dynamicTextSize,
-                                     object: .app,
-                                     extras: [
-                                        TelemetryWrapper.EventExtraKey.isAccessibilitySizeEnabled.rawValue: UIApplication.shared.preferredContentSizeCategory.isAccessibilityCategory.description,
-                                        TelemetryWrapper.EventExtraKey.preferredContentSizeCategory.rawValue: UIApplication.shared.preferredContentSizeCategory.rawValue.description])
     }
 }

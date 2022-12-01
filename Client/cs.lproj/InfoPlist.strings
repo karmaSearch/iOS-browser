@@ -5,7 +5,7 @@
 "New Tab" = "Nový panel";
 
 /* Privacy - Camera Usage Description */
-"NSCameraUsageDescription" = "Firefox používá váš fotoaparát ke skenování QR kódů a pořizování fotografií a videí.";
+"NSCameraUsageDescription" = "KARMA používá váš fotoaparát ke skenování QR kódů a pořizování fotografií a videí.";
 
 /* Privacy - Face ID Usage Description */
 "NSFaceIDUsageDescription" = "KARMA pro přístup k uloženým přihlašovacím údajům vyžaduje Face ID.";
@@ -14,7 +14,7 @@
 "NSLocationWhenInUseUsageDescription" = "Servery, které navštěvujete, mohou chtít znát vaše umístění.";
 
 /* Privacy - Microphone Usage Description */
-"NSMicrophoneUsageDescription" = "Firefox používá váš mikrofon k zaznamenávání a odesílání zvuku.";
+"NSMicrophoneUsageDescription" = "KARMA používá váš mikrofon k zaznamenávání a odesílání zvuku.";
 
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "Toto vám umožní ukládat fotografie.";

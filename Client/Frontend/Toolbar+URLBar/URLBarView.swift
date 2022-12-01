@@ -120,6 +120,13 @@ class URLBarView: UIView, URLBarViewProtocol, AlphaDimmable, TopBottomInterchang
         return locationContainer
     }()
     
+    lazy var tabsButton: TabsButton = {
+        let tabsButton = TabsButton.tabTrayButton()
+        tabsButton.accessibilityIdentifier = "URLBarView.tabsButton"
+        tabsButton.inTopTabs = false
+        return tabsButton
+    }()
+    
     let line = UIView()
 
     fileprivate lazy var progressBar: GradientProgressBar = {
@@ -157,7 +164,6 @@ class URLBarView: UIView, URLBarViewProtocol, AlphaDimmable, TopBottomInterchang
     var addNewTabButton = ToolbarButton()
     var forwardButton = ToolbarButton()
     var multiStateButton = ToolbarButton()
-    var tabsButton = ToolbarButton()
     var shareButton = ToolbarButton()
     var backButton: ToolbarButton = {
         let backButton = ToolbarButton()
@@ -200,6 +206,11 @@ class URLBarView: UIView, URLBarViewProtocol, AlphaDimmable, TopBottomInterchang
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func isBottomSearchBar() -> Bool {
+        guard SearchBarSettingsViewModel.isEnabled else { return false }
+        return SearchBarSettingsViewModel(prefs: profile.prefs).searchBarPosition == .bottom
     }
     
     fileprivate func commonInit() {
@@ -620,7 +631,6 @@ class URLBarView: UIView, URLBarViewProtocol, AlphaDimmable, TopBottomInterchang
 }
 
 extension URLBarView: TabToolbarProtocol {
-   
 
     func privateModeBadge(visible: Bool) {
         if UIDevice.current.userInterfaceIdiom != .pad {

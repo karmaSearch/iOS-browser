@@ -4,8 +4,8 @@
 /* Close Private Tabs */
 "TodayWidget.ClosePrivateTabsLabelV2" = "Zamknij prywatne karty";
 
-/* Description for medium size widget to add Firefox Shortcut to home screen */
-"TodayWidget.FirefoxShortcutGalleryDescription" = "Dodaj skróty Firefoksa do ekranu głównego.";
+/* Description for medium size widget to add KARMA Shortcut to home screen */
+"TodayWidget.KARMAShortcutGalleryDescription" = "Dodaj skróty Firefoksa do ekranu głównego.";
 
 /* Go to link pasted on the clipboard */
 "TodayWidget.GoToCopiedLinkLabelV1" = "Otwórz skopiowany odnośnik";
@@ -22,8 +22,8 @@
 /* Label that is shown when there are no tabs opened in tab tray i.e. Empty State */
 "TodayWidget.NoOpenTabsLabel" = "Brak otwartych kart.";
 
-/* Open Firefox when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenFirefoxLabel" = "Otwórz Firefoksa";
+/* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
+"TodayWidget.OpenKARMALabel" = "Otwórz Firefoksa";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Wyszukaj prywatnie";
@@ -34,7 +34,7 @@
 /* Quick Actions title when widget enters edit mode */
 "TodayWidget.QuickActionsGalleryTitle" = "Szybkie działania";
 
-/* Firefox shortcuts title when widget enters edit mode. Do not translate the word Firefox. */
+/* KARMA shortcuts title when widget enters edit mode. Do not translate the word KARMA. */
 "TodayWidget.QuickActionsGalleryTitleV2" = "Skróty Firefoksa";
 
 /* Description for Quick View widget in Gallery View where user can add it to home screen */
@@ -43,18 +43,18 @@
 /* Title for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryTitle" = "Szybki podgląd";
 
-/* Search in Firefox. Do not translate the word Firefox */
-"TodayWidget.SearchInFirefoxV2" = "Wyszukaj w Firefoksie";
+/* Search in KARMA. Do not translate the word KARMA */
+"TodayWidget.SearchInKARMAV2" = "Wyszukaj w Firefoksie";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Wyszukaj w prywatnej karcie";
 
-/* Description for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Description for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryDescription" = "Dodaj skróty do często i ostatnio odwiedzanych witryn.";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "Popularne";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitleV2" = "Skróty do stron";
 

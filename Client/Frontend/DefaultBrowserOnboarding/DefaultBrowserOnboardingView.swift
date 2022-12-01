@@ -13,7 +13,7 @@ class DefaultBrowserOnboardingView: UIView {
     
     private lazy var titleLabel: UILabel = .build { label in
         label.textColor = .white
-        label.text = .DefaultBrowserMenuItem
+        label.text = .DefaultBrowserMenuItemKARMA
         label.font = UIFont.customFontKG(ofSize: 25)
         label.textAlignment = .center
         label.numberOfLines = 0
@@ -35,7 +35,7 @@ class DefaultBrowserOnboardingView: UIView {
     
     
     private lazy var chooseButton: UIButton = .build { button in
-        button.setTitle(.DefaultBrowserOnboardingButton, for: .normal)
+        button.setTitle(.DefaultBrowserOnboardingButtonKARMA, for: .normal)
         button.titleLabel?.font = DynamicFontHelper.defaultHelper.DeviceFontLargeBold
         button.setTitleColor(UIColor.Photon.White100, for: .normal)
         button.backgroundColor = UIColor.Photon.Green60

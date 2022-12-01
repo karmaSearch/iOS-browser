@@ -295,7 +295,16 @@ class LibraryViewController: UIViewController {
         let tintColor = LegacyThemeManager.instance.currentName == .dark ?
                             UIColor.Photon.Blue20 : UIColor.Photon.Blue50
         navigationController?.toolbar.tintColor = tintColor
+        
+        let theme = BuiltinThemeName(rawValue: LegacyThemeManager.instance.current.name) ?? .normal
+        if theme == .dark {
+            navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, .font: UIFont.customFont(ofSize: 19, weight: .semibold)]
+        } else {
+            navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black, .font: UIFont.customFont(ofSize: 19, weight: .semibold)]
+        }
     }
+    
+    
 }
 
 // MARK: Notifiable
@@ -328,9 +337,6 @@ extension LibraryViewController: NotificationThemeable, Notifiable {
         navigationController?.navigationBar.backgroundColor = UIColor.theme.tabTray.toolbar
         navigationController?.toolbar.barTintColor = UIColor.theme.tabTray.toolbar
         navigationController?.toolbar.tintColor = UIColor.Photon.Green60
-        navigationToolbar.barTintColor = UIColor.theme.tabTray.toolbar
-        navigationToolbar.tintColor = UIColor.theme.tabTray.toolbarButtonTint
-        navigationToolbar.isTranslucent = false
 
         setNeedsStatusBarAppearanceUpdate()
         setupToolBarAppearance()

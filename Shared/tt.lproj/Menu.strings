@@ -31,7 +31,7 @@
 /* Label for the button, displayed in the menu, used to report a compatibility issue with the current page. */
 "Menu.ReportSiteIssueAction.Title" = "Сайттагы проблема турында хәбәр итү";
 
-/* Label for the button, displayed in Firefox Home, used to see all Library panels. */
+/* Label for the button, displayed in KARMA Home, used to see all Library panels. */
 "Menu.SeeAllAction.Title" = "Барысын да карау";
 
 /* Label for the button, displayed in the menu, used to open the share dialog. */

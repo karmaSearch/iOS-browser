@@ -14,7 +14,6 @@ protocol PhotonActionSheetProtocol {
 
 extension PhotonActionSheetProtocol {
     typealias PresentableVC = UIViewController & UIPopoverPresentationControllerDelegate
-
     typealias MenuActionsDelegate = QRCodeViewControllerDelegate & SettingsDelegate & PresentingModalViewControllerDelegate & UIViewController
 
     func presentSheetWith(viewModel: PhotonActionSheetViewModel,

@@ -7,6 +7,7 @@ import Shared
 import Account
 import LocalAuthentication
 import Glean
+import MessageUI
 
 // This file contains all of the settings available in the main settings screen of the app.
 
@@ -796,6 +797,50 @@ class ShowIntroductionSetting: Setting {
     }
 }
 
+class ContactUsSettings: Setting {
+    override var title: NSAttributedString? {
+        return NSAttributedString(string: .MenuKarmaFeedbackContactUs, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText])
+    }
+
+    override func onClick(_ navigationController: UINavigationController?) {
+        guard MFMailComposeViewController.canSendMail() else {
+            let alert = UIAlertController(title: NSLocalizedString("cannotsendemail", tableName: "Localizable", bundle: Strings.bundle, comment: ""), message: "", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: .CancelString, style: .cancel, handler: { _ in
+                
+            }))
+            navigationController?.present(alert, animated: true, completion: nil)
+            return
+        }
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = UIApplication.shared.delegate as! AppDelegate
+
+        let userAgent = UIDevice.modelName + "(" +  UIDevice.current.systemVersion + ")"
+        let appVersion = AppInfo.appVersion
+        let subject = .MenuKarmaFeedbackContactUsEmailSubject + " " + userAgent + " - " + appVersion
+        mailComposerVC.setToRecipients(["ios_app@mykarma.org"])
+        mailComposerVC.setSubject(subject)
+
+        navigationController?.present(mailComposerVC, animated: true, completion: nil)
+    }
+}
+
+class RateAppSetting: Setting {
+    override var title: NSAttributedString? {
+        return NSAttributedString(string: .MenuKarmaRateAppStore, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText])
+    }
+
+    override func onClick(_ navigationController: UINavigationController?) {
+        
+        navigationController?.dismiss(animated: true) {
+            if let url = URL(string: "https://apps.apple.com/app/id1596470046?action=write-review") {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        }
+
+        
+    }
+}
+
 class SendFeedbackSetting: Setting {
     init(delegate: SettingsDelegate?) {
         super.init(title: NSAttributedString(string: .MenuKarmaGiveFeedback, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText]),
@@ -1100,6 +1145,11 @@ class ChinaSyncServiceSetting: Setting {
 
     @objc func switchValueChanged(_ toggle: UISwitch) {
         TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .chinaServerSwitch)
+        guard profile.rustFxA.hasAccount() else {
+            prefs.setObject(toggle.isOn, forKey: prefKey)
+            RustFirefoxAccounts.reconfig(prefs: profile.prefs)
+            return
+        }
 
         // Show confirmation dialog for the user to sign out of FxA
 
@@ -1108,6 +1158,7 @@ class ChinaSyncServiceSetting: Setting {
         let okString = UIAlertAction(title: .OKString, style: .default) { _ in
             self.prefs.setObject(toggle.isOn, forKey: self.prefKey)
             self.profile.removeAccount()
+            RustFirefoxAccounts.reconfig(prefs: self.profile.prefs)
         }
         let cancel = UIAlertAction(title: .CancelString, style: .default) { _ in
             toggle.setOn(!toggle.isOn, animated: true)
@@ -1275,6 +1326,33 @@ class OpenWithSetting: Setting {
     override func onClick(_ navigationController: UINavigationController?) {
         let viewController = OpenWithSettingsViewController(prefs: profile.prefs)
         navigationController?.pushViewController(viewController, animated: true)
+    }
+}
+
+class AdvancedAccountSetting: HiddenSetting {
+    let profile: Profile
+
+    override var accessoryView: UIImageView? { return disclosureIndicator }
+
+    override var accessibilityIdentifier: String? { return "AdvancedAccount.Setting" }
+
+    override var title: NSAttributedString? {
+        return NSAttributedString(string: .SettingsAdvancedAccountTitle, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText])
+    }
+
+    override init(settings: SettingsTableViewController) {
+        self.profile = settings.profile
+        super.init(settings: settings)
+    }
+
+    override func onClick(_ navigationController: UINavigationController?) {
+        let viewController = AdvancedAccountSettingViewController()
+        viewController.profile = profile
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    override var hidden: Bool {
+        return !ShowDebugSettings || profile.hasAccount()
     }
 }
 

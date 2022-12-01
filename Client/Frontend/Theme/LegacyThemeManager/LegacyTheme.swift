@@ -60,6 +60,7 @@ class URLBarColor {
         return !isPrivate ? UIColor.Photon.Blue20A40 : UIColor.Defaults.MobilePrivatePurple
     }
     var tint: UIColor { return UIColor.Photon.Blue40A30 }
+    var shadow: UIColor { return  UIColor.clear }
     var background: UIColor { return UIColor(colorString: "F1F1F5") }
     // This text selection color is used in two ways:
     // 1) <UILabel>.background = textSelectionHighlight.withAlphaComponent(textSelectionHighlightAlpha)

@@ -7,7 +7,7 @@ import UIKit
 import SnapKit
 import Shared
 
-class IntroScreenWelcomeView: UIView, CardTheme {
+class IntroScreenWelcomeView: UIView {
     
     // Views
     private lazy var animalsBackgroundImage: UIImageView = {
@@ -85,7 +85,6 @@ class IntroScreenWelcomeView: UIView, CardTheme {
         super.init(frame: frame)
         
         initialViewSetup()
-        TelemetryWrapper.recordEvent(category: .action, method: .view, object: .welcomeScreenView)
     }
     
     func setData(title: String, description: String, icon: String, logos: [String] = [], background: String) {
@@ -188,8 +187,6 @@ class IntroScreenWelcomeView: UIView, CardTheme {
     // MARK: Button Actions
     
     @objc private func nextAction() {
-        TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .welcomeScreenNext)
-        
         nextClosure?()
         
     }

@@ -8,3 +8,8 @@
 
 "Intro.Slides.Tutorial.title" = "Browse as usual";
 "Intro.Slides.Button.Title.Last" = "Search in KARMA";
+
+"Intro.Slides.Button.Next" = "Next";
+"DefaultBrowserOnboarding.Button.Skip" = "Not now";
+"Settings.DefaultBrowserMenuItem" = "Set up KARMA as your default browser !";
+"DefaultBrowserCard.Description" = "Websites will be opened with KARMA so that you can help protect biodiversity and improve animal welfare";

@@ -10,3 +10,13 @@
 
 "Intro.Slides.Tutorial.title" = "Simple et efficace";
 "Intro.Slides.Button.Title.Last" = "Rechercher avec KARMA";
+
+/* Next button on the first intro screen. */
+"Intro.Slides.Button.Next" = "Suivant";
+
+"DefaultBrowserOnboarding.Button" = "Choisir KARMA";
+
+"DefaultBrowserOnboarding.Button.Skip" = "Plus tard";
+/* Menu option for setting KARMA as default browser. */
+"Settings.DefaultBrowserMenuItem" = "Faites de KARMA votre navigateur par défaut";
+"DefaultBrowserCard.Description" = "Les liens Internet seront ouvert avec l’application KARMA, vous permettant ainsi de soutenir la protection de la biodiversité et la cause animale.";

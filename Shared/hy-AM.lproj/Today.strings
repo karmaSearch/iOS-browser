@@ -4,8 +4,8 @@
 /* Close Private Tabs */
 "TodayWidget.ClosePrivateTabsLabelV2" = "Փակել գաղտնի ներդիրները";
 
-/* Description for medium size widget to add Firefox Shortcut to home screen */
-"TodayWidget.FirefoxShortcutGalleryDescription" = "Firefox-ի դյուրանցումները ավելացնելք ձեր հիմնական էկրանին:";
+/* Description for medium size widget to add KARMA Shortcut to home screen */
+"TodayWidget.KARMAShortcutGalleryDescription" = "KARMA-ի դյուրանցումները ավելացնելք ձեր հիմնական էկրանին:";
 
 /* Go to link pasted on the clipboard */
 "TodayWidget.GoToCopiedLinkLabelV1" = "Անցնել պատճենված հղմանը";
@@ -22,20 +22,20 @@
 /* Label that is shown when there are no tabs opened in tab tray i.e. Empty State */
 "TodayWidget.NoOpenTabsLabel" = "Չկան բաց ներդիրներ:";
 
-/* Open Firefox when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenFirefoxLabel" = "Բացել Firefox-ը";
+/* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
+"TodayWidget.OpenKARMALabel" = "Բացել KARMA-ը";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Գաղտնի որոնում";
 
 /* Description for small size widget to add it to home screen */
-"TodayWidget.QuickActionGalleryDescription" = "Ձեր Հիմնական էկրանին ավելացրեք Firefox դյուրանցում: Վիջեթն ավելացնելուց հետո հպեք և պահեք այն խմբագրելու համար և ընտրեք այլ դյուրանցում:";
+"TodayWidget.QuickActionGalleryDescription" = "Ձեր Հիմնական էկրանին ավելացրեք KARMA դյուրանցում: Վիջեթն ավելացնելուց հետո հպեք և պահեք այն խմբագրելու համար և ընտրեք այլ դյուրանցում:";
 
 /* Quick Actions title when widget enters edit mode */
 "TodayWidget.QuickActionsGalleryTitle" = "Արագ գործողություններ";
 
-/* Firefox shortcuts title when widget enters edit mode. Do not translate the word Firefox. */
-"TodayWidget.QuickActionsGalleryTitleV2" = "Firefox-ի դյուրանցումներ";
+/* KARMA shortcuts title when widget enters edit mode. Do not translate the word KARMA. */
+"TodayWidget.QuickActionsGalleryTitleV2" = "KARMA-ի դյուրանցումներ";
 
 /* Description for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryDescriptionV2" = "Հավելել դյուրանցումներ բաց ներդիրներին:";
@@ -43,18 +43,18 @@
 /* Title for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryTitle" = "Արագ դիտում";
 
-/* Search in Firefox. Do not translate the word Firefox */
-"TodayWidget.SearchInFirefoxV2" = "Որոնել Firefox֊ում";
+/* Search in KARMA. Do not translate the word KARMA */
+"TodayWidget.SearchInKARMAV2" = "Որոնել KARMA֊ում";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Որոնել Գաղտնի ներդիրում";
 
-/* Description for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Description for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryDescription" = "Հաճախակի և վերջերս այցելած կայքերին դյուրանցումներ ավելացրեք:";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "Լավագույն կայքեր";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitleV2" = "Կայքի դյուրանցումներ";
 

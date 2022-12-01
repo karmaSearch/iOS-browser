@@ -28,7 +28,7 @@
 /* Title for the Jump Back In section. This section allows users to jump back in to a recently viewed tab */
 "ActivityStream.JumpBackIn.SectionTitle" = "Návrat zpět";
 
-/* On the Firefox homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
 "ActivityStream.JumpBackIn.TabGroup.SiteCount" = "Panely: %d";
 
 /* A string used to signify the start of the Recently Saved section in Home Screen. */
@@ -124,7 +124,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "Od poslední změny vašich přihlašovacích údajů došlo k úniku nebo krádeži hesel. Pro ochranu účtu se k němu přihlaste a své heslo si změňte.";
 
-/* Link to monitor.firefox.com to learn more about breached passwords */
+/* Link to monitor.KARMA.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "Zjistit více";
 
 /* Leads to a link to the breached website */
@@ -299,7 +299,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "Může to být chybná konfigurace nebo manipulace útočníkem. Pokračujte, pokud příjímáte potenciální riziko.";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "Majitel webu %@ nakonfiguroval svůj server nesprávně. Abychom chránili vaše údaje před odcizením, Firefox se k tomuto webu nepřipojil.";
+"ErrorPages.CertWarning.Description" = "Majitel webu %@ nakonfiguroval svůj server nesprávně. Abychom chránili vaše údaje před odcizením, KARMA se k tomuto webu nepřipojil.";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "Toto připojení není důvěryhodné";
@@ -319,49 +319,49 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for firefox about:home page in tab history list */
-"Firefox.HomePage.Title" = "Výchozí";
+/* Title for KARMA about:home page in tab history list */
+"KARMA.HomePage.Title" = "Výchozí";
 
-/* A button at bottom of the Firefox homepage that, when clicked, takes users straight to the settings options, where they can customize the Firefox Home page */
-"FirefoxHome.CustomizeHomeButton.Title" = "Přizpůsobit";
+/* A button at bottom of the KARMA homepage that, when clicked, takes users straight to the settings options, where they can customize the KARMA Home page */
+"KARMAHome.CustomizeHomeButton.Title" = "Přizpůsobit";
 
-/* At the end of the Pocket section on the Firefox Homepage, this button appears and indicates tapping it will navigate the user to more Pocket Stories. */
-"FirefoxHome.Pocket.DiscoverMore" = "Objevte více";
+/* At the end of the Pocket section on the KARMA Homepage, this button appears and indicates tapping it will navigate the user to more Pocket Stories. */
+"KARMAHome.Pocket.DiscoverMore" = "Objevte více";
 
-/* On each Pocket Stories on the Firefox Homepage, this label appears and indicates the number of minutes to read an article. Minutes should be abbreviated due to space constraints. %d represents the number of minutes */
-"FirefoxHome.Pocket.Minutes.v99" = "%d min";
+/* On each Pocket Stories on the KARMA Homepage, this label appears and indicates the number of minutes to read an article. Minutes should be abbreviated due to space constraints. %d represents the number of minutes */
+"KARMAHome.Pocket.Minutes.v99" = "%d min";
 
-/* This is the title of the Pocket section on Firefox Homepage. */
-"FirefoxHome.Pocket.SectionTitle" = "Podnětné články";
+/* This is the title of the Pocket section on KARMA Homepage. */
+"KARMAHome.Pocket.SectionTitle" = "Podnětné články";
 
 /* When a user taps and holds on an item from the Recently Visited section, this label will appear indicating the option to remove that item. */
-"FirefoxHome.RecentHistory.Remove" = "Odebrat";
+"KARMAHome.RecentHistory.Remove" = "Odebrat";
 
 /* Label showing how many sites there is in a search group. %d represents a number */
-"FirefoxHomepage.Common.SitesCount.v101" = "Počet stránek: %d";
+"KARMAHomepage.Common.SitesCount.v101" = "Počet stránek: %d";
 
-/* The title for the Settings context menu action for sponsored tiles in the Firefox home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
-"FirefoxHomepage.ContextualMenu.Settings.v101" = "Nastavení";
+/* The title for the Settings context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
+"KARMAHomepage.ContextualMenu.Settings.v101" = "Nastavení";
 
-/* The title for the Sponsored Content context menu action for sponsored tiles in the Firefox home page shortcuts section. Clicking this brings the users to a support page where users can learn more about Sponsored content and how it works. */
-"FirefoxHomepage.ContextualMenu.SponsoredContent.v101" = "Naši sponzoři a vaše soukromí";
+/* The title for the Sponsored Content context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to a support page where users can learn more about Sponsored content and how it works. */
+"KARMAHomepage.ContextualMenu.SponsoredContent.v101" = "Naši sponzoři a vaše soukromí";
 
-/* Button title shown for tab pickup on the Firefox homepage in the Jump Back In section. */
-"FirefoxHomepage.JumpBackIn.TabPickup.ShowAll.ButtonTitle.v104" = "Zobrazit synchronizované panely";
+/* Button title shown for tab pickup on the KARMA homepage in the Jump Back In section. */
+"KARMAHomepage.JumpBackIn.TabPickup.ShowAll.ButtonTitle.v104" = "Zobrazit synchronizované panely";
 
 /* This string will show under the description on pocket story, indicating that the story is sponsored. */
-"FirefoxHomepage.Pocket.Sponsored.v103" = "Sponzorováno";
+"KARMAHomepage.Pocket.Sponsored.v103" = "Sponzorováno";
 
-/* This string will show under a shortcuts tile on the firefox home page, indicating that the tile is a sponsored tile. Space is limited, please keep as short as possible. */
-"FirefoxHomepage.Shortcuts.Sponsored.v100" = "Sponzorováno";
+/* This string will show under a shortcuts tile on the KARMA home page, indicating that the tile is a sponsored tile. Space is limited, please keep as short as possible. */
+"KARMAHomepage.Shortcuts.Sponsored.v100" = "Sponzorováno";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "Vpřed";
 
-/* Settings section title for Firefox Account */
-"FxA.FirefoxAccount" = "Účet Firefoxu";
+/* Settings section title for KARMA Account */
+"FxA.KARMAAccount" = "Účet KARMAu";
 
-/* Button label to go to Firefox Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "Spravovat účet a zařízení";
 
 /* Label when no internet is present */
@@ -371,7 +371,7 @@
 "fxa.signin.camera-signin" = "Přihlásit se pomocí fotoaparátu";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "Otevřete Firefox na svém počítači a navštivte firefox.com/pair";
+"fxa.signin.qr-link-instruction" = "Otevřete KARMA na svém počítači a navštivte KARMA.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Připraveno na skenování";
@@ -379,11 +379,11 @@
 /* FxA sign in view email login button */
 "fxa.signin.use-email-instead" = "Použít raději e-mail";
 
-/* Button label to Sync your Firefox Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "Synchronizovat";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "Firefox Sync byl připojen k zařízení %@";
+"FxAPush_DeviceConnected_body" = "KARMA Sync byl připojen k zařízení %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Služba Sync připojena";
@@ -392,7 +392,7 @@
 "FxAPush_DeviceDisconnected_body" = "Zařízení %@ bylo úspěšně odpojeno.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Toto zařízení bylo úspěšně odpojeno od služby Firefox Sync.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Toto zařízení bylo úspěšně odpojeno od služby KARMA Sync.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Služba Sync odpojena";
@@ -401,10 +401,10 @@
 "FxAPush_DeviceDisconnected_title" = "Služba Sync odpojena";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Zařízení bylo odpojeno od služby Firefox Sync";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Zařízení bylo odpojeno od služby KARMA Sync";
 
-/* On the firefox homepage, the string read by the voice over prompt for accessibility, for the button which changes the wallpaper */
-"FxHomepage.Wallpaper.ButtonLabel.v99" = "Logo Firefox - klepnutím změní tapetu.";
+/* On the KARMA homepage, the string read by the voice over prompt for accessibility, for the button which changes the wallpaper */
+"FxHomepage.Wallpaper.ButtonLabel.v99" = "Logo KARMA - klepnutím změní tapetu.";
 
 /* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
 "Help" = "Nápověda";
@@ -437,7 +437,7 @@
 "HistoryPanel.EmptySyncedTabsPanelNotSignedInState.Description" = "Pro zobrazení seznamu panelů z vašich ostatních zařízení se prosím přihlaste.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Historie";
@@ -592,10 +592,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "Světlé";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "Zobrazit původní stránku";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "Načítání obsahu…";
 
 /* Authentication prompt log in button */
@@ -623,7 +623,7 @@
 "Logins.WelcomeView.Tagline" = "Vezměte si svá hesla všude s sebou";
 
 /* Label displaying welcome view title */
-"Logins.WelcomeView.Title2" = "Automatické vyplňování hesel z Firefoxu";
+"Logins.WelcomeView.Title2" = "Automatické vyplňování hesel z KARMAu";
 
 /* Title of the big blue button to enable AutoFill */
 "Logins.WelcomeView.TurnOnAutoFill" = "Zapnout automatické vyplňování";
@@ -656,7 +656,7 @@
 "LoginsList.LoginsListSearchPlaceholder" = "Hledat";
 
 /* Label shown when there are no logins to list */
-"LoginsList.NoLoginsFound.Description" = "Tady se zobrazí uložené přihlašovací údaje. Pokud jste si přihlašovací údaje uložili do Firefoxu na jiném zařízení, přihlaste se ke svému účtu Firefoxu.";
+"LoginsList.NoLoginsFound.Description" = "Tady se zobrazí uložené přihlašovací údaje. Pokud jste si přihlašovací údaje uložili do KARMAu na jiném zařízení, přihlaste se ke svému účtu KARMAu.";
 
 /* Label shown when there are no logins saved */
 "LoginsList.NoLoginsFound.Title" = "Nenalezeny žádné přihlašovací údaje";
@@ -680,7 +680,7 @@
 "LoginsList.Title" = "ULOŽENÉ PŘIHLAŠOVACÍ ÚDAJE";
 
 /* Restore Tabs Prompt Description */
-"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "Zdá se, že dříve došlo k pádu Firefoxu. Přejete si obnovit své panely?";
+"Looks like KARMA crashed previously. Would you like to restore your tabs?" = "Zdá se, že dříve došlo k pádu KARMAu. Přejete si obnovit své panely?";
 
 /* Title for the button that marks a reading list item as read */
 "Mark as Read" = "Označit jako přečtené";
@@ -718,7 +718,7 @@
 /* Toast displayed to user after copy url pressed. */
 "Menu.CopyURL.Confirm" = "URL adresa zkopírována do schránky";
 
-/* Label for the customize homepage button in the menu page. Pressing this button takes users to the settings options, where they can customize the Firefox Home page */
+/* Label for the customize homepage button in the menu page. Pressing this button takes users to the settings options, where they can customize the KARMA Home page */
 "Menu.CustomizeHomePage.v99" = "Přizpůsobit";
 
 /* Label for the button, displayed in the menu, takes you to to Downloads screen when pressed. */
@@ -781,7 +781,7 @@
 /* Label for the share button in the menu page. Pressing this button open the share menu to share the current website. */
 "Menu.Share.v99" = "Sdílet";
 
-/* Label for the Firefox Sync button in the menu page. Pressing this button open the sign in to Firefox page service to sync and save data. */
+/* Label for the KARMA Sync button in the menu page. Pressing this button open the sign in to KARMA page service to sync and save data. */
 "Menu.SyncAndSaveData.v103" = "Synchronizace a ukládání dat";
 
 /* Toast displayed to the user after a tab has been sent successfully. */
@@ -862,10 +862,10 @@
 /* Describes the action on the first onboarding page in our Onboarding screen. This string will be on a button so user can continue the onboarding. */
 "Onboarding.IntroAction.v102" = "Jdeme na to";
 
-/* String used to describes what Firefox is on the first onboarding page in our Onboarding screens. Indie means small independant. */
+/* String used to describes what KARMA is on the first onboarding page in our Onboarding screens. Indie means small independant. */
 "Onboarding.IntroDescriptionPart1.v102" = "Nezávislý. Neziskový. Navždy.";
 
-/* String used to describes what Firefox is on the first onboarding page in our Onboarding screens. */
+/* String used to describes what KARMA is on the first onboarding page in our Onboarding screens. */
 "Onboarding.IntroDescriptionPart2.v102" = "Zavázali jsme se zlepšovat internet pro všechny.";
 
 /* Describes an action on some of the Onboarding screen, including the wallpaper onboarding screen. This string will be on a button so user can skip that onboarding page. */
@@ -878,13 +878,13 @@
 "Onboarding.WallpaperAction.v102" = "Nastavit tapetu";
 
 /* Title for the wallpaper onboarding page in our Onboarding screens. This describes to the user that they can choose different wallpapers. */
-"Onboarding.WallpaperTitle.v102" = "Výběr tapety Firefoxu";
+"Onboarding.WallpaperTitle.v102" = "Výběr tapety KARMAu";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the title for the button, on the bottom of the card, used to get back to browsing on Firefox by dismissing the onboarding card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the button, on the bottom of the card, used to get back to browsing on KARMA by dismissing the onboarding card */
 "Onboarding.WhatsNew.Button.Title" = "Začít prohlížet";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Firefox crashed" = "Jejda! Firefox spadl";
+"Oops! KARMA crashed" = "Jejda! KARMA spadl";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "Otevírejte články ve čtečce klepnutím na ikonu knihy zobrazené v záhlaví.";
@@ -895,8 +895,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "Otevřené panely";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app. */
-"OpenURL.Error.Message" = "Firefox nemůže stránku otevřít, protože má stránka neplatnou adresu.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
+"OpenURL.Error.Message" = "KARMA nemůže stránku otevřít, protože má stránka neplatnou adresu.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "Stránku nelze otevřít";
@@ -905,10 +905,10 @@
 "Password" = "Heslo";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessMessage" = "Toto vám umožní ukládat obrázky do vaší složky Camera Roll.";
+"PhotoLibrary.KARMAWouldLikeAccessMessage" = "Toto vám umožní ukládat obrázky do vaší složky Camera Roll.";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Firefox žádá o přístup k vašim Fotografiím";
+"PhotoLibrary.KARMAWouldLikeAccessTitle" = "KARMA žádá o přístup k vašim Fotografiím";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "Zavřít";
@@ -916,7 +916,7 @@
 /* Privacy section title */
 "Privacy" = "Soukromí";
 
-/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "Zásady ochrany osobních údajů";
 
 /* This is the value for a label that indicates if a user is on an unencrypted website. */
@@ -928,7 +928,7 @@
 /* Title for quick-search engines settings section. */
 "Quick-Search Engines" = "Vyhledávače";
 
-/* A label indicating the action that a user can rate the Firefox app in the App store. */
+/* A label indicating the action that a user can rate the KARMA app in the App store. */
 "Ratings.Settings.RateOnAppStore" = "Ohodnotit na App Storu";
 
 /* Accessibility label for read article in reading list. It's a past participle - functions as an adjective. */
@@ -1000,8 +1000,8 @@
 /* Search suggestion cell label that allows user to switch to tab which they searched for in url bar */
 "Search.Awesomebar.SwitchToTab" = "Přepnout na panel";
 
-/* When making a new search from the awesome bar, suggestions appear to the user as they write new letters in their search. Different types of suggestions can appear. This string will be used as a header to separate Firefox suggestions from normal suggestions. */
-"Search.SuggestSectionTitle.v102" = "Návrhy od Firefoxu";
+/* When making a new search from the awesome bar, suggestions appear to the user as they write new letters in their search. Different types of suggestions can appear. This string will be used as a header to separate KARMA suggestions from normal suggestions. */
+"Search.SuggestSectionTitle.v102" = "Návrhy od KARMAu";
 
 /* The message that asks the user to Add the search provider explaining where the search engine will appear */
 "Search.ThirdPartyEngines.AddMessage" = "Nový vyhledávač se zobrazi v panelu rychlého hledání.";
@@ -1064,13 +1064,13 @@
 "SendTo.NavBar.Title" = "Poslat panel";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "K tomuto účtu Firefoxu nemáte připojena žádná další zařízení dostupná pro synchronizaci.";
+"SendTo.NoDevicesFound.Message" = "K tomuto účtu KARMAu nemáte připojena žádná další zařízení dostupná pro synchronizaci.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "Pro pokračování prosím otevřete Firefox, přejděte do Nastavení a přihlaste se.";
+"SendTo.NotSignedIn.Message" = "Pro pokračování prosím otevřete KARMA, přejděte do Nastavení a přihlaste se.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "Nejste přihlášeni k vašemu účtu Firefoxu.";
+"SendTo.NotSignedIn.Title" = "Nejste přihlášeni k vašemu účtu KARMAu.";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "Poslat";
@@ -1091,7 +1091,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Klepněte pro zahájení";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
+"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Zobrazit";
@@ -1151,7 +1151,7 @@
 "Settings.DataManagement.Title" = "Správa dat";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "Firefox ukončí synchronizaci s vaším účtem, ale nesmaže z tohoto zařízení žádná vaše data.";
+"Settings.Disconnect.Body" = "KARMA ukončí synchronizaci s vaším účtem, ale nesmaže z tohoto zařízení žádná vaše data.";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "Odpojit Sync";
@@ -1210,85 +1210,85 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "Název zařízení";
 
-/* Label used as a section title in the Firefox Accounts Settings screen. */
+/* Label used as a section title in the KARMA Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "Nastavení synchronizace";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "Účet Firefoxu";
+"Settings.FxA.Title" = "Účet KARMAu";
 
 /* General settings section title */
 "Settings.General.SectionName" = "Obecné";
 
-/* In the settings menu, on the Firefox homepage customization section, this is the description below the section, describing what the options in the section are for. */
-"Settings.Home.Option.Description.v101" = "Vyberte, co chcete vidět na domovské stránce Firefoxu.";
+/* In the settings menu, on the KARMA homepage customization section, this is the description below the section, describing what the options in the section are for. */
+"Settings.Home.Option.Description.v101" = "Vyberte, co chcete vidět na domovské stránce KARMAu.";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
 "Settings.Home.Option.JumpBackIn" = "Návrat zpět";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the KARMA homepage on or off */
 "Settings.Home.Option.Pocket" = "Doporučení ze služby Pocket";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentlySaved" = "Naposledy uložené";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
 "Settings.Home.Option.RecentlyVisited" = "Nedávno navštívené";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the KARMA homepage on or off */
 "Settings.Home.Option.Shortcuts" = "Zkratky";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to turn the Pocket Sponsored Stories on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to turn the Pocket Sponsored Stories on the KARMA homepage on or off */
 "Settings.Home.Option.SponsoredPocket.v103" = "Sponzorované články";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage after four hours of inactivity. */
 "Settings.Home.Option.StartAtHome.AfterFourHours" = "Po 4 hodinách nepoužívání domovskou stránku";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Always" = "Domovská stránka";
 
 /* In the settings menu, in the Start at Home customization options, this is text that appears below the section, describing what the section settings do. */
-"Settings.Home.Option.StartAtHome.Description" = "Vyberte si, co chcete vidět při návratu do Firefoxu.";
+"Settings.Home.Option.StartAtHome.Description" = "Vyberte si, co chcete vidět při návratu do KARMAu.";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Never" = "Poslední panel";
 
-/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Firefox Homepage. */
+/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the KARMA Homepage. */
 "Settings.Home.Option.StartAtHome.Title" = "Po otevření aplikace zobrazit";
 
-/* In the settings menu, this is the title of the Firefox Homepage customization settings section */
+/* In the settings menu, this is the title of the KARMA Homepage customization settings section */
 "Settings.Home.Option.Title.v101" = "Zobrazit na domovské stránce";
 
-/* In the settings menu, on the Firefox homepage customization section, this is the title for the option that allows users to access the wallpaper settings for the application. */
+/* In the settings menu, on the KARMA homepage customization section, this is the title for the option that allows users to access the wallpaper settings for the application. */
 "Settings.Home.Option.Wallpaper" = "Tapeta";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string for the amethyst firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.AmethystWallpaper.v99" = "Tapeta Firefoxu, ametystový vzor.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the accessibility string for the amethyst KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.AmethystWallpaper.v99" = "Tapeta KARMAu, ametystový vzor.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the beach hills firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.BeachHillsWallpaper.v100" = "Tapeta Firefoxu, vzor s pláží a kopci.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title accessibility string for the beach hills KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.BeachHillsWallpaper.v100" = "Tapeta KARMAu, vzor s pláží a kopci.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the cerulean firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.CeruleanWallpaper.v99" = "Tapeta Firefoxu, blankytný vzor.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title accessibility string for the cerulean KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.CeruleanWallpaper.v99" = "Tapeta KARMAu, blankytný vzor.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string for the default wallpaper. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the accessibility string for the default wallpaper. */
 "Settings.Home.Option.Wallpaper.Accessibility.DefaultWallpaper.v99" = "Výchozí prázdná tapeta.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the sunrise firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.SunriseWallpaper.v99" = "Tapeta Firefoxu, východ slunce.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title accessibility string for the sunrise KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.SunriseWallpaper.v99" = "Tapeta KARMAu, východ slunce.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the twilight hills firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.TwilightHillsWallpaper.v100" = "Tapeta Firefoxu, vzor s kopci za soumraku.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title accessibility string for the twilight hills KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.TwilightHillsWallpaper.v100" = "Tapeta KARMAu, vzor s kopci za soumraku.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the string titling the switch button's function, which allows a user to toggle wallpaper switching from the homepage logo on or off. */
-"Settings.Home.Option.Wallpaper.SwitchTitle.v99" = "Klepnutím na logo Firefoxu na domovské stránce změníte její tapetu";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the string titling the switch button's function, which allows a user to toggle wallpaper switching from the homepage logo on or off. */
+"Settings.Home.Option.Wallpaper.SwitchTitle.v99" = "Klepnutím na logo KARMAu na domovské stránce změníte její tapetu";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of that screen, which allows users to change the wallpaper settings for the application. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title of that screen, which allows users to change the wallpaper settings for the application. */
 "Settings.Home.Option.Wallpaper.Title" = "Tapeta";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of toast that comes up when the user changes wallpaper, which lets them know that the wallpaper has been updated. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title of toast that comes up when the user changes wallpaper, which lets them know that the wallpaper has been updated. */
 "Settings.Home.Option.Wallpaper.UpdatedToast" = "Tapeta nastavena!";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of the button found on the toast that comes up once the user changes wallpaper, and allows users to dismiss the settings page. In this case, consider View as a verb - the action of dismissing settings and seeing the wallpaper. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title of the button found on the toast that comes up once the user changes wallpaper, and allows users to dismiss the settings page. In this case, consider View as a verb - the action of dismissing settings and seeing the wallpaper. */
 "Settings.Home.Option.Wallpaper.UpdatedToastButton" = "Zobrazit";
 
 /* Label used as an item in Settings. When touched it will open a dialog to configure the home page and its uses. */
@@ -1330,8 +1330,8 @@
 /* Option in settings to show a blank page when you open a new tab */
 "Settings.NewTab.Option.BlankPage" = "Prázdnou stránku";
 
-/* Option in settings to show Firefox Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "Výchozí domovskou stránku";
+/* Option in settings to show KARMA Home when you open a new tab */
+"Settings.NewTab.Option.KARMAHome" = "Výchozí domovskou stránku";
 
 /* Option in settings to show your homepage when you open a new tab */
 "Settings.NewTab.Option.HomePage" = "Domovská stránka";
@@ -1352,7 +1352,7 @@
 "Settings.NoImageModeBlockImages.Label.v99" = "Blokovat obrázky";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "při otevření Firefoxu";
+"Settings.OfferClipboardBar.Status" = "při otevření KARMAu";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "Nabízet otevření zkopírovaných adres";
@@ -1363,7 +1363,7 @@
 /* Label used as an item in Settings. When touched it will open a dialog to configure the open with (mail links) behavior. */
 "Settings.OpenWith.SectionName" = "E-mailová aplikace";
 
-/* Message shown when you enter Passwords screen for the first time. It explains how password are protected in the Firefox for iOS application. */
+/* Message shown when you enter Passwords screen for the first time. It explains how password are protected in the KARMA for iOS application. */
 "Settings.Passwords.OnboardingMessage.v103" = "Vaše hesla jsou chráněná pomocí Face ID, Touch ID nebo kódu zámku.";
 
 /* Setting that appears in the Passwords screen to enable the built-in password manager so users can save their passwords. */
@@ -1385,7 +1385,7 @@
 "Settings.SendUsage.Link" = "Zjistit více.";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "Mozilla sbírá jenom informace potřené pro vylepšování Firefoxu.";
+"Settings.SendUsage.Message" = "Mozilla sbírá jenom informace potřené pro vylepšování KARMAu.";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "Odesílat údaje o používání";
@@ -1403,7 +1403,7 @@
 "Settings.Siri.OpenTabShortcut" = "Otevřít nový panel";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "Použijte zkratky Siri pro rychlé otevření Firefoxu přes Siri";
+"Settings.Siri.SectionDescription" = "Použijte zkratky Siri pro rychlé otevření KARMAu přes Siri";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "Zkratky Siri";
@@ -1412,18 +1412,18 @@
 "Settings.Studies.Toggle.Link" = "Zjistit více.";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "Firefox může čas od času instalovat a spouštět studie.";
+"Settings.Studies.Toggle.Message" = "KARMA může čas od času instalovat a spouštět studie.";
 
 /* Label used as a toggle item in Settings. When this is off, the user is opting out of all studies. */
 "Settings.Studies.Toggle.Title" = "Studie";
 
-/* Ddescription that appears in the settings screen to explain what Firefox Sync is useful for. */
+/* Ddescription that appears in the settings screen to explain what KARMA Sync is useful for. */
 "Settings.Sync.ButtonDescription.v103" = "Pro synchronizaci svých panelů, záložek, hesel a dalších věcí se přihlaste.";
 
-/* Button label that appears in the settings to prompt the user to sign in to Firefox for iOS sync service to sync and save data. */
+/* Button label that appears in the settings to prompt the user to sign in to KARMA for iOS sync service to sync and save data. */
 "Settings.Sync.ButtonTitle.v103" = "Synchronizovat a ukládat data";
 
-/* Title for the page where the user sign in to their Firefox Sync account. */
+/* Title for the page where the user sign in to their KARMA Sync account. */
 "Settings.Sync.SignInView.Title.v103" = "Synchronizace a ukládání dat";
 
 /* This is the description for the setting that toggles the Inactive Tabs feature in the settings menu under the Tabs customization section. Inactive tabs are a separate section of tabs that appears in the Tab Tray, which can be enabled or not */
@@ -1495,29 +1495,29 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "Data stránek";
 
-/* Action label on share extension to add page to the Firefox reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "Přidat do seznamu ke čtení";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "Přidáno do seznamu ke čtení";
 
-/* Action label on share extension to bookmark the page in Firefox. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "Přidat stránku do záložek";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "V záložkách";
 
-/* Action label on share extension to load the page in Firefox when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "Načíst v pozadí";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "Načítání ve Firefoxu";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "Načítání ve KARMAu";
 
-/* Action label on share extension to immediately open page in Firefox. */
-"ShareExtension.OpenInFirefoxAction.Title" = "Otevřít ve Firefoxu";
+/* Action label on share extension to immediately open page in KARMA. */
+"ShareExtension.OpenInKARMAAction.Title" = "Otevřít ve KARMAu";
 
-/* Action label on share extension to search for the selected text in Firefox. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Vyhledat ve Firefoxu";
+/* Action label on share extension to search for the selected text in KARMA. */
+"ShareExtension.SeachInKARMAAction.Title" = "Vyhledat ve KARMAu";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "Povolit našeptávání";
@@ -1597,7 +1597,7 @@
 /* The title for the tab tray */
 "TabTray.Title" = "Otevřené panely";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "The page could not be displayed in Reader View." = "Tuto stránku nelze v Zobrazení čtečky načíst.";
 
 /* Error message in the remote tabs panel */
@@ -1649,7 +1649,7 @@
 "UIMenuItem.PasteGo" = "Vložit a přejít";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "Vyhledat";
+"UIMenuItem.SearchWithKARMA" = "Vyhledat";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "nepřečteno";
@@ -1679,7 +1679,7 @@
 "Yesterday" = "Včera";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Firefox on your other devices." = "Ve vašich zařízeních nejsou otevřené žádné panely.";
+"You don’t have any tabs open in KARMA on your other devices." = "Ve vašich zařízeních nejsou otevřené žádné panely.";
 
 /* Your Rights settings section title */
 "Your Rights" = "Vaše práva";

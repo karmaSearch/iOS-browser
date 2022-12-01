@@ -19,13 +19,16 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagga
 
     // MARK: - Properties
     var deeplinkTo: AppSettingsDeeplinkOption?
+    private var themeManager: ThemeManager
 
     // MARK: - Initializers
     init(with profile: Profile,
          and tabManager: TabManager,
          delegate: SettingsDelegate?,
-         deeplinkingTo destination: AppSettingsDeeplinkOption? = nil) {
+         deeplinkingTo destination: AppSettingsDeeplinkOption? = nil,
+         themeManager: ThemeManager = AppContainer.shared.resolve()) {
         self.deeplinkTo = destination
+        self.themeManager = themeManager
 
         super.init()
         self.profile = profile
@@ -102,10 +105,9 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagga
         let prefs = profile.prefs
         
         let nightModeEnabled = NightModeHelper.isActivated(profile.prefs)
-        let noImageEnabled = NoImageModeHelper.isActivated(profile.prefs)
 
-        let nightModeTitle: String = nightModeEnabled ? .AppMenuTurnOffNightMode : .AppMenuTurnOnNightMode
-        let imageModeTitle: String = noImageEnabled ? .AppMenuShowImageMode : .AppMenuNoImageMode
+        let nightModeTitle: String = nightModeEnabled ? String.AppMenu.AppMenuTurnOffNightMode : String.AppMenu.AppMenuTurnOnNightMode
+        let imageModeTitle: String = String.Settings.Toggle.NoImageMode
 
         var generalSettings: [Setting] = [
             OpenWithSetting(settings: self),
@@ -121,12 +123,12 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagga
 
                             // If we've enabled night mode and the theme is normal, enable dark theme
                             if NightModeHelper.isActivated(self.profile.prefs), LegacyThemeManager.instance.currentName == .normal {
-                                LegacyThemeManager.instance.current = DarkTheme()
+                                self.themeManager.changeCurrentTheme(.dark)
                                 NightModeHelper.setEnabledDarkTheme(self.profile.prefs, darkTheme: true)
                             }
                             // If we've disabled night mode and dark theme was activated by it then disable dark theme
                             if !NightModeHelper.isActivated(self.profile.prefs), NightModeHelper.hasEnabledDarkTheme(self.profile.prefs), LegacyThemeManager.instance.currentName == .dark {
-                                LegacyThemeManager.instance.current = NormalTheme()
+                                self.themeManager.changeCurrentTheme(.light)
                                 NightModeHelper.setEnabledDarkTheme(self.profile.prefs, darkTheme: false)
                             }
                         }),

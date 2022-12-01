@@ -59,6 +59,7 @@ class GridTabViewController: UIViewController, TabTrayViewDelegate, Themeable {
 
     fileprivate lazy var emptyPrivateTabsView: EmptyPrivateTabsView = {
         let emptyView = EmptyPrivateTabsView()
+        emptyView.learnMoreButton.addTarget(self, action: #selector(didTapLearnMore), for: .touchUpInside)
         return emptyView
     }()
 
@@ -334,16 +335,33 @@ extension GridTabViewController: TabDisplayer {
 
 extension GridTabViewController {
 
-    func closeTabsForCurrentTray() {
-        let tabs = self.tabDisplayManager.isPrivate ? tabManager.privateTabs : tabManager.normalTabs
-        let maxTabs = 100
-        if self.tabDisplayManager.isPrivate {
-            self.tabManager.removeTabsWithoutToast(tabs)
-            self.tabManager.selectTab(mostRecentTab(inTabs: tabManager.normalTabs) ?? tabManager.normalTabs.last, previous: nil)
-        } else if tabs.count >= maxTabs {
-            self.tabManager.removeTabsAndAddNormalTab(tabs)
-        } else {
-            self.tabManager.removeTabsWithToast(tabs)
+    @objc func didTapLearnMore() {
+        let appVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
+        if let langID = Locale.preferredLanguages.first {
+            let learnMoreRequest = URLRequest(url: "https://support.mozilla.org/1/mobile/\(appVersion ?? "0.0")/iOS/\(langID)/private-browsing-ios".asURL!)
+            openNewTab(learnMoreRequest, isPrivate: tabDisplayManager.isPrivate)
+        }
+    }
+
+    func closeTabsTrayBackground() {
+        tabDisplayManager.removeAllTabsFromView()
+
+        tabManager.backgroundRemoveAllTabs(isPrivate: tabDisplayManager.isPrivate) {
+            recentlyClosedTabs, isPrivateState, previousTabUUID in
+
+            DispatchQueue.main.async { [unowned self] in
+                if isPrivateState {
+                    let previousTab = self.tabManager.tabs.filter { $0.tabUUID == previousTabUUID }.first
+                    self.tabManager.cleanupClosedTabs(recentlyClosedTabs,
+                                                      previous: previousTab,
+                                                      isPrivate: isPrivateState)
+                } else {
+                    self.tabManager.makeToastFromRecentlyClosedUrls(recentlyClosedTabs,
+                                                                    isPrivate: isPrivateState,
+                                                                    previousTabUUID: previousTabUUID)
+                }
+                closeTabsTrayHelper()
+            }
         }
     }
 

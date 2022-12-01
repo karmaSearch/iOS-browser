@@ -49,16 +49,26 @@ class SearchSuggestClient {
                 return
             }
 
-            let json = try? JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed) as? [String]
+            let json = try? JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)
+            let array = json as? [Any]
 
-            guard let json = json, !json.isEmpty else {
+            // The response will be of the following format:
+            //    ["foobar",["foobar","foobar2000 mac","foobar skins",...]]
+            // That is, an array of at least two elements: the search term and an array of suggestions.
+
+            if array?.count ?? 0 < 2 {
                 let error = NSError(domain: SearchSuggestClientErrorDomain, code: SearchSuggestClientErrorInvalidResponse, userInfo: nil)
                 callback(nil, error)
                 return
             }
-            
-            let suggest = json
-            callback(suggest, nil)
+
+            guard let suggestions = array?[1] as? [String] else {
+                let error = NSError(domain: SearchSuggestClientErrorDomain, code: SearchSuggestClientErrorInvalidResponse, userInfo: nil)
+                callback(nil, error)
+                return
+            }
+
+            callback(suggestions, nil)
         }
         task?.resume()
     }
