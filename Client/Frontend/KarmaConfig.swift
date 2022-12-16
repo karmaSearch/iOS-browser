@@ -16,9 +16,17 @@ class KarmaLanguage {
     static func getSupportedLanguageIdentifier() -> String {
         if (karmaSupportedLanguagesIdentifier.contains {
             Locale.current.identifier.contains($0)
-        }), let firstPartIdentifier = Locale.current.identifier.split(separator: "-").first {
-            
-            return String(firstPartIdentifier)
+        }) {
+            if Locale.current.identifier.contains("-"),
+               let firstPartIdentifier = Locale.current.identifier.split(separator: "-").first {
+                return String(firstPartIdentifier)
+            } else if Locale.current.identifier.contains("_"),
+                let firstPartIdentifier = Locale.current.identifier.split(separator: "_").first{
+                
+                return String(firstPartIdentifier)
+            }
+            return Locale.current.identifier
+           
         }
         
         return karmaDefaultLanguageIdentifier

@@ -12,3 +12,4 @@ CODE_SIGN_ENTITLEMENTS = Client/Entitlements/KarmaApplication.entitlements
 OTHER_SWIFT_FLAGS = $(OTHER_SWIFT_FLAGS_common) -DMOZ_CHANNEL_RELEASE
 MOZ_INTERNAL_URL_SCHEME = karma
 DEVELOPMENT_TEAM = 59G3A42UBG
+OTHER_LDFLAGS = -ObjC -lxml2 -fprofile-instr-generate
