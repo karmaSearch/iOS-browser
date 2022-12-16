@@ -9,14 +9,21 @@
 import Foundation
 import UIKit
 import SDWebImage
-import SDWebImageWebPCoder
 
-class LearnAndActViewCell: UICollectionViewCell {
-    private let padding: CGFloat = 10
-    private let padding2: CGFloat = 16
-    private let textSpacing: CGFloat = 3
-    private let imageHeight: CGFloat = 193
-    private let typeHeight: CGFloat = 24
+class LearnAndActViewCell: BlurrableCollectionViewCell, ReusableCell {
+    
+    struct UX {
+        static let cellHeight: CGFloat = 159
+        static let padding: CGFloat = 10
+        static let padding2: CGFloat = 16
+        static let textSpacing: CGFloat = 3
+        static let imageHeight: CGFloat = 193
+        static let typeHeight: CGFloat = 24
+        static let cellWidth: CGFloat = 350
+        static let interGroupSpacing: CGFloat = 8
+        static let interItemSpacing = NSCollectionLayoutSpacing.fixed(8)
+    }
+
     
     private lazy var imageView: UIImageView = .build { imageView in
         imageView.contentMode = .scaleAspectFill
@@ -62,13 +69,13 @@ class LearnAndActViewCell: UICollectionViewCell {
     }
     
     private lazy var textStackView: UIStackView = .build { view in
-        view.spacing = self.textSpacing
+        view.spacing = UX.textSpacing
         view.alignment = .leading
         view.axis = .vertical
         view.distribution = .equalSpacing
     }
     
-    public var learnAndAct: LearnAndActBloc? {
+    public var learnAndAct: LearnAndActCellViewModel? {
         didSet {
             guard let learnAndAct = learnAndAct else {
                 return
@@ -80,9 +87,6 @@ class LearnAndActViewCell: UICollectionViewCell {
             linkLabel.text = learnAndAct.action
             timeToRead.isHidden = learnAndAct.duration.isEmpty
             
-            let WebPCoder = SDImageWebPCoder.shared
-            SDImageCodersManager.shared.addCoder(WebPCoder)
-            SDWebImageDownloader.shared.setValue("image/webp,image/apng,image/*,*/*;q=0.8", forHTTPHeaderField:"Accept")
             let url = URIFixup.getURL(learnAndAct.mobileImage)
             imageView.sd_setImage(with: url, placeholderImage: UIImage(named: learnAndAct.defaultImageName), completed: nil)
             
@@ -115,7 +119,7 @@ class LearnAndActViewCell: UICollectionViewCell {
             typeView.snp.makeConstraints { make in
                 make.leading.equalTo(imageView.snp.trailing)
                 make.top.equalToSuperview()
-                make.height.equalTo(typeHeight)
+                make.height.equalTo(UX.typeHeight)
             }
             
             imageView.snp.makeConstraints { make in
@@ -135,18 +139,18 @@ class LearnAndActViewCell: UICollectionViewCell {
             typeView.snp.makeConstraints { make in
                 make.centerY.equalTo(imageView.snp.bottom)
                 make.leading.equalToSuperview()
-                make.height.equalTo(typeHeight)
+                make.height.equalTo(UX.typeHeight)
             }
             
             imageView.snp.makeConstraints { make in
-                make.height.equalTo(imageHeight)
+                make.height.equalTo(UX.imageHeight)
                 make.top.equalToSuperview()
                 make.leading.trailing.equalToSuperview()
             }
             
             textContent.snp.makeConstraints { make in
                 make.bottom.equalToSuperview()
-                make.top.equalTo(imageView.snp.bottom).offset(textSpacing)
+                make.top.equalTo(imageView.snp.bottom).offset(UX.textSpacing)
                 make.leading.trailing.equalToSuperview()
             }
         }
@@ -154,13 +158,13 @@ class LearnAndActViewCell: UICollectionViewCell {
         typeLabel.snp.makeConstraints { make in
             make.centerY.centerX.equalToSuperview()
             make.top.equalToSuperview()
-            make.leading.equalToSuperview().offset(padding2)
+            make.leading.equalToSuperview().offset(UX.padding2)
         }
         
         textStackView.snp.makeConstraints { make in
             make.top.equalTo(typeView.snp.bottom).offset(4)
-            make.bottom.equalToSuperview().offset(-padding2)
-            make.leading.equalToSuperview().offset(padding2)
+            make.bottom.equalToSuperview().offset(-UX.padding2)
+            make.leading.equalToSuperview().offset(UX.padding2)
             make.centerX.equalToSuperview()
         }
         
@@ -183,7 +187,7 @@ class LearnAndActViewCell: UICollectionViewCell {
             typeView.snp.remakeConstraints { make in
                 make.leading.equalTo(imageView.snp.trailing)
                 make.top.equalToSuperview()
-                make.height.equalTo(typeHeight)
+                make.height.equalTo(UX.typeHeight)
             }
             
             imageView.snp.remakeConstraints { make in
@@ -202,18 +206,18 @@ class LearnAndActViewCell: UICollectionViewCell {
             typeView.snp.remakeConstraints { make in
                 make.centerY.equalTo(imageView.snp.bottom)
                 make.leading.equalToSuperview()
-                make.height.equalTo(typeHeight)
+                make.height.equalTo(UX.typeHeight)
             }
             
             imageView.snp.remakeConstraints { make in
-                make.height.equalTo(imageHeight)
+                make.height.equalTo(UX.imageHeight)
                 make.top.equalToSuperview()
                 make.leading.trailing.equalToSuperview()
             }
             
             textContent.snp.remakeConstraints { make in
                 make.bottom.equalToSuperview()
-                make.top.equalTo(imageView.snp.bottom).offset(textSpacing)
+                make.top.equalTo(imageView.snp.bottom).offset(UX.textSpacing)
                 make.leading.trailing.equalToSuperview()
             }
         }
@@ -240,24 +244,6 @@ class LearnAndActViewCell: UICollectionViewCell {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    func calculateSize(width: CGFloat) -> CGFloat {
-        if UITraitCollection.current.verticalSizeClass == .compact ||
-            UIDevice.current.userInterfaceIdiom == .pad {
-            return 180
-        }
-        var size: CGFloat = 0
-        size += imageHeight
-        size += typeHeight / 2 
-        size += textSpacing * 3
-        size += titleLabel.font.calculateHeight(text: titleLabel.text ?? "", width: width - padding2*2)
-        let sizeOfDescription = descriptionLabel.font.calculateHeight(text: descriptionLabel.text ?? "", width: width - padding2*2)
-        size += min(sizeOfDescription, CGFloat(descriptionLabel.numberOfLines * 20))
-        size += (timeToRead.text ?? "").isEmpty ? 0 : timeToRead.font.calculateHeight(text: timeToRead.text ?? "", width: width - padding2*2)
-        size += linkLabel.font.calculateHeight(text: linkLabel.text ?? "", width: width - padding2*2)
-        size += padding2
-        return size
     }
     
 }

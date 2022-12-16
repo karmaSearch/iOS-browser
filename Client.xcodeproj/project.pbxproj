@@ -688,6 +688,9 @@
 		A32FD04F2937B2B10072CD43 /* IntroKarma.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD0482937B2B10072CD43 /* IntroKarma.strings */; };
 		A32FD0502937B2B10072CD43 /* Karma.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD04A2937B2B10072CD43 /* Karma.strings */; };
 		A32FD0512937B2B10072CD43 /* Karma.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD04A2937B2B10072CD43 /* Karma.strings */; };
+		A37D5DE72938FBA600400F74 /* LearnAndActViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D5DE42938FBA500400F74 /* LearnAndActViewCell.swift */; };
+		A37D5DE82938FBA600400F74 /* LearnAndActViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D5DE52938FBA500400F74 /* LearnAndActViewModel.swift */; };
+		A37D5DE92938FBA600400F74 /* LearnAndActHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D5DE62938FBA600400F74 /* LearnAndActHeader.swift */; };
 		A3A8716C29379E8B00C76AC2 /* UIFont+Karma.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8716B29379E8B00C76AC2 /* UIFont+Karma.swift */; };
 		A3A8717629379ECE00C76AC2 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8716D29379ECB00C76AC2 /* ProximaNova-Bold.otf */; };
 		A3A8717729379ECE00C76AC2 /* ProximaNova-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8716E29379ECB00C76AC2 /* ProximaNova-Medium.otf */; };
@@ -700,6 +703,10 @@
 		A3A8717E29379ECE00C76AC2 /* ProximaNova-Medium It.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8717529379ECD00C76AC2 /* ProximaNova-Medium It.otf */; };
 		A3A8717F29379F2000C76AC2 /* UIFont+Karma.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8716B29379E8B00C76AC2 /* UIFont+Karma.swift */; };
 		A3A871812937A8DD00C76AC2 /* ETPCoverSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A871802937A8DC00C76AC2 /* ETPCoverSheetViewController.swift */; };
+		A3DEA005294A0E3400A28297 /* KarmaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEA004294A0E3300A28297 /* KarmaConfig.swift */; };
+		A3DEA008294A127200A28297 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		A3F87C9D294C73EE00957516 /* Karma_Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A3F87C9B294C73ED00957516 /* Karma_Debug.xcconfig */; };
+		A3F87C9E294C73EE00957516 /* Karma.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A3F87C9C294C73ED00957516 /* Karma.xcconfig */; };
 		A83E5AB71C1D993D0026D912 /* UIPasteboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83E5AB61C1D993D0026D912 /* UIPasteboard+Extension.swift */; };
 		A83E5B1A1C1DA8BF0026D912 /* image.gif in Resources */ = {isa = PBXBuildFile; fileRef = A83E5B181C1DA8BF0026D912 /* image.gif */; };
 		A83E5B1B1C1DA8BF0026D912 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = A83E5B191C1DA8BF0026D912 /* image.png */; };
@@ -3668,6 +3675,9 @@
 		A32FD0552937B2E30072CD43 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Karma.strings; sourceTree = "<group>"; };
 		A32FD0562937B2F40072CD43 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/KarmaMenu.strings; sourceTree = "<group>"; };
 		A32FD0572937B3020072CD43 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/KarmaMenu.strings; sourceTree = "<group>"; };
+		A37D5DE42938FBA500400F74 /* LearnAndActViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LearnAndActViewCell.swift; path = Client/Frontend/Home/LearnAndAct/LearnAndActViewCell.swift; sourceTree = SOURCE_ROOT; };
+		A37D5DE52938FBA500400F74 /* LearnAndActViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LearnAndActViewModel.swift; path = Client/Frontend/Home/LearnAndAct/LearnAndActViewModel.swift; sourceTree = SOURCE_ROOT; };
+		A37D5DE62938FBA600400F74 /* LearnAndActHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LearnAndActHeader.swift; path = Client/Frontend/Home/LearnAndAct/LearnAndActHeader.swift; sourceTree = SOURCE_ROOT; };
 		A3A8716B29379E8B00C76AC2 /* UIFont+Karma.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Karma.swift"; sourceTree = "<group>"; };
 		A3A8716D29379ECB00C76AC2 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
 		A3A8716E29379ECB00C76AC2 /* ProximaNova-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Medium.otf"; sourceTree = "<group>"; };
@@ -3679,7 +3689,15 @@
 		A3A8717429379ECD00C76AC2 /* ProximaNova-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-SemiBold.otf"; sourceTree = "<group>"; };
 		A3A8717529379ECD00C76AC2 /* ProximaNova-Medium It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Medium It.otf"; sourceTree = "<group>"; };
 		A3A871802937A8DC00C76AC2 /* ETPCoverSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETPCoverSheetViewController.swift; sourceTree = "<group>"; };
+		A3DEA004294A0E3300A28297 /* KarmaConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KarmaConfig.swift; sourceTree = "<group>"; };
 		A3E54C1386C753F253BEEB71 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Search.strings; sourceTree = "<group>"; };
+		A3F87C9B294C73ED00957516 /* Karma_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Karma_Debug.xcconfig; path = Configuration/Karma_Debug.xcconfig; sourceTree = "<group>"; };
+		A3F87C9C294C73ED00957516 /* Karma.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Karma.xcconfig; path = Configuration/Karma.xcconfig; sourceTree = "<group>"; };
+		A3F87C9F294C73FD00957516 /* KarmaDebug.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = KarmaDebug.entitlements; sourceTree = "<group>"; };
+		A3F87CA0294C73FD00957516 /* KarmaApplication.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = KarmaApplication.entitlements; sourceTree = "<group>"; };
+		A3F87CA1294C740400957516 /* Karma.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Karma.entitlements; sourceTree = "<group>"; };
+		A3F87CA2294C740400957516 /* KarmaDebug.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = KarmaDebug.entitlements; sourceTree = "<group>"; };
+		A3F87CA3294C741200957516 /* CredentialProviderKarmaDebug.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = CredentialProviderKarmaDebug.entitlements; sourceTree = "<group>"; };
 		A3FB49E4AED8F44971799F71 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/FindInPage.strings; sourceTree = "<group>"; };
 		A3FB4ED398FB21FB64A28124 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/ClearHistoryConfirm.strings; sourceTree = "<group>"; };
 		A4194E688059E39617C7CD55 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/LoginManager.strings; sourceTree = "<group>"; };
@@ -5327,6 +5345,7 @@
 				8A08EC6427EBDCAD00E119C7 /* AdServices.framework in Frameworks */,
 				8A08EC6227EBDCA400E119C7 /* iAd.framework in Frameworks */,
 				43BE580E278BABCF00491291 /* RustMozillaAppServices.framework in Frameworks */,
+				A3DEA008294A127200A28297 /* (null) in Frameworks */,
 				4368F87F27966EA50013419B /* SDWebImage.framework in Frameworks */,
 				C82043852523DBF600740B71 /* Sync.framework in Frameworks */,
 				C877037A25222F30006E38EB /* Shared.framework in Frameworks */,
@@ -6729,6 +6748,16 @@
 			path = GeneralizedTableView;
 			sourceTree = "<group>";
 		};
+		A37D5DE32938FB9100400F74 /* LearnAndAct */ = {
+			isa = PBXGroup;
+			children = (
+				A37D5DE62938FBA600400F74 /* LearnAndActHeader.swift */,
+				A37D5DE42938FBA500400F74 /* LearnAndActViewCell.swift */,
+				A37D5DE52938FBA500400F74 /* LearnAndActViewModel.swift */,
+			);
+			path = LearnAndAct;
+			sourceTree = "<group>";
+		};
 		C80C11F228B3CD3E0062922A /* MockTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -7706,6 +7735,8 @@
 		E40A18F61EDC73D5006B7F28 /* Entitlements */ = {
 			isa = PBXGroup;
 			children = (
+				A3F87CA1294C740400957516 /* Karma.entitlements */,
+				A3F87CA2294C740400957516 /* KarmaDebug.entitlements */,
 				E40A18F71EDC73D5006B7F28 /* Fennec.entitlements */,
 				E40A18F81EDC73D5006B7F28 /* FennecEnterprise.entitlements */,
 				E40A18F91EDC73D5006B7F28 /* Firefox.entitlements */,
@@ -7817,6 +7848,8 @@
 		E60961841B62B7E100DD640F /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				A3F87C9B294C73ED00957516 /* Karma_Debug.xcconfig */,
+				A3F87C9C294C73ED00957516 /* Karma.xcconfig */,
 				8A2B1A5B28216C4C0061216B /* Common.xcconfig */,
 				8A2B1A5A28216C4C0061216B /* Debug.xcconfig */,
 				8A2B1A5C28216C4D0061216B /* Release.xcconfig */,
@@ -7912,6 +7945,8 @@
 		E689C6FF1E0C716F008BAADB /* Entitlements */ = {
 			isa = PBXGroup;
 			children = (
+				A3F87CA0294C73FD00957516 /* KarmaApplication.entitlements */,
+				A3F87C9F294C73FD00957516 /* KarmaDebug.entitlements */,
 				E6F738761EB7A97500B50143 /* FirefoxApplication.entitlements */,
 				E6F738751EB7A97100B50143 /* FirefoxBetaApplication.entitlements */,
 				E6F738741EB7A8D300B50143 /* FennecApplication.entitlements */,
@@ -8107,6 +8142,7 @@
 		F8324A082649A188007E4BFA /* CredentialProvider */ = {
 			isa = PBXGroup;
 			children = (
+				A3F87CA3294C741200957516 /* CredentialProviderKarmaDebug.entitlements */,
 				C8CE38B0265E71FE0009B09E /* Cells */,
 				C8CE38B4265E71FE0009B09E /* Extensions */,
 				C874FC642661367900EBE86E /* MainInterface.storyboard */,
@@ -8361,6 +8397,7 @@
 		F84B21F11A0910F600AAB793 /* Frontend */ = {
 			isa = PBXGroup;
 			children = (
+				A3DEA004294A0E3300A28297 /* KarmaConfig.swift */,
 				8AD40FB827BAD1DD00672675 /* TabContentsScripts */,
 				8AD40FB727BAD1D600672675 /* Toolbar+URLBar */,
 				8AED23C327AC1F8700DE7E97 /* Components */,
@@ -8415,6 +8452,7 @@
 		F84B22211A09122500AAB793 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A37D5DE32938FB9100400F74 /* LearnAndAct */,
 				C834ACD028D3ACA900203AD1 /* BlurrableCollectionViewCell.swift */,
 				8AB5958628412B620090F4AE /* CustomizeHome */,
 				DF036E41274FD3FC002E834E /* HistoryHighlights */,
@@ -9597,6 +9635,7 @@
 				E4CD9F5B1A71506C00318571 /* Reader.css in Resources */,
 				A3A8717929379ECE00C76AC2 /* ProximaNova-Extrabold.otf in Resources */,
 				D0FCF8061FE4772D004A7995 /* AllFramesAtDocumentEnd.js in Resources */,
+				A3F87C9D294C73EE00957516 /* Karma_Debug.xcconfig in Resources */,
 				EBC9D38622D4D56F0011D881 /* disconnect-block-cookies-analytics.json in Resources */,
 				D37524871C6E8B5A00A5F6C2 /* topdomains.txt in Resources */,
 				7B4980A81CE363ED0017547C /* Settings.xcassets in Resources */,
@@ -9626,6 +9665,7 @@
 				EB84945722D4FA8A0004C2E2 /* disconnect-block-fingerprinting.json in Resources */,
 				E4B7B7681A793CF20022C5E0 /* FiraSans-Bold.ttf in Resources */,
 				8A2B1A5D28216C4D0061216B /* Debug.xcconfig in Resources */,
+				A3F87C9E294C73EE00957516 /* Karma.xcconfig in Resources */,
 				E4B7B7781A793CF20022C5E0 /* FiraSans-Italic.ttf in Resources */,
 				0BA1E00E1B03FB0B007675AF /* NetError.html in Resources */,
 				23BEA768251A99ED00A014BF /* NewYorkMedium-BoldItalic.otf in Resources */,
@@ -10566,6 +10606,7 @@
 				43446CEA2412066500F5C643 /* UIViewController+Extension.swift in Sources */,
 				8A471185287F6E4800F5A6EA /* SeparatorTableViewCell.swift in Sources */,
 				D301AAEE1A3A55B70078DD1D /* GridTabViewController.swift in Sources */,
+				A37D5DE82938FBA600400F74 /* LearnAndActViewModel.swift in Sources */,
 				EB9A179B20E69A7F00B12184 /* LegacyThemeManager.swift in Sources */,
 				EBFDB790211C83A5005CCA2F /* BrowserViewController+FindInPage.swift in Sources */,
 				C8A012F126AB07D70096A7A7 /* JumpBackInViewModel.swift in Sources */,
@@ -10599,6 +10640,7 @@
 				F85C7F0E2711C556004BDBA4 /* SettingsViewController.swift in Sources */,
 				74C027451B2A348C001B1E88 /* SessionData.swift in Sources */,
 				C84266752728462900382274 /* AccessibilityIdentifiers.swift in Sources */,
+				A37D5DE72938FBA600400F74 /* LearnAndActViewCell.swift in Sources */,
 				DA27EEDB28BADF4700DD6F5D /* MenuBuilderHelper.swift in Sources */,
 				E1877A81286E0EFD00F5BDF2 /* WebViewNavigationHandler.swift in Sources */,
 				274A36CC239EB99400A21587 /* LibraryPanelContextMenu.swift in Sources */,
@@ -10755,6 +10797,7 @@
 				6669B5E2211418A200CA117B /* WebsiteDataSearchResultsViewController.swift in Sources */,
 				D51EA5CF26406D8300334331 /* ExperimentsViewController.swift in Sources */,
 				1DFE57FB27B2CB870025DE58 /* HighlightItem.swift in Sources */,
+				A37D5DE92938FBA600400F74 /* LearnAndActHeader.swift in Sources */,
 				CA77ABFD24773C92005079F9 /* BreachAlertsManager.swift in Sources */,
 				8AB8572727D93AEC0075C173 /* TopSiteHistoryManager.swift in Sources */,
 				C81A8F2526D3ED1900EBA539 /* UIWindow+Extension.swift in Sources */,
@@ -10813,6 +10856,7 @@
 				63306D3921103EAE00F25400 /* SavedTab.swift in Sources */,
 				2F44FCCB1A9E972E00FD20CC /* SearchEnginePicker.swift in Sources */,
 				1DA3CE5F24EEE7C600422BB2 /* TabDataRetriever.swift in Sources */,
+				A3DEA005294A0E3400A28297 /* KarmaConfig.swift in Sources */,
 				D04D1B92209790B60074B35F /* Toast.swift in Sources */,
 				8AD5702F27AB4DEA005BFDC8 /* UIStackView+Extension.swift in Sources */,
 				8AE80BBA2891C0C300BC12EA /* JumpBackInSectionLayout.swift in Sources */,

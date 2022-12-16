@@ -16,7 +16,7 @@ import UIKit
 
 
 // Activity Stream header view
-class LearnAndActHeader: UICollectionReusableView {
+class LearnAndActHeader: UICollectionReusableView, ReusableCell {
 
     lazy var label: UILabel = .build { label in
         label.text = "Learn & Act"
@@ -35,12 +35,12 @@ class LearnAndActHeader: UICollectionReusableView {
         addSubviews(label, subTitleLabel)
 
         label.snp.makeConstraints { make in
-            make.leading.equalToSuperview().offset(FirefoxHomeHeaderViewUX.insets)
+            make.leading.equalToSuperview().offset(10)
             make.top.equalToSuperview()
         }
         
         subTitleLabel.snp.makeConstraints { make in
-            make.leading.equalToSuperview().offset(FirefoxHomeHeaderViewUX.insets)
+            make.leading.equalToSuperview().offset(10)
             make.top.equalTo(label.snp.bottom).offset(-10)
 
             make.bottom.equalToSuperview().offset(-10)

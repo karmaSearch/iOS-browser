@@ -15,8 +15,8 @@ protocol HomepageDataModelDelegate: AnyObject {
 class HomepageViewModel: FeatureFlaggable {
 
     struct UX {
-        static let spacingBetweenSections: CGFloat = 32
-        static let standardInset: CGFloat = 18
+        static let spacingBetweenSections: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 24 : 0
+        static let standardInset: CGFloat = 20
         static let iPadInset: CGFloat = 50
         static let iPadTopSiteInset: CGFloat = 25
 
@@ -75,7 +75,8 @@ class HomepageViewModel: FeatureFlaggable {
     var historyHighlightsViewModel: HistoryHighlightsViewModel
     var pocketViewModel: PocketViewModel
     var customizeButtonViewModel: CustomizeHomepageSectionViewModel
-
+    var learnAndActViewModel: LearnAndActViewModel
+    
     var shouldDisplayHomeTabBanner: Bool {
         return messageCardViewModel.shouldDisplayMessageCard
     }
@@ -129,6 +130,8 @@ class HomepageViewModel: FeatureFlaggable {
         pocketDataAdaptor.delegate = pocketViewModel
 
         self.customizeButtonViewModel = CustomizeHomepageSectionViewModel()
+        
+        self.learnAndActViewModel = LearnAndActViewModel()
         self.childViewModels = [headerViewModel,
                                 messageCardViewModel,
                                 topSiteViewModel,
@@ -136,6 +139,7 @@ class HomepageViewModel: FeatureFlaggable {
                                 recentlySavedViewModel,
                                 historyHighlightsViewModel,
                                 pocketViewModel,
+                                learnAndActViewModel,
                                 customizeButtonViewModel]
         self.isPrivate = isPrivate
 
@@ -146,6 +150,7 @@ class HomepageViewModel: FeatureFlaggable {
         pocketViewModel.delegate = self
         jumpBackInViewModel.delegate = self
         messageCardViewModel.delegate = self
+        learnAndActViewModel.delegate = self
 
         updateEnabledSections()
     }

@@ -168,6 +168,9 @@ class HomepageViewController: UIViewController, HomePanel, FeatureFlaggable {
         collectionView.register(LabelButtonHeaderView.self,
                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                                 withReuseIdentifier: LabelButtonHeaderView.cellIdentifier)
+        collectionView.register(LearnAndActHeader.self,
+                                forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+                                withReuseIdentifier: LearnAndActHeader.cellIdentifier)
 
         collectionView.keyboardDismissMode = .onDrag
         collectionView.addGestureRecognizer(longPressRecognizer)
@@ -420,11 +423,23 @@ extension HomepageViewController: UICollectionViewDelegate, UICollectionViewData
 
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         guard kind == UICollectionView.elementKindSectionHeader,
-              let headerView = collectionView.dequeueReusableSupplementaryView(
+              let sectionViewModel = viewModel.getSectionViewModel(shownSection: indexPath.section)
+        else { return UICollectionReusableView() }
+        
+        if sectionViewModel.sectionType == .learnAndAct {
+            guard let headerView = collectionView.dequeueReusableSupplementaryView(
+                    ofKind: UICollectionView.elementKindSectionHeader,
+                    withReuseIdentifier: LearnAndActHeader.cellIdentifier,
+                    for: indexPath) as? LearnAndActHeader
+            else { return UICollectionReusableView() }
+            
+            return headerView
+        }
+        
+        guard let headerView = collectionView.dequeueReusableSupplementaryView(
                 ofKind: UICollectionView.elementKindSectionHeader,
                 withReuseIdentifier: LabelButtonHeaderView.cellIdentifier,
-                for: indexPath) as? LabelButtonHeaderView,
-              let sectionViewModel = viewModel.getSectionViewModel(shownSection: indexPath.section)
+                for: indexPath) as? LabelButtonHeaderView
         else { return UICollectionReusableView() }
 
         // Jump back in header specific setup
@@ -574,6 +589,14 @@ private extension HomepageViewController {
         // Customize home
         viewModel.customizeButtonViewModel.onTapAction = { [weak self] _ in
             self?.openCustomizeHomeSettings()
+        }
+        
+        viewModel.learnAndActViewModel.onTapTileAction = { [weak self] url in
+            self?.showSiteWithURLHandler(url)
+        }
+        
+        viewModel.learnAndActViewModel.onLongPressTileAction = { [weak self] (site, sourceView) in
+            self?.contextMenuHelper.presentContextMenu(for: site, with: sourceView, sectionType: .learnAndAct)
         }
     }
 

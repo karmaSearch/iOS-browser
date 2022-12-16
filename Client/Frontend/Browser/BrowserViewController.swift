@@ -1881,6 +1881,44 @@ extension BrowserViewController: HomePanelDelegate {
     func homePanelDidRequestToOpenSettings(at settingsPage: AppSettingsDeeplinkOption) {
         showSettingsWithDeeplink(to: settingsPage)
     }
+    
+    func homePanelDidRequestToOpenSettings(caller: UIButton) {
+        self.openMenu(button: caller)
+    }
+
+    func openMenu(button: UIButton) {
+
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+        libraryDrawerViewController?.close(immediately: true)
+       /* var actions: [[PhotonActionSheetItem]] = []
+        
+        let section0 = getLibraryActions(vcDelegate: self)
+        let section1 = getKarmaActions(vcDelegate: self)
+        var section2 = getOtherPanelActions(vcDelegate: self)
+        section2.append(contentsOf: getSettingsAction(vcDelegate: self))
+        
+        actions.append(contentsOf: [section0, section1, section2])
+
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        if let screenshot = appDelegate.window?.screenshot() {
+            let blurredImage = screenshot.applyBlur(withRadius: 5,
+                                                    blurType: BOXFILTER,
+                                                    tintColor: UIColor.black.withAlphaComponent(0.1),
+                                                    saturationDeltaFactor: 1.8,
+                                                    maskImage: nil)
+            overlayView = UIImageView(image: blurredImage)
+            overlayView!.alpha = 0
+            view.addSubview(overlayView!)
+            UIView.animate(withDuration: 0.5) {
+                self.overlayView!.alpha = 1
+            }
+
+        }
+        presentSheetWith(actions: actions, on: self, from: button, customizeForMenu: true)
+        */
+
+    }
 }
 
 // MARK: - SearchViewController
