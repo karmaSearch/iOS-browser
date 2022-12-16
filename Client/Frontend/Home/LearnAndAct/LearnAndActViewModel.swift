@@ -59,7 +59,7 @@ class LearnAndActCellViewModel {
 class LearnAndActViewModel {
     struct UX {
         static let numberOfItemsInColumn = 1
-        static let fractionalWidthiPhonePortrait: CGFloat = 0.90
+        static let fractionalWidthiPhonePortrait: CGFloat = 1
         static let fractionalWidthiPhoneLanscape: CGFloat = 0.46
     }
     
@@ -79,14 +79,26 @@ class LearnAndActViewModel {
                 LearnAndActViewModel.cache.setObject(object, forKey: self.cacheKey)
                 self.learnAndActViewModels.removeAll()
 
-                list.forEach { bloc in
-                    self.learnAndActViewModels.append(LearnAndActCellViewModel(item: bloc))
+                list.forEach { [weak self] bloc in
+                    self?.bind(viewModel: LearnAndActCellViewModel(item: bloc))
                 }
                 guard self.isEnabled else { return }
                 self.delegate?.reloadView()
             }
             
         }
+    }
+    
+    private func bind(viewModel: LearnAndActCellViewModel) {
+        viewModel.onTap = { [weak self] indexPath in
+            
+            if let siteUrl = self?.learnAndActViewModels[indexPath.row].link,
+                let url = URL(string: siteUrl) {
+                self?.onTapTileAction?(url)
+            }
+        }
+
+        learnAndActViewModels.append(viewModel)
     }
 
     func getDatas() async -> [LearnAndActBloc]{
@@ -133,12 +145,12 @@ class LearnAndActViewModel {
     
     func getWidthDimension(device: UIUserInterfaceIdiom = UIDevice.current.userInterfaceIdiom,
                            isLandscape: Bool = UIWindow.isLandscape) -> NSCollectionLayoutDimension {
-        if device == .pad {
+         if device == .pad {
             return .absolute(LearnAndActViewCell.UX.cellWidth) // iPad
         } else if isLandscape {
             return .fractionalWidth(UX.fractionalWidthiPhoneLanscape)
         } else {
-            return .fractionalWidth(UX.fractionalWidthiPhonePortrait)
+            return .absolute(UIScreen.main.bounds.size.width - LearnAndActViewCell.UX.padding*2)
         }
     }
 }

@@ -16,7 +16,7 @@ class HomepageViewModel: FeatureFlaggable {
 
     struct UX {
         static let spacingBetweenSections: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 24 : 0
-        static let standardInset: CGFloat = 20
+        static let standardInset: CGFloat = 15
         static let iPadInset: CGFloat = 50
         static let iPadTopSiteInset: CGFloat = 25
 

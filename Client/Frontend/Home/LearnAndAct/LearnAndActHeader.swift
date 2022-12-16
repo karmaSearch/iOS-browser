@@ -35,12 +35,12 @@ class LearnAndActHeader: UICollectionReusableView, ReusableCell {
         addSubviews(label, subTitleLabel)
 
         label.snp.makeConstraints { make in
-            make.leading.equalToSuperview().offset(10)
+            make.leading.equalToSuperview()
             make.top.equalToSuperview()
         }
         
         subTitleLabel.snp.makeConstraints { make in
-            make.leading.equalToSuperview().offset(10)
+            make.leading.equalToSuperview()
             make.top.equalTo(label.snp.bottom).offset(-10)
 
             make.bottom.equalToSuperview().offset(-10)
