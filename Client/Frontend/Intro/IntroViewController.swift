@@ -1,287 +1,234 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0
 
 import Foundation
 import UIKit
 import Shared
 
-class IntroViewController: UIViewController, OnViewDismissable {
-    var onViewDismissed: (() -> Void)? = nil
-    // private var
-    // Private views
-    private lazy var scrollView: UIScrollView = {
-       let scrollView = UIScrollView()
-        scrollView.delegate = self
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        scrollView.isPagingEnabled = true
-        return scrollView
-    }()
-    
-    private lazy var carouselStackView: UIStackView = {
-        let stackView = UIStackView()
-        stackView.axis = .horizontal
-        stackView.distribution = .fillEqually
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        return stackView
-    }()
-    
-    private lazy var closeButton: UIButton = {
-        let closeButton = UIButton()
-        closeButton.tintColor = UIColor.Photon.Grey11
-        closeButton.setTitle(.IntroButtonSkip, for: .normal)
-        closeButton.titleLabel?.font = UIFont.customFont(ofSize: 18, weight: .medium)
-        closeButton.setImage(UIImage(named: "skip-right-arrow"), for: .normal)
-        closeButton.semanticContentAttribute = .forceRightToLeft
-        return closeButton
+class IntroViewController: UIViewController, OnboardingViewControllerProtocol {
+
+    private var viewModel: IntroViewModel
+    private let profile: Profile
+    private var onboardingCards = [OnboardingCardViewController]()
+    var notificationCenter: NotificationProtocol = NotificationCenter.default
+    var didFinishFlow: (() -> Void)?
+
+    struct UX {
+        static let closeButtonSize: CGFloat = 30
+        static let closeHorizontalMargin: CGFloat = 24
+        static let closeVerticalMargin: CGFloat = 20
+        static let pageControlHeight: CGFloat = 40
+        static let pageControlBottomPadding: CGFloat = 8
+    }
+
+    // MARK: - Var related to onboarding
+    private lazy var closeButton: UIButton = .build { button in
+        button.setImage(UIImage(named: ImageIdentifiers.bottomSheetClose), for: .normal)
+        button.addTarget(self, action: #selector(self.closeOnboarding), for: .touchUpInside)
+        button.accessibilityIdentifier = AccessibilityIdentifiers.Onboarding.closeButton
+    }
+
+    private lazy var pageController: UIPageViewController = {
+        let pageVC = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
+        pageVC.dataSource = self
+        pageVC.delegate = self
+        return pageVC
     }()
 
-    private lazy var welcomeCard1: IntroScreenWelcomeView = {
-        let welcomeCardView = IntroScreenWelcomeView()
-        let logos: [String] = {
-            if Locale.current.identifier.contains("fr") {
-                return ["aspas-logo", "l214-logo", "naat-logo"]
-            } else {
-                return []
-            }
-        }()
+    private lazy var pageControl: UIPageControl = .build { pageControl in
+        pageControl.currentPage = 0
+        pageControl.numberOfPages = self.viewModel.enabledCards.count
+        pageControl.currentPageIndicatorTintColor = UIColor.Photon.Blue50
+        pageControl.pageIndicatorTintColor = UIColor.Photon.LightGrey40
+        pageControl.isUserInteractionEnabled = false
+        pageControl.accessibilityIdentifier = AccessibilityIdentifiers.Onboarding.pageControl
+    }
 
-        welcomeCardView.setData(title: .IntroSlidesTitle1, description: .IntroSlidesSubTitle1, icon: "welcome-icon-1" , logos: logos, background: "welcome-background-1")
-        welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
-        welcomeCardView.clipsToBounds = true
-        return welcomeCardView
-    }()
-    
-    private lazy var welcomeCard2: IntroScreenWelcomeView = {
-        let welcomeCardView = IntroScreenWelcomeView()
-        welcomeCardView.setData(title: .IntroSlidesTitle2, description: .IntroSlidesSubTitle2,  icon: "welcome-icon-2", background: "welcome-background-2")
-        welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
-        welcomeCardView.clipsToBounds = true
-        return welcomeCardView
-    }()
-    
-    private lazy var welcomeCard3: IntroScreenWelcomeView = {
-        let welcomeCardView = IntroScreenWelcomeView()
-        welcomeCardView.setData(title: .IntroSlidesTitle3, description: .IntroSlidesSubTitle3, icon: "welcome-icon-3", background: "welcome-background-3")
-        welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
-        welcomeCardView.clipsToBounds = true
-        return welcomeCardView
-    }()
-    
-    private lazy var defaultBrowserView: DefaultBrowserOnboardingView = {
-        let view = DefaultBrowserOnboardingView()
-        view.translatesAutoresizingMaskIntoConstraints = true
-        view.layoutSubviews()
-        return view
-    }()
-    
-    private lazy var tutorialCard1: IntroTutoView = {
-        let tutoCardView = IntroTutoView()
-        tutoCardView.setData(screenshotImage: "screenshot_tuto_1", titleButton: .IntroNextButtonTitle)
-        tutoCardView.translatesAutoresizingMaskIntoConstraints = false
-        tutoCardView.clipsToBounds = true
-        return tutoCardView
-    }()
-    
-    private lazy var tutorialCard2: IntroTutoView = {
-        let tutoCardView = IntroTutoView()
-        tutoCardView.setData(screenshotImage: "screenshot_tuto_2", titleButton: .IntroNextButtonTitle)
-        tutoCardView.translatesAutoresizingMaskIntoConstraints = false
-        tutoCardView.clipsToBounds = true
-        return tutoCardView
-    }()
-    
-    private lazy var tutorialCard3: IntroTutoView = {
-        let tutoCardView = IntroTutoView()
-        tutoCardView.setData(screenshotImage: "screenshot_tuto_3", titleButton: .IntroButtonTitleLast)
-        tutoCardView.translatesAutoresizingMaskIntoConstraints = false
-        tutoCardView.clipsToBounds = true
-        return tutoCardView
-    }()
-    
-    private lazy var pageControl: UIPageControl = {
-        let pageControl = UIPageControl()
-        pageControl.pageIndicatorTintColor = UIColor.Photon.Grey11
-        pageControl.translatesAutoresizingMaskIntoConstraints = false
-        pageControl.currentPageIndicatorTintColor = UIColor.Photon.Green60
-        pageControl.addTarget(self, action: #selector(pageChanged), for: .valueChanged)
-        return pageControl
-    }()
-
-    // Closure delegate
-    var didFinishClosure: ((IntroViewController, FxAPageType?) -> Void)?
-    let viewModel = DefaultBrowserOnboardingViewModel()
-    
     // MARK: Initializer
-    init() {
+    init(viewModel: IntroViewModel, profile: Profile) {
+        self.viewModel = viewModel
+        self.profile = profile
         super.init(nibName: nil, bundle: nil)
+
+        setupLayout()
+        setupNotifications(forObserver: self,
+                                   observing: [.DisplayThemeChanged])
+        applyTheme()
     }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
+    deinit {
+        notificationCenter.removeObserver(self)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        initialViewSetup()
+
+        setupPageController()
     }
 
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        onViewDismissed?()
-        onViewDismissed = nil
-    }
-    
     // MARK: View setup
-    private func initialViewSetup() {
-        view.backgroundColor = UIColor.Photon.DarkGrey90
-        setupIntroView()
-        if #available(iOS 14, *) {
-            setUpDefaultBrowser()
+    private func setupPageController() {
+        // Create onboarding card views
+        var cardViewController: OnboardingCardViewController
+        for cardType in viewModel.enabledCards {
+            if let viewModel = viewModel.getCardViewModel(cardType: cardType) {
+                if cardType == .wallpapers {
+                    cardViewController = WallpaperCardViewController(viewModel: viewModel,
+                                                                     delegate: self)
+                } else {
+                    cardViewController = OnboardingCardViewController(viewModel: viewModel,
+                                                                      delegate: self)
+                }
+                onboardingCards.append(cardViewController)
+            }
         }
-    }
-    
-    //onboarding intro view
-    private func setupIntroView() {
-        // Initialize
-        view.addSubviews(scrollView)
-        scrollView.addSubview(carouselStackView)
-        
-        view.addSubview(closeButton)
-        closeButton.addTarget(self, action: #selector(handleCloseButtonTapped), for: .touchUpInside)
-        closeButton.snp.makeConstraints { make in
-            make.bottom.equalTo(view.safeArea.bottom).inset(15)
-            make.right.equalToSuperview().inset(15)
-        }
-        
-        // Constraints
-        setUpScrollView()
 
-        setUpCarousel()
-        
+        if let firstViewController = onboardingCards.first {
+            pageController.setViewControllers([firstViewController],
+                                              direction: .forward,
+                                              animated: true,
+                                              completion: nil)
+        }
     }
-    
-    private func setUpScrollView() {
+
+    private func setupLayout() {
+        addChild(pageController)
+        view.addSubview(pageController.view)
+        pageController.didMove(toParent: self)
+        view.addSubviews(pageControl, closeButton)
+
         NSLayoutConstraint.activate([
-            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
-            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+            pageControl.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            pageControl.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,
+                                                constant: -UX.pageControlBottomPadding),
+            pageControl.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+
+            closeButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
+                                             constant: UX.closeVerticalMargin),
+            closeButton.trailingAnchor.constraint(equalTo: view.trailingAnchor,
+                                                  constant: -UX.closeHorizontalMargin),
+            closeButton.widthAnchor.constraint(equalToConstant: UX.closeButtonSize),
+            closeButton.heightAnchor.constraint(equalToConstant: UX.closeButtonSize),
         ])
     }
 
-    
-    private func setUpCarousel() {
-        
-        [welcomeCard1, welcomeCard2, welcomeCard3].forEach { view in
-            carouselStackView.addArrangedSubview(view)
-            setupWelcomeCard(welcomeCard: view)
+    @objc private func closeOnboarding() {
+        didFinishFlow?()
+        viewModel.sendCloseButtonTelemetry(index: pageControl.currentPage)
+    }
+
+    func getNextOnboardingCard(index: Int, goForward: Bool) -> OnboardingCardViewController? {
+        guard let index = viewModel.getNextIndex(currentIndex: index, goForward: goForward) else { return nil }
+
+        return onboardingCards[index]
+    }
+
+    // Used to programmatically set the pageViewController to show next card
+    func moveToNextPage(cardType: IntroViewModel.InformationCards) {
+        if let nextViewController = getNextOnboardingCard(index: cardType.rawValue, goForward: true) {
+            pageControl.currentPage = cardType.rawValue + 1
+            pageController.setViewControllers([nextViewController], direction: .forward, animated: false)
         }
-        
-        [tutorialCard1, tutorialCard2, tutorialCard3].forEach { view in
-            carouselStackView.addArrangedSubview(view)
-            setupIntroCard(introCard: view)
+    }
+
+    // Due to restrictions with PageViewController we need to get the index of the current view controller
+    // to calculate the next view controller
+    func getCardIndex(viewController: OnboardingCardViewController) -> Int? {
+        let cardType = viewController.viewModel.cardType
+
+        guard let index = viewModel.enabledCards.firstIndex(of: cardType) else { return nil }
+
+        return index
+    }
+}
+
+// MARK: UIPageViewControllerDataSource & UIPageViewControllerDelegate
+extension IntroViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+
+        guard let onboardingVC = viewController as? OnboardingCardViewController,
+              let index = getCardIndex(viewController: onboardingVC) else {
+              return nil
         }
 
-        view.addSubviews(pageControl)
+        pageControl.currentPage = index
+        return getNextOnboardingCard(index: index, goForward: false)
+    }
 
-        NSLayoutConstraint.activate([
-            carouselStackView.topAnchor.constraint(equalTo: scrollView.topAnchor),
-            carouselStackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-            carouselStackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-            carouselStackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-            carouselStackView.heightAnchor.constraint(equalTo: scrollView.heightAnchor),
-            pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            pageControl.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30)
-        ])
-        
-        pageControl.numberOfPages = carouselStackView.arrangedSubviews.count
-        pageControl.currentPage = 0
-        
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+
+        guard let onboardingVC = viewController as? OnboardingCardViewController,
+              let index = getCardIndex(viewController: onboardingVC) else {
+              return nil
+        }
+
+        pageControl.currentPage = index
+        return getNextOnboardingCard(index: index, goForward: true)
+
     }
-                                
-    private func setupWelcomeCard(welcomeCard: IntroScreenWelcomeView) {
-        NSLayoutConstraint.activate([
-            welcomeCard1.heightAnchor.constraint(equalTo: carouselStackView.heightAnchor),
-            welcomeCard1.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
-        ])
-        
-        welcomeCard.nextClosure = { [weak self] in
-            guard let self = self else { return }
-            
-            self.goToNextPage()
+}
+
+extension IntroViewController: OnboardingCardDelegate {
+    func showNextPage(_ cardType: IntroViewModel.InformationCards) {
+        guard cardType != viewModel.enabledCards.last else {
+            self.didFinishFlow?()
+            return
+        }
+
+        moveToNextPage(cardType: cardType)
+    }
+
+    func primaryAction(_ cardType: IntroViewModel.InformationCards) {
+        switch cardType {
+        case .welcome, .wallpapers:
+            moveToNextPage(cardType: cardType)
+        case .signSync:
+            presentSignToSync()
+        default:
+            break
         }
     }
-    
-    private func setupIntroCard(introCard: IntroTutoView) {
-        NSLayoutConstraint.activate([
-            introCard.heightAnchor.constraint(equalTo: carouselStackView.heightAnchor),
-            introCard.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
-        ])
-        
-        introCard.nextClosure = { [weak self] in
-            guard let self = self else { return }
-            self.goToNextPage()
+
+    // Extra step to make sure pageControl.currentPage is the right index card
+    // because UIPageViewControllerDataSource call fails
+    func pageChanged(_ cardType: IntroViewModel.InformationCards) {
+        if let cardIndex = viewModel.enabledCards.firstIndex(of: cardType),
+           cardIndex != pageControl.currentPage {
+            pageControl.currentPage = cardIndex
         }
     }
-    
-    private func setUpDefaultBrowser() {
-        view.addSubviews(defaultBrowserView)
-        defaultBrowserView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+
+    private func presentSignToSync(_ fxaOptions: FxALaunchParams? = nil,
+                                  flowType: FxAPageType = .emailLoginFlow,
+                                  referringPage: ReferringPage = .onboarding) {
+        let singInSyncVC = FirefoxAccountSignInViewController.getSignInOrFxASettingsVC(fxaOptions,
+                                                                                      flowType: flowType,
+                                                                                      referringPage: referringPage,
+                                                                                      profile: profile)
+        let controller: DismissableNavigationViewController
+        let buttonItem = UIBarButtonItem(title: .SettingsSearchDoneButton,
+                                         style: .plain,
+                                         target: self,
+                                         action: #selector(dismissSignInViewController))
+        let theme = BuiltinThemeName(rawValue: LegacyThemeManager.instance.current.name) ?? .normal
+        buttonItem.tintColor = theme == .dark ? UIColor.theme.homePanel.activityStreamHeaderButton : UIColor.Photon.Blue50
+        singInSyncVC.navigationItem.rightBarButtonItem = buttonItem
+        controller = DismissableNavigationViewController(rootViewController: singInSyncVC)
+        controller.onViewDismissed = {
+            self.closeOnboarding()
         }
-        
-        defaultBrowserView.isHidden = true
-        
-        defaultBrowserView.closeClosure = { [weak self] in
-            guard let self = self else { return }
-            self.didFinishClosure?(self, nil)
-        }
-        defaultBrowserView.settingsClosure = { [weak self] in
-            guard let self = self else { return }
-            self.goToSettings()
-            self.didFinishClosure?(self, nil)
-        }
+        self.present(controller, animated: true)
     }
-    
-    private func goToNextPage() {
-        if self.pageControl.currentPage == self.pageControl.numberOfPages-1 {
-            self.handleCloseButtonTapped()
-        } else {
-            let isAnimated = self.pageControl.currentPage < 3
-            self.pageControl.currentPage += 1
-            self.pageChanged(self.pageControl, animated: isAnimated)
-        }
+
+    @objc func dismissSignInViewController() {
+        dismiss(animated: true, completion: nil)
+        closeOnboarding()
     }
-    
-    @objc func pageChanged(_ sender: UIPageControl, animated: Bool = true) {
-        let page: Int = sender.currentPage
-        var frame: CGRect = self.scrollView.frame
-        frame.origin.x = frame.size.width * CGFloat(page)
-        frame.origin.y = 0
-        self.closeButton.isHidden = (page == sender.numberOfPages-1)
-        self.scrollView.scrollRectToVisible(frame, animated: animated)
-    }
-    
-    @objc private func goToSettings() {
-        viewModel.goToSettings?()
-        UserDefaults.standard.set(true, forKey: "DidDismissDefaultBrowserCard") // Don't show default browser card if this button is clicked
-        TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .goToSettingsDefaultBrowserOnboarding)
-    }
-    
-    @objc func handleCloseButtonTapped() {
-        let currentPage = self.pageControl.currentPage
-        
-        if #available(iOS 14, *) {
-            self.scrollView.isHidden = true
-            self.pageControl.isHidden = true
-            self.defaultBrowserView.isHidden = false
-            self.closeButton.isHidden = true
-        } else {
-            self.didFinishClosure?(self, nil)
-        }
-    }
-    
 }
 
 // MARK: UIViewController setup
@@ -301,12 +248,26 @@ extension IntroViewController {
     }
 }
 
-// MARK: UIScrollViewDelegate
-extension IntroViewController: UIScrollViewDelegate {
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        let page : Int = Int(round(scrollView.contentOffset.x / scrollView.frame.width))
-        pageControl.currentPage = page
-        self.closeButton.isHidden = (page == pageControl.numberOfPages-1)
+// MARK: - NotificationThemeable and Notifiable
+extension IntroViewController: NotificationThemeable, Notifiable {
+    func handleNotifications(_ notification: Notification) {
+        switch notification.name {
+        case .DisplayThemeChanged:
+            applyTheme()
+        default:
+            break
+        }
+    }
 
+    func applyTheme() {
+        let theme = BuiltinThemeName(rawValue: LegacyThemeManager.instance.current.name) ?? .normal
+
+        let indicatorColor = theme == .dark ? UIColor.theme.homePanel.activityStreamHeaderButton : UIColor.Photon.Blue50
+        pageControl.currentPageIndicatorTintColor = indicatorColor
+        view.backgroundColor = LegacyThemeManager.instance.current.onboarding.backgroundColor
+
+        onboardingCards.forEach { cardViewController in
+            cardViewController.applyTheme()
+        }
     }
 }
