@@ -555,6 +555,7 @@ class BrowserViewController: UIViewController {
 
         presentIntroViewController()
         presentUpdateViewController()
+        presentDBOnboardingViewController()
         screenshotHelper.viewIsVisible = true
 
         if let toast = self.pendingToast {
