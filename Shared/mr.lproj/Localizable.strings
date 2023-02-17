@@ -281,7 +281,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ यशस्वीरित्या डिस्कनेक्ट केले.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "हे उपकरण यशस्वीरित्या KARMA Sync मधुन डिस्कनेक्ट केले आहे.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "हे उपकरण यशस्वीरित्या Firefox Sync मधुन डिस्कनेक्ट केले आहे.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "ताळमेळ खंडीत";
@@ -290,7 +290,7 @@
 "FxAPush_DeviceDisconnected_title" = "ताळमेळ खंडीत";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "उपकरण KARMA Sync मधुन डिस्कनेक्ट केले आहे";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "उपकरण Firefox Sync मधुन डिस्कनेक्ट केले आहे";
 
 /* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
 "Help" = "मदत";

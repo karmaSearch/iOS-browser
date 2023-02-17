@@ -170,7 +170,7 @@
 "HistoryPanel.EmptySyncedTabsNullState.Description" = "Taispeánfar do chuid cluaisíní ó ghléasanna eile anseo.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Stair";
@@ -449,7 +449,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Tapáil le tosú";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
 
 /* Sepia theme setting in Reading View settings */
 "Sepia" = "Donnrua";

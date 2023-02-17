@@ -296,7 +296,7 @@
 "fxa.signin.camera-signin" = "Камерагыз ярдәмендә керегез";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "Компьютерыгызда KARMA-ны ачыгыз һәм KARMA.com/pair адресына күчегез";
+"fxa.signin.qr-link-instruction" = "Компьютерыгызда Firefox-ны ачыгыз һәм firefox.com/pair адресына күчегез";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Сканерларга әзер";
@@ -359,7 +359,7 @@
 "HistoryPanel.EmptySyncedTabsPanelNotSignedInState.Description" = "Башка җиһазларыгыздагы таблар исемлеген карау өчен керегез.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Тарих";
@@ -797,7 +797,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Башлау өчен басыгыз";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Карап чыгу";

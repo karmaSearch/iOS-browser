@@ -392,7 +392,7 @@
 "fxa.signin.camera-signin" = "Prijavite se s kamero";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "Na računalniku odprite KARMA in obiščite KARMA.com/pair";
+"fxa.signin.qr-link-instruction" = "Na računalniku odprite Firefox in obiščite firefox.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Pripravljeno za skeniranje";
@@ -404,7 +404,7 @@
 "FxA.SyncNow" = "Sinhroniziraj zdaj";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "KARMA Sync se je povezal z %@";
+"FxAPush_DeviceConnected_body" = "Firefox Sync se je povezal z %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Sync je povezan";
@@ -413,7 +413,7 @@
 "FxAPush_DeviceDisconnected_body" = "Naprava %@ je bila uspešno odklopljena.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Ta naprava ni več povezana s KARMA Sync.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Ta naprava ni več povezana s Firefox Sync.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Sync je prekinjen";
@@ -422,7 +422,7 @@
 "FxAPush_DeviceDisconnected_title" = "Sync je prekinjen";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Naprava je bila odklopljena iz KARMA Sync";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Naprava je bila odklopljena iz Firefox Sync";
 
 /* On the KARMA homepage, the string read by the voice over prompt for accessibility, for the button which changes the wallpaper */
 "FxHomepage.Wallpaper.ButtonLabel.v99" = "Logtip KARMAa, spremeni ozadje.";
@@ -458,7 +458,7 @@
 "HistoryPanel.EmptySyncedTabsPanelNotSignedInState.Description" = "Prijavite se za ogled seznama zavihkov drugih naprav.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Zgodovina";
@@ -826,7 +826,7 @@
 /* Label for the share button in the menu page. Pressing this button open the share menu to share the current website. */
 "Menu.Share.v99" = "Deli";
 
-/* Label for the KARMA Sync button in the menu page. Pressing this button open the sign in to KARMA page service to sync and save data. */
+/* Label for the Firefox Sync button in the menu page. Pressing this button open the sign in to KARMA page service to sync and save data. */
 "Menu.SyncAndSaveData.v103" = "Sinhroniziraj in shrani podatke";
 
 /* Toast displayed to the user after a tab has been sent successfully. */
@@ -928,10 +928,10 @@
 /* Describes an action on the sync onboarding page in our Onboarding screens. This string will be on a button so user can sign up or login directly in the onboarding. */
 "Onboarding.SyncAction.v102" = "Registrirajte se in se prijavite";
 
-/* Description for the sync onboarding page in our Onboarding screens. The user will be able to setup their KARMA sync account from that screen. */
+/* Description for the sync onboarding page in our Onboarding screens. The user will be able to setup their Firefox Sync account from that screen. */
 "Onboarding.SyncDescription.v102" = "Samodejno sinhronizirajte zavihke in zaznamke med napravami za brezhibno preskakovanje z naprave na napravo.";
 
-/* Title for the sync onboarding page in our Onboarding screens. The user will be able to setup their KARMA sync account from that screen. 'Stay in the flow' means that a person is fully immersed in an activity. The user will sync with their KARMA sync account to stay connected and immersed in the activity they are doing. */
+/* Title for the sync onboarding page in our Onboarding screens. The user will be able to setup their Firefox Sync account from that screen. 'Stay in the flow' means that a person is fully immersed in an activity. The user will sync with their Firefox Sync account to stay connected and immersed in the activity they are doing. */
 "Onboarding.SyncTitle.v102" = "Sinhronizirajte in ostanite pri stvari";
 
 /* Accessibility label for the wallpaper onboarding modal displayed on top of the homepage. This describes to the user that which type of wallpaper they are seeing. */
@@ -1193,7 +1193,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Tapnite za začetek";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Prikaži";
@@ -1549,13 +1549,13 @@
 /* Label used as a toggle item in Settings. When this is off, the user is opting out of all studies. */
 "Settings.Studies.Toggle.Title" = "Raziskave";
 
-/* Ddescription that appears in the settings screen to explain what KARMA Sync is useful for. */
+/* Ddescription that appears in the settings screen to explain what Firefox Sync is useful for. */
 "Settings.Sync.ButtonDescription.v103" = "Prijavite se in sinhronizirajte zavihke, zaznamke, gesla in še kaj.";
 
 /* Button label that appears in the settings to prompt the user to sign in to KARMA for iOS sync service to sync and save data. */
 "Settings.Sync.ButtonTitle.v103" = "Sinhroniziraj in shrani podatke";
 
-/* Title for the page where the user sign in to their KARMA Sync account. */
+/* Title for the page where the user sign in to their Firefox Sync account. */
 "Settings.Sync.SignInView.Title.v103" = "Sinhroniziraj in shrani podatke";
 
 /* This is the description for the setting that toggles the Inactive Tabs feature in the settings menu under the Tabs customization section. Inactive tabs are a separate section of tabs that appears in the Tab Tray, which can be enabled or not */

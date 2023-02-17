@@ -275,7 +275,7 @@
 "FxA.SyncNow" = "Синхронизиране";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "KARMA Sync е свързан към %@";
+"FxAPush_DeviceConnected_body" = "Firefox Sync е свързан към %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Sync е свързан";
@@ -284,7 +284,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ е успешно изключено.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Устройството е изключено успешно от KARMA Sync.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Устройството е изключено успешно от Firefox Sync.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Sync е изключен";
@@ -293,7 +293,7 @@
 "FxAPush_DeviceDisconnected_title" = "Sync е изключен";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Устройство е изключено успешно от KARMA Sync";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Устройство е изключено успешно от Firefox Sync";
 
 /* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
 "Help" = "Помощ";
@@ -683,7 +683,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Докоснете за начало";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Изглед";

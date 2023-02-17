@@ -350,7 +350,7 @@
 "fxa.signin.camera-signin" = "Kirjaudu sisään kamerallasi";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "Avaa tietokoneellasi KARMA ja siirry osoitteeseen KARMA.com/pair";
+"fxa.signin.qr-link-instruction" = "Avaa tietokoneellasi Firefox ja siirry osoitteeseen firefox.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Valmiina skannaamaan";
@@ -362,7 +362,7 @@
 "FxA.SyncNow" = "Synkronoi";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "KARMA Sync on yhdistänyt laitteeseen %@";
+"FxAPush_DeviceConnected_body" = "Firefox Sync on yhdistänyt laitteeseen %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Sync yhdistetty";
@@ -371,7 +371,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ on irrotettu onnistuneesti.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Tämä laite on irrotettu onnistuneesti KARMA Sync -palvelusta.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Tämä laite on irrotettu onnistuneesti Firefox Sync -palvelusta.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Synkronointi katkaistu";
@@ -380,7 +380,7 @@
 "FxAPush_DeviceDisconnected_title" = "Synkronointi poistettu käytöstä";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Laite on irrotettu KARMA Sync -palvelusta";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Laite on irrotettu Firefox Sync -palvelusta";
 
 /* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
 "Help" = "Ohje";
@@ -413,7 +413,7 @@
 "HistoryPanel.EmptySyncedTabsPanelNotSignedInState.Description" = "Kirjaudu sisään nähdäksesi listan muiden laitteidesi välilehdistä.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Historia";
@@ -1052,7 +1052,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Napauta aloittaaksesi";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Näytä";
@@ -1306,13 +1306,13 @@
 /* Label used as a toggle item in Settings. When this is off, the user is opting out of all studies. */
 "Settings.Studies.Toggle.Title" = "Tutkimukset";
 
-/* Ddescription that appears in the settings screen to explain what KARMA Sync is useful for. */
+/* Ddescription that appears in the settings screen to explain what Firefox Sync is useful for. */
 "Settings.Sync.ButtonDescription.v103" = "Kirjaudu sisään synkronoidaksesi välilehtesi, kirjanmerkkisi, salasanasi ja muita tietoja.";
 
 /* Button label that appears in the settings to prompt the user to sign in to KARMA for iOS sync service to sync and save data. */
 "Settings.Sync.ButtonTitle.v103" = "Synkronoi ja tallenna tiedot";
 
-/* Title for the page where the user sign in to their KARMA Sync account. */
+/* Title for the page where the user sign in to their Firefox Sync account. */
 "Settings.Sync.SignInView.Title.v103" = "Synkronoi ja tallenna tiedot";
 
 /* This is the description for the setting that toggles the Inactive Tabs feature in the settings menu under the Tabs customization section. Inactive tabs are a separate section of tabs that appears in the Tab Tray, which can be enabled or not */

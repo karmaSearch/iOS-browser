@@ -359,7 +359,7 @@
 "fxa.signin.camera-signin" = "Hyni Me Kamerën Tuaj";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "Te kompjuteri juaj, hapni KARMA-in dhe kaloni te KARMA.com/pair";
+"fxa.signin.qr-link-instruction" = "Te kompjuteri juaj, hapni Firefox-in dhe kaloni te firefox.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Gati për Skanim";
@@ -371,7 +371,7 @@
 "FxA.SyncNow" = "Njëkohësoji Tani";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "KARMA Sync është lidhur me %@";
+"FxAPush_DeviceConnected_body" = "Firefox Sync është lidhur me %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Lidhur Me Sync";
@@ -380,7 +380,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ u shkëput me sukses.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Kjo pajisje është shkëputur me sukses nga shërbimi KARMA Sync.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Kjo pajisje është shkëputur me sukses nga shërbimi Firefox Sync.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Me Sync të Shkëputur";
@@ -389,7 +389,7 @@
 "FxAPush_DeviceDisconnected_title" = "Me Sync të Shkëputur";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Është shkëputur një pajisje nga KARMA Sync-u";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Është shkëputur një pajisje nga Firefox Sync-u";
 
 /* On the KARMA homepage, the string read by the voice over prompt for accessibility, for the button which changes the wallpaper */
 "FxHomepage.Wallpaper.ButtonLabel.v99" = "Stemë KARMA-i, ndryshoni sfondin.";
@@ -425,7 +425,7 @@
 "HistoryPanel.EmptySyncedTabsPanelNotSignedInState.Description" = "Bëni hyrjen që të shihni një listë skedash nga pajisjet tuaja të tjera.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Historik";
@@ -1061,7 +1061,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Prekeni që të fillohet";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Shiheni";

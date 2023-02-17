@@ -242,7 +242,7 @@
 "fxa.signin.camera-signin" = "Aniciu de sesión cola cámara";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "Nun ordenador, abri KARMA y vete a https://KARMA.com/pair";
+"fxa.signin.qr-link-instruction" = "Nun ordenador, abri Firefox y vete a https://firefox.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Escaniar";
@@ -254,7 +254,7 @@
 "FxA.SyncNow" = "Sincronizar agora";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "KARMA Sync conectóse con %@";
+"FxAPush_DeviceConnected_body" = "Firefox Sync conectóse con %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Sync conectóse";
@@ -263,7 +263,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ desconectóse correutamente.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Esti preséu desconectóse de KARMA Sync correutamente.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Esti preséu desconectóse de Firefox Sync correutamente.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Sync desconectóse";
@@ -272,7 +272,7 @@
 "FxAPush_DeviceDisconnected_title" = "Sync desconectóse";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Un preséu desconectóse de KARMA Sync";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Un preséu desconectóse de Firefox Sync";
 
 /* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
 "Help" = "Ayuda";
@@ -305,7 +305,7 @@
 "HistoryPanel.EmptySyncedTabsPanelNotSignedInState.Description" = "Anicia sesión pa ver una llista de les llingüetes abiertes n'otros preseos de to.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Historial";
@@ -719,7 +719,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Calca pa comenzar";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
 
 /* Sepia theme setting in Reading View settings */
 "Sepia" = "Sepia";

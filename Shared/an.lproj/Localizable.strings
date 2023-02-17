@@ -296,7 +296,7 @@
 "fxa.signin.camera-signin" = "Inicia sesión con a tuya camara";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "En o tuyo equipo, ubre KARMA y ves ta KARMA.com/pair";
+"fxa.signin.qr-link-instruction" = "En o tuyo equipo, ubre Firefox y ves ta firefox.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Listo pa escaniar";
@@ -308,7 +308,7 @@
 "FxA.SyncNow" = "Sincronizar agora";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "KARMA Sync s'ha connectau a %@";
+"FxAPush_DeviceConnected_body" = "Firefox Sync s'ha connectau a %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Sync connectau";
@@ -317,7 +317,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ s'ha desconnectau correctament.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Este dispositivo s'ha desconnectau correctament de KARMA Sync.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Este dispositivo s'ha desconnectau correctament de Firefox Sync.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Sync desconnectau";
@@ -326,7 +326,7 @@
 "FxAPush_DeviceDisconnected_title" = "Sync desconnectau";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "S'ha desconnectau un dispositivo de KARMA Sync";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "S'ha desconnectau un dispositivo de Firefox Sync";
 
 /* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
 "Help" = "Aduya";
@@ -359,7 +359,7 @@
 "HistoryPanel.EmptySyncedTabsPanelNotSignedInState.Description" = "Dentrar pa veyer una lista de pestanyas d'os atros tuyos dispositivos.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Historial";
@@ -773,7 +773,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Selecciona pa empecipiar";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Veyer";

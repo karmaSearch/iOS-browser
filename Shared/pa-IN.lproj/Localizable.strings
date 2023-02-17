@@ -392,7 +392,7 @@
 "fxa.signin.camera-signin" = "ਆਪਣੇ ਕੈਮਰੇ ਨਾਲ ਸਾਈਨ ਇਨ ਕਰੋ";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "ਆਪਣੇ ਕੰਪਿਊਟਰ ਉੱਤੇ ਫਾਇਰਫਾਕਸ ਖੋਲ੍ਹੋ ਅਤੇ KARMA.com/pair ਉੱਤੇ ਜਾਓ";
+"fxa.signin.qr-link-instruction" = "ਆਪਣੇ ਕੰਪਿਊਟਰ ਉੱਤੇ ਫਾਇਰਫਾਕਸ ਖੋਲ੍ਹੋ ਅਤੇ firefox.com/pair ਉੱਤੇ ਜਾਓ";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "ਸਕੈਨ ਕਰਨ ਲਈ ਤਿਆਰ";
@@ -826,7 +826,7 @@
 /* Label for the share button in the menu page. Pressing this button open the share menu to share the current website. */
 "Menu.Share.v99" = "ਸਾਂਝਾ ਕਰੋ";
 
-/* Label for the KARMA Sync button in the menu page. Pressing this button open the sign in to KARMA page service to sync and save data. */
+/* Label for the Firefox Sync button in the menu page. Pressing this button open the sign in to KARMA page service to sync and save data. */
 "Menu.SyncAndSaveData.v103" = "ਡਾਟਾ ਸਿੰਕ ਕਰੋ ਤੇ ਸੰਭਾਲੋ";
 
 /* Toast displayed to the user after a tab has been sent successfully. */
@@ -928,10 +928,10 @@
 /* Describes an action on the sync onboarding page in our Onboarding screens. This string will be on a button so user can sign up or login directly in the onboarding. */
 "Onboarding.SyncAction.v102" = "ਸਾਈਨ ਅੱਪ ਤੇ ਲਾਗਇਨ ਕਰੋ";
 
-/* Description for the sync onboarding page in our Onboarding screens. The user will be able to setup their KARMA sync account from that screen. */
+/* Description for the sync onboarding page in our Onboarding screens. The user will be able to setup their Firefox Sync account from that screen. */
 "Onboarding.SyncDescription.v102" = "ਬਿਨਾਂ ਸਕਰੀਨ ਬਦਲੇ ਡਿਵਾਈਸਾਂ ਉੱਤੇ ਟੈਬਾਂ ਅਤੇ ਬੁੱਕਮਾਰਕ ਆਪਣੇ-ਆਪ ਸਿੰਕ ਕਰੋ।";
 
-/* Title for the sync onboarding page in our Onboarding screens. The user will be able to setup their KARMA sync account from that screen. 'Stay in the flow' means that a person is fully immersed in an activity. The user will sync with their KARMA sync account to stay connected and immersed in the activity they are doing. */
+/* Title for the sync onboarding page in our Onboarding screens. The user will be able to setup their Firefox Sync account from that screen. 'Stay in the flow' means that a person is fully immersed in an activity. The user will sync with their Firefox Sync account to stay connected and immersed in the activity they are doing. */
 "Onboarding.SyncTitle.v102" = "ਆਪਣੀ ਲੈਅ ਬਣਾਈ ਰੱਖਣ ਲਈ ਸਿੰਕ ਕਰੋ";
 
 /* Accessibility label for the wallpaper onboarding modal displayed on top of the homepage. This describes to the user that which type of wallpaper they are seeing. */
@@ -1549,13 +1549,13 @@
 /* Label used as a toggle item in Settings. When this is off, the user is opting out of all studies. */
 "Settings.Studies.Toggle.Title" = "ਅਧਿਐਨ";
 
-/* Ddescription that appears in the settings screen to explain what KARMA Sync is useful for. */
+/* Ddescription that appears in the settings screen to explain what Firefox Sync is useful for. */
 "Settings.Sync.ButtonDescription.v103" = "ਟੈਬਾਂ, ਬੁੱਕਮਾਰਕਾਂ, ਪਾਸਵਰਡਾ ਤੇ ਹੋਰਾਂ ਨੂੰ ਸਿੰਕ ਕਰਨ ਲਈ ਸਾਈਨ ਇਨ ਕਰੋ।";
 
 /* Button label that appears in the settings to prompt the user to sign in to KARMA for iOS sync service to sync and save data. */
 "Settings.Sync.ButtonTitle.v103" = "ਡਾਟਾ ਸਿੰਕ ਕਰੋ ਤੇ ਸੰਭਾਲੋ";
 
-/* Title for the page where the user sign in to their KARMA Sync account. */
+/* Title for the page where the user sign in to their Firefox Sync account. */
 "Settings.Sync.SignInView.Title.v103" = "ਡਾਟਾ ਸਿੰਕ ਕਰੋ ਤੇ ਸੰਭਾਲੋ";
 
 /* This is the description for the setting that toggles the Inactive Tabs feature in the settings menu under the Tabs customization section. Inactive tabs are a separate section of tabs that appears in the Tab Tray, which can be enabled or not */

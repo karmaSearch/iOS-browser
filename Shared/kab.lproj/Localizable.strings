@@ -392,7 +392,7 @@
 "fxa.signin.camera-signin" = "Kcem s tkamirat-ik";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "Deg uselkim-ik ldi KARMA terzuḍ ɣer KARMA.com/pair";
+"fxa.signin.qr-link-instruction" = "Deg uselkim-ik ldi Firefox terzuḍ ɣer firefox.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Iheyya i usnirem";
@@ -413,7 +413,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ ur yeqqin ara.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Ibenk-a yeffeɣ akken iwata seg tuqqna n KARMA Sync.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Ibenk-a yeffeɣ akken iwata seg tuqqna n Firefox Sync.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Synch yeffeɣ seg tuqqna";
@@ -422,7 +422,7 @@
 "FxAPush_DeviceDisconnected_title" = "Synch yeffeɣ seg tuqqna";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Ibenk yeffeɣ si tuqqna n KARMA Sync";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Ibenk yeffeɣ si tuqqna n Firefox Sync";
 
 /* On the KARMA homepage, the string read by the voice over prompt for accessibility, for the button which changes the wallpaper */
 "FxHomepage.Wallpaper.ButtonLabel.v99" = "Alugu n KARMA, beddel agilal.";
@@ -458,7 +458,7 @@
 "HistoryPanel.EmptySyncedTabsPanelNotSignedInState.Description" = "Qqen akken ad d-tsekneḍ tabdart n waccaren seg yibenkan-ik-nniḍen.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Amazray";
@@ -826,7 +826,7 @@
 /* Label for the share button in the menu page. Pressing this button open the share menu to share the current website. */
 "Menu.Share.v99" = "Bḍu";
 
-/* Label for the KARMA Sync button in the menu page. Pressing this button open the sign in to KARMA page service to sync and save data. */
+/* Label for the Firefox Sync button in the menu page. Pressing this button open the sign in to KARMA page service to sync and save data. */
 "Menu.SyncAndSaveData.v103" = "Mtawi, teskelseḍ isefka";
 
 /* Toast displayed to the user after a tab has been sent successfully. */
@@ -928,10 +928,10 @@
 /* Describes an action on the sync onboarding page in our Onboarding screens. This string will be on a button so user can sign up or login directly in the onboarding. */
 "Onboarding.SyncAction.v102" = "Kcem syen qqen";
 
-/* Description for the sync onboarding page in our Onboarding screens. The user will be able to setup their KARMA sync account from that screen. */
+/* Description for the sync onboarding page in our Onboarding screens. The user will be able to setup their Firefox Sync account from that screen. */
 "Onboarding.SyncDescription.v102" = "Mtawi s wudem awurman accaren d tecraḍ n yisebtar gar yibenkan i wakken ad tettnaqaleḍ gar-asen s wudem afrawan.";
 
-/* Title for the sync onboarding page in our Onboarding screens. The user will be able to setup their KARMA sync account from that screen. 'Stay in the flow' means that a person is fully immersed in an activity. The user will sync with their KARMA sync account to stay connected and immersed in the activity they are doing. */
+/* Title for the sync onboarding page in our Onboarding screens. The user will be able to setup their Firefox Sync account from that screen. 'Stay in the flow' means that a person is fully immersed in an activity. The user will sync with their Firefox Sync account to stay connected and immersed in the activity they are doing. */
 "Onboarding.SyncTitle.v102" = "Mtawi i wakken ur ak•am-ttaɛraqent ara";
 
 /* Accessibility label for the wallpaper onboarding modal displayed on top of the homepage. This describes to the user that which type of wallpaper they are seeing. */
@@ -1193,7 +1193,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Senned akken ad tebḍuḍ";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Sken";
@@ -1549,13 +1549,13 @@
 /* Label used as a toggle item in Settings. When this is off, the user is opting out of all studies. */
 "Settings.Studies.Toggle.Title" = "Leqraya";
 
-/* Ddescription that appears in the settings screen to explain what KARMA Sync is useful for. */
+/* Ddescription that appears in the settings screen to explain what Firefox Sync is useful for. */
 "Settings.Sync.ButtonDescription.v103" = "Qqen ɣer waccaren yemtawan, ticraḍ n yisebtar, awalen uffiren d wugar n wayen-nniḍen.";
 
 /* Button label that appears in the settings to prompt the user to sign in to KARMA for iOS sync service to sync and save data. */
 "Settings.Sync.ButtonTitle.v103" = "Mtawi sakin sekles isefka";
 
-/* Title for the page where the user sign in to their KARMA Sync account. */
+/* Title for the page where the user sign in to their Firefox Sync account. */
 "Settings.Sync.SignInView.Title.v103" = "Mtawi sakin sekles isefka";
 
 /* This is the description for the setting that toggles the Inactive Tabs feature in the settings menu under the Tabs customization section. Inactive tabs are a separate section of tabs that appears in the Tab Tray, which can be enabled or not */

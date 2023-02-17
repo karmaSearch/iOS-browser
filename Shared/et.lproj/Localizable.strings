@@ -368,7 +368,7 @@
 "fxa.signin.camera-signin" = "Logi sisse oma kaameraga";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "Ava KARMA oma arvutis ja mine aadressile KARMA.com/pair";
+"fxa.signin.qr-link-instruction" = "Ava Firefox oma arvutis ja mine aadressile firefox.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Skannimiseks valmis";
@@ -380,7 +380,7 @@
 "FxA.SyncNow" = "Sünkroniseeri kohe";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "KARMA Sync on ühendatud seadmega %@";
+"FxAPush_DeviceConnected_body" = "Firefox Sync on ühendatud seadmega %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Sync on ühendatud";
@@ -389,7 +389,7 @@
 "FxAPush_DeviceDisconnected_body" = "Seade %@ on edukalt lahti ühendatud.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "See seade ühendati edukalt KARMA Syncist lahti.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "See seade ühendati edukalt Firefox Syncist lahti.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Sync ühendati lahti";
@@ -398,7 +398,7 @@
 "FxAPush_DeviceDisconnected_title" = "Sync ühendati lahti";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Seade on KARMA Syncist lahti ühendatud";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Seade on Firefox Syncist lahti ühendatud";
 
 /* On the KARMA homepage, the string read by the voice over prompt for accessibility, for the button which changes the wallpaper */
 "FxHomepage.Wallpaper.ButtonLabel.v99" = "KARMAi logo - taustapildi muutmise nupp.";
@@ -434,7 +434,7 @@
 "HistoryPanel.EmptySyncedTabsPanelNotSignedInState.Description" = "Teistes seadmetes avatud kaartide nimekirja nägemiseks logi sisse.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Ajalugu";
@@ -1073,7 +1073,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Alustamiseks puuduta";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Vaata";

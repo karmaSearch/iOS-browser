@@ -299,19 +299,19 @@
 "FxA.SyncNow" = "Sync Now";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "KARMA Sync has connected to %@";
+"FxAPush_DeviceConnected_body" = "Firefox Sync has connected to %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Sync Connected";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "This device has been successfully disconnected from KARMA Sync.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "This device has been successfully disconnected from Firefox Sync.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Sync Disconnected";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "A device has disconnected from KARMA Sync";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "A device has disconnected from Firefox Sync";
 
 /* Body of a notification displayed when named device has been disconnected from FxA. %@ refers to the name of the disconnected device. */
 "FxAPush_DeviceDisconnected_body" = "%@ has been successfully disconnected.";
@@ -350,7 +350,7 @@
 "HistoryPanel.EmptySyncedTabsPanelNotSignedInState.Description" = "Sign in to view a list of tabs from your other devices.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "History";
@@ -740,7 +740,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Tap to begin";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "View";
@@ -1175,7 +1175,7 @@
 "fxa.signin.camera-signin" = "Sign In with Your Camera";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "On your computer open KARMA and go to KARMA.com/pair";
+"fxa.signin.qr-link-instruction" = "On your computer open Firefox and go to firefox.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Ready to Scan";

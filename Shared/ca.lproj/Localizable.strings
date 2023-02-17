@@ -374,7 +374,7 @@
 "fxa.signin.camera-signin" = "Inicieu la sessió amb la càmera";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "Obriu el KARMA a l'ordinador i aneu a KARMA.com/pair";
+"fxa.signin.qr-link-instruction" = "Obriu el Firefox a l'ordinador i aneu a firefox.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Llest per escanejar";
@@ -386,7 +386,7 @@
 "FxA.SyncNow" = "Sincronitza ara";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "El KARMA Sync s'ha connectat a %@";
+"FxAPush_DeviceConnected_body" = "El Firefox Sync s'ha connectat a %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "El Sync s'ha connectat";
@@ -395,7 +395,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ s'ha desconnectat correctament.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Aquest dispositiu s'ha desconnectat correctament del KARMA Sync.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Aquest dispositiu s'ha desconnectat correctament del Firefox Sync.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "El Sync s'ha desconnectat";
@@ -404,7 +404,7 @@
 "FxAPush_DeviceDisconnected_title" = "El Sync s'ha desconnectat";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "S'ha desconnectat un dispositiu del KARMA Sync";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "S'ha desconnectat un dispositiu del Firefox Sync";
 
 /* On the KARMA homepage, the string read by the voice over prompt for accessibility, for the button which changes the wallpaper */
 "FxHomepage.Wallpaper.ButtonLabel.v99" = "Logotip del KARMA, canvieu el fons de pantalla.";
@@ -440,7 +440,7 @@
 "HistoryPanel.EmptySyncedTabsPanelNotSignedInState.Description" = "Inicieu la sessió per veure una llista de les pestanyes que teniu obertes en altres dispositius.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Historial";
@@ -796,7 +796,7 @@
 /* Label for the share button in the menu page. Pressing this button open the share menu to share the current website. */
 "Menu.Share.v99" = "Comparteix";
 
-/* Label for the KARMA Sync button in the menu page. Pressing this button open the sign in to KARMA page service to sync and save data. */
+/* Label for the Firefox Sync button in the menu page. Pressing this button open the sign in to KARMA page service to sync and save data. */
 "Menu.SyncAndSaveData.v103" = "Sincronitza i desa les dades";
 
 /* Toast displayed to the user after a tab has been sent successfully. */
@@ -1100,7 +1100,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Toqueu per començar";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Mostra";
@@ -1435,7 +1435,7 @@
 /* Button label that appears in the settings to prompt the user to sign in to KARMA for iOS sync service to sync and save data. */
 "Settings.Sync.ButtonTitle.v103" = "Sincronitza i desa les dades";
 
-/* Title for the page where the user sign in to their KARMA Sync account. */
+/* Title for the page where the user sign in to their Firefox Sync account. */
 "Settings.Sync.SignInView.Title.v103" = "Sincronitza i desa les dades";
 
 /* This is the description for the setting that toggles the Inactive Tabs feature in the settings menu under the Tabs customization section. Inactive tabs are a separate section of tabs that appears in the Tab Tray, which can be enabled or not */

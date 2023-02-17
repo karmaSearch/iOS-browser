@@ -299,7 +299,7 @@
 "fxa.signin.camera-signin" = "Autentifică-te cu camera";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "Deschide KARMA pe calculator și intră pe KARMA.com/pair";
+"fxa.signin.qr-link-instruction" = "Deschide Firefox pe calculator și intră pe firefox.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Gata de scanare";
@@ -311,7 +311,7 @@
 "FxA.SyncNow" = "Sincronizează acum";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "KARMA Sync s-a conectat la %@";
+"FxAPush_DeviceConnected_body" = "Firefox Sync s-a conectat la %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Sincronizare conectată";
@@ -320,7 +320,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ a fost deconectat cu succes.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Acest dispozitiv a fost deconectat cu succes de la KARMA Sync.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Acest dispozitiv a fost deconectat cu succes de la Firefox Sync.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Sincronizare deconectată";
@@ -329,7 +329,7 @@
 "FxAPush_DeviceDisconnected_title" = "Sincronizare deconectată";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Un dispozitiv a fost deconectat de la KARMA Sync";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Un dispozitiv a fost deconectat de la Firefox Sync";
 
 /* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
 "Help" = "Ajutor";
@@ -362,7 +362,7 @@
 "HistoryPanel.EmptySyncedTabsPanelNotSignedInState.Description" = "Autentifică-te pentru a vedea o listă de file de pe celelalte dispozitive.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Istoric";
@@ -785,7 +785,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Atinge pentru a începe";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Vezi";

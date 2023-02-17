@@ -215,7 +215,7 @@
 "FxA.SyncNow" = "Sincronizar agora";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "KARMA Sync conectouse a %@";
+"FxAPush_DeviceConnected_body" = "Firefox Sync conectouse a %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Sync conectado";
@@ -224,7 +224,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ desconectouse correctamente.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Este dispositivo desconectouse correctamente de KARMA Sync.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Este dispositivo desconectouse correctamente de Firefox Sync.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Sync desconectado";
@@ -233,7 +233,7 @@
 "FxAPush_DeviceDisconnected_title" = "Sync desconectado";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Un dispositivo desconectouse de KARMA Sync";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Un dispositivo desconectouse de Firefox Sync";
 
 /* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
 "Help" = "Axuda";
@@ -251,7 +251,7 @@
 "HistoryPanel.EmptySyncedTabsPanelNotSignedInState.Description" = "Acceda para ver unha lista de lapelas dos outros dispositivos.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Historial";
@@ -578,7 +578,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Pulse para comezar";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Ver";

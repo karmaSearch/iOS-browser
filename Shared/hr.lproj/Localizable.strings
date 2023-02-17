@@ -389,7 +389,7 @@
 "fxa.signin.camera-signin" = "Prijavi se pomoću kamere";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "Na računalu otvori KARMA i idi na KARMA.com/pair";
+"fxa.signin.qr-link-instruction" = "Na računalu otvori Firefox i idi na firefox.com/pair";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "Spremno za skeniranje";
@@ -455,7 +455,7 @@
 "HistoryPanel.EmptySyncedTabsPanelNotSignedInState.Description" = "Prijavi se za prikaz kartica s tvojih ostalih uređaja.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Povijest";
@@ -823,7 +823,7 @@
 /* Label for the share button in the menu page. Pressing this button open the share menu to share the current website. */
 "Menu.Share.v99" = "Dijeli";
 
-/* Label for the KARMA Sync button in the menu page. Pressing this button open the sign in to KARMA page service to sync and save data. */
+/* Label for the Firefox Sync button in the menu page. Pressing this button open the sign in to KARMA page service to sync and save data. */
 "Menu.SyncAndSaveData.v103" = "Sinkroniziraj i spremi podatke";
 
 /* Toast displayed to the user after a tab has been sent successfully. */
@@ -1145,7 +1145,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Dodirni za započinjanje";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Prikaz";
@@ -1456,7 +1456,7 @@
 /* Button label that appears in the settings to prompt the user to sign in to KARMA for iOS sync service to sync and save data. */
 "Settings.Sync.ButtonTitle.v103" = "Sinkroniziraj i spremi podatke";
 
-/* Title for the page where the user sign in to their KARMA Sync account. */
+/* Title for the page where the user sign in to their Firefox Sync account. */
 "Settings.Sync.SignInView.Title.v103" = "Sinkroniziraj i spremi podatke";
 
 /* This is the description for the setting that toggles the Inactive Tabs feature in the settings menu under the Tabs customization section. Inactive tabs are a separate section of tabs that appears in the Tab Tray, which can be enabled or not */

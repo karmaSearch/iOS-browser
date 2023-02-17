@@ -272,7 +272,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ wis suksès dipedhot.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Piranti iki suksès pisah saka KARMA Sync.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Piranti iki suksès pisah saka Firefox Sync.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Sync Dipedhot";
@@ -314,7 +314,7 @@
 "HistoryPanel.EmptySyncedTabsPanelNotSignedInState.Description" = "Mlebu kanggo ndeleng dhaptar tab saka piranti liyané.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Riwayat";
@@ -605,7 +605,7 @@
 "SendTo.SendAction.Text" = "Kirim";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Deleng";

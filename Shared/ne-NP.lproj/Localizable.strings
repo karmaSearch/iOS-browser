@@ -356,7 +356,7 @@
 "fxa.signin.camera-signin" = "आफ्नो क्यामराको साथमा साइन इन गर्नुहोस्";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "आफ्नो कम्प्युटरमा KARMA खोल्नुहोस् र KARMA.com/pair मा जानुहोस्";
+"fxa.signin.qr-link-instruction" = "आफ्नो कम्प्युटरमा KARMA खोल्नुहोस् र firefox.com/pair मा जानुहोस्";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "स्क्यान गर्न तयार छ";
@@ -1040,7 +1040,7 @@
 "SentTab.NoTabArrivingNotification.body" = "सुरु गर्न छुनुहोस्";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "KARMA Sync";
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "हेर्नुहोस्";

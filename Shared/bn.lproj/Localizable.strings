@@ -338,7 +338,7 @@
 "fxa.signin.camera-signin" = "আপনার ক্যামেরা দিয়ে সাইন ইন করুন";
 
 /* FxA sign in view qr code instructions */
-"fxa.signin.qr-link-instruction" = "আপনার কম্পিউটারে KARMA খুলুন এবং KARMA.com/pair এ যান";
+"fxa.signin.qr-link-instruction" = "আপনার কম্পিউটারে KARMA খুলুন এবং firefox.com/pair এ যান";
 
 /* FxA sign in view qr code scan button */
 "fxa.signin.ready-to-scan" = "স্ক্যান করার জন্য প্রস্তুত";

@@ -143,7 +143,7 @@
 "HistoryPanel.EmptySyncedTabsNullState.Description" = "Oortjies van ander toestelle is hier.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA Sync";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "Geskiedenis";
