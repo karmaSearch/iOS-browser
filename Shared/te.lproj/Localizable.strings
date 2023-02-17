@@ -281,13 +281,13 @@
 "KARMAHome.RecentHistory.Remove" = "తీసివేయి";
 
 /* Label showing how many sites there is in a search group. %d represents a number */
-"KARMAHomepage.Common.SitesCount.v101" = "సైట్లు: %d";
+"FirefoxHomepage.Common.SitesCount.v101" = "సైట్లు: %d";
 
 /* The title for the Settings context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
-"KARMAHomepage.ContextualMenu.Settings.v101" = "అమరికలు";
+"FirefoxHomepage.ContextualMenu.Settings.v101" = "అమరికలు";
 
 /* The title for the Sponsored Content context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to a support page where users can learn more about Sponsored content and how it works. */
-"KARMAHomepage.ContextualMenu.SponsoredContent.v101" = "మా ప్రాయోజకులు & మీ అంతరంగికత";
+"FirefoxHomepage.ContextualMenu.SponsoredContent.v101" = "మా ప్రాయోజకులు & మీ అంతరంగికత";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "ఫార్వార్డ్";

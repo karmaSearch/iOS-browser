@@ -341,7 +341,7 @@
 "KARMAHome.RecentHistory.Remove" = "Hiqe";
 
 /* This string will show under a shortcuts tile on the KARMA home page, indicating that the tile is a sponsored tile. Space is limited, please keep as short as possible. */
-"KARMAHomepage.Shortcuts.Sponsored.v100" = "E sponsorizuar";
+"FirefoxHomepage.Shortcuts.Sponsored.v100" = "E sponsorizuar";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "Përpara";

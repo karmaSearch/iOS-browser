@@ -323,16 +323,16 @@
 "KARMAHome.RecentHistory.Remove" = "Poista";
 
 /* Label showing how many sites there is in a search group. %d represents a number */
-"KARMAHomepage.Common.SitesCount.v101" = "Sivustoja: %d";
+"FirefoxHomepage.Common.SitesCount.v101" = "Sivustoja: %d";
 
 /* The title for the Settings context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
-"KARMAHomepage.ContextualMenu.Settings.v101" = "Asetukset";
+"FirefoxHomepage.ContextualMenu.Settings.v101" = "Asetukset";
 
 /* Button title shown for tab pickup on the KARMA homepage in the Jump Back In section. */
-"KARMAHomepage.JumpBackIn.TabPickup.ShowAll.ButtonTitle.v104" = "Näytä kaikki synkronoidut välilehdet";
+"FirefoxHomepage.JumpBackIn.TabPickup.ShowAll.ButtonTitle.v104" = "Näytä kaikki synkronoidut välilehdet";
 
 /* If a user is signed in, and a sync has been performed to collect their recent tabs from other signed in devices, their most recent tab from another device can now appear in the Jump Back In section. This label specifically points out which cell inside the Jump Back In section shows that synced tab. */
-"KARMAHomepage.JumpBackIn.TabPickup.v104" = "Välilehden valinta";
+"FirefoxHomepage.JumpBackIn.TabPickup.v104" = "Välilehden valinta";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "Seuraava";

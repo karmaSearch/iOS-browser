@@ -200,7 +200,7 @@
 "ContextualHint.SearchBarPlacement.NewUsers" = "Informazioa sartzea errazteko, tresna-barra behean dago orain lehenespenez.";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one talks about the more personalized home feature. */
-"ContextualHints.KARMAHomepage.JumpBackIn.PersonalizedHomeOldCopy.v106" = "Errazagoa da utzitako lekutik jarraitzea KARMAen pertsonalizatutako hasiera-orriarekin. Aurkitu zure azken fitxak, laster-markak eta bilaketa-emaitzak.";
+"ContextualHints.FirefoxHomepage.JumpBackIn.PersonalizedHomeOldCopy.v106" = "Errazagoa da utzitako lekutik jarraitzea KARMAen pertsonalizatutako hasiera-orriarekin. Aurkitu zure azken fitxak, laster-markak eta bilaketa-emaitzak.";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one is a call to action for the popup describing search bar placement. It indicates a user can navigate to the settings page that allows them to customize the placement of the search bar. */
 "ContextualHints.SearchBarPlacement.CallToAction" = "Tresna-barren ezarpenak";
@@ -353,28 +353,28 @@
 "KARMAHome.RecentHistory.Remove" = "Kendu";
 
 /* Label showing how many sites there is in a search group. %d represents a number */
-"KARMAHomepage.Common.SitesCount.v101" = "Guneak: %d";
+"FirefoxHomepage.Common.SitesCount.v101" = "Guneak: %d";
 
 /* The title for the Settings context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
-"KARMAHomepage.ContextualMenu.Settings.v101" = "Ezarpenak";
+"FirefoxHomepage.ContextualMenu.Settings.v101" = "Ezarpenak";
 
 /* The title for the Sponsored Content context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to a support page where users can learn more about Sponsored content and how it works. */
-"KARMAHomepage.ContextualMenu.SponsoredContent.v101" = "Gure babesleak eta zure pribatutasuna";
+"FirefoxHomepage.ContextualMenu.SponsoredContent.v101" = "Gure babesleak eta zure pribatutasuna";
 
 /* Accessibility action title to open the synced tab for tab pickup on the KARMA homepage in the Jump Back In section. */
-"KARMAHomepage.JumpBackIn.TabPickup.OpenTab.A11y.v106" = "Ireki sinkronizatutako fitxa";
+"FirefoxHomepage.JumpBackIn.TabPickup.OpenTab.A11y.v106" = "Ireki sinkronizatutako fitxa";
 
 /* Button title shown for tab pickup on the KARMA homepage in the Jump Back In section. */
-"KARMAHomepage.JumpBackIn.TabPickup.ShowAll.ButtonTitle.v104" = "Ikusi sinkronizatutako fitxa guztiak";
+"FirefoxHomepage.JumpBackIn.TabPickup.ShowAll.ButtonTitle.v104" = "Ikusi sinkronizatutako fitxa guztiak";
 
 /* If a user is signed in, and a sync has been performed to collect their recent tabs from other signed in devices, their most recent tab from another device can now appear in the Jump Back In section. This label specifically points out which cell inside the Jump Back In section shows that synced tab. */
-"KARMAHomepage.JumpBackIn.TabPickup.v104" = "Jasotako fitxa";
+"FirefoxHomepage.JumpBackIn.TabPickup.v104" = "Jasotako fitxa";
 
 /* This string will show under the description on pocket story, indicating that the story is sponsored. */
-"KARMAHomepage.Pocket.Sponsored.v103" = "Babesleak hornituta";
+"FirefoxHomepage.Pocket.Sponsored.v103" = "Babesleak hornituta";
 
 /* This string will show under a shortcuts tile on the KARMA home page, indicating that the tile is a sponsored tile. Space is limited, please keep as short as possible. */
-"KARMAHomepage.Shortcuts.Sponsored.v100" = "Babesleak hornituta";
+"FirefoxHomepage.Shortcuts.Sponsored.v100" = "Babesleak hornituta";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "Aurrera";

@@ -226,7 +226,7 @@ class DynamicFontHelper: NSObject {
 
         var font: UIFont
         if let weight = weight {
-            font = UIFont.systemFont(ofSize: fontDescriptor.pointSize, weight: weight)
+            font = UIFont.customFont(ofSize: fontDescriptor.pointSize, weight: weight)
         } else {
             font = UIFont(descriptor: fontDescriptor, size: fontDescriptor.pointSize)
         }

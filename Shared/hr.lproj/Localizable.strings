@@ -200,7 +200,7 @@
 "ContextualHint.SearchBarPlacement.NewUsers" = "Za jednostavniji unos podataka, alatna traka se sada nalazi na dnu.";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one talks about the more personalized home feature. */
-"ContextualHints.KARMAHomepage.JumpBackIn.PersonalizedHomeOldCopy.v106" = "Tvoja personalizirana KARMAova početna stranica sada ti olakšava da nastaviš pretraživati. Pronađi svoje nedavne kartice, zabilješke i rezultate pretraživanja.";
+"ContextualHints.FirefoxHomepage.JumpBackIn.PersonalizedHomeOldCopy.v106" = "Tvoja personalizirana KARMAova početna stranica sada ti olakšava da nastaviš pretraživati. Pronađi svoje nedavne kartice, zabilješke i rezultate pretraživanja.";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one is a call to action for the popup describing search bar placement. It indicates a user can navigate to the settings page that allows them to customize the placement of the search bar. */
 "ContextualHints.SearchBarPlacement.CallToAction" = "Postavke alatne trake";
@@ -353,25 +353,25 @@
 "KARMAHome.RecentHistory.Remove" = "Ukloni";
 
 /* Label showing how many sites there is in a search group. %d represents a number */
-"KARMAHomepage.Common.SitesCount.v101" = "Broj stranica: %d";
+"FirefoxHomepage.Common.SitesCount.v101" = "Broj stranica: %d";
 
 /* The title for the Settings context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
-"KARMAHomepage.ContextualMenu.Settings.v101" = "Postavke";
+"FirefoxHomepage.ContextualMenu.Settings.v101" = "Postavke";
 
 /* The title for the Sponsored Content context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to a support page where users can learn more about Sponsored content and how it works. */
-"KARMAHomepage.ContextualMenu.SponsoredContent.v101" = "Naši sponzori i tvoja privatnost";
+"FirefoxHomepage.ContextualMenu.SponsoredContent.v101" = "Naši sponzori i tvoja privatnost";
 
 /* Accessibility action title to open the synced tab for tab pickup on the KARMA homepage in the Jump Back In section. */
-"KARMAHomepage.JumpBackIn.TabPickup.OpenTab.A11y.v106" = "Otvori sinkroniziranu karticu";
+"FirefoxHomepage.JumpBackIn.TabPickup.OpenTab.A11y.v106" = "Otvori sinkroniziranu karticu";
 
 /* Button title shown for tab pickup on the KARMA homepage in the Jump Back In section. */
-"KARMAHomepage.JumpBackIn.TabPickup.ShowAll.ButtonTitle.v104" = "Pogledaj sve sinkronizirane kartice";
+"FirefoxHomepage.JumpBackIn.TabPickup.ShowAll.ButtonTitle.v104" = "Pogledaj sve sinkronizirane kartice";
 
 /* This string will show under the description on pocket story, indicating that the story is sponsored. */
-"KARMAHomepage.Pocket.Sponsored.v103" = "Sponzorirano";
+"FirefoxHomepage.Pocket.Sponsored.v103" = "Sponzorirano";
 
 /* This string will show under a shortcuts tile on the KARMA home page, indicating that the tile is a sponsored tile. Space is limited, please keep as short as possible. */
-"KARMAHomepage.Shortcuts.Sponsored.v100" = "Sponzorirano";
+"FirefoxHomepage.Shortcuts.Sponsored.v100" = "Sponzorirano";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "Naprijed";

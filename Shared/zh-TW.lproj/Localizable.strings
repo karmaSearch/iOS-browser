@@ -200,7 +200,7 @@
 "ContextualHint.SearchBarPlacement.NewUsers" = "為了讓輸入資訊變得更輕鬆，現在起預設會將工具列移到畫面底部。";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one talks about the more personalized home feature. */
-"ContextualHints.KARMAHomepage.JumpBackIn.PersonalizedHomeOldCopy.v106" = "現在起，有您的風格的 KARMA 首頁，可讓您更簡單就從上次結束瀏覽的地方繼續上網。快速找到您最近開啟的分頁、書籤、搜尋結果等分頁。";
+"ContextualHints.FirefoxHomepage.JumpBackIn.PersonalizedHomeOldCopy.v106" = "現在起，有您的風格的 KARMA 首頁，可讓您更簡單就從上次結束瀏覽的地方繼續上網。快速找到您最近開啟的分頁、書籤、搜尋結果等分頁。";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one is a call to action for the popup describing search bar placement. It indicates a user can navigate to the settings page that allows them to customize the placement of the search bar. */
 "ContextualHints.SearchBarPlacement.CallToAction" = "工具列設定";
@@ -353,28 +353,28 @@
 "KARMAHome.RecentHistory.Remove" = "移除";
 
 /* Label showing how many sites there is in a search group. %d represents a number */
-"KARMAHomepage.Common.SitesCount.v101" = "%d 個網站";
+"FirefoxHomepage.Common.SitesCount.v101" = "%d 個網站";
 
 /* The title for the Settings context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
-"KARMAHomepage.ContextualMenu.Settings.v101" = "設定";
+"FirefoxHomepage.ContextualMenu.Settings.v101" = "設定";
 
 /* The title for the Sponsored Content context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to a support page where users can learn more about Sponsored content and how it works. */
-"KARMAHomepage.ContextualMenu.SponsoredContent.v101" = "我們的贊助商與您的隱私權";
+"FirefoxHomepage.ContextualMenu.SponsoredContent.v101" = "我們的贊助商與您的隱私權";
 
 /* Accessibility action title to open the synced tab for tab pickup on the KARMA homepage in the Jump Back In section. */
-"KARMAHomepage.JumpBackIn.TabPickup.OpenTab.A11y.v106" = "開啟同步的分頁";
+"FirefoxHomepage.JumpBackIn.TabPickup.OpenTab.A11y.v106" = "開啟同步的分頁";
 
 /* Button title shown for tab pickup on the KARMA homepage in the Jump Back In section. */
-"KARMAHomepage.JumpBackIn.TabPickup.ShowAll.ButtonTitle.v104" = "檢視所有同步的分頁";
+"FirefoxHomepage.JumpBackIn.TabPickup.ShowAll.ButtonTitle.v104" = "檢視所有同步的分頁";
 
 /* If a user is signed in, and a sync has been performed to collect their recent tabs from other signed in devices, their most recent tab from another device can now appear in the Jump Back In section. This label specifically points out which cell inside the Jump Back In section shows that synced tab. */
-"KARMAHomepage.JumpBackIn.TabPickup.v104" = "接收分頁";
+"FirefoxHomepage.JumpBackIn.TabPickup.v104" = "接收分頁";
 
 /* This string will show under the description on pocket story, indicating that the story is sponsored. */
-"KARMAHomepage.Pocket.Sponsored.v103" = "贊助項目";
+"FirefoxHomepage.Pocket.Sponsored.v103" = "贊助項目";
 
 /* This string will show under a shortcuts tile on the KARMA home page, indicating that the tile is a sponsored tile. Space is limited, please keep as short as possible. */
-"KARMAHomepage.Shortcuts.Sponsored.v100" = "贊助項目";
+"FirefoxHomepage.Shortcuts.Sponsored.v100" = "贊助項目";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "下一頁";

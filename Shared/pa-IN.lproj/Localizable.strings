@@ -200,7 +200,7 @@
 "ContextualHint.SearchBarPlacement.NewUsers" = "ਜਾਣਕਾਰੀ ਭਰਨ ਨੂੰ ਸੌਖਾ ਕਰਨ ਲਈ ਟੂਲਬਾਰ ਹੁਣ ਮੂਲ ਰੂਪ ਵਿੱਚ ਹੇਠਾਂ ਹੁੰਦੀ ਹੈ।";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one talks about the more personalized home feature. */
-"ContextualHints.KARMAHomepage.JumpBackIn.PersonalizedHomeOldCopy.v106" = "ਤੁਹਾਡੇ ਆਪਣੇ ਬਣਾਏ KARMA ਮੁੱਖ-ਸਫ਼ੇ ਨੇ ਹੁਣ ਜਿੱਥੇ ਤੁਸੀਂ ਛੱਡ ਕੇ ਗਏ ਸੀ, ਉਥੋਂ ਹੀ ਸ਼ੁਰੂ ਕਰਨਾ ਸੌਖਾ ਬਣਾ ਦਿੱਤਾ ਹੈ। ਆਪਣੀਆਂ ਸੱਜਰੀਆਂ ਟੈਬਾਂ, ਬੁੱਕਮਾਰਕ ਅਤੇ ਖੋਜ ਨਤੀਜੇ ਲੱਭੋ।";
+"ContextualHints.FirefoxHomepage.JumpBackIn.PersonalizedHomeOldCopy.v106" = "ਤੁਹਾਡੇ ਆਪਣੇ ਬਣਾਏ KARMA ਮੁੱਖ-ਸਫ਼ੇ ਨੇ ਹੁਣ ਜਿੱਥੇ ਤੁਸੀਂ ਛੱਡ ਕੇ ਗਏ ਸੀ, ਉਥੋਂ ਹੀ ਸ਼ੁਰੂ ਕਰਨਾ ਸੌਖਾ ਬਣਾ ਦਿੱਤਾ ਹੈ। ਆਪਣੀਆਂ ਸੱਜਰੀਆਂ ਟੈਬਾਂ, ਬੁੱਕਮਾਰਕ ਅਤੇ ਖੋਜ ਨਤੀਜੇ ਲੱਭੋ।";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one is a call to action for the popup describing search bar placement. It indicates a user can navigate to the settings page that allows them to customize the placement of the search bar. */
 "ContextualHints.SearchBarPlacement.CallToAction" = "ਟੂਲਬਾਰ ਸੈਟਿੰਗਾਂ";
@@ -353,28 +353,28 @@
 "KARMAHome.RecentHistory.Remove" = "ਹਟਾਓ";
 
 /* Label showing how many sites there is in a search group. %d represents a number */
-"KARMAHomepage.Common.SitesCount.v101" = "ਸਾਈਟਾਂ: %d";
+"FirefoxHomepage.Common.SitesCount.v101" = "ਸਾਈਟਾਂ: %d";
 
 /* The title for the Settings context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
-"KARMAHomepage.ContextualMenu.Settings.v101" = "ਸੈਟਿੰਗਾਂ";
+"FirefoxHomepage.ContextualMenu.Settings.v101" = "ਸੈਟਿੰਗਾਂ";
 
 /* The title for the Sponsored Content context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to a support page where users can learn more about Sponsored content and how it works. */
-"KARMAHomepage.ContextualMenu.SponsoredContent.v101" = "ਸਾਡੇ ਸਪਾਂਸਰ ਅਤੇ ਤੁਹਾਡੀ ਪਰਦੇਦਾਰੀ";
+"FirefoxHomepage.ContextualMenu.SponsoredContent.v101" = "ਸਾਡੇ ਸਪਾਂਸਰ ਅਤੇ ਤੁਹਾਡੀ ਪਰਦੇਦਾਰੀ";
 
 /* Accessibility action title to open the synced tab for tab pickup on the KARMA homepage in the Jump Back In section. */
-"KARMAHomepage.JumpBackIn.TabPickup.OpenTab.A11y.v106" = "ਸਿੰਕ ਕੀਤੀ ਟੈਬ ਖੋਲ੍ਹੋ";
+"FirefoxHomepage.JumpBackIn.TabPickup.OpenTab.A11y.v106" = "ਸਿੰਕ ਕੀਤੀ ਟੈਬ ਖੋਲ੍ਹੋ";
 
 /* Button title shown for tab pickup on the KARMA homepage in the Jump Back In section. */
-"KARMAHomepage.JumpBackIn.TabPickup.ShowAll.ButtonTitle.v104" = "ਸਾਰੀਆਂ ਸਿੰਕ ਕੀਤੀਆਂ ਟੈਬਾਂ ਵੇਖੋ";
+"FirefoxHomepage.JumpBackIn.TabPickup.ShowAll.ButtonTitle.v104" = "ਸਾਰੀਆਂ ਸਿੰਕ ਕੀਤੀਆਂ ਟੈਬਾਂ ਵੇਖੋ";
 
 /* If a user is signed in, and a sync has been performed to collect their recent tabs from other signed in devices, their most recent tab from another device can now appear in the Jump Back In section. This label specifically points out which cell inside the Jump Back In section shows that synced tab. */
-"KARMAHomepage.JumpBackIn.TabPickup.v104" = "ਟੈਬ ਚੋਣ";
+"FirefoxHomepage.JumpBackIn.TabPickup.v104" = "ਟੈਬ ਚੋਣ";
 
 /* This string will show under the description on pocket story, indicating that the story is sponsored. */
-"KARMAHomepage.Pocket.Sponsored.v103" = "ਸਪਾਂਸਰ ਕੀਤੇ";
+"FirefoxHomepage.Pocket.Sponsored.v103" = "ਸਪਾਂਸਰ ਕੀਤੇ";
 
 /* This string will show under a shortcuts tile on the KARMA home page, indicating that the tile is a sponsored tile. Space is limited, please keep as short as possible. */
-"KARMAHomepage.Shortcuts.Sponsored.v100" = "ਸਪਾਂਸਰ ਕੀਤੇ";
+"FirefoxHomepage.Shortcuts.Sponsored.v100" = "ਸਪਾਂਸਰ ਕੀਤੇ";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "ਅੱਗੇ";

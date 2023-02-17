@@ -287,7 +287,7 @@
 "KARMAHome.RecentHistory.Remove" = "हटैइयै";
 
 /* The title for the Settings context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
-"KARMAHomepage.ContextualMenu.Settings.v101" = "सेटिंग्स";
+"FirefoxHomepage.ContextualMenu.Settings.v101" = "सेटिंग्स";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "आगू बढ़ावोॅ";

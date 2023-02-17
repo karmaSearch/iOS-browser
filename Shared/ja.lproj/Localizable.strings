@@ -200,7 +200,7 @@
 "ContextualHint.SearchBarPlacement.NewUsers" = "情報を入力しやすくするため、ツールバーがデフォルトで画面下部に配置されます。";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one talks about the more personalized home feature. */
-"ContextualHints.KARMAHomepage.JumpBackIn.PersonalizedHomeOldCopy.v106" = "個人に合わせた KARMA ホームページにより、前回のページから簡単に再開できるようになりました。最近のタブ、ブックマーク、検索結果を見つけられます。";
+"ContextualHints.FirefoxHomepage.JumpBackIn.PersonalizedHomeOldCopy.v106" = "個人に合わせた KARMA ホームページにより、前回のページから簡単に再開できるようになりました。最近のタブ、ブックマーク、検索結果を見つけられます。";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. This one is a call to action for the popup describing search bar placement. It indicates a user can navigate to the settings page that allows them to customize the placement of the search bar. */
 "ContextualHints.SearchBarPlacement.CallToAction" = "ツールバー設定";
@@ -353,28 +353,28 @@
 "KARMAHome.RecentHistory.Remove" = "削除";
 
 /* Label showing how many sites there is in a search group. %d represents a number */
-"KARMAHomepage.Common.SitesCount.v101" = "サイト数: %d";
+"FirefoxHomepage.Common.SitesCount.v101" = "サイト数: %d";
 
 /* The title for the Settings context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
-"KARMAHomepage.ContextualMenu.Settings.v101" = "設定";
+"FirefoxHomepage.ContextualMenu.Settings.v101" = "設定";
 
 /* The title for the Sponsored Content context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to a support page where users can learn more about Sponsored content and how it works. */
-"KARMAHomepage.ContextualMenu.SponsoredContent.v101" = "私たちのスポンサーとあなたのプライバシー";
+"FirefoxHomepage.ContextualMenu.SponsoredContent.v101" = "私たちのスポンサーとあなたのプライバシー";
 
 /* Accessibility action title to open the synced tab for tab pickup on the KARMA homepage in the Jump Back In section. */
-"KARMAHomepage.JumpBackIn.TabPickup.OpenTab.A11y.v106" = "同期したタブを開く";
+"FirefoxHomepage.JumpBackIn.TabPickup.OpenTab.A11y.v106" = "同期したタブを開く";
 
 /* Button title shown for tab pickup on the KARMA homepage in the Jump Back In section. */
-"KARMAHomepage.JumpBackIn.TabPickup.ShowAll.ButtonTitle.v104" = "同期したタブをすべて見る";
+"FirefoxHomepage.JumpBackIn.TabPickup.ShowAll.ButtonTitle.v104" = "同期したタブをすべて見る";
 
 /* If a user is signed in, and a sync has been performed to collect their recent tabs from other signed in devices, their most recent tab from another device can now appear in the Jump Back In section. This label specifically points out which cell inside the Jump Back In section shows that synced tab. */
-"KARMAHomepage.JumpBackIn.TabPickup.v104" = "タブピックアップ";
+"FirefoxHomepage.JumpBackIn.TabPickup.v104" = "タブピックアップ";
 
 /* This string will show under the description on pocket story, indicating that the story is sponsored. */
-"KARMAHomepage.Pocket.Sponsored.v103" = "広告";
+"FirefoxHomepage.Pocket.Sponsored.v103" = "広告";
 
 /* This string will show under a shortcuts tile on the KARMA home page, indicating that the tile is a sponsored tile. Space is limited, please keep as short as possible. */
-"KARMAHomepage.Shortcuts.Sponsored.v100" = "広告";
+"FirefoxHomepage.Shortcuts.Sponsored.v100" = "広告";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "進む";

@@ -1,6 +1,6 @@
 /* Contextual hints are little popups that appear for the users informing them of new features. This one talks about additions to the KARMA homepage regarding a more personalized experience. */
-"ContextualHints.KARMAHomepage.JumpBackIn.PersonalizedHome" = "Conocé tu página de inicio personalizada. Las pestañas recientes, los marcadores y los resultados de búsqueda aparecerán aquí.";
+"ContextualHints.FirefoxHomepage.JumpBackIn.PersonalizedHome" = "Conocé tu página de inicio personalizada. Las pestañas recientes, los marcadores y los resultados de búsqueda aparecerán aquí.";
 
 /* Contextual hints are little popups that appear for the users informing them of new features. When a user is logged in and has a tab synced from desktop, this popup indicates which tab that is within the Jump Back In section. */
-"ContextualHints.KARMAHomepage.JumpBackIn.SyncedTab.v106" = "¡Tus pestañas se están sincronizando! Continuá donde lo dejaste en tu otro dispositivo.";
+"ContextualHints.FirefoxHomepage.JumpBackIn.SyncedTab.v106" = "¡Tus pestañas se están sincronizando! Continuá donde lo dejaste en tu otro dispositivo.";
 

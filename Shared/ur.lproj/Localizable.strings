@@ -338,16 +338,16 @@
 "KARMAHome.RecentHistory.Remove" = "ہٹائیں";
 
 /* Label showing how many sites there is in a search group. %d represents a number */
-"KARMAHomepage.Common.SitesCount.v101" = "سائٹس: %d";
+"FirefoxHomepage.Common.SitesCount.v101" = "سائٹس: %d";
 
 /* The title for the Settings context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
-"KARMAHomepage.ContextualMenu.Settings.v101" = "سیٹنگز";
+"FirefoxHomepage.ContextualMenu.Settings.v101" = "سیٹنگز";
 
 /* The title for the Sponsored Content context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to a support page where users can learn more about Sponsored content and how it works. */
-"KARMAHomepage.ContextualMenu.SponsoredContent.v101" = "ہمارے کفیل اور آپ کی رازداری";
+"FirefoxHomepage.ContextualMenu.SponsoredContent.v101" = "ہمارے کفیل اور آپ کی رازداری";
 
 /* This string will show under a shortcuts tile on the KARMA home page, indicating that the tile is a sponsored tile. Space is limited, please keep as short as possible. */
-"KARMAHomepage.Shortcuts.Sponsored.v100" = "سپانسر شدہ";
+"FirefoxHomepage.Shortcuts.Sponsored.v100" = "سپانسر شدہ";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "آگے";
