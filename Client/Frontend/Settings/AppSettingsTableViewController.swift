@@ -142,6 +142,25 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagga
 
            ]
 
+        if SearchBarSettingsViewModel.isEnabled {
+            generalSettings.insert(SearchBarSetting(settings: self), at: 5)
+        }
+
+        let tabTrayGroupsAreBuildActive = featureFlags.isFeatureEnabled(.tabTrayGroups, checking: .buildOnly)
+        let inactiveTabsAreBuildActive = featureFlags.isFeatureEnabled(.inactiveTabs, checking: .buildOnly)
+        if tabTrayGroupsAreBuildActive || inactiveTabsAreBuildActive {
+            generalSettings.insert(TabsSetting(), at: 3)
+        }
+
+        let accountChinaSyncSetting: [Setting]
+        if !AppInfo.isChinaEdition {
+            accountChinaSyncSetting = []
+        } else {
+            accountChinaSyncSetting = [
+                // Show China sync service setting:
+                ChinaSyncServiceSetting(settings: self)
+            ]
+        }
         // There is nothing to show in the Customize section if we don't include the compact tab layout
         // setting on iPad. When more options are added that work on both device types, this logic can
         // be changed.
@@ -168,6 +187,18 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagga
             ]
         }
 
+        let accountSectionTitle = NSAttributedString(string: .FxAFirefoxAccount)
+
+        let footerText = !profile.hasAccount() ? NSAttributedString(string: .Settings.Sync.ButtonDescription) : nil
+        settings += [
+            SettingSection(title: accountSectionTitle, footerTitle: footerText, children: [
+                // Without a Firefox Account:
+                ConnectSetting(settings: self),
+                AdvancedAccountSetting(settings: self),
+                // With a Firefox Account:
+                AccountStatusSetting(settings: self),
+                SyncNowSetting(settings: self)
+            ] + accountChinaSyncSetting )]
 
         settings += [ SettingSection(title: NSAttributedString(string: .SettingsGeneralSectionTitle), children: generalSettings)]
 

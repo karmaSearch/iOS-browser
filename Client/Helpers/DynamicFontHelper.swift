@@ -259,9 +259,9 @@ class DynamicFontHelper: NSObject {
 
         var font: UIFont
         if let weight = weight {
-            font = UIFont.systemFont(ofSize: size, weight: weight)
+            font = UIFont.customFont(ofSize: size, weight: weight)
         } else {
-            font = UIFont(descriptor: fontDescriptor, size: size)
+            font = UIFont.customFont(ofSize: size)
         }
 
         return fontMetrics.scaledFont(for: font)

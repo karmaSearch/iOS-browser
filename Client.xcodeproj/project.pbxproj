@@ -677,21 +677,655 @@
 		96EB6C4027DBEE9800A9D159 /* SearchGroupedItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EB6C3F27DBEE9800A9D159 /* SearchGroupedItemsViewController.swift */; };
 		96EB6C4327DC205D00A9D159 /* SearchGroupedItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EB6C4227DC205D00A9D159 /* SearchGroupedItemsViewModel.swift */; };
 		96F8DA49280452CA00E53239 /* GleanPlumbContextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8DA48280452CA00E53239 /* GleanPlumbContextProvider.swift */; };
+		A31EE6D0299D382600354531 /* UIFont+Karma.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8716B29379E8B00C76AC2 /* UIFont+Karma.swift */; };
+		A31EE6D1299D384D00354531 /* UIFont+Karma.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8716B29379E8B00C76AC2 /* UIFont+Karma.swift */; };
+		A31EE6D2299D39D700354531 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3905274E1C874D35007E0BB7 /* TodayViewController.swift */; };
+		A31EE6D3299D39D700354531 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391AEFD11C8F11ED00691F84 /* Images.xcassets */; };
+		A31EE6D8299D3E0B00354531 /* FeatureFlagsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82A94E6269CB77F00624AA7 /* FeatureFlagsManager.swift */; };
+		A31EE6DE299E7AF800354531 /* FeatureFlagsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82A94E6269CB77F00624AA7 /* FeatureFlagsManager.swift */; };
 		A3286FC82938C3A5001C5838 /* UIDevice+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3286FC72938C3A5001C5838 /* UIDevice+extension.swift */; };
 		A32FD03F2937AFDA0072CD43 /* DefaultBrowserOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32FD03E2937AFDA0072CD43 /* DefaultBrowserOnboardingView.swift */; };
-		A32FD0422937B07A0072CD43 /* IntroTutoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32FD0402937B0790072CD43 /* IntroTutoView.swift */; };
-		A32FD0432937B07A0072CD43 /* IntroScreenWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32FD0412937B07A0072CD43 /* IntroScreenWelcomeView.swift */; };
 		A32FD0452937B21E0072CD43 /* String+Karma.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32FD0442937B21D0072CD43 /* String+Karma.swift */; };
 		A32FD04C2937B2B10072CD43 /* KarmaMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD0462937B2B00072CD43 /* KarmaMenu.strings */; };
 		A32FD04D2937B2B10072CD43 /* KarmaMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD0462937B2B00072CD43 /* KarmaMenu.strings */; };
-		A32FD04E2937B2B10072CD43 /* IntroKarma.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD0482937B2B10072CD43 /* IntroKarma.strings */; };
 		A32FD04F2937B2B10072CD43 /* IntroKarma.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD0482937B2B10072CD43 /* IntroKarma.strings */; };
-		A32FD0502937B2B10072CD43 /* Karma.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD04A2937B2B10072CD43 /* Karma.strings */; };
 		A32FD0512937B2B10072CD43 /* Karma.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD04A2937B2B10072CD43 /* Karma.strings */; };
-		A37D5DE72938FBA600400F74 /* LearnAndActViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D5DE42938FBA500400F74 /* LearnAndActViewCell.swift */; };
-		A37D5DE82938FBA600400F74 /* LearnAndActViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D5DE52938FBA500400F74 /* LearnAndActViewModel.swift */; };
-		A37D5DE92938FBA600400F74 /* LearnAndActHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D5DE62938FBA600400F74 /* LearnAndActHeader.swift */; };
-		A3A8716C29379E8B00C76AC2 /* UIFont+Karma.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8716B29379E8B00C76AC2 /* UIFont+Karma.swift */; };
+		A380E826299D1D280046FA42 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4AC0EA28C929D700439F83 /* URLSessionProtocol.swift */; };
+		A380E827299D1D280046FA42 /* LibraryPanelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B101D1AA7F9C600C01CA3 /* LibraryPanelHelper.swift */; };
+		A380E828299D1D280046FA42 /* FxNimbus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455880A027B42F720078DEBB /* FxNimbus.swift */; };
+		A380E829299D1D280046FA42 /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86E4F702493BA8E0087BFD9 /* Metrics.swift */; };
+		A380E82A299D1D280046FA42 /* OpenSearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1E3BE528CBBF44003388C4 /* OpenSearchEngine.swift */; };
+		A380E82B299D1D280046FA42 /* AppLaunchUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A47CFF42860FB8900B2B7BF /* AppLaunchUtil.swift */; };
+		A380E82C299D1D280046FA42 /* PocketStandardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B0F5EC283B7C9F007AE65D /* PocketStandardCell.swift */; };
+		A380E82D299D1D280046FA42 /* SiriShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04CD747216CF86A004FF5B0 /* SiriShortcuts.swift */; };
+		A380E82E299D1D280046FA42 /* DefaultBrowserOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32FD03E2937AFDA0072CD43 /* DefaultBrowserOnboardingView.swift */; };
+		A380E82F299D1D280046FA42 /* ThemedWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A179E20E6C1A200B12184 /* ThemedWidgets.swift */; };
+		A380E830299D1D280046FA42 /* AppSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E39BD1C46F42000B85F42 /* AppSettingsTableViewController.swift */; };
+		A380E831299D1D280046FA42 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A6AB4528CA6A4C00EBEBDD /* String+Extension.swift */; };
+		A380E832299D1D280046FA42 /* AppAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65D89171C8647420006EA35 /* AppAuthenticator.swift */; };
+		A380E833299D1D280046FA42 /* TemporaryDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D029A04820A62DB0001DB72F /* TemporaryDocument.swift */; };
+		A380E834299D1D280046FA42 /* HistoryDeletionUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA0E7527F20B8E00DD8214 /* HistoryDeletionUtility.swift */; };
+		A380E835299D1D280046FA42 /* HistoryHighlightsDataAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB4237D28A2BA9C003BC40C /* HistoryHighlightsDataAdaptor.swift */; };
+		A380E836299D1D280046FA42 /* OpenPassBookHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A590C6028C123100032F1AA /* OpenPassBookHelper.swift */; };
+		A380E837299D1D280046FA42 /* ContentBlockerSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB895322193FFF400EB91A0 /* ContentBlockerSettingViewController.swift */; };
+		A380E838299D1D280046FA42 /* AppSettingsOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E692E3361C46E86A009D1240 /* AppSettingsOptions.swift */; };
+		A380E839299D1D280046FA42 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38F02D01C05127100175932 /* Authenticator.swift */; };
+		A380E83A299D1D280046FA42 /* LoginDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3B7E52497DCB60094E3C1 /* LoginDataSource.swift */; };
+		A380E83B299D1D280046FA42 /* HomepageSectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFE57FE27BAE3150025DE58 /* HomepageSectionType.swift */; };
+		A380E83C299D1D280046FA42 /* FxAPushMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3905B4D41E8E7A6B0027D953 /* FxAPushMessageHandler.swift */; };
+		A380E83D299D1D280046FA42 /* ReaderModeStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CD9F6C1A77DD2800318571 /* ReaderModeStyleViewController.swift */; };
+		A380E83E299D1D280046FA42 /* LockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD40FD427BB1C1000672675 /* LockButton.swift */; };
+		A380E83F299D1D280046FA42 /* FxAWebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F130D2D2483508E00B0F7D0 /* FxAWebViewModel.swift */; };
+		A380E840299D1D280046FA42 /* MockPocketSponsoredStoriesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E571EE742875694C0051D9AA /* MockPocketSponsoredStoriesProvider.swift */; };
+		A380E841299D1D280046FA42 /* OnboardingViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2109478828AFD24C00B73D44 /* OnboardingViewControllerProtocol.swift */; };
+		A380E842299D1D280046FA42 /* UserScriptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FCF7F41FE45842004A7995 /* UserScriptManager.swift */; };
+		A380E843299D1D280046FA42 /* HomepageViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8572F27D94CAD0075C173 /* HomepageViewModelProtocol.swift */; };
+		A380E844299D1D280046FA42 /* SyncedTabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1877A822875DEDE00F5BDF2 /* SyncedTabCell.swift */; };
+		A380E845299D1D280046FA42 /* LoginListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8226F224C11DB7008A6F38 /* LoginListTableViewCell.swift */; };
+		A380E846299D1D280046FA42 /* ReaderModeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A960051ABB9C450069AD6F /* ReaderModeUtils.swift */; };
+		A380E847299D1D280046FA42 /* ButtonWithSublabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B4C8224A53F26001B56E8 /* ButtonWithSublabel.swift */; };
+		A380E848299D1D280046FA42 /* OnboardingInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D660223D793DF0046EFA2 /* OnboardingInfoModel.swift */; };
+		A380E849299D1D280046FA42 /* StatefulButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD40FC927BADC4B00672675 /* StatefulButton.swift */; };
+		A380E84A299D1D280046FA42 /* WallpaperCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84655E52887398700861B4A /* WallpaperCollection.swift */; };
+		A380E84B299D1D280046FA42 /* LegacyWallpaperSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB2610A277CA7D300DDDD38 /* LegacyWallpaperSettingsViewController.swift */; };
+		A380E84C299D1D280046FA42 /* TelemetryWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47E6F1F7979DF00899189 /* TelemetryWrapper.swift */; };
+		A380E84D299D1D280046FA42 /* URLTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD40FCE27BADC6A00672675 /* URLTextField.swift */; };
+		A380E84E299D1D280046FA42 /* ClipboardBarDisplayHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ADB5D91E58CEC300E87909 /* ClipboardBarDisplayHandler.swift */; };
+		A380E84F299D1D280046FA42 /* PhotonActionSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD1980E27BEB3F100D64B0E /* PhotonActionSheetViewModel.swift */; };
+		A380E850299D1D280046FA42 /* LegacyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A179A20E69A7E00B12184 /* LegacyTheme.swift */; };
+		A380E851299D1D280046FA42 /* URLCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B77CD2811CD11001110D2 /* URLCaching.swift */; };
+		A380E852299D1D280046FA42 /* NimbusSearchBarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C825E9822832A425006CB811 /* NimbusSearchBarLayer.swift */; };
+		A380E853299D1D280046FA42 /* BreachAlertsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA03B269247F1D9E00382B62 /* BreachAlertsClient.swift */; };
+		A380E854299D1D280046FA42 /* TopSitesDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03294D288F1F0800AD9B89 /* TopSitesDimension.swift */; };
+		A380E855299D1D280046FA42 /* TabManagerNavDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB550B28633860007A6ABD /* TabManagerNavDelegate.swift */; };
+		A380E856299D1D280046FA42 /* ETPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDB96B240995A70058A068 /* ETPModel.swift */; };
+		A380E857299D1D280046FA42 /* UpdateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D660423D794B90046EFA2 /* UpdateViewModel.swift */; };
+		A380E858299D1D280046FA42 /* TabGroupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B457E27D7FD4B00E5E800 /* TabGroupData.swift */; };
+		A380E859299D1D280046FA42 /* UIEdgeInsets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12BD0AF28AC3A7E0029AAF0 /* UIEdgeInsets+Extension.swift */; };
+		A380E85A299D1D280046FA42 /* OneLineCellAndFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0152244229855A8009DE753 /* OneLineCellAndFooter.swift */; };
+		A380E85B299D1D280046FA42 /* ThemedDefaultNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F018F84B2719AE8300B9A52D /* ThemedDefaultNavigationController.swift */; };
+		A380E85C299D1D280046FA42 /* CumulativeDaysOfUseCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADED7ED276A7750009C19E6 /* CumulativeDaysOfUseCounter.swift */; };
+		A380E85D299D1D280046FA42 /* WallpaperCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B38B428A42EBC00D8C541 /* WallpaperCellViewModel.swift */; };
+		A380E85E299D1D280046FA42 /* PinnedSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BD95B2878AA74000FE773 /* PinnedSite.swift */; };
+		A380E85F299D1D280046FA42 /* RecentlySavedDataAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3A7DCD2886F7880065F81A /* RecentlySavedDataAdaptor.swift */; };
+		A380E860299D1D280046FA42 /* WallpaperThumbnailUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8680C5628BFDF7F00BC902A /* WallpaperThumbnailUtility.swift */; };
+		A380E861299D1D280046FA42 /* JumpBackInSyncedTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE80BBD2891C21A00BC12EA /* JumpBackInSyncedTab.swift */; };
+		A380E862299D1D280046FA42 /* FindInPageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B6923E1B9F9A58004B87A4 /* FindInPageHelper.swift */; };
+		A380E863299D1D280046FA42 /* JumpBackInList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE80BBB2891C20D00BC12EA /* JumpBackInList.swift */; };
+		A380E864299D1D280046FA42 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85C7F112721048E004BDBA4 /* Layout.swift */; };
+		A380E865299D1D280046FA42 /* HistoryHighlightsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF036E42274FD434002E834E /* HistoryHighlightsCell.swift */; };
+		A380E866299D1D280046FA42 /* LegacyDarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A179920E69A7E00B12184 /* LegacyDarkTheme.swift */; };
+		A380E867299D1D280046FA42 /* TabTrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52E1D925F5961F0092204C /* TabTrayViewController.swift */; };
+		A380E868299D1D280046FA42 /* MainMenuActionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD40FD227BB068F00672675 /* MainMenuActionHelper.swift */; };
+		A380E869299D1D280046FA42 /* BrowserViewController+ReaderMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C84B6212EFFBF001489DF /* BrowserViewController+ReaderMode.swift */; };
+		A380E86A299D1D280046FA42 /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D95015270238500079D39D /* Throttler.swift */; };
+		A380E86B299D1D280046FA42 /* SingleActionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A93080A27C01AD60052167D /* SingleActionViewModel.swift */; };
+		A380E86C299D1D280046FA42 /* CanRemoveQuickActionBookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7368AC27924AAF005D7704 /* CanRemoveQuickActionBookmark.swift */; };
+		A380E86D299D1D280046FA42 /* PhotonActionSheetWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA3B2CC2268F27500728BDB /* PhotonActionSheetWidgets.swift */; };
+		A380E86E299D1D280046FA42 /* FeatureFlagUserPrefsMigrationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D0D6F1281C182D00AFAED9 /* FeatureFlagUserPrefsMigrationUtility.swift */; };
+		A380E86F299D1D280046FA42 /* LocalRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C3696D1CC6B78800348A61 /* LocalRequestHelper.swift */; };
+		A380E870299D1D280046FA42 /* LegacyWallpaperResourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87DC85B27B2C94D006EFCE2 /* LegacyWallpaperResourceManager.swift */; };
+		A380E871299D1D280046FA42 /* ReaderModeHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B423DC1ABA0318007E66C8 /* ReaderModeHandlers.swift */; };
+		A380E872299D1D280046FA42 /* SearchEngines.swift in Sources */ = {isa = PBXBuildFile; fileRef = D308E4E31A5306F500842685 /* SearchEngines.swift */; };
+		A380E873299D1D280046FA42 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B4C8824A53F81001B56E8 /* UIButtonExtensions.swift */; };
+		A380E874299D1D280046FA42 /* ThirdPartySearchAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE6D3B1CEB9E4D0080928C /* ThirdPartySearchAlerts.swift */; };
+		A380E875299D1D280046FA42 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E195440328A5AFDE00304CF0 /* BottomSheetViewController.swift */; };
+		A380E876299D1D280046FA42 /* WallpaperMetadataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C869912B28917688007ACC5C /* WallpaperMetadataLoader.swift */; };
+		A380E877299D1D280046FA42 /* RecentlyClosedTabsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745DAB2F1CDAAFAA00D44181 /* RecentlyClosedTabsPanel.swift */; };
+		A380E878299D1D280046FA42 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9483C22A18B78002F4AA1 /* TextFieldTableViewCell.swift */; };
+		A380E879299D1D280046FA42 /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8954A4D2729AD9A001C7283 /* LightTheme.swift */; };
+		A380E87A299D1D280046FA42 /* NimbusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87D8B7F2818333F00A6307D /* NimbusManager.swift */; };
+		A380E87B299D1D280046FA42 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4AC0E928C929D700439F83 /* URLSessionDataTaskProtocol.swift */; };
+		A380E87C299D1D280046FA42 /* TopTabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F44681D087DB600CB7EF0 /* TopTabsViewController.swift */; };
+		A380E87D299D1D280046FA42 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFACDFAE274D4D6D00A94EEC /* ReusableCell.swift */; };
+		A380E87E299D1D280046FA42 /* TopSitesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0BA05B24F46A0400D731B5 /* TopSitesProvider.swift */; };
+		A380E87F299D1D280046FA42 /* URLBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0DB931A8545800039F300 /* URLBarView.swift */; };
+		A380E880299D1D280046FA42 /* WallpaperBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFACBF7E277B5F7B003D5F41 /* WallpaperBackgroundView.swift */; };
+		A380E881299D1D280046FA42 /* DownloadContentScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01017F4219CB6BD009CBB5A /* DownloadContentScript.swift */; };
+		A380E882299D1D280046FA42 /* TabEventHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F819C51FD70F5D009E31E4 /* TabEventHandlers.swift */; };
+		A380E883299D1D280046FA42 /* SearchInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65607601C08B4E200534B02 /* SearchInputView.swift */; };
+		A380E884299D1D280046FA42 /* Punycode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B2AC11D41F02D00429414 /* Punycode.swift */; };
+		A380E885299D1D280046FA42 /* TodayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B4C7C24A53EA8001B56E8 /* TodayViewModel.swift */; };
+		A380E886299D1D280046FA42 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43446CE92412066500F5C643 /* UIViewController+Extension.swift */; };
+		A380E887299D1D280046FA42 /* SeparatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A471184287F6E4800F5A6EA /* SeparatorTableViewCell.swift */; };
+		A380E888299D1D280046FA42 /* GridTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D301AAED1A3A55B70078DD1D /* GridTabViewController.swift */; };
+		A380E889299D1D280046FA42 /* LearnAndActViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D5DE52938FBA500400F74 /* LearnAndActViewModel.swift */; };
+		A380E88A299D1D280046FA42 /* LegacyThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A179820E69A7E00B12184 /* LegacyThemeManager.swift */; };
+		A380E88B299D1D280046FA42 /* BrowserViewController+FindInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFDB787211C83A5005CCA2F /* BrowserViewController+FindInPage.swift */; };
+		A380E88C299D1D280046FA42 /* JumpBackInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A012F026AB07D70096A7A7 /* JumpBackInViewModel.swift */; };
+		A380E88D299D1D280046FA42 /* TabContentBlocker+ContentScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB894FA219398E500EB91A0 /* TabContentBlocker+ContentScript.swift */; };
+		A380E88E299D1D280046FA42 /* UITestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE7B451B054F8600641031 /* UITestAppDelegate.swift */; };
+		A380E88F299D1D280046FA42 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D57E6D25ED6F2700883FAD /* SearchViewController.swift */; };
+		A380E891299D1D280046FA42 /* TopSiteItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB50E101D6274CD004B33DF /* TopSiteItemCell.swift */; };
+		A380E892299D1D280046FA42 /* WallpaperSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E127313B28B6AD99006F39D2 /* WallpaperSettingsViewModel.swift */; };
+		A380E893299D1D280046FA42 /* TodayUX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B4C8524A53F3E001B56E8 /* TodayUX.swift */; };
+		A380E894299D1D280046FA42 /* AdjustHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A07910E278F62F2005529CB /* AdjustHelper.swift */; };
+		A380E895299D1D280046FA42 /* FaviconFetcher+Non-Bundled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF4266D251BC46D0086386A /* FaviconFetcher+Non-Bundled.swift */; };
+		A380E896299D1D280046FA42 /* NimbusFlaggableFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B07A4028199500000AFCE7 /* NimbusFlaggableFeature.swift */; };
+		A380E897299D1D280046FA42 /* Clearables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B62EFD11AD63CD100ACB9CD /* Clearables.swift */; };
+		A380E898299D1D280046FA42 /* DefaultBrowserOnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431C0CA825C890E500395CE4 /* DefaultBrowserOnboardingViewModel.swift */; };
+		A380E899299D1D280046FA42 /* LegacyWallpaperStorageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05123827D17EC3009930CC /* LegacyWallpaperStorageUtility.swift */; };
+		A380E89A299D1D280046FA42 /* ConfigurableGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFACBF80277B916B003D5F41 /* ConfigurableGradientView.swift */; };
+		A380E89B299D1D280046FA42 /* FaviconHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F8EB12004014E003C2224 /* FaviconHandler.swift */; };
+		A380E89C299D1D280046FA42 /* MailProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7482205B1DBAB56300EEEA72 /* MailProviders.swift */; };
+		A380E89D299D1D280046FA42 /* BackForwardListAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40046F91CF8E0B200B08303 /* BackForwardListAnimator.swift */; };
+		A380E89E299D1D280046FA42 /* TabPrintPageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31E0FA1B382B520077078A /* TabPrintPageRenderer.swift */; };
+		A380E89F299D1D280046FA42 /* NewTabContentSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81E45121F82C56C004EFFBA /* NewTabContentSettingsViewController.swift */; };
+		A380E8A0299D1D280046FA42 /* ReaderMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CD9E901A6897FB00318571 /* ReaderMode.swift */; };
+		A380E8A1299D1D280046FA42 /* Contile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A562A227D7B32A0045144A /* Contile.swift */; };
+		A380E8A2299D1D280046FA42 /* RecentItemsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962F39492672D57A006BDA2A /* RecentItemsHelper.swift */; };
+		A380E8A3299D1D280046FA42 /* LibraryViewController+ToolbarActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D7B60528077CA5003F7E94 /* LibraryViewController+ToolbarActions.swift */; };
+		A380E8A4299D1D280046FA42 /* WallpaperNetworkModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C869912828917687007ACC5C /* WallpaperNetworkModule.swift */; };
+		A380E8A5299D1D280046FA42 /* DataObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8572827D9411A0075C173 /* DataObserver.swift */; };
+		A380E8A6299D1D280046FA42 /* WallpaperMetadataCodableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A4137328BE58C900D8EFEA /* WallpaperMetadataCodableProtocol.swift */; };
+		A380E8A7299D1D280046FA42 /* PhotonActionSheetContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A93080827BFE88F0052167D /* PhotonActionSheetContainerCell.swift */; };
+		A380E8A8299D1D280046FA42 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85C7F0D2711C555004BDBA4 /* SettingsViewController.swift */; };
+		A380E8A9299D1D280046FA42 /* SessionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C027441B2A348C001B1E88 /* SessionData.swift */; };
+		A380E8AA299D1D280046FA42 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84266742728462900382274 /* AccessibilityIdentifiers.swift */; };
+		A380E8AB299D1D280046FA42 /* LearnAndActViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D5DE42938FBA500400F74 /* LearnAndActViewCell.swift */; };
+		A380E8AC299D1D280046FA42 /* MenuBuilderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27EEDA28BADF4700DD6F5D /* MenuBuilderHelper.swift */; };
+		A380E8AD299D1D280046FA42 /* WebViewNavigationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1877A80286E0EFD00F5BDF2 /* WebViewNavigationHandler.swift */; };
+		A380E8AE299D1D280046FA42 /* LibraryPanelContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A36CB239EB99400A21587 /* LibraryPanelContextMenu.swift */; };
+		A380E8AF299D1D280046FA42 /* TabToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D314E7F51A37B98700426A76 /* TabToolbar.swift */; };
+		A380E8B0299D1D280046FA42 /* SyncContentSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA977D1FAA6B490016F365 /* SyncContentSettingsViewController.swift */; };
+		A380E8B1299D1D280046FA42 /* TodayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B4C7824A53E7B001B56E8 /* TodayModel.swift */; };
+		A380E8B2299D1D280046FA42 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C11E9A2864C2DD00840E7C /* AppContainer.swift */; };
+		A380E8B3299D1D280046FA42 /* HomepageMessageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2386E4E524F8358E0072EF17 /* HomepageMessageCard.swift */; };
+		A380E8B4299D1D280046FA42 /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8954A502729AD9D001C7283 /* DarkTheme.swift */; };
+		A380E8B5299D1D280046FA42 /* TabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BDBBFD2752FA8600254DE4 /* TabCell.swift */; };
+		A380E8B6299D1D280046FA42 /* SyncStatusResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D03171D511398002FE3F6 /* SyncStatusResolver.swift */; };
+		A380E8B7299D1D280046FA42 /* FadeScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CB41D2846F0BF00CC3A16 /* FadeScrollView.swift */; };
+		A380E8B8299D1D280046FA42 /* TopTabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E3983C1D21F1E7004E89BA /* TopTabCell.swift */; };
+		A380E8B9299D1D280046FA42 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9293D31D6580E100AC8D33 /* QRCodeViewController.swift */; };
+		A380E8BA299D1D280046FA42 /* PocketSponsoredStoriesProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E571EE732875694C0051D9AA /* PocketSponsoredStoriesProviding.swift */; };
+		A380E8BB299D1D280046FA42 /* FocusHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F4C1092045DB2E00746155 /* FocusHelper.swift */; };
+		A380E8BC299D1D280046FA42 /* TabLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CD9F2C1A6DC91200318571 /* TabLocationView.swift */; };
+		A380E8BD299D1D280046FA42 /* NimbusSponsoredTileLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A161412282C2F8F00DDBB02 /* NimbusSponsoredTileLayer.swift */; };
+		A380E8BE299D1D280046FA42 /* SnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB5B2861AC0A2B90052877D /* SnackBar.swift */; };
+		A380E8BF299D1D280046FA42 /* TopSitesDataAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8572B27D945FA0075C173 /* TopSitesDataAdaptor.swift */; };
+		A380E8C0299D1D280046FA42 /* SessionRestoreHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC4869C2195F58300CDA48D /* SessionRestoreHandler.swift */; };
+		A380E8C1299D1D280046FA42 /* InactiveTabHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C889569927E8D1AC00E3779E /* InactiveTabHeader.swift */; };
+		A380E8C2299D1D280046FA42 /* QuickActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEFC67F1BFF68C30059C952 /* QuickActions.swift */; };
+		A380E8C3299D1D280046FA42 /* MetadataParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C95E35200FDC5400E4E51C /* MetadataParserHelper.swift */; };
+		A380E8C4299D1D280046FA42 /* InsetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF1B7E21AC60DEA00A7B407 /* InsetButton.swift */; };
+		A380E8C5299D1D280046FA42 /* WallpaperMigrationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A121928C2451A0097ED51 /* WallpaperMigrationUtility.swift */; };
+		A380E8C6299D1D280046FA42 /* TabDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87F84AB20B891160091F2DA /* TabDisplayManager.swift */; };
+		A380E8C7299D1D280046FA42 /* BrowserViewController+UIDropInteractionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C95EF5201A55A800E4E51C /* BrowserViewController+UIDropInteractionDelegate.swift */; };
+		A380E8C8299D1D280046FA42 /* PrivilegedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31CF65B1CC1959A001D0BD0 /* PrivilegedRequest.swift */; };
+		A380E8C9299D1D280046FA42 /* HomepageContextMenuHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A796C27F773550022D6C6 /* HomepageContextMenuHelper.swift */; };
+		A380E8CA299D1D280046FA42 /* KeyboardPressesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2783F0275FFDC50080D29D /* KeyboardPressesHandler.swift */; };
+		A380E8CB299D1D280046FA42 /* UIView+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D33A7C1FBD080300A20A28 /* UIView+SnapKit.swift */; };
+		A380E8CC299D1D280046FA42 /* Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = E650755B1E37F747006961AC /* Swizzling.m */; };
+		A380E8CD299D1D280046FA42 /* OpenWithSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74821FC41DB56A2500EEEA72 /* OpenWithSettingsViewController.swift */; };
+		A380E8CE299D1D280046FA42 /* WallpaperMetadataUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84656002887A0F700861B4A /* WallpaperMetadataUtility.swift */; };
+		A380E8CF299D1D280046FA42 /* PocketSponsoredStoriesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E571EE752875694C0051D9AA /* PocketSponsoredStoriesProvider.swift */; };
+		A380E8D0299D1D280046FA42 /* FindInPageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B6923C1B9F9444004B87A4 /* FindInPageBar.swift */; };
+		A380E8D1299D1D280046FA42 /* SettingsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44FC711A9E840300FD20CC /* SettingsNavigationController.swift */; };
+		A380E8D2299D1D280046FA42 /* DownloadsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E89A2820910917001CE5C7 /* DownloadsPanel.swift */; };
+		A380E8D3299D1D280046FA42 /* TabTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A4FE8254A781A00C4A9C9 /* TabTableViewHeader.swift */; };
+		A380E8D4299D1D280046FA42 /* ContextMenuHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BA7E0D1B0E934F00153782 /* ContextMenuHelper.swift */; };
+		A380E8D5299D1D280046FA42 /* WallpaperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B38B228A42D5D00D8C541 /* WallpaperCollectionViewCell.swift */; };
+		A380E8D6299D1D280046FA42 /* InnerStrokedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E660BE051BB0666D009AC090 /* InnerStrokedView.swift */; };
+		A380E8D7299D1D280046FA42 /* LegacyWallpaperSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8364D7827AAC46700D0A4F0 /* LegacyWallpaperSettingsViewModel.swift */; };
+		A380E8D8299D1D280046FA42 /* LoginsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB5B30A1AC0AD1F0052877D /* LoginsHelper.swift */; };
+		A380E8D9299D1D280046FA42 /* UIConstants+BottomInset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87DF9DA267247190097E707 /* UIConstants+BottomInset.swift */; };
+		A380E8DA299D1D280046FA42 /* TabsQuantityTelemetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD08D1427E9198E00B8E907 /* TabsQuantityTelemetry.swift */; };
+		A380E8DB299D1D280046FA42 /* SavedTab+ConfigureExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3CE6224EEE83200422BB2 /* SavedTab+ConfigureExtension.swift */; };
+		A380E8DC299D1D280046FA42 /* LegacyWallpaperNetworkUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87DC85527B2C8B0006EFCE2 /* LegacyWallpaperNetworkUtility.swift */; };
+		A380E8DD299D1D280046FA42 /* HomePageAccessors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392ED7E51D0AEFEF009D9B62 /* HomePageAccessors.swift */; };
+		A380E8DE299D1D280046FA42 /* MessageCardDataAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0017C028A3FF6100FEFC8B /* MessageCardDataAdaptor.swift */; };
+		A380E8DF299D1D280046FA42 /* OpenInHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA8D1C61BA037F500C8AE9E /* OpenInHelper.swift */; };
+		A380E8E0299D1D280046FA42 /* ToolbarTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD40FC627BADC3400672675 /* ToolbarTextField.swift */; };
+		A380E8E1299D1D280046FA42 /* NoLoginsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA90753724929B22005B794D /* NoLoginsView.swift */; };
+		A380E8E2299D1D280046FA42 /* ReaderModeCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B423BD1AB9FE6A007E66C8 /* ReaderModeCache.swift */; };
+		A380E8E3299D1D280046FA42 /* TabTrayController+KeyCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396CDB54203C5B870034A3A3 /* TabTrayController+KeyCommands.swift */; };
+		A380E8E4299D1D280046FA42 /* SettingsContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E36D771B71323500D69DA1 /* SettingsContentViewController.swift */; };
+		A380E8E5299D1D280046FA42 /* FirefoxTabContentBlocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8950B2193994A00EB91A0 /* FirefoxTabContentBlocker.swift */; };
+		A380E8E6299D1D280046FA42 /* HistoryPanel+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211F00AB27F4D918001D9189 /* HistoryPanel+Search.swift */; };
+		A380E8E7299D1D280046FA42 /* HistoryPanelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EB6C3727D821B800A9D159 /* HistoryPanelViewModel.swift */; };
+		A380E8E8299D1D280046FA42 /* SimpleTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E69EAF254D064E00B591C2 /* SimpleTab.swift */; };
+		A380E8E9299D1D280046FA42 /* OnboardingCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A7C44F28353D0E0071D996 /* OnboardingCardViewController.swift */; };
+		A380E8EA299D1D280046FA42 /* PhotonActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742A56381D80B54A00BDB803 /* PhotonActionSheet.swift */; };
+		A380E8EB299D1D280046FA42 /* BackForwardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EFEECE1CEBB6F2009762A4 /* BackForwardTableViewCell.swift */; };
+		A380E8EC299D1D280046FA42 /* photon-colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49854D206173C800893DAE /* photon-colors.swift */; };
+		A380E8ED299D1D280046FA42 /* OpenQLPreviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC1065E28D0CD700013263A /* OpenQLPreviewHelper.swift */; };
+		A380E8EE299D1D280046FA42 /* PhotonActionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA3B2C22268F16300728BDB /* PhotonActionSheetView.swift */; };
+		A380E8EF299D1D280046FA42 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18EA56E28AD3279003F97FC /* UIDevice+Extension.swift */; };
+		A380E8F0299D1D280046FA42 /* FirefoxAccountSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB3BE8624746787009320EE /* FirefoxAccountSignInViewController.swift */; };
+		A380E8F1299D1D280046FA42 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EAE0E1228B3762001C875A /* DrawerViewController.swift */; };
+		A380E8F2299D1D280046FA42 /* NSAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E689C72F1E0C7617008BAADB /* NSAttributedString+Extension.swift */; };
+		A380E8F3299D1D280046FA42 /* BookmarksPanelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A471182287F6D9C00F5A6EA /* BookmarksPanelViewModel.swift */; };
+		A380E8F4299D1D280046FA42 /* WallpaperSelectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FF93E328A2E74600E6360E /* WallpaperSelectorViewModel.swift */; };
+		A380E8F5299D1D280046FA42 /* PrintHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C95E0D200FD3B200E4E51C /* PrintHelper.swift */; };
+		A380E8F6299D1D280046FA42 /* AppDelegate+PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9854FD2422686F0040F24B /* AppDelegate+PushNotifications.swift */; };
+		A380E8F7299D1D280046FA42 /* TopSitesRowCountSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFACBF84277B9B5B003D5F41 /* TopSitesRowCountSettingsController.swift */; };
+		A380E8F8299D1D280046FA42 /* AccountSyncHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9614BF4328AD1C6700D3F7EA /* AccountSyncHandler.swift */; };
+		A380E8F9299D1D280046FA42 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64ED8F91BC55AE300DAF864 /* UIAlertController+Extension.swift */; };
+		A380E8FA299D1D280046FA42 /* OpenSearchParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA77831A43B2CE0010CD32 /* OpenSearchParser.swift */; };
+		A380E8FB299D1D280046FA42 /* DevicePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04CD748216CF86B004FF5B0 /* DevicePickerViewController.swift */; };
+		A380E8FC299D1D280046FA42 /* LoginListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63ED8E01BFD25580097D08E /* LoginListViewController.swift */; };
+		A380E8FD299D1D280046FA42 /* BrowserViewController+DownloadQueueDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0625CA7208FC47A0081F3B2 /* BrowserViewController+DownloadQueueDelegate.swift */; };
+		A380E8FE299D1D280046FA42 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A56955127C68AE00077A89E /* UILabel+Extension.swift */; };
+		A380E8FF299D1D280046FA42 /* SearchSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44FCC61A9E8CF500FD20CC /* SearchSettingsTableViewController.swift */; };
+		A380E900299D1D280046FA42 /* SponsoredTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD3271427E3B45D00EAF033 /* SponsoredTile.swift */; };
+		A380E901299D1D280046FA42 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8417D212657F0600010B877 /* LibraryViewModel.swift */; };
+		A380E902299D1D280046FA42 /* UserActivityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A359E31BFCCE94006B9E87 /* UserActivityHandler.swift */; };
+		A380E903299D1D280046FA42 /* ContextualHintViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4331A9BC271D267E005E8080 /* ContextualHintViewModel.swift */; };
+		A380E904299D1D280046FA42 /* PhotonActionSheetAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88FDAAE1F4E2BA000FD9709 /* PhotonActionSheetAnimator.swift */; };
+		A380E905299D1D280046FA42 /* EnhancedTrackingProtectionDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83432FD26BAD30D00ABAAA6 /* EnhancedTrackingProtectionDetailsVC.swift */; };
+		A380E906299D1D280046FA42 /* TabScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E698FFD91B4AADF40001F623 /* TabScrollController.swift */; };
+		A380E907299D1D280046FA42 /* SearchLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34510871ACF415700EC27F0 /* SearchLoader.swift */; };
+		A380E908299D1D280046FA42 /* GleanPlumbMessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9636D92727F5D72D00771F5E /* GleanPlumbMessageManager.swift */; };
+		A380E909299D1D280046FA42 /* UserResearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80685D026A0C93900DCD895 /* UserResearch.swift */; };
+		A380E90A299D1D280046FA42 /* BottomSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E195440228A5AFDE00304CF0 /* BottomSheetViewModel.swift */; };
+		A380E90B299D1D280046FA42 /* BaseContentStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AED23C427AC1F9500DE7E97 /* BaseContentStackView.swift */; };
+		A380E90C299D1D280046FA42 /* WallpaperNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8699130289176A5007ACC5C /* WallpaperNetworking.swift */; };
+		A380E90D299D1D280046FA42 /* WebServerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A271ABC2860B0D700471CE4 /* WebServerUtil.swift */; };
+		A380E90E299D1D280046FA42 /* ContextualHintEligibilityUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964FA97428A1A8F20024BB3B /* ContextualHintEligibilityUtility.swift */; };
+		A380E90F299D1D280046FA42 /* LoginListDataSourceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FC7D224A6A9B70012F347 /* LoginListDataSourceHelper.swift */; };
+		A380E910299D1D280046FA42 /* LabelButtonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AB6F9E25DC53D20016B015 /* LabelButtonHeaderView.swift */; };
+		A380E911299D1D280046FA42 /* AddCredentialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8163850268A0899004C7160 /* AddCredentialViewController.swift */; };
+		A380E912299D1D280046FA42 /* LoginListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA520E7924913C1B00CCAB48 /* LoginListViewModel.swift */; };
+		A380E913299D1D280046FA42 /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87DC85D27B2CA49006EFCE2 /* Loggable.swift */; };
+		A380E914299D1D280046FA42 /* SearchBarSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE1E1CC27B191110024C45E /* SearchBarSettingsViewModel.swift */; };
+		A380E915299D1D280046FA42 /* JumpBackInDataAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE80BB72891BE0700BC12EA /* JumpBackInDataAdaptor.swift */; };
+		A380E916299D1D280046FA42 /* ClearHistorySheetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A01891B275E9C2A00923EFE /* ClearHistorySheetProvider.swift */; };
+		A380E917299D1D280046FA42 /* BrowserViewController+WebViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F457A71F1FD75A000CB895 /* BrowserViewController+WebViewDelegates.swift */; };
+		A380E918299D1D280046FA42 /* ContextualHintPrefsKeysProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964FA97628A2A55C0024BB3B /* ContextualHintPrefsKeysProvider.swift */; };
+		A380E919299D1D280046FA42 /* SponsoredContentFilterUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1E3BDE28CBA81E003388C4 /* SponsoredContentFilterUtility.swift */; };
+		A380E91A299D1D280046FA42 /* ErrorToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6927EBF1C7B6FB800D03F75 /* ErrorToast.swift */; };
+		A380E91B299D1D280046FA42 /* DispatchGroupInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE80BB22891AD9200BC12EA /* DispatchGroupInterface.swift */; };
+		A380E91C299D1D280046FA42 /* SearchGroupedItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EB6C4227DC205D00A9D159 /* SearchGroupedItemsViewModel.swift */; };
+		A380E91D299D1D280046FA42 /* TopSitesWidgetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BD95E2878B7B6000FE773 /* TopSitesWidgetManager.swift */; };
+		A380E91E299D1D280046FA42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84B21E51A0910F600AAB793 /* AppDelegate.swift */; };
+		A380E91F299D1D280046FA42 /* DispatchQueueInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA9C8828931197002C0077 /* DispatchQueueInterface.swift */; };
+		A380E920299D1D280046FA42 /* BrowserPrompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E653422C1C5944F90039DD9E /* BrowserPrompts.swift */; };
+		A380E921299D1D280046FA42 /* FxColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4AC0F028C92BE500439F83 /* FxColors.swift */; };
+		A380E922299D1D280046FA42 /* WallpaperSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E127313A28B6AD99006F39D2 /* WallpaperSettingsViewController.swift */; };
+		A380E923299D1D280046FA42 /* GleanPlumbMessageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9636D92927F767EC00771F5E /* GleanPlumbMessageUtility.swift */; };
+		A380E924299D1D280046FA42 /* WallpaperSettingsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E127313E28B6C194006F39D2 /* WallpaperSettingsHeaderView.swift */; };
+		A380E925299D1D280046FA42 /* RemoteTabsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE87FD1ABB3817005317B1 /* RemoteTabsPanel.swift */; };
+		A380E926299D1D280046FA42 /* HomePageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DD030C1CD53E1900BC09B3 /* HomePageHelper.swift */; };
+		A380E927299D1D280046FA42 /* UIView+Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1390FA828B032AD00C9EF3E /* UIView+Screenshot.swift */; };
+		A380E928299D1D280046FA42 /* WidgetKitTopSiteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435222C025882E3800FCA5B6 /* WidgetKitTopSiteModel.swift */; };
+		A380E929299D1D280046FA42 /* ETPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDB97524099F200058A068 /* ETPViewModel.swift */; };
+		A380E92A299D1D280046FA42 /* HistoryActionables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EB6C3D27D9266500A9D159 /* HistoryActionables.swift */; };
+		A380E92B299D1D280046FA42 /* ButtonToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F3B2991CFCF93A00966259 /* ButtonToast.swift */; };
+		A380E92C299D1D280046FA42 /* NimbusFeatureFlagLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B78A3280752A20000C15F /* NimbusFeatureFlagLayer.swift */; };
+		A380E92D299D1D280046FA42 /* UserDefaultsInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80C11EB28B3C7100062922A /* UserDefaultsInterface.swift */; };
+		A380E92E299D1D280046FA42 /* SearchTermGroupsUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4345441C26D2E52600D5EEAA /* SearchTermGroupsUtility.swift */; };
+		A380E92F299D1D280046FA42 /* LibraryPanelDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2165B2CB28748CD7004C0786 /* LibraryPanelDescriptor.swift */; };
+		A380E930299D1D280046FA42 /* SearchSuggestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31A0FC61A65D6D000DC8C7E /* SearchSuggestClient.swift */; };
+		A380E931299D1D280046FA42 /* ReaderModeStyleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57519827AD80B800A84DBF /* ReaderModeStyleViewModel.swift */; };
+		A380E933299D1D280046FA42 /* BreachAlertsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4ACE4824C8C91500F55894 /* BreachAlertsDetailView.swift */; };
+		A380E934299D1D280046FA42 /* BlurrableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C834ACD028D3ACA900203AD1 /* BlurrableCollectionViewCell.swift */; };
+		A380E935299D1D280046FA42 /* UIPasteboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83E5AB61C1D993D0026D912 /* UIPasteboard+Extension.swift */; };
+		A380E936299D1D280046FA42 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EFFA0B1FF5B1FA001D3A09 /* NavigationRouter.swift */; };
+		A380E937299D1D280046FA42 /* Wallpaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84655E12887388F00861B4A /* Wallpaper.swift */; };
+		A380E938299D1D280046FA42 /* EnhancedTrackingProtectionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849E46226B9C3AF00260F0B /* EnhancedTrackingProtectionVM.swift */; };
+		A380E939299D1D280046FA42 /* FormPostHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E55C4E1FB4FD23006DC274 /* FormPostHelper.swift */; };
+		A380E93A299D1D280046FA42 /* InactiveTabItemCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E118B9282862674E00C84831 /* InactiveTabItemCellModel.swift */; };
+		A380E93B299D1D280046FA42 /* ContextualHintCopyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962021E028B8078400BDF3D9 /* ContextualHintCopyProvider.swift */; };
+		A380E93C299D1D280046FA42 /* CGRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E650754D1E37F6AE006961AC /* CGRect+Extension.swift */; };
+		A380E93D299D1D280046FA42 /* TopBottomInterchangeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE1E1D127B1ADC40024C45E /* TopBottomInterchangeable.swift */; };
+		A380E93E299D1D280046FA42 /* PocketDataAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7653BC28A2C61D00924ABF /* PocketDataAdaptor.swift */; };
+		A380E93F299D1D280046FA42 /* PocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B0F5EF283B7CCE007AE65D /* PocketProvider.swift */; };
+		A380E940299D1D280046FA42 /* TitleActivityItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3972BF21C22412B00035B87 /* TitleActivityItemProvider.swift */; };
+		A380E941299D1D280046FA42 /* SiteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38A1BEC1A9FA2CA00F6A386 /* SiteTableViewController.swift */; };
+		A380E942299D1D280046FA42 /* TabPeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA0601A1C0F4DE200DFADB6 /* TabPeekViewController.swift */; };
+		A380E943299D1D280046FA42 /* ExperimentsBranchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51EA5B926406A0000334331 /* ExperimentsBranchesViewController.swift */; };
+		A380E944299D1D280046FA42 /* WallpaperManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84655F628879EF100861B4A /* WallpaperManager.swift */; };
+		A380E945299D1D280046FA42 /* WebsiteDataSearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6669B5E1211418A200CA117B /* WebsiteDataSearchResultsViewController.swift */; };
+		A380E946299D1D280046FA42 /* ExperimentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51EA5CE26406D8300334331 /* ExperimentsViewController.swift */; };
+		A380E947299D1D280046FA42 /* HighlightItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFE57FA27B2CB870025DE58 /* HighlightItem.swift */; };
+		A380E948299D1D280046FA42 /* LearnAndActHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D5DE62938FBA600400F74 /* LearnAndActHeader.swift */; };
+		A380E949299D1D280046FA42 /* BreachAlertsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA77ABF424772D98005079F9 /* BreachAlertsManager.swift */; };
+		A380E94A299D1D280046FA42 /* TopSiteHistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AB6FA125DC53D30016B015 /* TopSiteHistoryManager.swift */; };
+		A380E94B299D1D280046FA42 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81A8F2426D3ED1900EBA539 /* UIWindow+Extension.swift */; };
+		A380E94C299D1D280046FA42 /* AboutHomeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC4869B2195F58200CDA48D /* AboutHomeHandler.swift */; };
+		A380E94D299D1D280046FA42 /* OnboardingCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B2844928464FF0003EA521 /* OnboardingCardViewModel.swift */; };
+		A380E94E299D1D280046FA42 /* DefaultSearchPrefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA24A341FD84D620098F159 /* DefaultSearchPrefs.swift */; };
+		A380E94F299D1D280046FA42 /* LegacyWallpaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD64DB627A1A909003D4534 /* LegacyWallpaper.swift */; };
+		A380E950299D1D280046FA42 /* MenuHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65075601E37F77D006961AC /* MenuHelper.swift */; };
+		A380E951299D1D280046FA42 /* HomePanelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8574727D97CD40075C173 /* HomePanelType.swift */; };
+		A380E952299D1D280046FA42 /* LoginDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63ED7D71BFCD9990097D08E /* LoginDetailTableViewCell.swift */; };
+		A380E953299D1D280046FA42 /* WebsiteDataManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE54A720FCF6CF00CC310B /* WebsiteDataManagementViewController.swift */; };
+		A380E954299D1D280046FA42 /* FxAWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2E80723D20FB3005AACE6 /* FxAWebViewController.swift */; };
+		A380E955299D1D280046FA42 /* ThemedTableSectionHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14F7DF1288F3F9F00E3722C /* ThemedTableSectionHeaderFooterView.swift */; };
+		A380E956299D1D280046FA42 /* Notifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8044BD527B96A4E00CEE7AD /* Notifiable.swift */; };
+		A380E957299D1D280046FA42 /* GleanPlumbContextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8DA48280452CA00E53239 /* GleanPlumbContextProvider.swift */; };
+		A380E958299D1D280046FA42 /* HomepageContextMenuProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8574527D97CB00075C173 /* HomepageContextMenuProtocol.swift */; };
+		A380E959299D1D280046FA42 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB50E1F1D627539004B33DF /* HomepageViewController.swift */; };
+		A380E95A299D1D280046FA42 /* CoreFlaggableFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82A94E4269CB77500624AA7 /* CoreFlaggableFeature.swift */; };
+		A380E95B299D1D280046FA42 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84B22221A09122500AAB793 /* LibraryViewController.swift */; };
+		A380E95C299D1D280046FA42 /* TabEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39455F761FC83F430088A22C /* TabEventHandler.swift */; };
+		A380E95D299D1D280046FA42 /* TabMetadataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B458127DA420400E5E800 /* TabMetadataManager.swift */; };
+		A380E95E299D1D280046FA42 /* ReaderModeBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47616C61AB74CA600E7DD25 /* ReaderModeBarView.swift */; };
+		A380E95F299D1D280046FA42 /* SiriSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821E9052141B71C00452C55 /* SiriSettingsViewController.swift */; };
+		A380E960299D1D280046FA42 /* ContentBlocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB894F8219398E500EB91A0 /* ContentBlocker.swift */; };
+		A380E961299D1D280046FA42 /* BackgroundSyncUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3A2A0C287F742C00B79EAC /* BackgroundSyncUtil.swift */; };
+		A380E962299D1D280046FA42 /* DefaultBrowserOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23ED80FE25C89C9800D0E9D5 /* DefaultBrowserOnboardingViewController.swift */; };
+		A380E963299D1D280046FA42 /* PhotonActionSheetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88FDA9E1F4E2B9200FD9709 /* PhotonActionSheetProtocol.swift */; };
+		A380E964299D1D280046FA42 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12BD0AD28AC38480029AAF0 /* UIImage+Extension.swift */; };
+		A380E965299D1D280046FA42 /* DevicePasscodeRequiredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F886218B270CD3B8007F4562 /* DevicePasscodeRequiredViewController.swift */; };
+		A380E966299D1D280046FA42 /* URL+Mail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E650754F1E37F6D1006961AC /* URL+Mail.swift */; };
+		A380E967299D1D280046FA42 /* TabManagerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63306D422110B3CD00F25400 /* TabManagerStore.swift */; };
+		A380E968299D1D280046FA42 /* DispatchQueueHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83821FF1FC7961D00303C12 /* DispatchQueueHelper.swift */; };
+		A380E969299D1D280046FA42 /* InternalSchemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC486982195F46A00CDA48D /* InternalSchemeHandler.swift */; };
+		A380E96A299D1D280046FA42 /* TopTabFader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18BAAFC28E4A44500098AE2 /* TopTabFader.swift */; };
+		A380E96B299D1D280046FA42 /* CustomizeHomepageSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8656D78270F866700E199EA /* CustomizeHomepageSectionCell.swift */; };
+		A380E96C299D1D280046FA42 /* WallpaperStorageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84655FA28879FC600861B4A /* WallpaperStorageUtility.swift */; };
+		A380E96D299D1D280046FA42 /* LoginRecordExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6025B10B267B6BEA00F59F6B /* LoginRecordExtension.swift */; };
+		A380E96E299D1D280046FA42 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44FCC41A9E85E900FD20CC /* SettingsTableViewController.swift */; };
+		A380E96F299D1D280046FA42 /* FxBookmarkNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3233FB286270CF003E1C33 /* FxBookmarkNode.swift */; };
+		A380E970299D1D280046FA42 /* NoImageModeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9072B7F1D07B34100459960 /* NoImageModeHelper.swift */; };
+		A380E971299D1D280046FA42 /* CellWithRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433396C727ACE92500491049 /* CellWithRoundedButton.swift */; };
+		A380E972299D1D280046FA42 /* HomePageSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA923321A602DC002605C0 /* HomePageSettingViewController.swift */; };
+		A380E973299D1D280046FA42 /* CustomizeHomepageSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A161410282C035D00DDBB02 /* CustomizeHomepageSectionViewModel.swift */; };
+		A380E974299D1D280046FA42 /* ErrorPageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC4869A2195F58200CDA48D /* ErrorPageHelper.swift */; };
+		A380E975299D1D280046FA42 /* WallpaperCollectionAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84655E7288739CB00861B4A /* WallpaperCollectionAvailability.swift */; };
+		A380E976299D1D280046FA42 /* PocketDiscoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABC5AED284532C900FEA552 /* PocketDiscoverCell.swift */; };
+		A380E977299D1D280046FA42 /* EnhancedTrackingProtectionDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83432FF26BAD32800ABAAA6 /* EnhancedTrackingProtectionDetailsVM.swift */; };
+		A380E978299D1D280046FA42 /* TabFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03309428C2653600286539 /* TabFileManager.swift */; };
+		A380E979299D1D280046FA42 /* HomepageSectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB59589284145B30090F4AE /* HomepageSectionHandler.swift */; };
+		A380E97A299D1D280046FA42 /* TabsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E660BDD81BB06521009AC090 /* TabsButton.swift */; };
+		A380E97B299D1D280046FA42 /* WallpaperBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A6AB4728CA833000EBEBDD /* WallpaperBaseViewController.swift */; };
+		A380E97C299D1D280046FA42 /* HomeLogoHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A380E801299D1D140046FA42 /* HomeLogoHeaderCell.swift */; };
+		A380E97D299D1D280046FA42 /* ContextualHintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4331A9BA27193DEF005E8080 /* ContextualHintViewController.swift */; };
+		A380E97E299D1D280046FA42 /* Experiments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EF434D260A73950011E22E /* Experiments.swift */; };
+		A380E97F299D1D280046FA42 /* DynamicHeightCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEA639D279F468A00D489C3 /* DynamicHeightCollectionView.swift */; };
+		A380E980299D1D280046FA42 /* LegacyWallpaperFilePathProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87DC85927B2C8DE006EFCE2 /* LegacyWallpaperFilePathProtocol.swift */; };
+		A380E981299D1D280046FA42 /* SavedTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63306D3821103EAE00F25400 /* SavedTab.swift */; };
+		A380E982299D1D280046FA42 /* SearchEnginePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44FCCA1A9E972E00FD20CC /* SearchEnginePicker.swift */; };
+		A380E983299D1D280046FA42 /* TabDataRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3CE5E24EEE7C600422BB2 /* TabDataRetriever.swift */; };
+		A380E984299D1D280046FA42 /* KarmaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEA004294A0E3300A28297 /* KarmaConfig.swift */; };
+		A380E985299D1D280046FA42 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D1B91209790B60074B35F /* Toast.swift */; };
+		A380E986299D1D280046FA42 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5702E27AB4DEA005BFDC8 /* UIStackView+Extension.swift */; };
+		A380E987299D1D280046FA42 /* JumpBackInSectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE80BB92891C0C300BC12EA /* JumpBackInSectionLayout.swift */; };
+		A380E988299D1D280046FA42 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34DC84D1A16C40C00D49B7B /* Profile.swift */; };
+		A380E989299D1D280046FA42 /* HistoryHighlightsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFACDFA9274D489B00A94EEC /* HistoryHighlightsViewModel.swift */; };
+		A380E98A299D1D280046FA42 /* WallpaperFilePathProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84655FE2887A06B00861B4A /* WallpaperFilePathProvider.swift */; };
+		A380E98B299D1D280046FA42 /* WallpapersCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A5F9E283D38B800FF4053 /* WallpapersCardViewController.swift */; };
+		A380E98C299D1D280046FA42 /* LibraryViewController+LibraryPanelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A36CD239EB9EC00A21587 /* LibraryViewController+LibraryPanelDelegate.swift */; };
+		A380E98D299D1D280046FA42 /* WallpaperImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C869912928917687007ACC5C /* WallpaperImageLoader.swift */; };
+		A380E98E299D1D280046FA42 /* SearchTelemetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F7952425795F69005AEE40 /* SearchTelemetry.swift */; };
+		A380E98F299D1D280046FA42 /* DynamicFontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65075531E37F6FC006961AC /* DynamicFontHelper.swift */; };
+		A380E990299D1D280046FA42 /* Tab+ChangeUserAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82CDD45233E8996002E2743 /* Tab+ChangeUserAgent.swift */; };
+		A380E991299D1D280046FA42 /* TabTrayButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E3984B1D21F2FD004E89BA /* TabTrayButtonExtensions.swift */; };
+		A380E992299D1D280046FA42 /* SDWebImageCacheExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439086AA286CE61600897904 /* SDWebImageCacheExtension.swift */; };
+		A380E993299D1D280046FA42 /* FxAWebViewTelemetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437A857727E43FE100E42764 /* FxAWebViewTelemetry.swift */; };
+		A380E994299D1D280046FA42 /* AutocompleteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FEC38C1AC4B42F00494F45 /* AutocompleteTextField.swift */; };
+		A380E995299D1D280046FA42 /* UIFont+Karma.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8716B29379E8B00C76AC2 /* UIFont+Karma.swift */; };
+		A380E996299D1D280046FA42 /* SlideoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849E46426B9C3DD00260F0B /* SlideoverPresentationController.swift */; };
+		A380E997299D1D280046FA42 /* ExperimentsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D0532D2645B3A700759F85 /* ExperimentsTableView.swift */; };
+		A380E998299D1D280046FA42 /* AdjustTelemetryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2165B2C12860C2F4004C0786 /* AdjustTelemetryHelper.swift */; };
+		A380E999299D1D280046FA42 /* TopSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2D593D27DC0AA100713EC9 /* TopSite.swift */; };
+		A380E99A299D1D280046FA42 /* BrowserViewController+URLBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434E733625EED32E006D3BDE /* BrowserViewController+URLBarDelegate.swift */; };
+		A380E99B299D1D280046FA42 /* BrowserViewController+TabToolbarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE26B4E220C959D00D1D99A /* BrowserViewController+TabToolbarDelegate.swift */; };
+		A380E99C299D1D280046FA42 /* SwipeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68AEDAF1B18F81A00133D99 /* SwipeAnimator.swift */; };
+		A380E99D299D1D280046FA42 /* SimpleToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF56D261CDBBE1F00AC4D75 /* SimpleToast.swift */; };
+		A380E99E299D1D280046FA42 /* PocketStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B0F5F2283B7CCE007AE65D /* PocketStory.swift */; };
+		A380E99F299D1D280046FA42 /* TabTrayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81AC6B526160091007800C5 /* TabTrayViewModel.swift */; };
+		A380E9A0299D1D280046FA42 /* TrackingProtectionPageStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB894F5219398E500EB91A0 /* TrackingProtectionPageStats.swift */; };
+		A380E9A1299D1D280046FA42 /* ScreenshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31F95E81AC226CB005C9F3B /* ScreenshotHelper.swift */; };
+		A380E9A2299D1D280046FA42 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EADE381AFC3898007FB2FB /* UIImageView+Extension.swift */; };
+		A380E9A3299D1D280046FA42 /* TabManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3968F241A38FE8500CEFD3B /* TabManager.swift */; };
+		A380E9A4299D1D280046FA42 /* SearchGroupedItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EB6C3F27DBEE9800A9D159 /* SearchGroupedItemsViewController.swift */; };
+		A380E9A5299D1D280046FA42 /* TopTabsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E3985F1D22C409004E89BA /* TopTabsLayout.swift */; };
+		A380E9A6299D1D280046FA42 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2816EFFF1B33E05400522243 /* UIConstants.swift */; };
+		A380E9A7299D1D280046FA42 /* UIDeviceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E78A7128F9A93100F8D687 /* UIDeviceInterface.swift */; };
+		A380E9A8299D1D280046FA42 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1390FA728B032AD00C9EF3E /* UIView+Constraints.swift */; };
+		A380E9A9299D1D280046FA42 /* ContentBlocker+Safelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB894F9219398E500EB91A0 /* ContentBlocker+Safelist.swift */; };
+		A380E9AA299D1D280046FA42 /* InactiveTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437A9B692681257F00FB41C1 /* InactiveTabViewModel.swift */; };
+		A380E9AB299D1D280046FA42 /* WallpaperURLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C838FD5D289981240068F60B /* WallpaperURLProvider.swift */; };
+		A380E9AC299D1D280046FA42 /* BookmarkDetailPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9483322A03468002F4AA1 /* BookmarkDetailPanel.swift */; };
+		A380E9AD299D1D280046FA42 /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6889C41D66950E002AC85E /* UIImageColors.swift */; };
+		A380E9AE299D1D280046FA42 /* ASGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968BD7EA27DFF0F8003148B3 /* ASGroup.swift */; };
+		A380E9AF299D1D280046FA42 /* NewTabAccessors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392ED7E31D0AEF56009D9B62 /* NewTabAccessors.swift */; };
+		A380E9B0299D1D280046FA42 /* JumpBackInCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9AC464276CEC4E0047F5B0 /* JumpBackInCell.swift */; };
+		A380E9B1299D1D280046FA42 /* HomepageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFE57FC27BADD7C0025DE58 /* HomepageViewModel.swift */; };
+		A380E9B2299D1D280046FA42 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A994961A3686BD008AD1AC /* Tab.swift */; };
+		A380E9B3299D1D280046FA42 /* ToolbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD40FD027BADCBA00672675 /* ToolbarButton.swift */; };
+		A380E9B4299D1D280046FA42 /* NightModeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93067E71D0FE18E00C49C6E /* NightModeHelper.swift */; };
+		A380E9B5299D1D280046FA42 /* ToggleSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A35497127BD672700534A65 /* ToggleSwitch.swift */; };
+		A380E9B6299D1D280046FA42 /* GleanPlumbMessageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9636D92B27F9E50100771F5E /* GleanPlumbMessageStore.swift */; };
+		A380E9B7299D1D280046FA42 /* StartAtHomeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213B67A527CE682B000542F5 /* StartAtHomeHelper.swift */; };
+		A380E9B8299D1D280046FA42 /* InactiveTabItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10A1F742863BC51001EEA80 /* InactiveTabItemCell.swift */; };
+		A380E9B9299D1D280046FA42 /* BookmarksFolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8629E1288096C40096DDB1 /* BookmarksFolderCell.swift */; };
+		A380E9BA299D1D280046FA42 /* HomePanelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8574927D97CE90075C173 /* HomePanelDelegate.swift */; };
+		A380E9BB299D1D280046FA42 /* CustomSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B39EDCA1E16E1AA00EF029F /* CustomSearchViewController.swift */; };
+		A380E9BC299D1D280046FA42 /* PocketFeedStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B0F5F3283B7CCE007AE65D /* PocketFeedStory.swift */; };
+		A380E9BD299D1D280046FA42 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1390FA628B032AD00C9EF3E /* UIView+Extension.swift */; };
+		A380E9BE299D1D280046FA42 /* ContileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A5629F27D6D0E80045144A /* ContileProvider.swift */; };
+		A380E9BF299D1D280046FA42 /* FaviconFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65075561E37F714006961AC /* FaviconFetcher.swift */; };
+		A380E9C0299D1D280046FA42 /* SiteImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9699F77226F39E5100C5FA47 /* SiteImageHelper.swift */; };
+		A380E9C1299D1D280046FA42 /* LegacyWallpaperManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9845FF276B99660071CCAE /* LegacyWallpaperManager.swift */; };
+		A380E9C2299D1D280046FA42 /* ToolbarBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA263127B6E9AB00D0C33B /* ToolbarBadge.swift */; };
+		A380E9C3299D1D280046FA42 /* ImageButtonWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B4C7F24A53EEB001B56E8 /* ImageButtonWithLabel.swift */; };
+		A380E9C4299D1D280046FA42 /* TabLocationContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD40FCC27BADC5B00672675 /* TabLocationContainerView.swift */; };
+		A380E9C5299D1D280046FA42 /* WallpaperCollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18EA57028AD46D3003F97FC /* WallpaperCollectionType.swift */; };
+		A380E9C6299D1D280046FA42 /* WallpaperMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84655E32887394B00861B4A /* WallpaperMetadata.swift */; };
+		A380E9C7299D1D280046FA42 /* UXSizeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8572D27D94A1A0075C173 /* UXSizeClass.swift */; };
+		A380E9C8299D1D280046FA42 /* GradientProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D863C8E31F68BFC20058D95F /* GradientProgressBar.swift */; };
+		A380E9C9299D1D280046FA42 /* LibraryPanelViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8445A13264428DC00B83F53 /* LibraryPanelViewState.swift */; };
+		A380E9CA299D1D280046FA42 /* ExperimentsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D052D82645ABF400759F85 /* ExperimentsSettingsView.swift */; };
+		A380E9CB299D1D280046FA42 /* TopSitesSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE0BF4E2819B10E00F33EC4 /* TopSitesSettingsViewController.swift */; };
+		A380E9CC299D1D280046FA42 /* RatingPromptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DDEBE276259A900E7B97A /* RatingPromptManager.swift */; };
+		A380E9CD299D1D280046FA42 /* TopSitesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8571C27D929350075C173 /* TopSitesViewModel.swift */; };
+		A380E9CE299D1D280046FA42 /* WidgetIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D59431F025E9912900F0BA82 /* WidgetIntents.intentdefinition */; };
+		A380E9CF299D1D280046FA42 /* LoginOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85C7EDE2710B4DD004BDBA4 /* LoginOnboarding.swift */; };
+		A380E9D0299D1D280046FA42 /* PocketSponsoredStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B0F5F1283B7CCE007AE65D /* PocketSponsoredStory.swift */; };
+		A380E9D1299D1D280046FA42 /* EmptyTopSiteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8571E27D931B40075C173 /* EmptyTopSiteCell.swift */; };
+		A380E9D2299D1D280046FA42 /* LoginListSelectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC458F0249429C20042561A /* LoginListSelectionHelper.swift */; };
+		A380E9D3299D1D280046FA42 /* ThemeSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A178D20E525DF00B12184 /* ThemeSettingsController.swift */; };
+		A380E9D4299D1D280046FA42 /* FlaggableFeatureOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8656D74270F834600E199EA /* FlaggableFeatureOptions.swift */; };
+		A380E9D5299D1D280046FA42 /* HomeLogoHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8573627D951640075C173 /* HomeLogoHeaderViewModel.swift */; };
+		A380E9D6299D1D280046FA42 /* URIFixup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C744CC1A687D6C004CE85D /* URIFixup.swift */; };
+		A380E9D7299D1D280046FA42 /* HomepageMessageCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21112967289480630082C08B /* HomepageMessageCardViewModel.swift */; };
+		A380E9D8299D1D280046FA42 /* ETPCoverSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A871802937A8DC00C76AC2 /* ETPCoverSheetViewController.swift */; };
+		A380E9D9299D1D280046FA42 /* Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43EC9228CBC25F003155A3 /* Themable.swift */; };
+		A380E9DA299D1D280046FA42 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12BD0AB28AC37F00029AAF0 /* UIColor+Extension.swift */; };
+		A380E9DB299D1D280046FA42 /* ReadabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A961171AC041C40069AD6F /* ReadabilityService.swift */; };
+		A380E9DC299D1D280046FA42 /* IntroScreenWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32FD0412937B07A0072CD43 /* IntroScreenWelcomeView.swift */; };
+		A380E9DD299D1D280046FA42 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21371FA328AA7A8D00BC3F37 /* OnboardingViewModel.swift */; };
+		A380E9DE299D1D280046FA42 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE7B251B054D4400641031 /* main.swift */; };
+		A380E9DF299D1D280046FA42 /* IntroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A7C44D283539170071D996 /* IntroViewModel.swift */; };
+		A380E9E0299D1D280046FA42 /* WallpaperSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FF93E128A2E55700E6360E /* WallpaperSelectorViewController.swift */; };
+		A380E9E1299D1D280046FA42 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A994951A3686BD008AD1AC /* BrowserViewController.swift */; };
+		A380E9E2299D1D280046FA42 /* SensitiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CF28E61CB43B7900151AB3 /* SensitiveViewController.swift */; };
+		A380E9E3299D1D280046FA42 /* GoogleTopSiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AB6F9C25DC53D20016B015 /* GoogleTopSiteManager.swift */; };
+		A380E9E4299D1D280046FA42 /* EmptyPrivateTabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43162A2E2492DB7800F91658 /* EmptyPrivateTabsView.swift */; };
+		A380E9E5299D1D280046FA42 /* LegacyWallpaperDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF95954279B021700ECC572 /* LegacyWallpaperDataManager.swift */; };
+		A380E9E6299D1D280046FA42 /* DownloadQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0625C97208E87F10081F3B2 /* DownloadQueue.swift */; };
+		A380E9E7299D1D280046FA42 /* GleanPlumbMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9636D92D27F9E5D900771F5E /* GleanPlumbMessage.swift */; };
+		A380E9E8299D1D280046FA42 /* AdvancedAccountSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8251721F4DE67E00780643 /* AdvancedAccountSettingViewController.swift */; };
+		A380E9E9299D1D280046FA42 /* WallpaperDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C869912A28917688007ACC5C /* WallpaperDataService.swift */; };
+		A380E9EA299D1D280046FA42 /* LoginDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E633E2D91C21EAF8001FFF6C /* LoginDetailViewController.swift */; };
+		A380E9EB299D1D280046FA42 /* PocketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9AC46A276D11280047F5B0 /* PocketViewModel.swift */; };
+		A380E9EC299D1D280046FA42 /* PocketStandardCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7653BE28A2C92600924ABF /* PocketStandardCellViewModel.swift */; };
+		A380E9ED299D1D280046FA42 /* HistoryPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A6825233896FC846499289 /* HistoryPanel.swift */; };
+		A380E9EE299D1D280046FA42 /* BackForwardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400467B1CF4E43E00B08303 /* BackForwardListViewController.swift */; };
+		A380E9EF299D1D280046FA42 /* OrientationLockUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A430D782853DFDD00782BFF /* OrientationLockUtility.swift */; };
+		A380E9F0299D1D280046FA42 /* ExperimentsSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D237772640BBA600326204 /* ExperimentsSettingsViewController.swift */; };
+		A380E9F1299D1D280046FA42 /* WallpaperSettingCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB2610C277CC5A200DDDD38 /* WallpaperSettingCollectionCell.swift */; };
+		A380E9F2299D1D280046FA42 /* ShareExtensionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3972BF11C22412B00035B87 /* ShareExtensionHelper.swift */; };
+		A380E9F3299D1D280046FA42 /* SessionRestoreHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35B8D2C1D6383E9008E3D61 /* SessionRestoreHelper.swift */; };
+		A380E9F4299D1D280046FA42 /* AppDelegate+SyncSentTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB98550024226EF60040F24B /* AppDelegate+SyncSentTabs.swift */; };
+		A380E9F5299D1D280046FA42 /* MailtoLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744ED5601DBFEB8D00A2B5BE /* MailtoLinkHandler.swift */; };
+		A380E9F6299D1D280046FA42 /* BookmarksPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A6839879D615FC1C0D71CE /* BookmarksPanel.swift */; };
+		A380E9F7299D1D280046FA42 /* DownloadToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D1B852097859B0074B35F /* DownloadToast.swift */; };
+		A380E9F8299D1D280046FA42 /* TextContentDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884CA7482344A301002E4711 /* TextContentDetector.swift */; };
+		A380E9F9299D1D280046FA42 /* TabsSettingsViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8656D76270F858900E199EA /* TabsSettingsViewControler.swift */; };
+		A380E9FA299D1D280046FA42 /* ImageIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9F0B5527C595F300FE09AE /* ImageIdentifiers.swift */; };
+		A380E9FB299D1D280046FA42 /* ChevronView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B844E3C1BBDDB9D00E733A2 /* ChevronView.swift */; };
+		A380E9FC299D1D280046FA42 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A5643523CD1E1B00B6857D /* UpdateViewController.swift */; };
+		A380E9FD299D1D280046FA42 /* InactiveTabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437A9B672681256800FB41C1 /* InactiveTabCell.swift */; };
+		A380E9FF299D1D280046FA42 /* GroupedTabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439B008A26E6CE2100DFAF14 /* GroupedTabCell.swift */; };
+		A380EA00299D1D280046FA42 /* FSReadingList.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C358541AF144BA00299F7E /* FSReadingList.m */; };
+		A380EA01299D1D280046FA42 /* SearchBarSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE1E1CA27B18F560024C45E /* SearchBarSettingsViewController.swift */; };
+		A380EA02299D1D280046FA42 /* TabToolbarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD40FC427BADC1E00672675 /* TabToolbarHelper.swift */; };
+		A380EA03299D1D280046FA42 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C11E982864BA2C00840E7C /* ServiceProvider.swift */; };
+		A380EA04299D1D280046FA42 /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609F4C926B57CE800F81493 /* Calendar+Extension.swift */; };
+		A380EA05299D1D280046FA42 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663D5771BB341C4001EF30E /* ToggleButton.swift */; };
+		A380EA06299D1D280046FA42 /* HistoryHighlightsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA51480275FFEE500266AA0 /* HistoryHighlightsManager.swift */; };
+		A380EA07299D1D280046FA42 /* BadgeIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA3B2D12268F57E00728BDB /* BadgeIcon.swift */; };
+		A380EA08299D1D280046FA42 /* RecentlySavedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB5958728413F6C0090F4AE /* RecentlySavedCell.swift */; };
+		A380EA09299D1D280046FA42 /* HistoryPanel+ContextMenuExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EB6C3B27D82AEA00A9D159 /* HistoryPanel+ContextMenuExtensions.swift */; };
+		A380EA0A299D1D280046FA42 /* AdsTelemetryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43175DB726B87D2C00C41C31 /* AdsTelemetryHelper.swift */; };
+		A380EA0B299D1D280046FA42 /* ResizableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217AEF7728480844004EED37 /* ResizableButton.swift */; };
+		A380EA0C299D1D280046FA42 /* StoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58368A9287D632F0087A449 /* StoryProvider.swift */; };
+		A380EA0D299D1D280046FA42 /* DebugSettingsBundleOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6327A631BF6438E008D12E0 /* DebugSettingsBundleOptions.swift */; };
+		A380EA0E299D1D280046FA42 /* LoginOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85C7EDC27109241004BDBA4 /* LoginOnboardingViewController.swift */; };
+		A380EA0F299D1D280046FA42 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FDEB55220CFE970069A582 /* UIImage+ImageEffects.m */; };
+		A380EA10299D1D280046FA42 /* TabContentBlocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB894F7219398E500EB91A0 /* TabContentBlocker.swift */; };
+		A380EA11299D1D280046FA42 /* RecentlySavedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966206CC2698DE1E005C0A55 /* RecentlySavedViewModel.swift */; };
+		A380EA12299D1D280046FA42 /* ClearPrivateDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E8EEE71B97A87A001900FB /* ClearPrivateDataTableViewController.swift */; };
+		A380EA13299D1D280046FA42 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8954A4E2729AD9B001C7283 /* Theme.swift */; };
+		A380EA14299D1D280046FA42 /* BrowserViewController+KeyCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F457A91F1FDD9B000CB895 /* BrowserViewController+KeyCommands.swift */; };
+		A380EA15299D1D280046FA42 /* ReaderPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A685F4EAD19EDEC854BCA4 /* ReaderPanel.swift */; };
+		A380EA16299D1D280046FA42 /* EnhancedTrackingProtectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849E46026B9C39B00260F0B /* EnhancedTrackingProtectionVC.swift */; };
+		A380EA17299D1D280046FA42 /* IntroTutoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32FD0402937B0790072CD43 /* IntroTutoView.swift */; };
+		A380EA18299D1D280046FA42 /* WebServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40FAB0B1A7ABB77009CB80D /* WebServer.swift */; };
+		A380EA19299D1D280046FA42 /* TwoLineCellAndFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A68B1F857A8638598A63A0 /* TwoLineCellAndFooter.swift */; };
+		A380EA1A299D1D280046FA42 /* SponsoredTileTelemetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04136828258DF600D20B10 /* SponsoredTileTelemetry.swift */; };
+		A380EA1B299D1D280046FA42 /* SettingsLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04CD717215EBD85004FF5B0 /* SettingsLoadingView.swift */; };
+		A380EA1C299D1D280046FA42 /* FirefoxColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4390F7FE246DAFBE00570811 /* FirefoxColors.swift */; };
+		A380EA1D299D1D280046FA42 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04CD749216CF86B004FF5B0 /* InstructionsViewController.swift */; };
+		A380EA1E299D1D280046FA42 /* SiteTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16E1C9728C25F1D00EE2EF5 /* SiteTableViewHeader.swift */; };
+		A380EA1F299D1D280046FA42 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC5D55E28BFE6C8001F6F7F /* Presenter.swift */; };
+		A380EA20299D1D280046FA42 /* LegacyWallpaperMigrationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8501F4E2850FB72003B09AB /* LegacyWallpaperMigrationUtility.swift */; };
+		A380EA21299D1D280046FA42 /* FileManagerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8741FE828C4D30F00030029 /* FileManagerInterface.swift */; };
+		A380EA22299D1D280046FA42 /* LocalDesktopFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3233FD28627446003E1C33 /* LocalDesktopFolder.swift */; };
+		A380EA23299D1D280046FA42 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8954A4F2729AD9C001C7283 /* ThemeManager.swift */; };
+		A380EA24299D1D280046FA42 /* ReaderModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD40FC827BADC4B00672675 /* ReaderModeButton.swift */; };
+		A380EA25299D1D280046FA42 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB5958B28414DF60090F4AE /* ActionButton.swift */; };
+		A380EA27299D1D280046FA42 /* initial_experiments.json in Resources */ = {isa = PBXBuildFile; fileRef = 3964F5FB2656D2B500065278 /* initial_experiments.json */; };
+		A380EA28299D1D280046FA42 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8717329379ECD00C76AC2 /* ProximaNova-Regular.otf */; };
+		A380EA29299D1D280046FA42 /* pocketsponsoredfeed.json in Resources */ = {isa = PBXBuildFile; fileRef = C8B0F5EA283B7BF9007AE65D /* pocketsponsoredfeed.json */; };
+		A380EA2A299D1D280046FA42 /* CertError.html in Resources */ = {isa = PBXBuildFile; fileRef = D38A1EDF1CB458EC0080C842 /* CertError.html */; };
+		A380EA2B299D1D280046FA42 /* DownloadHelper.js in Resources */ = {isa = PBXBuildFile; fileRef = 8AEE62C82756BA34003207D1 /* DownloadHelper.js */; };
+		A380EA2C299D1D280046FA42 /* TrackingProtectionStats.js in Resources */ = {isa = PBXBuildFile; fileRef = 8AEE62C72756BA34003207D1 /* TrackingProtectionStats.js */; };
+		A380EA2D299D1D280046FA42 /* NetError.css in Resources */ = {isa = PBXBuildFile; fileRef = 0BA1E02F1B051A07007675AF /* NetError.css */; };
+		A380EA2E299D1D280046FA42 /* TopSites in Resources */ = {isa = PBXBuildFile; fileRef = 3BC659481E5BA4AE006D560F /* TopSites */; };
+		A380EA2F299D1D280046FA42 /* FiraSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4B7B7571A793CF20022C5E0 /* FiraSans-SemiBold.ttf */; };
+		A380EA30299D1D280046FA42 /* KGSecondChancesSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8717229379ECC00C76AC2 /* KGSecondChancesSolid.ttf */; };
+		A380EA31299D1D280046FA42 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F84B21EF1A0910F600AAB793 /* Images.xcassets */; };
+		A380EA32299D1D280046FA42 /* SessionRestore.html in Resources */ = {isa = PBXBuildFile; fileRef = F35B8D2A1D6380EA008E3D61 /* SessionRestore.html */; };
+		A380EA33299D1D280046FA42 /* Menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B42406D1CA04CAC009B5C28 /* Menu.xcassets */; };
+		A380EA34299D1D280046FA42 /* ProximaNova-Medium It.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8717529379ECD00C76AC2 /* ProximaNova-Medium It.otf */; };
+		A380EA36299D1D280046FA42 /* WebcompatAllFramesAtDocumentStart.js in Resources */ = {isa = PBXBuildFile; fileRef = 4336FAD1264B169000A6B076 /* WebcompatAllFramesAtDocumentStart.js */; };
+		A380EA37299D1D280046FA42 /* NewYorkMedium-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 23BEA766251A99E300A014BF /* NewYorkMedium-Bold.otf */; };
+		A380EA38299D1D280046FA42 /* top_sites.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BC659581E5BA505006D560F /* top_sites.json */; };
+		A380EA39299D1D280046FA42 /* ETP.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43446CE5240D9F3000F5C643 /* ETP.xcassets */; };
+		A380EA3A299D1D280046FA42 /* disconnect-block-social.json in Resources */ = {isa = PBXBuildFile; fileRef = C8399D9422DE5E6200EFA5CA /* disconnect-block-social.json */; };
+		A380EA3B299D1D280046FA42 /* Reader.html in Resources */ = {isa = PBXBuildFile; fileRef = E4CD9F531A71506400318571 /* Reader.html */; };
+		A380EA3C299D1D280046FA42 /* Fennec_Enterprise_XCUITests.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = E1AF355B286DE5F600960045 /* Fennec_Enterprise_XCUITests.xctestplan */; };
+		A380EA3D299D1D280046FA42 /* PerformanceTestPlan.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = E1AF355F286DE5F700960045 /* PerformanceTestPlan.xctestplan */; };
+		A380EA3E299D1D280046FA42 /* ProximaNova-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8717429379ECD00C76AC2 /* ProximaNova-SemiBold.otf */; };
+		A380EA3F299D1D280046FA42 /* NewYorkMedium-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 23BEA764251A99E200A014BF /* NewYorkMedium-RegularItalic.otf */; };
+		A380EA40299D1D280046FA42 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B2142FC1E5E055000CDD3FC /* InfoPlist.strings */; };
+		A380EA41299D1D280046FA42 /* Licenses.html in Resources */ = {isa = PBXBuildFile; fileRef = E69922121B94E3EF007C480D /* Licenses.html */; };
+		A380EA42299D1D280046FA42 /* Smoketest3.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = E1AF3558286DE5F600960045 /* Smoketest3.xctestplan */; };
+		A380EA43299D1D280046FA42 /* Reader.css in Resources */ = {isa = PBXBuildFile; fileRef = E4CD9F5A1A71506C00318571 /* Reader.css */; };
+		A380EA44299D1D280046FA42 /* ProximaNova-Extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8717029379ECC00C76AC2 /* ProximaNova-Extrabold.otf */; };
+		A380EA45299D1D280046FA42 /* AllFramesAtDocumentEnd.js in Resources */ = {isa = PBXBuildFile; fileRef = D0FCF8031FE4772C004A7995 /* AllFramesAtDocumentEnd.js */; };
+		A380EA46299D1D280046FA42 /* Karma_Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A3F87C9B294C73ED00957516 /* Karma_Debug.xcconfig */; };
+		A380EA47299D1D280046FA42 /* disconnect-block-cookies-analytics.json in Resources */ = {isa = PBXBuildFile; fileRef = EBC9D38222D4D56F0011D881 /* disconnect-block-cookies-analytics.json */; };
+		A380EA48299D1D280046FA42 /* topdomains.txt in Resources */ = {isa = PBXBuildFile; fileRef = D37524861C6E8B5A00A5F6C2 /* topdomains.txt */; };
+		A380EA49299D1D280046FA42 /* Settings.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B4980A71CE363ED0017547C /* Settings.xcassets */; };
+		A380EA4A299D1D280046FA42 /* FocusHelper.js in Resources */ = {isa = PBXBuildFile; fileRef = 39F4C0F92045D87400746155 /* FocusHelper.js */; };
+		A380EA4B299D1D280046FA42 /* Smoketest2.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = E1AF355A286DE5F600960045 /* Smoketest2.xctestplan */; };
+		A380EA4C299D1D280046FA42 /* FiraSans-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4B7B75F1A793CF20022C5E0 /* FiraSans-UltraLight.ttf */; };
+		A380EA4D299D1D280046FA42 /* Library.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F84B22261A09127C00AAB793 /* Library.xcassets */; };
+		A380EA4E299D1D280046FA42 /* FiraSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4B7B7561A793CF20022C5E0 /* FiraSans-Regular.ttf */; };
+		A380EA4F299D1D280046FA42 /* FiraSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4B7B7521A793CF20022C5E0 /* FiraSans-Light.ttf */; };
+		A380EA50299D1D280046FA42 /* Ads.js in Resources */ = {isa = PBXBuildFile; fileRef = 43175DB526B8774D00C41C31 /* Ads.js */; };
+		A380EA51299D1D280046FA42 /* MainFrameAtDocumentStart.js in Resources */ = {isa = PBXBuildFile; fileRef = D0FCF8051FE4772D004A7995 /* MainFrameAtDocumentStart.js */; };
+		A380EA52299D1D280046FA42 /* KGSecondChancesSketch.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8717129379ECC00C76AC2 /* KGSecondChancesSketch.ttf */; };
+		A380EA53299D1D280046FA42 /* disconnect-block-cookies-content.json in Resources */ = {isa = PBXBuildFile; fileRef = EBC9D38322D4D56F0011D881 /* disconnect-block-cookies-content.json */; };
+		A380EA54299D1D280046FA42 /* SearchPlugins in Resources */ = {isa = PBXBuildFile; fileRef = D30684F01C84F12A002D8D82 /* SearchPlugins */; };
+		A380EA55299D1D280046FA42 /* pocketglobalfeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B61CD621F2A769D00D38DE1 /* pocketglobalfeed.json */; };
+		A380EA56299D1D280046FA42 /* MailSchemes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74821FFD1DB6D3AC00EEEA72 /* MailSchemes.plist */; };
+		A380EA57299D1D280046FA42 /* Amithen.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8716F29379ECB00C76AC2 /* Amithen.ttf */; };
+		A380EA58299D1D280046FA42 /* QRCode.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9294001D6584A200AC8D33 /* QRCode.xcassets */; };
+		A380EA59299D1D280046FA42 /* disconnect-block-cookies-social.json in Resources */ = {isa = PBXBuildFile; fileRef = EBC9D38422D4D56F0011D881 /* disconnect-block-cookies-social.json */; };
+		A380EA5A299D1D280046FA42 /* CertError.css in Resources */ = {isa = PBXBuildFile; fileRef = D308EE551CBF0BF5006843F2 /* CertError.css */; };
+		A380EA5B299D1D280046FA42 /* disconnect-block-advertising.json in Resources */ = {isa = PBXBuildFile; fileRef = C8399D8F22DE5E5200EFA5CA /* disconnect-block-advertising.json */; };
+		A380EA5C299D1D280046FA42 /* SmokeXCUITests.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = E1AF355E286DE5F700960045 /* SmokeXCUITests.xctestplan */; };
+		A380EA5D299D1D280046FA42 /* Karma.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD04A2937B2B10072CD43 /* Karma.strings */; };
+		A380EA5E299D1D280046FA42 /* Update.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A5643623CD1E1B00B6857D /* Update.xcassets */; };
+		A380EA5F299D1D280046FA42 /* disconnect-block-analytics.json in Resources */ = {isa = PBXBuildFile; fileRef = C8399D9222DE5E5B00EFA5CA /* disconnect-block-analytics.json */; };
+		A380EA60299D1D280046FA42 /* Smoketest4.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = E1AF3559286DE5F600960045 /* Smoketest4.xctestplan */; };
+		A380EA61299D1D280046FA42 /* disconnect-block-fingerprinting.json in Resources */ = {isa = PBXBuildFile; fileRef = EB84945522D4FA8A0004C2E2 /* disconnect-block-fingerprinting.json */; };
+		A380EA62299D1D280046FA42 /* FiraSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4B7B7411A793CF20022C5E0 /* FiraSans-Bold.ttf */; };
+		A380EA63299D1D280046FA42 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8A2B1A5A28216C4C0061216B /* Debug.xcconfig */; };
+		A380EA64299D1D280046FA42 /* Karma.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A3F87C9C294C73ED00957516 /* Karma.xcconfig */; };
+		A380EA65299D1D280046FA42 /* FiraSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4B7B7511A793CF20022C5E0 /* FiraSans-Italic.ttf */; };
+		A380EA66299D1D280046FA42 /* NetError.html in Resources */ = {isa = PBXBuildFile; fileRef = 0BA1E00D1B03FB0B007675AF /* NetError.html */; };
+		A380EA67299D1D280046FA42 /* NewYorkMedium-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 23BEA765251A99E200A014BF /* NewYorkMedium-BoldItalic.otf */; };
+		A380EA68299D1D280046FA42 /* ReaderViewLoading.html in Resources */ = {isa = PBXBuildFile; fileRef = E4A961371AC06FA50069AD6F /* ReaderViewLoading.html */; };
+		A380EA69299D1D280046FA42 /* SendTo.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE7634F20ADCB7500E27F2D /* SendTo.xcassets */; };
+		A380EA6A299D1D280046FA42 /* UnitTest.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = E1AF355D286DE5F700960045 /* UnitTest.xctestplan */; };
+		A380EA6B299D1D280046FA42 /* SyncIntegrationTestPlan.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = E1AF355C286DE5F600960045 /* SyncIntegrationTestPlan.xctestplan */; };
+		A380EA6C299D1D280046FA42 /* FiraSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4ECCDAD1AB131770005E717 /* FiraSans-Medium.ttf */; };
+		A380EA6D299D1D280046FA42 /* LoginsHelper.js in Resources */ = {isa = PBXBuildFile; fileRef = 8AEE62C62756BA34003207D1 /* LoginsHelper.js */; };
+		A380EA6E299D1D280046FA42 /* disconnect-block-cookies-advertising.json in Resources */ = {isa = PBXBuildFile; fileRef = EBC9D38522D4D56F0011D881 /* disconnect-block-cookies-advertising.json */; };
+		A380EA6F299D1D280046FA42 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8A2B1A5C28216C4D0061216B /* Release.xcconfig */; };
+		A380EA70299D1D280046FA42 /* FxASignIn.js in Resources */ = {isa = PBXBuildFile; fileRef = D0E17FA7201F847600F1FCB5 /* FxASignIn.js */; };
+		A380EA71299D1D280046FA42 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8A2B1A5B28216C4C0061216B /* Common.xcconfig */; };
+		A380EA72299D1D280046FA42 /* FiraSans-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4424B3B1AC71FB400F44C38 /* FiraSans-Book.ttf */; };
+		A380EA73299D1D280046FA42 /* SpotlightHelper.js in Resources */ = {isa = PBXBuildFile; fileRef = 39A35AEC1C0662A3006B9E87 /* SpotlightHelper.js */; };
+		A380EA74299D1D280046FA42 /* MainFrameAtDocumentEnd.js in Resources */ = {isa = PBXBuildFile; fileRef = D0FCF8041FE4772D004A7995 /* MainFrameAtDocumentEnd.js */; };
+		A380EA75299D1D280046FA42 /* disconnect-block-cryptomining.json in Resources */ = {isa = PBXBuildFile; fileRef = EB84945622D4FA8A0004C2E2 /* disconnect-block-cryptomining.json */; };
+		A380EA76299D1D280046FA42 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8716D29379ECB00C76AC2 /* ProximaNova-Bold.otf */; };
+		A380EA77299D1D280046FA42 /* KarmaMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD0462937B2B00072CD43 /* KarmaMenu.strings */; };
+		A380EA78299D1D280046FA42 /* IntroKarma.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD0482937B2B10072CD43 /* IntroKarma.strings */; };
+		A380EA79299D1D280046FA42 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4D6BEB81A0930EC00F538BD /* LaunchScreen.xib */; };
+		A380EA7A299D1D280046FA42 /* ProximaNova-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8716E29379ECB00C76AC2 /* ProximaNova-Medium.otf */; };
+		A380EA7B299D1D280046FA42 /* FiraSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4B7B7421A793CF20022C5E0 /* FiraSans-BoldItalic.ttf */; };
+		A380EA7C299D1D280046FA42 /* NewYorkMedium-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 23BEA763251A99E200A014BF /* NewYorkMedium-Regular.otf */; };
+		A380EA7D299D1D280046FA42 /* AllFramesAtDocumentStart.js in Resources */ = {isa = PBXBuildFile; fileRef = D03F8F22200EAC1E003C2224 /* AllFramesAtDocumentStart.js */; };
+		A380EA7F299D1D280046FA42 /* Fuzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AFC0EF27967C000039DDF4 /* Fuzi.framework */; };
+		A380EA80299D1D280046FA42 /* KingfisherDynamic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4326A3BD2849B49800550F73 /* KingfisherDynamic.framework */; };
+		A380EA81299D1D280046FA42 /* Dip in Frameworks */ = {isa = PBXBuildFile; productRef = A380E820299D1D280046FA42 /* Dip */; };
+		A380EA82299D1D280046FA42 /* Snapkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4368F84A279669740013419B /* Snapkit.framework */; };
+		A380EA83299D1D280046FA42 /* Sentry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4368F828279665220013419B /* Sentry.framework */; };
+		A380EA84299D1D280046FA42 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A08EC6327EBDCAC00E119C7 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A380EA85299D1D280046FA42 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B334871BBF23F3004E2BFF /* iAd.framework */; };
+		A380EA86299D1D280046FA42 /* RustMozillaAppServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BE578A278BA4D900491291 /* RustMozillaAppServices.framework */; };
+		A380EA87299D1D280046FA42 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		A380EA88299D1D280046FA42 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4368F87B27966E810013419B /* SDWebImage.framework */; };
+		A380EA89299D1D280046FA42 /* Sync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2827315E1ABC9BE600AA1954 /* Sync.framework */; };
+		A380EA8A299D1D280046FA42 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288A2D861AB8B3260023ABC3 /* Shared.framework */; };
+		A380EA8B299D1D280046FA42 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E18F1F222EDED000E30E52 /* SafariServices.framework */; };
+		A380EA8C299D1D280046FA42 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E18F1D222EDE4400E30E52 /* Accelerate.framework */; };
+		A380EA8D299D1D280046FA42 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8324A062649A188007E4BFA /* AuthenticationServices.framework */; };
+		A380EA8E299D1D280046FA42 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E6231C041B90A472005ABB0D /* libxml2.2.tbd */; };
+		A380EA8F299D1D280046FA42 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E6231C001B90A44F005ABB0D /* libz.tbd */; };
+		A380EA90299D1D280046FA42 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B334891BBF23F9004E2BFF /* AdSupport.framework */; };
+		A380EA91299D1D280046FA42 /* Telemetry in Frameworks */ = {isa = PBXBuildFile; productRef = A380E818299D1D280046FA42 /* Telemetry */; };
+		A380EA92299D1D280046FA42 /* Adjust in Frameworks */ = {isa = PBXBuildFile; productRef = A380E81E299D1D280046FA42 /* Adjust */; };
+		A380EA93299D1D280046FA42 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8E0FF31A932BD500161DC3 /* ImageIO.framework */; };
+		A380EA94299D1D280046FA42 /* Glean in Frameworks */ = {isa = PBXBuildFile; productRef = A380E81C299D1D280046FA42 /* Glean */; };
+		A380EA95299D1D280046FA42 /* GCDWebServers in Frameworks */ = {isa = PBXBuildFile; productRef = A380E81A299D1D280046FA42 /* GCDWebServers */; };
+		A380EA96299D1D280046FA42 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8A47F51D01D3B400C07734 /* PassKit.framework */; };
+		A380EA97299D1D280046FA42 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AFC0D9279678920039DDF4 /* XCGLogger.framework */; };
+		A380EA99299D1D280046FA42 /* WidgetKitExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 047F9B2724E1FE1C00CD7DF7 /* WidgetKitExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A380EA9B299D1D280046FA42 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 397848DB1ED86605004C0C0B /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A380EA9C299D1D280046FA42 /* CredentialProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F8324A052649A188007E4BFA /* CredentialProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A380EA9D299D1D280046FA42 /* ShareTo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F84B22491A0920C600AAB793 /* ShareTo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A380EAA0299D1D280046FA42 /* Fuzi.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 43AFC0EF27967C000039DDF4 /* Fuzi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A380EAA1299D1D280046FA42 /* Snapkit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4368F84A279669740013419B /* Snapkit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A380EAA2299D1D280046FA42 /* RustMozillaAppServices.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 43BE578A278BA4D900491291 /* RustMozillaAppServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A380EAA3299D1D280046FA42 /* XCGLogger.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 43AFC0D9279678920039DDF4 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A380EAA4299D1D280046FA42 /* Sentry.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4368F828279665220013419B /* Sentry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A380EAA5299D1D280046FA42 /* SDWebImage.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4368F87B27966E810013419B /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A380EAA6299D1D280046FA42 /* KingfisherDynamic.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4326A3BD2849B49800550F73 /* KingfisherDynamic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A380EAA7299D1D280046FA42 /* Sync.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 2827315E1ABC9BE600AA1954 /* Sync.framework */; };
+		A380EAA8299D1D280046FA42 /* Shared.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 288A2D861AB8B3260023ABC3 /* Shared.framework */; };
+		A380EAB6299D2F640046FA42 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A380EAB4299D1EDD0046FA42 /* Images.xcassets */; };
+		A380EABB299D318F0046FA42 /* Intro.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A380EABA299D318F0046FA42 /* Intro.xcassets */; };
+		A380EABD299D33A20046FA42 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A380EABC299D33A20046FA42 /* IntroViewController.swift */; };
 		A3A8717629379ECE00C76AC2 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8716D29379ECB00C76AC2 /* ProximaNova-Bold.otf */; };
 		A3A8717729379ECE00C76AC2 /* ProximaNova-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8716E29379ECB00C76AC2 /* ProximaNova-Medium.otf */; };
 		A3A8717829379ECE00C76AC2 /* Amithen.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8716F29379ECB00C76AC2 /* Amithen.ttf */; };
@@ -701,9 +1335,7 @@
 		A3A8717C29379ECE00C76AC2 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8717329379ECD00C76AC2 /* ProximaNova-Regular.otf */; };
 		A3A8717D29379ECE00C76AC2 /* ProximaNova-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8717429379ECD00C76AC2 /* ProximaNova-SemiBold.otf */; };
 		A3A8717E29379ECE00C76AC2 /* ProximaNova-Medium It.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8717529379ECD00C76AC2 /* ProximaNova-Medium It.otf */; };
-		A3A8717F29379F2000C76AC2 /* UIFont+Karma.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8716B29379E8B00C76AC2 /* UIFont+Karma.swift */; };
 		A3A871812937A8DD00C76AC2 /* ETPCoverSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A871802937A8DC00C76AC2 /* ETPCoverSheetViewController.swift */; };
-		A3DEA005294A0E3400A28297 /* KarmaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEA004294A0E3300A28297 /* KarmaConfig.swift */; };
 		A3DEA008294A127200A28297 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		A3F87C9D294C73EE00957516 /* Karma_Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A3F87C9B294C73ED00957516 /* Karma_Debug.xcconfig */; };
 		A3F87C9E294C73EE00957516 /* Karma.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A3F87C9C294C73ED00957516 /* Karma.xcconfig */; };
@@ -741,7 +1373,6 @@
 		C82043C32523DD6A00740B71 /* Sync.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 2827315E1ABC9BE600AA1954 /* Sync.framework */; };
 		C820443825241D3100740B71 /* libSyncTelemetry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E69DB0751E97DEA9008A67E6 /* libSyncTelemetry.a */; };
 		C825E9832832A425006CB811 /* NimbusSearchBarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C825E9822832A425006CB811 /* NimbusSearchBarLayer.swift */; };
-		C82A94F2269F68ED00624AA7 /* FeatureFlagsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82A94E6269CB77F00624AA7 /* FeatureFlagsManager.swift */; };
 		C82A94F3269F68F300624AA7 /* CoreFlaggableFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82A94E4269CB77500624AA7 /* CoreFlaggableFeature.swift */; };
 		C82CDD47233E8996002E2743 /* Tab+ChangeUserAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82CDD45233E8996002E2743 /* Tab+ChangeUserAgent.swift */; };
 		C8340C4824EC69EE00FE91A6 /* NSData+Base16.m in Sources */ = {isa = PBXBuildFile; fileRef = C8340BD624EC69EE00FE91A6 /* NSData+Base16.m */; };
@@ -1572,6 +2203,69 @@
 			remoteGlobalIDString = 43BE5774278BA4D900491291;
 			remoteInfo = RustMozillaAppServices;
 		};
+		A380E805299D1D280046FA42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84B21B61A090F8100AAB793 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8324A042649A188007E4BFA;
+			remoteInfo = CredentialProvider;
+		};
+		A380E807299D1D280046FA42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84B21B61A090F8100AAB793 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2827315D1ABC9BE600AA1954;
+			remoteInfo = Sync;
+		};
+		A380E809299D1D280046FA42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84B21B61A090F8100AAB793 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 288A2D851AB8B3260023ABC3;
+			remoteInfo = Shared;
+		};
+		A380E80B299D1D280046FA42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84B21B61A090F8100AAB793 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 397848DA1ED86605004C0C0B;
+			remoteInfo = NotificationService;
+		};
+		A380E80D299D1D280046FA42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84B21B61A090F8100AAB793 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F84B22481A0920C600AAB793;
+			remoteInfo = ShareFirefox;
+		};
+		A380E811299D1D280046FA42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84B21B61A090F8100AAB793 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 047F9B2624E1FE1C00CD7DF7;
+			remoteInfo = WidgetKitExtension;
+		};
+		A380E813299D1D280046FA42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84B21B61A090F8100AAB793 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4368F81C279665220013419B;
+			remoteInfo = Sentry;
+		};
+		A380E815299D1D280046FA42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84B21B61A090F8100AAB793 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4368F86F27966E810013419B;
+			remoteInfo = SDWebImage;
+		};
+		A380E817299D1D280046FA42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84B21B61A090F8100AAB793 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4326A3B22849B49800550F73;
+			remoteInfo = KingfisherDynamic;
+		};
 		C82043702523DBEB00740B71 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F84B21B61A090F8100AAB793 /* Project object */;
@@ -1727,6 +2421,39 @@
 				8AFD6276282C51D300451BC8 /* DynamicSwiftyJson.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A380EA98299D1D280046FA42 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A380EA99299D1D280046FA42 /* WidgetKitExtension.appex in Embed App Extensions */,
+				A380EA9B299D1D280046FA42 /* NotificationService.appex in Embed App Extensions */,
+				A380EA9C299D1D280046FA42 /* CredentialProvider.appex in Embed App Extensions */,
+				A380EA9D299D1D280046FA42 /* ShareTo.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A380EA9F299D1D280046FA42 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A380EAA0299D1D280046FA42 /* Fuzi.framework in Copy Frameworks */,
+				A380EAA1299D1D280046FA42 /* Snapkit.framework in Copy Frameworks */,
+				A380EAA2299D1D280046FA42 /* RustMozillaAppServices.framework in Copy Frameworks */,
+				A380EAA3299D1D280046FA42 /* XCGLogger.framework in Copy Frameworks */,
+				A380EAA4299D1D280046FA42 /* Sentry.framework in Copy Frameworks */,
+				A380EAA5299D1D280046FA42 /* SDWebImage.framework in Copy Frameworks */,
+				A380EAA6299D1D280046FA42 /* KingfisherDynamic.framework in Copy Frameworks */,
+				A380EAA7299D1D280046FA42 /* Sync.framework in Copy Frameworks */,
+				A380EAA8299D1D280046FA42 /* Shared.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E6B09CD31C74EEDB00C63FA1 /* Copy Frameworks */ = {
@@ -3675,9 +4402,15 @@
 		A32FD0552937B2E30072CD43 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Karma.strings; sourceTree = "<group>"; };
 		A32FD0562937B2F40072CD43 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/KarmaMenu.strings; sourceTree = "<group>"; };
 		A32FD0572937B3020072CD43 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/KarmaMenu.strings; sourceTree = "<group>"; };
-		A37D5DE42938FBA500400F74 /* LearnAndActViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LearnAndActViewCell.swift; path = Client/Frontend/Home/LearnAndAct/LearnAndActViewCell.swift; sourceTree = SOURCE_ROOT; };
-		A37D5DE52938FBA500400F74 /* LearnAndActViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LearnAndActViewModel.swift; path = Client/Frontend/Home/LearnAndAct/LearnAndActViewModel.swift; sourceTree = SOURCE_ROOT; };
-		A37D5DE62938FBA600400F74 /* LearnAndActHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LearnAndActHeader.swift; path = Client/Frontend/Home/LearnAndAct/LearnAndActHeader.swift; sourceTree = SOURCE_ROOT; };
+		A37D5DE42938FBA500400F74 /* LearnAndActViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LearnAndActViewCell.swift; path = Karma/Frontend/LearnAndAct/LearnAndActViewCell.swift; sourceTree = SOURCE_ROOT; };
+		A37D5DE52938FBA500400F74 /* LearnAndActViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LearnAndActViewModel.swift; path = Karma/Frontend/LearnAndAct/LearnAndActViewModel.swift; sourceTree = SOURCE_ROOT; };
+		A37D5DE62938FBA600400F74 /* LearnAndActHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LearnAndActHeader.swift; path = Karma/Frontend/LearnAndAct/LearnAndActHeader.swift; sourceTree = SOURCE_ROOT; };
+		A380E801299D1D140046FA42 /* HomeLogoHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLogoHeaderCell.swift; sourceTree = "<group>"; };
+		A380EAB1299D1D280046FA42 /* KarmaClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarmaClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A380EAB2299D1D2B0046FA42 /* Client copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Client copy-Info.plist"; path = "/Users/lilla/Documents/Dev_project/Karma/firefox-ios/Client copy-Info.plist"; sourceTree = "<absolute>"; };
+		A380EAB4299D1EDD0046FA42 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A380EABA299D318F0046FA42 /* Intro.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Intro.xcassets; sourceTree = "<group>"; };
+		A380EABC299D33A20046FA42 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		A3A8716B29379E8B00C76AC2 /* UIFont+Karma.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Karma.swift"; sourceTree = "<group>"; };
 		A3A8716D29379ECB00C76AC2 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
 		A3A8716E29379ECB00C76AC2 /* ProximaNova-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Medium.otf"; sourceTree = "<group>"; };
@@ -5516,6 +6249,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A380EA7E299D1D280046FA42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A380EA7F299D1D280046FA42 /* Fuzi.framework in Frameworks */,
+				A380EA80299D1D280046FA42 /* KingfisherDynamic.framework in Frameworks */,
+				A380EA81299D1D280046FA42 /* Dip in Frameworks */,
+				A380EA82299D1D280046FA42 /* Snapkit.framework in Frameworks */,
+				A380EA83299D1D280046FA42 /* Sentry.framework in Frameworks */,
+				A380EA84299D1D280046FA42 /* AdServices.framework in Frameworks */,
+				A380EA85299D1D280046FA42 /* iAd.framework in Frameworks */,
+				A380EA86299D1D280046FA42 /* RustMozillaAppServices.framework in Frameworks */,
+				A380EA87299D1D280046FA42 /* (null) in Frameworks */,
+				A380EA88299D1D280046FA42 /* SDWebImage.framework in Frameworks */,
+				A380EA89299D1D280046FA42 /* Sync.framework in Frameworks */,
+				A380EA8A299D1D280046FA42 /* Shared.framework in Frameworks */,
+				A380EA8B299D1D280046FA42 /* SafariServices.framework in Frameworks */,
+				A380EA8C299D1D280046FA42 /* Accelerate.framework in Frameworks */,
+				A380EA8D299D1D280046FA42 /* AuthenticationServices.framework in Frameworks */,
+				A380EA8E299D1D280046FA42 /* libxml2.2.tbd in Frameworks */,
+				A380EA8F299D1D280046FA42 /* libz.tbd in Frameworks */,
+				A380EA90299D1D280046FA42 /* AdSupport.framework in Frameworks */,
+				A380EA91299D1D280046FA42 /* Telemetry in Frameworks */,
+				A380EA92299D1D280046FA42 /* Adjust in Frameworks */,
+				A380EA93299D1D280046FA42 /* ImageIO.framework in Frameworks */,
+				A380EA94299D1D280046FA42 /* Glean in Frameworks */,
+				A380EA95299D1D280046FA42 /* GCDWebServers in Frameworks */,
+				A380EA96299D1D280046FA42 /* PassKit.framework in Frameworks */,
+				A380EA97299D1D280046FA42 /* XCGLogger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D39FA15C1A83E0EC00EE869C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -6749,6 +7514,13 @@
 			path = GeneralizedTableView;
 			sourceTree = "<group>";
 		};
+		A31EE6DB299E724400354531 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		A37D5DE32938FB9100400F74 /* LearnAndAct */ = {
 			isa = PBXGroup;
 			children = (
@@ -6757,6 +7529,75 @@
 				A37D5DE52938FBA500400F74 /* LearnAndActViewModel.swift */,
 			);
 			path = LearnAndAct;
+			sourceTree = "<group>";
+		};
+		A380E7FD299D1C9D0046FA42 /* Karma */ = {
+			isa = PBXGroup;
+			children = (
+				A31EE6DB299E724400354531 /* Helpers */,
+				A380EAB7299D30BB0046FA42 /* Strings */,
+				A380E7FE299D1CAD0046FA42 /* Frontend */,
+			);
+			path = Karma;
+			sourceTree = "<group>";
+		};
+		A380E7FE299D1CAD0046FA42 /* Frontend */ = {
+			isa = PBXGroup;
+			children = (
+				A37D5DE32938FB9100400F74 /* LearnAndAct */,
+				A3DEA004294A0E3300A28297 /* KarmaConfig.swift */,
+				A380EAB9299D31640046FA42 /* Intro */,
+				A3A8716B29379E8B00C76AC2 /* UIFont+Karma.swift */,
+				A380EAB3299D1ECD0046FA42 /* Assets */,
+				A380E7FF299D1CBF0046FA42 /* Home */,
+			);
+			path = Frontend;
+			sourceTree = "<group>";
+		};
+		A380E7FF299D1CBF0046FA42 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A380E800299D1CC90046FA42 /* LogoHeader */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A380E800299D1CC90046FA42 /* LogoHeader */ = {
+			isa = PBXGroup;
+			children = (
+				A380E801299D1D140046FA42 /* HomeLogoHeaderCell.swift */,
+			);
+			path = LogoHeader;
+			sourceTree = "<group>";
+		};
+		A380EAB3299D1ECD0046FA42 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A380EAB4299D1EDD0046FA42 /* Images.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		A380EAB7299D30BB0046FA42 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				A32FD0462937B2B00072CD43 /* KarmaMenu.strings */,
+				A32FD0442937B21D0072CD43 /* String+Karma.swift */,
+				A32FD0482937B2B10072CD43 /* IntroKarma.strings */,
+				A32FD04A2937B2B10072CD43 /* Karma.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		A380EAB9299D31640046FA42 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				A32FD0402937B0790072CD43 /* IntroTutoView.swift */,
+				A380EABA299D318F0046FA42 /* Intro.xcassets */,
+				A380EABC299D33A20046FA42 /* IntroViewController.swift */,
+				A32FD0412937B07A0072CD43 /* IntroScreenWelcomeView.swift */,
+			);
+			path = Intro;
 			sourceTree = "<group>";
 		};
 		C80C11F228B3CD3E0062922A /* MockTests */ = {
@@ -7749,8 +8590,6 @@
 		E49943F31AE6879C00BF9DE4 /* Intro */ = {
 			isa = PBXGroup;
 			children = (
-				A32FD0412937B07A0072CD43 /* IntroScreenWelcomeView.swift */,
-				A32FD0402937B0790072CD43 /* IntroTutoView.swift */,
 				E49943F61AE69EDD00BF9DE4 /* Intro.xcassets */,
 				435D7CC4246209AA0043ACB9 /* IntroViewController.swift */,
 				21A7C44D283539170071D996 /* IntroViewModel.swift */,
@@ -7768,10 +8607,6 @@
 			isa = PBXGroup;
 			children = (
 				A3286FC72938C3A5001C5838 /* UIDevice+extension.swift */,
-				A32FD0482937B2B10072CD43 /* IntroKarma.strings */,
-				A32FD04A2937B2B10072CD43 /* Karma.strings */,
-				A32FD0462937B2B00072CD43 /* KarmaMenu.strings */,
-				A32FD0442937B21D0072CD43 /* String+Karma.swift */,
 				5FDA464727F20C9C0060E924 /* Generated */,
 				514A4C83AE17612AF3025498 /* 3DTouchActions.strings */,
 				E65075621E37F7AB006961AC /* Accessibility.swift */,
@@ -8167,6 +9002,7 @@
 		F84B21B51A090F8100AAB793 = {
 			isa = PBXGroup;
 			children = (
+				A380E7FD299D1C9D0046FA42 /* Karma */,
 				C8E2E80623D20FB3005AACE6 /* RustFxA */,
 				2FA435FC1ABB83B4008031D1 /* Account */,
 				F84B21C01A090F8100AAB793 /* Client */,
@@ -8193,6 +9029,7 @@
 				43AFC0F027967C000039DDF4 /* Fuzi-Info.plist */,
 				4302EDBC2819D6260070D373 /* DynamicSwiftyJson-Info.plist */,
 				4326A3BE2849B49800550F73 /* KingfisherDynamic-Info.plist */,
+				A380EAB2299D1D2B0046FA42 /* Client copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -8229,6 +9066,7 @@
 				43AFC0EF27967C000039DDF4 /* Fuzi.framework */,
 				4302EDBB2819D6250070D373 /* DynamicSwiftyJson.framework */,
 				4326A3BD2849B49800550F73 /* KingfisherDynamic.framework */,
+				A380EAB1299D1D280046FA42 /* KarmaClient.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -8236,7 +9074,6 @@
 		F84B21C01A090F8100AAB793 /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				A3A8716B29379E8B00C76AC2 /* UIFont+Karma.swift */,
 				F84B21E41A0910F600AAB793 /* Application */,
 				F84B21EB1A0910F600AAB793 /* Assets */,
 				E60961841B62B7E100DD640F /* Configuration */,
@@ -8399,7 +9236,6 @@
 		F84B21F11A0910F600AAB793 /* Frontend */ = {
 			isa = PBXGroup;
 			children = (
-				A3DEA004294A0E3300A28297 /* KarmaConfig.swift */,
 				8AD40FB827BAD1DD00672675 /* TabContentsScripts */,
 				8AD40FB727BAD1D600672675 /* Toolbar+URLBar */,
 				8AED23C327AC1F8700DE7E97 /* Components */,
@@ -8454,7 +9290,6 @@
 		F84B22211A09122500AAB793 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				A37D5DE32938FB9100400F74 /* LearnAndAct */,
 				C834ACD028D3ACA900203AD1 /* BlurrableCollectionViewCell.swift */,
 				8AB5958628412B620090F4AE /* CustomizeHome */,
 				DF036E41274FD3FC002E834E /* HistoryHighlights */,
@@ -8975,6 +9810,46 @@
 			productReference = 7BEB645A1C7345990092C02E /* MarketingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A380E803299D1D280046FA42 /* KarmaClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A380EAAA299D1D280046FA42 /* Build configuration list for PBXNativeTarget "KarmaClient" */;
+			buildPhases = (
+				A380E822299D1D280046FA42 /* Swiftlint */,
+				A380E823299D1D280046FA42 /* Glean SDK Generator Script */,
+				A380E824299D1D280046FA42 /* Nimbus Feature Manifest Generator Script */,
+				A380E825299D1D280046FA42 /* Sources */,
+				A380EA26299D1D280046FA42 /* Resources */,
+				A380EA7E299D1D280046FA42 /* Frameworks */,
+				A380EA98299D1D280046FA42 /* Embed App Extensions */,
+				A380EA9E299D1D280046FA42 /* Conditionally Add Settings Bundle */,
+				A380EA9F299D1D280046FA42 /* Copy Frameworks */,
+				A380EAA9299D1D280046FA42 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A380E804299D1D280046FA42 /* PBXTargetDependency */,
+				A380E806299D1D280046FA42 /* PBXTargetDependency */,
+				A380E808299D1D280046FA42 /* PBXTargetDependency */,
+				A380E80A299D1D280046FA42 /* PBXTargetDependency */,
+				A380E80C299D1D280046FA42 /* PBXTargetDependency */,
+				A380E810299D1D280046FA42 /* PBXTargetDependency */,
+				A380E812299D1D280046FA42 /* PBXTargetDependency */,
+				A380E814299D1D280046FA42 /* PBXTargetDependency */,
+				A380E816299D1D280046FA42 /* PBXTargetDependency */,
+			);
+			name = KarmaClient;
+			packageProductDependencies = (
+				A380E818299D1D280046FA42 /* Telemetry */,
+				A380E81A299D1D280046FA42 /* GCDWebServers */,
+				A380E81C299D1D280046FA42 /* Glean */,
+				A380E81E299D1D280046FA42 /* Adjust */,
+				A380E820299D1D280046FA42 /* Dip */,
+			);
+			productName = Client;
+			productReference = A380EAB1299D1D280046FA42 /* KarmaClient.app */;
+			productType = "com.apple.product-type.application";
+		};
 		D39FA15E1A83E0EC00EE869C /* UITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D39FA1671A83E0EC00EE869C /* Build configuration list for PBXNativeTarget "UITests" */;
@@ -9460,6 +10335,7 @@
 			projectRoot = "";
 			targets = (
 				F84B21BD1A090F8100AAB793 /* Client */,
+				A380E803299D1D280046FA42 /* KarmaClient */,
 				397848DA1ED86605004C0C0B /* NotificationService */,
 				F84B22481A0920C600AAB793 /* ShareTo */,
 				390527491C874D35007E0BB7 /* Today */,
@@ -9571,6 +10447,102 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A380EA26299D1D280046FA42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A380EA27299D1D280046FA42 /* initial_experiments.json in Resources */,
+				A380EA28299D1D280046FA42 /* ProximaNova-Regular.otf in Resources */,
+				A380EA29299D1D280046FA42 /* pocketsponsoredfeed.json in Resources */,
+				A380EA2A299D1D280046FA42 /* CertError.html in Resources */,
+				A380EA2B299D1D280046FA42 /* DownloadHelper.js in Resources */,
+				A380EA2C299D1D280046FA42 /* TrackingProtectionStats.js in Resources */,
+				A380EA2D299D1D280046FA42 /* NetError.css in Resources */,
+				A380EA2E299D1D280046FA42 /* TopSites in Resources */,
+				A380EA2F299D1D280046FA42 /* FiraSans-SemiBold.ttf in Resources */,
+				A380EA30299D1D280046FA42 /* KGSecondChancesSolid.ttf in Resources */,
+				A380EA31299D1D280046FA42 /* Images.xcassets in Resources */,
+				A380EA32299D1D280046FA42 /* SessionRestore.html in Resources */,
+				A380EA33299D1D280046FA42 /* Menu.xcassets in Resources */,
+				A380EA34299D1D280046FA42 /* ProximaNova-Medium It.otf in Resources */,
+				A380EA36299D1D280046FA42 /* WebcompatAllFramesAtDocumentStart.js in Resources */,
+				A380EA37299D1D280046FA42 /* NewYorkMedium-Bold.otf in Resources */,
+				A380EA38299D1D280046FA42 /* top_sites.json in Resources */,
+				A380EA39299D1D280046FA42 /* ETP.xcassets in Resources */,
+				A380EA3A299D1D280046FA42 /* disconnect-block-social.json in Resources */,
+				A380EA3B299D1D280046FA42 /* Reader.html in Resources */,
+				A380EA3C299D1D280046FA42 /* Fennec_Enterprise_XCUITests.xctestplan in Resources */,
+				A380EA3D299D1D280046FA42 /* PerformanceTestPlan.xctestplan in Resources */,
+				A380EA3E299D1D280046FA42 /* ProximaNova-SemiBold.otf in Resources */,
+				A380EA3F299D1D280046FA42 /* NewYorkMedium-RegularItalic.otf in Resources */,
+				A380EA40299D1D280046FA42 /* InfoPlist.strings in Resources */,
+				A380EA41299D1D280046FA42 /* Licenses.html in Resources */,
+				A380EA42299D1D280046FA42 /* Smoketest3.xctestplan in Resources */,
+				A380EA43299D1D280046FA42 /* Reader.css in Resources */,
+				A380EA44299D1D280046FA42 /* ProximaNova-Extrabold.otf in Resources */,
+				A380EA45299D1D280046FA42 /* AllFramesAtDocumentEnd.js in Resources */,
+				A380EA46299D1D280046FA42 /* Karma_Debug.xcconfig in Resources */,
+				A380EA47299D1D280046FA42 /* disconnect-block-cookies-analytics.json in Resources */,
+				A380EA48299D1D280046FA42 /* topdomains.txt in Resources */,
+				A380EA49299D1D280046FA42 /* Settings.xcassets in Resources */,
+				A31EE6D3299D39D700354531 /* Images.xcassets in Resources */,
+				A380EA4A299D1D280046FA42 /* FocusHelper.js in Resources */,
+				A380EABB299D318F0046FA42 /* Intro.xcassets in Resources */,
+				A380EA4B299D1D280046FA42 /* Smoketest2.xctestplan in Resources */,
+				A380EA4C299D1D280046FA42 /* FiraSans-UltraLight.ttf in Resources */,
+				A380EA4D299D1D280046FA42 /* Library.xcassets in Resources */,
+				A380EA4E299D1D280046FA42 /* FiraSans-Regular.ttf in Resources */,
+				A380EA4F299D1D280046FA42 /* FiraSans-Light.ttf in Resources */,
+				A380EA50299D1D280046FA42 /* Ads.js in Resources */,
+				A380EA51299D1D280046FA42 /* MainFrameAtDocumentStart.js in Resources */,
+				A380EA52299D1D280046FA42 /* KGSecondChancesSketch.ttf in Resources */,
+				A380EA53299D1D280046FA42 /* disconnect-block-cookies-content.json in Resources */,
+				A380EA54299D1D280046FA42 /* SearchPlugins in Resources */,
+				A380EA55299D1D280046FA42 /* pocketglobalfeed.json in Resources */,
+				A380EA56299D1D280046FA42 /* MailSchemes.plist in Resources */,
+				A380EA57299D1D280046FA42 /* Amithen.ttf in Resources */,
+				A380EA58299D1D280046FA42 /* QRCode.xcassets in Resources */,
+				A380EA59299D1D280046FA42 /* disconnect-block-cookies-social.json in Resources */,
+				A380EA5A299D1D280046FA42 /* CertError.css in Resources */,
+				A380EA5B299D1D280046FA42 /* disconnect-block-advertising.json in Resources */,
+				A380EA5C299D1D280046FA42 /* SmokeXCUITests.xctestplan in Resources */,
+				A380EA5D299D1D280046FA42 /* Karma.strings in Resources */,
+				A380EA5E299D1D280046FA42 /* Update.xcassets in Resources */,
+				A380EA5F299D1D280046FA42 /* disconnect-block-analytics.json in Resources */,
+				A380EA60299D1D280046FA42 /* Smoketest4.xctestplan in Resources */,
+				A380EA61299D1D280046FA42 /* disconnect-block-fingerprinting.json in Resources */,
+				A380EA62299D1D280046FA42 /* FiraSans-Bold.ttf in Resources */,
+				A380EA63299D1D280046FA42 /* Debug.xcconfig in Resources */,
+				A380EA64299D1D280046FA42 /* Karma.xcconfig in Resources */,
+				A380EA65299D1D280046FA42 /* FiraSans-Italic.ttf in Resources */,
+				A380EA66299D1D280046FA42 /* NetError.html in Resources */,
+				A380EA67299D1D280046FA42 /* NewYorkMedium-BoldItalic.otf in Resources */,
+				A380EA68299D1D280046FA42 /* ReaderViewLoading.html in Resources */,
+				A380EA69299D1D280046FA42 /* SendTo.xcassets in Resources */,
+				A380EA6A299D1D280046FA42 /* UnitTest.xctestplan in Resources */,
+				A380EA6B299D1D280046FA42 /* SyncIntegrationTestPlan.xctestplan in Resources */,
+				A380EA6C299D1D280046FA42 /* FiraSans-Medium.ttf in Resources */,
+				A380EA6D299D1D280046FA42 /* LoginsHelper.js in Resources */,
+				A380EA6E299D1D280046FA42 /* disconnect-block-cookies-advertising.json in Resources */,
+				A380EA6F299D1D280046FA42 /* Release.xcconfig in Resources */,
+				A380EA70299D1D280046FA42 /* FxASignIn.js in Resources */,
+				A380EA71299D1D280046FA42 /* Common.xcconfig in Resources */,
+				A380EA72299D1D280046FA42 /* FiraSans-Book.ttf in Resources */,
+				A380EA73299D1D280046FA42 /* SpotlightHelper.js in Resources */,
+				A380EA74299D1D280046FA42 /* MainFrameAtDocumentEnd.js in Resources */,
+				A380EA75299D1D280046FA42 /* disconnect-block-cryptomining.json in Resources */,
+				A380EA76299D1D280046FA42 /* ProximaNova-Bold.otf in Resources */,
+				A380EA77299D1D280046FA42 /* KarmaMenu.strings in Resources */,
+				A380EAB6299D2F640046FA42 /* Images.xcassets in Resources */,
+				A380EA78299D1D280046FA42 /* IntroKarma.strings in Resources */,
+				A380EA79299D1D280046FA42 /* LaunchScreen.xib in Resources */,
+				A380EA7A299D1D280046FA42 /* ProximaNova-Medium.otf in Resources */,
+				A380EA7B299D1D280046FA42 /* FiraSans-BoldItalic.ttf in Resources */,
+				A380EA7C299D1D280046FA42 /* NewYorkMedium-Regular.otf in Resources */,
+				A380EA7D299D1D280046FA42 /* AllFramesAtDocumentStart.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D39FA15D1A83E0EC00EE869C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -9659,7 +10631,6 @@
 				D308EE561CBF0BF5006843F2 /* CertError.css in Resources */,
 				C8399D9122DE5E5200EFA5CA /* disconnect-block-advertising.json in Resources */,
 				E1AF3566286DE5F800960045 /* SmokeXCUITests.xctestplan in Resources */,
-				A32FD0502937B2B10072CD43 /* Karma.strings in Resources */,
 				43A5643923CD1E1C00B6857D /* Update.xcassets in Resources */,
 				C8399D9322DE5E5B00EFA5CA /* disconnect-block-analytics.json in Resources */,
 				E1AF3561286DE5F800960045 /* Smoketest4.xctestplan in Resources */,
@@ -9686,7 +10657,6 @@
 				EB84945822D4FA8A0004C2E2 /* disconnect-block-cryptomining.json in Resources */,
 				A3A8717629379ECE00C76AC2 /* ProximaNova-Bold.otf in Resources */,
 				A32FD04C2937B2B10072CD43 /* KarmaMenu.strings in Resources */,
-				A32FD04E2937B2B10072CD43 /* IntroKarma.strings in Resources */,
 				E4D6BEB91A0930EC00F538BD /* LaunchScreen.xib in Resources */,
 				A3A8717729379ECE00C76AC2 /* ProximaNova-Medium.otf in Resources */,
 				2F44FB2D1A9D5D8500FD20CC /* FiraSans-BoldItalic.ttf in Resources */,
@@ -9918,6 +10888,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "rm -rf .venv; bash $PWD/bin/sdk_generator.sh -g Glean -o $SRCROOT/Sync/Generated\n";
+		};
+		A380E822299D1D280046FA42 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		A380E823299D1D280046FA42 /* Glean SDK Generator Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Client/metrics.yaml",
+				"$(SRCROOT)/Client/pings.yaml",
+				"$(SRCROOT)/Client/tags.yaml",
+			);
+			name = "Glean SDK Generator Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Client/Generated/Metrics.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -rf .venv; bash $PWD/bin/sdk_generator.sh -g Glean\n";
+		};
+		A380E824299D1D280046FA42 /* Nimbus Feature Manifest Generator Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/nimbus.fml.yaml",
+				"$(SRCROOT)/bin/nimbus-fml.sh",
+			);
+			name = "Nimbus Feature Manifest Generator Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Client/Generated/FxNimbus.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $ACTION != \"indexbuild\" ]; then\n   bash $PWD/bin/nimbus-fml.sh -n MozillaAppServices\nfi\n";
+		};
+		A380EA9E299D1D280046FA42 /* Conditionally Add Settings Bundle */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Conditionally Add Settings Bundle";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${INCLUDE_SETTINGS_BUNDLE}\" = \"YES\" ]\nthen\n    cp -r \"${PROJECT_DIR}/${TARGET_NAME}/Application/Settings.bundle\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\"\nfi\n";
+		};
+		A380EAA9299D1D280046FA42 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "movedFrameworks=()\n        cd \"${CODESIGNING_FOLDER_PATH}/Frameworks/\"\n        for framework in *; do\n            if [ -d \"$framework\" ]; then\n                if [ -d \"${framework}/Frameworks\" ]; then\n                    echo \"Moving nested frameworks from ${framework}/Frameworks/ to ${PRODUCT_NAME}.app/Frameworks/\"\n        \n                    cd \"${framework}/Frameworks/\"\n                    for nestedFramework in *; do\n                        echo \"- nested: ${nestedFramework}\"\n                        movedFrameworks+=(\"${nestedFramework}\")\n                    done\n                    cd ..\n                    cd ..\n        \n                    cp -R \"${framework}/Frameworks/\" .\n                    rm -rf \"${framework}/Frameworks\"\n                fi\n            fi\n        done\n        \n        if [ \"${CONFIGURATION}\" == \"Debug\" ] & [ \"${PLATFORM_NAME}\" != \"iphonesimulator\" ] ; then\n            for movedFramework in \"${movedFrameworks[@]}\"\n            do\n                codesign --force --deep --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" --preserve-metadata=identifier,entitlements --timestamp=none \"${movedFramework}\"\n            done\n        else\n            echo \"Info: CODESIGNING is only needed for Debug on device (will be re-signed anyway when archiving) \"\n        fi\n";
 		};
 		C874A4E327F62C5B006F54E5 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -10404,6 +11467,525 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A380E825299D1D280046FA42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A380E826299D1D280046FA42 /* URLSessionProtocol.swift in Sources */,
+				A380E827299D1D280046FA42 /* LibraryPanelHelper.swift in Sources */,
+				A380E828299D1D280046FA42 /* FxNimbus.swift in Sources */,
+				A380E829299D1D280046FA42 /* Metrics.swift in Sources */,
+				A380E82A299D1D280046FA42 /* OpenSearchEngine.swift in Sources */,
+				A380E82B299D1D280046FA42 /* AppLaunchUtil.swift in Sources */,
+				A380E82C299D1D280046FA42 /* PocketStandardCell.swift in Sources */,
+				A380E82D299D1D280046FA42 /* SiriShortcuts.swift in Sources */,
+				A380E82E299D1D280046FA42 /* DefaultBrowserOnboardingView.swift in Sources */,
+				A380E82F299D1D280046FA42 /* ThemedWidgets.swift in Sources */,
+				A380E830299D1D280046FA42 /* AppSettingsTableViewController.swift in Sources */,
+				A380E831299D1D280046FA42 /* String+Extension.swift in Sources */,
+				A380E832299D1D280046FA42 /* AppAuthenticator.swift in Sources */,
+				A380E833299D1D280046FA42 /* TemporaryDocument.swift in Sources */,
+				A380E834299D1D280046FA42 /* HistoryDeletionUtility.swift in Sources */,
+				A380E835299D1D280046FA42 /* HistoryHighlightsDataAdaptor.swift in Sources */,
+				A380E836299D1D280046FA42 /* OpenPassBookHelper.swift in Sources */,
+				A380E837299D1D280046FA42 /* ContentBlockerSettingViewController.swift in Sources */,
+				A380E838299D1D280046FA42 /* AppSettingsOptions.swift in Sources */,
+				A380E839299D1D280046FA42 /* Authenticator.swift in Sources */,
+				A380E83A299D1D280046FA42 /* LoginDataSource.swift in Sources */,
+				A380E83B299D1D280046FA42 /* HomepageSectionType.swift in Sources */,
+				A380E83C299D1D280046FA42 /* FxAPushMessageHandler.swift in Sources */,
+				A380E83D299D1D280046FA42 /* ReaderModeStyleViewController.swift in Sources */,
+				A380E83E299D1D280046FA42 /* LockButton.swift in Sources */,
+				A380E83F299D1D280046FA42 /* FxAWebViewModel.swift in Sources */,
+				A380E840299D1D280046FA42 /* MockPocketSponsoredStoriesProvider.swift in Sources */,
+				A380E841299D1D280046FA42 /* OnboardingViewControllerProtocol.swift in Sources */,
+				A380E842299D1D280046FA42 /* UserScriptManager.swift in Sources */,
+				A380E843299D1D280046FA42 /* HomepageViewModelProtocol.swift in Sources */,
+				A380E844299D1D280046FA42 /* SyncedTabCell.swift in Sources */,
+				A380E845299D1D280046FA42 /* LoginListTableViewCell.swift in Sources */,
+				A380E846299D1D280046FA42 /* ReaderModeUtils.swift in Sources */,
+				A380E847299D1D280046FA42 /* ButtonWithSublabel.swift in Sources */,
+				A380E848299D1D280046FA42 /* OnboardingInfoModel.swift in Sources */,
+				A380E849299D1D280046FA42 /* StatefulButton.swift in Sources */,
+				A380E84A299D1D280046FA42 /* WallpaperCollection.swift in Sources */,
+				A380E84B299D1D280046FA42 /* LegacyWallpaperSettingsViewController.swift in Sources */,
+				A380E84C299D1D280046FA42 /* TelemetryWrapper.swift in Sources */,
+				A380E84D299D1D280046FA42 /* URLTextField.swift in Sources */,
+				A380E84E299D1D280046FA42 /* ClipboardBarDisplayHandler.swift in Sources */,
+				A380E84F299D1D280046FA42 /* PhotonActionSheetViewModel.swift in Sources */,
+				A380E850299D1D280046FA42 /* LegacyTheme.swift in Sources */,
+				A380E851299D1D280046FA42 /* URLCaching.swift in Sources */,
+				A380E852299D1D280046FA42 /* NimbusSearchBarLayer.swift in Sources */,
+				A380E853299D1D280046FA42 /* BreachAlertsClient.swift in Sources */,
+				A380E854299D1D280046FA42 /* TopSitesDimension.swift in Sources */,
+				A380E855299D1D280046FA42 /* TabManagerNavDelegate.swift in Sources */,
+				A380E856299D1D280046FA42 /* ETPModel.swift in Sources */,
+				A380E857299D1D280046FA42 /* UpdateViewModel.swift in Sources */,
+				A380E858299D1D280046FA42 /* TabGroupData.swift in Sources */,
+				A380E859299D1D280046FA42 /* UIEdgeInsets+Extension.swift in Sources */,
+				A380E85A299D1D280046FA42 /* OneLineCellAndFooter.swift in Sources */,
+				A380E85B299D1D280046FA42 /* ThemedDefaultNavigationController.swift in Sources */,
+				A380E85C299D1D280046FA42 /* CumulativeDaysOfUseCounter.swift in Sources */,
+				A380E85D299D1D280046FA42 /* WallpaperCellViewModel.swift in Sources */,
+				A380E85E299D1D280046FA42 /* PinnedSite.swift in Sources */,
+				A380E85F299D1D280046FA42 /* RecentlySavedDataAdaptor.swift in Sources */,
+				A380E860299D1D280046FA42 /* WallpaperThumbnailUtility.swift in Sources */,
+				A380E861299D1D280046FA42 /* JumpBackInSyncedTab.swift in Sources */,
+				A380E862299D1D280046FA42 /* FindInPageHelper.swift in Sources */,
+				A380E863299D1D280046FA42 /* JumpBackInList.swift in Sources */,
+				A380E864299D1D280046FA42 /* Layout.swift in Sources */,
+				A380E865299D1D280046FA42 /* HistoryHighlightsCell.swift in Sources */,
+				A380E866299D1D280046FA42 /* LegacyDarkTheme.swift in Sources */,
+				A380E867299D1D280046FA42 /* TabTrayViewController.swift in Sources */,
+				A380E868299D1D280046FA42 /* MainMenuActionHelper.swift in Sources */,
+				A380E869299D1D280046FA42 /* BrowserViewController+ReaderMode.swift in Sources */,
+				A380E86A299D1D280046FA42 /* Throttler.swift in Sources */,
+				A380E86B299D1D280046FA42 /* SingleActionViewModel.swift in Sources */,
+				A380E86C299D1D280046FA42 /* CanRemoveQuickActionBookmark.swift in Sources */,
+				A380E86D299D1D280046FA42 /* PhotonActionSheetWidgets.swift in Sources */,
+				A380E86E299D1D280046FA42 /* FeatureFlagUserPrefsMigrationUtility.swift in Sources */,
+				A380E86F299D1D280046FA42 /* LocalRequestHelper.swift in Sources */,
+				A380E870299D1D280046FA42 /* LegacyWallpaperResourceManager.swift in Sources */,
+				A380E871299D1D280046FA42 /* ReaderModeHandlers.swift in Sources */,
+				A380E872299D1D280046FA42 /* SearchEngines.swift in Sources */,
+				A380E873299D1D280046FA42 /* UIButtonExtensions.swift in Sources */,
+				A380E874299D1D280046FA42 /* ThirdPartySearchAlerts.swift in Sources */,
+				A380E875299D1D280046FA42 /* BottomSheetViewController.swift in Sources */,
+				A380E876299D1D280046FA42 /* WallpaperMetadataLoader.swift in Sources */,
+				A380E877299D1D280046FA42 /* RecentlyClosedTabsPanel.swift in Sources */,
+				A380E878299D1D280046FA42 /* TextFieldTableViewCell.swift in Sources */,
+				A380E879299D1D280046FA42 /* LightTheme.swift in Sources */,
+				A380E87A299D1D280046FA42 /* NimbusManager.swift in Sources */,
+				A380E87B299D1D280046FA42 /* URLSessionDataTaskProtocol.swift in Sources */,
+				A380E87C299D1D280046FA42 /* TopTabsViewController.swift in Sources */,
+				A380E87D299D1D280046FA42 /* ReusableCell.swift in Sources */,
+				A380E87E299D1D280046FA42 /* TopSitesProvider.swift in Sources */,
+				A380E87F299D1D280046FA42 /* URLBarView.swift in Sources */,
+				A380E880299D1D280046FA42 /* WallpaperBackgroundView.swift in Sources */,
+				A380E881299D1D280046FA42 /* DownloadContentScript.swift in Sources */,
+				A380E882299D1D280046FA42 /* TabEventHandlers.swift in Sources */,
+				A380E883299D1D280046FA42 /* SearchInputView.swift in Sources */,
+				A380E884299D1D280046FA42 /* Punycode.swift in Sources */,
+				A380E885299D1D280046FA42 /* TodayViewModel.swift in Sources */,
+				A380E886299D1D280046FA42 /* UIViewController+Extension.swift in Sources */,
+				A380E887299D1D280046FA42 /* SeparatorTableViewCell.swift in Sources */,
+				A380E888299D1D280046FA42 /* GridTabViewController.swift in Sources */,
+				A380E889299D1D280046FA42 /* LearnAndActViewModel.swift in Sources */,
+				A380E88A299D1D280046FA42 /* LegacyThemeManager.swift in Sources */,
+				A380E88B299D1D280046FA42 /* BrowserViewController+FindInPage.swift in Sources */,
+				A380E88C299D1D280046FA42 /* JumpBackInViewModel.swift in Sources */,
+				A380E88D299D1D280046FA42 /* TabContentBlocker+ContentScript.swift in Sources */,
+				A380E88E299D1D280046FA42 /* UITestAppDelegate.swift in Sources */,
+				A380E88F299D1D280046FA42 /* SearchViewController.swift in Sources */,
+				A380E891299D1D280046FA42 /* TopSiteItemCell.swift in Sources */,
+				A380E892299D1D280046FA42 /* WallpaperSettingsViewModel.swift in Sources */,
+				A380E893299D1D280046FA42 /* TodayUX.swift in Sources */,
+				A380E894299D1D280046FA42 /* AdjustHelper.swift in Sources */,
+				A380E895299D1D280046FA42 /* FaviconFetcher+Non-Bundled.swift in Sources */,
+				A380E896299D1D280046FA42 /* NimbusFlaggableFeature.swift in Sources */,
+				A380E897299D1D280046FA42 /* Clearables.swift in Sources */,
+				A380E898299D1D280046FA42 /* DefaultBrowserOnboardingViewModel.swift in Sources */,
+				A380E899299D1D280046FA42 /* LegacyWallpaperStorageUtility.swift in Sources */,
+				A380E89A299D1D280046FA42 /* ConfigurableGradientView.swift in Sources */,
+				A380E89B299D1D280046FA42 /* FaviconHandler.swift in Sources */,
+				A380E89C299D1D280046FA42 /* MailProviders.swift in Sources */,
+				A380E89D299D1D280046FA42 /* BackForwardListAnimator.swift in Sources */,
+				A380E89E299D1D280046FA42 /* TabPrintPageRenderer.swift in Sources */,
+				A380E89F299D1D280046FA42 /* NewTabContentSettingsViewController.swift in Sources */,
+				A380E8A0299D1D280046FA42 /* ReaderMode.swift in Sources */,
+				A380E8A1299D1D280046FA42 /* Contile.swift in Sources */,
+				A380E8A2299D1D280046FA42 /* RecentItemsHelper.swift in Sources */,
+				A380E8A3299D1D280046FA42 /* LibraryViewController+ToolbarActions.swift in Sources */,
+				A380E8A4299D1D280046FA42 /* WallpaperNetworkModule.swift in Sources */,
+				A380E8A5299D1D280046FA42 /* DataObserver.swift in Sources */,
+				A380E8A6299D1D280046FA42 /* WallpaperMetadataCodableProtocol.swift in Sources */,
+				A380E8A7299D1D280046FA42 /* PhotonActionSheetContainerCell.swift in Sources */,
+				A380E8A8299D1D280046FA42 /* SettingsViewController.swift in Sources */,
+				A380E8A9299D1D280046FA42 /* SessionData.swift in Sources */,
+				A380E8AA299D1D280046FA42 /* AccessibilityIdentifiers.swift in Sources */,
+				A380E8AB299D1D280046FA42 /* LearnAndActViewCell.swift in Sources */,
+				A380E8AC299D1D280046FA42 /* MenuBuilderHelper.swift in Sources */,
+				A380E8AD299D1D280046FA42 /* WebViewNavigationHandler.swift in Sources */,
+				A380E8AE299D1D280046FA42 /* LibraryPanelContextMenu.swift in Sources */,
+				A380E8AF299D1D280046FA42 /* TabToolbar.swift in Sources */,
+				A380E8B0299D1D280046FA42 /* SyncContentSettingsViewController.swift in Sources */,
+				A380E8B1299D1D280046FA42 /* TodayModel.swift in Sources */,
+				A380E8B2299D1D280046FA42 /* AppContainer.swift in Sources */,
+				A380E8B3299D1D280046FA42 /* HomepageMessageCard.swift in Sources */,
+				A380E8B4299D1D280046FA42 /* DarkTheme.swift in Sources */,
+				A380E8B5299D1D280046FA42 /* TabCell.swift in Sources */,
+				A380E8B6299D1D280046FA42 /* SyncStatusResolver.swift in Sources */,
+				A380E8B7299D1D280046FA42 /* FadeScrollView.swift in Sources */,
+				A380E8B8299D1D280046FA42 /* TopTabCell.swift in Sources */,
+				A380E8B9299D1D280046FA42 /* QRCodeViewController.swift in Sources */,
+				A380E8BA299D1D280046FA42 /* PocketSponsoredStoriesProviding.swift in Sources */,
+				A380E8BB299D1D280046FA42 /* FocusHelper.swift in Sources */,
+				A380E8BC299D1D280046FA42 /* TabLocationView.swift in Sources */,
+				A380E8BD299D1D280046FA42 /* NimbusSponsoredTileLayer.swift in Sources */,
+				A380E8BE299D1D280046FA42 /* SnackBar.swift in Sources */,
+				A380E8BF299D1D280046FA42 /* TopSitesDataAdaptor.swift in Sources */,
+				A380E8C0299D1D280046FA42 /* SessionRestoreHandler.swift in Sources */,
+				A380E8C1299D1D280046FA42 /* InactiveTabHeader.swift in Sources */,
+				A380E8C2299D1D280046FA42 /* QuickActions.swift in Sources */,
+				A380E8C3299D1D280046FA42 /* MetadataParserHelper.swift in Sources */,
+				A380E8C4299D1D280046FA42 /* InsetButton.swift in Sources */,
+				A380E8C5299D1D280046FA42 /* WallpaperMigrationUtility.swift in Sources */,
+				A380E8C6299D1D280046FA42 /* TabDisplayManager.swift in Sources */,
+				A380E8C7299D1D280046FA42 /* BrowserViewController+UIDropInteractionDelegate.swift in Sources */,
+				A380E8C8299D1D280046FA42 /* PrivilegedRequest.swift in Sources */,
+				A380E8C9299D1D280046FA42 /* HomepageContextMenuHelper.swift in Sources */,
+				A380E8CA299D1D280046FA42 /* KeyboardPressesHandler.swift in Sources */,
+				A380E8CB299D1D280046FA42 /* UIView+SnapKit.swift in Sources */,
+				A380E8CC299D1D280046FA42 /* Swizzling.m in Sources */,
+				A380E8CD299D1D280046FA42 /* OpenWithSettingsViewController.swift in Sources */,
+				A380E8CE299D1D280046FA42 /* WallpaperMetadataUtility.swift in Sources */,
+				A380E8CF299D1D280046FA42 /* PocketSponsoredStoriesProvider.swift in Sources */,
+				A380E8D0299D1D280046FA42 /* FindInPageBar.swift in Sources */,
+				A380E8D1299D1D280046FA42 /* SettingsNavigationController.swift in Sources */,
+				A380E8D2299D1D280046FA42 /* DownloadsPanel.swift in Sources */,
+				A380E8D3299D1D280046FA42 /* TabTableViewHeader.swift in Sources */,
+				A380E8D4299D1D280046FA42 /* ContextMenuHelper.swift in Sources */,
+				A380E8D5299D1D280046FA42 /* WallpaperCollectionViewCell.swift in Sources */,
+				A380E8D6299D1D280046FA42 /* InnerStrokedView.swift in Sources */,
+				A380E8D7299D1D280046FA42 /* LegacyWallpaperSettingsViewModel.swift in Sources */,
+				A380E8D8299D1D280046FA42 /* LoginsHelper.swift in Sources */,
+				A380E8D9299D1D280046FA42 /* UIConstants+BottomInset.swift in Sources */,
+				A380E8DA299D1D280046FA42 /* TabsQuantityTelemetry.swift in Sources */,
+				A380E8DB299D1D280046FA42 /* SavedTab+ConfigureExtension.swift in Sources */,
+				A380E8DC299D1D280046FA42 /* LegacyWallpaperNetworkUtility.swift in Sources */,
+				A380E8DD299D1D280046FA42 /* HomePageAccessors.swift in Sources */,
+				A380E8DE299D1D280046FA42 /* MessageCardDataAdaptor.swift in Sources */,
+				A380E8DF299D1D280046FA42 /* OpenInHelper.swift in Sources */,
+				A380E8E0299D1D280046FA42 /* ToolbarTextField.swift in Sources */,
+				A380E8E1299D1D280046FA42 /* NoLoginsView.swift in Sources */,
+				A380E8E2299D1D280046FA42 /* ReaderModeCache.swift in Sources */,
+				A380E8E3299D1D280046FA42 /* TabTrayController+KeyCommands.swift in Sources */,
+				A380E8E4299D1D280046FA42 /* SettingsContentViewController.swift in Sources */,
+				A380E8E5299D1D280046FA42 /* FirefoxTabContentBlocker.swift in Sources */,
+				A380E8E6299D1D280046FA42 /* HistoryPanel+Search.swift in Sources */,
+				A380E8E7299D1D280046FA42 /* HistoryPanelViewModel.swift in Sources */,
+				A380E8E8299D1D280046FA42 /* SimpleTab.swift in Sources */,
+				A380E8E9299D1D280046FA42 /* OnboardingCardViewController.swift in Sources */,
+				A380E8EA299D1D280046FA42 /* PhotonActionSheet.swift in Sources */,
+				A380E8EB299D1D280046FA42 /* BackForwardTableViewCell.swift in Sources */,
+				A380E8EC299D1D280046FA42 /* photon-colors.swift in Sources */,
+				A380E8ED299D1D280046FA42 /* OpenQLPreviewHelper.swift in Sources */,
+				A380E8EE299D1D280046FA42 /* PhotonActionSheetView.swift in Sources */,
+				A380E8EF299D1D280046FA42 /* UIDevice+Extension.swift in Sources */,
+				A380E8F0299D1D280046FA42 /* FirefoxAccountSignInViewController.swift in Sources */,
+				A380E8F1299D1D280046FA42 /* DrawerViewController.swift in Sources */,
+				A380E8F2299D1D280046FA42 /* NSAttributedString+Extension.swift in Sources */,
+				A380E8F3299D1D280046FA42 /* BookmarksPanelViewModel.swift in Sources */,
+				A380E8F4299D1D280046FA42 /* WallpaperSelectorViewModel.swift in Sources */,
+				A380E8F5299D1D280046FA42 /* PrintHelper.swift in Sources */,
+				A380E8F6299D1D280046FA42 /* AppDelegate+PushNotifications.swift in Sources */,
+				A380E8F7299D1D280046FA42 /* TopSitesRowCountSettingsController.swift in Sources */,
+				A380E8F8299D1D280046FA42 /* AccountSyncHandler.swift in Sources */,
+				A380E8F9299D1D280046FA42 /* UIAlertController+Extension.swift in Sources */,
+				A380E8FA299D1D280046FA42 /* OpenSearchParser.swift in Sources */,
+				A380E8FB299D1D280046FA42 /* DevicePickerViewController.swift in Sources */,
+				A380E8FC299D1D280046FA42 /* LoginListViewController.swift in Sources */,
+				A380E8FD299D1D280046FA42 /* BrowserViewController+DownloadQueueDelegate.swift in Sources */,
+				A380E8FE299D1D280046FA42 /* UILabel+Extension.swift in Sources */,
+				A380E8FF299D1D280046FA42 /* SearchSettingsTableViewController.swift in Sources */,
+				A380E900299D1D280046FA42 /* SponsoredTile.swift in Sources */,
+				A380E901299D1D280046FA42 /* LibraryViewModel.swift in Sources */,
+				A380E902299D1D280046FA42 /* UserActivityHandler.swift in Sources */,
+				A380E903299D1D280046FA42 /* ContextualHintViewModel.swift in Sources */,
+				A380E904299D1D280046FA42 /* PhotonActionSheetAnimator.swift in Sources */,
+				A380E905299D1D280046FA42 /* EnhancedTrackingProtectionDetailsVC.swift in Sources */,
+				A380E906299D1D280046FA42 /* TabScrollController.swift in Sources */,
+				A380E907299D1D280046FA42 /* SearchLoader.swift in Sources */,
+				A380E908299D1D280046FA42 /* GleanPlumbMessageManager.swift in Sources */,
+				A380E909299D1D280046FA42 /* UserResearch.swift in Sources */,
+				A380E90A299D1D280046FA42 /* BottomSheetViewModel.swift in Sources */,
+				A380E90B299D1D280046FA42 /* BaseContentStackView.swift in Sources */,
+				A380E90C299D1D280046FA42 /* WallpaperNetworking.swift in Sources */,
+				A380E90D299D1D280046FA42 /* WebServerUtil.swift in Sources */,
+				A380E90E299D1D280046FA42 /* ContextualHintEligibilityUtility.swift in Sources */,
+				A380E90F299D1D280046FA42 /* LoginListDataSourceHelper.swift in Sources */,
+				A380E910299D1D280046FA42 /* LabelButtonHeaderView.swift in Sources */,
+				A380E911299D1D280046FA42 /* AddCredentialViewController.swift in Sources */,
+				A380E912299D1D280046FA42 /* LoginListViewModel.swift in Sources */,
+				A380E913299D1D280046FA42 /* Loggable.swift in Sources */,
+				A380E914299D1D280046FA42 /* SearchBarSettingsViewModel.swift in Sources */,
+				A380E915299D1D280046FA42 /* JumpBackInDataAdaptor.swift in Sources */,
+				A380E916299D1D280046FA42 /* ClearHistorySheetProvider.swift in Sources */,
+				A380E917299D1D280046FA42 /* BrowserViewController+WebViewDelegates.swift in Sources */,
+				A380E918299D1D280046FA42 /* ContextualHintPrefsKeysProvider.swift in Sources */,
+				A380E919299D1D280046FA42 /* SponsoredContentFilterUtility.swift in Sources */,
+				A380E91A299D1D280046FA42 /* ErrorToast.swift in Sources */,
+				A380E91B299D1D280046FA42 /* DispatchGroupInterface.swift in Sources */,
+				A380E91C299D1D280046FA42 /* SearchGroupedItemsViewModel.swift in Sources */,
+				A380E91D299D1D280046FA42 /* TopSitesWidgetManager.swift in Sources */,
+				A380E91E299D1D280046FA42 /* AppDelegate.swift in Sources */,
+				A380E91F299D1D280046FA42 /* DispatchQueueInterface.swift in Sources */,
+				A380E920299D1D280046FA42 /* BrowserPrompts.swift in Sources */,
+				A380E921299D1D280046FA42 /* FxColors.swift in Sources */,
+				A380E922299D1D280046FA42 /* WallpaperSettingsViewController.swift in Sources */,
+				A380E923299D1D280046FA42 /* GleanPlumbMessageUtility.swift in Sources */,
+				A380E924299D1D280046FA42 /* WallpaperSettingsHeaderView.swift in Sources */,
+				A380E925299D1D280046FA42 /* RemoteTabsPanel.swift in Sources */,
+				A380E926299D1D280046FA42 /* HomePageHelper.swift in Sources */,
+				A380E927299D1D280046FA42 /* UIView+Screenshot.swift in Sources */,
+				A380E928299D1D280046FA42 /* WidgetKitTopSiteModel.swift in Sources */,
+				A380E929299D1D280046FA42 /* ETPViewModel.swift in Sources */,
+				A380E92A299D1D280046FA42 /* HistoryActionables.swift in Sources */,
+				A380E92B299D1D280046FA42 /* ButtonToast.swift in Sources */,
+				A380E92C299D1D280046FA42 /* NimbusFeatureFlagLayer.swift in Sources */,
+				A380E92D299D1D280046FA42 /* UserDefaultsInterface.swift in Sources */,
+				A380E92E299D1D280046FA42 /* SearchTermGroupsUtility.swift in Sources */,
+				A380E92F299D1D280046FA42 /* LibraryPanelDescriptor.swift in Sources */,
+				A380E930299D1D280046FA42 /* SearchSuggestClient.swift in Sources */,
+				A380E931299D1D280046FA42 /* ReaderModeStyleViewModel.swift in Sources */,
+				A380E933299D1D280046FA42 /* BreachAlertsDetailView.swift in Sources */,
+				A380E934299D1D280046FA42 /* BlurrableCollectionViewCell.swift in Sources */,
+				A380E935299D1D280046FA42 /* UIPasteboard+Extension.swift in Sources */,
+				A380E936299D1D280046FA42 /* NavigationRouter.swift in Sources */,
+				A380E937299D1D280046FA42 /* Wallpaper.swift in Sources */,
+				A380E938299D1D280046FA42 /* EnhancedTrackingProtectionVM.swift in Sources */,
+				A380E939299D1D280046FA42 /* FormPostHelper.swift in Sources */,
+				A380E93A299D1D280046FA42 /* InactiveTabItemCellModel.swift in Sources */,
+				A380E93B299D1D280046FA42 /* ContextualHintCopyProvider.swift in Sources */,
+				A380E93C299D1D280046FA42 /* CGRect+Extension.swift in Sources */,
+				A380E93D299D1D280046FA42 /* TopBottomInterchangeable.swift in Sources */,
+				A380E93E299D1D280046FA42 /* PocketDataAdaptor.swift in Sources */,
+				A380E93F299D1D280046FA42 /* PocketProvider.swift in Sources */,
+				A380E940299D1D280046FA42 /* TitleActivityItemProvider.swift in Sources */,
+				A380E941299D1D280046FA42 /* SiteTableViewController.swift in Sources */,
+				A380E942299D1D280046FA42 /* TabPeekViewController.swift in Sources */,
+				A380E943299D1D280046FA42 /* ExperimentsBranchesViewController.swift in Sources */,
+				A380E944299D1D280046FA42 /* WallpaperManager.swift in Sources */,
+				A380E945299D1D280046FA42 /* WebsiteDataSearchResultsViewController.swift in Sources */,
+				A380E946299D1D280046FA42 /* ExperimentsViewController.swift in Sources */,
+				A380E947299D1D280046FA42 /* HighlightItem.swift in Sources */,
+				A380E948299D1D280046FA42 /* LearnAndActHeader.swift in Sources */,
+				A380E949299D1D280046FA42 /* BreachAlertsManager.swift in Sources */,
+				A380E94A299D1D280046FA42 /* TopSiteHistoryManager.swift in Sources */,
+				A380E94B299D1D280046FA42 /* UIWindow+Extension.swift in Sources */,
+				A380E94C299D1D280046FA42 /* AboutHomeHandler.swift in Sources */,
+				A380E94D299D1D280046FA42 /* OnboardingCardViewModel.swift in Sources */,
+				A380E94E299D1D280046FA42 /* DefaultSearchPrefs.swift in Sources */,
+				A380E94F299D1D280046FA42 /* LegacyWallpaper.swift in Sources */,
+				A380E950299D1D280046FA42 /* MenuHelper.swift in Sources */,
+				A380E951299D1D280046FA42 /* HomePanelType.swift in Sources */,
+				A380E952299D1D280046FA42 /* LoginDetailTableViewCell.swift in Sources */,
+				A380E953299D1D280046FA42 /* WebsiteDataManagementViewController.swift in Sources */,
+				A380E954299D1D280046FA42 /* FxAWebViewController.swift in Sources */,
+				A380E955299D1D280046FA42 /* ThemedTableSectionHeaderFooterView.swift in Sources */,
+				A380E956299D1D280046FA42 /* Notifiable.swift in Sources */,
+				A380E957299D1D280046FA42 /* GleanPlumbContextProvider.swift in Sources */,
+				A380E958299D1D280046FA42 /* HomepageContextMenuProtocol.swift in Sources */,
+				A380E959299D1D280046FA42 /* HomepageViewController.swift in Sources */,
+				A380E95A299D1D280046FA42 /* CoreFlaggableFeature.swift in Sources */,
+				A31EE6D2299D39D700354531 /* TodayViewController.swift in Sources */,
+				A380E95B299D1D280046FA42 /* LibraryViewController.swift in Sources */,
+				A380E95C299D1D280046FA42 /* TabEventHandler.swift in Sources */,
+				A380E95D299D1D280046FA42 /* TabMetadataManager.swift in Sources */,
+				A380E95E299D1D280046FA42 /* ReaderModeBarView.swift in Sources */,
+				A380E95F299D1D280046FA42 /* SiriSettingsViewController.swift in Sources */,
+				A380E960299D1D280046FA42 /* ContentBlocker.swift in Sources */,
+				A380E961299D1D280046FA42 /* BackgroundSyncUtil.swift in Sources */,
+				A380E962299D1D280046FA42 /* DefaultBrowserOnboardingViewController.swift in Sources */,
+				A380E963299D1D280046FA42 /* PhotonActionSheetProtocol.swift in Sources */,
+				A380E964299D1D280046FA42 /* UIImage+Extension.swift in Sources */,
+				A380EABD299D33A20046FA42 /* IntroViewController.swift in Sources */,
+				A380E965299D1D280046FA42 /* DevicePasscodeRequiredViewController.swift in Sources */,
+				A380E966299D1D280046FA42 /* URL+Mail.swift in Sources */,
+				A380E967299D1D280046FA42 /* TabManagerStore.swift in Sources */,
+				A380E968299D1D280046FA42 /* DispatchQueueHelper.swift in Sources */,
+				A380E969299D1D280046FA42 /* InternalSchemeHandler.swift in Sources */,
+				A380E96A299D1D280046FA42 /* TopTabFader.swift in Sources */,
+				A380E96B299D1D280046FA42 /* CustomizeHomepageSectionCell.swift in Sources */,
+				A380E96C299D1D280046FA42 /* WallpaperStorageUtility.swift in Sources */,
+				A380E96D299D1D280046FA42 /* LoginRecordExtension.swift in Sources */,
+				A380E96E299D1D280046FA42 /* SettingsTableViewController.swift in Sources */,
+				A380E96F299D1D280046FA42 /* FxBookmarkNode.swift in Sources */,
+				A380E970299D1D280046FA42 /* NoImageModeHelper.swift in Sources */,
+				A380E971299D1D280046FA42 /* CellWithRoundedButton.swift in Sources */,
+				A380E972299D1D280046FA42 /* HomePageSettingViewController.swift in Sources */,
+				A380E973299D1D280046FA42 /* CustomizeHomepageSectionViewModel.swift in Sources */,
+				A380E974299D1D280046FA42 /* ErrorPageHelper.swift in Sources */,
+				A380E975299D1D280046FA42 /* WallpaperCollectionAvailability.swift in Sources */,
+				A380E976299D1D280046FA42 /* PocketDiscoverCell.swift in Sources */,
+				A380E977299D1D280046FA42 /* EnhancedTrackingProtectionDetailsVM.swift in Sources */,
+				A380E978299D1D280046FA42 /* TabFileManager.swift in Sources */,
+				A380E979299D1D280046FA42 /* HomepageSectionHandler.swift in Sources */,
+				A380E97A299D1D280046FA42 /* TabsButton.swift in Sources */,
+				A380E97B299D1D280046FA42 /* WallpaperBaseViewController.swift in Sources */,
+				A380E97C299D1D280046FA42 /* HomeLogoHeaderCell.swift in Sources */,
+				A380E97D299D1D280046FA42 /* ContextualHintViewController.swift in Sources */,
+				A380E97E299D1D280046FA42 /* Experiments.swift in Sources */,
+				A380E97F299D1D280046FA42 /* DynamicHeightCollectionView.swift in Sources */,
+				A380E980299D1D280046FA42 /* LegacyWallpaperFilePathProtocol.swift in Sources */,
+				A380E981299D1D280046FA42 /* SavedTab.swift in Sources */,
+				A380E982299D1D280046FA42 /* SearchEnginePicker.swift in Sources */,
+				A380E983299D1D280046FA42 /* TabDataRetriever.swift in Sources */,
+				A380E984299D1D280046FA42 /* KarmaConfig.swift in Sources */,
+				A380E985299D1D280046FA42 /* Toast.swift in Sources */,
+				A380E986299D1D280046FA42 /* UIStackView+Extension.swift in Sources */,
+				A380E987299D1D280046FA42 /* JumpBackInSectionLayout.swift in Sources */,
+				A380E988299D1D280046FA42 /* Profile.swift in Sources */,
+				A380E989299D1D280046FA42 /* HistoryHighlightsViewModel.swift in Sources */,
+				A380E98A299D1D280046FA42 /* WallpaperFilePathProvider.swift in Sources */,
+				A380E98B299D1D280046FA42 /* WallpapersCardViewController.swift in Sources */,
+				A380E98C299D1D280046FA42 /* LibraryViewController+LibraryPanelDelegate.swift in Sources */,
+				A380E98D299D1D280046FA42 /* WallpaperImageLoader.swift in Sources */,
+				A380E98E299D1D280046FA42 /* SearchTelemetry.swift in Sources */,
+				A380E98F299D1D280046FA42 /* DynamicFontHelper.swift in Sources */,
+				A380E990299D1D280046FA42 /* Tab+ChangeUserAgent.swift in Sources */,
+				A380E991299D1D280046FA42 /* TabTrayButtonExtensions.swift in Sources */,
+				A380E992299D1D280046FA42 /* SDWebImageCacheExtension.swift in Sources */,
+				A380E993299D1D280046FA42 /* FxAWebViewTelemetry.swift in Sources */,
+				A380E994299D1D280046FA42 /* AutocompleteTextField.swift in Sources */,
+				A380E995299D1D280046FA42 /* UIFont+Karma.swift in Sources */,
+				A380E996299D1D280046FA42 /* SlideoverPresentationController.swift in Sources */,
+				A380E997299D1D280046FA42 /* ExperimentsTableView.swift in Sources */,
+				A380E998299D1D280046FA42 /* AdjustTelemetryHelper.swift in Sources */,
+				A380E999299D1D280046FA42 /* TopSite.swift in Sources */,
+				A380E99A299D1D280046FA42 /* BrowserViewController+URLBarDelegate.swift in Sources */,
+				A380E99B299D1D280046FA42 /* BrowserViewController+TabToolbarDelegate.swift in Sources */,
+				A380E99C299D1D280046FA42 /* SwipeAnimator.swift in Sources */,
+				A380E99D299D1D280046FA42 /* SimpleToast.swift in Sources */,
+				A380E99E299D1D280046FA42 /* PocketStory.swift in Sources */,
+				A380E99F299D1D280046FA42 /* TabTrayViewModel.swift in Sources */,
+				A380E9A0299D1D280046FA42 /* TrackingProtectionPageStats.swift in Sources */,
+				A380E9A1299D1D280046FA42 /* ScreenshotHelper.swift in Sources */,
+				A380E9A2299D1D280046FA42 /* UIImageView+Extension.swift in Sources */,
+				A380E9A3299D1D280046FA42 /* TabManager.swift in Sources */,
+				A380E9A4299D1D280046FA42 /* SearchGroupedItemsViewController.swift in Sources */,
+				A380E9A5299D1D280046FA42 /* TopTabsLayout.swift in Sources */,
+				A380E9A6299D1D280046FA42 /* UIConstants.swift in Sources */,
+				A380E9A7299D1D280046FA42 /* UIDeviceInterface.swift in Sources */,
+				A380E9A8299D1D280046FA42 /* UIView+Constraints.swift in Sources */,
+				A380E9A9299D1D280046FA42 /* ContentBlocker+Safelist.swift in Sources */,
+				A380E9AA299D1D280046FA42 /* InactiveTabViewModel.swift in Sources */,
+				A380E9AB299D1D280046FA42 /* WallpaperURLProvider.swift in Sources */,
+				A380E9AC299D1D280046FA42 /* BookmarkDetailPanel.swift in Sources */,
+				A380E9AD299D1D280046FA42 /* UIImageColors.swift in Sources */,
+				A380E9AE299D1D280046FA42 /* ASGroup.swift in Sources */,
+				A380E9AF299D1D280046FA42 /* NewTabAccessors.swift in Sources */,
+				A380E9B0299D1D280046FA42 /* JumpBackInCell.swift in Sources */,
+				A380E9B1299D1D280046FA42 /* HomepageViewModel.swift in Sources */,
+				A380E9B2299D1D280046FA42 /* Tab.swift in Sources */,
+				A380E9B3299D1D280046FA42 /* ToolbarButton.swift in Sources */,
+				A380E9B4299D1D280046FA42 /* NightModeHelper.swift in Sources */,
+				A380E9B5299D1D280046FA42 /* ToggleSwitch.swift in Sources */,
+				A380E9B6299D1D280046FA42 /* GleanPlumbMessageStore.swift in Sources */,
+				A380E9B7299D1D280046FA42 /* StartAtHomeHelper.swift in Sources */,
+				A380E9B8299D1D280046FA42 /* InactiveTabItemCell.swift in Sources */,
+				A380E9B9299D1D280046FA42 /* BookmarksFolderCell.swift in Sources */,
+				A380E9BA299D1D280046FA42 /* HomePanelDelegate.swift in Sources */,
+				A380E9BB299D1D280046FA42 /* CustomSearchViewController.swift in Sources */,
+				A380E9BC299D1D280046FA42 /* PocketFeedStory.swift in Sources */,
+				A31EE6DE299E7AF800354531 /* FeatureFlagsManager.swift in Sources */,
+				A380E9BD299D1D280046FA42 /* UIView+Extension.swift in Sources */,
+				A380E9BE299D1D280046FA42 /* ContileProvider.swift in Sources */,
+				A380E9BF299D1D280046FA42 /* FaviconFetcher.swift in Sources */,
+				A380E9C0299D1D280046FA42 /* SiteImageHelper.swift in Sources */,
+				A380E9C1299D1D280046FA42 /* LegacyWallpaperManager.swift in Sources */,
+				A380E9C2299D1D280046FA42 /* ToolbarBadge.swift in Sources */,
+				A380E9C3299D1D280046FA42 /* ImageButtonWithLabel.swift in Sources */,
+				A380E9C4299D1D280046FA42 /* TabLocationContainerView.swift in Sources */,
+				A380E9C5299D1D280046FA42 /* WallpaperCollectionType.swift in Sources */,
+				A380E9C6299D1D280046FA42 /* WallpaperMetadata.swift in Sources */,
+				A380E9C7299D1D280046FA42 /* UXSizeClass.swift in Sources */,
+				A380E9C8299D1D280046FA42 /* GradientProgressBar.swift in Sources */,
+				A380E9C9299D1D280046FA42 /* LibraryPanelViewState.swift in Sources */,
+				A380E9CA299D1D280046FA42 /* ExperimentsSettingsView.swift in Sources */,
+				A380E9CB299D1D280046FA42 /* TopSitesSettingsViewController.swift in Sources */,
+				A380E9CC299D1D280046FA42 /* RatingPromptManager.swift in Sources */,
+				A380E9CD299D1D280046FA42 /* TopSitesViewModel.swift in Sources */,
+				A380E9CE299D1D280046FA42 /* WidgetIntents.intentdefinition in Sources */,
+				A380E9CF299D1D280046FA42 /* LoginOnboarding.swift in Sources */,
+				A380E9D0299D1D280046FA42 /* PocketSponsoredStory.swift in Sources */,
+				A380E9D1299D1D280046FA42 /* EmptyTopSiteCell.swift in Sources */,
+				A380E9D2299D1D280046FA42 /* LoginListSelectionHelper.swift in Sources */,
+				A380E9D3299D1D280046FA42 /* ThemeSettingsController.swift in Sources */,
+				A380E9D4299D1D280046FA42 /* FlaggableFeatureOptions.swift in Sources */,
+				A380E9D5299D1D280046FA42 /* HomeLogoHeaderViewModel.swift in Sources */,
+				A380E9D6299D1D280046FA42 /* URIFixup.swift in Sources */,
+				A380E9D7299D1D280046FA42 /* HomepageMessageCardViewModel.swift in Sources */,
+				A380E9D8299D1D280046FA42 /* ETPCoverSheetViewController.swift in Sources */,
+				A380E9D9299D1D280046FA42 /* Themable.swift in Sources */,
+				A380E9DA299D1D280046FA42 /* UIColor+Extension.swift in Sources */,
+				A380E9DB299D1D280046FA42 /* ReadabilityService.swift in Sources */,
+				A380E9DC299D1D280046FA42 /* IntroScreenWelcomeView.swift in Sources */,
+				A380E9DD299D1D280046FA42 /* OnboardingViewModel.swift in Sources */,
+				A380E9DE299D1D280046FA42 /* main.swift in Sources */,
+				A380E9DF299D1D280046FA42 /* IntroViewModel.swift in Sources */,
+				A380E9E0299D1D280046FA42 /* WallpaperSelectorViewController.swift in Sources */,
+				A380E9E1299D1D280046FA42 /* BrowserViewController.swift in Sources */,
+				A380E9E2299D1D280046FA42 /* SensitiveViewController.swift in Sources */,
+				A380E9E3299D1D280046FA42 /* GoogleTopSiteManager.swift in Sources */,
+				A380E9E4299D1D280046FA42 /* EmptyPrivateTabsView.swift in Sources */,
+				A380E9E5299D1D280046FA42 /* LegacyWallpaperDataManager.swift in Sources */,
+				A380E9E6299D1D280046FA42 /* DownloadQueue.swift in Sources */,
+				A380E9E7299D1D280046FA42 /* GleanPlumbMessage.swift in Sources */,
+				A380E9E8299D1D280046FA42 /* AdvancedAccountSettingViewController.swift in Sources */,
+				A380E9E9299D1D280046FA42 /* WallpaperDataService.swift in Sources */,
+				A380E9EA299D1D280046FA42 /* LoginDetailViewController.swift in Sources */,
+				A380E9EB299D1D280046FA42 /* PocketViewModel.swift in Sources */,
+				A380E9EC299D1D280046FA42 /* PocketStandardCellViewModel.swift in Sources */,
+				A380E9ED299D1D280046FA42 /* HistoryPanel.swift in Sources */,
+				A380E9EE299D1D280046FA42 /* BackForwardListViewController.swift in Sources */,
+				A380E9EF299D1D280046FA42 /* OrientationLockUtility.swift in Sources */,
+				A380E9F0299D1D280046FA42 /* ExperimentsSettingsViewController.swift in Sources */,
+				A380E9F1299D1D280046FA42 /* WallpaperSettingCollectionCell.swift in Sources */,
+				A380E9F2299D1D280046FA42 /* ShareExtensionHelper.swift in Sources */,
+				A380E9F3299D1D280046FA42 /* SessionRestoreHelper.swift in Sources */,
+				A380E9F4299D1D280046FA42 /* AppDelegate+SyncSentTabs.swift in Sources */,
+				A380E9F5299D1D280046FA42 /* MailtoLinkHandler.swift in Sources */,
+				A380E9F6299D1D280046FA42 /* BookmarksPanel.swift in Sources */,
+				A380E9F7299D1D280046FA42 /* DownloadToast.swift in Sources */,
+				A380E9F8299D1D280046FA42 /* TextContentDetector.swift in Sources */,
+				A380E9F9299D1D280046FA42 /* TabsSettingsViewControler.swift in Sources */,
+				A380E9FA299D1D280046FA42 /* ImageIdentifiers.swift in Sources */,
+				A380E9FB299D1D280046FA42 /* ChevronView.swift in Sources */,
+				A380E9FC299D1D280046FA42 /* UpdateViewController.swift in Sources */,
+				A380E9FD299D1D280046FA42 /* InactiveTabCell.swift in Sources */,
+				A380E9FF299D1D280046FA42 /* GroupedTabCell.swift in Sources */,
+				A380EA00299D1D280046FA42 /* FSReadingList.m in Sources */,
+				A380EA01299D1D280046FA42 /* SearchBarSettingsViewController.swift in Sources */,
+				A380EA02299D1D280046FA42 /* TabToolbarHelper.swift in Sources */,
+				A380EA03299D1D280046FA42 /* ServiceProvider.swift in Sources */,
+				A380EA04299D1D280046FA42 /* Calendar+Extension.swift in Sources */,
+				A380EA05299D1D280046FA42 /* ToggleButton.swift in Sources */,
+				A380EA06299D1D280046FA42 /* HistoryHighlightsManager.swift in Sources */,
+				A380EA07299D1D280046FA42 /* BadgeIcon.swift in Sources */,
+				A380EA08299D1D280046FA42 /* RecentlySavedCell.swift in Sources */,
+				A380EA09299D1D280046FA42 /* HistoryPanel+ContextMenuExtensions.swift in Sources */,
+				A380EA0A299D1D280046FA42 /* AdsTelemetryHelper.swift in Sources */,
+				A380EA0B299D1D280046FA42 /* ResizableButton.swift in Sources */,
+				A380EA0C299D1D280046FA42 /* StoryProvider.swift in Sources */,
+				A380EA0D299D1D280046FA42 /* DebugSettingsBundleOptions.swift in Sources */,
+				A380EA0E299D1D280046FA42 /* LoginOnboardingViewController.swift in Sources */,
+				A380EA0F299D1D280046FA42 /* UIImage+ImageEffects.m in Sources */,
+				A380EA10299D1D280046FA42 /* TabContentBlocker.swift in Sources */,
+				A380EA11299D1D280046FA42 /* RecentlySavedViewModel.swift in Sources */,
+				A380EA12299D1D280046FA42 /* ClearPrivateDataTableViewController.swift in Sources */,
+				A380EA13299D1D280046FA42 /* Theme.swift in Sources */,
+				A380EA14299D1D280046FA42 /* BrowserViewController+KeyCommands.swift in Sources */,
+				A380EA15299D1D280046FA42 /* ReaderPanel.swift in Sources */,
+				A380EA16299D1D280046FA42 /* EnhancedTrackingProtectionVC.swift in Sources */,
+				A380EA17299D1D280046FA42 /* IntroTutoView.swift in Sources */,
+				A380EA18299D1D280046FA42 /* WebServer.swift in Sources */,
+				A380EA19299D1D280046FA42 /* TwoLineCellAndFooter.swift in Sources */,
+				A380EA1A299D1D280046FA42 /* SponsoredTileTelemetry.swift in Sources */,
+				A380EA1B299D1D280046FA42 /* SettingsLoadingView.swift in Sources */,
+				A380EA1C299D1D280046FA42 /* FirefoxColors.swift in Sources */,
+				A380EA1D299D1D280046FA42 /* InstructionsViewController.swift in Sources */,
+				A380EA1E299D1D280046FA42 /* SiteTableViewHeader.swift in Sources */,
+				A380EA1F299D1D280046FA42 /* Presenter.swift in Sources */,
+				A380EA20299D1D280046FA42 /* LegacyWallpaperMigrationUtility.swift in Sources */,
+				A380EA21299D1D280046FA42 /* FileManagerInterface.swift in Sources */,
+				A380EA22299D1D280046FA42 /* LocalDesktopFolder.swift in Sources */,
+				A380EA23299D1D280046FA42 /* ThemeManager.swift in Sources */,
+				A380EA24299D1D280046FA42 /* ReaderModeButton.swift in Sources */,
+				A380EA25299D1D280046FA42 /* ActionButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D39FA15B1A83E0EC00EE869C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -10474,7 +12056,7 @@
 				E1390FAC28B032B300C9EF3E /* UIView+Extension.swift in Sources */,
 				6025B10C267B6BEA00F59F6B /* LoginRecordExtension.swift in Sources */,
 				C8CE38BB265E71FE0009B09E /* ItemListCell.swift in Sources */,
-				A3A8717F29379F2000C76AC2 /* UIFont+Karma.swift in Sources */,
+				A31EE6D1299D384D00354531 /* UIFont+Karma.swift in Sources */,
 				F8324A0A2649A188007E4BFA /* CredentialProviderViewController.swift in Sources */,
 				60CE80C12667780D004026C7 /* CredentialListPresenter.swift in Sources */,
 				F80DF73F27034F6400E4C37D /* DynamicFontHelper.swift in Sources */,
@@ -10607,14 +12189,13 @@
 				43446CEA2412066500F5C643 /* UIViewController+Extension.swift in Sources */,
 				8A471185287F6E4800F5A6EA /* SeparatorTableViewCell.swift in Sources */,
 				D301AAEE1A3A55B70078DD1D /* GridTabViewController.swift in Sources */,
-				A37D5DE82938FBA600400F74 /* LearnAndActViewModel.swift in Sources */,
 				EB9A179B20E69A7F00B12184 /* LegacyThemeManager.swift in Sources */,
+				A31EE6D0299D382600354531 /* UIFont+Karma.swift in Sources */,
 				EBFDB790211C83A5005CCA2F /* BrowserViewController+FindInPage.swift in Sources */,
 				C8A012F126AB07D70096A7A7 /* JumpBackInViewModel.swift in Sources */,
 				EBB89509219398E500EB91A0 /* TabContentBlocker+ContentScript.swift in Sources */,
 				D3BE7B461B054F8600641031 /* UITestAppDelegate.swift in Sources */,
 				23D57E6E25ED6F2700883FAD /* SearchViewController.swift in Sources */,
-				C82A94F2269F68ED00624AA7 /* FeatureFlagsManager.swift in Sources */,
 				3BB50E111D6274CD004B33DF /* TopSiteItemCell.swift in Sources */,
 				E127313D28B6AD99006F39D2 /* WallpaperSettingsViewModel.swift in Sources */,
 				048B4C8624A53F3E001B56E8 /* TodayUX.swift in Sources */,
@@ -10641,7 +12222,6 @@
 				F85C7F0E2711C556004BDBA4 /* SettingsViewController.swift in Sources */,
 				74C027451B2A348C001B1E88 /* SessionData.swift in Sources */,
 				C84266752728462900382274 /* AccessibilityIdentifiers.swift in Sources */,
-				A37D5DE72938FBA600400F74 /* LearnAndActViewCell.swift in Sources */,
 				DA27EEDB28BADF4700DD6F5D /* MenuBuilderHelper.swift in Sources */,
 				E1877A81286E0EFD00F5BDF2 /* WebViewNavigationHandler.swift in Sources */,
 				274A36CC239EB99400A21587 /* LibraryPanelContextMenu.swift in Sources */,
@@ -10710,6 +12290,7 @@
 				8AC1065F28D0CD700013263A /* OpenQLPreviewHelper.swift in Sources */,
 				EBA3B2C32268F16300728BDB /* PhotonActionSheetView.swift in Sources */,
 				E18EA56F28AD3279003F97FC /* UIDevice+Extension.swift in Sources */,
+				A31EE6D8299D3E0B00354531 /* FeatureFlagsManager.swift in Sources */,
 				CDB3BE8724746787009320EE /* FirefoxAccountSignInViewController.swift in Sources */,
 				D0EAE0E2228B3762001C875A /* DrawerViewController.swift in Sources */,
 				E689C7301E0C7617008BAADB /* NSAttributedString+Extension.swift in Sources */,
@@ -10798,7 +12379,6 @@
 				6669B5E2211418A200CA117B /* WebsiteDataSearchResultsViewController.swift in Sources */,
 				D51EA5CF26406D8300334331 /* ExperimentsViewController.swift in Sources */,
 				1DFE57FB27B2CB870025DE58 /* HighlightItem.swift in Sources */,
-				A37D5DE92938FBA600400F74 /* LearnAndActHeader.swift in Sources */,
 				CA77ABFD24773C92005079F9 /* BreachAlertsManager.swift in Sources */,
 				8AB8572727D93AEC0075C173 /* TopSiteHistoryManager.swift in Sources */,
 				C81A8F2526D3ED1900EBA539 /* UIWindow+Extension.swift in Sources */,
@@ -10857,7 +12437,6 @@
 				63306D3921103EAE00F25400 /* SavedTab.swift in Sources */,
 				2F44FCCB1A9E972E00FD20CC /* SearchEnginePicker.swift in Sources */,
 				1DA3CE5F24EEE7C600422BB2 /* TabDataRetriever.swift in Sources */,
-				A3DEA005294A0E3400A28297 /* KarmaConfig.swift in Sources */,
 				D04D1B92209790B60074B35F /* Toast.swift in Sources */,
 				8AD5702F27AB4DEA005BFDC8 /* UIStackView+Extension.swift in Sources */,
 				8AE80BBA2891C0C300BC12EA /* JumpBackInSectionLayout.swift in Sources */,
@@ -10874,7 +12453,6 @@
 				439086AB286CE61600897904 /* SDWebImageCacheExtension.swift in Sources */,
 				437A857827E43FE100E42764 /* FxAWebViewTelemetry.swift in Sources */,
 				D3FEC38D1AC4B42F00494F45 /* AutocompleteTextField.swift in Sources */,
-				A3A8716C29379E8B00C76AC2 /* UIFont+Karma.swift in Sources */,
 				C849E46526B9C3DD00260F0B /* SlideoverPresentationController.swift in Sources */,
 				D5D0532E2645B3A700759F85 /* ExperimentsTableView.swift in Sources */,
 				2165B2C22860C2F4004C0786 /* AdjustTelemetryHelper.swift in Sources */,
@@ -10945,7 +12523,6 @@
 				5A43EC9328CBC25F003155A3 /* Themable.swift in Sources */,
 				E12BD0AC28AC37F00029AAF0 /* UIColor+Extension.swift in Sources */,
 				E4A961181AC041C40069AD6F /* ReadabilityService.swift in Sources */,
-				A32FD0432937B07A0072CD43 /* IntroScreenWelcomeView.swift in Sources */,
 				21371FA428AA7A8D00BC3F37 /* OnboardingViewModel.swift in Sources */,
 				D3BE7B261B054D4400641031 /* main.swift in Sources */,
 				21A7C44E283539170071D996 /* IntroViewModel.swift in Sources */,
@@ -11004,7 +12581,6 @@
 				C8F457AA1F1FDD9B000CB895 /* BrowserViewController+KeyCommands.swift in Sources */,
 				59A68FD5260B8D520F890F4A /* ReaderPanel.swift in Sources */,
 				C849E46126B9C39B00260F0B /* EnhancedTrackingProtectionVC.swift in Sources */,
-				A32FD0422937B07A0072CD43 /* IntroTutoView.swift in Sources */,
 				E40FAB0C1A7ABB77009CB80D /* WebServer.swift in Sources */,
 				59A68D66379CFA85C4EAF00B /* TwoLineCellAndFooter.swift in Sources */,
 				8A04136928258DF600D20B10 /* SponsoredTileTelemetry.swift in Sources */,
@@ -11383,6 +12959,51 @@
 			isa = PBXTargetDependency;
 			target = 43BE5774278BA4D900491291 /* RustMozillaAppServices */;
 			targetProxy = A35571E0293790EC0068014C /* PBXContainerItemProxy */;
+		};
+		A380E804299D1D280046FA42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8324A042649A188007E4BFA /* CredentialProvider */;
+			targetProxy = A380E805299D1D280046FA42 /* PBXContainerItemProxy */;
+		};
+		A380E806299D1D280046FA42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2827315D1ABC9BE600AA1954 /* Sync */;
+			targetProxy = A380E807299D1D280046FA42 /* PBXContainerItemProxy */;
+		};
+		A380E808299D1D280046FA42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 288A2D851AB8B3260023ABC3 /* Shared */;
+			targetProxy = A380E809299D1D280046FA42 /* PBXContainerItemProxy */;
+		};
+		A380E80A299D1D280046FA42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 397848DA1ED86605004C0C0B /* NotificationService */;
+			targetProxy = A380E80B299D1D280046FA42 /* PBXContainerItemProxy */;
+		};
+		A380E80C299D1D280046FA42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F84B22481A0920C600AAB793 /* ShareTo */;
+			targetProxy = A380E80D299D1D280046FA42 /* PBXContainerItemProxy */;
+		};
+		A380E810299D1D280046FA42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 047F9B2624E1FE1C00CD7DF7 /* WidgetKitExtension */;
+			targetProxy = A380E811299D1D280046FA42 /* PBXContainerItemProxy */;
+		};
+		A380E812299D1D280046FA42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4368F81C279665220013419B /* Sentry */;
+			targetProxy = A380E813299D1D280046FA42 /* PBXContainerItemProxy */;
+		};
+		A380E814299D1D280046FA42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4368F86F27966E810013419B /* SDWebImage */;
+			targetProxy = A380E815299D1D280046FA42 /* PBXContainerItemProxy */;
+		};
+		A380E816299D1D280046FA42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4326A3B22849B49800550F73 /* KingfisherDynamic */;
+			targetProxy = A380E817299D1D280046FA42 /* PBXContainerItemProxy */;
 		};
 		C82043712523DBEB00740B71 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -15034,6 +16655,183 @@
 			};
 			name = FirefoxBeta;
 		};
+		A380EAAB299D1D280046FA42 /* Fennec */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Developer;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 398AK48DCB;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				INFOPLIST_FILE = "Client copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(MOZ_BUNDLE_ID)";
+				PRODUCT_MODULE_NAME = Client;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Client/Client-Bridging-Header.h";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Fennec;
+		};
+		A380EAAC299D1D280046FA42 /* KarmaDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Developer;
+				CODE_SIGN_ENTITLEMENTS = Client/Entitlements/KarmaDebug.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 59G3A42UBG;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				INFOPLIST_FILE = "Client copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(MOZ_BUNDLE_ID)";
+				PRODUCT_MODULE_NAME = Client;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Client/Client-Bridging-Header.h";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = KarmaDebug;
+		};
+		A380EAAD299D1D280046FA42 /* Fennec_Enterprise */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Developer;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				EXCLUDED_SOURCE_FILE_NAMES = CredentialProvider.appex;
+				INFOPLIST_FILE = "Client copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(MOZ_BUNDLE_ID)";
+				PRODUCT_MODULE_NAME = Client;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Client/Client-Bridging-Header.h";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Fennec_Enterprise;
+		};
+		A380EAAE299D1D280046FA42 /* Firefox */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 43AQ936H96;
+				INFOPLIST_FILE = "Client copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(MOZ_BUNDLE_ID)";
+				PRODUCT_MODULE_NAME = Client;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "bitrise org.mozilla.ios.Firefox";
+				SKIP_INSTALL = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Client/Client-Bridging-Header.h";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Firefox;
+		};
+		A380EAAF299D1D280046FA42 /* Karma */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 59G3A42UBG;
+				INFOPLIST_FILE = "Client copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(MOZ_BUNDLE_ID)";
+				PRODUCT_MODULE_NAME = Client;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Karma Search AppStore";
+				SKIP_INSTALL = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Client/Client-Bridging-Header.h";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Karma;
+		};
+		A380EAB0299D1D280046FA42 /* FirefoxBeta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Beta;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 43AQ936H96;
+				INFOPLIST_FILE = "Client copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(MOZ_BUNDLE_ID)";
+				PRODUCT_MODULE_NAME = Client;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "bitrise org.mozilla.ios.FirefoxBeta";
+				SKIP_INSTALL = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Client/Client-Bridging-Header.h";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = FirefoxBeta;
+		};
 		A3F87CA4294C756100957516 /* KarmaDebug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A3F87C9B294C73ED00957516 /* Karma_Debug.xcconfig */;
@@ -17279,7 +19077,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 398AK48DCB;
+				DEVELOPMENT_TEAM = 59G3A42UBG;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -17591,6 +19389,19 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Fennec;
 		};
+		A380EAAA299D1D280046FA42 /* Build configuration list for PBXNativeTarget "KarmaClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A380EAAB299D1D280046FA42 /* Fennec */,
+				A380EAAC299D1D280046FA42 /* KarmaDebug */,
+				A380EAAD299D1D280046FA42 /* Fennec_Enterprise */,
+				A380EAAE299D1D280046FA42 /* Firefox */,
+				A380EAAF299D1D280046FA42 /* Karma */,
+				A380EAB0299D1D280046FA42 /* FirefoxBeta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Fennec;
+		};
 		D39FA1671A83E0EC00EE869C /* Build configuration list for PBXNativeTarget "UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -17866,6 +19677,46 @@
 				revision = 7ec008a5c09520b67f07669ad5a753d757f05bbe;
 			};
 		};
+		A380E819299D1D280046FA42 /* XCRemoteSwiftPackageReference "telemetry-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mozilla-mobile/telemetry-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 2.0.0;
+			};
+		};
+		A380E81B299D1D280046FA42 /* XCRemoteSwiftPackageReference "GCDWebServer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nbhasin2/GCDWebServer.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A380E81D299D1D280046FA42 /* XCRemoteSwiftPackageReference "glean-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mozilla/glean-swift";
+			requirement = {
+				kind = exactVersion;
+				version = 51.8.0;
+			};
+		};
+		A380E81F299D1D280046FA42 /* XCRemoteSwiftPackageReference "ios_sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adjust/ios_sdk.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.29.6;
+			};
+		};
+		A380E821299D1D280046FA42 /* XCRemoteSwiftPackageReference "Dip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Dip.git";
+			requirement = {
+				kind = revision;
+				revision = 7ec008a5c09520b67f07669ad5a753d757f05bbe;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -17976,6 +19827,31 @@
 		96C11E952863985E00840E7C /* Dip */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 96C11E942863985E00840E7C /* XCRemoteSwiftPackageReference "Dip" */;
+			productName = Dip;
+		};
+		A380E818299D1D280046FA42 /* Telemetry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A380E819299D1D280046FA42 /* XCRemoteSwiftPackageReference "telemetry-ios" */;
+			productName = Telemetry;
+		};
+		A380E81A299D1D280046FA42 /* GCDWebServers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A380E81B299D1D280046FA42 /* XCRemoteSwiftPackageReference "GCDWebServer" */;
+			productName = GCDWebServers;
+		};
+		A380E81C299D1D280046FA42 /* Glean */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A380E81D299D1D280046FA42 /* XCRemoteSwiftPackageReference "glean-swift" */;
+			productName = Glean;
+		};
+		A380E81E299D1D280046FA42 /* Adjust */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A380E81F299D1D280046FA42 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = Adjust;
+		};
+		A380E820299D1D280046FA42 /* Dip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A380E821299D1D280046FA42 /* XCRemoteSwiftPackageReference "Dip" */;
 			productName = Dip;
 		};
 		D433852B27ABC8150069DD33 /* MappaMundi */ = {
