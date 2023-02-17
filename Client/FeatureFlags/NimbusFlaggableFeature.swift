@@ -111,10 +111,51 @@ struct NimbusFlaggableFeature: HasNimbusSearchBar {
         let nimbusValue = nimbusLayer.checkNimbusConfigFor(featureID)
 
         switch featureID {
-        case .pocket, .sponsoredPocket:
-            return nimbusValue && PocketProvider.islocaleSupported(Locale.current.identifier)
-        default:
-            return nimbusValue
+        case .bottomSearchBar:
+            return true
+        case .historyHighlights:
+            return true
+        case .historyGroups:
+            return true
+        case .inactiveTabs:
+            return true
+        case .jumpBackIn:
+            return true
+        case .pocket:
+            return false
+        case .pullToRefresh:
+            return true
+        case .recentlySaved:
+            return true
+        case .sponsoredPocket:
+            return false
+        case .sponsoredTiles:
+            return false
+        case .startAtHome:
+            return true
+        case .tabTrayGroups:
+            return true
+        case .topSites:
+            return true
+        case .wallpapers:
+            return false
+            
+            
+            // Cases where users do not have the option to manipulate a setting.
+        case .contextualHintForJumpBackInSyncedTab,
+                .copyForJumpBackIn,
+                .copyForToolbar,
+                .jumpBackInSyncedTab,
+                .searchHighlights,
+                .shakeToRestore:
+            return true
+        case
+                .onboardingUpgrade,
+                .onboardingFreshInstall,
+                .reportSiteIssue,
+                .wallpaperOnboardingSheet,
+                .wallpaperVersion:
+            return false
         }
     }
 
