@@ -47,7 +47,7 @@ extension String {
     public static let MenuKarmaFeedbackContactUsEmailSubject = NSLocalizedString("Menu.Feedback.ContactUs.Subject", tableName: "KarmaMenu", bundle: Bundle(for: BundleClass.self), comment: "")
 
     //MARK: Learn and Act
-    public static let LearnAndActSubTitle = NSLocalizedString("learnandact_subtitle", tableName: "Localizable", bundle: Bundle(for: BundleClass.self), comment: "")
+    public static let LearnAndActSubTitle = NSLocalizedString("learnandact_subtitle", tableName: "Karma", bundle: Bundle(for: BundleClass.self), comment: "")
     
     //MARK: Push
     public static let DockPushTitle = NSLocalizedString("Dock.Push.Title", tableName: "Karma", bundle: Bundle(for: BundleClass.self), comment: "")

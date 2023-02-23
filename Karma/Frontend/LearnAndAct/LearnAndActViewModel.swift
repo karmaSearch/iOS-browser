@@ -10,29 +10,14 @@ import Foundation
 import SwiftyJSON
 import Storage
 
-class LearnAndAct: NSObject {
-    var blocs: [LearnAndActBloc] = []
-    
-    init(blocs: [LearnAndActBloc]){
-        self.blocs = blocs
-    }
-    
-}
-
-struct LearnAndActBloc: Decodable {
-    let type, duration, mobileImage, desktopImage, title: String
-    let description, action: String
-    let link: String
-}
 
 // MARK: - Bloc
 
 class LearnAndActCellViewModel {
         
     var type: String { item.type}
-    var duration: String { item.duration }
-    var mobileImage: String { item.mobileImage }
-    var desktopImage: String { item.desktopImage }
+    var duration: String = ""
+    var mobileImage: String { item.imageURL }
     var title: String { item.title }
     var description: String { item.description }
     var action: String { item.action }
@@ -63,30 +48,15 @@ class LearnAndActViewModel {
         static let fractionalWidthiPhoneLanscape: CGFloat = 0.46
     }
     
-    private let cacheKey: NSString = "LearnAndActCacheKey"
-    static let cache = NSCache<NSString, LearnAndAct>()
     private var learnAndActViewModels: [LearnAndActCellViewModel] = [LearnAndActCellViewModel]()
     var onLongPressTileAction: ((Site, UIView?) -> Void)?
     var onTapTileAction: ((URL) -> Void)?
     weak var delegate: HomepageDataModelDelegate?
+    private var dataAdaptor: LearnAndActDataAdaptor
+    private var isLoading: Bool = true
 
-
-    init(){
-        Task {
-            let list = await self.getDatas()
-            ensureMainThread {
-                let object = LearnAndAct(blocs: list)
-                LearnAndActViewModel.cache.setObject(object, forKey: self.cacheKey)
-                self.learnAndActViewModels.removeAll()
-
-                list.forEach { [weak self] bloc in
-                    self?.bind(viewModel: LearnAndActCellViewModel(item: bloc))
-                }
-                guard self.isEnabled else { return }
-                self.delegate?.reloadView()
-            }
-            
-        }
+    init(dataAdaptor: LearnAndActDataAdaptor){
+        self.dataAdaptor = dataAdaptor
     }
     
     private func bind(viewModel: LearnAndActCellViewModel) {
@@ -101,46 +71,21 @@ class LearnAndActViewModel {
         learnAndActViewModels.append(viewModel)
     }
 
-    func getDatas() async -> [LearnAndActBloc]{
-        let fileName = "learn-and-act-" + KarmaLanguage.getSupportedLanguageIdentifier()
-        let repoString = "https://storage.googleapis.com/learn-and-act-and-images.appspot.com/L%26A/json/"
-        guard let url = URL(string: repoString + fileName + ".json") else { return []}
-        
-        if let cacheVersison = LearnAndActViewModel.cache.object(forKey: cacheKey) {
-            
-            return cacheVersison.blocs
-        } else {
-            do {
-                return try await withCheckedThrowingContinuation { continuation in
-                    fetch(url: url) { result in
-                        continuation.resume(returning: result)
-                    }
-                }
-            } catch {
-                print(error)
-            }
-           
+    private func updateData() {
+        guard let articles = dataAdaptor.getLearnAndActData() else { return }
+        learnAndActViewModels = []
+        for article in articles.blocs {
+            bind(viewModel: .init(item: article))
         }
-        return []
+        
+
     }
     
-    private func fetch(url: URL, completion: @escaping ([LearnAndActBloc]) -> Void) {
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard error == nil, let data = data else {
-                print(error!)
-                completion([])
-                return
-            }
-            do {
-                let list = try JSONDecoder().decode([LearnAndActBloc].self, from: data)
-                completion(list)
-            }
-            catch {
-                completion([])
-                print(error)
-            }
-            
-        }.resume()
+    func loadNewPage() {
+        if !isLoading {
+            isLoading = true
+            dataAdaptor.loadNewPage()
+        }
     }
     
     func getWidthDimension(device: UIUserInterfaceIdiom = UIDevice.current.userInterfaceIdiom,
@@ -190,16 +135,12 @@ extension LearnAndActViewModel: HomepageSectionHandler {
     
 }
 
-extension LearnAndActViewModel: HomepageViewModelProtocol {
+extension LearnAndActViewModel: HomepageViewModelProtocol, FeatureFlaggable {
     var sectionType: HomepageSectionType {
         .learnAndAct
     }
     
-    func refreshData(for traitCollection: UITraitCollection, isPortrait: Bool, device: UIUserInterfaceIdiom) {
-        /*self.getDatas {_ in
-            
-        }*/
-    }
+    func refreshData(for traitCollection: UITraitCollection, isPortrait: Bool, device: UIUserInterfaceIdiom) {}
     
     func section(for traitCollection: UITraitCollection) -> NSCollectionLayoutSection {
         let itemSize = NSCollectionLayoutSize(
@@ -252,7 +193,7 @@ extension LearnAndActViewModel: HomepageViewModelProtocol {
     }
     
     var isEnabled: Bool {
-        return true
+        return featureFlags.isFeatureEnabled(.learnAndAct, checking: .buildAndUser)
     }
     
     var shouldShow: Bool {
@@ -263,4 +204,15 @@ extension LearnAndActViewModel: HomepageViewModelProtocol {
         return !self.learnAndActViewModels.isEmpty
     }
     
+}
+
+extension LearnAndActViewModel: LearnAndActDelegate {
+    func didLoadNewData() {
+        isLoading = false
+        ensureMainThread {
+            self.updateData()
+            guard self.isEnabled else { return }
+            self.delegate?.reloadView()
+        }
+    }
 }

@@ -2281,24 +2281,19 @@ extension BrowserViewController {
     }
 
     private func showProperIntroVC() {
-        let introViewController = IntroViewController()
-        introViewController.didFinishClosure = { controller, fxaLoginFlow in
+        let introViewModel = IntroViewModel()
+        let introViewController = IntroViewController(viewModel: introViewModel, profile: profile)
+        introViewController.didFinishFlow = {
             self.profile.prefs.setInt(1, forKey: PrefsKeys.IntroSeen)
-            controller.dismiss(animated: true) {
-                if self.navigationController?.viewControllers.count ?? 0 > 1 {
-                    _ = self.navigationController?.popToRootViewController(animated: true)
-                }
-                if let flow = fxaLoginFlow {
-                    let fxaParams = FxALaunchParams(query: ["entrypoint": "firstrun"])
-                    self.presentSignInViewController(fxaParams, flowType: flow, referringPage: .onboarding)
-                }
-            }
+            introViewController.dismiss(animated: true)
         }
+        #if KARMA
         introViewController.viewModel.goToSettings = {
             introViewController.dismiss(animated: true) {
                 UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
             }
         }
+        #endif
         self.introVCPresentHelper(introViewController: introViewController)
     }
 

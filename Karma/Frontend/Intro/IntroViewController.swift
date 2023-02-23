@@ -109,11 +109,15 @@ class IntroViewController: UIViewController, OnViewDismissable {
     }()
 
     // Closure delegate
-    var didFinishClosure: ((IntroViewController, FxAPageType?) -> Void)?
+    var didFinishFlow: (() -> Void)?
     let viewModel = DefaultBrowserOnboardingViewModel()
     
     // MARK: Initializer
     init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    init(viewModel: IntroViewModel, profile: Profile) {
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -235,12 +239,12 @@ class IntroViewController: UIViewController, OnViewDismissable {
         
         defaultBrowserView.closeClosure = { [weak self] in
             guard let self = self else { return }
-            self.didFinishClosure?(self, nil)
+            self.didFinishFlow?()
         }
         defaultBrowserView.settingsClosure = { [weak self] in
             guard let self = self else { return }
             self.goToSettings()
-            self.didFinishClosure?(self, nil)
+            self.didFinishFlow?()
         }
     }
     
@@ -278,7 +282,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
             self.defaultBrowserView.isHidden = false
             self.closeButton.isHidden = true
         } else {
-            self.didFinishClosure?(self, nil)
+            self.didFinishFlow?()
         }
     }
     

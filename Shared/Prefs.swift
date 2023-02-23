@@ -66,6 +66,7 @@ public struct PrefsKeys {
         public static let SponsoredShortcuts = "SponsoredShortcutsUserPrefsKey"
         public static let TabTrayGroups = "TabTrayGroupsUserPrefsKey"
         public static let TopSiteSection = "TopSitesUserPrefsKey"
+        public static let LearnAndAct = "LearnAndActrefsKey"
     }
 
     public struct LegacyFeatureFlags {

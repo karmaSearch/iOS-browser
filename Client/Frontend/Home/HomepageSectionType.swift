@@ -41,6 +41,7 @@ enum HomepageSectionType: Int, CaseIterable {
     }
 
     static var cellTypes: [ReusableCell.Type] {
+        #if KARMA
         return [HomeLogoHeaderCell.self,
                 HomepageMessageCardCell.self,
                 TopSiteItemCell.self,
@@ -54,6 +55,20 @@ enum HomepageSectionType: Int, CaseIterable {
                 SyncedTabCell.self,
                 LearnAndActViewCell.self
         ]
+        #else
+        return [HomeLogoHeaderCell.self,
+                HomepageMessageCardCell.self,
+                TopSiteItemCell.self,
+                EmptyTopSiteCell.self,
+                JumpBackInCell.self,
+                PocketDiscoverCell.self,
+                PocketStandardCell.self,
+                RecentlySavedCell.self,
+                HistoryHighlightsCell.self,
+                CustomizeHomepageSectionCell.self,
+                SyncedTabCell.self
+        ]
+        #endif
     }
 
     init(_ section: Int) {

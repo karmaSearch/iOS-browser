@@ -35,6 +35,7 @@ enum NimbusFeatureFlagID: String, CaseIterable {
     case wallpapers
     case wallpaperOnboardingSheet
     case wallpaperVersion
+    case learnAndAct
 }
 
 /// This enum is a constraint for any feature flag options that have more than
@@ -97,6 +98,8 @@ struct NimbusFlaggableFeature: HasNimbusSearchBar {
                 .wallpaperOnboardingSheet,
                 .wallpaperVersion:
             return nil
+        case .learnAndAct:
+            return FlagKeys.LearnAndAct
         }
     }
 
@@ -139,6 +142,8 @@ struct NimbusFlaggableFeature: HasNimbusSearchBar {
             return true
         case .wallpapers:
             return false
+        case .learnAndAct:
+            return true
             
             
             // Cases where users do not have the option to manipulate a setting.

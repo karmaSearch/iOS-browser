@@ -1336,6 +1336,9 @@
 		A3A8717E29379ECE00C76AC2 /* ProximaNova-Medium It.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8717529379ECD00C76AC2 /* ProximaNova-Medium It.otf */; };
 		A3A871812937A8DD00C76AC2 /* ETPCoverSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A871802937A8DC00C76AC2 /* ETPCoverSheetViewController.swift */; };
 		A3DEA008294A127200A28297 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		A3DFB7C029A37BCF005EDF99 /* LearnAndActDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFB7BF29A37BCF005EDF99 /* LearnAndActDataAdapter.swift */; };
+		A3DFB7C229A37D26005EDF99 /* LearnAndActProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFB7C129A37D26005EDF99 /* LearnAndActProvider.swift */; };
+		A3DFB7C429A3B88C005EDF99 /* LearnAndActModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFB7C329A3B88C005EDF99 /* LearnAndActModel.swift */; };
 		A3F87C9D294C73EE00957516 /* Karma_Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A3F87C9B294C73ED00957516 /* Karma_Debug.xcconfig */; };
 		A3F87C9E294C73EE00957516 /* Karma.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A3F87C9C294C73ED00957516 /* Karma.xcconfig */; };
 		A83E5AB71C1D993D0026D912 /* UIPasteboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83E5AB61C1D993D0026D912 /* UIPasteboard+Extension.swift */; };
@@ -4424,6 +4427,9 @@
 		A3A8717529379ECD00C76AC2 /* ProximaNova-Medium It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Medium It.otf"; sourceTree = "<group>"; };
 		A3A871802937A8DC00C76AC2 /* ETPCoverSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETPCoverSheetViewController.swift; sourceTree = "<group>"; };
 		A3DEA004294A0E3300A28297 /* KarmaConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KarmaConfig.swift; sourceTree = "<group>"; };
+		A3DFB7BF29A37BCF005EDF99 /* LearnAndActDataAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAndActDataAdapter.swift; sourceTree = "<group>"; };
+		A3DFB7C129A37D26005EDF99 /* LearnAndActProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAndActProvider.swift; sourceTree = "<group>"; };
+		A3DFB7C329A3B88C005EDF99 /* LearnAndActModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAndActModel.swift; sourceTree = "<group>"; };
 		A3E54C1386C753F253BEEB71 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Search.strings; sourceTree = "<group>"; };
 		A3F87C9B294C73ED00957516 /* Karma_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Karma_Debug.xcconfig; path = Configuration/Karma_Debug.xcconfig; sourceTree = "<group>"; };
 		A3F87C9C294C73ED00957516 /* Karma.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Karma.xcconfig; path = Configuration/Karma.xcconfig; sourceTree = "<group>"; };
@@ -7544,6 +7550,9 @@
 				A37D5DE62938FBA600400F74 /* LearnAndActHeader.swift */,
 				A37D5DE42938FBA500400F74 /* LearnAndActViewCell.swift */,
 				A37D5DE52938FBA500400F74 /* LearnAndActViewModel.swift */,
+				A3DFB7BF29A37BCF005EDF99 /* LearnAndActDataAdapter.swift */,
+				A3DFB7C129A37D26005EDF99 /* LearnAndActProvider.swift */,
+				A3DFB7C329A3B88C005EDF99 /* LearnAndActModel.swift */,
 			);
 			path = LearnAndAct;
 			sourceTree = "<group>";
@@ -11548,6 +11557,7 @@
 				A380E85D299D1D280046FA42 /* WallpaperCellViewModel.swift in Sources */,
 				A380E85E299D1D280046FA42 /* PinnedSite.swift in Sources */,
 				A380E85F299D1D280046FA42 /* RecentlySavedDataAdaptor.swift in Sources */,
+				A3DFB7C429A3B88C005EDF99 /* LearnAndActModel.swift in Sources */,
 				A380E860299D1D280046FA42 /* WallpaperThumbnailUtility.swift in Sources */,
 				A380E861299D1D280046FA42 /* JumpBackInSyncedTab.swift in Sources */,
 				A380E862299D1D280046FA42 /* FindInPageHelper.swift in Sources */,
@@ -11602,6 +11612,7 @@
 				A380E894299D1D280046FA42 /* AdjustHelper.swift in Sources */,
 				A380E895299D1D280046FA42 /* FaviconFetcher+Non-Bundled.swift in Sources */,
 				A380E896299D1D280046FA42 /* NimbusFlaggableFeature.swift in Sources */,
+				A3DFB7C229A37D26005EDF99 /* LearnAndActProvider.swift in Sources */,
 				A380E897299D1D280046FA42 /* Clearables.swift in Sources */,
 				A380E898299D1D280046FA42 /* DefaultBrowserOnboardingViewModel.swift in Sources */,
 				A380E899299D1D280046FA42 /* LegacyWallpaperStorageUtility.swift in Sources */,
@@ -11655,6 +11666,7 @@
 				A380E8C9299D1D280046FA42 /* HomepageContextMenuHelper.swift in Sources */,
 				A380E8CA299D1D280046FA42 /* KeyboardPressesHandler.swift in Sources */,
 				A380E8CB299D1D280046FA42 /* UIView+SnapKit.swift in Sources */,
+				A3DFB7C029A37BCF005EDF99 /* LearnAndActDataAdapter.swift in Sources */,
 				A380E8CC299D1D280046FA42 /* Swizzling.m in Sources */,
 				A380E8CD299D1D280046FA42 /* OpenWithSettingsViewController.swift in Sources */,
 				A380E8CE299D1D280046FA42 /* WallpaperMetadataUtility.swift in Sources */,

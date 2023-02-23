@@ -75,7 +75,9 @@ class HomepageViewModel: FeatureFlaggable {
     var historyHighlightsViewModel: HistoryHighlightsViewModel
     var pocketViewModel: PocketViewModel
     var customizeButtonViewModel: CustomizeHomepageSectionViewModel
+    #if KARMA
     var learnAndActViewModel: LearnAndActViewModel
+    #endif
     
     var shouldDisplayHomeTabBanner: Bool {
         return messageCardViewModel.shouldDisplayMessageCard
@@ -131,7 +133,15 @@ class HomepageViewModel: FeatureFlaggable {
 
         self.customizeButtonViewModel = CustomizeHomepageSectionViewModel()
         
-        self.learnAndActViewModel = LearnAndActViewModel()
+        self.isPrivate = isPrivate
+
+        self.nimbus = nimbus
+        
+        #if KARMA
+        let learnAndActDataAdaptor = LearnAndActDataAdaptorImplementation(API: LearnAndActProvider())
+        self.learnAndActViewModel = LearnAndActViewModel(dataAdaptor: learnAndActDataAdaptor)
+        learnAndActDataAdaptor.delegate = self.learnAndActViewModel
+        
         self.childViewModels = [headerViewModel,
                                 messageCardViewModel,
                                 topSiteViewModel,
@@ -141,16 +151,26 @@ class HomepageViewModel: FeatureFlaggable {
                                 pocketViewModel,
                                 learnAndActViewModel,
                                 customizeButtonViewModel]
-        self.isPrivate = isPrivate
-
-        self.nimbus = nimbus
+        
+        learnAndActViewModel.delegate = self
+        
+        #else
+        self.childViewModels = [headerViewModel,
+                                messageCardViewModel,
+                                topSiteViewModel,
+                                jumpBackInViewModel,
+                                recentlySavedViewModel,
+                                historyHighlightsViewModel,
+                                pocketViewModel,
+                                customizeButtonViewModel]
+        #endif
+        
         topSiteViewModel.delegate = self
         historyHighlightsViewModel.delegate = self
         recentlySavedViewModel.delegate = self
         pocketViewModel.delegate = self
         jumpBackInViewModel.delegate = self
         messageCardViewModel.delegate = self
-        learnAndActViewModel.delegate = self
 
         updateEnabledSections()
     }
@@ -213,4 +233,6 @@ extension HomepageViewModel: HomepageDataModelDelegate {
     func reloadView() {
         delegate?.reloadView()
     }
+
+    
 }
