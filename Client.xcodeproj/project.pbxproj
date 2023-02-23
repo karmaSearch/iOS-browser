@@ -16814,6 +16814,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 59G3A42UBG;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 59G3A42UBG;
 				INFOPLIST_FILE = "Client copy-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -16828,6 +16829,7 @@
 				PRODUCT_MODULE_NAME = Client;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Karma Search AppStore";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Karma Search AppStore";
 				SKIP_INSTALL = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Client/Client-Bridging-Header.h";
 				VALIDATE_WORKSPACE = YES;
