@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "زبانه‌ی بازی وجود ندارد.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "بازکردن فایرفاکس";
+"TodayWidget.OpenFirefoxLabel" = "بازکردن فایرفاکس";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "جست‌و‌جوی خصوصی";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "مشاهده سریع";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "جست‌وجو در فایرفاکس";
+"TodayWidget.SearchInFirefoxV2" = "جست‌وجو در فایرفاکس";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "جست‌وجو در زبانه‌ی خصوصی";

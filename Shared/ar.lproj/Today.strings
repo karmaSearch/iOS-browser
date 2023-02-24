@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "لا ألسنة مفتوحة.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "افتح KARMA";
+"TodayWidget.OpenFirefoxLabel" = "افتح KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "بحث خاص";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "منظور سريع";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "ابحث في KARMA";
+"TodayWidget.SearchInFirefoxV2" = "ابحث في KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "ابحث في لسان خاص";

@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Ni odprtih zavihkov.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Odpri KARMA";
+"TodayWidget.OpenFirefoxLabel" = "Odpri KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Zasebno iskanje";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Hitri pogled";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Išči v KARMAu";
+"TodayWidget.SearchInFirefoxV2" = "Išči v KARMAu";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Išči v zasebnem zavihku";

@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Irekitako fitxarik ez.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Ireki KARMA";
+"TodayWidget.OpenFirefoxLabel" = "Ireki KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Bilaketa pribatua";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Ikuspegi azkarra";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Bilatu KARMAen";
+"TodayWidget.SearchInFirefoxV2" = "Bilatu KARMAen";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Bilatu fitxa pribatuan";

@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Καμία ανοικτή καρτέλα.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Άνοιγμα KARMA";
+"TodayWidget.OpenFirefoxLabel" = "Άνοιγμα KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Ιδιωτική αναζήτηση";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Γρήγορη προβολή";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Αναζήτηση στο KARMA";
+"TodayWidget.SearchInFirefoxV2" = "Αναζήτηση στο KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Αναζήτηση σε ιδιωτική καρτέλα";

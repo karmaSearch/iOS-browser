@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Engir opnir flipar.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Opna KARMA";
+"TodayWidget.OpenFirefoxLabel" = "Opna KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Huliðsleit";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Flýtiskoðun";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Leita í \nKARMA";
+"TodayWidget.SearchInFirefoxV2" = "Leita í \nKARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Leita í\n huliðsflipa";

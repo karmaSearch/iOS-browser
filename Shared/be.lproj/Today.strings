@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Няма адкрытых картак.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Адкрыць KARMA";
+"TodayWidget.OpenFirefoxLabel" = "Адкрыць KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Прыватны пошук";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Хуткі прагляд";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Шукаць у\nKARMA";
+"TodayWidget.SearchInFirefoxV2" = "Шукаць у\nKARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Шукаць у\nпрыватнай картцы";

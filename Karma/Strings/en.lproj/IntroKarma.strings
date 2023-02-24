@@ -11,5 +11,7 @@
 
 "Intro.Slides.Button.Next" = "Next";
 "DefaultBrowserOnboarding.Button.Skip" = "Not now";
+"DefaultBrowserOnboarding.Button" = "Choose KARMA";
+
 "Settings.DefaultBrowserMenuItem" = "Set up KARMA as your default browser !";
 "DefaultBrowserCard.Description" = "Websites will be opened with KARMA so that you can help protect biodiversity and improve animal welfare";

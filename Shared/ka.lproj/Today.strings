@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "გახსნილი ჩანართები არაა.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "გახსენით KARMA";
+"TodayWidget.OpenFirefoxLabel" = "გახსენით KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "პირადი ძიება";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "სწრაფი ხილვა";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "KARMA-ში მოძიება";
+"TodayWidget.SearchInFirefoxV2" = "KARMA-ში მოძიება";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "პირად ჩანართში\nმოძიება";

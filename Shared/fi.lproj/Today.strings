@@ -20,7 +20,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Ei avoimia välilehtiä.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Avaa KARMA";
+"TodayWidget.OpenFirefoxLabel" = "Avaa KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Yksityinen haku";

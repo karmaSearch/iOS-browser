@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "ບໍ່ມີແທັບທີ່ເປີດຢູ່";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "ເປີດ KARMA";
+"TodayWidget.OpenFirefoxLabel" = "ເປີດ KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "ຄົ້ນຫາແບບສ່ວນຕົວ";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "ການເບິງແບບດ່ວນ";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "ຄົ້ນຫາໃນ\nKARMA";
+"TodayWidget.SearchInFirefoxV2" = "ຄົ້ນຫາໃນ\nKARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "ຄົ້ນຫາໃນ\nແທັບສ່ວນຕົວ";

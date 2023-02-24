@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Žane wočinjene rajtarki";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "KARMA wočinić";
+"TodayWidget.OpenFirefoxLabel" = "KARMA wočinić";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Priwatne pytanje";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Spěšny napohlad";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "W KARMA pytać";
+"TodayWidget.SearchInFirefoxV2" = "W KARMA pytać";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "W priwatnym rajtarku pytać";

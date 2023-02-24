@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Neniu malfermita langeto.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Malfermi KARMA";
+"TodayWidget.OpenFirefoxLabel" = "Malfermi KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Privata serĉo";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Rapida vido";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Serĉi en\nKARMA";
+"TodayWidget.SearchInFirefoxV2" = "Serĉi en\nKARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Serĉi en\nprivata langeto";

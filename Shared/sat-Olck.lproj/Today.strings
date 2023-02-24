@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "ᱴᱮᱵᱽ ᱠᱚ ᱡᱷᱤ ᱵᱚᱱᱩ-ᱟ.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "KARMA ᱡᱷᱤᱜ ᱢᱮ";
+"TodayWidget.OpenFirefoxLabel" = "KARMA ᱡᱷᱤᱜ ᱢᱮ";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "ᱱᱤᱡᱮᱨᱟᱠ ᱥᱮᱸᱫᱽᱨᱟ";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "ᱞᱚᱜᱚᱱ ᱛᱮ ᱧᱮᱞ";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "KARMA ᱨᱮ ᱥᱮᱸᱫᱽᱨᱟᱭ ᱢᱮ";
+"TodayWidget.SearchInFirefoxV2" = "KARMA ᱨᱮ ᱥᱮᱸᱫᱽᱨᱟᱭ ᱢᱮ";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "ᱱᱤᱡᱮᱨᱟᱠ ᱴᱮᱵᱽ ᱨᱮ ᱥᱮᱸᱫᱽᱨᱟᱭ ᱢᱮ";

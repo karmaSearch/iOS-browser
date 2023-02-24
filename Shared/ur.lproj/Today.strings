@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "کوئی کھلے ٹیب نہیں";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "KARMA کھولیں";
+"TodayWidget.OpenFirefoxLabel" = "KARMA کھولیں";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "نجی تلاش";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "فوری نظارہ";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "KARMA میں تلاش کریں";
+"TodayWidget.SearchInFirefoxV2" = "KARMA میں تلاش کریں";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "نجی ٹیب میں تلاش کریں";

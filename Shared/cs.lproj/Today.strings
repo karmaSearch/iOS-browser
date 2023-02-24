@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Žádné otevřené panely.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Otevřít KARMA";
+"TodayWidget.OpenFirefoxLabel" = "Otevřít KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Soukromé vyhledávání";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Rychlý pohled";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Vyhledat ve KARMAu";
+"TodayWidget.SearchInFirefoxV2" = "Vyhledat ve KARMAu";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Vyhledat v anonymním panelu";

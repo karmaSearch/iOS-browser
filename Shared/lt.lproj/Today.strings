@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Nėra atvertų kortelių.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Atverti „KARMA“";
+"TodayWidget.OpenFirefoxLabel" = "Atverti „KARMA“";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Privačioji paieška";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Sparti peržiūra";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Ieškoti per „KARMA“";
+"TodayWidget.SearchInFirefoxV2" = "Ieškoti per „KARMA“";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Atverti privačiojoje kortelėje";

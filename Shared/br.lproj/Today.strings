@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Ivinell digor ebet.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Digeriñ KARMA";
+"TodayWidget.OpenFirefoxLabel" = "Digeriñ KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Klask prevez";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Alberz prim";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Klask e KARMA";
+"TodayWidget.SearchInFirefoxV2" = "Klask e KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Klask en un ivinell brevez";

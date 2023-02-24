@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Չկան բաց ներդիրներ:";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Բացել KARMA-ը";
+"TodayWidget.OpenFirefoxLabel" = "Բացել KARMA-ը";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Գաղտնի որոնում";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Արագ դիտում";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Որոնել KARMA֊ում";
+"TodayWidget.SearchInFirefoxV2" = "Որոնել KARMA֊ում";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Որոնել Գաղտնի ներդիրում";

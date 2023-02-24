@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Dim tabiau agored";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Agor KARMA";
+"TodayWidget.OpenFirefoxLabel" = "Agor KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Chwilio Preifat";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Golwg Gyflym";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Chwilio yn KARMA";
+"TodayWidget.SearchInFirefoxV2" = "Chwilio yn KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Chwilio mewn Tab Preifat";

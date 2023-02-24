@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "S’ka skeda të hapura.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Hap KARMA-in";
+"TodayWidget.OpenFirefoxLabel" = "Hap KARMA-in";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Kërkim Privat";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Parje e Shpejtë";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Kërko në KARMA";
+"TodayWidget.SearchInFirefoxV2" = "Kërko në KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Kërkoni në Skedë Private";

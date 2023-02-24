@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "ไม่มีแท็บที่เปิดอยู่";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "เปิด KARMA";
+"TodayWidget.OpenFirefoxLabel" = "เปิด KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "การค้นหาแบบส่วนตัว";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "การดูแบบด่วน";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "ค้นหาใน KARMA";
+"TodayWidget.SearchInFirefoxV2" = "ค้นหาใน KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "ค้นหาในแท็บส่วนตัว";

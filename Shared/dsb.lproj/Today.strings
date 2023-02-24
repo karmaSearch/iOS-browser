@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Žedne wócynjone rejtariki.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "KARMA wócyniś";
+"TodayWidget.OpenFirefoxLabel" = "KARMA wócyniś";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Priwatne pytanje";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Malsny naglěd";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "W KARMA pytaś";
+"TodayWidget.SearchInFirefoxV2" = "W KARMA pytaś";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "W priwatnem rejtariku pytaś";

@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "ਕੋਈ ਖੁੱਲ੍ਹੀ ਟੈਬ ਨਹੀਂ ਹੈ।";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "ਫਾਇਰਫਾਕਸ ਖੋਲ੍ਹੋ";
+"TodayWidget.OpenFirefoxLabel" = "ਫਾਇਰਫਾਕਸ ਖੋਲ੍ਹੋ";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "ਨਿੱਜੀ ਖੋਜ";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "ਫ਼ੌਰੀ ਝਲਕ";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "ਫਾਇਰਫਾਕਸ ਵਿੱਚ ਖੋਜੋ";
+"TodayWidget.SearchInFirefoxV2" = "ਫਾਇਰਫਾਕਸ ਵਿੱਚ ਖੋਜੋ";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "ਨਿੱਜੀ ਟੈਬ\nਵਿੱਚ ਖੋਜੋ";

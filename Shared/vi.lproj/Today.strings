@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Không có thẻ đang mở.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Mở KARMA";
+"TodayWidget.OpenFirefoxLabel" = "Mở KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Tìm kiếm riêng tư";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Xem nhanh";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Tìm kiếm trong KARMA";
+"TodayWidget.SearchInFirefoxV2" = "Tìm kiếm trong KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Tìm kiếm trong thẻ riêng tư";

@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Chan eil taba fosgailte ann.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Fosgail KARMA";
+"TodayWidget.OpenFirefoxLabel" = "Fosgail KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Lorg prìobhaideach";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Grad-shealladh";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Lorg ann am KARMA";
+"TodayWidget.SearchInFirefoxV2" = "Lorg ann am KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Lorg ann an taba prìobhaideach";

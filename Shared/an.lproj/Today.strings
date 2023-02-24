@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "No i hai garra pestanya ubierta.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Ubrir KARMA";
+"TodayWidget.OpenFirefoxLabel" = "Ubrir KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Busqueda privada";
@@ -41,7 +41,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Vista rapida";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Mirar en KARMA";
+"TodayWidget.SearchInFirefoxV2" = "Mirar en KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Mirar en una Pestanya Privada";

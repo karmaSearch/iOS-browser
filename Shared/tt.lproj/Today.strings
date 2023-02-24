@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Ачык таблар юк.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "KARMA-ны ачу";
+"TodayWidget.OpenFirefoxLabel" = "KARMA-ны ачу";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Хосусый эзләү";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Тиз карау";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "KARMA-та\nэзләү";
+"TodayWidget.SearchInFirefoxV2" = "KARMA-та\nэзләү";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Хосусый\nтабта эзләү";

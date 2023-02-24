@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Nincsenek nyitott lapok.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "KARMA megnyitása";
+"TodayWidget.OpenFirefoxLabel" = "KARMA megnyitása";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Privát keresés";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Gyors nézet";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Keresés a KARMAban";
+"TodayWidget.SearchInFirefoxV2" = "Keresés a KARMAban";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Keresés privát lapon";

@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Ulac iccaren yeldin,";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Ldi KARMA";
+"TodayWidget.OpenFirefoxLabel" = "Ldi KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Anadi uslig";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Taskant taruradt";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Nadi deg KARMA";
+"TodayWidget.SearchInFirefoxV2" = "Nadi deg KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Nadi deg yiccer uslig";

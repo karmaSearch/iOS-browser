@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Avatud kaarte pole.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Ava KARMA";
+"TodayWidget.OpenFirefoxLabel" = "Ava KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Privaatne otsing";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Kiire vaade";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Otsi\nKARMAis";
+"TodayWidget.SearchInFirefoxV2" = "Otsi\nKARMAis";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Otsi\nprivaatsel kaardil";

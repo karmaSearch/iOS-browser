@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Tidak ada tab terbuka.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Buka KARMA";
+"TodayWidget.OpenFirefoxLabel" = "Buka KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Pencarian Pribadi";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Lihat Sekilas";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Cari di KARMA";
+"TodayWidget.SearchInFirefoxV2" = "Cari di KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Cari di Tab Pribadi";

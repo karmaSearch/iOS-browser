@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Žiadne otvorené karty.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Otvoriť KARMA";
+"TodayWidget.OpenFirefoxLabel" = "Otvoriť KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Súkromné vyhľadávanie";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Rýchle zobrazenie";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Hľadať vo KARMAe";
+"TodayWidget.SearchInFirefoxV2" = "Hľadať vo KARMAe";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Hľadať v súkromnej karte";

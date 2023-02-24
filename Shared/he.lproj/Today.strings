@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "אין לשוניות פתוחות.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "פתיחת KARMA";
+"TodayWidget.OpenFirefoxLabel" = "פתיחת KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "חיפוש פרטי";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "תצוגה מהירה";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "חיפוש ב־KARMA";
+"TodayWidget.SearchInFirefoxV2" = "חיפוש ב־KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "חיפוש בלשונית פרטית";

@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Brak otwartych kart.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Otwórz Firefoksa";
+"TodayWidget.OpenFirefoxLabel" = "Otwórz Firefoksa";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Wyszukaj prywatnie";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Szybki podgląd";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Wyszukaj w Firefoksie";
+"TodayWidget.SearchInFirefoxV2" = "Wyszukaj w Firefoksie";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Wyszukaj w prywatnej karcie";

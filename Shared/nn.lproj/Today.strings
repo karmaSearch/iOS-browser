@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Ingen opne faner.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "Opne KARMA";
+"TodayWidget.OpenFirefoxLabel" = "Opne KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Privat søk";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Snøggtitt";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "Søk i KARMA";
+"TodayWidget.SearchInFirefoxV2" = "Søk i KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Søk i privat fane";

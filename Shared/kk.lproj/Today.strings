@@ -23,7 +23,7 @@
 "TodayWidget.NoOpenTabsLabel" = "Ашық беттер жоқ.";
 
 /* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenKARMALabel" = "KARMA-ты ашу";
+"TodayWidget.OpenFirefoxLabel" = "KARMA-ты ашу";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Жеке іздеу";
@@ -44,7 +44,7 @@
 "TodayWidget.QuickViewGalleryTitle" = "Жылдам қарау";
 
 /* Search in KARMA. Do not translate the word KARMA */
-"TodayWidget.SearchInKARMAV2" = "KARMA ішінен іздеу";
+"TodayWidget.SearchInFirefoxV2" = "KARMA ішінен іздеу";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Жекелік бетте іздеу";
