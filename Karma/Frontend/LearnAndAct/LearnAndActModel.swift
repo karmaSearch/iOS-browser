@@ -23,7 +23,9 @@ struct LearnAndAct {
                   let contentType = attribute["contentType"] as? [String: Any],
                   let data = contentType["data"] as? [String: Any],
                   let dataAttributes = data["attributes"] as? [String: Any],
+                  let typeId = dataAttributes["value"] as? String,
                   let typeName = dataAttributes["name"] as? String,
+
                   let media = attribute["media"] as? [String: Any],
                   let dataMedia = media["data"] as? [String: Any],
                   let attributesMedia = dataMedia["attributes"] as? [String: Any],
@@ -31,7 +33,7 @@ struct LearnAndAct {
                   
             else { return nil }
         
-            return LearnAndActBloc(type: typeName, imageURL: imageUrl, title: title, description: description, action: action, link: link)
+            return LearnAndActBloc(imageURL: imageUrl, title: title, description: description, action: action, link: link, contentType: LearnAndActContentType(rawValue: typeId) ?? .undefined, contentString: typeName)
         })
         
         guard let meta = list["meta"] as? [String: Any],
@@ -46,8 +48,18 @@ struct LearnAndAct {
     }
 }
 
-struct LearnAndActBloc: Decodable {
-    let type, imageURL, title: String
+struct LearnAndActBloc {
+    let imageURL, title: String
     let description, action: String
     let link: String
+    let contentType: LearnAndActContentType
+    let contentString: String
+}
+
+enum LearnAndActContentType: String {
+    case news = "news"
+    case victory = "victory"
+    case act = "act"
+    case learn = "learn"
+    case undefined
 }

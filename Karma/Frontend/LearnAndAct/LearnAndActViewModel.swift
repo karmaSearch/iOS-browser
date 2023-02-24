@@ -15,7 +15,8 @@ import Storage
 
 class LearnAndActCellViewModel {
         
-    var type: String { item.type}
+    var type: LearnAndActContentType { item.contentType }
+    var typeString: String { item.contentString }
     var duration: String = ""
     var mobileImage: String { item.imageURL }
     var title: String { item.title }
@@ -24,12 +25,12 @@ class LearnAndActCellViewModel {
     var link: String { item.link }
     
     var tag: Int = 0
-    var defaultImageName: String {
-        if type.lowercased() == "learn" {
+    /*var defaultImageName: String {
+        if type == .learn {
             return "learn-crash-test"
-        }
+        } else if type == .
         return "act-crash-test"
-    }
+    }*/
     
     private let item: LearnAndActBloc
 
@@ -38,6 +39,67 @@ class LearnAndActCellViewModel {
     }
     
     var onTap: (IndexPath) -> Void = { _ in }
+    
+    var typeIsHidden: Bool {
+        switch self.type {
+        case .news:
+            return false
+        case .victory:
+            return false
+        case .act:
+            return false
+        case .learn:
+            return false
+        case .undefined:
+            return true
+        }
+    }
+    
+    var typeBackgroundColor: UIColor {
+        switch self.type {
+        case .news:
+            return UIColor(colorString: "E5D9FD")
+        case .victory:
+            return UIColor(colorString: "FEF2D6")
+        case .act:
+            return UIColor(colorString: "FFDDCC")
+        case .learn:
+            return UIColor(colorString: "D4FCD4")
+        case .undefined:
+            return UIColor(colorString: "FFDDCC")
+        }
+    }
+    
+    var typeLabelColor: UIColor {
+        switch self.type {
+        case .news:
+            return UIColor(colorString: "6640DA")
+        case .victory:
+            return UIColor(colorString: "B5551A")
+        case .act:
+            return UIColor(colorString: "DB0012")
+        case .learn:
+            return UIColor(colorString: "0D7657")
+        case .undefined:
+            return UIColor(colorString: "FFDDCC")
+        }
+    }
+    
+    var typeImageName: String {
+        switch self.type {
+        case .news:
+            return "learn_and_act_news"
+        case .victory:
+            return "learn_and_act_victory"
+        case .act:
+            return "learn_and_act_act"
+        case .learn:
+            return "learn_and_act_learn"
+        case .undefined:
+            return ""
+        }
+    }
+    
 }
 
 
@@ -91,11 +153,19 @@ class LearnAndActViewModel {
     func getWidthDimension(device: UIUserInterfaceIdiom = UIDevice.current.userInterfaceIdiom,
                            isLandscape: Bool = UIWindow.isLandscape) -> NSCollectionLayoutDimension {
          if device == .pad {
-            return .absolute(LearnAndActViewCell.UX.cellWidth) // iPad
-        } else if isLandscape {
-            return .fractionalWidth(UX.fractionalWidthiPhoneLanscape)
-        } else {
+            return .absolute(LearnAndActViewCell.UX.cellWidth) 
+        }  else {
             return .absolute(UIScreen.main.bounds.size.width - LearnAndActViewCell.UX.padding*2)
+        }
+    }
+    
+    func getHeightDimension(device: UIUserInterfaceIdiom = UIDevice.current.userInterfaceIdiom,
+                           isLandscape: Bool = UIWindow.isLandscape) -> NSCollectionLayoutDimension {
+         if device == .pad  || isLandscape{
+            return .absolute(LearnAndActViewCell.UX.cellHeightLandscape)
+         }
+        else {
+            return .estimated(LearnAndActViewCell.UX.cellHeight)
         }
     }
 }
@@ -145,7 +215,7 @@ extension LearnAndActViewModel: HomepageViewModelProtocol, FeatureFlaggable {
     func section(for traitCollection: UITraitCollection) -> NSCollectionLayoutSection {
         let itemSize = NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(1),
-            heightDimension: .estimated(LearnAndActViewCell.UX.cellHeight)
+            heightDimension: getHeightDimension()
         )
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
 

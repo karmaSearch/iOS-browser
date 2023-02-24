@@ -13,12 +13,14 @@ import SDWebImage
 class LearnAndActViewCell: BlurrableCollectionViewCell, ReusableCell {
     
     struct UX {
-        static let cellHeight: CGFloat = 159
+        static let cellHeightLandscape: CGFloat = 159
+        static let cellHeight: CGFloat = 330
+
         static let padding: CGFloat = 10
         static let padding2: CGFloat = 16
         static let textSpacing: CGFloat = 3
         static let imageHeight: CGFloat = 193
-        static let typeHeight: CGFloat = 24
+        static let typeHeight: CGFloat = 28
         static let cellWidth: CGFloat = 350
         static let interGroupSpacing: CGFloat = 8
         static let interItemSpacing = NSCollectionLayoutSpacing.fixed(8)
@@ -32,7 +34,7 @@ class LearnAndActViewCell: BlurrableCollectionViewCell, ReusableCell {
     
     private lazy var typeView: UIView = .build { view in
         view.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner]
-        view.layer.cornerRadius = 5
+        view.layer.cornerRadius = 12
         view.clipsToBounds = true
     }
     
@@ -42,9 +44,15 @@ class LearnAndActViewCell: BlurrableCollectionViewCell, ReusableCell {
         label.numberOfLines = 3
     }
     
+    
     private lazy var typeLabel: UILabel = .build { label in
-        label.font = UIFont.customFont(ofSize: 16, weight: .bold)
+        label.font = UIFont.customFont(ofSize: 16, weight: .semibold)
         label.textAlignment = .left
+    }
+    
+    private lazy var typeImage: UIImageView = .build { imageView in
+        imageView.contentMode = .scaleAspectFill
+        imageView.isUserInteractionEnabled = false
     }
     
     private lazy var timeToRead: UILabel = .build { label in
@@ -81,14 +89,14 @@ class LearnAndActViewCell: BlurrableCollectionViewCell, ReusableCell {
                 return
             }
             titleLabel.text = learnAndAct.title
-            typeLabel.text = learnAndAct.type.uppercased()
+            typeLabel.text = learnAndAct.typeString.uppercased()
             timeToRead.text = learnAndAct.duration
             descriptionLabel.text = learnAndAct.description
             linkLabel.text = learnAndAct.action
             timeToRead.isHidden = learnAndAct.duration.isEmpty
             
             let url = URIFixup.getURL(learnAndAct.mobileImage)
-            imageView.sd_setImage(with: url, placeholderImage: UIImage(named: learnAndAct.defaultImageName), completed: nil)
+            imageView.sd_setImage(with: url, placeholderImage: nil, completed: nil)
             
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.maximumLineHeight = 20
@@ -100,7 +108,14 @@ class LearnAndActViewCell: BlurrableCollectionViewCell, ReusableCell {
             descriptionLabel.lineBreakMode = .byTruncatingTail
             
             descriptionLabel.sizeToFit()
+            
             applyTheme()
+
+            typeView.isHidden = learnAndAct.typeIsHidden
+            typeView.backgroundColor = learnAndAct.typeBackgroundColor
+            typeImage.image = UIImage(named: learnAndAct.typeImageName)
+            typeImage.tintColor = learnAndAct.typeLabelColor
+            typeLabel.textColor = learnAndAct.typeLabelColor
         }
     }
     
@@ -112,7 +127,8 @@ class LearnAndActViewCell: BlurrableCollectionViewCell, ReusableCell {
         textStackView.addArrangedSubview(descriptionLabel)
         textStackView.addArrangedSubview(linkLabel)
         textContent.addSubviews(textStackView)
-        typeView.addSubview(typeLabel)
+        typeView.addSubviews(typeImage)
+        typeView.addSubviews(typeLabel)
         
         if UITraitCollection.current.verticalSizeClass == .compact ||
             UIDevice.current.userInterfaceIdiom == .pad {
@@ -125,7 +141,7 @@ class LearnAndActViewCell: BlurrableCollectionViewCell, ReusableCell {
             imageView.snp.makeConstraints { make in
                 make.top.bottom.equalToSuperview()
                 make.leading.equalToSuperview()
-                make.width.equalTo(imageView.snp.height).multipliedBy(1.5)
+                make.width.equalToSuperview().multipliedBy(0.4)
             }
             
             textContent.snp.makeConstraints { make in
@@ -155,10 +171,17 @@ class LearnAndActViewCell: BlurrableCollectionViewCell, ReusableCell {
             }
         }
         
-        typeLabel.snp.makeConstraints { make in
-            make.centerY.centerX.equalToSuperview()
-            make.top.equalToSuperview()
+        typeImage.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.top.greaterThanOrEqualToSuperview()
             make.leading.equalToSuperview().offset(UX.padding2)
+        }
+        
+        typeLabel.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.top.greaterThanOrEqualToSuperview()
+            make.leading.equalTo(typeImage.snp.trailing).offset(UX.padding)
+            make.trailing.equalToSuperview().offset(-UX.padding2)
         }
         
         textStackView.snp.makeConstraints { make in
@@ -171,7 +194,7 @@ class LearnAndActViewCell: BlurrableCollectionViewCell, ReusableCell {
         
         contentView.layer.cornerRadius = 10
         contentView.layer.masksToBounds = true
-
+        addShadow()
     }
     
     func addShadow() {
@@ -179,6 +202,7 @@ class LearnAndActViewCell: BlurrableCollectionViewCell, ReusableCell {
         layer.shadowOpacity = 1
         layer.shadowRadius = 12
         layer.shadowOffset = CGSize(width: 0, height: 4)
+        
     }
     
     func updateViewConstraints() {
