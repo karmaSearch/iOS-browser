@@ -13,6 +13,7 @@
 <Url type="text/html" method="GET" template="https://karmasearch.org/search">
   <Param name="q" value="{searchTerms}"/>
   <Param name="origin" value="ios"/>
+  <Param name="method" value="{method}"/>
 </Url>
 <!-- tablet search not supported -->
 <SearchForm>https://karmasearch.org</SearchForm>
