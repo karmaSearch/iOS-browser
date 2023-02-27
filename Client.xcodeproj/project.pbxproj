@@ -733,7 +733,6 @@
 		A380E84D299D1D280046FA42 /* URLTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD40FCE27BADC6A00672675 /* URLTextField.swift */; };
 		A380E84E299D1D280046FA42 /* ClipboardBarDisplayHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ADB5D91E58CEC300E87909 /* ClipboardBarDisplayHandler.swift */; };
 		A380E84F299D1D280046FA42 /* PhotonActionSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD1980E27BEB3F100D64B0E /* PhotonActionSheetViewModel.swift */; };
-		A380E850299D1D280046FA42 /* LegacyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A179A20E69A7E00B12184 /* LegacyTheme.swift */; };
 		A380E851299D1D280046FA42 /* URLCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B77CD2811CD11001110D2 /* URLCaching.swift */; };
 		A380E852299D1D280046FA42 /* NimbusSearchBarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C825E9822832A425006CB811 /* NimbusSearchBarLayer.swift */; };
 		A380E853299D1D280046FA42 /* BreachAlertsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA03B269247F1D9E00382B62 /* BreachAlertsClient.swift */; };
@@ -755,7 +754,6 @@
 		A380E863299D1D280046FA42 /* JumpBackInList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE80BBB2891C20D00BC12EA /* JumpBackInList.swift */; };
 		A380E864299D1D280046FA42 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85C7F112721048E004BDBA4 /* Layout.swift */; };
 		A380E865299D1D280046FA42 /* HistoryHighlightsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF036E42274FD434002E834E /* HistoryHighlightsCell.swift */; };
-		A380E866299D1D280046FA42 /* LegacyDarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A179920E69A7E00B12184 /* LegacyDarkTheme.swift */; };
 		A380E867299D1D280046FA42 /* TabTrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52E1D925F5961F0092204C /* TabTrayViewController.swift */; };
 		A380E868299D1D280046FA42 /* MainMenuActionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD40FD227BB068F00672675 /* MainMenuActionHelper.swift */; };
 		A380E869299D1D280046FA42 /* BrowserViewController+ReaderMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C84B6212EFFBF001489DF /* BrowserViewController+ReaderMode.swift */; };
@@ -1335,6 +1333,8 @@
 		A3A8717D29379ECE00C76AC2 /* ProximaNova-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8717429379ECD00C76AC2 /* ProximaNova-SemiBold.otf */; };
 		A3A8717E29379ECE00C76AC2 /* ProximaNova-Medium It.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A8717529379ECD00C76AC2 /* ProximaNova-Medium It.otf */; };
 		A3A871812937A8DD00C76AC2 /* ETPCoverSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A871802937A8DC00C76AC2 /* ETPCoverSheetViewController.swift */; };
+		A3C1B96229A90D2900ECD30F /* LegacyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C1B96029A90CF500ECD30F /* LegacyTheme.swift */; };
+		A3C1B96529A90D7200ECD30F /* LegacyDarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C1B96329A90D6F00ECD30F /* LegacyDarkTheme.swift */; };
 		A3DEA008294A127200A28297 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		A3DFB7C029A37BCF005EDF99 /* LearnAndActDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFB7BF29A37BCF005EDF99 /* LearnAndActDataAdapter.swift */; };
 		A3DFB7C229A37D26005EDF99 /* LearnAndActProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFB7C129A37D26005EDF99 /* LearnAndActProvider.swift */; };
@@ -4426,6 +4426,8 @@
 		A3A8717429379ECD00C76AC2 /* ProximaNova-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-SemiBold.otf"; sourceTree = "<group>"; };
 		A3A8717529379ECD00C76AC2 /* ProximaNova-Medium It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Medium It.otf"; sourceTree = "<group>"; };
 		A3A871802937A8DC00C76AC2 /* ETPCoverSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETPCoverSheetViewController.swift; sourceTree = "<group>"; };
+		A3C1B96029A90CF500ECD30F /* LegacyTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyTheme.swift; sourceTree = "<group>"; };
+		A3C1B96329A90D6F00ECD30F /* LegacyDarkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyDarkTheme.swift; sourceTree = "<group>"; };
 		A3DEA004294A0E3300A28297 /* KarmaConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KarmaConfig.swift; sourceTree = "<group>"; };
 		A3DFB7BF29A37BCF005EDF99 /* LearnAndActDataAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAndActDataAdapter.swift; sourceTree = "<group>"; };
 		A3DFB7C129A37D26005EDF99 /* LearnAndActProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAndActProvider.swift; sourceTree = "<group>"; };
@@ -7570,6 +7572,7 @@
 		A380E7FE299D1CAD0046FA42 /* Frontend */ = {
 			isa = PBXGroup;
 			children = (
+				A3C1B95E29A90CD400ECD30F /* Theme */,
 				A31EE6E2299FCF6C00354531 /* DefaultBrowserOnboarding */,
 				A31EE6DF299F8CB500354531 /* Contextual Hint */,
 				A37D5DE32938FB9100400F74 /* LearnAndAct */,
@@ -7626,6 +7629,23 @@
 				A32FD0412937B07A0072CD43 /* IntroScreenWelcomeView.swift */,
 			);
 			path = Intro;
+			sourceTree = "<group>";
+		};
+		A3C1B95E29A90CD400ECD30F /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				A3C1B95F29A90CDC00ECD30F /* LegacyThemeManager */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		A3C1B95F29A90CDC00ECD30F /* LegacyThemeManager */ = {
+			isa = PBXGroup;
+			children = (
+				A3C1B96029A90CF500ECD30F /* LegacyTheme.swift */,
+				A3C1B96329A90D6F00ECD30F /* LegacyDarkTheme.swift */,
+			);
+			path = LegacyThemeManager;
 			sourceTree = "<group>";
 		};
 		C80C11F228B3CD3E0062922A /* MockTests */ = {
@@ -11541,7 +11561,6 @@
 				A380E84D299D1D280046FA42 /* URLTextField.swift in Sources */,
 				A380E84E299D1D280046FA42 /* ClipboardBarDisplayHandler.swift in Sources */,
 				A380E84F299D1D280046FA42 /* PhotonActionSheetViewModel.swift in Sources */,
-				A380E850299D1D280046FA42 /* LegacyTheme.swift in Sources */,
 				A380E851299D1D280046FA42 /* URLCaching.swift in Sources */,
 				A380E852299D1D280046FA42 /* NimbusSearchBarLayer.swift in Sources */,
 				A380E853299D1D280046FA42 /* BreachAlertsClient.swift in Sources */,
@@ -11564,7 +11583,6 @@
 				A380E863299D1D280046FA42 /* JumpBackInList.swift in Sources */,
 				A380E864299D1D280046FA42 /* Layout.swift in Sources */,
 				A380E865299D1D280046FA42 /* HistoryHighlightsCell.swift in Sources */,
-				A380E866299D1D280046FA42 /* LegacyDarkTheme.swift in Sources */,
 				A380E867299D1D280046FA42 /* TabTrayViewController.swift in Sources */,
 				A380E868299D1D280046FA42 /* MainMenuActionHelper.swift in Sources */,
 				A380E869299D1D280046FA42 /* BrowserViewController+ReaderMode.swift in Sources */,
@@ -11686,6 +11704,7 @@
 				A380E8DC299D1D280046FA42 /* LegacyWallpaperNetworkUtility.swift in Sources */,
 				A380E8DD299D1D280046FA42 /* HomePageAccessors.swift in Sources */,
 				A380E8DE299D1D280046FA42 /* MessageCardDataAdaptor.swift in Sources */,
+				A3C1B96529A90D7200ECD30F /* LegacyDarkTheme.swift in Sources */,
 				A380E8DF299D1D280046FA42 /* OpenInHelper.swift in Sources */,
 				A380E8E0299D1D280046FA42 /* ToolbarTextField.swift in Sources */,
 				A380E8E1299D1D280046FA42 /* NoLoginsView.swift in Sources */,
@@ -11735,6 +11754,7 @@
 				A380E90D299D1D280046FA42 /* WebServerUtil.swift in Sources */,
 				A380E90E299D1D280046FA42 /* ContextualHintEligibilityUtility.swift in Sources */,
 				A380E90F299D1D280046FA42 /* LoginListDataSourceHelper.swift in Sources */,
+				A3C1B96229A90D2900ECD30F /* LegacyTheme.swift in Sources */,
 				A380E910299D1D280046FA42 /* LabelButtonHeaderView.swift in Sources */,
 				A380E911299D1D280046FA42 /* AddCredentialViewController.swift in Sources */,
 				A380E912299D1D280046FA42 /* LoginListViewModel.swift in Sources */,

@@ -288,7 +288,8 @@ extension BrowserViewController: URLBarDelegate {
     func submitSearchText(_ text: String, forTab tab: Tab) {
         let engine = profile.searchEngines.defaultEngine
 
-        if let searchURL = engine.searchURLForQuery(text) {
+        
+        if let searchURL = engine.searchURLForQuery(text, isURLStartingPage: tab.isURLStartingPage) {
             // We couldn't find a matching search keyword, so do a search query.
             Telemetry.default.recordSearch(location: .actionBar, searchEngine: engine.engineID ?? "other")
             GleanMetrics.Search.counts["\(engine.engineID ?? "custom").\(SearchesMeasurement.SearchLocation.actionBar.rawValue)"].add()

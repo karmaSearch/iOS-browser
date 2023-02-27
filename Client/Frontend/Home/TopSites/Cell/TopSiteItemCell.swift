@@ -20,9 +20,9 @@ class TopSiteItemCell: BlurrableCollectionViewCell, ReusableCell {
         static let borderWidth: CGFloat = 0.5
         static let cellCornerRadius: CGFloat = 8
         static let titleOffset: CGFloat = 4
-        static let iconSize = CGSize(width: 36, height: 36)
+        static let iconSize = CGSize(width: 50, height: 50)
         static let iconCornerRadius: CGFloat = 4
-        static let imageBackgroundSize = CGSize(width: 60, height: 60)
+        static let imageBackgroundSize = CGSize(width: 56, height: 56)
         static let overlayColor = UIColor(white: 0.0, alpha: 0.25)
         static let pinAlignmentSpacing: CGFloat = 2
         static let pinIconSize: CGSize = CGSize(width: 12, height: 12)
@@ -30,9 +30,9 @@ class TopSiteItemCell: BlurrableCollectionViewCell, ReusableCell {
         static let shadowOffset: CGFloat = 2
         static let textSafeSpace: CGFloat = 6
         static let bottomSpace: CGFloat = 8
-        static let imageTopSpace: CGFloat = 11
-        static let imageBottomSpace: CGFloat = 11
-        static let imageLeadingTrailingSpace: CGFloat = 11
+        static let imageTopSpace: CGFloat = 3
+        static let imageBottomSpace: CGFloat = 3
+        static let imageLeadingTrailingSpace: CGFloat = 3
         static let titleFontSize: CGFloat = 12
         static let sponsorFontSize: CGFloat = 11
     }
