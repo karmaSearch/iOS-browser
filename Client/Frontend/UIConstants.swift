@@ -22,7 +22,7 @@ public struct UIConstants {
     static let SnackbarButtonHeight: CGFloat = 57
     static let TopToolbarHeight: CGFloat = 56
     static let TopToolbarHeightMax: CGFloat = 75
-    static var ToolbarHeight: CGFloat = 46
+    static var ToolbarHeight: CGFloat = 66
 
     static let SystemBlueColor = UIColor.Photon.Blue40
 
@@ -30,9 +30,9 @@ public struct UIConstants {
     static let DefaultChromeSize: CGFloat = 16
     static let DefaultChromeSmallSize: CGFloat = 11
     static let PasscodeEntryFontSize: CGFloat = 36
-    static let DefaultChromeFont = UIFont.systemFont(ofSize: DefaultChromeSize, weight: UIFont.Weight.regular)
-    static let DefaultChromeSmallFontBold = UIFont.boldSystemFont(ofSize: DefaultChromeSmallSize)
-    static let PasscodeEntryFont = UIFont.systemFont(ofSize: PasscodeEntryFontSize, weight: UIFont.Weight.bold)
+    static let DefaultChromeFont = UIFont.customFont(ofSize: DefaultChromeSize, weight: UIFont.Weight.regular)
+    static let DefaultChromeSmallFontBold = UIFont.customFont(ofSize: DefaultChromeSmallSize, weight: .bold)
+    static let PasscodeEntryFont = UIFont.customFont(ofSize: PasscodeEntryFontSize, weight: UIFont.Weight.bold)
 
     /// JPEG compression quality for persisted screenshots. Must be between 0-1.
     static let ScreenshotQuality: Float = 0.3

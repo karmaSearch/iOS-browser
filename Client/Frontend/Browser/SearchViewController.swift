@@ -14,6 +14,21 @@ private enum SearchListSection: Int, CaseIterable {
     case openedTabs
     case bookmarksAndHistory
     case searchHighlights
+    
+    var title: String {
+        switch self {
+        case .searchSuggestions:
+            return .SearchSuggestionHeader
+        case .remoteTabs:
+            return .SearchRemoteTabsHeader
+        case .openedTabs:
+            return .SearchOpenTabsHeader
+        case .bookmarksAndHistory:
+            return .SearchBookmarksAndHistoryHeader
+        case .searchHighlights:
+            return ""
+        }
+    }
 }
 
 private struct SearchViewControllerUX {
@@ -561,13 +576,39 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
     }
 
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        #if KARMA
+        switch SearchListSection(rawValue: section)! {
+        case .searchSuggestions:
+            guard let count = suggestions?.count else { return 0 }
+            return count == 0 ? 0 : UITableView.automaticDimension
+        case .openedTabs:
+            return filteredOpenedTabs.isEmpty ? 0 : UITableView.automaticDimension
+        case .remoteTabs:
+            return filteredRemoteClientTabs.isEmpty ? 0 : UITableView.automaticDimension
+        case .bookmarksAndHistory:
+            return data.count == 0 ? 0 : UITableView.automaticDimension
+        case .searchHighlights:
+            return 0
+        }
+        #else
         guard section == SearchListSection.remoteTabs.rawValue,
               hasFirefoxSuggestions else { return 0 }
 
         return UITableView.automaticDimension
+        #endif
+        
     }
 
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        #if KARMA
+        guard let headerView = tableView.dequeueReusableHeaderFooterView(
+                withIdentifier: SiteTableViewHeader.cellIdentifier) as? SiteTableViewHeader
+        else { return nil }
+        
+        let viewModel = SiteTableViewHeaderModel(title: SearchListSection(rawValue: section)!.title,
+                                                 isCollapsible: false,
+                                                 collapsibleState: nil)
+        #else
         guard section == SearchListSection.remoteTabs.rawValue,
               hasFirefoxSuggestions,
               let headerView = tableView.dequeueReusableHeaderFooterView(
@@ -577,6 +618,7 @@ class SearchViewController: SiteTableViewController, KeyboardHelperDelegate, Loa
         let viewModel = SiteTableViewHeaderModel(title: .Search.SuggestSectionTitle,
                                                  isCollapsible: false,
                                                  collapsibleState: nil)
+        #endif
         headerView.configure(viewModel)
         return headerView
     }

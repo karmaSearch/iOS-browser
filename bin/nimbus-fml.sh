@@ -184,8 +184,14 @@ case "${SCHEME}" in
     Fennec)
         CHANNEL="developer"
         ;;
+    KarmaDebug)
+        CHANNEL="developer"
+        ;;
     FirefoxBeta)
         CHANNEL="beta"
+        ;;
+    Karma)
+        CHANNEL="release"
         ;;
     Firefox)
         CHANNEL="release"

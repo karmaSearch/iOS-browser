@@ -41,8 +41,8 @@ class SettingsTest: BaseTestCase {
             waitForExistence(app.buttons["Learn More"], timeout: 5)
             app.buttons["Learn More"].tap()
 
-            waitForExistence(app.buttons["Go to Settings"], timeout: 5)
-            app.buttons["Go to Settings"].tap()
+            waitForExistence(app.buttons["Choose KARMA"], timeout: 5)
+            app.buttons["Choose KARMA"].tap()
             // Tap on "Default Browser App" and set the browser as a default (Safari is listed first)
             waitForExistence(iOS_Settings.tables.cells.element(boundBy: 1), timeout: 5)
             iOS_Settings.tables.cells.element(boundBy: 2).tap()

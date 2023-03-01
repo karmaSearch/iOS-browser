@@ -1,13 +1,13 @@
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Tudja meg hogyan";
 
-/* Description for small home tab banner shown that allows user to switch their default browser to Firefox. */
-"DefaultBrowserCard.Description" = "Állítsa be a webhelyek, e-mailek és üzenetek hivatkozásait, hogy azok automatikusan a Firefoxban nyíljanak meg.";
+/* Description for small home tab banner shown that allows user to switch their default browser to KARMA. */
+"DefaultBrowserCard.Description" = "Állítsa be a webhelyek, e-mailek és üzenetek hivatkozásait, hogy azok automatikusan a KARMAban nyíljanak meg.";
 
-/* Title for small home tab banner shown that allows user to switch their default browser to Firefox. */
+/* Title for small home tab banner shown that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Title" = "Az alapértelmezett böngésző módosítása";
 
-/* Button string to open settings that allows user to switch their default browser to Firefox. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserOnboarding.Button" = "Ugrás a beállításokhoz";
 
 /* Description for default browser onboarding card. */
@@ -17,11 +17,11 @@
 "DefaultBrowserOnboarding.Description2" = "2. Koppintson az alapértelmezett böngészőalkalmazás elemre";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Válassza a Firefoxot";
+"DefaultBrowserOnboarding.Description3" = "3. Válassza a KARMAot";
 
-/* Text for the screenshot of the iOS system settings page for Firefox. */
+/* Text for the screenshot of the iOS system settings page for KARMA. */
 "DefaultBrowserOnboarding.Screenshot" = "Alapértelmezett böngésző";
 
-/* Menu option for setting Firefox as default browser. */
+/* Menu option for setting KARMA as default browser. */
 "Settings.DefaultBrowserMenuItem" = "Beállítás alapértelmezett böngészőként";
 

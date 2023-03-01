@@ -76,6 +76,8 @@ final class NimbusFeatureFlagLayer {
                 .copyForJumpBackIn,
                 .copyForToolbar:
             return checkNimbusForMR22Feature(for: featureID, using: nimbus)
+        case .learnAndAct:
+            return true
         }
     }
 

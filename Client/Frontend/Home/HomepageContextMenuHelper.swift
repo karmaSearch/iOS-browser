@@ -50,6 +50,8 @@ class HomepageContextMenuHelper: HomepageContextMenuProtocol {
 
         } else if sectionType == .pocket, let pocketActions = getPocketActions(site: site, with: sourceView) {
             actions = pocketActions
+        } else if sectionType == .learnAndAct, let learnAndActActions = getPocketActions(site: site, with: sourceView) {
+            actions = learnAndActActions
         }
 
         return actions

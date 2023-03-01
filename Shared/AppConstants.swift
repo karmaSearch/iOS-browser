@@ -5,7 +5,7 @@
 import UIKit
 
 public enum AppName: String, CustomStringConvertible {
-    case shortName = "Firefox"
+    case shortName = "KARMA"
 
     public var description: String {
         return self.rawValue
@@ -65,11 +65,15 @@ public struct AppConstants {
             return "unknown"
         }
 
+        if identifier.contains("com.mykarma.") {
+            return identifier.replacingOccurrences(of: "com.mykarma.", with: "")
+        }
         let scheme = identifier.replacingOccurrences(of: "org.mozilla.ios.", with: "")
         if scheme == "FirefoxNightly.enterprise" {
             return "FirefoxNightly"
         }
         return scheme
+    
     }()
 
     public static let PrefSendUsageData = "settings.sendUsageData"

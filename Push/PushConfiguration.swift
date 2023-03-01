@@ -10,6 +10,8 @@ public enum PushConfigurationLabel: String {
     case firefoxBeta = "FirefoxBeta"
     case firefoxNightlyEnterprise = "FirefoxNightly"
     case firefox = "Firefox"
+    case karmadebug = "karmasearchdebug"
+    case karma = "karmasearch"
 
     public func toConfiguration() -> PushConfiguration {
         switch self {
@@ -18,6 +20,8 @@ public enum PushConfigurationLabel: String {
         case .firefoxBeta: return FirefoxBetaPushConfiguration()
         case .firefoxNightlyEnterprise: return FirefoxNightlyEnterprisePushConfiguration()
         case .firefox: return FirefoxPushConfiguration()
+        case .karma: return FirefoxPushConfiguration()
+        case .karmadebug: return FirefoxPushConfiguration()  
         }
     }
 }

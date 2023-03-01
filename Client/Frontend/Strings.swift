@@ -3410,6 +3410,8 @@ extension String {
         value: "Go to Settings",
         comment: "Button string to open settings that allows user to switch their default browser to Firefox.",
         lastUpdated: .unknown)
+    public static let DefaultBrowserPushTitle = MZLocalizedString("DefaultBrowser.Push.Title", tableName: "Default Browser", value: "Set as Default Browser", comment: "Push title for setting Firefox as default browser.", lastUpdated: .unknown)
+    public static let DefaultBrowserPushMessage = MZLocalizedString("DefaultBrowser.Push.Message", tableName: "Default Browser", value: "Set as Default Browser", comment: "Push message for setting Firefox as default browser.", lastUpdated: .unknown)
 }
 
 // MARK: - FxAWebViewController

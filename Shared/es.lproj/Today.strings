@@ -4,8 +4,8 @@
 /* Close Private Tabs */
 "TodayWidget.ClosePrivateTabsLabelV2" = "Cerrar pestañas privadas";
 
-/* Description for medium size widget to add Firefox Shortcut to home screen */
-"TodayWidget.FirefoxShortcutGalleryDescription" = "Añade atajos de Firefox a tu pantalla de inicio.";
+/* Description for medium size widget to add KARMA Shortcut to home screen */
+"TodayWidget.FirefoxShortcutGalleryDescription"= "Añade atajos de KARMA a tu pantalla de inicio.";
 
 /* Go to link pasted on the clipboard */
 "TodayWidget.GoToCopiedLinkLabelV1" = "Ir al enlace copiado";
@@ -22,20 +22,20 @@
 /* Label that is shown when there are no tabs opened in tab tray i.e. Empty State */
 "TodayWidget.NoOpenTabsLabel" = "No hay pestañas abiertas.";
 
-/* Open Firefox when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenFirefoxLabel" = "Abrir Firefox";
+/* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
+"TodayWidget.OpenFirefoxLabel" = "Abrir KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Búsqueda privada";
 
 /* Description for small size widget to add it to home screen */
-"TodayWidget.QuickActionGalleryDescription" = "Agrega un acceso directo de Firefox a tu pantalla de inicio. Después de agregar el widget, selecciona y mantén pulsado para editarlo y seleccionar un acceso directo diferente.";
+"TodayWidget.QuickActionGalleryDescription" = "Agrega un acceso directo de KARMA a tu pantalla de inicio. Después de agregar el widget, selecciona y mantén pulsado para editarlo y seleccionar un acceso directo diferente.";
 
 /* Quick Actions title when widget enters edit mode */
 "TodayWidget.QuickActionsGalleryTitle" = "Acciones rápidas";
 
-/* Firefox shortcuts title when widget enters edit mode. Do not translate the word Firefox. */
-"TodayWidget.QuickActionsGalleryTitleV2" = "Accesos directos de Firefox";
+/* KARMA shortcuts title when widget enters edit mode. Do not translate the word KARMA. */
+"TodayWidget.QuickActionsGalleryTitleV2" = "Accesos directos de KARMA";
 
 /* Description for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryDescriptionV2" = "Añade atajos a tus pestañas abiertas.";
@@ -43,18 +43,18 @@
 /* Title for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryTitle" = "Vista rápida";
 
-/* Search in Firefox. Do not translate the word Firefox */
-"TodayWidget.SearchInFirefoxV2" = "Buscar en Firefox";
+/* Search in KARMA. Do not translate the word KARMA */
+"TodayWidget.SearchInFirefoxV2" = "Buscar en KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Buscar en pestaña privada";
 
-/* Description for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Description for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryDescription" = "Añade accesos directos a los sitios visitados con frecuencia y recientemente.";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "Sitios frecuentes";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitleV2" = "Atajos de sitios web";
 

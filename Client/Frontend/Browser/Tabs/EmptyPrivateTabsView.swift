@@ -6,9 +6,9 @@ import UIKit
 import Foundation
 
 struct EmptyPrivateTabsViewUX {
-    static let TitleFont = UIFont.systemFont(ofSize: 22, weight: UIFont.Weight.medium)
-    static let DescriptionFont = UIFont.systemFont(ofSize: 17)
-    static let LearnMoreFont = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.medium)
+    static let TitleFont = UIFont.customFont(ofSize: 22, weight: UIFont.Weight.medium)
+    static let DescriptionFont = UIFont.customFont(ofSize: 17)
+    static let LearnMoreFont = UIFont.customFont(ofSize: 15, weight: UIFont.Weight.medium)
     static let TextMargin: CGFloat = 18
     static let LearnMoreMargin: CGFloat = 8
     static let MaxDescriptionWidth: CGFloat = 250

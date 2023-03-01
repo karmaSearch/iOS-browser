@@ -25,7 +25,7 @@
 /* Accessibility label for the button, displayed in the menu, used to open the Synced Tabs home panel. Please keep as short as possible, <15 chars of space available. */
 "Menu.OpenSyncedTabsAction.AccessibilityLabel.v2" = "ផ្ទាំង​​ដែល​​បាន​​ធ្វើ​​សមកាល​កម្ម";
 
-/* Label for the button, displayed in Firefox Home, used to see all Library panels. */
+/* Label for the button, displayed in KARMA Home, used to see all Library panels. */
 "Menu.SeeAllAction.Title" = "មើល​ទាំងអស់";
 
 /* Label for the button, displayed in the menu, used to open the share dialog. */

@@ -4,8 +4,8 @@
 /* Close Private Tabs */
 "TodayWidget.ClosePrivateTabsLabelV2" = "Serrar ils tabs privats";
 
-/* Description for medium size widget to add Firefox Shortcut to home screen */
-"TodayWidget.FirefoxShortcutGalleryDescription" = "Agiuntar scursanidas a Firefox a tes visur da partenza.";
+/* Description for medium size widget to add KARMA Shortcut to home screen */
+"TodayWidget.FirefoxShortcutGalleryDescription"= "Agiuntar scursanidas a KARMA a tes visur da partenza.";
 
 /* Go to link pasted on the clipboard */
 "TodayWidget.GoToCopiedLinkLabelV1" = "Ir a la colliaziun copiada";
@@ -22,20 +22,20 @@
 /* Label that is shown when there are no tabs opened in tab tray i.e. Empty State */
 "TodayWidget.NoOpenTabsLabel" = "Nagins tabs averts.";
 
-/* Open Firefox when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenFirefoxLabel" = "Avrir Firefox";
+/* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
+"TodayWidget.OpenFirefoxLabel" = "Avrir KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Tschertga privata";
 
 /* Description for small size widget to add it to home screen */
-"TodayWidget.QuickActionGalleryDescription" = "Agiuntescha ina scursanida a Firefox a tes visur da partenza. Suenter l'avair agiuntà, tutga e tegna il widget per l'editar e tscherna in'autra scursanida.";
+"TodayWidget.QuickActionGalleryDescription" = "Agiuntescha ina scursanida a KARMA a tes visur da partenza. Suenter l'avair agiuntà, tutga e tegna il widget per l'editar e tscherna in'autra scursanida.";
 
 /* Quick Actions title when widget enters edit mode */
 "TodayWidget.QuickActionsGalleryTitle" = "Acziuns sveltas";
 
-/* Firefox shortcuts title when widget enters edit mode. Do not translate the word Firefox. */
-"TodayWidget.QuickActionsGalleryTitleV2" = "Scursanidas da Firefox";
+/* KARMA shortcuts title when widget enters edit mode. Do not translate the word KARMA. */
+"TodayWidget.QuickActionsGalleryTitleV2" = "Scursanidas da KARMA";
 
 /* Description for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryDescriptionV2" = "Agiuntescha scursanidas a tes tabs averts.";
@@ -43,18 +43,18 @@
 /* Title for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryTitle" = "Vista svelta";
 
-/* Search in Firefox. Do not translate the word Firefox */
-"TodayWidget.SearchInFirefoxV2" = "Tschertgar en Firefox";
+/* Search in KARMA. Do not translate the word KARMA */
+"TodayWidget.SearchInFirefoxV2" = "Tschertgar en KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Tschertgar en in tab privat";
 
-/* Description for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Description for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryDescription" = "Agiuntescha scursanidas per websites visitadas frequentamain e visitadas dacurt.";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "Paginas preferidas";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitleV2" = "Scursanidas a websites";
 

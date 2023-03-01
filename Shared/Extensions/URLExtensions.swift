@@ -240,14 +240,16 @@ extension URL {
     /**
      * Returns a shorter displayable string for a domain
      *
-     * E.g., https://m.foo.com/bar/baz?noo=abc#123  => foo
-     *       https://accounts.foo.com/bar/baz?noo=abc#123  => accounts.foo
+     * E.g., https://m.foo.com/bar/baz?noo=abc#123  => Foo
+     *       https://accounts.foo.com/bar/baz?noo=abc#123  => Accounts.foo
      **/
     public var shortDisplayString: String {
         guard let publicSuffix = self.publicSuffix, let baseDomain = self.normalizedHost else {
             return self.normalizedHost ?? self.absoluteString
         }
-        return baseDomain.replacingOccurrences(of: ".\(publicSuffix)", with: "")
+        let display = baseDomain.replacingOccurrences(of: ".\(publicSuffix)", with: "")
+        //upper first case
+        return display.prefix(1).uppercased() + display.dropFirst()
     }
 
     public var normalizedHostAndPath: String? {
@@ -464,7 +466,7 @@ extension URL {
     public static var mozPublicScheme: String = {
         guard let string = Bundle.main.object(forInfoDictionaryKey: "MozPublicURLScheme") as? String, !string.isEmpty else {
             // Something went wrong/weird, fall back to hard-coded.
-            return "firefox"
+            return "karma"
         }
         return string
     }()

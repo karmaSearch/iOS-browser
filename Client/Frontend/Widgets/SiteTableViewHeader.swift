@@ -15,7 +15,7 @@ class SiteTableViewHeader: UITableViewHeaderFooterView, NotificationThemeable, R
 
     struct UX {
         static let titleTrailingLeadingMargin: CGFloat = 16
-        static let titleTopBottomMargin: CGFloat = 12
+        static let titleTopBottomMargin: CGFloat = 8
         static let imageTrailingSpace: CGFloat = 12
         static let imageWidthHeight: CGFloat = 24
     }
@@ -30,7 +30,7 @@ class SiteTableViewHeader: UITableViewHeaderFooterView, NotificationThemeable, R
         label.textColor = UIColor.theme.tableView.headerTextDark
         label.numberOfLines = 0
         label.font = DynamicFontHelper.defaultHelper.preferredFont(withTextStyle: .headline,
-                                                                   size: 16)
+                                                                   size: 18, weight: .bold)
         label.adjustsFontForContentSizeCategory = true
     }
 
@@ -124,7 +124,12 @@ class SiteTableViewHeader: UITableViewHeaderFooterView, NotificationThemeable, R
     }
 
     func setDefaultBordersValues() {
+        #if KARMA
         bordersHelper.showBorder(for: .top, true)
         bordersHelper.showBorder(for: .bottom, true)
+        #else
+        bordersHelper.showBorder(for: .top, false)
+        bordersHelper.showBorder(for: .bottom, false)
+        #endif
     }
 }

@@ -91,7 +91,7 @@ class FirefoxAccountSignInViewController: UIViewController {
     }
 
     lazy var scanButton: ResizableButton = .build { button in
-        button.backgroundColor = UIColor.Photon.Blue50
+        button.backgroundColor = UIColor.Photon.Green60
         button.layer.cornerRadius = 8
         button.setImage(UIImage(named: ImageIdentifiers.signinSyncQRButton)?
             .tinted(withColor: .white), for: .normal)
@@ -243,7 +243,7 @@ class FirefoxAccountSignInViewController: UIViewController {
             scanButton.setImage(UIImage(named: ImageIdentifiers.signinSyncQRButton)?
                 .tinted(withColor: .white), for: .normal)
             scanButton.setTitleColor(UIColor.Photon.LightGrey05, for: .normal)
-            scanButton.backgroundColor = UIColor.Photon.Blue50
+            scanButton.backgroundColor = UIColor.Photon.Green60
         }
     }
 

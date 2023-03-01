@@ -4,8 +4,8 @@
 /* Close Private Tabs */
 "TodayWidget.ClosePrivateTabsLabelV2" = "निजी टैब बंद करें";
 
-/* Description for medium size widget to add Firefox Shortcut to home screen */
-"TodayWidget.FirefoxShortcutGalleryDescription" = "अपने होम स्क्रीन पर Firefox शॉर्टकट जोड़ें।";
+/* Description for medium size widget to add KARMA Shortcut to home screen */
+"TodayWidget.FirefoxShortcutGalleryDescription"= "अपने होम स्क्रीन पर KARMA शॉर्टकट जोड़ें।";
 
 /* Go to link pasted on the clipboard */
 "TodayWidget.GoToCopiedLinkLabelV1" = "कॉपी की गई लिंक पर जाएं";
@@ -22,8 +22,8 @@
 /* Label that is shown when there are no tabs opened in tab tray i.e. Empty State */
 "TodayWidget.NoOpenTabsLabel" = "कोई खुला टैब नहीं।";
 
-/* Open Firefox when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenFirefoxLabel" = "Firefox खोलें";
+/* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
+"TodayWidget.OpenFirefoxLabel" = "KARMA खोलें";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "निजी खोज";
@@ -31,24 +31,24 @@
 /* Quick Actions title when widget enters edit mode */
 "TodayWidget.QuickActionsGalleryTitle" = "तुरंत कारवाई";
 
-/* Firefox shortcuts title when widget enters edit mode. Do not translate the word Firefox. */
-"TodayWidget.QuickActionsGalleryTitleV2" = "Firefox शॉर्टकट";
+/* KARMA shortcuts title when widget enters edit mode. Do not translate the word KARMA. */
+"TodayWidget.QuickActionsGalleryTitleV2" = "KARMA शॉर्टकट";
 
 /* Description for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryDescriptionV2" = "अपने खुले टैब में शॉर्टकट जोड़ें।";
 
-/* Search in Firefox. Do not translate the word Firefox */
-"TodayWidget.SearchInFirefoxV2" = "Firefox में खोजें";
+/* Search in KARMA. Do not translate the word KARMA */
+"TodayWidget.SearchInFirefoxV2" = "KARMA में खोजें";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "निजी टैब में खोजें";
 
-/* Description for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Description for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryDescription" = "अक्सर और हाल ही में देखी गई साइट पर शॉर्टकट जोड़ें।";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "टॉप साइट";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitleV2" = "वेबसाइट शॉर्टकट";
 

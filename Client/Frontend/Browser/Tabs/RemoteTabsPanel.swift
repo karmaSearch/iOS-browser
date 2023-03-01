@@ -373,7 +373,7 @@ class RemoteTabsErrorCell: UITableViewCell, ReusableCell {
 class RemoteTabsNotLoggedInCell: UITableViewCell, ReusableCell {
 
     struct UX {
-        static let EmptyStateSignInButtonColor = UIColor.Photon.Blue40
+        static let EmptyStateSignInButtonColor = UIColor.Photon.Green60
         static let EmptyStateSignInButtonCornerRadius: CGFloat = 4
         static let EmptyStateSignInButtonHeight = 44
         static let EmptyStateSignInButtonWidth = 200

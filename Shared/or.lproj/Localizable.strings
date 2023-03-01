@@ -262,22 +262,22 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for firefox about:home page in tab history list */
+/* Title for KARMA about:home page in tab history list */
 "Firefox.HomePage.Title" = "ଫାୟାରଫକ୍ସ ମୂଳ ପୃଷ୍ଠା";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "ଆଗକୁ";
 
-/* Settings section title for Firefox Account */
+/* Settings section title for KARMA Account */
 "FxA.FirefoxAccount" = "ଫାୟାରଫକ୍ସ ଖାତା";
 
-/* Button label to go to Firefox Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "ଖାତା ଏବଂ ଉପକରଣ ପରିଚାଳନା କରନ୍ତୁ";
 
 /* Label when no internet is present */
 "FxA.NoInternetConnection" = "ଇଣ୍ଟରନେଟ୍ ସଂଯୋଗ ନାହିଁ";
 
-/* Button label to Sync your Firefox Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "ବର୍ତ୍ତମାନ ସମୟସାମୟିକ କରନ୍ତୁ";
 
 /* Title of a notification displayed when another device has connected to FxA. */
@@ -379,10 +379,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "ଫିକା";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "ମୂଳ ପୃଷ୍ଠା ଲୋଡ଼କରନ୍ତୁ";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "ବିଷୟ ଲୋଡ଼ ହେଉଛି…";
 
 /* Authentication prompt log in button */
@@ -410,7 +410,7 @@
 "LoginsList.Title" = "SAVED LOGINS";
 
 /* Restore Tabs Prompt Description */
-"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "ଲାଗୁଛି ଗତଥର Firefox ବନ୍ଦ ହୋଇଗଲା । ପୁରୁଣା ଟ୍ୟାବ ଫେରାଇବାକୁ ଚାହାନ୍ତି କି?";
+"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "ଲାଗୁଛି ଗତଥର KARMA ବନ୍ଦ ହୋଇଗଲା । ପୁରୁଣା ଟ୍ୟାବ ଫେରାଇବାକୁ ଚାହାନ୍ତି କି?";
 
 /* Title for the button that marks a reading list item as read */
 "Mark as Read" = "ପଠିତ ଭାବେ ଚିହ୍ନଟ କରନ୍ତୁ";
@@ -481,7 +481,7 @@
 /* Privacy section title */
 "Privacy" = "ଗୋପନୀୟତା";
 
-/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "ଗୋପନୀୟତା ନିତୀ";
 
 /* Title for quick-search engines settings section. */
@@ -605,7 +605,7 @@
 "Settings.DataManagement.SearchLabel" = "ସ୍କ୍ରିପ୍ଟଗୁଡ଼ିକୁ ଛାଣନ୍ତୁ";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "Firefox ଆପଣଙ୍କ ଆକାଉଣ୍ଟ ସହ ସିଙ୍କ କରିବା ବନ୍ଦ କରିଦେଲେ ମଧ୍ୟ ଆପଣଙ୍କ ଏହି ଡିଭାଇସରେ ବ୍ରାଉଜିଂ ଡାଟା ଲିଭାଇବ ନାହିଁ ।";
+"Settings.Disconnect.Body" = "KARMA ଆପଣଙ୍କ ଆକାଉଣ୍ଟ ସହ ସିଙ୍କ କରିବା ବନ୍ଦ କରିଦେଲେ ମଧ୍ୟ ଆପଣଙ୍କ ଏହି ଡିଭାଇସରେ ବ୍ରାଉଜିଂ ଡାଟା ଲିଭାଇବ ନାହିଁ ।";
 
 /* Cancel action button in alert when user is prompted for disconnect */
 "Settings.Disconnect.CancelButton" = "ବାତିଲ କରନ୍ତୁ";

@@ -1,0 +1,14 @@
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+#include "KarmaCommon.xcconfig"
+#include "Release.xcconfig"
+
+MOZ_BUNDLE_DISPLAY_NAME = KARMA
+MOZ_BUNDLE_ID = com.mykarma.karmasearch
+CODE_SIGN_ENTITLEMENTS = Client/Entitlements/KarmaApplication.entitlements
+OTHER_SWIFT_FLAGS = $(OTHER_SWIFT_FLAGS_common) -DMOZ_CHANNEL_RELEASE -DKARMA
+MOZ_INTERNAL_URL_SCHEME = karma
+MOZ_TODAY_WIDGET_SEARCH_DISPLAY_NAME = KARMA - Search
+DEVELOPMENT_TEAM = 59G3A42UBG

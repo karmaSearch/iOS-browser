@@ -169,8 +169,8 @@ final class LoginListViewModel {
     struct LoginListUX {
         static let RowHeight: CGFloat = 58
         static let SearchHeight: CGFloat = 58
-        static let selectionButtonFont = UIFont.systemFont(ofSize: 16)
-        static let NoResultsFont = UIFont.systemFont(ofSize: 16)
+        static let selectionButtonFont = UIFont.customFont(ofSize: 16)
+        static let NoResultsFont = UIFont.customFont(ofSize: 16)
         static let NoResultsTextColor = UIColor.Photon.Grey40
     }
 }

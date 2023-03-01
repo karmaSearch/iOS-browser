@@ -15,8 +15,8 @@ protocol HomepageDataModelDelegate: AnyObject {
 class HomepageViewModel: FeatureFlaggable {
 
     struct UX {
-        static let spacingBetweenSections: CGFloat = 32
-        static let standardInset: CGFloat = 18
+        static let spacingBetweenSections: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 24 : 20
+        static let standardInset: CGFloat = 15
         static let iPadInset: CGFloat = 50
         static let iPadTopSiteInset: CGFloat = 25
 
@@ -75,7 +75,10 @@ class HomepageViewModel: FeatureFlaggable {
     var historyHighlightsViewModel: HistoryHighlightsViewModel
     var pocketViewModel: PocketViewModel
     var customizeButtonViewModel: CustomizeHomepageSectionViewModel
-
+    #if KARMA
+    var learnAndActViewModel: LearnAndActViewModel
+    #endif
+    
     var shouldDisplayHomeTabBanner: Bool {
         return messageCardViewModel.shouldDisplayMessageCard
     }
@@ -129,6 +132,29 @@ class HomepageViewModel: FeatureFlaggable {
         pocketDataAdaptor.delegate = pocketViewModel
 
         self.customizeButtonViewModel = CustomizeHomepageSectionViewModel()
+        
+        self.isPrivate = isPrivate
+
+        self.nimbus = nimbus
+        
+        #if KARMA
+        let learnAndActDataAdaptor = LearnAndActDataAdaptorImplementation(API: LearnAndActProvider())
+        self.learnAndActViewModel = LearnAndActViewModel(dataAdaptor: learnAndActDataAdaptor)
+        learnAndActDataAdaptor.delegate = self.learnAndActViewModel
+        
+        self.childViewModels = [headerViewModel,
+                                messageCardViewModel,
+                                topSiteViewModel,
+                                jumpBackInViewModel,
+                                recentlySavedViewModel,
+                                historyHighlightsViewModel,
+                                pocketViewModel,
+                                learnAndActViewModel,
+                                customizeButtonViewModel]
+        
+        learnAndActViewModel.delegate = self
+        
+        #else
         self.childViewModels = [headerViewModel,
                                 messageCardViewModel,
                                 topSiteViewModel,
@@ -137,9 +163,8 @@ class HomepageViewModel: FeatureFlaggable {
                                 historyHighlightsViewModel,
                                 pocketViewModel,
                                 customizeButtonViewModel]
-        self.isPrivate = isPrivate
-
-        self.nimbus = nimbus
+        #endif
+        
         topSiteViewModel.delegate = self
         historyHighlightsViewModel.delegate = self
         recentlySavedViewModel.delegate = self

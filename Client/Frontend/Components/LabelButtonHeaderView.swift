@@ -27,7 +27,7 @@ class LabelButtonHeaderView: UICollectionReusableView, ReusableCell {
         static let titleLabelTextSize: CGFloat = 20
         static let moreButtonTextSize: CGFloat = 15
         static let inBetweenSpace: CGFloat = 12
-        static let bottomSpace: CGFloat = 10
+        static let bottomSpace: CGFloat = 18
         static let bottomButtonSpace: CGFloat = 6
     }
 
@@ -41,8 +41,8 @@ class LabelButtonHeaderView: UICollectionReusableView, ReusableCell {
 
     lazy var titleLabel: UILabel = .build { label in
         label.text = self.title
-        label.font = DynamicFontHelper.defaultHelper.preferredBoldFont(withTextStyle: .title3,
-                                                                       size: UX.titleLabelTextSize)
+        label.font = DynamicFontHelper.defaultHelper.preferredFont(withTextStyle: .title3,
+                                                                   size: UX.titleLabelTextSize, weight: .semibold)
         label.adjustsFontForContentSizeCategory = true
         label.numberOfLines = 0
     }

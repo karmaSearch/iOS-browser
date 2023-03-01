@@ -1,13 +1,13 @@
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Zjistit více";
 
-/* Description for small home tab banner shown that allows user to switch their default browser to Firefox. */
-"DefaultBrowserCard.Description" = "Nastavte si automatické otevírání odkazů, e-mailů a zpráv ve Firefoxu.";
+/* Description for small home tab banner shown that allows user to switch their default browser to KARMA. */
+"DefaultBrowserCard.Description" = "Nastavte si automatické otevírání odkazů, e-mailů a zpráv ve KARMAu.";
 
-/* Title for small home tab banner shown that allows user to switch their default browser to Firefox. */
+/* Title for small home tab banner shown that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Title" = "Nastavte si svůj výchozí prohlížeč";
 
-/* Button string to open settings that allows user to switch their default browser to Firefox. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserOnboarding.Button" = "Přejít do nastavení";
 
 /* Description for default browser onboarding card. */
@@ -17,11 +17,11 @@
 "DefaultBrowserOnboarding.Description2" = "2. Klepněte na „Výchozí prohlížeč“";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Vyberte Firefox";
+"DefaultBrowserOnboarding.Description3" = "3. Vyberte KARMA";
 
-/* Text for the screenshot of the iOS system settings page for Firefox. */
+/* Text for the screenshot of the iOS system settings page for KARMA. */
 "DefaultBrowserOnboarding.Screenshot" = "Výchozí prohlížeč";
 
-/* Menu option for setting Firefox as default browser. */
+/* Menu option for setting KARMA as default browser. */
 "Settings.DefaultBrowserMenuItem" = "Nastavit jako výchozí prohlížeč";
 

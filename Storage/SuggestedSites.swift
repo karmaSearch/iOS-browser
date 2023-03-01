@@ -13,7 +13,9 @@ open class SuggestedSite: Site {
     let trackingId: Int
     init(data: SuggestedSiteData) {
         self.trackingId = data.trackingId
+        
         super.init(url: data.url, title: data.title, bookmarked: nil)
+        self.icon = Favicon(url: data.faviconUrl)
         self.guid = "default" + data.title // A guid is required in the case the site might become a pinned site
     }
 }

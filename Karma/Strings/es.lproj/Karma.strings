@@ -1,0 +1,19 @@
+/* 
+  Karma.strings
+  Client
+
+  Created by Lilla on 04/08/2022.
+  Copyright © 2022 Mozilla. All rights reserved.
+*/
+"Dock.Push.Title" = "¡Actúa para la biodiversidad!";
+"Dock.Push.Message" = "Haz clic aquí para descubrir cómo usar KARMA en lugar de Safari 💡";
+
+"Menu.NightModeTurnOff.Status" = "Invertir los colores del sitio web";
+"Menu.NoImageModeBlockImages.Status" = "Deshabilitar imágenes en los sitios visitados";
+
+"learnandact_subtitle" = "Nuestra selección para informarse y actuar";
+
+"KARMA Search" = "Buscar con KARMA";
+"remoteTabs" = "Pestañas remotas";
+"openedTabs" = "Pestañas abiertas";
+"bookmarksAndHistory" = "Marcadores e historio";

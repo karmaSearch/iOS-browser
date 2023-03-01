@@ -168,6 +168,12 @@ class HomepageViewController: UIViewController, HomePanel, FeatureFlaggable {
         collectionView.register(LabelButtonHeaderView.self,
                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                                 withReuseIdentifier: LabelButtonHeaderView.cellIdentifier)
+        
+        #if KARMA
+        collectionView.register(LearnAndActHeader.self,
+                                forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+                                withReuseIdentifier: LearnAndActHeader.cellIdentifier)
+        #endif
 
         collectionView.keyboardDismissMode = .onDrag
         collectionView.addGestureRecognizer(longPressRecognizer)
@@ -335,7 +341,18 @@ class HomepageViewController: UIViewController, HomePanel, FeatureFlaggable {
 
         updateStatusBar()
     }
-
+    
+    #if KARMA
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if let sectionViewModel = viewModel.getSectionViewModel(shownSection: indexPath.section) as? LearnAndActViewModel,
+           sectionViewModel.numberOfItemsInSection() == indexPath.row+1,
+           sectionViewModel.hasData {
+            self.viewModel.learnAndActViewModel.loadNewPage()
+        }
+            
+    }
+    #endif
+          
     private func showSiteWithURLHandler(_ url: URL, isGoogleTopSite: Bool = false) {
         let visitType = VisitType.bookmark
         homePanelDelegate?.homePanel(didSelectURL: url, visitType: visitType, isGoogleTopSite: isGoogleTopSite)
@@ -420,11 +437,24 @@ extension HomepageViewController: UICollectionViewDelegate, UICollectionViewData
 
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         guard kind == UICollectionView.elementKindSectionHeader,
-              let headerView = collectionView.dequeueReusableSupplementaryView(
+              let sectionViewModel = viewModel.getSectionViewModel(shownSection: indexPath.section)
+        else { return UICollectionReusableView() }
+        
+        #if KARMA
+        if sectionViewModel.sectionType == .learnAndAct {
+            guard let headerView = collectionView.dequeueReusableSupplementaryView(
+                    ofKind: UICollectionView.elementKindSectionHeader,
+                    withReuseIdentifier: LearnAndActHeader.cellIdentifier,
+                    for: indexPath) as? LearnAndActHeader
+            else { return UICollectionReusableView() }
+            
+            return headerView
+        }
+        #endif
+        guard let headerView = collectionView.dequeueReusableSupplementaryView(
                 ofKind: UICollectionView.elementKindSectionHeader,
                 withReuseIdentifier: LabelButtonHeaderView.cellIdentifier,
-                for: indexPath) as? LabelButtonHeaderView,
-              let sectionViewModel = viewModel.getSectionViewModel(shownSection: indexPath.section)
+                for: indexPath) as? LabelButtonHeaderView
         else { return UICollectionReusableView() }
 
         // Jump back in header specific setup
@@ -575,6 +605,16 @@ private extension HomepageViewController {
         viewModel.customizeButtonViewModel.onTapAction = { [weak self] _ in
             self?.openCustomizeHomeSettings()
         }
+        
+        #if KARMA
+        viewModel.learnAndActViewModel.onTapTileAction = { [weak self] url in
+            self?.showSiteWithURLHandler(url)
+        }
+       
+        viewModel.learnAndActViewModel.onLongPressTileAction = { [weak self] (site, sourceView) in
+            self?.contextMenuHelper.presentContextMenu(for: site, with: sourceView, sectionType: .learnAndAct)
+        }
+        #endif
     }
 
     private func openHistoryHighlightsSearchGroup(item: HighlightItem) {
@@ -763,9 +803,11 @@ extension HomepageViewController: HomepageViewModelDelegate {
             // If the view controller is not visible ignore updates
             guard let self = self else { return }
 
+            let offset = self.collectionView.contentOffset
             self.viewModel.refreshData(for: self.traitCollection)
             self.collectionView.reloadData()
             self.collectionView.collectionViewLayout.invalidateLayout()
+            self.collectionView.setContentOffset(offset, animated: false)
         }
     }
 }

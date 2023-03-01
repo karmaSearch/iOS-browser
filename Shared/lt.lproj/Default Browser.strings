@@ -1,13 +1,13 @@
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Sužinoti kaip";
 
-/* Description for small home tab banner shown that allows user to switch their default browser to Firefox. */
-"DefaultBrowserCard.Description" = "Leiskite saitams iš svetainių, el. laiškų, ir „Messages“ būti automatiškai atvertiems per „Firefox“.";
+/* Description for small home tab banner shown that allows user to switch their default browser to KARMA. */
+"DefaultBrowserCard.Description" = "Leiskite saitams iš svetainių, el. laiškų, ir „Messages“ būti automatiškai atvertiems per „KARMA“.";
 
-/* Title for small home tab banner shown that allows user to switch their default browser to Firefox. */
+/* Title for small home tab banner shown that allows user to switch their default browser to KARMA. */
 "DefaultBrowserCard.Title" = "Pakeiskite numatytąją naršyklę";
 
-/* Button string to open settings that allows user to switch their default browser to Firefox. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserOnboarding.Button" = "Eiti į nuostatas";
 
 /* Description for default browser onboarding card. */
@@ -17,11 +17,11 @@
 "DefaultBrowserOnboarding.Description2" = "2. Bakstelėkite „Numatytoji naršyklė“";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Pasirinkite „Firefox“";
+"DefaultBrowserOnboarding.Description3" = "3. Pasirinkite „KARMA“";
 
-/* Text for the screenshot of the iOS system settings page for Firefox. */
+/* Text for the screenshot of the iOS system settings page for KARMA. */
 "DefaultBrowserOnboarding.Screenshot" = "Numatytoji naršyklė";
 
-/* Menu option for setting Firefox as default browser. */
+/* Menu option for setting KARMA as default browser. */
 "Settings.DefaultBrowserMenuItem" = "Skirti numatytąja naršykle";
 

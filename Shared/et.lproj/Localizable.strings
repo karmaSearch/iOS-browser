@@ -28,7 +28,7 @@
 /* Title for the Jump Back In section. This section allows users to jump back in to a recently viewed tab */
 "ActivityStream.JumpBackIn.SectionTitle" = "Hiljutised kaardid";
 
-/* On the Firefox homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
 "ActivityStream.JumpBackIn.TabGroup.SiteCount" = "Kaarte: %d";
 
 /* A string used to signify the start of the Recently Saved section in Home Screen. */
@@ -124,7 +124,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "Paroolid lekkisid või varastati pärast viimast parooli muutmist. Selle konto kaitsmiseks logi saiti sisse ja muuda oma parool.";
 
-/* Link to monitor.firefox.com to learn more about breached passwords */
+/* Link to monitor.KARMA.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "Rohkem teavet";
 
 /* Leads to a link to the breached website */
@@ -302,7 +302,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "Tegemist võib olla häälestusveaga või ründaja rikkumisega. Jätka ainult siis, kui nõustud võimaliku riskiga.";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "Saidi %@ omanik on oma veebilehe valesti häälestanud. Sinu andmete kaitsmiseks varastamise eest ei loonud Firefox selle veebilehega ühendust.";
+"ErrorPages.CertWarning.Description" = "Saidi %@ omanik on oma veebilehe valesti häälestanud. Sinu andmete kaitsmiseks varastamise eest ei loonud KARMA selle veebilehega ühendust.";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "Seda ühendust ei usaldata";
@@ -322,19 +322,19 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for firefox about:home page in tab history list */
-"Firefox.HomePage.Title" = "Firefoxi avaleht";
+/* Title for KARMA about:home page in tab history list */
+"Firefox.HomePage.Title" = "KARMAi avaleht";
 
-/* A button at bottom of the Firefox homepage that, when clicked, takes users straight to the settings options, where they can customize the Firefox Home page */
+/* A button at bottom of the KARMA homepage that, when clicked, takes users straight to the settings options, where they can customize the KARMA Home page */
 "FirefoxHome.CustomizeHomeButton.Title" = "Kohanda avalehte";
 
-/* At the end of the Pocket section on the Firefox Homepage, this button appears and indicates tapping it will navigate the user to more Pocket Stories. */
+/* At the end of the Pocket section on the KARMA Homepage, this button appears and indicates tapping it will navigate the user to more Pocket Stories. */
 "FirefoxHome.Pocket.DiscoverMore" = "Avasta veel";
 
-/* On each Pocket Stories on the Firefox Homepage, this label appears and indicates the number of minutes to read an article. Minutes should be abbreviated due to space constraints. %d represents the number of minutes */
+/* On each Pocket Stories on the KARMA Homepage, this label appears and indicates the number of minutes to read an article. Minutes should be abbreviated due to space constraints. %d represents the number of minutes */
 "FirefoxHome.Pocket.Minutes.v99" = "%d min";
 
-/* This is the title of the Pocket section on Firefox Homepage. */
+/* This is the title of the Pocket section on KARMA Homepage. */
 "FirefoxHome.Pocket.SectionTitle" = "Mõtlema panevad lood";
 
 /* When a user taps and holds on an item from the Recently Visited section, this label will appear indicating the option to remove that item. */
@@ -343,22 +343,22 @@
 /* Label showing how many sites there is in a search group. %d represents a number */
 "FirefoxHomepage.Common.SitesCount.v101" = "Saite: %d";
 
-/* The title for the Settings context menu action for sponsored tiles in the Firefox home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
+/* The title for the Settings context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
 "FirefoxHomepage.ContextualMenu.Settings.v101" = "Sätted";
 
-/* The title for the Sponsored Content context menu action for sponsored tiles in the Firefox home page shortcuts section. Clicking this brings the users to a support page where users can learn more about Sponsored content and how it works. */
+/* The title for the Sponsored Content context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to a support page where users can learn more about Sponsored content and how it works. */
 "FirefoxHomepage.ContextualMenu.SponsoredContent.v101" = "Meie sponsijatest ja sinu privaatsusest";
 
-/* This string will show under a shortcuts tile on the firefox home page, indicating that the tile is a sponsored tile. Space is limited, please keep as short as possible. */
+/* This string will show under a shortcuts tile on the KARMA home page, indicating that the tile is a sponsored tile. Space is limited, please keep as short as possible. */
 "FirefoxHomepage.Shortcuts.Sponsored.v100" = "Sponsitud";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "Edasi";
 
-/* Settings section title for Firefox Account */
-"FxA.FirefoxAccount" = "Firefoxi konto";
+/* Settings section title for KARMA Account */
+"FxA.FirefoxAccount" = "KARMAi konto";
 
-/* Button label to go to Firefox Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "Halda kontot ja seadmeid";
 
 /* Label when no internet is present */
@@ -376,7 +376,7 @@
 /* FxA sign in view email login button */
 "fxa.signin.use-email-instead" = "Kasuta selle asemel e-posti aadressi";
 
-/* Button label to Sync your Firefox Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "Sünkroniseeri kohe";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
@@ -400,8 +400,8 @@
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
 "FxAPush_DeviceDisconnected_UnknownDevice_body" = "Seade on Firefox Syncist lahti ühendatud";
 
-/* On the firefox homepage, the string read by the voice over prompt for accessibility, for the button which changes the wallpaper */
-"FxHomepage.Wallpaper.ButtonLabel.v99" = "Firefoxi logo - taustapildi muutmise nupp.";
+/* On the KARMA homepage, the string read by the voice over prompt for accessibility, for the button which changes the wallpaper */
+"FxHomepage.Wallpaper.ButtonLabel.v99" = "KARMAi logo - taustapildi muutmise nupp.";
 
 /* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
 "Help" = "Abi";
@@ -598,10 +598,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "Hele";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "Laadi algne leht";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "Sisu laadimine…";
 
 /* Authentication prompt log in button */
@@ -629,7 +629,7 @@
 "Logins.WelcomeView.Tagline" = "Võta oma paroolid kõikjale kaasa";
 
 /* Label displaying welcome view title */
-"Logins.WelcomeView.Title2" = "Täida Firefoxi paroolid automaatselt";
+"Logins.WelcomeView.Title2" = "Täida KARMAi paroolid automaatselt";
 
 /* Title of the big blue button to enable AutoFill */
 "Logins.WelcomeView.TurnOnAutoFill" = "Lülita automaatne täitmine sisse";
@@ -662,7 +662,7 @@
 "LoginsList.LoginsListSearchPlaceholder" = "Filtreeri";
 
 /* Label shown when there are no logins to list */
-"LoginsList.NoLoginsFound.Description" = "Salvestatud kasutajatunnuseid kuvatakse siin. Kui salvestasid oma kasutajatunnused teises seadmes olevasse Firefoxi, siis logi sisse oma Firefoxi kontosse.";
+"LoginsList.NoLoginsFound.Description" = "Salvestatud kasutajatunnuseid kuvatakse siin. Kui salvestasid oma kasutajatunnused teises seadmes olevasse KARMAi, siis logi sisse oma KARMAi kontosse.";
 
 /* Label shown when there are no logins saved */
 "LoginsList.NoLoginsFound.Title" = "Kasutajakontosid ei leitud";
@@ -686,7 +686,7 @@
 "LoginsList.Title" = "SALVESTATUD KASUTAJAKONTOD";
 
 /* Restore Tabs Prompt Description */
-"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "Paistab, et Firefox jooksis varem kokku. Kas soovid oma kaardid taastada?";
+"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "Paistab, et KARMA jooksis varem kokku. Kas soovid oma kaardid taastada?";
 
 /* Title for the button that marks a reading list item as read */
 "Mark as Read" = "Märgi loetuks";
@@ -724,7 +724,7 @@
 /* Toast displayed to user after copy url pressed. */
 "Menu.CopyURL.Confirm" = "URL kopeeriti vahemällu";
 
-/* Label for the customize homepage button in the menu page. Pressing this button takes users to the settings options, where they can customize the Firefox Home page */
+/* Label for the customize homepage button in the menu page. Pressing this button takes users to the settings options, where they can customize the KARMA Home page */
 "Menu.CustomizeHomePage.v99" = "Kohanda avalehte";
 
 /* Label for the button, displayed in the menu, takes you to to Downloads screen when pressed. */
@@ -862,11 +862,11 @@
 /* Restore Tabs Affirmative Action */
 "Okay" = "Olgu";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the title for the button, on the bottom of the card, used to get back to browsing on Firefox by dismissing the onboarding card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the button, on the bottom of the card, used to get back to browsing on KARMA by dismissing the onboarding card */
 "Onboarding.WhatsNew.Button.Title" = "Alusta veebilehitsemist";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Firefox crashed" = "Oih! Firefox jooksis kokku";
+"Oops! Firefox crashed" = "Oih! KARMA jooksis kokku";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "Artiklite avamiseks lugemisrežiimis puuduta raamatu ikooni, kui see ilmub aadressiribale.";
@@ -877,8 +877,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "Avatud kaardid";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app. */
-"OpenURL.Error.Message" = "Firefox ei saa seda lehte avada, sest sellel on vigane aadress.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
+"OpenURL.Error.Message" = "KARMA ei saa seda lehte avada, sest sellel on vigane aadress.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "Lehe avamine pole võimalik";
@@ -890,7 +890,7 @@
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "See võimaldab salvestada pildi Camera Rolli.";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Firefox soovib ligipääsu sinu piltidele";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "KARMA soovib ligipääsu sinu piltidele";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "Sulge";
@@ -898,7 +898,7 @@
 /* Privacy section title */
 "Privacy" = "Privaatsus";
 
-/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "Privaatsusreeglid";
 
 /* This is the value for a label that indicates if a user is on an unencrypted website. */
@@ -910,7 +910,7 @@
 /* Title for quick-search engines settings section. */
 "Quick-Search Engines" = "Kiirotsingumootorid";
 
-/* A label indicating the action that a user can rate the Firefox app in the App store. */
+/* A label indicating the action that a user can rate the KARMA app in the App store. */
 "Ratings.Settings.RateOnAppStore" = "Hinda App Store'is";
 
 /* Accessibility label for read article in reading list. It's a past participle - functions as an adjective. */
@@ -971,7 +971,7 @@
 "ScanQRCode.InvalidDataError.Message" = "Andmed on vigased";
 
 /* Text of the prompt to setup the camera authorization for the Scan QR Code feature. */
-"ScanQRCode.PermissionError.Message.v100" = "Ava oma seadmes ‘Settings’ > ‘Firefox’. Seejärel luba kaamera ligipääs.";
+"ScanQRCode.PermissionError.Message.v100" = "Ava oma seadmes ‘Settings’ > ‘KARMA’. Seejärel luba kaamera ligipääs.";
 
 /* Title for the QR code scanner view. */
 "ScanQRCode.View.Title" = "QR-koodi skannimine";
@@ -1046,13 +1046,13 @@
 "SendTo.NavBar.Title" = "Kaardi saatmine";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "Sul ei ole selle Firefoxi kontoga teisi sünkroniseeritavaid seadmeid ühendatud.";
+"SendTo.NoDevicesFound.Message" = "Sul ei ole selle KARMAi kontoga teisi sünkroniseeritavaid seadmeid ühendatud.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "Jätkamiseks ava Firefox, mine sätetesse ja logi sisse.";
+"SendTo.NotSignedIn.Message" = "Jätkamiseks ava KARMA, mine sätetesse ja logi sisse.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "Sa pole oma Firefoxi kontosse sisse logitud.";
+"SendTo.NotSignedIn.Title" = "Sa pole oma KARMAi kontosse sisse logitud.";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "Saada";
@@ -1133,7 +1133,7 @@
 "Settings.DataManagement.Title" = "Andmehaldus";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "Firefox lõpetab sinu kontoga sünkroniseerimise, aga ei kustuta lehitsemise andmeid sellest seadmest.";
+"Settings.Disconnect.Body" = "KARMA lõpetab sinu kontoga sünkroniseerimise, aga ei kustuta lehitsemise andmeid sellest seadmest.";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "Katkesta ühendus Synciga";
@@ -1192,11 +1192,11 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "Seadme nimi";
 
-/* Label used as a section title in the Firefox Accounts Settings screen. */
+/* Label used as a section title in the KARMA Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "Synci sätted";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "Firefoxi konto";
+"Settings.FxA.Title" = "KARMAi konto";
 
 /* General settings section title */
 "Settings.General.SectionName" = "Üldine";
@@ -1204,79 +1204,79 @@
 /* This is the description below the settings section located in the menu under customize current homepage. It describes what the options in the section are for. */
 "Settings.Home.Current.Description.v101" = "Vali, mida kuvatakse avalehena.";
 
-/* In the settings menu, on the Firefox homepage customization section, this is the description below the section, describing what the options in the section are for. */
-"Settings.Home.Option.Description.v101" = "Vali Firefoxi avalehel sisalduv.";
+/* In the settings menu, on the KARMA homepage customization section, this is the description below the section, describing what the options in the section are for. */
+"Settings.Home.Option.Description.v101" = "Vali KARMAi avalehel sisalduv.";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
 "Settings.Home.Option.JumpBackIn" = "Hiljutised kaardid";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the KARMA homepage on or off */
 "Settings.Home.Option.Pocket" = "Pocketi poolt soovitatud";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentlySaved" = "Hiljuti salvestatud";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
 "Settings.Home.Option.RecentlyVisited" = "Hiljuti külastatud";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the KARMA homepage on or off */
 "Settings.Home.Option.Shortcuts" = "Otseteed";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage after four hours of inactivity. */
 "Settings.Home.Option.StartAtHome.AfterFourHours" = "Avaleht pärast neljatunnist tegevusetust";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Always" = "Avaleht";
 
 /* In the settings menu, in the Start at Home customization options, this is text that appears below the section, describing what the section settings do. */
-"Settings.Home.Option.StartAtHome.Description" = "Vali, mida näed Firefoxi naastes.";
+"Settings.Home.Option.StartAtHome.Description" = "Vali, mida näed KARMAi naastes.";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Never" = "Viimane kaart";
 
-/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Firefox Homepage. */
+/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the KARMA Homepage. */
 "Settings.Home.Option.StartAtHome.Title" = "Avatav vaade";
 
-/* In the settings menu, this is the title of the Firefox Homepage customization settings section */
+/* In the settings menu, this is the title of the KARMA Homepage customization settings section */
 "Settings.Home.Option.Title.v101" = "Avalehele kaasatakse";
 
-/* In the settings menu, on the Firefox homepage customization section, this is the title for the option that allows users to access the wallpaper settings for the application. */
+/* In the settings menu, on the KARMA homepage customization section, this is the title for the option that allows users to access the wallpaper settings for the application. */
 "Settings.Home.Option.Wallpaper" = "Taustapilt";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string for the amethyst firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.AmethystWallpaper.v99" = "Firefoxi taustapilt, ametüsti muster.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the accessibility string for the amethyst KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.AmethystWallpaper.v99" = "KARMAi taustapilt, ametüsti muster.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the beach hills firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.BeachHillsWallpaper.v100" = "Firefoxi taustapilt, rannamägede muster.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title accessibility string for the beach hills KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.BeachHillsWallpaper.v100" = "KARMAi taustapilt, rannamägede muster.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the cerulean firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.CeruleanWallpaper.v99" = "Firefoxi taustapilt, helesinine muster.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title accessibility string for the cerulean KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.CeruleanWallpaper.v99" = "KARMAi taustapilt, helesinine muster.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string for the default wallpaper. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the accessibility string for the default wallpaper. */
 "Settings.Home.Option.Wallpaper.Accessibility.DefaultWallpaper.v99" = "Vaikimis selge taustapilt.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the sunrise firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.SunriseWallpaper.v99" = "Firefoxi taustapilt, päikesetõusu muster.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title accessibility string for the sunrise KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.SunriseWallpaper.v99" = "KARMAi taustapilt, päikesetõusu muster.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string of the toggle for turning wallpaper cycling shortcut on or off on the homepage. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the accessibility string of the toggle for turning wallpaper cycling shortcut on or off on the homepage. */
 "Settings.Home.Option.Wallpaper.Accessibility.ToggleButton" = "Avalehe taustapilti ringlemise lüliti";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the twilight hills firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.TwilightHillsWallpaper.v100" = "Firefoxi taustapilt, hämariku mägede muster.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title accessibility string for the twilight hills KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.TwilightHillsWallpaper.v100" = "KARMAi taustapilt, hämariku mägede muster.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of the section that allows users to change the wallpaper settings for the application. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title of the section that allows users to change the wallpaper settings for the application. */
 "Settings.Home.Option.Wallpaper.CollectionTitle" = "AVAKUVA";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the string titling the switch button's function, which allows a user to toggle wallpaper switching from the homepage logo on or off. */
-"Settings.Home.Option.Wallpaper.SwitchTitle.v99" = "Taustapilti saab muuta Firefoxi logo puudutades";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the string titling the switch button's function, which allows a user to toggle wallpaper switching from the homepage logo on or off. */
+"Settings.Home.Option.Wallpaper.SwitchTitle.v99" = "Taustapilti saab muuta KARMAi logo puudutades";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of that screen, which allows users to change the wallpaper settings for the application. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title of that screen, which allows users to change the wallpaper settings for the application. */
 "Settings.Home.Option.Wallpaper.Title" = "Taustapilt";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of toast that comes up when the user changes wallpaper, which lets them know that the wallpaper has been updated. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title of toast that comes up when the user changes wallpaper, which lets them know that the wallpaper has been updated. */
 "Settings.Home.Option.Wallpaper.UpdatedToast" = "Taustpilt uuendatud!";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of the button found on the toast that comes up once the user changes wallpaper, and allows users to dismiss the settings page. In this case, consider View as a verb - the action of dismissing settings and seeing the wallpaper. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title of the button found on the toast that comes up once the user changes wallpaper, and allows users to dismiss the settings page. In this case, consider View as a verb - the action of dismissing settings and seeing the wallpaper. */
 "Settings.Home.Option.Wallpaper.UpdatedToastButton" = "Vaata";
 
 /* Label used as an item in Settings. When touched it will open a dialog to configure the home page and its uses. */
@@ -1318,8 +1318,8 @@
 /* Option in settings to show a blank page when you open a new tab */
 "Settings.NewTab.Option.BlankPage" = "Tühi leht";
 
-/* Option in settings to show Firefox Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "Firefoxi avaleht";
+/* Option in settings to show KARMA Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "KARMAi avaleht";
 
 /* Option in settings to show your homepage when you open a new tab */
 "Settings.NewTab.Option.HomePage" = "Avaleht";
@@ -1340,7 +1340,7 @@
 "Settings.NoImageModeBlockImages.Label.v99" = "Pildid blokitakse";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "Firefoxi avamisel";
+"Settings.OfferClipboardBar.Status" = "KARMAi avamisel";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "Pakutakse kopeeritud linkide avamist";
@@ -1364,7 +1364,7 @@
 "Settings.SendUsage.Link" = "Rohkem teavet.";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "Mozilla püüab koguda ainult seda, mida vajame, et teha Firefox kõigi jaoks paremaks.";
+"Settings.SendUsage.Message" = "Mozilla püüab koguda ainult seda, mida vajame, et teha KARMA kõigi jaoks paremaks.";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "Saadetakse kasutusandmeid";
@@ -1382,7 +1382,7 @@
 "Settings.Siri.OpenTabShortcut" = "Ava uus kaart";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "Kasuta Siri otseteid, et avada Firefox kiiresti";
+"Settings.Siri.SectionDescription" = "Kasuta Siri otseteid, et avada KARMA kiiresti";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "Siri otseteed";
@@ -1391,7 +1391,7 @@
 "Settings.Studies.Toggle.Link" = "Rohkem teavet.";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "Firefox võib aegajalt paigaldada ja käivitada uuringuid.";
+"Settings.Studies.Toggle.Message" = "KARMA võib aegajalt paigaldada ja käivitada uuringuid.";
 
 /* Label used as a toggle item in Settings. When this is off, the user is opting out of all studies. */
 "Settings.Studies.Toggle.Title" = "Uuringud";
@@ -1405,7 +1405,7 @@
 /* In the settings menu, in the Tabs customization section, this is the title for the setting that toggles the Tab Groups feature - where tabs from related searches are grouped - on or off */
 "Settings.Tabs.CustomizeTabsSection.TabGroups" = "Kaartide grupid";
 
-/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from firefox hompage */
+/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from KARMA hompage */
 "Settings.Tabs.CustomizeTabsSection.Title" = "Kohanda kaartide vaadet";
 
 /* In the settings menu, this is the title for the Tabs customization section option */
@@ -1477,29 +1477,29 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "Saidi andmed";
 
-/* Action label on share extension to add page to the Firefox reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "Lisa lugemisnimekirja";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "Lisatud lugemisnimekirja";
 
-/* Action label on share extension to bookmark the page in Firefox. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "Lisa see veebileht järjehoidjatesse";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "Järjehoidjatesse lisatud";
 
-/* Action label on share extension to load the page in Firefox when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "Laadi taustal";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "Laaditakse Firefoxis";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "Laaditakse KARMAis";
 
-/* Action label on share extension to immediately open page in Firefox. */
-"ShareExtension.OpenInFirefoxAction.Title" = "Ava Firefoxis";
+/* Action label on share extension to immediately open page in KARMA. */
+"ShareExtension.OpenInFirefoxAction.Title" = "Ava KARMAis";
 
-/* Action label on share extension to search for the selected text in Firefox. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Otsi Firefoxis";
+/* Action label on share extension to search for the selected text in KARMA. */
+"ShareExtension.SeachInFirefoxAction.Title" = "Otsi KARMAis";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "Kuvatakse otsingusoovitusi";
@@ -1573,7 +1573,7 @@
 /* The title for the tab tray */
 "TabTray.Title" = "Avatud kaardid";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "The page could not be displayed in Reader View." = "Lehte polnud võimalik lugemisvaates kuvada.";
 
 /* Error message in the remote tabs panel */
@@ -1625,7 +1625,7 @@
 "UIMenuItem.PasteGo" = "Aseta ja mine";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "Otsi Firefoxiga";
+"UIMenuItem.SearchWithFirefox" = "Otsi KARMAiga";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "lugemata";
@@ -1655,7 +1655,7 @@
 "Yesterday" = "Eile";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Firefox on your other devices." = "Sul pole teistes seadmetes olevates Firefoxides kaarte avatud.";
+"You don’t have any tabs open in Firefox on your other devices." = "Sul pole teistes seadmetes olevates KARMAides kaarte avatud.";
 
 /* Your Rights settings section title */
 "Your Rights" = "Sinu õigused";

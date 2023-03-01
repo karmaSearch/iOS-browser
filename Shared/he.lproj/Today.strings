@@ -4,8 +4,8 @@
 /* Close Private Tabs */
 "TodayWidget.ClosePrivateTabsLabelV2" = "סגירת לשוניות פרטיות";
 
-/* Description for medium size widget to add Firefox Shortcut to home screen */
-"TodayWidget.FirefoxShortcutGalleryDescription" = "הוספת קיצורי דרך של Firefox למסך הבית שלך.";
+/* Description for medium size widget to add KARMA Shortcut to home screen */
+"TodayWidget.FirefoxShortcutGalleryDescription"= "הוספת קיצורי דרך של KARMA למסך הבית שלך.";
 
 /* Go to link pasted on the clipboard */
 "TodayWidget.GoToCopiedLinkLabelV1" = "מעבר לקישור שהועתק";
@@ -22,20 +22,20 @@
 /* Label that is shown when there are no tabs opened in tab tray i.e. Empty State */
 "TodayWidget.NoOpenTabsLabel" = "אין לשוניות פתוחות.";
 
-/* Open Firefox when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenFirefoxLabel" = "פתיחת Firefox";
+/* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
+"TodayWidget.OpenFirefoxLabel" = "פתיחת KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "חיפוש פרטי";
 
 /* Description for small size widget to add it to home screen */
-"TodayWidget.QuickActionGalleryDescription" = "ניתן להוסיף קיצור דרך ל־Firefox למסך הבית שלך. לאחר הוספת הוידג’ט, יש ללחוץ ולהחזיק כדי לערוך אותו ולבחור בקיצור דרך שונה.";
+"TodayWidget.QuickActionGalleryDescription" = "ניתן להוסיף קיצור דרך ל־KARMA למסך הבית שלך. לאחר הוספת הוידג’ט, יש ללחוץ ולהחזיק כדי לערוך אותו ולבחור בקיצור דרך שונה.";
 
 /* Quick Actions title when widget enters edit mode */
 "TodayWidget.QuickActionsGalleryTitle" = "פעולות מהירות";
 
-/* Firefox shortcuts title when widget enters edit mode. Do not translate the word Firefox. */
-"TodayWidget.QuickActionsGalleryTitleV2" = "קיצורי דרך של Firefox";
+/* KARMA shortcuts title when widget enters edit mode. Do not translate the word KARMA. */
+"TodayWidget.QuickActionsGalleryTitleV2" = "קיצורי דרך של KARMA";
 
 /* Description for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryDescriptionV2" = "הוספת קיצורי דרך ללשוניות הפתוחות שלך.";
@@ -43,18 +43,18 @@
 /* Title for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryTitle" = "תצוגה מהירה";
 
-/* Search in Firefox. Do not translate the word Firefox */
-"TodayWidget.SearchInFirefoxV2" = "חיפוש ב־Firefox";
+/* Search in KARMA. Do not translate the word KARMA */
+"TodayWidget.SearchInFirefoxV2" = "חיפוש ב־KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "חיפוש בלשונית פרטית";
 
-/* Description for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Description for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryDescription" = "הוספת קיצורי דרך לאתרים שבהם ביקרת לאחרונה או בתדירות גבוהה.";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "אתרים מובילים";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitleV2" = "קיצורי דרך לאתרים";
 

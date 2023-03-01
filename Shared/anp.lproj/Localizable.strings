@@ -103,7 +103,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "जब तोय अंतिम बार पासवर्ड बदललो रहे ते पासवर्ड लीक या चोरी भे गेल रहै| खाता के सुरक्षा खातिर साईट मे लॉग इन करोॅ आरू पासवर्ड बदलोॅ |";
 
-/* Link to monitor.firefox.com to learn more about breached passwords */
+/* Link to monitor.KARMA.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "बेसी जानकारी";
 
 /* Leads to a link to the breached website */
@@ -280,32 +280,32 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for firefox about:home page in tab history list */
-"Firefox.HomePage.Title" = "Firefox होम पेज";
+/* Title for KARMA about:home page in tab history list */
+"Firefox.HomePage.Title" = "KARMA होम पेज";
 
 /* When a user taps and holds on an item from the Recently Visited section, this label will appear indicating the option to remove that item. */
 "FirefoxHome.RecentHistory.Remove" = "हटैइयै";
 
-/* The title for the Settings context menu action for sponsored tiles in the Firefox home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
+/* The title for the Settings context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
 "FirefoxHomepage.ContextualMenu.Settings.v101" = "सेटिंग्स";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "आगू बढ़ावोॅ";
 
-/* Settings section title for Firefox Account */
-"FxA.FirefoxAccount" = "Firefox खाता";
+/* Settings section title for KARMA Account */
+"FxA.FirefoxAccount" = "KARMA खाता";
 
-/* Button label to go to Firefox Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "खाता आरू उपकरण प्रबंधित करोॅ";
 
 /* Label when no internet is present */
 "FxA.NoInternetConnection" = "इंटरनेट कनेक्शन नै छै";
 
-/* Button label to Sync your Firefox Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "अब सिंक करोॅ";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "Firefox सिंक %@ में जोड़ देल गेलै.";
+"FxAPush_DeviceConnected_body" = "KARMA सिंक %@ में जोड़ देल गेलै.";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "सिंक जुड़ गेल";
@@ -314,7 +314,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ सफलतापूर्ण डिसकनेक्ट करलो गेल।";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "कंप्यूटर रो Firefox सिंक सेॅ पूरी तरह से डिसकनेक्ट भे गेल";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "कंप्यूटर रो KARMA सिंक सेॅ पूरी तरह से डिसकनेक्ट भे गेल";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "सिंक डिसकनेक्ट भेल";
@@ -323,7 +323,7 @@
 "FxAPush_DeviceDisconnected_title" = "सिंक डिसकनेक्ट भेल";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "ई उपकरण Firefox सिंक सेॅ डिसकनेक्ट होय गेल छै";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "ई उपकरण KARMA सिंक सेॅ डिसकनेक्ट होय गेल छै";
 
 /* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
 "Help" = "मदद";
@@ -353,7 +353,7 @@
 "HistoryPanel.EmptySyncedTabsPanelNotSignedInState.Description" = "आपन दोसरो उपकरणों से टैब की सूची देखै ले साइन इन करो।";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox सिंक";
+"HistoryPanel.EmptySyncedTabsState.Title" = "KARMA सिंक";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "इतिहास";
@@ -526,7 +526,7 @@
 /* Privacy section title */
 "Privacy" = "गोपनीयता";
 
-/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "गोपनीयता नीति";
 
 /* Accessibility label for read article in reading list. It's a past participle - functions as an adjective. */
@@ -602,7 +602,7 @@
 "SendTo.SendAction.Text" = "भेजोॅ";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "Firefox सिंक";
+"SentTab.NoTabArrivingNotification.title" = "KARMA सिंक";
 
 /* Title in the settings view controller title bar */
 "Settings" = "सेटिंग्स";
@@ -656,7 +656,7 @@
 "Settings.FxA.DeviceName" = "डिवाइस रो नाम";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "Firefox खाता";
+"Settings.FxA.Title" = "KARMA खाता";
 
 /* General settings section title */
 "Settings.General.SectionName" = "सामान्य";
@@ -673,8 +673,8 @@
 /* Option in settings to show a blank page when you open a new tab */
 "Settings.NewTab.Option.BlankPage" = "खाली पेज";
 
-/* Option in settings to show Firefox Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "Firefox होम";
+/* Option in settings to show KARMA Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "KARMA होम";
 
 /* Option in settings to show your homepage when you open a new tab */
 "Settings.NewTab.Option.HomePage" = "होमपेज";
@@ -704,7 +704,7 @@
 "Settings.SendUsage.Link" = "बेसी जानकारी";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "मोजिला खलि ओ चीज के जमा करै छै जकरा Firefox मे सभक लेली सुधार करै के आवश्यक्ता छै.";
+"Settings.SendUsage.Message" = "मोजिला खलि ओ चीज के जमा करै छै जकरा KARMA मे सभक लेली सुधार करै के आवश्यक्ता छै.";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "उपयोग डेटा भेजियै";
@@ -730,26 +730,26 @@
 /* Description of the confirmation dialog shown when a user tries to clear their private data. */
 "Settings.WebsiteData.ConfirmPrompt" = "इ क्रिया आपनों वेबसाइट डेटा के साफ़ कैर देतै। जेकरा तू फेनु पाए नै सकै छोॅ";
 
-/* Action label on share extension to add page to the Firefox reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "पठन सूची में जोड़ियै";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "पठन सूची रो जोड़लोॅ गेल";
 
-/* Action label on share extension to bookmark the page in Firefox. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "पेज रो बुकमार्क करोॅ";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "बुकमार्कड";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "Firefox में लोड भे रहलो छै";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "KARMA में लोड भे रहलो छै";
 
-/* Action label on share extension to immediately open page in Firefox. */
-"ShareExtension.OpenInFirefoxAction.Title" = "Firefox में खोलियै";
+/* Action label on share extension to immediately open page in KARMA. */
+"ShareExtension.OpenInFirefoxAction.Title" = "KARMA में खोलियै";
 
-/* Action label on share extension to search for the selected text in Firefox. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Firefox में खोजियै";
+/* Action label on share extension to search for the selected text in KARMA. */
+"ShareExtension.SeachInFirefoxAction.Title" = "KARMA में खोजियै";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "खोज सुझाव दिखाबियै";
@@ -809,7 +809,7 @@
 "UIMenuItem.PasteGo" = "पेस्ट आरु गो";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "Firefox सेॅ खोजोॅ";
+"UIMenuItem.SearchWithFirefox" = "KARMA सेॅ खोजोॅ";
 
 /* Username textbox in Authentication prompt */
 "Username" = "यूजरनाम";

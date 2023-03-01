@@ -97,7 +97,7 @@
 /* Describes the date on which the breach occurred */
 "BreachAlerts.BreachDate" = "Бу югалту килеп чыккан вакыт";
 
-/* Link to monitor.firefox.com to learn more about breached passwords */
+/* Link to monitor.KARMA.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "Күбрәк белү";
 
 /* Leads to a link to the breached website */
@@ -277,16 +277,16 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for firefox about:home page in tab history list */
-"Firefox.HomePage.Title" = "Firefox баш бит";
+/* Title for KARMA about:home page in tab history list */
+"Firefox.HomePage.Title" = "KARMA баш бит";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "Алга";
 
-/* Settings section title for Firefox Account */
-"FxA.FirefoxAccount" = "Firefox Хисабы";
+/* Settings section title for KARMA Account */
+"FxA.FirefoxAccount" = "KARMA Хисабы";
 
-/* Button label to go to Firefox Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "Хисап һәм җиһазлар белән идарә итү";
 
 /* Label when no internet is present */
@@ -304,11 +304,11 @@
 /* FxA sign in view email login button */
 "fxa.signin.use-email-instead" = "Моның урынына эл. почта куллану";
 
-/* Button label to Sync your Firefox Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "Хәзер синхронлау";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "Firefox Синхронлау яңа җиһазга тоташтырылды: %@";
+"FxAPush_DeviceConnected_body" = "KARMA Синхронлау яңа җиһазга тоташтырылды: %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Синхронлау тоташтырылды";
@@ -317,7 +317,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ уңышлы өзелде.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Бу җиһаз Firefox синхронлау хезмәтеннән өзелде.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Бу җиһаз KARMA синхронлау хезмәтеннән өзелде.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Синхронлау тоташмаган";
@@ -326,7 +326,7 @@
 "FxAPush_DeviceDisconnected_title" = "Синхронлау тоташмаган";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Җиһаз Firefox синхронлау хезмәтеннән өзелде";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Җиһаз KARMA синхронлау хезмәтеннән өзелде";
 
 /* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
 "Help" = "Ярдәм";
@@ -481,10 +481,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "Ачык";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "Башлангыч битне йөкләү";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "Эчтәлекне йөкләү…";
 
 /* Authentication prompt log in button */
@@ -524,7 +524,7 @@
 "LoginsList.Title" = "САКЛАНГАН ЛОГИННАР";
 
 /* Restore Tabs Prompt Description */
-"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "Моңарчы Firefox ватылып алды ахрысы. Табларыгыз яңадан торгызылсынмы?";
+"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "Моңарчы KARMA ватылып алды ахрысы. Табларыгыз яңадан торгызылсынмы?";
 
 /* Title for the button that marks a reading list item as read */
 "Mark as Read" = "Укылган дип билгеләү";
@@ -611,7 +611,7 @@
 "Okay" = "Ярар";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Firefox crashed" = "Абау! Firefox ватылды";
+"Oops! Firefox crashed" = "Абау! KARMA ватылды";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "Мәкаләләрне уку режимында ачу өчен, исем юлында китап тамгачыгы пәйда булгач, аңа басыгыз.";
@@ -622,8 +622,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "Ачык таблар";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app. */
-"OpenURL.Error.Message" = "Firefox бу битне ача алмый, чөнки аның адресы яраксыз.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
+"OpenURL.Error.Message" = "KARMA бу битне ача алмый, чөнки аның адресы яраксыз.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "Битне ачып булмый";
@@ -635,7 +635,7 @@
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "Бу Сезгә рәсемне фото-галереягә сакларга мөмкинлек бирә.";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Firefox сурәтләрегезгә ирешергә тели";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "KARMA сурәтләрегезгә ирешергә тели";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "Ябу";
@@ -643,7 +643,7 @@
 /* Privacy section title */
 "Privacy" = "Хосусыйлык";
 
-/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "Хосусыйлык сәясәте";
 
 /* Title for quick-search engines settings section. */
@@ -773,10 +773,10 @@
 "SendTo.NavBar.Title" = "Табны җибәрү";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "Зинһар, дәвам итү өчен Firefox-ны ачып, көйләүләргә күчегез һәм керегез.";
+"SendTo.NotSignedIn.Message" = "Зинһар, дәвам итү өчен KARMA-ны ачып, көйләүләргә күчегез һәм керегез.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "Сез Firefox Хисабыгызга кермәгәнсез.";
+"SendTo.NotSignedIn.Title" = "Сез KARMA Хисабыгызга кермәгәнсез.";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "Җибәрү";
@@ -854,7 +854,7 @@
 "Settings.DataManagement.Title" = "Мәгълүмат белән идарә итү";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "Firefox хисабыгыз белән синхронлауны туктатачак, ләкин бу җиһаздагы гизү мәгълүматларының берсен дә бетермәячәк.";
+"Settings.Disconnect.Body" = "KARMA хисабыгыз белән синхронлауны туктатачак, ләкин бу җиһаздагы гизү мәгълүматларының берсен дә бетермәячәк.";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "Синхронлауны өзү";
@@ -910,43 +910,43 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "Җиһаз исеме";
 
-/* Label used as a section title in the Firefox Accounts Settings screen. */
+/* Label used as a section title in the KARMA Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "Синхронлау көйләүләре";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "Firefox Хисабы";
+"Settings.FxA.Title" = "KARMA Хисабы";
 
 /* General settings section title */
 "Settings.General.SectionName" = "Гомуми";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
 "Settings.Home.Option.JumpBackIn" = "Кире кайту";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the KARMA homepage on or off */
 "Settings.Home.Option.Pocket" = "Pocket тәкъдим итә";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentlySaved" = "Күптән түгел сакланган";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
 "Settings.Home.Option.RecentlyVisited" = "Күптән түгел каралган";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the KARMA homepage on or off */
 "Settings.Home.Option.Shortcuts" = "Ярлыклар";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage after four hours of inactivity. */
 "Settings.Home.Option.StartAtHome.AfterFourHours" = "Дүрт сәгать хәрәкәтсезлектән соң баш бит";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Always" = "Баш бит";
 
 /* In the settings menu, in the Start at Home customization options, this is text that appears below the section, describing what the section settings do. */
-"Settings.Home.Option.StartAtHome.Description" = "Firefox-ка кире кайтканда нәрсә күрәчәгегезне сайлагыз.";
+"Settings.Home.Option.StartAtHome.Description" = "KARMA-ка кире кайтканда нәрсә күрәчәгегезне сайлагыз.";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Never" = "Соңгы таб";
 
-/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Firefox Homepage. */
+/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the KARMA Homepage. */
 "Settings.Home.Option.StartAtHome.Title" = "Башлангыч экран";
 
 /* Label used as an item in Settings. When touched it will open a dialog to configure the home page and its uses. */
@@ -967,8 +967,8 @@
 /* Option in settings to show a blank page when you open a new tab */
 "Settings.NewTab.Option.BlankPage" = "Буш бит ";
 
-/* Option in settings to show Firefox Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "Firefox баш бит";
+/* Option in settings to show KARMA Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "KARMA баш бит";
 
 /* Option in settings to show your homepage when you open a new tab */
 "Settings.NewTab.Option.HomePage" = "Баш бит";
@@ -986,7 +986,7 @@
 "Settings.NewTab.TopSectionNameFooter" = "Яңа табны ачканда нәрсә йөкләргә икәнен сайлагыз";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "Firefox ачылганда";
+"Settings.OfferClipboardBar.Status" = "KARMA ачылганда";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "Күчереп алынган сылтамаларны ачарга тәкъдим итү";
@@ -1010,7 +1010,7 @@
 "Settings.SendUsage.Link" = "Күбрәк белү.";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "Mozilla, Firefox'ны һәркемгә дә тәкъдим итү һәм яхшырту өчен кирәкле мәгълүматларны гына җыярга тырыша.";
+"Settings.SendUsage.Message" = "Mozilla, KARMA'ны һәркемгә дә тәкъдим итү һәм яхшырту өчен кирәкле мәгълүматларны гына җыярга тырыша.";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "Куллану мәгълүматларын җибәрү";
@@ -1028,13 +1028,13 @@
 "Settings.Siri.OpenTabShortcut" = "Яңа табны ачу";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "Firefox-ны Siri аша тиз ачу өчен Siri ярлыкларын кулланыгыз";
+"Settings.Siri.SectionDescription" = "KARMA-ны Siri аша тиз ачу өчен Siri ярлыкларын кулланыгыз";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "Siri ярлыклары";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "Firefox ара-тирә тикшеренүләр урнаштырырга һәм үткәрергә мөмкин.";
+"Settings.Studies.Toggle.Message" = "KARMA ара-тирә тикшеренүләр урнаштырырга һәм үткәрергә мөмкин.";
 
 /* This is the description for the setting that toggles the Inactive Tabs feature in the settings menu under the Tabs customization section. Inactive tabs are a separate section of tabs that appears in the Tab Tray, which can be enabled or not */
 "Settings.Tabs.CustomizeTabsSection.InactiveTabs" = "Актив булмаган таблар";
@@ -1042,7 +1042,7 @@
 /* In the settings menu, in the Tabs customization section, this is the title for the setting that toggles the Tab Groups feature - where tabs from related searches are grouped - on or off */
 "Settings.Tabs.CustomizeTabsSection.TabGroups" = "Таб төркемнәре";
 
-/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from firefox hompage */
+/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from KARMA hompage */
 "Settings.Tabs.CustomizeTabsSection.Title" = "Таблар панелен көйләү";
 
 /* In the settings menu, this is the title for the Tabs customization section option */
@@ -1090,29 +1090,29 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "Вебсайт мәгълүматлары";
 
-/* Action label on share extension to add page to the Firefox reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "Уку исемлегенә өстәү";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "Уку исемлегенә өстәлде";
 
-/* Action label on share extension to bookmark the page in Firefox. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "Бу битне кыстыргычларга өстәү";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "Кыстыргычларга өстәлде";
 
-/* Action label on share extension to load the page in Firefox when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "Фонда йөкләү";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "Firefox-та йөкләнә";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "KARMA-та йөкләнә";
 
-/* Action label on share extension to immediately open page in Firefox. */
-"ShareExtension.OpenInFirefoxAction.Title" = "Firefox-та ачу";
+/* Action label on share extension to immediately open page in KARMA. */
+"ShareExtension.OpenInFirefoxAction.Title" = "KARMA-та ачу";
 
-/* Action label on share extension to search for the selected text in Firefox. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Firefox-та эзләү";
+/* Action label on share extension to search for the selected text in KARMA. */
+"ShareExtension.SeachInFirefoxAction.Title" = "KARMA-та эзләү";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "Эзләү тәкъдимнәрен күрсәтү";
@@ -1171,7 +1171,7 @@
 /* The title for the tab tray */
 "TabTray.Title" = "Ачык таблар";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "The page could not be displayed in Reader View." = "Битне уку режимында күрсәтеп булмады.";
 
 /* Error message in the remote tabs panel */
@@ -1223,7 +1223,7 @@
 "UIMenuItem.PasteGo" = "Ябыштыру һәм күчү";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "Firefox белән эзләү";
+"UIMenuItem.SearchWithFirefox" = "KARMA белән эзләү";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "укылмаган";
@@ -1253,7 +1253,7 @@
 "Yesterday" = "Кичә";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Firefox on your other devices." = "Башка җиһазларыгыздагы Firefox-ларда ачык таблар юк.";
+"You don’t have any tabs open in Firefox on your other devices." = "Башка җиһазларыгыздагы KARMA-ларда ачык таблар юк.";
 
 /* Your Rights settings section title */
 "Your Rights" = "Хокукларыгыз";

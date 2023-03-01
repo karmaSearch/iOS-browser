@@ -31,7 +31,7 @@
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>org.mozilla.Client</string>
+			<string>com.mykarma.karmasearch</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>$(MOZ_PUBLIC_URL_SCHEME)</string>
@@ -42,7 +42,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>21</string>
 	<key>INIntentsSupported</key>
 	<array>
 		<string>QuickActionIntent</string>
@@ -85,13 +85,13 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>Firefox uses your camera to scan QR codes and take photos and video.</string>
+	<string>KARMA uses your camera to scan QR codes and take photos and video.</string>
 	<key>NSFaceIDUsageDescription</key>
-	<string>Firefox requires Face ID to access your saved logins.</string>
+	<string>KARMA requires Face ID to access your saved logins.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Websites you visit may request your location.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Firefox uses your microphone to record and upload audio.</string>
+	<string>KARMA uses your microphone to record and upload audio.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>This lets you save photos.</string>
 	<key>NSUserActivityTypes</key>
@@ -109,6 +109,14 @@
 	<string>$(SENTRY_CLOUD_DSN)</string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>KGSecondChancesSolid.ttf</string>
+		<string>KGSecondChancesSketch.ttf</string>
+		<string>ProximaNova-Extrabold.otf</string>
+		<string>ProximaNova-Regular.otf</string>
+		<string>ProximaNova-Bold.otf</string>
+		<string>ProximaNova-Medium.otf</string>
+		<string>ProximaNova-SemiBold.otf</string>
+		<string>ProximaNova-Medium It.otf</string>
 		<string>NewYorkMedium-Bold.otf</string>
 		<string>NewYorkMedium-BoldItalic.otf</string>
 		<string>NewYorkMedium-Regular.otf</string>
@@ -122,6 +130,7 @@
 		<string>FiraSans-Regular.ttf</string>
 		<string>FiraSans-SemiBold.ttf</string>
 		<string>FiraSans-UltraLight.ttf</string>
+		<string>Amithen.ttf</string>
 	</array>
 	<key>UIApplicationShortcutItems</key>
 	<array>

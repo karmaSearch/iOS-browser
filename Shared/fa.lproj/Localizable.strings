@@ -22,7 +22,7 @@
 /* The title for the pinning a topsite action */
 "ActivityStream.ContextMenu.PinTopsite2" = "سنجاق کردن";
 
-/* On the Firefox homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
 "ActivityStream.JumpBackIn.TabGroup.SiteCount" = "زبانه‌ها: %d";
 
 /* A string used to signify the start of the Recently Saved section in Home Screen. */
@@ -115,7 +115,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "از آخرین باری که گذرواژه خود را تغییر داده اید ، گذرواژه ها درز کرده یا به سرقت رفته اند. برای محافظت از این حساب ، وارد سایت شوید و گذرواژه خود را تغییر دهید.";
 
-/* Link to monitor.firefox.com to learn more about breached passwords */
+/* Link to monitor.KARMA.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "اطلاعات بیشتر";
 
 /* Leads to a link to the breached website */
@@ -301,16 +301,16 @@
 /* Tile title for Facebook */
 "Facebook" = "فیس‌بوک";
 
-/* Title for firefox about:home page in tab history list */
+/* Title for KARMA about:home page in tab history list */
 "Firefox.HomePage.Title" = "صفحه‌خانگی فایرفاکس";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "جلو";
 
-/* Settings section title for Firefox Account */
+/* Settings section title for KARMA Account */
 "FxA.FirefoxAccount" = "حساب فایرفاکس";
 
-/* Button label to go to Firefox Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "مدیریت حساب و دستگاه‌ها";
 
 /* Label when no internet is present */
@@ -328,7 +328,7 @@
 /* FxA sign in view email login button */
 "fxa.signin.use-email-instead" = "به جای آن از ایمیل استفاده کنید";
 
-/* Button label to Sync your Firefox Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "هم‌اکنون همگام‌سازی کنید";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
@@ -508,10 +508,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "نور";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "بارگذاری صفحه اصلی";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "بارگذاری محتوا…";
 
 /* Authentication prompt log in button */
@@ -673,7 +673,7 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "زبانه‌های باز";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app. */
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
 "OpenURL.Error.Message" = "فایرفاکس به دلیل نامعتبر بودن آدرس قادر به بازکردن این صفحه نمی‌باشد.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
@@ -694,7 +694,7 @@
 /* Privacy section title */
 "Privacy" = "حریم خصوصی";
 
-/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "سیاست حفظ حریم خصوصی";
 
 /* Title for quick-search engines settings section. */
@@ -967,7 +967,7 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "نام دستگاه";
 
-/* Label used as a section title in the Firefox Accounts Settings screen. */
+/* Label used as a section title in the KARMA Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "تنظیمات همگام سازی";
 
 /* Title displayed in header of the FxA settings panel. */
@@ -994,7 +994,7 @@
 /* Option in settings to show a blank page when you open a new tab */
 "Settings.NewTab.Option.BlankPage" = "صفحهٔ خالی";
 
-/* Option in settings to show Firefox Home when you open a new tab */
+/* Option in settings to show KARMA Home when you open a new tab */
 "Settings.NewTab.Option.FirefoxHome" = "صفحه اصلی فایرفاکس";
 
 /* Option in settings to show your homepage when you open a new tab */
@@ -1114,28 +1114,28 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "اطلاعات پایگاه اینترنتی";
 
-/* Action label on share extension to add page to the Firefox reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "اضافه کردن به فهرست خواندن";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "اضافه شده به فهرست خواندن";
 
-/* Action label on share extension to bookmark the page in Firefox. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "نشانه‌گذاری این صفحه";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "نشانه‌گذاری شده";
 
-/* Action label on share extension to load the page in Firefox when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "بارگذاری در پس زمینه";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
 "ShareExtension.LoadInBackgroundActionDone.Title" = "بارگذاری در فایرفاکس";
 
-/* Action label on share extension to immediately open page in Firefox. */
+/* Action label on share extension to immediately open page in KARMA. */
 "ShareExtension.OpenInFirefoxAction.Title" = "بازکردن در فایرفاکس";
 
-/* Action label on share extension to search for the selected text in Firefox. */
+/* Action label on share extension to search for the selected text in KARMA. */
 "ShareExtension.SeachInFirefoxAction.Title" = "جست‌وجو این فایرفاکس";
 
 /* Label for show search suggestions setting. */
@@ -1192,7 +1192,7 @@
 /* The title for the tab tray */
 "TabTray.Title" = "زبانه‌های باز";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "The page could not be displayed in Reader View." = "امکان نمایش این صفحه در نمای مطالعه وجود ندارد.";
 
 /* Error message in the remote tabs panel */

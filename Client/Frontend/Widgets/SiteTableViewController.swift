@@ -143,15 +143,12 @@ class SiteTableViewController: UIViewController, UITableViewDelegate, UITableVie
     func applyTheme() {
         navigationController?.navigationBar.barTintColor = UIColor.theme.tableView.headerBackground
         navigationController?.navigationBar.tintColor = UIColor.theme.general.controlTint
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.headerTextDark]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.headerTextDark, .font: UIFont.customFont(ofSize: 19, weight: .semibold)]
         setNeedsStatusBarAppearanceUpdate()
 
         tableView.backgroundColor = UIColor.theme.homePanel.panelBackground
         tableView.separatorColor = UIColor.theme.tableView.separator
-        if let rows = tableView.indexPathsForVisibleRows {
-            tableView.reloadRows(at: rows, with: .none)
-            tableView.reloadSections(IndexSet(rows.map { $0.section }), with: .none)
-        }
+        tableView.reloadData()
     }
 }
 

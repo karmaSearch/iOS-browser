@@ -295,6 +295,13 @@ class LibraryViewController: UIViewController {
         let tintColor = LegacyThemeManager.instance.currentName == .dark ?
                             UIColor.Photon.Blue20 : UIColor.Photon.Blue50
         navigationController?.toolbar.tintColor = tintColor
+        
+        let theme = BuiltinThemeName(rawValue: LegacyThemeManager.instance.current.name) ?? .normal
+        if theme == .dark {
+            navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, .font: UIFont.customFont(ofSize: 19, weight: .semibold)]
+        } else {
+            navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black, .font: UIFont.customFont(ofSize: 19, weight: .semibold)]
+        }
     }
 }
 
@@ -324,13 +331,10 @@ extension LibraryViewController: NotificationThemeable, Notifiable {
 
         view.backgroundColor = UIColor.theme.homePanel.panelBackground
         navigationController?.navigationBar.barTintColor = UIColor.theme.tabTray.toolbar
-        navigationController?.navigationBar.tintColor = .systemBlue
+        navigationController?.navigationBar.tintColor = UIColor.Photon.Green60
         navigationController?.navigationBar.backgroundColor = UIColor.theme.tabTray.toolbar
         navigationController?.toolbar.barTintColor = UIColor.theme.tabTray.toolbar
-        navigationController?.toolbar.tintColor = .systemBlue
-        segmentControlToolbar.barTintColor = UIColor.theme.tabTray.toolbar
-        segmentControlToolbar.tintColor = UIColor.theme.tabTray.toolbarButtonTint
-        segmentControlToolbar.isTranslucent = false
+        navigationController?.toolbar.tintColor = UIColor.Photon.Green60
 
         setNeedsStatusBarAppearanceUpdate()
         setupToolBarAppearance()
