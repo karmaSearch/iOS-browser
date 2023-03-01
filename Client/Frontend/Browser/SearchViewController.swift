@@ -16,6 +16,21 @@ private enum SearchListSection: Int, CaseIterable {
     case openedTabs
     case bookmarksAndHistory
     case searchHighlights
+    
+    var title: String {
+        switch self {
+        case .searchSuggestions:
+            return .SearchSuggestionHeader
+        case .remoteTabs:
+            return .SearchRemoteTabsHeader
+        case .openedTabs:
+            return .SearchOpenTabsHeader
+        case .bookmarksAndHistory:
+            return .SearchBookmarksAndHistoryHeader
+        case .searchHighlights:
+            return ""
+        }
+    }
 }
 
 private struct SearchViewControllerUX {
@@ -569,16 +584,7 @@ class SearchViewController: SiteTableViewController,
                 withIdentifier: SiteTableViewHeader.cellIdentifier) as? SiteTableViewHeader
         else { return nil }
 
-        var title: String
-        switch section {
-        case SearchListSection.remoteTabs.rawValue:
-            title = .Search.SuggestSectionTitle
-        case SearchListSection.searchSuggestions.rawValue:
-            title = searchEngines.defaultEngine.headerSearchTitle
-        default:  title = ""
-        }
-
-        let viewModel = SiteTableViewHeaderModel(title: title,
+        let viewModel = SiteTableViewHeaderModel(title: SearchListSection(rawValue: section)!.title,
                                                  isCollapsible: false,
                                                  collapsibleState: nil)
         headerView.configure(viewModel)
@@ -743,7 +749,7 @@ class SearchViewController: SiteTableViewController,
         case SearchListSection.searchSuggestions.rawValue:
             return true
         default:
-            return false
+            return true
         }
     }
 

@@ -7,8 +7,8 @@
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Даведацца, як";
 
-/* Description for small home tab banner shown that allows user to switch their default browser to Firefox. */
-"DefaultBrowserCard.Description" = "Наладзьце аўтаматычнае адкрыццё спасылак з сайтаў, пошты і паведамленняў у Firefox.";
+/* Description for small home tab banner shown that allows user to switch their default browser to KARMA. */
+"DefaultBrowserCard.Description" = "Наладзьце аўтаматычнае адкрыццё спасылак з сайтаў, пошты і паведамленняў у KARMA.";
 
 /* Description for small home tab banner shown that allows the user to switch their default browser to Firefox. */
 "DefaultBrowserCard.NextLevel.Description.v108" = "Выберыце Firefox у якасці прадвызначанага браўзера, каб хуткасць, бяспека і прыватнасць сталі аўтаматычнымі.";
@@ -25,7 +25,7 @@
 /* Title for small home tab banner shown that allows user to switch their default browser to Firefox. */
 "DefaultBrowserCard.Title" = "Пераключыць прадвызначаны браўзер";
 
-/* Button string to open settings that allows user to switch their default browser to Firefox. */
+/* Button string to open settings that allows user to switch their default browser to KARMA. */
 "DefaultBrowserOnboarding.Button" = "Перайсці ў налады";
 
 /* Description for default browser onboarding card. */
@@ -35,7 +35,7 @@
 "DefaultBrowserOnboarding.Description2" = "2. Націсніце Default Browser App";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Выберыце Firefox";
+"DefaultBrowserOnboarding.Description3" = "3. Выберыце KARMA";
 
 /* Text for the screenshot of the iOS system settings page for Firefox. */
 "DefaultBrowserOnboarding.Screenshot" = "Default Browser App";

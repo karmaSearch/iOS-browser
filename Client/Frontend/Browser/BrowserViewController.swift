@@ -566,6 +566,7 @@ class BrowserViewController: UIViewController {
 
         presentIntroViewController()
         presentUpdateViewController()
+        presentDBOnboardingViewController()
         screenshotHelper.viewIsVisible = true
 
         if let toast = self.pendingToast {
@@ -2286,6 +2287,13 @@ extension BrowserViewController {
             self.profile.prefs.setInt(1, forKey: PrefsKeys.IntroSeen)
             introViewController.dismiss(animated: true)
         }
+        #if KARMA
+        introViewController.viewModel.goToSettings = {
+            introViewController.dismiss(animated: true) {
+                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
+            }
+        }
+        #endif
         self.introVCPresentHelper(introViewController: introViewController)
     }
 

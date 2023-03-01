@@ -4,8 +4,8 @@
 /* Close Private Tabs */
 "TodayWidget.ClosePrivateTabsLabelV2" = "نجی ٹیب بند کریں";
 
-/* Description for medium size widget to add Firefox Shortcut to home screen */
-"TodayWidget.FirefoxShortcutGalleryDescription" = "اپنے ہوم اسکرین پر Firefox شارٹ کٹ جوڑیں۔";
+/* Description for medium size widget to add KARMA Shortcut to home screen */
+"TodayWidget.FirefoxShortcutGalleryDescription"= "اپنے ہوم اسکرین پر KARMA شارٹ کٹ جوڑیں۔";
 
 /* Go to link pasted on the clipboard */
 "TodayWidget.GoToCopiedLinkLabelV1" = "نقل شدہ ربط پر جائیں";
@@ -22,20 +22,20 @@
 /* Label that is shown when there are no tabs opened in tab tray i.e. Empty State */
 "TodayWidget.NoOpenTabsLabel" = "کوئی کھلے ٹیب نہیں";
 
-/* Open Firefox when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenFirefoxLabel" = "Firefox کھولیں";
+/* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
+"TodayWidget.OpenFirefoxLabel" = "KARMA کھولیں";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "نجی تلاش";
 
 /* Description for small size widget to add it to home screen */
-"TodayWidget.QuickActionGalleryDescription" = "اپنے ہوم اسکرین پر Firefox شارٹ کٹ جوڑیں۔ جوڑنے کے بعد شارٹ کٹ کو ترمیم کرنے کے لئے دبا کر رکھیں اور کوئی دوسرا شارٹ کاٹ منتخب کریں۔";
+"TodayWidget.QuickActionGalleryDescription" = "اپنے ہوم اسکرین پر KARMA شارٹ کٹ جوڑیں۔ جوڑنے کے بعد شارٹ کٹ کو ترمیم کرنے کے لئے دبا کر رکھیں اور کوئی دوسرا شارٹ کاٹ منتخب کریں۔";
 
 /* Quick Actions title when widget enters edit mode */
 "TodayWidget.QuickActionsGalleryTitle" = "فوری کارروائی";
 
-/* Firefox shortcuts title when widget enters edit mode. Do not translate the word Firefox. */
-"TodayWidget.QuickActionsGalleryTitleV2" = "Firefox شارٹ کٹس";
+/* KARMA shortcuts title when widget enters edit mode. Do not translate the word KARMA. */
+"TodayWidget.QuickActionsGalleryTitleV2" = "KARMA شارٹ کٹس";
 
 /* Description for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryDescriptionV2" = "اپنی کھلی ٹیبز میں شارٹ کٹ شامل کریں۔";
@@ -43,18 +43,18 @@
 /* Title for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryTitle" = "فوری نظارہ";
 
-/* Search in Firefox. Do not translate the word Firefox */
-"TodayWidget.SearchInFirefoxV2" = "Firefox میں تلاش کریں";
+/* Search in KARMA. Do not translate the word KARMA */
+"TodayWidget.SearchInFirefoxV2" = "KARMA میں تلاش کریں";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "نجی ٹیب میں تلاش کریں";
 
-/* Description for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Description for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryDescription" = "کثرت سے اور حال ہی میں دیکھی گئی سائٹوں کا شارٹ کٹ جوڑیں۔";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "بہترین سائٹیں";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitleV2" = "ویب سائٹ شارٹ کٹس";
 

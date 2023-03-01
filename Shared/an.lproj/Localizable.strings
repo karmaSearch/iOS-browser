@@ -94,7 +94,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "Las claus han estau filtradas u rapadas dende lo tuyo zaguer cambio de clau. Pa protecher esta cuenta, dentra en a pachina y cambia a tuya clau.";
 
-/* Link to monitor.firefox.com to learn more about breached passwords */
+/* Link to monitor.KARMA.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "Saber-ne mas";
 
 /* Leads to a link to the breached website */
@@ -257,7 +257,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "Puede estar una mala configuración u una falsificación d'un atacant. Sigue enta debant si acceptas lo risgo potencial.";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "Lo duenyo de %@ ha configurau lo suyo puesto web incorrectament. Pa privar que furten la tuya información, Firefox no s'ha connectau a este puesto web.";
+"ErrorPages.CertWarning.Description" = "Lo duenyo de %@ ha configurau lo suyo puesto web incorrectament. Pa privar que furten la tuya información, KARMA no s'ha connectau a este puesto web.";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "La tuya connexión no ye verificada";
@@ -277,16 +277,16 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for firefox about:home page in tab history list */
-"Firefox.HomePage.Title" = "Pachina d'inicio de Firefox";
+/* Title for KARMA about:home page in tab history list */
+"Firefox.HomePage.Title" = "Pachina d'inicio de KARMA";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "Enta debant";
 
-/* Settings section title for Firefox Account */
-"FxA.FirefoxAccount" = "Cuenta de Firefox";
+/* Settings section title for KARMA Account */
+"FxA.FirefoxAccount" = "Cuenta de KARMA";
 
-/* Button label to go to Firefox Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "Administrar la cuenta y los dispositivos";
 
 /* Label when no internet is present */
@@ -304,7 +304,7 @@
 /* FxA sign in view email login button */
 "fxa.signin.use-email-instead" = "Usa lo correu electronico";
 
-/* Button label to Sync your Firefox Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "Sincronizar agora";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
@@ -439,10 +439,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "Claro";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "Cargar pachina orichinal";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "Cargando lo conteniu…";
 
 /* Authentication prompt log in button */
@@ -482,7 +482,7 @@
 "LoginsList.Title" = "INICIOS DE SESIÓN ALZAUS";
 
 /* Restore Tabs Prompt Description */
-"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "Firefox s'ha zarrau inesperadament. Te faría goyo de restaurar las tuyas pestanyas?";
+"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "KARMA s'ha zarrau inesperadament. Te faría goyo de restaurar las tuyas pestanyas?";
 
 /* Title for the button that marks a reading list item as read */
 "Mark as Read" = "Marcar como leito";
@@ -584,7 +584,7 @@
 "Okay" = "Acceptar";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Firefox crashed" = "Vai! Firefox s'ha blocau";
+"Oops! Firefox crashed" = "Vai! KARMA s'ha blocau";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "Ubre articlos en a vista de lectura pretando l'icono de libro quan amaneixca en a barra de titols.";
@@ -595,8 +595,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "Ubrir las pestanyas";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app. */
-"OpenURL.Error.Message" = "Firefox no podió trobar la pachina perque l'adreza no ye valida.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
+"OpenURL.Error.Message" = "KARMA no podió trobar la pachina perque l'adreza no ye valida.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "No s'ha puesto ubrir la pachina";
@@ -608,7 +608,7 @@
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "Este te permite alzar la imachen en o tuyo carret de fotos.";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Firefox quiere acceder a las tuyas fotos";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "KARMA quiere acceder a las tuyas fotos";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "Zarrar";
@@ -616,7 +616,7 @@
 /* Privacy section title */
 "Privacy" = "Privacidat";
 
-/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "Politica de privacidat";
 
 /* Title for quick-search engines settings section. */
@@ -746,13 +746,13 @@
 "SendTo.NavBar.Title" = "Ninviar pestanya";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "No tiens garra atro dispositivo connectau a esta cuenta de Firefox disponible pa sincronizar-se.";
+"SendTo.NoDevicesFound.Message" = "No tiens garra atro dispositivo connectau a esta cuenta de KARMA disponible pa sincronizar-se.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "Ubre Firefox, ves ta Achustes y inicia una sesión pa continar.";
+"SendTo.NotSignedIn.Message" = "Ubre KARMA, ves ta Achustes y inicia una sesión pa continar.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "No has iniciau sesión en a tuya cuenta de Firefox.";
+"SendTo.NotSignedIn.Title" = "No has iniciau sesión en a tuya cuenta de KARMA.";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "Ninviar";
@@ -830,7 +830,7 @@
 "Settings.DataManagement.Title" = "Chestión d'os datos";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "Firefox aturará la sincronización con a tuya cuenta, pero no borrará garra dato de navegación en este dispositivo.";
+"Settings.Disconnect.Body" = "KARMA aturará la sincronización con a tuya cuenta, pero no borrará garra dato de navegación en este dispositivo.";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "Desconnectar Sync";
@@ -889,11 +889,11 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "Nombre d'o dispositivo";
 
-/* Label used as a section title in the Firefox Accounts Settings screen. */
+/* Label used as a section title in the KARMA Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "Achustes de sincronización";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "Cuenta de Firefox";
+"Settings.FxA.Title" = "Cuenta de KARMA";
 
 /* General settings section title */
 "Settings.General.SectionName" = "Cheneral";
@@ -916,8 +916,8 @@
 /* Option in settings to show a blank page when you open a new tab */
 "Settings.NewTab.Option.BlankPage" = "Pachina en blanco";
 
-/* Option in settings to show Firefox Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "Firefox Home";
+/* Option in settings to show KARMA Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "KARMA Home";
 
 /* Option in settings to show your homepage when you open a new tab */
 "Settings.NewTab.Option.HomePage" = "Pachina d'inicio";
@@ -935,7 +935,7 @@
 "Settings.NewTab.TopSectionNameFooter" = "Triar qué cargar quan s'ubre una nueva pestanya";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "En ubrir Firefox";
+"Settings.OfferClipboardBar.Status" = "En ubrir KARMA";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "Proposar ubrir los vinclos copiaus";
@@ -959,7 +959,7 @@
 "Settings.SendUsage.Link" = "Saber-ne mas.";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "Mozilla s'esfuerza a recopilar nomás lo que fa falta pa poder executar y amillorar Firefox pa totz.";
+"Settings.SendUsage.Message" = "Mozilla s'esfuerza a recopilar nomás lo que fa falta pa poder executar y amillorar KARMA pa totz.";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "Ninviar datos d'uso";
@@ -977,7 +977,7 @@
 "Settings.Siri.OpenTabShortcut" = "Ubrir una nueva pestanya";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "Usar alcorces de Siri pa ubrir rapidament Firefox vía Siri";
+"Settings.Siri.SectionDescription" = "Usar alcorces de Siri pa ubrir rapidament KARMA vía Siri";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "Alcorces de Siri";
@@ -1036,29 +1036,29 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "Datos d'o puesto web";
 
-/* Action label on share extension to add page to the Firefox reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "Anyadir a la lista de lectura";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "Anyadiu a la lista de lectura";
 
-/* Action label on share extension to bookmark the page in Firefox. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "Marcar esta pachina";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "Pachina marcada";
 
-/* Action label on share extension to load the page in Firefox when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "Cargar en segundo plano";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "Cargando en Firefox";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "Cargando en KARMA";
 
-/* Action label on share extension to immediately open page in Firefox. */
-"ShareExtension.OpenInFirefoxAction.Title" = "Ubrir en Firefox";
+/* Action label on share extension to immediately open page in KARMA. */
+"ShareExtension.OpenInFirefoxAction.Title" = "Ubrir en KARMA";
 
-/* Action label on share extension to search for the selected text in Firefox. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Mirar en Firefox";
+/* Action label on share extension to search for the selected text in KARMA. */
+"ShareExtension.SeachInFirefoxAction.Title" = "Mirar en KARMA";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "Amostrar las sucherencias de busqueda";
@@ -1111,7 +1111,7 @@
 /* A label indicating the keyboard shortcut of opening a new tab in the tab tray. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
 "TabTray.OpenNewTab.KeyCodeTitle" = "Ubrir la nueva pestanya";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "The page could not be displayed in Reader View." = "No s'ha puesto amostrar la pachina en vista de lectura.";
 
 /* Error message in the remote tabs panel */
@@ -1163,7 +1163,7 @@
 "UIMenuItem.PasteGo" = "Apegar y ir-ie";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "Mirar con Firefox";
+"UIMenuItem.SearchWithFirefox" = "Mirar con KARMA";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "no leito";
@@ -1193,7 +1193,7 @@
 "Yesterday" = "Ahiere";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Firefox on your other devices." = "No tiens garra pestanya ubierta en Firefox en as tuyas demás dispositivos.";
+"You don’t have any tabs open in Firefox on your other devices." = "No tiens garra pestanya ubierta en KARMA en as tuyas demás dispositivos.";
 
 /* Your Rights settings section title */
 "Your Rights" = "Los tuyos dreitos";

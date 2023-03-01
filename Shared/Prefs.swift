@@ -32,6 +32,7 @@ public struct PrefsKeys {
     public static let SessionCount = "sessionCount"
     public static let InstallType = "InstallType"
     public static let KeyCurrentInstallVersion = "KeyCurrentInstallVersion"
+    public static let DateFirstInstall = "DateFirstInstall"
     public static let KeySecondRun = "SecondRun"
 
     public struct AppVersion {
@@ -64,6 +65,7 @@ public struct PrefsKeys {
         public static let SponsoredShortcuts = "SponsoredShortcutsUserPrefsKey"
         public static let TabTrayGroups = "TabTrayGroupsUserPrefsKey"
         public static let TopSiteSection = "TopSitesUserPrefsKey"
+        public static let LearnAndAct = "LearnAndActrefsKey"
     }
 
     public struct LegacyFeatureFlags {

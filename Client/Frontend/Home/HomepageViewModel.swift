@@ -15,8 +15,8 @@ protocol HomepageDataModelDelegate: AnyObject {
 
 class HomepageViewModel: FeatureFlaggable {
     struct UX {
-        static let spacingBetweenSections: CGFloat = 62
-        static let standardInset: CGFloat = 18
+        static let spacingBetweenSections: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 24 : 20
+        static let standardInset: CGFloat = 15
         static let iPadInset: CGFloat = 50
         static let iPadTopSiteInset: CGFloat = 25
 
@@ -93,7 +93,9 @@ class HomepageViewModel: FeatureFlaggable {
     var historyHighlightsViewModel: HistoryHighlightsViewModel
     var pocketViewModel: PocketViewModel
     var customizeButtonViewModel: CustomizeHomepageSectionViewModel
-
+    
+    var learnAndActViewModel: LearnAndActViewModel
+    
     var shouldDisplayHomeTabBanner: Bool {
         return messageCardViewModel.shouldDisplayMessageCard
     }
@@ -156,6 +158,14 @@ class HomepageViewModel: FeatureFlaggable {
         pocketDataAdaptor.delegate = pocketViewModel
 
         self.customizeButtonViewModel = CustomizeHomepageSectionViewModel(theme: theme)
+        self.isPrivate = isPrivate
+
+        self.nimbus = nimbus
+        
+        let learnAndActDataAdaptor = LearnAndActDataAdaptorImplementation(API: LearnAndActProvider())
+        self.learnAndActViewModel = LearnAndActViewModel(dataAdaptor: learnAndActDataAdaptor, theme: theme)
+        learnAndActDataAdaptor.delegate = self.learnAndActViewModel
+        
         self.childViewModels = [headerViewModel,
                                 messageCardViewModel,
                                 topSiteViewModel,
@@ -163,10 +173,11 @@ class HomepageViewModel: FeatureFlaggable {
                                 recentlySavedViewModel,
                                 historyHighlightsViewModel,
                                 pocketViewModel,
+                                learnAndActViewModel,
                                 customizeButtonViewModel]
-        self.isPrivate = isPrivate
-
-        self.nimbus = nimbus
+        
+        learnAndActViewModel.delegate = self
+        
         topSiteViewModel.delegate = self
         historyHighlightsViewModel.delegate = self
         recentlySavedViewModel.delegate = self

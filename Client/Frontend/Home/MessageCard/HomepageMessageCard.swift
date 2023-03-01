@@ -61,6 +61,7 @@ class HomepageMessageCardCell: UICollectionViewCell, ReusableCell {
     }
 
     private lazy var ctaButton: ActionButton = .build { [weak self] button in
+        button.backgroundColor = UIColor.Photon.Green60
         button.titleLabel?.font = DynamicFontHelper.defaultHelper.preferredBoldFont(withTextStyle: .body,
                                                                                     size: UX.buttonFontSize)
 

@@ -34,14 +34,14 @@ class LoginListTableViewCell: ThemedTableViewCell, ReusableCell {
     }()
 
     lazy var hostnameLabel: UILabel = .build { label in
-        label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        label.font = UIFont.customFont(ofSize: 16, weight: .regular)
         label.textAlignment = .left
         label.numberOfLines = 1
         label.setContentHuggingPriority(.required, for: .vertical)
     }
 
     lazy var usernameLabel: UILabel = .build { label in
-        label.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        label.font = UIFont.customFont(ofSize: 14, weight: .regular)
         label.textAlignment = .left
         label.numberOfLines = 1
     }

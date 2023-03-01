@@ -8,7 +8,7 @@ import Foundation
 // This subclass creates a strong shadow on the URLBar
 class TabLocationContainerView: UIView {
     private struct LocationContainerUX {
-        static let CornerRadius: CGFloat = 8
+        static let CornerRadius: CGFloat = 11
     }
 
     override init(frame: CGRect) {

@@ -6,6 +6,7 @@ import Foundation
 import UIKit
 import Shared
 import SwiftUI
+import Common
 
 enum InactiveTabSection: Int, CaseIterable {
     case inactive

@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "giraffe-silhouette-in-orange-afternoon-light-DBPZHK8.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "giraffe-silhouette-in-orange-afternoon-light-DBPZHK8@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "giraffe-silhouette-in-orange-afternoon-light-DBPZHK8@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

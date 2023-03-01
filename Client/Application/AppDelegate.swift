@@ -7,6 +7,7 @@ import Storage
 import CoreSpotlight
 import UIKit
 import Common
+import MessageUI
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
     private let log = Logger.browserLogger
@@ -216,5 +217,12 @@ extension AppDelegate {
         configuration.delegateClass = connectingSceneSession.configuration.delegateClass
 
         return configuration
+    }
+}
+
+
+extension AppDelegate: MFMailComposeViewControllerDelegate {
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
     }
 }

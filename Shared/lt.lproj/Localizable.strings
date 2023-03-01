@@ -28,7 +28,7 @@
 /* Title for the Jump Back In section. This section allows users to jump back in to a recently viewed tab */
 "ActivityStream.JumpBackIn.SectionTitle" = "Sugrįžkite";
 
-/* On the Firefox homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
 "ActivityStream.JumpBackIn.TabGroup.SiteCount" = "Kortelių: %d";
 
 /* A string used to signify the start of the Recently Saved section in Home Screen. */
@@ -121,7 +121,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "Po paskutinio karto kai keitėte slaptažodį, įvyko duomenų nutekėjimas. Norėdami apsaugoti šią paskyrą, prisijunkite prie svetainės ir pasikeiskite slaptažodį.";
 
-/* Link to monitor.firefox.com to learn more about breached passwords */
+/* Link to monitor.KARMA.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "Sužinoti daugiau";
 
 /* Leads to a link to the breached website */
@@ -293,7 +293,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "Taip gali būti dėl netinkamos konfigūracijos arba piktavalio „kišamų nagų“. Tęskite, jei sutinkate su galima rizika.";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "%@ savininkas netinkamai sukonfigūravo savo svetainę. „Firefox“ nesijungė prie šios svetainės, kad apsaugotų jūsų duomenis nuo perėmimo.";
+"ErrorPages.CertWarning.Description" = "%@ savininkas netinkamai sukonfigūravo savo svetainę. „KARMA“ nesijungė prie šios svetainės, kad apsaugotų jūsų duomenis nuo perėmimo.";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "Šis ryšys nepatikimas";
@@ -313,16 +313,16 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for firefox about:home page in tab history list */
-"Firefox.HomePage.Title" = "„Firefox“ pradžios tinklalapis";
+/* Title for KARMA about:home page in tab history list */
+"Firefox.HomePage.Title" = "„KARMA“ pradžios tinklalapis";
 
-/* A button at bottom of the Firefox homepage that, when clicked, takes users straight to the settings options, where they can customize the Firefox Home page */
+/* A button at bottom of the KARMA homepage that, when clicked, takes users straight to the settings options, where they can customize the KARMA Home page */
 "FirefoxHome.CustomizeHomeButton.Title" = "Tvarkyti pradžios tinklalapį";
 
-/* At the end of the Pocket section on the Firefox Homepage, this button appears and indicates tapping it will navigate the user to more Pocket Stories. */
+/* At the end of the Pocket section on the KARMA Homepage, this button appears and indicates tapping it will navigate the user to more Pocket Stories. */
 "FirefoxHome.Pocket.DiscoverMore" = "Atrasti daugiau";
 
-/* This is the title of the Pocket section on Firefox Homepage. */
+/* This is the title of the Pocket section on KARMA Homepage. */
 "FirefoxHome.Pocket.SectionTitle" = "Susimąstyti verčiančios istorijos";
 
 /* When a user taps and holds on an item from the Recently Visited section, this label will appear indicating the option to remove that item. */
@@ -331,10 +331,10 @@
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "Pirmyn";
 
-/* Settings section title for Firefox Account */
-"FxA.FirefoxAccount" = "„Firefox“ paskyra";
+/* Settings section title for KARMA Account */
+"FxA.FirefoxAccount" = "„KARMA“ paskyra";
 
-/* Button label to go to Firefox Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "Tvarkyti paskyrą ir įrenginius";
 
 /* Label when no internet is present */
@@ -352,7 +352,7 @@
 /* FxA sign in view email login button */
 "fxa.signin.use-email-instead" = "Naudoti el. paštą";
 
-/* Button label to Sync your Firefox Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "Sinchronizuoti dabar";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
@@ -544,10 +544,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "Šviesi";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "Įkelti pirminį tinklalapį";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "Įkeliamas turinys…";
 
 /* Authentication prompt log in button */
@@ -569,13 +569,13 @@
 "Logins.Onboarding.LearnMoreButtonTitle" = "Sužinoti daugiau";
 
 /* Warning message shown when you try to enable or use native AutoFill without a device passcode setup */
-"Logins.PasscodeRequirement.Warning" = "Norėdami naudoti automatinio užpildymo funkciją su „Firefox“, turite įjungti įrenginio apsaugos kodą.";
+"Logins.PasscodeRequirement.Warning" = "Norėdami naudoti automatinio užpildymo funkciją su „KARMA“, turite įjungti įrenginio apsaugos kodą.";
 
 /* Label displaying welcome view tagline under the title */
 "Logins.WelcomeView.Tagline" = "Turėkite savo slaptažodžius visur";
 
 /* Label displaying welcome view title */
-"Logins.WelcomeView.Title2" = "Automatiškai užpildykite „Firefox“ slaptažodžius";
+"Logins.WelcomeView.Title2" = "Automatiškai užpildykite „KARMA“ slaptažodžius";
 
 /* Title of the big blue button to enable AutoFill */
 "Logins.WelcomeView.TurnOnAutoFill" = "Įjungti automatinį užpildymą";
@@ -608,7 +608,7 @@
 "LoginsList.LoginsListSearchPlaceholder" = "Filtras";
 
 /* Label shown when there are no logins to list */
-"LoginsList.NoLoginsFound.Description" = "Įrašyti prisijungimai atsiras čia. Jei įrašėte prisijungimus su „Firefox“ kitame įrenginyje, prisijunkite prie savo „Firefox“ paskyros.";
+"LoginsList.NoLoginsFound.Description" = "Įrašyti prisijungimai atsiras čia. Jei įrašėte prisijungimus su „KARMA“ kitame įrenginyje, prisijunkite prie savo „KARMA“ paskyros.";
 
 /* Label shown when there are no logins saved */
 "LoginsList.NoLoginsFound.Title" = "Prisijungimų nerasta";
@@ -632,7 +632,7 @@
 "LoginsList.Title" = "ĮRAŠYTI PRISIJUNGIMAI";
 
 /* Restore Tabs Prompt Description */
-"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "Panašu, kad „Firefox“ praėjusį kartą užstrigo. Ar norite atkurti savo korteles?";
+"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "Panašu, kad „KARMA“ praėjusį kartą užstrigo. Ar norite atkurti savo korteles?";
 
 /* Title for the button that marks a reading list item as read */
 "Mark as Read" = "Pažymėti kaip skaitytą";
@@ -760,11 +760,11 @@
 /* Restore Tabs Affirmative Action */
 "Okay" = "Gerai";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the title for the button, on the bottom of the card, used to get back to browsing on Firefox by dismissing the onboarding card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the button, on the bottom of the card, used to get back to browsing on KARMA by dismissing the onboarding card */
 "Onboarding.WhatsNew.Button.Title" = "Pradėti naršymą";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Firefox crashed" = "Oi! „Firefox“ užstrigo";
+"Oops! Firefox crashed" = "Oi! „KARMA“ užstrigo";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "Atverkite straipsnius skaitymo veiksenoje, bakstelėdami knygos piktogramą, pasirodančią antraštės juostoje.";
@@ -775,8 +775,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "Atvertos kortelės";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app. */
-"OpenURL.Error.Message" = "„Firefox“ negali atverti nurodyto tinklalapio, nes jo adresas nėra tinkamas.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
+"OpenURL.Error.Message" = "„KARMA“ negali atverti nurodyto tinklalapio, nes jo adresas nėra tinkamas.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "Nepavyko atverti tinklalapio.";
@@ -788,7 +788,7 @@
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "Tai jums leis paveikslą įrašyti į „Camera Roll“.";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "„Firefox“ prašo prieigos prie jūsų nuotraukų";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "„KARMA“ prašo prieigos prie jūsų nuotraukų";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "Užverti";
@@ -796,7 +796,7 @@
 /* Privacy section title */
 "Privacy" = "Privatumas";
 
-/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "Privatumo nuostatai";
 
 /* This is the value for a label that indicates if a user is on an unencrypted website. */
@@ -808,7 +808,7 @@
 /* Title for quick-search engines settings section. */
 "Quick-Search Engines" = "Sparčiosios ieškyklės";
 
-/* A label indicating the action that a user can rate the Firefox app in the App store. */
+/* A label indicating the action that a user can rate the KARMA app in the App store. */
 "Ratings.Settings.RateOnAppStore" = "Įvertinti per „App Store“";
 
 /* Accessibility label for read article in reading list. It's a past participle - functions as an adjective. */
@@ -941,13 +941,13 @@
 "SendTo.NavBar.Title" = "Nusiųsti kortelę";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "Su šia „Firefox“ paskyra nesate susieję jokių kitų sinchronizuoti galinčių įrenginių.";
+"SendTo.NoDevicesFound.Message" = "Su šia „KARMA“ paskyra nesate susieję jokių kitų sinchronizuoti galinčių įrenginių.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "Jei norite tęsti, atverkite „Firefox“, eikite į nuostatas ir prisijunkite.";
+"SendTo.NotSignedIn.Message" = "Jei norite tęsti, atverkite „KARMA“, eikite į nuostatas ir prisijunkite.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "Jūs nesate prisijungę prie savo „Firefox“ paskyros.";
+"SendTo.NotSignedIn.Title" = "Jūs nesate prisijungę prie savo „KARMA“ paskyros.";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "Siųsti";
@@ -1028,7 +1028,7 @@
 "Settings.DataManagement.Title" = "Duomenų tvarkymas";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "„Firefox“ nebesinchronizuos duomenų su jūsų paskyra, tačiau šiame įrenginyje esančių naršymo duomenų nepašalins.";
+"Settings.Disconnect.Body" = "„KARMA“ nebesinchronizuos duomenų su jūsų paskyra, tačiau šiame įrenginyje esančių naršymo duomenų nepašalins.";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "Atjungti „Sync“";
@@ -1087,61 +1087,61 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "Įrenginio pavadinimas";
 
-/* Label used as a section title in the Firefox Accounts Settings screen. */
+/* Label used as a section title in the KARMA Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "Sinchronizavimo nuostatos";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "„Firefox“ paskyra";
+"Settings.FxA.Title" = "„KARMA“ paskyra";
 
 /* General settings section title */
 "Settings.General.SectionName" = "Bendrosios";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
 "Settings.Home.Option.JumpBackIn" = "Sugrįžkite";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the KARMA homepage on or off */
 "Settings.Home.Option.Pocket" = "„Pocket“ rekomenduoja";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentlySaved" = "Paskiausiai įtraukta";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
 "Settings.Home.Option.RecentlyVisited" = "Paskiausiai lankyta";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the KARMA homepage on or off */
 "Settings.Home.Option.Shortcuts" = "Leistukai";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage after four hours of inactivity. */
 "Settings.Home.Option.StartAtHome.AfterFourHours" = "Pradžios tinklalapį po keturių valandų neveiklumo";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Always" = "Pradžios tinklalapį";
 
 /* In the settings menu, in the Start at Home customization options, this is text that appears below the section, describing what the section settings do. */
-"Settings.Home.Option.StartAtHome.Description" = "Pasirinkite, ką matysite sugrįžę į „Firefox“.";
+"Settings.Home.Option.StartAtHome.Description" = "Pasirinkite, ką matysite sugrįžę į „KARMA“.";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Never" = "Paskutinę kortelę";
 
-/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Firefox Homepage. */
+/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the KARMA Homepage. */
 "Settings.Home.Option.StartAtHome.Title" = "Vaizdas po paleidimo";
 
-/* In the settings menu, on the Firefox homepage customization section, this is the title for the option that allows users to access the wallpaper settings for the application. */
+/* In the settings menu, on the KARMA homepage customization section, this is the title for the option that allows users to access the wallpaper settings for the application. */
 "Settings.Home.Option.Wallpaper" = "Fonas";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string of the toggle for turning wallpaper cycling shortcut on or off on the homepage. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the accessibility string of the toggle for turning wallpaper cycling shortcut on or off on the homepage. */
 "Settings.Home.Option.Wallpaper.Accessibility.ToggleButton" = "Pradžios fono pakeitimo įjungimas";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of the section that allows users to change the wallpaper settings for the application. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title of the section that allows users to change the wallpaper settings for the application. */
 "Settings.Home.Option.Wallpaper.CollectionTitle" = "PRADŽIOS EKRANAS";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of that screen, which allows users to change the wallpaper settings for the application. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title of that screen, which allows users to change the wallpaper settings for the application. */
 "Settings.Home.Option.Wallpaper.Title" = "Fonas";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of toast that comes up when the user changes wallpaper, which lets them know that the wallpaper has been updated. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title of toast that comes up when the user changes wallpaper, which lets them know that the wallpaper has been updated. */
 "Settings.Home.Option.Wallpaper.UpdatedToast" = "Fonas pakeistas!";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of the button found on the toast that comes up once the user changes wallpaper, and allows users to dismiss the settings page. In this case, consider View as a verb - the action of dismissing settings and seeing the wallpaper. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title of the button found on the toast that comes up once the user changes wallpaper, and allows users to dismiss the settings page. In this case, consider View as a verb - the action of dismissing settings and seeing the wallpaper. */
 "Settings.Home.Option.Wallpaper.UpdatedToastButton" = "Rodyti";
 
 /* Label used as an item in Settings. When touched it will open a dialog to configure the home page and its uses. */
@@ -1162,8 +1162,8 @@
 /* Option in settings to show a blank page when you open a new tab */
 "Settings.NewTab.Option.BlankPage" = "Tuščias puslapis";
 
-/* Option in settings to show Firefox Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "„Firefox“ pradžios tinklalapis";
+/* Option in settings to show KARMA Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "„KARMA“ pradžios tinklalapis";
 
 /* Option in settings to show your homepage when you open a new tab */
 "Settings.NewTab.Option.HomePage" = "Pradžios tinklalapis";
@@ -1181,7 +1181,7 @@
 "Settings.NewTab.TopSectionNameFooter" = "Pasirinkite, ką įkelti atveriant naują kortelę";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "Kai atveriama „Firefox“";
+"Settings.OfferClipboardBar.Status" = "Kai atveriama „KARMA“";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "Siūlyti atverti nukopijuotus saitus";
@@ -1205,7 +1205,7 @@
 "Settings.SendUsage.Link" = "Sužinoti daugiau.";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "„Mozilla“ siekia rinkti tik tai, ko reikia norint pagerinti „Firefox“ visiems.";
+"Settings.SendUsage.Message" = "„Mozilla“ siekia rinkti tik tai, ko reikia norint pagerinti „KARMA“ visiems.";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "Siųsti naudojimo duomenis";
@@ -1223,7 +1223,7 @@
 "Settings.Siri.OpenTabShortcut" = "Atverti naują kortelę";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "Naudoti „Siri“ leistukus norint greitai atverti „Firefox“";
+"Settings.Siri.SectionDescription" = "Naudoti „Siri“ leistukus norint greitai atverti „KARMA“";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "„Siri“ leistukai";
@@ -1232,7 +1232,7 @@
 "Settings.Studies.Toggle.Link" = "Sužinoti daugiau.";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "„Firefox“ retkarčiais gali įdiegti ir vykdyti tyrimus.";
+"Settings.Studies.Toggle.Message" = "„KARMA“ retkarčiais gali įdiegti ir vykdyti tyrimus.";
 
 /* Label used as a toggle item in Settings. When this is off, the user is opting out of all studies. */
 "Settings.Studies.Toggle.Title" = "Tyrimai";
@@ -1243,7 +1243,7 @@
 /* In the settings menu, in the Tabs customization section, this is the title for the setting that toggles the Tab Groups feature - where tabs from related searches are grouped - on or off */
 "Settings.Tabs.CustomizeTabsSection.TabGroups" = "Kortelių grupės";
 
-/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from firefox hompage */
+/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from KARMA hompage */
 "Settings.Tabs.CustomizeTabsSection.Title" = "Tvarkyti kortelių dėklą";
 
 /* In the settings menu, this is the title for the Tabs customization section option */
@@ -1315,29 +1315,29 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "Svetainių duomenys";
 
-/* Action label on share extension to add page to the Firefox reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "Įtraukti į skaitinių sąrašą";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "Įtraukta į skaitinių sąrašą";
 
-/* Action label on share extension to bookmark the page in Firefox. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "Įrašyti į adresyną";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "Adresyne";
 
-/* Action label on share extension to load the page in Firefox when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "Įkelti fone";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "Įkeliama per „Firefox“";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "Įkeliama per „KARMA“";
 
-/* Action label on share extension to immediately open page in Firefox. */
-"ShareExtension.OpenInFirefoxAction.Title" = "Atverti per „Firefox“";
+/* Action label on share extension to immediately open page in KARMA. */
+"ShareExtension.OpenInFirefoxAction.Title" = "Atverti per „KARMA“";
 
-/* Action label on share extension to search for the selected text in Firefox. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Ieškoti per „Firefox“";
+/* Action label on share extension to search for the selected text in KARMA. */
+"ShareExtension.SeachInFirefoxAction.Title" = "Ieškoti per „KARMA“";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "Rodyti paieškos žodžių siūlymus";
@@ -1411,7 +1411,7 @@
 /* The title for the tab tray */
 "TabTray.Title" = "Atvertos kortelės";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "The page could not be displayed in Reader View." = "Šio tinklalapio atvaizduoti skaitymo veiksenoje nepavyko.";
 
 /* Error message in the remote tabs panel */
@@ -1463,7 +1463,7 @@
 "UIMenuItem.PasteGo" = "Įdėti ir atverti";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "Ieškoti per „Firefox“";
+"UIMenuItem.SearchWithFirefox" = "Ieškoti per „KARMA“";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "neskaityta";
@@ -1493,7 +1493,7 @@
 "Yesterday" = "Vakar";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Firefox on your other devices." = "Kituose savo įrenginiuose su „Firefox“ neturite atvertų kortelių.";
+"You don’t have any tabs open in Firefox on your other devices." = "Kituose savo įrenginiuose su „KARMA“ neturite atvertų kortelių.";
 
 /* Your Rights settings section title */
 "Your Rights" = "Jūsų teisės";

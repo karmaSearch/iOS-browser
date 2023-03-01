@@ -15,8 +15,8 @@ protocol LoginDetailTableViewCellDelegate: AnyObject {
 }
 
 public struct LoginTableViewCellUX {
-    static let highlightedLabelFont = UIFont.systemFont(ofSize: 12)
-    static let descriptionLabelFont = UIFont.systemFont(ofSize: 16)
+    static let highlightedLabelFont = UIFont.customFont(ofSize: 12)
+    static let descriptionLabelFont = UIFont.customFont(ofSize: 16)
     static let HorizontalMargin: CGFloat = 14
 }
 

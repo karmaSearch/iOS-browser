@@ -226,7 +226,7 @@ done
 # Now generate the YAML that the `experimenter` server will use to keep up to date.
 # This file, `.experimenter.yaml` **must** be checked into source control, and kept up-to-date.
 # Experimenter will download it regularly/nightly.
-CMD="$BINARY_PATH generate-experimenter $repo_args --channel $CHANNEL --cache-dir $CACHE_DIR $APP_FML_FILE $EXPERIMENTER_MANIFEST"
+CMD="$BINARY_PATH generate-experimenter $repo_args --channel release --cache-dir $CACHE_DIR $APP_FML_FILE $EXPERIMENTER_MANIFEST"
 display=${CMD//"$SOURCE_ROOT"/\$SOURCE_ROOT}
 echo "$display"
 $CMD
@@ -248,7 +248,7 @@ for module in $MODULES ; do
     else
         output_dir="$PROJECT/Generated"
     fi
-    CMD="$BINARY_PATH generate $repo_args --channel $CHANNEL --language swift  --cache-dir $CACHE_DIR $input_pattern $output_dir"
+    CMD="$BINARY_PATH generate $repo_args --channel release --language swift  --cache-dir $CACHE_DIR $input_pattern $output_dir"
     # …truncating the absolute paths into something easier to read.
     display=${CMD//"$SOURCE_ROOT"/\$SOURCE_ROOT}
     echo "$display"

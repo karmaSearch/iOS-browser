@@ -7,8 +7,8 @@
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Tudja meg hogyan";
 
-/* Description for small home tab banner shown that allows user to switch their default browser to Firefox. */
-"DefaultBrowserCard.Description" = "Állítsa be a webhelyek, e-mailek és üzenetek hivatkozásait, hogy azok automatikusan a Firefoxban nyíljanak meg.";
+/* Description for small home tab banner shown that allows user to switch their default browser to KARMA. */
+"DefaultBrowserCard.Description" = "Állítsa be a webhelyek, e-mailek és üzenetek hivatkozásait, hogy azok automatikusan a KARMAban nyíljanak meg.";
 
 /* Description for small home tab banner shown that allows the user to switch their default browser to Firefox. */
 "DefaultBrowserCard.NextLevel.Description.v108" = "Válassza a Firefoxot alapértelmezett böngészőjeként, hogy automatikussá tegye a sebességet, a biztonságot és az adatvédelmet.";
@@ -35,7 +35,7 @@
 "DefaultBrowserOnboarding.Description2" = "2. Koppintson az alapértelmezett böngészőalkalmazás elemre";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Válassza a Firefoxot";
+"DefaultBrowserOnboarding.Description3" = "3. Válassza a KARMAot";
 
 /* Text for the screenshot of the iOS system settings page for Firefox. */
 "DefaultBrowserOnboarding.Screenshot" = "Alapértelmezett böngésző";

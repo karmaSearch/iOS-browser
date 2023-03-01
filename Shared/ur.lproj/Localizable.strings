@@ -28,7 +28,7 @@
 /* Title for the Jump Back In section. This section allows users to jump back in to a recently viewed tab */
 "ActivityStream.JumpBackIn.SectionTitle" = "واپس جائیں";
 
-/* On the Firefox homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
 "ActivityStream.JumpBackIn.TabGroup.SiteCount" = "ٹیبز: %d";
 
 /* A string used to signify the start of the Recently Saved section in Home Screen. */
@@ -124,7 +124,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "جب سے آپ نے آخری بار اپنا پاس ورڈ تبدیل کیا اس وقت سے پاس ورڈز لیک ہوگئے ہیں۔ اس اکاؤنٹ کی حفاظت کے لئے ، سائٹ میں لاگ ان کریں اور اپنا پاس ورڈ تبدیل کریں۔";
 
-/* Link to monitor.firefox.com to learn more about breached passwords */
+/* Link to monitor.KARMA.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "مزید سیکھیں";
 
 /* Leads to a link to the breached website */
@@ -299,7 +299,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "یہ ایک حملہ آور کی طرف سے ایک غلط کنفیگریشن یا چھیڑنا ہو سکتا ہے. اگر آپ ممکنہ خطرے کو قبول کرتے ہیں تو آگے بڑھیں۔";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "%@ کے مالک نے انکی ویب سائٹ نامناسب طرحہ سے تشکیل کی ہیں۔ اپنی معلومات کو چوری ہونے سے حفاظت کے لئے، Firefox نے اس ویب سائٹ سے نہیں جڑا ہے۔";
+"ErrorPages.CertWarning.Description" = "%@ کے مالک نے انکی ویب سائٹ نامناسب طرحہ سے تشکیل کی ہیں۔ اپنی معلومات کو چوری ہونے سے حفاظت کے لئے، KARMA نے اس ویب سائٹ سے نہیں جڑا ہے۔";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "اس کنکشن کا بھروسا نہیں ہے";
@@ -319,19 +319,19 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for firefox about:home page in tab history list */
-"Firefox.HomePage.Title" = "Firefox کا ابتائی صفحہ";
+/* Title for KARMA about:home page in tab history list */
+"Firefox.HomePage.Title" = "KARMA کا ابتائی صفحہ";
 
-/* A button at bottom of the Firefox homepage that, when clicked, takes users straight to the settings options, where they can customize the Firefox Home page */
+/* A button at bottom of the KARMA homepage that, when clicked, takes users straight to the settings options, where they can customize the KARMA Home page */
 "FirefoxHome.CustomizeHomeButton.Title" = "ابتدائی صفحہ کی تخصیص کریں";
 
-/* At the end of the Pocket section on the Firefox Homepage, this button appears and indicates tapping it will navigate the user to more Pocket Stories. */
+/* At the end of the Pocket section on the KARMA Homepage, this button appears and indicates tapping it will navigate the user to more Pocket Stories. */
 "FirefoxHome.Pocket.DiscoverMore" = "مزید تلاش کریں";
 
-/* On each Pocket Stories on the Firefox Homepage, this label appears and indicates the number of minutes to read an article. Minutes should be abbreviated due to space constraints. %d represents the number of minutes */
+/* On each Pocket Stories on the KARMA Homepage, this label appears and indicates the number of minutes to read an article. Minutes should be abbreviated due to space constraints. %d represents the number of minutes */
 "FirefoxHome.Pocket.Minutes.v99" = "%d منٹ";
 
-/* This is the title of the Pocket section on Firefox Homepage. */
+/* This is the title of the Pocket section on KARMA Homepage. */
 "FirefoxHome.Pocket.SectionTitle" = "فکر انگیز کہانیاں";
 
 /* When a user taps and holds on an item from the Recently Visited section, this label will appear indicating the option to remove that item. */
@@ -340,22 +340,22 @@
 /* Label showing how many sites there is in a search group. %d represents a number */
 "FirefoxHomepage.Common.SitesCount.v101" = "سائٹس: %d";
 
-/* The title for the Settings context menu action for sponsored tiles in the Firefox home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
+/* The title for the Settings context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
 "FirefoxHomepage.ContextualMenu.Settings.v101" = "سیٹنگز";
 
-/* The title for the Sponsored Content context menu action for sponsored tiles in the Firefox home page shortcuts section. Clicking this brings the users to a support page where users can learn more about Sponsored content and how it works. */
+/* The title for the Sponsored Content context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to a support page where users can learn more about Sponsored content and how it works. */
 "FirefoxHomepage.ContextualMenu.SponsoredContent.v101" = "ہمارے کفیل اور آپ کی رازداری";
 
-/* This string will show under a shortcuts tile on the firefox home page, indicating that the tile is a sponsored tile. Space is limited, please keep as short as possible. */
+/* This string will show under a shortcuts tile on the KARMA home page, indicating that the tile is a sponsored tile. Space is limited, please keep as short as possible. */
 "FirefoxHomepage.Shortcuts.Sponsored.v100" = "سپانسر شدہ";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "آگے";
 
-/* Settings section title for Firefox Account */
-"FxA.FirefoxAccount" = "Firefox اکاؤنٹ";
+/* Settings section title for KARMA Account */
+"FxA.FirefoxAccount" = "KARMA اکاؤنٹ";
 
-/* Button label to go to Firefox Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "اکاؤنٹ اور آلات کا بندرست کریں";
 
 /* Label when no internet is present */
@@ -373,11 +373,11 @@
 /* FxA sign in view email login button */
 "fxa.signin.use-email-instead" = "اس کے بجائے ای میل کا استعمال کریں";
 
-/* Button label to Sync your Firefox Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "ابھی ہمہ وقت سازی کریں";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "Firefox ہمہ وقت سازی %@ سے جڑِی ہے";
+"FxAPush_DeviceConnected_body" = "KARMA ہمہ وقت سازی %@ سے جڑِی ہے";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "ہمہ وقت سازی جڑ گئی";
@@ -386,7 +386,7 @@
 "FxAPush_DeviceDisconnected_body" = "%@ کو کامیابی سے منقطع کر دیا گیا ہے۔";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "اس آلہ کو Firefox ہمہ وقت سازی سے کامیابی سے منقیع کر دیا گیا ہے۔";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "اس آلہ کو KARMA ہمہ وقت سازی سے کامیابی سے منقیع کر دیا گیا ہے۔";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "ہم وقت سازی منقطع کر دی گئی";
@@ -395,10 +395,10 @@
 "FxAPush_DeviceDisconnected_title" = "ہمہ وقت سازی منقطع ہو گئی";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "ایک آلہ Firefoxہمہ وقت سازی سے منقطع ہوا ہے";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "ایک آلہ KARMAہمہ وقت سازی سے منقطع ہوا ہے";
 
-/* On the firefox homepage, the string read by the voice over prompt for accessibility, for the button which changes the wallpaper */
-"FxHomepage.Wallpaper.ButtonLabel.v99" = "Firefox لوگو، وال پیپر تبدیل کریں۔";
+/* On the KARMA homepage, the string read by the voice over prompt for accessibility, for the button which changes the wallpaper */
+"FxHomepage.Wallpaper.ButtonLabel.v99" = "KARMA لوگو، وال پیپر تبدیل کریں۔";
 
 /* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
 "Help" = "مدد";
@@ -589,10 +589,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "ہلکا";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "اصل صفحہ لوڈ کریں";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "مواد لوڈ ہو رہا ہے…";
 
 /* Authentication prompt log in button */
@@ -665,7 +665,7 @@
 "LoginsList.Title" = "SAVED LOGINS";
 
 /* Restore Tabs Prompt Description */
-"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "ایسا لگتا ہے Firefox پہلے تباہ ہوا ہے۔ کیا آپ اپنے ٹیب بحال کرنا چاہیں گے؟";
+"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "ایسا لگتا ہے KARMA پہلے تباہ ہوا ہے۔ کیا آپ اپنے ٹیب بحال کرنا چاہیں گے؟";
 
 /* Title for the button that marks a reading list item as read */
 "Mark as Read" = "بطور مطالعہ شدہ نشان زد کریں";
@@ -820,11 +820,11 @@
 /* Restore Tabs Affirmative Action */
 "Okay" = "ٹھیک ہے";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the title for the button, on the bottom of the card, used to get back to browsing on Firefox by dismissing the onboarding card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the button, on the bottom of the card, used to get back to browsing on KARMA by dismissing the onboarding card */
 "Onboarding.WhatsNew.Button.Title" = "براؤزنگ شروع کریں";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Firefox crashed" = "اف! Firefox تباہ ہوگیا";
+"Oops! Firefox crashed" = "اف! KARMA تباہ ہوگیا";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "عبارات کو پڑھنے کا نظارے میں تھابپ کر جب کتاب کا آئکن عنوان بار پر نظر آئے۔";
@@ -835,8 +835,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "ٹیب کھولیں";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app. */
-"OpenURL.Error.Message" = "Firefox اس صفحہ کو نہیں کھول سکتا کونکہ اسکا پتہ ناجائز ہے۔";
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
+"OpenURL.Error.Message" = "KARMA اس صفحہ کو نہیں کھول سکتا کونکہ اسکا پتہ ناجائز ہے۔";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "صفحہ نہیں کھول سکتا";
@@ -848,7 +848,7 @@
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "یہ آپ کی تصاویر کو اپنے کیمرے رول پر محفوظ کرنے کی اجازت دیتا ہے۔";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Firefox آپ کو تصاویر تکرسائی حاصل کرنا چاہے گا";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "KARMA آپ کو تصاویر تکرسائی حاصل کرنا چاہے گا";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "بند کریں";
@@ -856,7 +856,7 @@
 /* Privacy section title */
 "Privacy" = "رازداری";
 
-/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "رازداری پالیسی";
 
 /* This is the value for a label that indicates if a user is on an unencrypted website. */
@@ -868,7 +868,7 @@
 /* Title for quick-search engines settings section. */
 "Quick-Search Engines" = "تی تلاش انجن";
 
-/* A label indicating the action that a user can rate the Firefox app in the App store. */
+/* A label indicating the action that a user can rate the KARMA app in the App store. */
 "Ratings.Settings.RateOnAppStore" = "ایپ اسٹور پر ریٹ کریں۔";
 
 /* Accessibility label for read article in reading list. It's a past participle - functions as an adjective. */
@@ -1001,13 +1001,13 @@
 "SendTo.NavBar.Title" = "ٹیب ارسال کریں";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "آپ کے کوئی بھی دیگر آلات ہمہ وقت سازی پر موجود Firefox اکائونٹ سے جڑے نہیں ہوئے۔";
+"SendTo.NoDevicesFound.Message" = "آپ کے کوئی بھی دیگر آلات ہمہ وقت سازی پر موجود KARMA اکائونٹ سے جڑے نہیں ہوئے۔";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "براہ مہربانی Firefox کھولیں، سیٹینگز میں جائیں اور جاری رکھنے کے لیئے سائن ان کریں۔";
+"SendTo.NotSignedIn.Message" = "براہ مہربانی KARMA کھولیں، سیٹینگز میں جائیں اور جاری رکھنے کے لیئے سائن ان کریں۔";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "آپ اپنے Firefox اکائونٹ میں سائن ان نہیں ہیں۔";
+"SendTo.NotSignedIn.Title" = "آپ اپنے KARMA اکائونٹ میں سائن ان نہیں ہیں۔";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "ارسال کریں";
@@ -1085,7 +1085,7 @@
 "Settings.DataManagement.Title" = "کوائف بندرستگی";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "Firefox آپ کے اکائونٹ کے ساتھ ہمہ وقت سازی بند کر دے گا۔ لیکن اس آلہ پر آپ کے کوئی برائوزنگ کوائف حزف نہیں کرے گا۔";
+"Settings.Disconnect.Body" = "KARMA آپ کے اکائونٹ کے ساتھ ہمہ وقت سازی بند کر دے گا۔ لیکن اس آلہ پر آپ کے کوئی برائوزنگ کوائف حزف نہیں کرے گا۔";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "ہمہ وقت سازی منقطع کریں";
@@ -1144,52 +1144,52 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "آلہ کا نام";
 
-/* Label used as a section title in the Firefox Accounts Settings screen. */
+/* Label used as a section title in the KARMA Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "ہمہ وقت ساز سیٹنگیں";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "Firefox اکاؤنٹس";
+"Settings.FxA.Title" = "KARMA اکاؤنٹس";
 
 /* General settings section title */
 "Settings.General.SectionName" = "عمومی";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
 "Settings.Home.Option.JumpBackIn" = "واپس جائیں";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the KARMA homepage on or off */
 "Settings.Home.Option.Pocket" = "Pocket کی جانب سے تجویز کردہ";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentlySaved" = "حال ہی میں محفوظ شدہ";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
 "Settings.Home.Option.RecentlyVisited" = "حال ہی میں ملاحظہ کی گئی";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the KARMA homepage on or off */
 "Settings.Home.Option.Shortcuts" = "تیز راہ";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage after four hours of inactivity. */
 "Settings.Home.Option.StartAtHome.AfterFourHours" = "چار گھنٹے کی غیرفعالیت کے بعد  ابتدائی صفحہ";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Always" = "ابتدائی صفحہ";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Never" = "آخری ٹیب";
 
-/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Firefox Homepage. */
+/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the KARMA Homepage. */
 "Settings.Home.Option.StartAtHome.Title" = "اسکرین کھول رہا ہے";
 
-/* In the settings menu, this is the title of the Firefox Homepage customization settings section */
+/* In the settings menu, this is the title of the KARMA Homepage customization settings section */
 "Settings.Home.Option.Title.v101" = "ہوم پیج پر شامل کریں۔";
 
-/* In the settings menu, on the Firefox homepage customization section, this is the title for the option that allows users to access the wallpaper settings for the application. */
+/* In the settings menu, on the KARMA homepage customization section, this is the title for the option that allows users to access the wallpaper settings for the application. */
 "Settings.Home.Option.Wallpaper" = "وال پیپرز";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of that screen, which allows users to change the wallpaper settings for the application. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title of that screen, which allows users to change the wallpaper settings for the application. */
 "Settings.Home.Option.Wallpaper.Title" = "وال پیپرز";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of the button found on the toast that comes up once the user changes wallpaper, and allows users to dismiss the settings page. In this case, consider View as a verb - the action of dismissing settings and seeing the wallpaper. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title of the button found on the toast that comes up once the user changes wallpaper, and allows users to dismiss the settings page. In this case, consider View as a verb - the action of dismissing settings and seeing the wallpaper. */
 "Settings.Home.Option.Wallpaper.UpdatedToastButton" = "نظارہ";
 
 /* Label used as an item in Settings. When touched it will open a dialog to configure the home page and its uses. */
@@ -1228,8 +1228,8 @@
 /* Option in settings to show a blank page when you open a new tab */
 "Settings.NewTab.Option.BlankPage" = "جالی صفحہ";
 
-/* Option in settings to show Firefox Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "Firefox ابتدائی صفحہ";
+/* Option in settings to show KARMA Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "KARMA ابتدائی صفحہ";
 
 /* Option in settings to show your homepage when you open a new tab */
 "Settings.NewTab.Option.HomePage" = "ابتدائی صفحہ";
@@ -1250,7 +1250,7 @@
 "Settings.NoImageModeBlockImages.Label.v99" = "تصویر مسدود کریں";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "Firefox کھولتے وقت";
+"Settings.OfferClipboardBar.Status" = "KARMA کھولتے وقت";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "نقل شدہ ربط کھولنے پیشکش";
@@ -1274,7 +1274,7 @@
 "Settings.SendUsage.Link" = "مزید سیکھیں.";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "Mozilla صرف اس کو جمع کرنے کی کوشش کرتا ہے جو ہمیں ہر کسی کے لئے Firefox فراہم کرنے اور بہتر بنانے کی ضرورت ہے۔";
+"Settings.SendUsage.Message" = "Mozilla صرف اس کو جمع کرنے کی کوشش کرتا ہے جو ہمیں ہر کسی کے لئے KARMA فراہم کرنے اور بہتر بنانے کی ضرورت ہے۔";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "استعمال شدہ کوائف ارسال کریں";
@@ -1372,29 +1372,29 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "ویب سائٹ کے کوائف";
 
-/* Action label on share extension to add page to the Firefox reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "مطالعہ فہرست میں شامل کریں";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "مطالعہ فہرست میں شامل کر دیا گیا ہے";
 
-/* Action label on share extension to bookmark the page in Firefox. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "یہ صفحہ نشان زد کریں";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "نشان شدہ";
 
-/* Action label on share extension to load the page in Firefox when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "پس منظر لوڈ ہو گیا";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "Firefox میں لوڈ ہو رہا ہے";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "KARMA میں لوڈ ہو رہا ہے";
 
-/* Action label on share extension to immediately open page in Firefox. */
-"ShareExtension.OpenInFirefoxAction.Title" = "Firefox میں کھولیں";
+/* Action label on share extension to immediately open page in KARMA. */
+"ShareExtension.OpenInFirefoxAction.Title" = "KARMA میں کھولیں";
 
-/* Action label on share extension to search for the selected text in Firefox. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Firefox میں تلاش کریں";
+/* Action label on share extension to search for the selected text in KARMA. */
+"ShareExtension.SeachInFirefoxAction.Title" = "KARMA میں تلاش کریں";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "تلاش تجاویز دکھائیں";
@@ -1468,7 +1468,7 @@
 /* The title for the tab tray */
 "TabTray.Title" = "ٹیب کھولیں";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "The page could not be displayed in Reader View." = "صفحہ ریڈر ویو میں ظاہر نہیں کیا جا سکا۔";
 
 /* Error message in the remote tabs panel */
@@ -1520,7 +1520,7 @@
 "UIMenuItem.PasteGo" = "چسپاں کریں اور چلیں";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "Firefox کے ساتھ تلاش کریں";
+"UIMenuItem.SearchWithFirefox" = "KARMA کے ساتھ تلاش کریں";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "غير مطالعہ";
@@ -1550,7 +1550,7 @@
 "Yesterday" = "‏‏گزشتہ کل";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Firefox on your other devices." = "آپ کے دوسرے آلات پر Firefox میں کوئی ٹیب نہیں کھلے ہوئِے ہیں۔";
+"You don’t have any tabs open in Firefox on your other devices." = "آپ کے دوسرے آلات پر KARMA میں کوئی ٹیب نہیں کھلے ہوئِے ہیں۔";
 
 /* Your Rights settings section title */
 "Your Rights" = "آپ کے حقوق";

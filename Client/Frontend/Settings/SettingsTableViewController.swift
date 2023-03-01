@@ -570,7 +570,7 @@ class CheckmarkSetting: Setting {
                 make.leading.equalToSuperview().offset(20)
             }
             check.text = "\u{2713}"
-            check.font = UIFont.systemFont(ofSize: 20)
+            check.font = UIFont.customFont(ofSize: 20)
             check.textColor = checkColor
 
             let result = NSMutableAttributedString()

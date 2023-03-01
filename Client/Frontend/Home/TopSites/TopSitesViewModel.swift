@@ -169,6 +169,14 @@ extension TopSitesViewModel: HomepageViewModelProtocol, FeatureFlaggable {
                                                         bottom: HomepageViewModel.UX.spacingBetweenSections - TopSiteItemCell.UX.bottomSpace,
                                                         trailing: leadingInset)
         section.interGroupSpacing = UX.cardSpacing
+        
+        // Supplementary Item
+        let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
+                                                heightDimension: .estimated(34))
+        let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize,
+                                                                 elementKind: UICollectionView.elementKindSectionHeader,
+                                                                 alignment: .top)
+        section.boundarySupplementaryItems = [header]
 
         return section
     }

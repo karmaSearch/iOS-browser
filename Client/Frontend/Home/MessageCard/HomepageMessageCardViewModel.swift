@@ -92,6 +92,9 @@ extension HomepageMessageCardViewModel: HomepageViewModelProtocol {
     }
 
     var isEnabled: Bool {
+        #if KARMA
+        return false
+        #endif
         return true
     }
 

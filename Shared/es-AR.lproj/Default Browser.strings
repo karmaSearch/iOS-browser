@@ -7,8 +7,8 @@
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Aprender cómo";
 
-/* Description for small home tab banner shown that allows user to switch their default browser to Firefox. */
-"DefaultBrowserCard.Description" = "Configurar enlaces de sitios web, correos electrónicos y mensajes para que se abran automáticamente en Firefox.";
+/* Description for small home tab banner shown that allows user to switch their default browser to KARMA. */
+"DefaultBrowserCard.Description" = "Configurar enlaces de sitios web, correos electrónicos y mensajes para que se abran automáticamente en KARMA.";
 
 /* Description for small home tab banner shown that allows the user to switch their default browser to Firefox. */
 "DefaultBrowserCard.NextLevel.Description.v108" = "Elegí Firefox como tu navegador predeterminado para que la velocidad, la seguridad y la privacidad sean automáticas.";
@@ -35,7 +35,7 @@
 "DefaultBrowserOnboarding.Description2" = "2. Tocá la aplicación del navegador predeterminado";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Seleccioná Firefox";
+"DefaultBrowserOnboarding.Description3" = "3. Seleccioná KARMA";
 
 /* Text for the screenshot of the iOS system settings page for Firefox. */
 "DefaultBrowserOnboarding.Screenshot" = "Aplicación del navegador predeterminado";

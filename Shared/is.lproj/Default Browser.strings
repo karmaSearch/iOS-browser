@@ -7,8 +7,8 @@
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Læra hvernig";
 
-/* Description for small home tab banner shown that allows user to switch their default browser to Firefox. */
-"DefaultBrowserCard.Description" = "Stilltu tengla frá vefsvæðum, tölvupósti og skilaboðum til að opna sjálfkrafa í Firefox.";
+/* Description for small home tab banner shown that allows user to switch their default browser to KARMA. */
+"DefaultBrowserCard.Description" = "Stilltu tengla frá vefsvæðum, tölvupósti og skilaboðum til að opna sjálfkrafa í KARMA.";
 
 /* Description for small home tab banner shown that allows the user to switch their default browser to Firefox. */
 "DefaultBrowserCard.NextLevel.Description.v108" = "Veldu Firefox sem sjálfgefinn vafra til að sjálfvirkt njóta hraða, öryggis og næðis.";
@@ -35,7 +35,7 @@
 "DefaultBrowserOnboarding.Description2" = "2. Ýttu á sjálfgefið vafraforrit";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Veldu Firefox";
+"DefaultBrowserOnboarding.Description3" = "3. Veldu KARMA";
 
 /* Text for the screenshot of the iOS system settings page for Firefox. */
 "DefaultBrowserOnboarding.Screenshot" = "Sjálfgefið vafraforrit";

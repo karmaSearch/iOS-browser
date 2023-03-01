@@ -305,7 +305,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "Mund të jetë një keqformësim ose futje hundësh nga dikush që po sulmon. Vazhdoni, nëse e pranoni rrezikun potencial.";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "I zoti i %@ e ka formësuar keq sajtin e tij. Që të mbrohen nga vjedhjet të dhënat tuaja, Firefox-i nuk u lidh me këtë sajt.";
+"ErrorPages.CertWarning.Description" = "I zoti i %@ e ka formësuar keq sajtin e tij. Që të mbrohen nga vjedhjet të dhënat tuaja, KARMA-i nuk u lidh me këtë sajt.";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "Kjo Lidhje Nuk Besohet";
@@ -370,10 +370,10 @@
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "Përpara";
 
-/* Settings section title for Firefox Account */
-"FxA.FirefoxAccount" = "Llogari Firefox";
+/* Settings section title for KARMA Account */
+"FxA.FirefoxAccount" = "Llogari KARMA";
 
-/* Button label to go to Firefox Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "Administroni Llogari & Pajisje";
 
 /* Label when no internet is present */
@@ -415,8 +415,8 @@
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
 "FxAPush_DeviceDisconnected_UnknownDevice_body" = "Është shkëputur një pajisje nga Firefox Sync-u";
 
-/* On the firefox homepage, the string read by the voice over prompt for accessibility, for the button which changes the wallpaper */
-"FxHomepage.Wallpaper.ButtonLabel.v99" = "Stemë Firefox-i, ndryshoni sfondin.";
+/* On the KARMA homepage, the string read by the voice over prompt for accessibility, for the button which changes the wallpaper */
+"FxHomepage.Wallpaper.ButtonLabel.v99" = "Stemë KARMA-i, ndryshoni sfondin.";
 
 /* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
 "Help" = "Ndihmë";
@@ -625,10 +625,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "E çelët";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "Ngarko faqen origjinale";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "Po ngarkohet lëndë…";
 
 /* Authentication prompt log in button */
@@ -650,13 +650,13 @@
 "Logins.Onboarding.LearnMoreButtonTitle" = "Mësoni Më Tepër";
 
 /* Warning message shown when you try to enable or use native AutoFill without a device passcode setup */
-"Logins.PasscodeRequirement.Warning" = "Që të përdorni veçorinë Vetëplotësim për Firefox, duhet të keni të aktivizuar një kodkalim pajisjeje.";
+"Logins.PasscodeRequirement.Warning" = "Që të përdorni veçorinë Vetëplotësim për KARMA, duhet të keni të aktivizuar një kodkalim pajisjeje.";
 
 /* Label displaying welcome view tagline under the title */
 "Logins.WelcomeView.Tagline" = "Merrini fjalëkalimet tuaja kudo";
 
 /* Label displaying welcome view title */
-"Logins.WelcomeView.Title2" = "Vetëplotësim Fjalëkalimesh Firefox-i";
+"Logins.WelcomeView.Title2" = "Vetëplotësim Fjalëkalimesh KARMA-i";
 
 /* Title of the big blue button to enable AutoFill */
 "Logins.WelcomeView.TurnOnAutoFill" = "Aktivizo Vetëplotësim";
@@ -689,7 +689,7 @@
 "LoginsList.LoginsListSearchPlaceholder" = "Filtër";
 
 /* Label shown when there are no logins to list */
-"LoginsList.NoLoginsFound.Description" = "Këtu do të duken kredenciale hyrjesh të ruajtur. Nëse i keni ruajtur në një pajisje tjetër kredencialet tuaja Firefox të hyrjeve, bëni hyrjen në Llogarinë tuaj Firefox.";
+"LoginsList.NoLoginsFound.Description" = "Këtu do të duken kredenciale hyrjesh të ruajtur. Nëse i keni ruajtur në një pajisje tjetër kredencialet tuaja KARMA të hyrjeve, bëni hyrjen në Llogarinë tuaj KARMA.";
 
 /* Label shown when there are no logins saved */
 "LoginsList.NoLoginsFound.Title" = "S’u gjetën kredenciale hyrjesh";
@@ -713,7 +713,7 @@
 "LoginsList.Title" = "KREDENCIALE HYRJESH TË RUAJTURA";
 
 /* Restore Tabs Prompt Description */
-"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "Duket se Firefox-i, më herët, u vithis. Do të donit të rikthehen skedat tuaja?";
+"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "Duket se KARMA-i, më herët, u vithis. Do të donit të rikthehen skedat tuaja?";
 
 /* Title for the button that marks a reading list item as read */
 "Mark as Read" = "Shënoje si të Lexuar";
@@ -959,7 +959,7 @@
 "Onboarding.WhatsNew.Button.Title" = "Filloni të Shfletoni";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Firefox crashed" = "Hëm! Firefox-i u vithis";
+"Oops! Firefox crashed" = "Hëm! KARMA-i u vithis";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "Artikujt nën Pamjen Lexues i hapni duke prekur ikonën libër, kur shfaqet te shtylla e titullit.";
@@ -970,8 +970,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "Hapi Skedat";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app. */
-"OpenURL.Error.Message" = "Firefox-i s’e hap dot faqen, ngaqë ajo ka një adresë të pavlefshme.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
+"OpenURL.Error.Message" = "KARMA-i s’e hap dot faqen, ngaqë ajo ka një adresë të pavlefshme.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "S’hap Dot Faqen";
@@ -983,7 +983,7 @@
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "Kjo ju lejon të ruani figurën te Camera Roll juaj.";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Firefox-i do të donte të hynte te Fotot tuaja";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "KARMA-i do të donte të hynte te Fotot tuaja";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "Mbylle";
@@ -1070,7 +1070,7 @@
 "ScanQRCode.InvalidDataError.Message" = "Të dhënat janë të pavlefshme";
 
 /* Text of the prompt to setup the camera authorization for the Scan QR Code feature. */
-"ScanQRCode.PermissionError.Message.v100" = "Kaloni te ‘Rregullime’ pajisjeje > ‘Firefox’. Lejoni Firefox-in të përdorë kamerën.";
+"ScanQRCode.PermissionError.Message.v100" = "Kaloni te ‘Rregullime’ pajisjeje > ‘KARMA’. Lejoni KARMA-in të përdorë kamerën.";
 
 /* Title for the QR code scanner view. */
 "ScanQRCode.View.Title" = "Skanonin Kodin QR";
@@ -1160,13 +1160,13 @@
 "SendTo.NavBar.Title" = "Dërgo Skedë";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "S’keni ndonjë pajisje tjetër të lidhur te kjo Llogari Firefox-i të gatshme për njëkohësim.";
+"SendTo.NoDevicesFound.Message" = "S’keni ndonjë pajisje tjetër të lidhur te kjo Llogari KARMA-i të gatshme për njëkohësim.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "Ju lutemi, që të vazhdohet, hapni Firefox-in, shkoni te Rregullimet dhe bëni hyrjen.";
+"SendTo.NotSignedIn.Message" = "Ju lutemi, që të vazhdohet, hapni KARMA-in, shkoni te Rregullimet dhe bëni hyrjen.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "S’keni bërë hyrjen te Llogaria juaj Firefox.";
+"SendTo.NotSignedIn.Title" = "S’keni bërë hyrjen te Llogaria juaj KARMA.";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "Dërgoje";
@@ -1250,7 +1250,7 @@
 "Settings.DataManagement.Title" = "Administrim të Dhënash";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "Firefox-i do të reshtë së njëkohësuari me llogarinë tuaj, por nuk do të fshihet ndonjë nga të dhënat e shfletimeve tuaja në këtë pajisje.";
+"Settings.Disconnect.Body" = "KARMA-i do të reshtë së njëkohësuari me llogarinë tuaj, por nuk do të fshihet ndonjë nga të dhënat e shfletimeve tuaja në këtë pajisje.";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "Shkëputeni Sync-un";
@@ -1316,7 +1316,7 @@
 "Settings.FxA.Sync.SectionName" = "Rregullime Njëkohësimesh";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "Llogari Firefox";
+"Settings.FxA.Title" = "Llogari KARMA";
 
 /* General settings section title */
 "Settings.General.SectionName" = "Të përgjithshme";
@@ -1352,7 +1352,7 @@
 "Settings.Home.Option.StartAtHome.Always" = "Kreu";
 
 /* In the settings menu, in the Start at Home customization options, this is text that appears below the section, describing what the section settings do. */
-"Settings.Home.Option.StartAtHome.Description" = "Zgjidhni çtë shihni, kur ktheheni te Firefox-i.";
+"Settings.Home.Option.StartAtHome.Description" = "Zgjidhni çtë shihni, kur ktheheni te KARMA-i.";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Firefox */
 "Settings.Home.Option.StartAtHome.Never" = "Skedën e fundit";
@@ -1378,8 +1378,8 @@
 /* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string for the default wallpaper. */
 "Settings.Home.Option.Wallpaper.Accessibility.DefaultWallpaper.v99" = "Sfond parazgjedhje i qëruar.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the sunrise firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.SunriseWallpaper.v99" = "Sfond Firefox-i, mostër agu.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title accessibility string for the sunrise KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.SunriseWallpaper.v99" = "Sfond KARMA-i, mostër agu.";
 
 /* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string of the toggle for turning wallpaper cycling shortcut on or off on the homepage. */
 "Settings.Home.Option.Wallpaper.Accessibility.ToggleButton" = "Aktivizim/Çaktivizim cikli sfondesh faqeje hyrëse";
@@ -1456,8 +1456,8 @@
 /* Option in settings to show a blank page when you open a new tab */
 "Settings.NewTab.Option.BlankPage" = "Faqe të Zbrazët";
 
-/* Option in settings to show Firefox Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "Kreun e Firefox-it";
+/* Option in settings to show KARMA Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "Kreun e KARMA-it";
 
 /* Option in settings to show your homepage when you open a new tab */
 "Settings.NewTab.Option.HomePage" = "Kreu";
@@ -1478,7 +1478,7 @@
 "Settings.NoImageModeBlockImages.Label.v99" = "Blloko Figura";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "Kur Hapet Firefox-i";
+"Settings.OfferClipboardBar.Status" = "Kur Hapet KARMA-i";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "Ofro Hapje Lidhjesh të Kopjuara";
@@ -1514,7 +1514,7 @@
 "Settings.SendUsage.Link" = "Mësoni Më Tepër.";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "Mozilla rreket të grumbullojë vetëm sa na duhen për të ofruar dhe përmirësuar Firefox-in për këdo.";
+"Settings.SendUsage.Message" = "Mozilla rreket të grumbullojë vetëm sa na duhen për të ofruar dhe përmirësuar KARMA-in për këdo.";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "Dërgo të Dhëna Përdorimi";
@@ -1532,7 +1532,7 @@
 "Settings.Siri.OpenTabShortcut" = "Hap Skedë të Re";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "Përdorni shkurtore Siri për ta hapur shpejt e shpejt Firefox-in përmes Siri-t";
+"Settings.Siri.SectionDescription" = "Përdorni shkurtore Siri për ta hapur shpejt e shpejt KARMA-in përmes Siri-t";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "Shkurtore Siri";
@@ -1541,7 +1541,7 @@
 "Settings.Studies.Toggle.Link" = "Mësoni Më Tepër.";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "Firefox-i mund të instalojë dhe zhvillojë studime herë pas here.";
+"Settings.Studies.Toggle.Message" = "KARMA-i mund të instalojë dhe zhvillojë studime herë pas here.";
 
 /* Label used as a toggle item in Settings. When this is off, the user is opting out of all studies. */
 "Settings.Studies.Toggle.Title" = "Studime";
@@ -1564,7 +1564,7 @@
 /* In the settings menu, in the Tabs customization section, this is the title for the setting that toggles the Tab Groups feature - where tabs from related searches are grouped - on or off */
 "Settings.Tabs.CustomizeTabsSection.TabGroups" = "Grupe Skedash";
 
-/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from firefox hompage */
+/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from KARMA hompage */
 "Settings.Tabs.CustomizeTabsSection.Title" = "Përshtatni Panel Skedash";
 
 /* In the settings menu, this is the title for the Tabs customization section option */
@@ -1636,29 +1636,29 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "Të dhëna Sajtesh";
 
-/* Action label on share extension to add page to the Firefox reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "Shtoje te Listë Leximesh";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "U shtua te Listë Leximesh";
 
-/* Action label on share extension to bookmark the page in Firefox. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "Faqeruaje Këtë Faqe";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "U faqeruajt";
 
-/* Action label on share extension to load the page in Firefox when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "Ngarkoje në Prapaskenë";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "Po ngarkohet në Firefox";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "Po ngarkohet në KARMA";
 
-/* Action label on share extension to immediately open page in Firefox. */
-"ShareExtension.OpenInFirefoxAction.Title" = "Hape në Firefox";
+/* Action label on share extension to immediately open page in KARMA. */
+"ShareExtension.OpenInFirefoxAction.Title" = "Hape në KARMA";
 
-/* Action label on share extension to search for the selected text in Firefox. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Kërko në Firefox";
+/* Action label on share extension to search for the selected text in KARMA. */
+"ShareExtension.SeachInFirefoxAction.Title" = "Kërko në KARMA";
 
 /* Button in share sheet to copy the url of the current tab. */
 "ShareSheet.Copy.Title.v108" = "Kopjoje";
@@ -1805,7 +1805,7 @@
 "UIMenuItem.PasteGo" = "Ngjite & Shko";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "Kërko me Firefox";
+"UIMenuItem.SearchWithFirefox" = "Kërko me KARMA";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "të palexuara";
@@ -1871,7 +1871,7 @@
 "Yesterday" = "Dje";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Firefox on your other devices." = "S’keni ndonjë skedë të hapur te Firefox-i në pajisje tuajat të tjera.";
+"You don’t have any tabs open in Firefox on your other devices." = "S’keni ndonjë skedë të hapur te KARMA-i në pajisje tuajat të tjera.";
 
 /* Your Rights settings section title */
 "Your Rights" = "Të drejtat Tuaja";

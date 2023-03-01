@@ -68,7 +68,9 @@ final class NimbusFeatureFlagLayer {
                 .shareToolbarChanges:
             return checkNimbusForShareSheet(for: featureID, from: nimbus)
         case .creditCardAutofillStatus:
-            return checkNimbusForCreditCardAutofill(for: featureID, from: nimbus)
+            return checkNimbusForCreditCardAutofill(for: featureID, from: nimbus) 
+        default: return true
+            
         }
     }
 

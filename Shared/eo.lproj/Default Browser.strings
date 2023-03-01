@@ -7,8 +7,8 @@
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Lernu kiel fari";
 
-/* Description for small home tab banner shown that allows user to switch their default browser to Firefox. */
-"DefaultBrowserCard.Description" = "Aŭtomate malfermi ligilon en retejoj, retpoŝtoj kaj mesaĝoj per Firefox.";
+/* Description for small home tab banner shown that allows user to switch their default browser to KARMA. */
+"DefaultBrowserCard.Description" = "Aŭtomate malfermi ligilon en retejoj, retpoŝtoj kaj mesaĝoj per KARMA.";
 
 /* Description for small home tab banner shown that allows the user to switch their default browser to Firefox. */
 "DefaultBrowserCard.NextLevel.Description.v108" = "Elektu Firefox kiel vian norman retumilon por aŭtomate havi rapidecon, sekurecon kaj privatecon.";
@@ -35,7 +35,7 @@
 "DefaultBrowserOnboarding.Description2" = "2. Tuŝetu Norma retumila programo";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Elektu Firefox";
+"DefaultBrowserOnboarding.Description3" = "3. Elektu KARMA";
 
 /* Text for the screenshot of the iOS system settings page for Firefox. */
 "DefaultBrowserOnboarding.Screenshot" = "Norma retumila programo";

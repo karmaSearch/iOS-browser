@@ -253,22 +253,22 @@
 /* Tile title for Facebook */
 "Facebook" = "ഫേസ്ബുക്ക്";
 
-/* Title for firefox about:home page in tab history list */
+/* Title for KARMA about:home page in tab history list */
 "Firefox.HomePage.Title" = "ഫയർഫോക്സ് പൂമുഖം";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "മുന്നോട്ട്";
 
-/* Settings section title for Firefox Account */
+/* Settings section title for KARMA Account */
 "FxA.FirefoxAccount" = "ഫയര്‍ഫോക്സ് അക്കൌണ്ട്";
 
-/* Button label to go to Firefox Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "അക്കൗണ്ടും ഉപകരണങ്ങൾ നിയന്ത്രിക്കുക";
 
 /* Label when no internet is present */
 "FxA.NoInternetConnection" = "ഇന്റർനെറ്റ് ബന്ധം ഇല്ല";
 
-/* Button label to Sync your Firefox Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "ഇപ്പോൾ സമന്വയിപ്പിക്കുൂ";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
@@ -403,10 +403,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "ലഘുവായ";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "ശരിയായ താള്‍ ലോഡ് ചെയ്യുക";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "ഉള്ളടക്കം ലോഡ് ചെയ്തുകൊണ്ടിരിക്കുന്നു…";
 
 /* Authentication prompt log in button */
@@ -553,7 +553,7 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "തുറന്ന ടാബുകള്‍";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app. */
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
 "OpenURL.Error.Message" = "അത് അസാധുവായ ഒരു വിലാസമാതിനാൽ ഫയർഫോക്സിന് താള് തുറക്കാൻ കഴിയില്ല.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
@@ -574,7 +574,7 @@
 /* Privacy section title */
 "Privacy" = "സ്വകാര്യത";
 
-/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "സ്വകാര്യ വ്യവസ്ഥകള്‍";
 
 /* Title for quick-search engines settings section. */
@@ -844,7 +844,7 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "ഉപകരണത്തിന്റെ പേരു്";
 
-/* Label used as a section title in the Firefox Accounts Settings screen. */
+/* Label used as a section title in the KARMA Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "സമന്വയ സജ്ജീകരണങ്ങള്‍";
 
 /* Title displayed in header of the FxA settings panel. */
@@ -871,7 +871,7 @@
 /* Option in settings to show a blank page when you open a new tab */
 "Settings.NewTab.Option.BlankPage" = "ഒരു ശൂന്യമായ താൾ കാണിക്കുക";
 
-/* Option in settings to show Firefox Home when you open a new tab */
+/* Option in settings to show KARMA Home when you open a new tab */
 "Settings.NewTab.Option.FirefoxHome" = "ഫയർഫോക്സ് പൂമുഖം";
 
 /* Option in settings to show your homepage when you open a new tab */
@@ -961,28 +961,28 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "വെബ്സൈറ്റു് വിവരങ്ങള്‍";
 
-/* Action label on share extension to add page to the Firefox reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "വായനാ പട്ടികയിലേക്ക് ചേര്‍ക്കുക";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "വായനാ പട്ടികയിലേക്ക് ചേര്‍ത്തു";
 
-/* Action label on share extension to bookmark the page in Firefox. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "ഈ താള്‍ അടയാളപ്പെടുത്തുക";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "അടയാളപ്പെടുത്തി";
 
-/* Action label on share extension to load the page in Firefox when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "പശ്ചാത്തലത്തിൽ ലോഡുചെയ്യുക";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
 "ShareExtension.LoadInBackgroundActionDone.Title" = "ഫയർഫോക്സിൽ ലോഡ് ചെയ്യുന്നു";
 
-/* Action label on share extension to immediately open page in Firefox. */
+/* Action label on share extension to immediately open page in KARMA. */
 "ShareExtension.OpenInFirefoxAction.Title" = "ഫയർഫോക്സിൽ തുറക്കുക";
 
-/* Action label on share extension to search for the selected text in Firefox. */
+/* Action label on share extension to search for the selected text in KARMA. */
 "ShareExtension.SeachInFirefoxAction.Title" = "ഫയർഫോക്സിൽ തിരയുക";
 
 /* Label for show search suggestions setting. */
@@ -1033,7 +1033,7 @@
 /* A label indicating the keyboard shortcut of opening a new tab in the tab tray. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
 "TabTray.OpenNewTab.KeyCodeTitle" = "പുതിയ റ്റാബ് തുറക്കുക";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "The page could not be displayed in Reader View." = "വായനാരീതിയില്‍ പേജ് കാണിക്കുവാന്‍ കഴിയുന്നില്ല.";
 
 /* Error message in the remote tabs panel */

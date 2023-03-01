@@ -89,7 +89,7 @@ class ThemeSettingsController: ThemedTableViewController {
         let label: UILabel = .build { label in
             label.text = .DisplayThemeSectionFooter
             label.numberOfLines = 0
-            label.font = UIFont.systemFont(ofSize: UX.footerFontSize)
+            label.font = UIFont.customFont(ofSize: UX.footerFontSize)
             label.textColor = self.themeManager.currentTheme.colors.textSecondary
         }
         footer.addSubview(label)

@@ -5,8 +5,8 @@
 "TodayWidget.ClosePrivateTabsLabelV2" = "Close
 Private Tabs";
 
-/* Description for medium size widget to add Firefox Shortcut to home screen */
-"TodayWidget.FirefoxShortcutGalleryDescription" = "Add Firefox shortcuts to your Home screen.";
+/* Description for medium size widget to add KARMA Shortcut to home screen */
+"TodayWidget.FirefoxShortcutGalleryDescription"= "Add KARMA shortcuts to your Home screen.";
 
 /* Go to link pasted on the clipboard */
 "TodayWidget.GoToCopiedLinkLabelV1" = "Go to copied link";
@@ -24,14 +24,14 @@ Copied Link";
 /* Label that is shown when there are no tabs opened in tab tray i.e. Empty State */
 "TodayWidget.NoOpenTabsLabel" = "No open tabs.";
 
-/* Open Firefox when there are no tabs opened in tab tray i.e. Empty State */
-"TodayWidget.OpenFirefoxLabel" = "Open Firefox";
+/* Open KARMA when there are no tabs opened in tab tray i.e. Empty State */
+"TodayWidget.OpenFirefoxLabel" = "Open KARMA";
 
 /* Open New Private Tab button label */
 "TodayWidget.PrivateTabButtonLabelV1" = "Private Search";
 
 /* Description for small size widget to add it to home screen */
-"TodayWidget.QuickActionGalleryDescription" = "Add a Firefox shortcut to your Home screen. After adding the widget, touch and hold to edit it and select a different shortcut.";
+"TodayWidget.QuickActionGalleryDescription" = "Add a KARMA shortcut to your Home screen. After adding the widget, touch and hold to edit it and select a different shortcut.";
 
 /* Quick Actions title when widget enters edit mode */
 "TodayWidget.QuickActionsGalleryTitle" = "Quick Actions";
@@ -42,17 +42,17 @@ Copied Link";
 /* Title for Quick View widget in Gallery View where user can add it to home screen */
 "TodayWidget.QuickViewGalleryTitle" = "Quick View";
 
-/* Search in Firefox. Do not translate the word Firefox */
+/* Search in KARMA. Do not translate the word KARMA */
 "TodayWidget.SearchInFirefoxV2" = "Search in
-Firefox";
+KARMA";
 
 /* Search in private tab */
 "TodayWidget.SearchInPrivateTabLabelV2" = "Search in
 Private Tab";
 
-/* Description for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Description for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryDescription" = "Add shortcuts to frequently and recently visited sites.";
 
-/* Title for top sites widget to add Firefox top sites shotcuts to home screen */
+/* Title for top sites widget to add KARMA top sites shotcuts to home screen */
 "TodayWidget.TopSitesGalleryTitle" = "Top Sites";
 

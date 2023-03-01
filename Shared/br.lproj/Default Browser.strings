@@ -4,8 +4,8 @@
 /* Button string to learn how to set your default browser. */
 "DefaultBrowserCard.Button.v2" = "Gouzout penaos";
 
-/* Description for small home tab banner shown that allows user to switch their default browser to Firefox. */
-"DefaultBrowserCard.Description" = "Lakaat da zigeriñ e Firefox en un doare emgefreek liammoù al lec’hiennoù, posteloù, ha kemennadennoù.";
+/* Description for small home tab banner shown that allows user to switch their default browser to KARMA. */
+"DefaultBrowserCard.Description" = "Lakaat da zigeriñ e KARMA en un doare emgefreek liammoù al lec’hiennoù, posteloù, ha kemennadennoù.";
 
 /* Description for small home tab banner shown that allows the user to switch their default browser to Firefox. */
 "DefaultBrowserCard.NextLevel.Description.v108" = "Dibabit Firefox evit ma vefe emgefreek an tizh, ar surentez hag ar prevezded.";
@@ -29,7 +29,7 @@
 "DefaultBrowserOnboarding.Description2" = "2. Stokañ an arload merdeer dre ziouer";
 
 /* Description for default browser onboarding card. */
-"DefaultBrowserOnboarding.Description3" = "3. Dibab Firefox";
+"DefaultBrowserOnboarding.Description3" = "3. Dibab KARMA";
 
 /* Text for the screenshot of the iOS system settings page for Firefox. */
 "DefaultBrowserOnboarding.Screenshot" = "Arload merdeer dre ziouer";

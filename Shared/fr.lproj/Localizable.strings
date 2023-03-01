@@ -305,7 +305,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "Il peut s’agir d’une erreur de configuration ou d’une tentative d’attaque. Poursuivez en ayant conscience du risque encouru.";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "Les propriétaires de %@ ont mal configuré leur site. Pour éviter que vos données ne soient dérobées, Firefox ne s’est pas connecté à ce site.";
+"ErrorPages.CertWarning.Description" = "Les propriétaires de %@ ont mal configuré leur site. Pour éviter que vos données ne soient dérobées, KARMA ne s’est pas connecté à ce site.";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "Cette connexion n’est pas certifiée";
@@ -325,8 +325,8 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for firefox about:home page in tab history list */
-"Firefox.HomePage.Title" = "Page d’accueil de Firefox";
+/* Title for KARMA about:home page in tab history list */
+"Firefox.HomePage.Title" = "Page d’accueil de KARMA";
 
 /* A button at bottom of the Firefox homepage that, when clicked, takes users straight to the settings options, where they can customize the Firefox Home page */
 "FirefoxHome.CustomizeHomeButton.Title" = "Personnaliser la page d’accueil";
@@ -415,8 +415,8 @@
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
 "FxAPush_DeviceDisconnected_UnknownDevice_body" = "Un appareil a été déconnecté de Firefox Sync";
 
-/* On the firefox homepage, the string read by the voice over prompt for accessibility, for the button which changes the wallpaper */
-"FxHomepage.Wallpaper.ButtonLabel.v99" = "Logo Firefox, changer le fond d’écran.";
+/* On the KARMA homepage, the string read by the voice over prompt for accessibility, for the button which changes the wallpaper */
+"FxHomepage.Wallpaper.ButtonLabel.v99" = "Logo KARMA, changer le fond d’écran.";
 
 /* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
 "Help" = "Aide";
@@ -656,7 +656,7 @@
 "Logins.WelcomeView.Tagline" = "Emportez vos mots de passe partout avec vous";
 
 /* Label displaying welcome view title */
-"Logins.WelcomeView.Title2" = "Remplissage automatique des mots de passe par Firefox";
+"Logins.WelcomeView.Title2" = "Remplissage automatique des mots de passe par KARMA";
 
 /* Title of the big blue button to enable AutoFill */
 "Logins.WelcomeView.TurnOnAutoFill" = "Activer le remplissage automatique";
@@ -689,7 +689,7 @@
 "LoginsList.LoginsListSearchPlaceholder" = "Filtrer";
 
 /* Label shown when there are no logins to list */
-"LoginsList.NoLoginsFound.Description" = "Les identifiants enregistrés apparaîtront ici. Si vous avez enregistré vos identifiants dans Firefox sur un autre appareil, connectez-vous à votre compte Firefox.";
+"LoginsList.NoLoginsFound.Description" = "Les identifiants enregistrés apparaîtront ici. Si vous avez enregistré vos identifiants dans KARMA sur un autre appareil, connectez-vous à votre compte KARMA.";
 
 /* Label shown when there are no logins saved */
 "LoginsList.NoLoginsFound.Title" = "Aucun identifiant trouvé";
@@ -713,7 +713,7 @@
 "LoginsList.Title" = "IDENTIFIANTS ENREGISTRÉS";
 
 /* Restore Tabs Prompt Description */
-"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "Il semblerait que Firefox ait planté. Voulez-vous restaurer vos onglets ?";
+"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "Il semblerait que KARMA ait planté. Voulez-vous restaurer vos onglets ?";
 
 /* Title for the button that marks a reading list item as read */
 "Mark as Read" = "Marquer comme lu";
@@ -773,7 +773,9 @@
 "Menu.NewTab.v99" = "Nouvel onglet";
 
 /* Label for the button, displayed in the menu, turns off night mode. */
-"Menu.NightModeTurnOff.Label2" = "Désactiver le mode nocturne";
+"Menu.NightModeTurnOff.Label2" = "Activer le mode nocturne";
+
+"Menu.NightModeTurnOff.Status" = "Inverse les couleurs des sites consultés";
 
 /* Label for the button, displayed in the menu, turns on night mode. */
 "Menu.NightModeTurnOn.Label2" = "Activer le mode nocturne";
@@ -947,19 +949,19 @@
 "Onboarding.WallpaperAction.v102" = "Définir un fond d’écran";
 
 /* Title for the wallpaper onboarding page in our Onboarding screens. This describes to the user that they can choose different wallpapers. */
-"Onboarding.WallpaperTitle.v102" = "Choisir un fond d’écran Firefox";
+"Onboarding.WallpaperTitle.v102" = "Choisir un fond d’écran KARMA";
 
-/* String used to describes the description of what Firefox is on the welcome onboarding page for 106 version in our Onboarding screens. */
-"Onboarding.Welcome.Description.v106" = "Firefox fait passer les gens avant l’argent et protège votre vie privée par défaut.";
+/* String used to describes the description of what KARMA is on the welcome onboarding page for 106 version in our Onboarding screens. */
+"Onboarding.Welcome.Description.v106" = "KARMA fait passer les gens avant l’argent et protège votre vie privée par défaut.";
 
-/* String used to describes the title of what Firefox is on the welcome onboarding page for 106 version in our Onboarding screens. */
+/* String used to describes the title of what KARMA is on the welcome onboarding page for 106 version in our Onboarding screens. */
 "Onboarding.Welcome.Title.v106" = "Bienvenue dans un Internet indépendant";
 
 /* On the onboarding card letting users know what's new in this version of Firefox, this is the title for the button, on the bottom of the card, used to get back to browsing on Firefox by dismissing the onboarding card */
 "Onboarding.WhatsNew.Button.Title" = "Commencer la navigation";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Firefox crashed" = "Oups, Firefox a planté";
+"Oops! Firefox crashed" = "Oups, KARMA a planté";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "Ouvrez des articles en mode lecture en appuyant sur l’icône de livre lorsqu’elle apparaît dans la barre de titre.";
@@ -970,8 +972,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "Onglets ouverts";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app. */
-"OpenURL.Error.Message" = "Firefox ne parvient pas à ouvrir cette page, car l’adresse est invalide.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
+"OpenURL.Error.Message" = "KARMA ne parvient pas à ouvrir cette page, car l’adresse est invalide.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "Impossible d’ouvrir la page";
@@ -983,7 +985,7 @@
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "Ceci vous permet d’enregistrer l’image dans Pellicule.";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Firefox souhaite accéder à vos photos";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "KARMA souhaite accéder à vos photos";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "Fermer";
@@ -1070,7 +1072,7 @@
 "ScanQRCode.InvalidDataError.Message" = "Données non valides";
 
 /* Text of the prompt to setup the camera authorization for the Scan QR Code feature. */
-"ScanQRCode.PermissionError.Message.v100" = "Accédez à « Réglages » > « Firefox » et autorisez Firefox à accéder à l’appareil photo.";
+"ScanQRCode.PermissionError.Message.v100" = "Accédez à « Réglages » > « KARMA » et autorisez KARMA à accéder à l’appareil photo.";
 
 /* Title for the QR code scanner view. */
 "ScanQRCode.View.Title" = "Scanner un code QR";
@@ -1079,13 +1081,13 @@
 "Search" = "Rechercher";
 
 /* The text shown in the URL bar on about:home */
-"Search or enter address" = "Recherche ou adresse";
+"Search or enter address" = "Rechercher sur le Web avec KARMA";
 
 /* Search suggestion cell label that allows user to switch to tab which they searched for in url bar */
 "Search.Awesomebar.SwitchToTab" = "Aller à l’onglet";
 
-/* When making a new search from the awesome bar, suggestions appear to the user as they write new letters in their search. Different types of suggestions can appear. This string will be used as a header to separate Firefox suggestions from normal suggestions. */
-"Search.SuggestSectionTitle.v102" = "Firefox suggère";
+/* When making a new search from the awesome bar, suggestions appear to the user as they write new letters in their search. Different types of suggestions can appear. This string will be used as a header to separate KARMA suggestions from normal suggestions. */
+"Search.SuggestSectionTitle.v102" = "KARMA suggère";
 
 /* The message that asks the user to Add the search provider explaining where the search engine will appear */
 "Search.ThirdPartyEngines.AddMessage" = "Le nouveau moteur de recherche apparaîtra dans la barre de recherche rapide.";
@@ -1160,13 +1162,13 @@
 "SendTo.NavBar.Title" = "Envoyer l’onglet";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "Vous n’avez aucun autre appareil prêt à être synchronisé et connecté à ce compte Firefox.";
+"SendTo.NoDevicesFound.Message" = "Vous n’avez aucun autre appareil prêt à être synchronisé et connecté à ce compte KARMA.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "Veuillez ouvrir Firefox, vous rendre dans les paramètres et vous connecter pour continuer.";
+"SendTo.NotSignedIn.Message" = "Veuillez ouvrir KARMA, vous rendre dans les paramètres et vous connecter pour continuer.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "Vous n’êtes pas connecté·e à votre compte Firefox.";
+"SendTo.NotSignedIn.Title" = "Vous n’êtes pas connecté·e à votre compte KARMA.";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "Envoyer";
@@ -1250,7 +1252,7 @@
 "Settings.DataManagement.Title" = "Gestion des données";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "Firefox ne se synchronisera plus avec votre compte, mais ne supprimera aucune donnée de navigation sur cet appareil.";
+"Settings.Disconnect.Body" = "KARMA ne se synchronisera plus avec votre compte, mais ne supprimera aucune donnée de navigation sur cet appareil.";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "Déconnecter Sync";
@@ -1324,8 +1326,8 @@
 /* This is the description below the settings section located in the menu under customize current homepage. It describes what the options in the section are for. */
 "Settings.Home.Current.Description.v101" = "Choisissez ce qui s’affiche comme page d’accueil.";
 
-/* In the settings menu, on the Firefox homepage customization section, this is the description below the section, describing what the options in the section are for. */
-"Settings.Home.Option.Description.v101" = "Choisissez le contenu de la page d’accueil de Firefox.";
+/* In the settings menu, on the KARMA homepage customization section, this is the description below the section, describing what the options in the section are for. */
+"Settings.Home.Option.Description.v101" = "Choisissez le contenu de la page d’accueil de KARMA.";
 
 /* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
 "Settings.Home.Option.JumpBackIn" = "Revenir à cet onglet";
@@ -1352,7 +1354,7 @@
 "Settings.Home.Option.StartAtHome.Always" = "Page d’accueil";
 
 /* In the settings menu, in the Start at Home customization options, this is text that appears below the section, describing what the section settings do. */
-"Settings.Home.Option.StartAtHome.Description" = "Choisissez ce qui s’affiche lorsque vous rouvrez Firefox.";
+"Settings.Home.Option.StartAtHome.Description" = "Choisissez ce qui s’affiche lorsque vous rouvrez KARMA.";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Firefox */
 "Settings.Home.Option.StartAtHome.Never" = "Dernier onglet";
@@ -1366,26 +1368,26 @@
 /* In the settings menu, on the Firefox homepage customization section, this is the title for the option that allows users to access the wallpaper settings for the application. */
 "Settings.Home.Option.Wallpaper" = "Fond d’écran";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string for the amethyst firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.AmethystWallpaper.v99" = "Fond d’écran de Firefox, motif améthyste.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the accessibility string for the amethyst KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.AmethystWallpaper.v99" = "Fond d’écran de KARMA, motif améthyste.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the beach hills firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.BeachHillsWallpaper.v100" = "Fond d’écran Firefox, motif collines de plage.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title accessibility string for the beach hills KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.BeachHillsWallpaper.v100" = "Fond d’écran KARMA, motif collines de plage.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the cerulean firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.CeruleanWallpaper.v99" = "Fond d’écran de Firefox, motif bleu céruléen.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title accessibility string for the cerulean KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.CeruleanWallpaper.v99" = "Fond d’écran de KARMA, motif bleu céruléen.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string for the default wallpaper. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the accessibility string for the default wallpaper. */
 "Settings.Home.Option.Wallpaper.Accessibility.DefaultWallpaper.v99" = "Fond d’écran clair par défaut.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the sunrise firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.SunriseWallpaper.v99" = "Fond d’écran de Firefox, motif de lever de soleil.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title accessibility string for the sunrise KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.SunriseWallpaper.v99" = "Fond d’écran de KARMA, motif de lever de soleil.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string of the toggle for turning wallpaper cycling shortcut on or off on the homepage. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the accessibility string of the toggle for turning wallpaper cycling shortcut on or off on the homepage. */
 "Settings.Home.Option.Wallpaper.Accessibility.ToggleButton" = "Commutateur du diaporama du fond d’écran de la page d’accueil";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the twilight hills firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.TwilightHillsWallpaper.v100" = "Fond d’écran Firefox, motif collines au crépuscule.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title accessibility string for the twilight hills KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.TwilightHillsWallpaper.v100" = "Fond d’écran KARMA, motif collines au crépuscule.";
 
 /* In the settings menu, on the Firefox wallpaper customization screen, this is the title of the group of wallpapers that are always available to the user. The %@ will be replaced by the app name and thus doesn't need translation. */
 "Settings.Home.Option.Wallpaper.Classic.Title.v106" = "%@ classique";
@@ -1405,8 +1407,8 @@
 /* In the settings menu, on the Firefox wallpaper customization screen, this is the title of the group of wallpapers that are seasonally available to the user. */
 "Settings.Home.Option.Wallpaper.LimitedEdition.Title.v106" = "Édition limitée";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the string titling the switch button's function, which allows a user to toggle wallpaper switching from the homepage logo on or off. */
-"Settings.Home.Option.Wallpaper.SwitchTitle.v99" = "Changer le fond d’écran en appuyant sur le logo Firefox de la page d’accueil";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the string titling the switch button's function, which allows a user to toggle wallpaper switching from the homepage logo on or off. */
+"Settings.Home.Option.Wallpaper.SwitchTitle.v99" = "Changer le fond d’écran en appuyant sur le logo KARMA de la page d’accueil";
 
 /* In the settings menu, on the Firefox wallpaper customization screen, this is the title of that screen, which allows users to change the wallpaper settings for the application. */
 "Settings.Home.Option.Wallpaper.Title" = "Fond d’écran";
@@ -1456,8 +1458,8 @@
 /* Option in settings to show a blank page when you open a new tab */
 "Settings.NewTab.Option.BlankPage" = "Une page vide";
 
-/* Option in settings to show Firefox Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "La page d’accueil de Firefox";
+/* Option in settings to show KARMA Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "La page d’accueil de KARMA";
 
 /* Option in settings to show your homepage when you open a new tab */
 "Settings.NewTab.Option.HomePage" = "La page d’accueil";
@@ -1478,7 +1480,7 @@
 "Settings.NoImageModeBlockImages.Label.v99" = "Bloquer les images";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "À l’ouverture de Firefox";
+"Settings.OfferClipboardBar.Status" = "À l’ouverture de KARMA";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "Proposer d’ouvrir les liens copiés";
@@ -1514,7 +1516,7 @@
 "Settings.SendUsage.Link" = "En savoir plus.";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "Mozilla veille à collecter uniquement les données nécessaires afin d’offrir et d’améliorer Firefox pour tout le monde.";
+"Settings.SendUsage.Message" = "Mozilla veille à collecter uniquement les données nécessaires afin d’offrir et d’améliorer KARMA pour tout le monde.";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "Envoyer des données d’utilisation";
@@ -1532,7 +1534,7 @@
 "Settings.Siri.OpenTabShortcut" = "Ouvrir un nouvel onglet";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "Utilisez les raccourcis Siri pour ouvrir rapidement Firefox via Siri";
+"Settings.Siri.SectionDescription" = "Utilisez les raccourcis Siri pour ouvrir rapidement KARMA via Siri";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "Raccourcis Siri";
@@ -1541,7 +1543,7 @@
 "Settings.Studies.Toggle.Link" = "En savoir plus.";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "Firefox peut installer et lancer des études de temps en temps.";
+"Settings.Studies.Toggle.Message" = "KARMA peut installer et lancer des études de temps en temps.";
 
 /* Label used as a toggle item in Settings. When this is off, the user is opting out of all studies. */
 "Settings.Studies.Toggle.Title" = "Études";
@@ -1652,13 +1654,13 @@
 "ShareExtension.LoadInBackgroundAction.Title" = "Charger en arrière-plan";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "Chargement dans Firefox";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "Chargement dans KARMA";
 
-/* Action label on share extension to immediately open page in Firefox. */
-"ShareExtension.OpenInFirefoxAction.Title" = "Ouvrir dans Firefox";
+/* Action label on share extension to immediately open page in KARMA. */
+"ShareExtension.OpenInFirefoxAction.Title" = "Ouvrir dans KARMA";
 
-/* Action label on share extension to search for the selected text in Firefox. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Rechercher dans Firefox";
+/* Action label on share extension to search for the selected text in KARMA. */
+"ShareExtension.SeachInFirefoxAction.Title" = "Rechercher dans KARMA";
 
 /* Button in share sheet to copy the url of the current tab. */
 "ShareSheet.Copy.Title.v108" = "Copier";
@@ -1805,7 +1807,7 @@
 "UIMenuItem.PasteGo" = "Coller et ouvrir";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "Rechercher avec Firefox";
+"UIMenuItem.SearchWithFirefox" = "Rechercher avec KARMA";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "Non lu";
@@ -1871,11 +1873,14 @@
 "Yesterday" = "Hier";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Firefox on your other devices." = "Vous n’avez aucun onglet ouvert dans Firefox sur vos autres appareils.";
+"You don’t have any tabs open in Firefox on your other devices." = "Vous n’avez aucun onglet ouvert dans KARMA sur vos autres appareils.";
 
 /* Your Rights settings section title */
 "Your Rights" = "Droits de l’utilisateur";
 
 /* Tile title for YouTube */
 "YouTube" = "YouTube";
+
+"cannotsendemail" = "Cet iPhone n'est pas configuré pour envoyer des emails";
+
 

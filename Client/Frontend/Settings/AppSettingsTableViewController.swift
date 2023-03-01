@@ -101,6 +101,31 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagga
         var settings = [SettingSection]()
 
         let prefs = profile.prefs
+        
+        #if KARMA
+
+        let nightModeEnabled = NightModeHelper.isActivated()
+
+        let nightModeTitle: String = nightModeEnabled ? String.AppMenu.AppMenuTurnOffNightMode : String.AppMenu.AppMenuTurnOnNightMode
+        let imageModeTitle: String = String.Settings.Toggle.NoImageMode
+
+        var generalSettings: [Setting] = [
+            HomeSetting(settings: self),
+            OpenWithSetting(settings: self),
+            ThemeSetting(settings: self),
+            SiriPageSetting(settings: self),
+            BoolSetting(prefs: prefs, theme: themeManager.currentTheme,
+                        prefKey: PrefsKeys.KeyNoImageModeStatus, defaultValue: false, titleText: imageModeTitle, statusText: .AppMenuNoImageStatus, settingDidChange: { isOn in
+                self.tabManager.tabs.forEach { $0.noImageMode = isOn }
+            }),
+            BoolSetting(prefs: prefs,
+                        theme: themeManager.currentTheme,
+                        prefKey: PrefsKeys.KeyBlockPopups, defaultValue: true,
+                        titleText: .AppSettingsBlockPopups),
+            NoImageModeSetting(settings: self)
+
+           ]
+        #else
         var generalSettings: [Setting] = [
             SearchSetting(settings: self),
             NewTabPageSetting(settings: self),
@@ -116,6 +141,7 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagga
                 titleText: .AppSettingsBlockPopups),
             NoImageModeSetting(settings: self)
            ]
+        #endif
 
         if isSearchBarLocationFeatureEnabled {
             generalSettings.insert(SearchBarSetting(settings: self), at: 5)
@@ -205,35 +231,53 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagga
         ]
 
         settings += [
-            SettingSection(title: NSAttributedString(string: .AppSettingsPrivacyTitle), children: privacySettings),
-            SettingSection(title: NSAttributedString(string: .AppSettingsSupport), children: [
+            SettingSection(title: NSAttributedString(string: .AppSettingsPrivacyTitle), children: privacySettings)]
+            
+            #if KARMA
+            settings += [
+                SettingSection(title: NSAttributedString(string: .AppSettingsSupport), children: [
                 ShowIntroductionSetting(settings: self),
-                SendFeedbackSetting(),
+                ContactUsSettings(),
+            ])]
+            #else
+            settings += [SettingSection(title: NSAttributedString(string: .AppSettingsSupport), children: [
+                ShowIntroductionSetting(settings: self),
+               
+                SendFeedbackSetting(delegate: settingsDelegate),
                 SendAnonymousUsageDataSetting(prefs: prefs, delegate: settingsDelegate, theme: themeManager.currentTheme),
                 StudiesToggleSetting(prefs: prefs, delegate: settingsDelegate, theme: themeManager.currentTheme),
                 OpenSupportPageSetting(delegate: settingsDelegate, theme: themeManager.currentTheme),
-            ]),
-            SettingSection(title: NSAttributedString(string: .AppSettingsAbout), children: [
-                AppStoreReviewSetting(),
-                VersionSetting(settings: self),
-                LicenseAndAcknowledgementsSetting(),
-                YourRightsSetting(),
-                ExportBrowserDataSetting(settings: self),
-                ExportLogDataSetting(settings: self),
-                DeleteExportedDataSetting(settings: self),
-                ForceCrashSetting(settings: self),
-                SlowTheDatabase(settings: self),
-                ForgetSyncAuthStateDebugSetting(settings: self),
-                SentryIDSetting(settings: self),
-                ChangeToChinaSetting(settings: self),
-                TogglePullToRefresh(settings: self),
-                ResetWallpaperOnboardingPage(settings: self),
-                ToggleInactiveTabs(settings: self),
-                ToggleHistoryGroups(settings: self),
-                ResetContextualHints(settings: self),
-                OpenFiftyTabsDebugOption(settings: self),
-                ExperimentsSettings(settings: self)
+
             ])]
+            #endif
+
+
+        var aboutChildren = [AppStoreReviewSetting(),
+            VersionSetting(settings: self),
+            LicenseAndAcknowledgementsSetting(),
+            YourRightsSetting()]
+        
+        #if !KARMA
+        aboutChildren += [
+        ExportBrowserDataSetting(settings: self),
+        ExportLogDataSetting(settings: self),
+        DeleteExportedDataSetting(settings: self),
+        ForceCrashSetting(settings: self),
+        SlowTheDatabase(settings: self),
+        ForgetSyncAuthStateDebugSetting(settings: self),
+        SentryIDSetting(settings: self),
+        ChangeToChinaSetting(settings: self),
+        TogglePullToRefresh(settings: self),
+        ResetWallpaperOnboardingPage(settings: self),
+        ToggleInactiveTabs(settings: self),
+        ToggleHistoryGroups(settings: self),
+        ResetContextualHints(settings: self),
+        OpenFiftyTabsDebugOption(settings: self),
+        ExperimentsSettings(settings: self)]
+
+        #endif
+
+        settings += [SettingSection(title: NSAttributedString(string: .AppSettingsAbout), children: aboutChildren)]
 
         return settings
     }

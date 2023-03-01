@@ -1,0 +1,12 @@
+"Menu.Karma.DefaultBrowser"  = "Establecer Karma como navegador predeterminado";
+"Menu.Karma.Mission" = "Nuestra misión";
+"Menu.Karma.How" = "Cómo funciona";
+"Menu.Karma.Partners" = "Socios";
+"Menu.Karma.Privacy" = "Privacidad";
+"Menu.Karma.TermsOfService" = "Términos de servicio";
+"Menu.Karma.Feedback" = "Feedback";
+
+"Menu.Feedback.Give" = "Enviar comentarios";
+"Menu.Feedback.Rate.AppStore" = "Evalua nuestra app en el Appstore";
+"Menu.Feedback.ContactUs" = "Contáctanos";
+"Menu.Feedback.ContactUs.Subject" = "Pregunta desde iOS app";

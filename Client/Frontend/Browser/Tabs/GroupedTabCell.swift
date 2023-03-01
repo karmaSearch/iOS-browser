@@ -187,7 +187,7 @@ class GroupedTabContainerCell: UITableViewCell,
     lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.textColor = .label
-        titleLabel.font = UIFont.systemFont(ofSize: GroupedTabCellProperties.CellUX.titleFontSize, weight: .semibold)
+        titleLabel.font = UIFont.customFont(ofSize: GroupedTabCellProperties.CellUX.titleFontSize, weight: .semibold)
         titleLabel.minimumScaleFactor = 0.6
         titleLabel.numberOfLines = 1
         titleLabel.adjustsFontSizeToFitWidth = true

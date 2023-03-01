@@ -18,6 +18,8 @@ class OpenSearchEngine: NSObject, NSCoding {
     private let suggestTemplate: String?
     private let searchTermComponent = "{searchTerms}"
     private let localeTermComponent = "{moz:locale}"
+    private let methodComponent = "{method}"
+
     private lazy var searchQueryComponentKey: String? = self.getQueryArgFromTemplate()
     private let googleEngineID = "google-b-1-m"
 
@@ -81,8 +83,8 @@ class OpenSearchEngine: NSObject, NSCoding {
     // MARK: - Public
 
     /// Returns the search URL for the given query.
-    func searchURLForQuery(_ query: String) -> URL? {
-        return getURLFromTemplate(searchTemplate, query: query)
+    func searchURLForQuery(_ query: String, isURLStartingPage: Bool = true) -> URL? {
+        return getURLFromTemplate(searchTemplate, query: query, isURLStartingPage: isURLStartingPage)
     }
 
     /// Returns the search suggestion URL for the given query.
@@ -146,7 +148,7 @@ class OpenSearchEngine: NSObject, NSCoding {
         return urlHost == templateURL.shortDisplayString
     }
 
-    private func getURLFromTemplate(_ searchTemplate: String, query: String) -> URL? {
+    private func getURLFromTemplate(_ searchTemplate: String, query: String, isURLStartingPage: Bool = false) -> URL? {
         if let escapedQuery = query.addingPercentEncoding(withAllowedCharacters: .SearchTermsAllowed) {
             // Escape the search template as well in case it contains not-safe characters like symbols
             let templateAllowedSet = NSMutableCharacterSet()
@@ -160,6 +162,7 @@ class OpenSearchEngine: NSObject, NSCoding {
                 let urlString = encodedSearchTemplate
                     .replacingOccurrences(of: searchTermComponent, with: escapedQuery, options: .literal, range: nil)
                     .replacingOccurrences(of: localeTermComponent, with: localeString, options: .literal, range: nil)
+                    .replacingOccurrences(of: methodComponent, with: isURLStartingPage ? "newtab" : "topbar", options: .literal, range: nil)
                 return URL(string: urlString)
             }
         }

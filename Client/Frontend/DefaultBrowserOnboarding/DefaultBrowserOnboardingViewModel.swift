@@ -21,6 +21,9 @@ enum InstallType: String, Codable {
 
     static func set(type: InstallType) {
         UserDefaults.standard.set(type.rawValue, forKey: PrefsKeys.InstallType)
+        if dateOfFirstInstall() == nil {
+            saveDateOfFirstInstall()
+        } 
     }
 
     static func persistedCurrentVersion() -> String {
@@ -32,6 +35,22 @@ enum InstallType: String, Codable {
     static func updateCurrentVersion(version: String) {
         UserDefaults.standard.set(version, forKey: PrefsKeys.KeyCurrentInstallVersion)
     }
+    
+    private static func saveDateOfFirstInstall() {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        UserDefaults.standard.set(formatter.string(from: Date()), forKey: PrefsKeys.DateFirstInstall)
+    }
+    
+    static func dateOfFirstInstall() -> Date? {
+        if let dateOfFirstInstall = UserDefaults.standard.object(forKey: PrefsKeys.DateFirstInstall) as? String {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            return formatter.date(from: dateOfFirstInstall)
+        }
+        return nil
+    }
+    
 }
 
 // Data Model
@@ -67,6 +86,9 @@ class DefaultBrowserOnboardingViewModel {
     }
 
     static func shouldShowDefaultBrowserOnboarding(userPrefs: Prefs) -> Bool {
+        guard #available(iOS 14, *) else {
+            return false
+        }
         // Only show on fresh install
         guard InstallType.get() == .fresh else { return false }
 

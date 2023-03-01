@@ -27,7 +27,7 @@ class TabLocationView: UIView, FeatureFlaggable {
         static let baseURLFontColor = UIColor.Photon.Grey50
         static let spacing: CGFloat = 8
         static let statusIconSize: CGFloat = 18
-        static let buttonSize: CGFloat = 40
+        static let buttonSize: CGFloat = 38
         static let urlBarPadding = 4
     }
 
@@ -70,7 +70,7 @@ class TabLocationView: UIView, FeatureFlaggable {
     }
 
     lazy var placeholder: NSAttributedString = {
-        return NSAttributedString(string: .TabLocationURLPlaceholder, attributes: [NSAttributedString.Key.foregroundColor: UIColor.Photon.Grey50])
+        return NSAttributedString(string: .TabLocationURLPlaceholder, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.textField.textAndTint, .font: UIFont.customFont(ofSize: 18, weight: .semibold)])
     }()
 
     lazy var urlTextField: URLTextField = .build { urlTextField in
@@ -82,15 +82,25 @@ class TabLocationView: UIView, FeatureFlaggable {
         urlTextField.font = UIConstants.DefaultChromeFont
         urlTextField.backgroundColor = .clear
         urlTextField.accessibilityLabel = .TabLocationAddressBarAccessibilityLabel
-        urlTextField.font = UIFont.preferredFont(forTextStyle: .body)
+        urlTextField.font = UIFont.customFont(ofSize: 18, weight: .semibold)
         urlTextField.adjustsFontForContentSizeCategory = true
-
+        urlTextField.textAlignment = .left
         // Remove the default drop interaction from the URL text field so that our
         // custom drop interaction on the BVC can accept dropped URLs.
         if let dropInteraction = urlTextField.textDropInteraction {
             urlTextField.removeInteraction(dropInteraction)
         }
     }
+    
+    lazy var searchImage: UIButton = {
+        let button = StatefulButton(frame: .zero)
+        button.setImage(UIImage.templateImageNamed("quickSearch"), for: .normal)
+        button.tintColor = UIColor.theme.textField.textAndTint
+        button.imageView?.contentMode = .scaleAspectFit
+        button.isHidden = true
+        button.isUserInteractionEnabled = false
+        return button
+    }()
 
     lazy var trackingProtectionButton: LockButton = .build { trackingProtectionButton in
         trackingProtectionButton.addTarget(self, action: #selector(self.didPressTPShieldButton(_:)), for: .touchUpInside)
@@ -154,7 +164,7 @@ class TabLocationView: UIView, FeatureFlaggable {
         let space1px = UIView.build()
         space1px.widthAnchor.constraint(equalToConstant: 1).isActive = true
 
-        let subviews = [trackingProtectionButton, space1px, urlTextField, readerModeButton, shareButton, reloadButton]
+        let subviews = [trackingProtectionButton, space1px, searchImage, urlTextField, readerModeButton, shareButton, reloadButton]
         contentView = UIStackView(arrangedSubviews: subviews)
         contentView.distribution = .fill
         contentView.alignment = .center
@@ -172,6 +182,8 @@ class TabLocationView: UIView, FeatureFlaggable {
             shareButton.widthAnchor.constraint(equalToConstant: UX.buttonSize),
             reloadButton.widthAnchor.constraint(equalToConstant: UX.buttonSize),
             reloadButton.heightAnchor.constraint(equalToConstant: UX.buttonSize),
+            searchImage.widthAnchor.constraint(equalToConstant: UX.buttonSize),
+            searchImage.heightAnchor.constraint(equalToConstant: UX.buttonSize)
         ])
 
         // Setup UIDragInteraction to handle dragging the location
@@ -334,7 +346,7 @@ extension TabLocationView: NotificationThemeable {
         urlTextField.textColor = UIColor.theme.textField.textAndTint
         readerModeButton.applyTheme()
         trackingProtectionButton.applyTheme()
-
+        searchImage.tintColor = UIColor.theme.textField.textAndTint
         let color = LegacyThemeManager.instance.currentName == .dark ? UIColor(white: 0.3, alpha: 0.6): UIColor.theme.textField.background
         menuBadge.badge.tintBackground(color: color)
     }
@@ -342,6 +354,7 @@ extension TabLocationView: NotificationThemeable {
 
 extension TabLocationView: TabEventHandler {
     func tabDidChangeContentBlocking(_ tab: Tab) {
+        searchImage.isHidden = !tab.isFxHomeTab
         updateBlockerStatus(forTab: tab)
     }
 

@@ -16,15 +16,15 @@ class TopSiteItemCell: UICollectionViewCell, ReusableCell {
 
     struct UX {
         static let titleOffset: CGFloat = 4
-        static let iconSize = CGSize(width: 36, height: 36)
-        static let imageBackgroundSize = CGSize(width: 60, height: 60)
+        static let iconSize = CGSize(width: 50, height: 50)
+        static let imageBackgroundSize = CGSize(width: 56, height: 56)
         static let pinAlignmentSpacing: CGFloat = 2
         static let pinIconSize: CGSize = CGSize(width: 12, height: 12)
         static let textSafeSpace: CGFloat = 6
         static let bottomSpace: CGFloat = 8
-        static let imageTopSpace: CGFloat = 12
-        static let imageBottomSpace: CGFloat = 12
-        static let imageLeadingTrailingSpace: CGFloat = 12
+        static let imageTopSpace: CGFloat = 3
+        static let imageBottomSpace: CGFloat = 3
+        static let imageLeadingTrailingSpace: CGFloat = 3
         static let titleFontSize: CGFloat = 12
         static let sponsorFontSize: CGFloat = 11
     }

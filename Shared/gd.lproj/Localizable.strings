@@ -28,7 +28,7 @@
 /* Title for the Jump Back In section. This section allows users to jump back in to a recently viewed tab */
 "ActivityStream.JumpBackIn.SectionTitle" = "Till gu far an robh thu";
 
-/* On the Firefox homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
+/* On the KARMA homepage in the Jump Back In section, if a Tab group item - a collection of grouped tabs from a related search - exists underneath the search term for the tab group, there will be a subtitle with a number for how many tabs are in that group. The placeholder is for a number. It will read 'Tabs: 5' or similar. */
 "ActivityStream.JumpBackIn.TabGroup.SiteCount" = "Tabaichean: %d";
 
 /* A string used to signify the start of the Recently Saved section in Home Screen. */
@@ -124,7 +124,7 @@
 /* Description of what a breach is */
 "BreachAlerts.Description" = "Chaidh faclan-faire a ghoid no leigeil air èalaidh on turas mu dheireadh a dh’atharraich thu am facal-faire agad. Airson an cunntas seo a dhìon, clàraich a-steach dhan làrach agus atharraich am facal-faire agad.";
 
-/* Link to monitor.firefox.com to learn more about breached passwords */
+/* Link to monitor.KARMA.com to learn more about breached passwords */
 "BreachAlerts.LearnMoreButton" = "Barrachd fiosrachaidh";
 
 /* Leads to a link to the breached website */
@@ -299,7 +299,7 @@
 "ErrorPages.AdvancedWarning2.Text" = "Dh’fhaoidte gu bheil e air a dhroch-rèiteachadh no gu bheil cuideigin a’ toirt ionnsaigh air. Lean air d’ adhart ma tha thu leagte ris a leithid a chunnart.";
 
 /* Warning text on the certificate error page */
-"ErrorPages.CertWarning.Description" = "Rinn an neach aig a bheil %@ droch-rèiteachadh air an làrach-lìn aca. Cha do rinn Firefox ceangal ris an làrach-lìn seo air eagal ’s gun rachadh dàta a ghoid ort.";
+"ErrorPages.CertWarning.Description" = "Rinn an neach aig a bheil %@ droch-rèiteachadh air an làrach-lìn aca. Cha do rinn KARMA ceangal ris an làrach-lìn seo air eagal ’s gun rachadh dàta a ghoid ort.";
 
 /* Title on the certificate error page */
 "ErrorPages.CertWarning.Title" = "Chan eil earbsa sa cheangal";
@@ -319,19 +319,19 @@
 /* Tile title for Facebook */
 "Facebook" = "Facebook";
 
-/* Title for firefox about:home page in tab history list */
-"Firefox.HomePage.Title" = "Duilleag mhòr Firefox";
+/* Title for KARMA about:home page in tab history list */
+"Firefox.HomePage.Title" = "Duilleag mhòr KARMA";
 
-/* A button at bottom of the Firefox homepage that, when clicked, takes users straight to the settings options, where they can customize the Firefox Home page */
+/* A button at bottom of the KARMA homepage that, when clicked, takes users straight to the settings options, where they can customize the KARMA Home page */
 "FirefoxHome.CustomizeHomeButton.Title" = "Gnàthaich an duilleag-dhachaigh";
 
-/* At the end of the Pocket section on the Firefox Homepage, this button appears and indicates tapping it will navigate the user to more Pocket Stories. */
+/* At the end of the Pocket section on the KARMA Homepage, this button appears and indicates tapping it will navigate the user to more Pocket Stories. */
 "FirefoxHome.Pocket.DiscoverMore" = "Fidir barrachd";
 
-/* On each Pocket Stories on the Firefox Homepage, this label appears and indicates the number of minutes to read an article. Minutes should be abbreviated due to space constraints. %d represents the number of minutes */
+/* On each Pocket Stories on the KARMA Homepage, this label appears and indicates the number of minutes to read an article. Minutes should be abbreviated due to space constraints. %d represents the number of minutes */
 "FirefoxHome.Pocket.Minutes.v99" = "%dm";
 
-/* This is the title of the Pocket section on Firefox Homepage. */
+/* This is the title of the Pocket section on KARMA Homepage. */
 "FirefoxHome.Pocket.SectionTitle" = "Sgeulachdan smuainteachail";
 
 /* When a user taps and holds on an item from the Recently Visited section, this label will appear indicating the option to remove that item. */
@@ -340,13 +340,13 @@
 /* Label showing how many sites there is in a search group. %d represents a number */
 "FirefoxHomepage.Common.SitesCount.v101" = "Làraichean: %d";
 
-/* The title for the Settings context menu action for sponsored tiles in the Firefox home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
+/* The title for the Settings context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to the Shortcuts Settings. */
 "FirefoxHomepage.ContextualMenu.Settings.v101" = "Roghainnean";
 
-/* The title for the Sponsored Content context menu action for sponsored tiles in the Firefox home page shortcuts section. Clicking this brings the users to a support page where users can learn more about Sponsored content and how it works. */
+/* The title for the Sponsored Content context menu action for sponsored tiles in the KARMA home page shortcuts section. Clicking this brings the users to a support page where users can learn more about Sponsored content and how it works. */
 "FirefoxHomepage.ContextualMenu.SponsoredContent.v101" = "Na sponsairean againn ⁊ do phrìobhaideachd";
 
-/* Button title shown for tab pickup on the Firefox homepage in the Jump Back In section. */
+/* Button title shown for tab pickup on the KARMA homepage in the Jump Back In section. */
 "FirefoxHomepage.JumpBackIn.TabPickup.ShowAll.ButtonTitle.v104" = "Seall gach taba sioncronaichte";
 
 /* If a user is signed in, and a sync has been performed to collect their recent tabs from other signed in devices, their most recent tab from another device can now appear in the Jump Back In section. This label specifically points out which cell inside the Jump Back In section shows that synced tab. */
@@ -355,16 +355,16 @@
 /* This string will show under the description on pocket story, indicating that the story is sponsored. */
 "FirefoxHomepage.Pocket.Sponsored.v103" = "Sponsairichte";
 
-/* This string will show under a shortcuts tile on the firefox home page, indicating that the tile is a sponsored tile. Space is limited, please keep as short as possible. */
+/* This string will show under a shortcuts tile on the KARMA home page, indicating that the tile is a sponsored tile. Space is limited, please keep as short as possible. */
 "FirefoxHomepage.Shortcuts.Sponsored.v100" = "Sponsairichte";
 
 /* Accessibility Label for the tab toolbar Forward button */
 "Forward" = "Air adhart";
 
-/* Settings section title for Firefox Account */
-"FxA.FirefoxAccount" = "Cunntas Firefox";
+/* Settings section title for KARMA Account */
+"FxA.FirefoxAccount" = "Cunntas KARMA";
 
-/* Button label to go to Firefox Account settings */
+/* Button label to go to KARMA Account settings */
 "FxA.ManageAccount" = "Stiùirich an cunntas ⁊ na h-uidheaman";
 
 /* Label when no internet is present */
@@ -382,11 +382,11 @@
 /* FxA sign in view email login button */
 "fxa.signin.use-email-instead" = "Cleachd post-d na àite";
 
-/* Button label to Sync your Firefox Account */
+/* Button label to Sync your KARMA Account */
 "FxA.SyncNow" = "Sioncronaich an-dràsta";
 
 /* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
-"FxAPush_DeviceConnected_body" = "Cheangail gleus sioncronachadh Firefox ri %@";
+"FxAPush_DeviceConnected_body" = "Cheangail gleus sioncronachadh KARMA ri %@";
 
 /* Title of a notification displayed when another device has connected to FxA. */
 "FxAPush_DeviceConnected_title" = "Rinn gleus an t-sioncronachaidh ceangal";
@@ -395,7 +395,7 @@
 "FxAPush_DeviceDisconnected_body" = "Chaidh %@ a dhì-cheangal.";
 
 /* Body of a notification displayed when this device has been disconnected from FxA by another device. */
-"FxAPush_DeviceDisconnected_ThisDevice_body" = "Chaidh an t-uidheam seo a dhì-cheangal o ghleus sioncronachadh Firefox.";
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Chaidh an t-uidheam seo a dhì-cheangal o ghleus sioncronachadh KARMA.";
 
 /* Title of a notification displayed when this device has been disconnected by another device. */
 "FxAPush_DeviceDisconnected_ThisDevice_title" = "Chaidh gleus an t-sioncronachaidh a dhì-cheangal";
@@ -404,10 +404,10 @@
 "FxAPush_DeviceDisconnected_title" = "Chaidh gleus an t-sioncronachaidh a dhì-cheangal";
 
 /* Body of a notification displayed when unnamed device has been disconnected from FxA. */
-"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Dhì-cheangail uidheam o ghleus sioncronachadh Firefox";
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Dhì-cheangail uidheam o ghleus sioncronachadh KARMA";
 
-/* On the firefox homepage, the string read by the voice over prompt for accessibility, for the button which changes the wallpaper */
-"FxHomepage.Wallpaper.ButtonLabel.v99" = "Suaicheantas Firefox, atharraich am pàipear-balla";
+/* On the KARMA homepage, the string read by the voice over prompt for accessibility, for the button which changes the wallpaper */
+"FxHomepage.Wallpaper.ButtonLabel.v99" = "Suaicheantas KARMA, atharraich am pàipear-balla";
 
 /* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
 "Help" = "Cobhair";
@@ -440,7 +440,7 @@
 "HistoryPanel.EmptySyncedTabsPanelNotSignedInState.Description" = "Clàraich a-steach airson liosta de thabaichean a tha agad air uidheaman eile.";
 
 /* Title for the empty synced tabs state in the History Panel */
-"HistoryPanel.EmptySyncedTabsState.Title" = "Sioncronachadh Firefox";
+"HistoryPanel.EmptySyncedTabsState.Title" = "Sioncronachadh KARMA";
 
 /* Title for the Back to History button in the History Panel */
 "HistoryPanel.HistoryBackButton.Title" = "An eachdraidh";
@@ -607,10 +607,10 @@
 /* Light theme setting in Reading View settings */
 "Light" = "Sorcha";
 
-/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "Load original page" = "Luchdaich an duilleag thùsail";
 
-/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to KARMA reader mode from another app. */
 "Loading content…" = "A’ luchdadh na susbaint…";
 
 /* Authentication prompt log in button */
@@ -632,13 +632,13 @@
 "Logins.Onboarding.LearnMoreButtonTitle" = "Barrachd fiosrachaidh";
 
 /* Warning message shown when you try to enable or use native AutoFill without a device passcode setup */
-"Logins.PasscodeRequirement.Warning" = "Feumaidh còd-faire uidheim a bhith an comas agad mus urrainn dhut gleus an fhèin-lìonaidh aig Firefox a chleachdadh.";
+"Logins.PasscodeRequirement.Warning" = "Feumaidh còd-faire uidheim a bhith an comas agad mus urrainn dhut gleus an fhèin-lìonaidh aig KARMA a chleachdadh.";
 
 /* Label displaying welcome view tagline under the title */
 "Logins.WelcomeView.Tagline" = "Thoir leat na faclan-faire agad ge be càit an tèid thu";
 
 /* Label displaying welcome view title */
-"Logins.WelcomeView.Title2" = "Fèin-lìon faclan-faire Firefox";
+"Logins.WelcomeView.Title2" = "Fèin-lìon faclan-faire KARMA";
 
 /* Title of the big blue button to enable AutoFill */
 "Logins.WelcomeView.TurnOnAutoFill" = "Cuir gleus an fhèin-lìonaidh air";
@@ -671,7 +671,7 @@
 "LoginsList.LoginsListSearchPlaceholder" = "Criathrag";
 
 /* Label shown when there are no logins to list */
-"LoginsList.NoLoginsFound.Description" = "Nochdaidh clàraidhean a-steach a shàbhail thu an-seo. Ma shàbhail thu clàradh a-steach ann am Firefox air uidheam eile, clàraich a-steach dhan chunntas Firefox agad.";
+"LoginsList.NoLoginsFound.Description" = "Nochdaidh clàraidhean a-steach a shàbhail thu an-seo. Ma shàbhail thu clàradh a-steach ann am KARMA air uidheam eile, clàraich a-steach dhan chunntas KARMA agad.";
 
 /* Label shown when there are no logins saved */
 "LoginsList.NoLoginsFound.Title" = "Cha deach clàradh a-steach a lorg";
@@ -695,7 +695,7 @@
 "LoginsList.Title" = "CLÀRAIDHEAN A-STEACH A SHÀBHAILEADH";
 
 /* Restore Tabs Prompt Description */
-"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "Tha coltas gun do thuislich Firefox roimhe. A bheil thu ag iarraidh nan tabaichean air ais?";
+"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "Tha coltas gun do thuislich KARMA roimhe. A bheil thu ag iarraidh nan tabaichean air ais?";
 
 /* Title for the button that marks a reading list item as read */
 "Mark as Read" = "Comharraich gun deach a leughadh";
@@ -733,7 +733,7 @@
 /* Toast displayed to user after copy url pressed. */
 "Menu.CopyURL.Confirm" = "Chaidh lethbhreac dhen URL a chur air an stòr-bhòrd";
 
-/* Label for the customize homepage button in the menu page. Pressing this button takes users to the settings options, where they can customize the Firefox Home page */
+/* Label for the customize homepage button in the menu page. Pressing this button takes users to the settings options, where they can customize the KARMA Home page */
 "Menu.CustomizeHomePage.v99" = "Gnàthaich an duilleag-dhachaigh";
 
 /* Label for the button, displayed in the menu, takes you to to Downloads screen when pressed. */
@@ -796,7 +796,7 @@
 /* Label for the share button in the menu page. Pressing this button open the share menu to share the current website. */
 "Menu.Share.v99" = "Co-roinn";
 
-/* Label for the Firefox Sync button in the menu page. Pressing this button open the sign in to Firefox page service to sync and save data. */
+/* Label for the Firefox Sync button in the menu page. Pressing this button open the sign in to KARMA page service to sync and save data. */
 "Menu.SyncAndSaveData.v103" = "Sioncronaich is sàbhail an dàta";
 
 /* Toast displayed to the user after a tab has been sent successfully. */
@@ -877,10 +877,10 @@
 /* Describes the action on the first onboarding page in our Onboarding screen. This string will be on a button so user can continue the onboarding. */
 "Onboarding.IntroAction.v102" = "Dèan toiseach-tòiseachaidh";
 
-/* String used to describes what Firefox is on the first onboarding page in our Onboarding screens. Indie means small independant. */
+/* String used to describes what KARMA is on the first onboarding page in our Onboarding screens. Indie means small independant. */
 "Onboarding.IntroDescriptionPart1.v102" = "Neo-eisimeileach, chan ann a chùm prothaid ach math chàch.";
 
-/* String used to describes what Firefox is on the first onboarding page in our Onboarding screens. */
+/* String used to describes what KARMA is on the first onboarding page in our Onboarding screens. */
 "Onboarding.IntroDescriptionPart2.v102" = "An dealas ri eadar-lìon nas fheàrr do chàch.";
 
 /* Describes an action on some of the Onboarding screen, including the wallpaper onboarding screen. This string will be on a button so user can skip that onboarding page. */
@@ -889,23 +889,23 @@
 /* Describes an action on the sync onboarding page in our Onboarding screens. This string will be on a button so user can sign up or login directly in the onboarding. */
 "Onboarding.SyncAction.v102" = "Clàraich is clàraich a-steach an uair sin";
 
-/* Description for the sync onboarding page in our Onboarding screens. The user will be able to setup their Firefox sync account from that screen. */
+/* Description for the sync onboarding page in our Onboarding screens. The user will be able to setup their Firefox Sync account from that screen. */
 "Onboarding.SyncDescription.v102" = "Sioncronaich na tabaichean is comharran-lìn gu fèin-obrachail air feadh uidheaman airson leum eadar uidheaman gun chnap-starra.";
 
-/* Title for the sync onboarding page in our Onboarding screens. The user will be able to setup their Firefox sync account from that screen. 'Stay in the flow' means that a person is fully immersed in an activity. The user will sync with their Firefox sync account to stay connected and immersed in the activity they are doing. */
+/* Title for the sync onboarding page in our Onboarding screens. The user will be able to setup their Firefox Sync account from that screen. 'Stay in the flow' means that a person is fully immersed in an activity. The user will sync with their Firefox Sync account to stay connected and immersed in the activity they are doing. */
 "Onboarding.SyncTitle.v102" = "Dèan sioncronachadh is cuir às dha na cnapan-starra";
 
 /* Description for the wallpaper onboarding page in our Onboarding screens. This describes to the user that they can set a wallpaper. */
 "Onboarding.WallpaperAction.v102" = "Suidhich pàipear-balla";
 
 /* Title for the wallpaper onboarding page in our Onboarding screens. This describes to the user that they can choose different wallpapers. */
-"Onboarding.WallpaperTitle.v102" = "Tagh pàipear-balla Firefox";
+"Onboarding.WallpaperTitle.v102" = "Tagh pàipear-balla KARMA";
 
-/* On the onboarding card letting users know what's new in this version of Firefox, this is the title for the button, on the bottom of the card, used to get back to browsing on Firefox by dismissing the onboarding card */
+/* On the onboarding card letting users know what's new in this version of KARMA, this is the title for the button, on the bottom of the card, used to get back to browsing on KARMA by dismissing the onboarding card */
 "Onboarding.WhatsNew.Button.Title" = "Tòisich air brabhsadh";
 
 /* Title for prompt displayed to user after the app crashes */
-"Oops! Firefox crashed" = "Ìoc! Thuislich Firefox";
+"Oops! Firefox crashed" = "Ìoc! Thuislich KARMA";
 
 /* See http://mzl.la/1LXbDOL */
 "Open articles in Reader View by tapping the book icon when it appears in the title bar." = "Fosgail artaigilean san t-sealladh leughaidh le gnogag air ìomhaigheag an leabhair nuair a nochdas e ann am bàr an tiotail.";
@@ -916,8 +916,8 @@
 /* Toggle tabs syncing setting */
 "Open Tabs" = "Tabaichean fosgailte";
 
-/* The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app. */
-"OpenURL.Error.Message" = "Chan urrainn dha Firefox an duilleag fhosgladh a chionn ’s gu bheul an seòladh cearr.";
+/* The message displayed to a user when they try to open a URL that cannot be handled by KARMA, or any external app. */
+"OpenURL.Error.Message" = "Chan urrainn dha KARMA an duilleag fhosgladh a chionn ’s gu bheul an seòladh cearr.";
 
 /* Title of the message shown when the user attempts to navigate to an invalid link. */
 "OpenURL.Error.Title" = "Cha ghabh an duilleag fhosgladh";
@@ -929,7 +929,7 @@
 "PhotoLibrary.FirefoxWouldLikeAccessMessage" = "Bheir seo comas dhut an dealbh a shàbhaladh ann an albam a’ chamara agad.";
 
 /* See http://mzl.la/1G7uHo7 */
-"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Bu mhath le Firefox cothrom air na dealbhan agad";
+"PhotoLibrary.FirefoxWouldLikeAccessTitle" = "Bu mhath le KARMA cothrom air na dealbhan agad";
 
 /* Button for closing the menu action sheet */
 "PhotonMenu.close" = "Dùin";
@@ -937,7 +937,7 @@
 /* Privacy section title */
 "Privacy" = "Prìobhaideachd";
 
-/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
+/* Show KARMA Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/KARMA/ */
 "Privacy Policy" = "Am poileasaidh prìobhaideachd";
 
 /* This is the value for a label that indicates if a user is on an unencrypted website. */
@@ -949,7 +949,7 @@
 /* Title for quick-search engines settings section. */
 "Quick-Search Engines" = "Einnseanan grad-luirg";
 
-/* A label indicating the action that a user can rate the Firefox app in the App store. */
+/* A label indicating the action that a user can rate the KARMA app in the App store. */
 "Ratings.Settings.RateOnAppStore" = "Rangaich san App Store";
 
 /* Accessibility label for read article in reading list. It's a past participle - functions as an adjective. */
@@ -1010,7 +1010,7 @@
 "ScanQRCode.InvalidDataError.Message" = "Tha an dàta mì-dhligheach";
 
 /* Text of the prompt to setup the camera authorization for the Scan QR Code feature. */
-"ScanQRCode.PermissionError.Message.v100" = "Tadhail air “Roghainnean” > “Firefox” is thoir cead-inntrigidh dha Firefox dhan chamara.";
+"ScanQRCode.PermissionError.Message.v100" = "Tadhail air “Roghainnean” > “KARMA” is thoir cead-inntrigidh dha KARMA dhan chamara.";
 
 /* Title for the QR code scanner view. */
 "ScanQRCode.View.Title" = "Sganaich an còd QR";
@@ -1024,8 +1024,8 @@
 /* Search suggestion cell label that allows user to switch to tab which they searched for in url bar */
 "Search.Awesomebar.SwitchToTab" = "Geàrr leum gun taba";
 
-/* When making a new search from the awesome bar, suggestions appear to the user as they write new letters in their search. Different types of suggestions can appear. This string will be used as a header to separate Firefox suggestions from normal suggestions. */
-"Search.SuggestSectionTitle.v102" = "Firefox Suggest";
+/* When making a new search from the awesome bar, suggestions appear to the user as they write new letters in their search. Different types of suggestions can appear. This string will be used as a header to separate KARMA suggestions from normal suggestions. */
+"Search.SuggestSectionTitle.v102" = "KARMA Suggest";
 
 /* The message that asks the user to Add the search provider explaining where the search engine will appear */
 "Search.ThirdPartyEngines.AddMessage" = "Nochdaidh an t-einnsean-luirg ùr ann am bàr nan lorg gu luath.";
@@ -1088,13 +1088,13 @@
 "SendTo.NavBar.Title" = "Cuir an taba";
 
 /* Error message shown in the remote tabs panel */
-"SendTo.NoDevicesFound.Message" = "Cha do cheangail thu uidheam sam bith eile ris a’ chunntas Firefox seo as urrainn dhut sioncronachadh.";
+"SendTo.NoDevicesFound.Message" = "Cha do cheangail thu uidheam sam bith eile ris a’ chunntas KARMA seo as urrainn dhut sioncronachadh.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "Fosgail na roghainnean ann am Firefox is clàraich a-steach a leantainn air adhart.";
+"SendTo.NotSignedIn.Message" = "Fosgail na roghainnean ann am KARMA is clàraich a-steach a leantainn air adhart.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Title" = "Cha do rinn thu clàradh a-steach dhan chunntas Firefox agad.";
+"SendTo.NotSignedIn.Title" = "Cha do rinn thu clàradh a-steach dhan chunntas KARMA agad.";
 
 /* Navigation bar button to Send the current page to a device */
 "SendTo.SendAction.Text" = "Cuir";
@@ -1115,7 +1115,7 @@
 "SentTab.NoTabArrivingNotification.body" = "Thoir gnogag airson tòiseachadh";
 
 /* Title of notification received after a spurious message from FxA has been received. */
-"SentTab.NoTabArrivingNotification.title" = "Sioncronachadh Firefox";
+"SentTab.NoTabArrivingNotification.title" = "Sioncronachadh KARMA";
 
 /* Label for an action used to view one or more tabs from a notification. */
 "SentTab.ViewAction.title" = "Sealladh";
@@ -1175,7 +1175,7 @@
 "Settings.DataManagement.Title" = "Stiùireadh dàta";
 
 /* Body of the alert when prompting the user asking to disconnect. */
-"Settings.Disconnect.Body" = "Sguiridh Firefox de shioncronachadh a’ chunntais agad ach cha sguab e às gin dhen dàta brabhsaidh agad air an uidheam seo.";
+"Settings.Disconnect.Body" = "Sguiridh KARMA de shioncronachadh a’ chunntais agad ach cha sguab e às gin dhen dàta brabhsaidh agad air an uidheam seo.";
 
 /* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
 "Settings.Disconnect.Button" = "Dì-cheangail gleus an t-sioncronachaidh";
@@ -1234,11 +1234,11 @@
 /* Label used for the device name settings section. */
 "Settings.FxA.DeviceName" = "Ainm an uidheim";
 
-/* Label used as a section title in the Firefox Accounts Settings screen. */
+/* Label used as a section title in the KARMA Accounts Settings screen. */
 "Settings.FxA.Sync.SectionName" = "Roghainnean sioncronachaidh";
 
 /* Title displayed in header of the FxA settings panel. */
-"Settings.FxA.Title" = "Cunntas Firefox";
+"Settings.FxA.Title" = "Cunntas KARMA";
 
 /* General settings section title */
 "Settings.General.SectionName" = "Coitcheann";
@@ -1246,82 +1246,82 @@
 /* This is the description below the settings section located in the menu under customize current homepage. It describes what the options in the section are for. */
 "Settings.Home.Current.Description.v101" = "Tagh na chì thu air an duilleag-dhachaigh.";
 
-/* In the settings menu, on the Firefox homepage customization section, this is the description below the section, describing what the options in the section are for. */
-"Settings.Home.Option.Description.v101" = "Tagh na chì thu air duilleag-dhachaigh Firefox.";
+/* In the settings menu, on the KARMA homepage customization section, this is the description below the section, describing what the options in the section are for. */
+"Settings.Home.Option.Description.v101" = "Tagh na chì thu air duilleag-dhachaigh KARMA.";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle the Jump Back In section on homepage on or off */
 "Settings.Home.Option.JumpBackIn" = "Till gu far an robh thu";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to turn the Pocket Recommendations section on the KARMA homepage on or off */
 "Settings.Home.Option.Pocket" = "Air a mholadh le Pocket";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Saved section on the KARMA homepage on or off */
 "Settings.Home.Option.RecentlySaved" = "Air a shàbhaladh o chionn goirid";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Recently Visited section on the Firfox homepage on or off */
 "Settings.Home.Option.RecentlyVisited" = "Air tadhal orra o chionn goirid";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the KARMA homepage on or off */
 "Settings.Home.Option.Shortcuts" = "Ath-ghoiridean";
 
-/* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to turn the Pocket Sponsored Stories on the Firefox homepage on or off */
+/* In the settings menu, in the KARMA homepage customization section, this is the title for the option that allows users to turn the Pocket Sponsored Stories on the KARMA homepage on or off */
 "Settings.Home.Option.SponsoredPocket.v103" = "Sgeulachdan sponsairichte";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage after four hours of inactivity. */
 "Settings.Home.Option.StartAtHome.AfterFourHours" = "An duilleag-dhachaigh an dèidh ceithir uairean a thìde gun ghnìomhachd";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Always" = "Duilleag-dhachaigh";
 
 /* In the settings menu, in the Start at Home customization options, this is text that appears below the section, describing what the section settings do. */
-"Settings.Home.Option.StartAtHome.Description" = "Tagh na chì thu nuair a thilleas tu gu Firefox.";
+"Settings.Home.Option.StartAtHome.Description" = "Tagh na chì thu nuair a thilleas tu gu KARMA.";
 
-/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up Firefox */
+/* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the last tab they were on, every time they open up KARMA */
 "Settings.Home.Option.StartAtHome.Never" = "An taba mu dheireadh";
 
-/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the Firefox Homepage. */
+/* Title for the section in the settings menu where users can configure the behaviour of the Start at Home feature on the KARMA Homepage. */
 "Settings.Home.Option.StartAtHome.Title" = "An sgrìn fosglaidh";
 
-/* In the settings menu, this is the title of the Firefox Homepage customization settings section */
+/* In the settings menu, this is the title of the KARMA Homepage customization settings section */
 "Settings.Home.Option.Title.v101" = "Gabh a-staigh air an duilleag-dhachaigh";
 
-/* In the settings menu, on the Firefox homepage customization section, this is the title for the option that allows users to access the wallpaper settings for the application. */
+/* In the settings menu, on the KARMA homepage customization section, this is the title for the option that allows users to access the wallpaper settings for the application. */
 "Settings.Home.Option.Wallpaper" = "Pàipear-balla";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string for the amethyst firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.AmethystWallpaper.v99" = "Pàipear-balla Firefox, pàtran amaitist.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the accessibility string for the amethyst KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.AmethystWallpaper.v99" = "Pàipear-balla KARMA, pàtran amaitist.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the beach hills firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.BeachHillsWallpaper.v100" = "Pàipear-balla Firefox, pàtran chnoc ri taobh na mara.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title accessibility string for the beach hills KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.BeachHillsWallpaper.v100" = "Pàipear-balla KARMA, pàtran chnoc ri taobh na mara.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the cerulean firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.CeruleanWallpaper.v99" = "Pàipear-balla Firefox, pàtran nan speuran.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title accessibility string for the cerulean KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.CeruleanWallpaper.v99" = "Pàipear-balla KARMA, pàtran nan speuran.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string for the default wallpaper. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the accessibility string for the default wallpaper. */
 "Settings.Home.Option.Wallpaper.Accessibility.DefaultWallpaper.v99" = "Pàipear-balla soilleir bunaiteach.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the sunrise firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.SunriseWallpaper.v99" = "Pàipear-balla Firefox, pàtran èirigh na grèine.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title accessibility string for the sunrise KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.SunriseWallpaper.v99" = "Pàipear-balla KARMA, pàtran èirigh na grèine.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string of the toggle for turning wallpaper cycling shortcut on or off on the homepage. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the accessibility string of the toggle for turning wallpaper cycling shortcut on or off on the homepage. */
 "Settings.Home.Option.Wallpaper.Accessibility.ToggleButton" = "Toglachadh cuairt pàipear-balla na duilleige-dachaigh";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the twilight hills firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.TwilightHillsWallpaper.v100" = "Pàipear-balla Firefox, pàtran chnoc sa chamhanaich.";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title accessibility string for the twilight hills KARMA wallpaper. */
+"Settings.Home.Option.Wallpaper.Accessibility.TwilightHillsWallpaper.v100" = "Pàipear-balla KARMA, pàtran chnoc sa chamhanaich.";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of the section that allows users to change the wallpaper settings for the application. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title of the section that allows users to change the wallpaper settings for the application. */
 "Settings.Home.Option.Wallpaper.CollectionTitle" = "AN SGRÌN FOSGLAIDH";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the string titling the switch button's function, which allows a user to toggle wallpaper switching from the homepage logo on or off. */
-"Settings.Home.Option.Wallpaper.SwitchTitle.v99" = "Atharraich am pàipear-balla le bhith a’ toirt gnogag air suaicheantas duilleag-dhachaigh Firefox";
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the string titling the switch button's function, which allows a user to toggle wallpaper switching from the homepage logo on or off. */
+"Settings.Home.Option.Wallpaper.SwitchTitle.v99" = "Atharraich am pàipear-balla le bhith a’ toirt gnogag air suaicheantas duilleag-dhachaigh KARMA";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of that screen, which allows users to change the wallpaper settings for the application. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title of that screen, which allows users to change the wallpaper settings for the application. */
 "Settings.Home.Option.Wallpaper.Title" = "Pàipear-balla";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of toast that comes up when the user changes wallpaper, which lets them know that the wallpaper has been updated. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title of toast that comes up when the user changes wallpaper, which lets them know that the wallpaper has been updated. */
 "Settings.Home.Option.Wallpaper.UpdatedToast" = "Chaidh am pàipear-balla ùrachadh!";
 
-/* In the settings menu, on the Firefox wallpaper customization screen, this is the title of the button found on the toast that comes up once the user changes wallpaper, and allows users to dismiss the settings page. In this case, consider View as a verb - the action of dismissing settings and seeing the wallpaper. */
+/* In the settings menu, on the KARMA wallpaper customization screen, this is the title of the button found on the toast that comes up once the user changes wallpaper, and allows users to dismiss the settings page. In this case, consider View as a verb - the action of dismissing settings and seeing the wallpaper. */
 "Settings.Home.Option.Wallpaper.UpdatedToastButton" = "Seall";
 
 /* Label used as an item in Settings. When touched it will open a dialog to configure the home page and its uses. */
@@ -1363,8 +1363,8 @@
 /* Option in settings to show a blank page when you open a new tab */
 "Settings.NewTab.Option.BlankPage" = "Duilleag bhàn";
 
-/* Option in settings to show Firefox Home when you open a new tab */
-"Settings.NewTab.Option.FirefoxHome" = "Dachaigh Firefox";
+/* Option in settings to show KARMA Home when you open a new tab */
+"Settings.NewTab.Option.FirefoxHome" = "Dachaigh KARMA";
 
 /* Option in settings to show your homepage when you open a new tab */
 "Settings.NewTab.Option.HomePage" = "Duilleag-dhachaigh";
@@ -1385,7 +1385,7 @@
 "Settings.NoImageModeBlockImages.Label.v99" = "Bac dealbhan";
 
 /* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Status" = "Nuair a dh’fhosglas mi Firefox";
+"Settings.OfferClipboardBar.Status" = "Nuair a dh’fhosglas mi KARMA";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
 "Settings.OfferClipboardBar.Title" = "faighnich a bheil mi airson ceangal a rinn mi lethbhreac dheth fhosgladh";
@@ -1399,7 +1399,7 @@
 /* Touch ID prompt subtitle when accessing logins and passwords */
 "Settings.Passwords.FingerPrintReason.v103" = "Inntrig na faclan-faire le lorg do mheòir.";
 
-/* Message shown when you enter Passwords screen for the first time. It explains how password are protected in the Firefox for iOS application. */
+/* Message shown when you enter Passwords screen for the first time. It explains how password are protected in the KARMA for iOS application. */
 "Settings.Passwords.OnboardingMessage.v103" = "Tha na faclan-faire agad gan dìon le ID aodainn, ID suathaidh no còd-faire uidheim a-nis.";
 
 /* Setting that appears in the Passwords screen to enable the built-in password manager so users can save their passwords. */
@@ -1421,7 +1421,7 @@
 "Settings.SendUsage.Link" = "Barrachd fiosrachaidh.";
 
 /* A short description that explains why mozilla collects usage data. */
-"Settings.SendUsage.Message" = "Tha Mozilla an dealas dìreach an dàta a chruinneachadh a dh’fheumas sinn airson Firefox a sholar is a leasachadh dhan a h-uile duine.";
+"Settings.SendUsage.Message" = "Tha Mozilla an dealas dìreach an dàta a chruinneachadh a dh’fheumas sinn airson KARMA a sholar is a leasachadh dhan a h-uile duine.";
 
 /* The title for the setting to send usage data. */
 "Settings.SendUsage.Title" = "Cuir an dàta cleachdaidh";
@@ -1439,7 +1439,7 @@
 "Settings.Siri.OpenTabShortcut" = "Fosgail taba ùr";
 
 /* The description that describes what siri shortcuts are */
-"Settings.Siri.SectionDescription" = "Cleachd ath-ghoiridean Siri airson Firefox fhosgladh gu luath le Siri";
+"Settings.Siri.SectionDescription" = "Cleachd ath-ghoiridean Siri airson KARMA fhosgladh gu luath le Siri";
 
 /* The option that takes you to the siri shortcuts settings page */
 "Settings.Siri.SectionName" = "Ath-ghoiridean Siri";
@@ -1448,7 +1448,7 @@
 "Settings.Studies.Toggle.Link" = "Barrachd fiosrachaidh.";
 
 /* A short description that explains that Mozilla is running studies */
-"Settings.Studies.Toggle.Message" = "Dh’fhaoidte gun stàlaich is ruith Firefox rannsachadh o àm gu àm.";
+"Settings.Studies.Toggle.Message" = "Dh’fhaoidte gun stàlaich is ruith KARMA rannsachadh o àm gu àm.";
 
 /* Label used as a toggle item in Settings. When this is off, the user is opting out of all studies. */
 "Settings.Studies.Toggle.Title" = "Rannsachadh";
@@ -1456,7 +1456,7 @@
 /* Ddescription that appears in the settings screen to explain what Firefox Sync is useful for. */
 "Settings.Sync.ButtonDescription.v103" = "Clàraich a-steach gus na tabaichean, comharran-lìn, faclan-faire is mòran a bharrachd a shioncronachadh.";
 
-/* Button label that appears in the settings to prompt the user to sign in to Firefox for iOS sync service to sync and save data. */
+/* Button label that appears in the settings to prompt the user to sign in to KARMA for iOS sync service to sync and save data. */
 "Settings.Sync.ButtonTitle.v103" = "Sioncronaich is sàbhail an dàta";
 
 /* Title for the page where the user sign in to their Firefox Sync account. */
@@ -1471,7 +1471,7 @@
 /* In the settings menu, in the Tabs customization section, this is the title for the setting that toggles the Tab Groups feature - where tabs from related searches are grouped - on or off */
 "Settings.Tabs.CustomizeTabsSection.TabGroups" = "Buidhnean thabaichean";
 
-/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from firefox hompage */
+/* In the settings menu, in the Tabs customization section, this is the title for the Tabs Tray customization section. The tabs tray is accessed from KARMA hompage */
 "Settings.Tabs.CustomizeTabsSection.Title" = "Gnàthaich treidhe nan taba";
 
 /* In the settings menu, this is the title for the Tabs customization section option */
@@ -1543,29 +1543,29 @@
 /* Title displayed in header of the Data Management panel. */
 "Settings.WebsiteData.Title" = "Dàta nan làraichean-lìn";
 
-/* Action label on share extension to add page to the Firefox reading list. */
+/* Action label on share extension to add page to the KARMA reading list. */
 "ShareExtension.AddToReadingListAction.Title" = "Cuir ris an liosta-leughaidh";
 
 /* Share extension label shown after user has performed 'Add to Reading List' action. */
 "ShareExtension.AddToReadingListActionDone.Title" = "Air a chur ris an liosta-leughaidh";
 
-/* Action label on share extension to bookmark the page in Firefox. */
+/* Action label on share extension to bookmark the page in KARMA. */
 "ShareExtension.BookmarkThisPageAction.Title" = "Cruthaich comharra-lìn dhan duilleag seo";
 
 /* Share extension label shown after user has performed 'Bookmark this Page' action. */
 "ShareExtension.BookmarkThisPageActionDone.Title" = "Na chomharra-lìn";
 
-/* Action label on share extension to load the page in Firefox when user switches apps to bring it to foreground. */
+/* Action label on share extension to load the page in KARMA when user switches apps to bring it to foreground. */
 "ShareExtension.LoadInBackgroundAction.Title" = "Luchdaich sa chùlaibh";
 
 /* Share extension label shown after user has performed 'Load in Background' action. */
-"ShareExtension.LoadInBackgroundActionDone.Title" = "Ga luchdadh ann am Firefox";
+"ShareExtension.LoadInBackgroundActionDone.Title" = "Ga luchdadh ann am KARMA";
 
-/* Action label on share extension to immediately open page in Firefox. */
-"ShareExtension.OpenInFirefoxAction.Title" = "Fosgail ann am Firefox";
+/* Action label on share extension to immediately open page in KARMA. */
+"ShareExtension.OpenInFirefoxAction.Title" = "Fosgail ann am KARMA";
 
-/* Action label on share extension to search for the selected text in Firefox. */
-"ShareExtension.SeachInFirefoxAction.Title" = "Lorg ann am Firefox";
+/* Action label on share extension to search for the selected text in KARMA. */
+"ShareExtension.SeachInFirefoxAction.Title" = "Lorg ann am KARMA";
 
 /* Label for show search suggestions setting. */
 "Show Search Suggestions" = "Seall molaidhean-luirg";
@@ -1645,7 +1645,7 @@
 /* The title for the tab tray */
 "TabTray.Title" = "Tabaichean fosgailte";
 
-/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to KARMA reader mode from another app. */
 "The page could not be displayed in Reader View." = "Cha b’ urrainn dhuinn an duilleag a thaisbeanadh ann an sealladh an leughadair.";
 
 /* Error message in the remote tabs panel */
@@ -1697,7 +1697,7 @@
 "UIMenuItem.PasteGo" = "Cuir ann ⁊ tadhail air";
 
 /* Search in New Tab Text selection menu item */
-"UIMenuItem.SearchWithFirefox" = "Lorg le Firefox";
+"UIMenuItem.SearchWithFirefox" = "Lorg le KARMA";
 
 /* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
 "unread" = "gun leughadh";
@@ -1727,7 +1727,7 @@
 "Yesterday" = "An-dè";
 
 /* Error message in the remote tabs panel */
-"You don’t have any tabs open in Firefox on your other devices." = "Chan eil taba sam bith fosgailte agad ann am Firefox air uidheaman eile.";
+"You don’t have any tabs open in Firefox on your other devices." = "Chan eil taba sam bith fosgailte agad ann am KARMA air uidheaman eile.";
 
 /* Your Rights settings section title */
 "Your Rights" = "Do chòraichean";

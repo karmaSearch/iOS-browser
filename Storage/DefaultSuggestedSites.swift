@@ -36,44 +36,42 @@ open class DefaultSuggestedSites {
     public static let sites = [
         "default": [
             SuggestedSiteData(
-                url: "https://m.facebook.com/",
-                bgColor: "0x385185",
-                imageUrl: "asset://suggestedsites_facebook",
+                url: "https://about.karmasearch.org/",
+                bgColor: "0xffffff",
+                imageUrl: "",
                 faviconUrl: "asset://defaultFavicon",
-                trackingId: 632,
-                title: .DefaultSuggestedFacebook
+                trackingId: 633,
+                title: "Our Mission"
+            )
+          
+        ],
+        "en-GB": [
+            SuggestedSiteData(
+                url: "https://about.karmasearch.org/",
+                bgColor: "0xffffff",
+                imageUrl: "",
+                faviconUrl: "asset://defaultFavicon",
+                trackingId: 633,
+                title: "Our Mission"
+            )
+           
+        ],
+        "fr_FR": [
+            SuggestedSiteData(
+                url: "https://about.karmasearch.org/",
+                bgColor: "0xffffff",
+                imageUrl: "",
+                faviconUrl: "asset://defaultFavicon",
+                trackingId: 633,
+                title: "Notre Mission"
             ),
             SuggestedSiteData(
-                url: "https://m.youtube.com/",
-                bgColor: "0xcd201f",
-                imageUrl: "asset://suggestedsites_youtube",
+                url: "https://www.fresquedelabiodiversite.org/",
+                bgColor: "0xffffff",
+                imageUrl: "",
                 faviconUrl: "asset://defaultFavicon",
-                trackingId: 631,
-                title: .DefaultSuggestedYouTube
-            ),
-            SuggestedSiteData(
-                url: "https://www.amazon.com/",
-                bgColor: "0x000000",
-                imageUrl: "asset://suggestedsites_amazon",
-                faviconUrl: "asset://defaultFavicon",
-                trackingId: 630,
-                title: .DefaultSuggestedAmazon
-            ),
-            SuggestedSiteData(
-                url: "https://www.wikipedia.org/",
-                bgColor: "0x000000",
-                imageUrl: "asset://suggestedsites_wikipedia",
-                faviconUrl: "asset://defaultFavicon",
-                trackingId: 629,
-                title: .DefaultSuggestedWikipedia
-            ),
-            SuggestedSiteData(
-                url: "https://mobile.twitter.com/",
-                bgColor: "0x55acee",
-                imageUrl: "asset://suggestedsites_twitter",
-                faviconUrl: "asset://defaultFavicon",
-                trackingId: 628,
-                title: .DefaultSuggestedTwitter
+                trackingId: 634,
+                title: "fresquedelabiodiversite"
             )
         ],
         "zh_CN": [
