@@ -1310,6 +1310,9 @@
 		A3D581AE29AFC4D900AFAA77 /* XCGLogger in Frameworks */ = {isa = PBXBuildFile; productRef = A3D581AD29AFC4D900AFAA77 /* XCGLogger */; };
 		A3D581AF29B0A1A600AFAA77 /* LearnAndActViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D5DE52938FBA500400F74 /* LearnAndActViewModel.swift */; };
 		A3D581B029B0A1AE00AFAA77 /* LearnAndActDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFB7BF29A37BCF005EDF99 /* LearnAndActDataAdapter.swift */; };
+		A3D581B229B0AD5400AFAA77 /* LightThemeKarma.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D581B129B0AD5400AFAA77 /* LightThemeKarma.swift */; };
+		A3D581B429B0AD9D00AFAA77 /* KarmaColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D581B329B0AD9D00AFAA77 /* KarmaColors.swift */; };
+		A3D581B629B0AEA000AFAA77 /* DarkThemeKarma.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D581B529B0AEA000AFAA77 /* DarkThemeKarma.swift */; };
 		A3DFB7C029A37BCF005EDF99 /* LearnAndActDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFB7BF29A37BCF005EDF99 /* LearnAndActDataAdapter.swift */; };
 		A3DFB7C229A37D26005EDF99 /* LearnAndActProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFB7C129A37D26005EDF99 /* LearnAndActProvider.swift */; };
 		A3DFB7C429A3B88C005EDF99 /* LearnAndActModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFB7C329A3B88C005EDF99 /* LearnAndActModel.swift */; };
@@ -4498,6 +4501,9 @@
 		A3C1B9B429AE521600ECD30F /* ProximaNova-Medium It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Medium It.otf"; sourceTree = "<group>"; };
 		A3C1B9B529AE521600ECD30F /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
 		A3C1B9C029AE53D200ECD30F /* topdomains.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = topdomains.txt; sourceTree = "<group>"; };
+		A3D581B129B0AD5400AFAA77 /* LightThemeKarma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightThemeKarma.swift; sourceTree = "<group>"; };
+		A3D581B329B0AD9D00AFAA77 /* KarmaColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaColors.swift; sourceTree = "<group>"; };
+		A3D581B529B0AEA000AFAA77 /* DarkThemeKarma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkThemeKarma.swift; sourceTree = "<group>"; };
 		A3DEA004294A0E3300A28297 /* KarmaConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KarmaConfig.swift; sourceTree = "<group>"; };
 		A3DFB7BF29A37BCF005EDF99 /* LearnAndActDataAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAndActDataAdapter.swift; sourceTree = "<group>"; };
 		A3DFB7C129A37D26005EDF99 /* LearnAndActProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAndActProvider.swift; sourceTree = "<group>"; };
@@ -7056,6 +7062,9 @@
 				C8954A4E2729AD9B001C7283 /* Theme.swift */,
 				C8954A4F2729AD9C001C7283 /* ThemeManager.swift */,
 				8A887D792912B206005BCB1D /* ThemeType.swift */,
+				A3D581B129B0AD5400AFAA77 /* LightThemeKarma.swift */,
+				A3D581B529B0AEA000AFAA77 /* DarkThemeKarma.swift */,
+				A3D581B329B0AD9D00AFAA77 /* KarmaColors.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -11171,6 +11180,8 @@
 				5A292123295C8C5600242235 /* FxColors.swift in Sources */,
 				E65075B81E37F7AB006961AC /* NotificationConstants.swift in Sources */,
 				E65075AC1E37F7AB006961AC /* String+Extension.swift in Sources */,
+				A3D581B429B0AD9D00AFAA77 /* KarmaColors.swift in Sources */,
+				A3D581B229B0AD5400AFAA77 /* LightThemeKarma.swift in Sources */,
 				A32FD0452937B21E0072CD43 /* String+Karma.swift in Sources */,
 				E65075951E37F7AB006961AC /* GeneralUtils.swift in Sources */,
 				E683F0C21E93D4E90035D990 /* DictionaryExtensions.swift in Sources */,
@@ -11180,6 +11191,7 @@
 				D054352A226687A400FDE4EF /* UIBarButtonItemExtensions.swift in Sources */,
 				7479B4EF1C5306A200DF000B /* Reachability.swift in Sources */,
 				5A292126295C8C5600242235 /* ThemeType.swift in Sources */,
+				A3D581B629B0AEA000AFAA77 /* DarkThemeKarma.swift in Sources */,
 				E65075B31E37F7AB006961AC /* KeyboardHelper.swift in Sources */,
 				4326A3EB284E42A500550F73 /* ImageLoadingHandler.swift in Sources */,
 				E65075AA1E37F7AB006961AC /* URLProtectionSpaceExtensions.swift in Sources */,

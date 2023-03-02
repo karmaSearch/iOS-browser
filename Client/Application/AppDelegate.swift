@@ -27,7 +27,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             quality: UIConstants.ScreenshotQuality)
     )
 
+    #if KARMA
+    lazy var themeManager: ThemeManager = DefaultThemeManager(isKarma: true)
+    #else
     lazy var themeManager: ThemeManager = DefaultThemeManager()
+    #endif
     lazy var ratingPromptManager = RatingPromptManager(profile: profile)
     lazy var appSessionManager: AppSessionProvider = AppSessionManager()
 

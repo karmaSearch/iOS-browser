@@ -635,6 +635,7 @@ class SearchViewController: SiteTableViewController,
     override func applyTheme() {
         super.applyTheme()
         view.backgroundColor = themeManager.currentTheme.colors.layer5
+        tableView.backgroundColor = themeManager.currentTheme.colors.layer5
         searchEngineContainerView.layer.backgroundColor = themeManager.currentTheme.colors.layer1.cgColor
         searchEngineContainerView.layer.shadowColor = themeManager.currentTheme.colors.shadowDefault.cgColor
         reloadData()

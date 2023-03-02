@@ -42,15 +42,17 @@ final public class DefaultThemeManager: ThemeManager, Notifiable {
     private var mainQueue: DispatchQueueInterface
 
     public var window: UIWindow?
-
+    private var isKarma: Bool
     // MARK: - Init
 
     public init(userDefaults: UserDefaultsInterface = UserDefaults.standard,
                 notificationCenter: NotificationProtocol = NotificationCenter.default,
-                mainQueue: DispatchQueueInterface = DispatchQueue.main) {
+                mainQueue: DispatchQueueInterface = DispatchQueue.main,
+                isKarma: Bool = false) {
         self.userDefaults = userDefaults
         self.notificationCenter = notificationCenter
         self.mainQueue = mainQueue
+        self.isKarma = isKarma
 
         migrateDefaultsToUseStandard()
 
@@ -120,7 +122,7 @@ final public class DefaultThemeManager: ThemeManager, Notifiable {
     private func loadInitialThemeType() -> ThemeType {
         if let nightModeIsOn = userDefaults.object(forKey: ThemeKeys.NightMode.isOn) as? NSNumber,
            nightModeIsOn.boolValue == true {
-            return .dark
+            return isKarma ? .darkKarma : .dark
         }
         var themeType = getSystemThemeType()
         if let savedThemeDescription = userDefaults.string(forKey: ThemeKeys.themeName),
@@ -131,15 +133,30 @@ final public class DefaultThemeManager: ThemeManager, Notifiable {
     }
 
     private func getSystemThemeType() -> ThemeType {
+        if isKarma {
+            return UIScreen.main.traitCollection.userInterfaceStyle == .dark ? ThemeType.darkKarma : ThemeType.lightKarma
+        }
         return UIScreen.main.traitCollection.userInterfaceStyle == .dark ? ThemeType.dark : ThemeType.light
     }
 
     private func newThemeForType(_ type: ThemeType) -> Theme {
+        var type = type
+        #if KARMA
+        if type == .light {
+            type = .lightKarma
+        } else if type == .dark {
+            type = .darkKarma
+        }
+        #endif
         switch type {
         case .light:
             return LightTheme()
         case .dark:
             return DarkTheme()
+        case .lightKarma:
+            return LightThemeKarma()
+        case .darkKarma:
+            return DarkThemeKarma()
         }
     }
 
