@@ -112,11 +112,63 @@ struct NimbusFlaggableFeature: HasNimbusSearchBar {
         self.featureID = featureID
         self.profile = profile
     }
+    
+    public func isEnabledByDefaultForKarma(using nimbusLayer: NimbusFeatureFlagLayer) -> Bool {
+        switch featureID {
+        case .bottomSearchBar:
+            return true
+        case .contextualHintForJumpBackInSyncedTab:
+            return true
+        case .contextualHintForToolbar:
+            return true
+        case .creditCardAutofillStatus:
+            return true
+        case .historyHighlights:
+            return false
+        case .historyGroups:
+            return false
+        case .inactiveTabs:
+            return true
+        case .jumpBackIn:
+            return false
+        case .jumpBackInSyncedTab:
+            return false
+        case .onboardingUpgrade:
+            return false
+        case .onboardingFreshInstall:
+            return false
+        case .pocket:
+            return false
+        case .pullToRefresh:
+            return true
+        case .recentlySaved:
+            return false
+        case .reportSiteIssue,
+                .searchHighlights,
+                .shakeToRestore,
+                .shareSheetChanges,
+                .shareToolbarChanges:
+            return isNimbusEnabled(using: nimbusLayer)
+        case .sponsoredPocket,
+                .sponsoredTiles:
+            return false
+        case .startAtHome:
+            return true
+        case .tabTrayGroups:
+            return true
+        case .topSites:
+            return true
+        case .wallpapers,
+                .wallpaperOnboardingSheet,
+                .wallpaperVersion:
+            return isNimbusEnabled(using: nimbusLayer)
+        case .learnAndAct:
+            return true
+        }
+    }
 
     // MARK: - Public methods
     public func isNimbusEnabled(using nimbusLayer: NimbusFeatureFlagLayer) -> Bool {
-        let nimbusValue = nimbusLayer.checkNimbusConfigFor(featureID)
-
         switch featureID {
         case .bottomSearchBar:
             return true
@@ -183,9 +235,19 @@ struct NimbusFlaggableFeature: HasNimbusSearchBar {
             return pref == StartAtHomeSetting.afterFourHours.rawValue || pref == StartAtHomeSetting.always.rawValue
         }
 
-        guard let optionsKey = featureKey,
-              let option = profile.prefs.boolForKey(optionsKey)
-        else { return isNimbusEnabled(using: nimbusLayer) }
+        guard let optionsKey = featureKey else {
+            return isNimbusEnabled(using: nimbusLayer)
+        }
+        guard let option = profile.prefs.boolForKey(optionsKey)
+        else {
+            #if KARMA
+            let value = isEnabledByDefaultForKarma(using: nimbusLayer)
+            return value
+            #else
+            return isNimbusEnabled(using: nimbusLayer)
+            #endif
+            
+        }
 
         return option
     }
