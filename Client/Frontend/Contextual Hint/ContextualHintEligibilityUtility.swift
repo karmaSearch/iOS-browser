@@ -34,6 +34,10 @@ struct ContextualHintEligibilityUtility: ContextualHintEligibilityUtilityProtoco
             hintTypeShouldBePresented = isSearchBarLocationFeatureEnabled
         case .inactiveTabs:
             hintTypeShouldBePresented = true
+        case .shortcuts:
+            hintTypeShouldBePresented = canShortcutPresented
+        case .learnAndAct:
+            hintTypeShouldBePresented = canLearnAndActPresented
         }
 
         return hintTypeShouldBePresented && !hasAlreadyBeenPresented(hintType)
@@ -52,6 +56,12 @@ struct ContextualHintEligibilityUtility: ContextualHintEligibilityUtilityProtoco
         guard device.userInterfaceIdiom != .pad else { return true }
 
         return profile.prefs.boolForKey(CFRPrefsKeys.toolbarOnboardingKey.rawValue) ?? false
+    }
+    
+    private var shoulShortcutHasShown: Bool {
+        guard device.userInterfaceIdiom != .pad else { return true }
+
+        return profile.prefs.boolForKey(CFRPrefsKeys.shorcutOnboardingKey.rawValue) ?? false
     }
 
     /// Determine if the CFR for Jump Back In is presentable.
@@ -110,6 +120,24 @@ struct ContextualHintEligibilityUtility: ContextualHintEligibilityUtilityProtoco
         }
 
         return hintConfigured
+    }
+    
+    private var canShortcutPresented: Bool {
+        guard shouldCheckToolbarHasShown,
+              !hasHintBeenConfigured(.shortcuts),
+                !hasAlreadyBeenPresented(.shortcuts)
+        else { return false }
+
+        return true
+    }
+    
+    private var canLearnAndActPresented: Bool {
+        guard shoulShortcutHasShown,
+              !hasHintBeenConfigured(.learnAndAct),
+              !hasAlreadyBeenPresented(.learnAndAct)
+        else { return false }
+
+        return true
     }
 }
 

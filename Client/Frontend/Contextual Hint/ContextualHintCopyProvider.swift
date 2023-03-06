@@ -59,6 +59,11 @@ struct ContextualHintCopyProvider: FeatureFlaggable {
 
         case .toolbarLocation:
             return getToolbarDescriptionCopy(with: arrowDirection)
+            
+        case .shortcuts:
+            descriptionCopy = String.ContextualHintShortcut
+        case .learnAndAct:
+            descriptionCopy = String.ContextualHintLearnAndAct
         }
 
         return descriptionCopy
@@ -73,7 +78,9 @@ struct ContextualHintCopyProvider: FeatureFlaggable {
         case .toolbarLocation:
             actionCopy = CFRStrings.Toolbar.SearchBarPlacementButtonText
         case .jumpBackIn,
-                .jumpBackInSyncedTab:
+                .jumpBackInSyncedTab,
+                .learnAndAct,
+                .shortcuts:
             actionCopy = ""
         }
 

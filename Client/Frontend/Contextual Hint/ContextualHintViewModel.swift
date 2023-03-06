@@ -17,6 +17,8 @@ enum ContextualHintType: String {
     case jumpBackInSyncedTab = "JumpBackInSyncedTab"
     case inactiveTabs = "InactiveTabs"
     case toolbarLocation = "ToolbarLocation"
+    case shortcuts = "Shortcuts"
+    case learnAndAct = "LearnAndAct"
 }
 
 class ContextualHintViewModel: ContextualHintPrefsKeysProvider {
@@ -52,6 +54,8 @@ class ContextualHintViewModel: ContextualHintPrefsKeysProvider {
         case .jumpBackInSyncedTab:
             profile.prefs.setBool(true, forKey: CFRPrefsKeys.jumpBackInSyncedTabKey.rawValue)
             profile.prefs.setBool(true, forKey: CFRPrefsKeys.jumpBackinKey.rawValue)
+        /*case.shortcuts, .learnAndAct: //TODO for test
+            break*/
         default:
             profile.prefs.setBool(true, forKey: prefsKey(for: hintType))
         }
@@ -75,6 +79,7 @@ class ContextualHintViewModel: ContextualHintPrefsKeysProvider {
         switch hintType {
         case .inactiveTabs: timeInterval = 0.25
         case .toolbarLocation: timeInterval = 0.5
+        case .shortcuts, .learnAndAct: timeInterval = 0
         default: timeInterval = 1.25
         }
 

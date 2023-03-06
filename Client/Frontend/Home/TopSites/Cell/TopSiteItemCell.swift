@@ -61,7 +61,7 @@ class TopSiteItemCell: UICollectionViewCell, ReusableCell {
         imageView.isHidden = true
     }
 
-    private lazy var titleLabel: UILabel = .build { titleLabel in
+    lazy var titleLabel: UILabel = .build { titleLabel in
         titleLabel.textAlignment = .center
         titleLabel.font = DynamicFontHelper.defaultHelper.preferredFont(withTextStyle: .caption1,
                                                                         size: UX.titleFontSize)

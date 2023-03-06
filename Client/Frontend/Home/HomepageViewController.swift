@@ -41,6 +41,9 @@ class HomepageViewController: UIViewController, HomePanel, FeatureFlaggable, The
     private lazy var wallpaperView: WallpaperBackgroundView = .build { _ in }
     private var jumpBackInContextualHintViewController: ContextualHintViewController
     private var syncTabContextualHintViewController: ContextualHintViewController
+    private var shortcutContextualHintViewController: ContextualHintViewController
+    private var learnAndActContextualHintViewController: ContextualHintViewController
+
     private var collectionView: UICollectionView! = nil
 
     var themeManager: ThemeManager
@@ -89,6 +92,13 @@ class HomepageViewController: UIViewController, HomePanel, FeatureFlaggable, The
         let syncTabContextualViewModel = ContextualHintViewModel(forHintType: .jumpBackInSyncedTab,
                                                                  with: viewModel.profile)
         self.syncTabContextualHintViewController = ContextualHintViewController(with: syncTabContextualViewModel)
+        let shortcutContextualViewModel = ContextualHintViewModel(forHintType: .shortcuts,
+                                                                 with: viewModel.profile)
+        self.shortcutContextualHintViewController = ContextualHintViewController(with: shortcutContextualViewModel)
+        let learnAndActContextualViewModel = ContextualHintViewModel(forHintType: .learnAndAct,
+                                                                 with: viewModel.profile)
+        self.learnAndActContextualHintViewController = ContextualHintViewController(with: learnAndActContextualViewModel)
+
         self.contextMenuHelper = HomepageContextMenuHelper(viewModel: viewModel)
 
         self.themeManager = themeManager
@@ -114,6 +124,8 @@ class HomepageViewController: UIViewController, HomePanel, FeatureFlaggable, The
     deinit {
         jumpBackInContextualHintViewController.stopTimer()
         syncTabContextualHintViewController.stopTimer()
+        shortcutContextualHintViewController.stopTimer()
+        learnAndActContextualHintViewController.stopTimer()
         notificationCenter.removeObserver(self)
     }
 
@@ -143,6 +155,8 @@ class HomepageViewController: UIViewController, HomePanel, FeatureFlaggable, The
         super.viewDidDisappear(animated)
         jumpBackInContextualHintViewController.stopTimer()
         syncTabContextualHintViewController.stopTimer()
+        shortcutContextualHintViewController.stopTimer()
+        learnAndActContextualHintViewController.stopTimer()
     }
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -275,6 +289,8 @@ class HomepageViewController: UIViewController, HomePanel, FeatureFlaggable, The
     func homepageWillDisappear() {
         jumpBackInContextualHintViewController.stopTimer()
         syncTabContextualHintViewController.stopTimer()
+        shortcutContextualHintViewController.stopTimer()
+        learnAndActContextualHintViewController.stopTimer()
         viewModel.recordViewDisappeared()
     }
 
@@ -439,6 +455,38 @@ class HomepageViewController: UIViewController, HomePanel, FeatureFlaggable, The
             andDelegate: self,
             presentedUsing: { self.presentContextualHint(contextualHintViewController: self.syncTabContextualHintViewController) },
             withActionBeforeAppearing: { self.contextualHintPresented(type: .jumpBackInSyncedTab) })
+    }
+    
+    private func prepareShortCutContextualHint(onCell cell: TopSiteItemCell) {
+        guard shortcutContextualHintViewController.shouldPresentHint(),
+              featureFlags.isFeatureEnabled(.topSites, checking: .buildOnly)
+        else {
+            shortcutContextualHintViewController.unconfigure()
+            return
+        }
+
+        shortcutContextualHintViewController.configure(
+            anchor: cell,
+            withArrowDirection: .up,
+            andDelegate: self,
+            presentedUsing: { self.presentContextualHint(contextualHintViewController: self.shortcutContextualHintViewController) },
+            withActionBeforeAppearing: { self.contextualHintPresented(type: .shortcuts) })
+    }
+    
+    private func prepareLearnAndActContextualHint(onCell cell: LearnAndActViewCell) {
+        guard learnAndActContextualHintViewController.shouldPresentHint(),
+              featureFlags.isFeatureEnabled(.learnAndAct, checking: .buildOnly)
+        else {
+            learnAndActContextualHintViewController.unconfigure()
+            return
+        }
+
+        learnAndActContextualHintViewController.configure(
+            anchor: cell.imageView,
+            withArrowDirection: .down,
+            andDelegate: self,
+            presentedUsing: { self.presentContextualHint(contextualHintViewController: self.learnAndActContextualHintViewController) },
+            withActionBeforeAppearing: { self.contextualHintPresented(type: .learnAndAct) })
     }
 
     @objc private func presentContextualHint(contextualHintViewController: ContextualHintViewController) {
@@ -640,6 +688,14 @@ private extension HomepageViewController {
         viewModel.learnAndActViewModel.onLongPressTileAction = { [weak self] (site, sourceView) in
             self?.contextMenuHelper.presentContextMenu(for: site, with: sourceView, sectionType: .learnAndAct)
         }
+        
+        viewModel.learnAndActViewModel.prepareContextualHint = { [weak self] cell in
+            self?.prepareLearnAndActContextualHint(onCell: cell)
+        }
+    
+        viewModel.topSiteViewModel.prepareContextualHint = { [weak self] cell in
+            self?.prepareShortCutContextualHint(onCell: cell)
+        }
         #endif
     }
 
@@ -808,6 +864,9 @@ extension HomepageViewController: UIPopoverPresentationControllerDelegate {
         guard !jumpBackInContextualHintViewController.isPresenting &&
                 !syncTabContextualHintViewController.isPresenting else { return }
         popoverPresentationController.presentedViewController.dismiss(animated: false, completion: nil)
+    }
+    func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
+        reloadView()
     }
 
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {

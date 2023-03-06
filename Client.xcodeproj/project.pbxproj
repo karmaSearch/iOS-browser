@@ -1160,7 +1160,6 @@
 		A380EA14299D1D280046FA42 /* BrowserViewController+KeyCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F457A91F1FDD9B000CB895 /* BrowserViewController+KeyCommands.swift */; };
 		A380EA15299D1D280046FA42 /* ReaderPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A685F4EAD19EDEC854BCA4 /* ReaderPanel.swift */; };
 		A380EA16299D1D280046FA42 /* EnhancedTrackingProtectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849E46026B9C39B00260F0B /* EnhancedTrackingProtectionVC.swift */; };
-		A380EA17299D1D280046FA42 /* IntroTutoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32FD0402937B0790072CD43 /* IntroTutoView.swift */; };
 		A380EA18299D1D280046FA42 /* WebServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40FAB0B1A7ABB77009CB80D /* WebServer.swift */; };
 		A380EA19299D1D280046FA42 /* TwoLineImageOverlayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A68B1F857A8638598A63A0 /* TwoLineImageOverlayCell.swift */; };
 		A380EA1A299D1D280046FA42 /* SponsoredTileTelemetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04136828258DF600D20B10 /* SponsoredTileTelemetry.swift */; };
@@ -4449,7 +4448,6 @@
 		A31EE6E3299FCFD000354531 /* DefaultBrowserOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBrowserOnboardingViewController.swift; sourceTree = "<group>"; };
 		A3286FC72938C3A5001C5838 /* UIDevice+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+extension.swift"; sourceTree = "<group>"; };
 		A32FD03E2937AFDA0072CD43 /* DefaultBrowserOnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultBrowserOnboardingView.swift; sourceTree = "<group>"; };
-		A32FD0402937B0790072CD43 /* IntroTutoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroTutoView.swift; sourceTree = "<group>"; };
 		A32FD0412937B07A0072CD43 /* IntroScreenWelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroScreenWelcomeView.swift; sourceTree = "<group>"; };
 		A32FD0442937B21D0072CD43 /* String+Karma.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Karma.swift"; sourceTree = "<group>"; };
 		A32FD0472937B2B00072CD43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/KarmaMenu.strings; sourceTree = "<group>"; };
@@ -7711,7 +7709,6 @@
 		A380EAB9299D31640046FA42 /* Intro */ = {
 			isa = PBXGroup;
 			children = (
-				A32FD0402937B0790072CD43 /* IntroTutoView.swift */,
 				A380EABA299D318F0046FA42 /* Intro.xcassets */,
 				A380EABC299D33A20046FA42 /* IntroViewController.swift */,
 				A32FD0412937B07A0072CD43 /* IntroScreenWelcomeView.swift */,
@@ -12007,7 +12004,6 @@
 				A380EA14299D1D280046FA42 /* BrowserViewController+KeyCommands.swift in Sources */,
 				A380EA15299D1D280046FA42 /* ReaderPanel.swift in Sources */,
 				A380EA16299D1D280046FA42 /* EnhancedTrackingProtectionVC.swift in Sources */,
-				A380EA17299D1D280046FA42 /* IntroTutoView.swift in Sources */,
 				A380EA18299D1D280046FA42 /* WebServer.swift in Sources */,
 				A3EAAD7729AFB4E100809FEB /* DataObserver.swift in Sources */,
 				A380EA19299D1D280046FA42 /* TwoLineImageOverlayCell.swift in Sources */,

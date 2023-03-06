@@ -27,7 +27,7 @@ class LearnAndActViewCell: UICollectionViewCell, ReusableCell {
     }
 
     
-    private lazy var imageView: UIImageView = .build { imageView in
+    lazy var imageView: UIImageView = .build { imageView in
         imageView.contentMode = .scaleAspectFill
         imageView.isUserInteractionEnabled = false
     }

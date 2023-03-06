@@ -95,6 +95,8 @@ public struct PrefsKeys {
         case jumpBackInSyncedTabConfiguredKey = "JumpBackInSyncedTabConfigured"
         case inactiveTabsKey = "ContextualHintInactiveTabs"
         case toolbarOnboardingKey = "ContextualHintToolbarOnboardingKey"
+        case shorcutOnboardingKey = "ContextualShortcutOnboardingKey"
+        case learnAndActOnboardingKey = "ContextualLearnAndActOnboardingKey"
     }
 
     // Activity Stream

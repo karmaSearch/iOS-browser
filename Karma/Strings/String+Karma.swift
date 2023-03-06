@@ -66,4 +66,9 @@ extension String {
     public static let SearchRemoteTabsHeader = NSLocalizedString("remoteTabs", tableName: "Karma", comment: "Search remote tabs header")
     public static let SearchOpenTabsHeader = NSLocalizedString("openedTabs", tableName: "Karma", comment: "Search opened tabs header")
     public static let SearchBookmarksAndHistoryHeader = NSLocalizedString("bookmarksAndHistory", tableName: "Karma", comment: "Search bookmark and history header")
+    
+    public static let ContextualHintShortcut = NSLocalizedString("contextualhintshortcut", tableName: "Karma", comment: "")
+    public static let ContextualHintLearnAndAct = NSLocalizedString("contextualhintlearnandact", tableName: "Karma", comment: "")
+
+
 }

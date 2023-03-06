@@ -117,6 +117,7 @@ class LearnAndActViewModel {
     private var dataAdaptor: LearnAndActDataAdaptor
     private var isLoading: Bool = true
     var theme: Theme
+    var prepareContextualHint: ((LearnAndActViewCell) -> Void)?
 
     init(dataAdaptor: LearnAndActDataAdaptor,
          theme: Theme){
@@ -182,6 +183,7 @@ extension LearnAndActViewModel: HomepageSectionHandler {
         let viewModel = learnAndActViewModels[indexPath.row]
         viewModel.tag = indexPath.row
         cell.learnAndAct = viewModel
+        prepareContextualHint?(cell)
         return cell
     }
 

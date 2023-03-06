@@ -46,7 +46,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
             }
         }()
 
-        welcomeCardView.setData(title: .IntroSlidesTitle1, description: .IntroSlidesSubTitle1, icon: "welcome-icon-1" , logos: logos, background: "welcome-background-1")
+        welcomeCardView.setData(title: .IntroSlidesTitle1, description: .IntroSlidesSubTitle1, icon: "welcome-icon-1" , logos: logos, background: "welcome-background-1", nextButtonTitle: .IntroNextButtonTitle)
         welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
         welcomeCardView.clipsToBounds = true
         return welcomeCardView
@@ -54,7 +54,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
     
     private lazy var welcomeCard2: IntroScreenWelcomeView = {
         let welcomeCardView = IntroScreenWelcomeView()
-        welcomeCardView.setData(title: .IntroSlidesTitle2, description: .IntroSlidesSubTitle2,  icon: "welcome-icon-2", background: "welcome-background-2")
+        welcomeCardView.setData(title: .IntroSlidesTitle2, description: .IntroSlidesSubTitle2,  icon: "welcome-icon-2", background: "welcome-background-2", nextButtonTitle: .IntroNextButtonTitle)
         welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
         welcomeCardView.clipsToBounds = true
         return welcomeCardView
@@ -62,7 +62,7 @@ class IntroViewController: UIViewController, OnViewDismissable {
     
     private lazy var welcomeCard3: IntroScreenWelcomeView = {
         let welcomeCardView = IntroScreenWelcomeView()
-        welcomeCardView.setData(title: .IntroSlidesTitle3, description: .IntroSlidesSubTitle3, icon: "welcome-icon-3", background: "welcome-background-3")
+        welcomeCardView.setData(title: .IntroSlidesTitle3, description: .IntroSlidesSubTitle3, icon: "welcome-icon-3", background: "welcome-background-3", nextButtonTitle: .IntroButtonTitleLast)
         welcomeCardView.translatesAutoresizingMaskIntoConstraints = false
         welcomeCardView.clipsToBounds = true
         return welcomeCardView
@@ -73,30 +73,6 @@ class IntroViewController: UIViewController, OnViewDismissable {
         view.translatesAutoresizingMaskIntoConstraints = true
         view.layoutSubviews()
         return view
-    }()
-    
-    private lazy var tutorialCard1: IntroTutoView = {
-        let tutoCardView = IntroTutoView()
-        tutoCardView.setData(screenshotImage: "screenshot_tuto_1", titleButton: .IntroNextButtonTitle)
-        tutoCardView.translatesAutoresizingMaskIntoConstraints = false
-        tutoCardView.clipsToBounds = true
-        return tutoCardView
-    }()
-    
-    private lazy var tutorialCard2: IntroTutoView = {
-        let tutoCardView = IntroTutoView()
-        tutoCardView.setData(screenshotImage: "screenshot_tuto_2", titleButton: .IntroNextButtonTitle)
-        tutoCardView.translatesAutoresizingMaskIntoConstraints = false
-        tutoCardView.clipsToBounds = true
-        return tutoCardView
-    }()
-    
-    private lazy var tutorialCard3: IntroTutoView = {
-        let tutoCardView = IntroTutoView()
-        tutoCardView.setData(screenshotImage: "screenshot_tuto_3", titleButton: .IntroButtonTitleLast)
-        tutoCardView.translatesAutoresizingMaskIntoConstraints = false
-        tutoCardView.clipsToBounds = true
-        return tutoCardView
     }()
     
     private lazy var pageControl: UIPageControl = {
@@ -181,11 +157,6 @@ class IntroViewController: UIViewController, OnViewDismissable {
             carouselStackView.addArrangedSubview(view)
             setupWelcomeCard(welcomeCard: view)
         }
-        
-        [tutorialCard1, tutorialCard2, tutorialCard3].forEach { view in
-            carouselStackView.addArrangedSubview(view)
-            setupIntroCard(introCard: view)
-        }
 
         view.addSubviews(pageControl)
 
@@ -213,18 +184,6 @@ class IntroViewController: UIViewController, OnViewDismissable {
         welcomeCard.nextClosure = { [weak self] in
             guard let self = self else { return }
             
-            self.goToNextPage()
-        }
-    }
-    
-    private func setupIntroCard(introCard: IntroTutoView) {
-        NSLayoutConstraint.activate([
-            introCard.heightAnchor.constraint(equalTo: carouselStackView.heightAnchor),
-            introCard.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
-        ])
-        
-        introCard.nextClosure = { [weak self] in
-            guard let self = self else { return }
             self.goToNextPage()
         }
     }

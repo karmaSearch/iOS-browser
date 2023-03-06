@@ -18,6 +18,8 @@ extension ContextualHintPrefsKeysProvider {
         case .jumpBackIn: return CFRPrefsKeys.jumpBackinKey.rawValue
         case .jumpBackInSyncedTab: return CFRPrefsKeys.jumpBackInSyncedTabKey.rawValue
         case .toolbarLocation: return CFRPrefsKeys.toolbarOnboardingKey.rawValue
+        case .shortcuts: return CFRPrefsKeys.shorcutOnboardingKey.rawValue
+        case .learnAndAct: return CFRPrefsKeys.learnAndActOnboardingKey.rawValue
         }
     }
 }

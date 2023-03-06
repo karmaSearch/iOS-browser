@@ -29,6 +29,7 @@ class TopSitesViewModel {
     private let topSiteHistoryManager: TopSiteHistoryManager
     private let googleTopSiteManager: GoogleTopSiteManager
     private var wallpaperManager: WallpaperManager
+    var prepareContextualHint: ((TopSiteItemCell) -> Void)?
 
     init(profile: Profile,
          isZeroSearch: Bool = false,
@@ -235,6 +236,7 @@ extension TopSitesViewModel: HomepageSectionHandler {
                            theme: theme,
                            textColor: textColor)
             sendImpressionTelemetry(contentItem, position: indexPath.row)
+            prepareContextualHint?(cell)
             return cell
         } else if let cell = collectionView.dequeueReusableCell(cellType: EmptyTopSiteCell.self, for: indexPath) {
             cell.applyTheme(theme: theme)

@@ -1961,11 +1961,13 @@ extension BrowserViewController: HomePanelDelegate {
         showTabTray(withFocusOnUnselectedTab: tabToFocus, focusedSegment: focusedSegment)
     }
 
-    func homePanelDidPresentContextualHintOf(type: ContextualHintType) {
+    func  homePanelDidPresentContextualHintOf(type: ContextualHintType) {
         switch type {
         case .jumpBackIn,
                 .jumpBackInSyncedTab,
-                .toolbarLocation:
+                .toolbarLocation,
+                .shortcuts,
+                .learnAndAct:
             self.urlBar.leaveOverlayMode()
         default: break
         }
@@ -2206,6 +2208,7 @@ extension BrowserViewController: UIPopoverPresentationControllerDelegate {
     func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
         displayedPopoverController = nil
         updateDisplayedPopoverProperties = nil
+        homepageViewController?.reloadView()
     }
 }
 

@@ -54,7 +54,6 @@ class IntroScreenWelcomeView: UIView {
     
     private lazy var nextButton: UIButton = {
         let button = UIButton()
-        button.setTitle(.IntroNextButtonTitle, for: .normal)
         button.titleLabel?.font = UIFont.customFont(ofSize: 15, weight: .medium)
         button.setTitleColor(UIColor.Photon.White100, for: .normal)
         button.backgroundColor = UIColor.Photon.Green60
@@ -87,13 +86,13 @@ class IntroScreenWelcomeView: UIView {
         initialViewSetup()
     }
     
-    func setData(title: String, description: String, icon: String, logos: [String] = [], background: String) {
+    func setData(title: String, description: String, icon: String, logos: [String] = [], background: String, nextButtonTitle: String) {
         self.titleLabel.text = title
         self.subTitleLabelPage1.text = description
         self.animalsBackgroundImage.image = UIImage(named: background)
         self.iconImage.image = UIImage(named: icon)
         self.logoHolder.isHidden = logos.isEmpty
-        
+        self.nextButton.setTitle(nextButtonTitle, for: .normal)
         self.logoHolder.arrangedSubviews.forEach {  $0.removeFromSuperview() }
         logos.forEach { logo in
             let imgView = UIImageView()
