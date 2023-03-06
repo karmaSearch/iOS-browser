@@ -38,13 +38,30 @@ enum SentTabAction: String {
 extension AppDelegate {
     func pushNotificationSetup() {
        UNUserNotificationCenter.current().delegate = self
+        
+        DefaultNotificationScheduler.saveAppLaunch()
+        DefaultNotificationScheduler.checkSchedule()
        SentTabAction.registerActions()
-
+        
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+            guard error == nil else {
+                return
+            }
+            if granted {
+                DefaultNotificationScheduler.firstTimeSchedule()
+                DockNotificationScheduler.firstTimeSchedule()
+                
+            }
+        }
+        
         NotificationCenter.default.addObserver(forName: .RegisterForPushNotifications, object: nil, queue: .main) { _ in
             UNUserNotificationCenter.current().getNotificationSettings { settings in
                 DispatchQueue.main.async {
                     if settings.authorizationStatus != .denied {
                         UIApplication.shared.registerForRemoteNotifications()
+                        DefaultNotificationScheduler.firstTimeSchedule()
+                        DockNotificationScheduler.firstTimeSchedule()
                     }
                 }
             }
@@ -86,6 +103,12 @@ extension AppDelegate {
         if UIApplication.shared.applicationState == .active {
             let object = OpenTabNotificationObject(type: .loadQueuedTabs(receivedUrlsQueue))
             NotificationCenter.default.post(name: .OpenTabNotification, object: object)
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                UIApplication.shared.open(receivedUrlsQueue.first!)
+               
+            }
+            
         }
     }
 }

@@ -106,6 +106,9 @@ class DefaultNotificationScheduler {
         content.title = .DefaultBrowserPushTitle
         content.body = .DefaultBrowserPushMessage
         
+        let url: String = "karma://deep-link?url=default-browser/tutorial"
+        
+        content.userInfo["sentTabs"] = [NSDictionary(dictionary: ["url":url])]
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: notificationType.timeInterval, repeats: false)
         let request = UNNotificationRequest(identifier: notificationType.rawValue, content: content, trigger: trigger)
         

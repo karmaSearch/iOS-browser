@@ -7,6 +7,8 @@
 */
 "Dock.Push.Title" = "¡Actúa para la biodiversidad!";
 "Dock.Push.Message" = "Haz clic aquí para descubrir cómo usar KARMA en lugar de Safari 💡";
+"DefaultBrowser.Push.Title" = "Protege la biodiversidad y el bienestar animal con KARMA🦉";
+"DefaultBrowser.Push.Message" = "Click here to set KARMA as your default browser";
 
 "Menu.NightModeTurnOff.Status" = "Invertir los colores del sitio web";
 "Menu.NoImageModeBlockImages.Status" = "Deshabilitar imágenes en los sitios visitados";

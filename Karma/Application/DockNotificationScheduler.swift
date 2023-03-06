@@ -43,7 +43,9 @@ class DockNotificationScheduler {
         let content = UNMutableNotificationContent()
         content.title = .DockPushTitle
         content.body = .DockPushMessage
-
+        let url: String = "https://about.karmasearch.org/\(KarmaLanguage.getSupportedLanguageIdentifier())/dock_ios"
+        let deeplink = "karma://open-url?url="+url
+        content.userInfo["sentTabs"] = [NSDictionary(dictionary: ["url":deeplink])]
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: notificationType.timeInterval, repeats: false)
         let request = UNNotificationRequest(identifier: notificationType.rawValue, content: content, trigger: trigger)
         

@@ -1235,7 +1235,6 @@
 		A380EA7D299D1D280046FA42 /* AllFramesAtDocumentStart.js in Resources */ = {isa = PBXBuildFile; fileRef = D03F8F22200EAC1E003C2224 /* AllFramesAtDocumentStart.js */; };
 		A380EA7F299D1D280046FA42 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		A380EA80299D1D280046FA42 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		A380EA81299D1D280046FA42 /* Dip in Frameworks */ = {isa = PBXBuildFile; productRef = A380E820299D1D280046FA42 /* Dip */; };
 		A380EA82299D1D280046FA42 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		A380EA83299D1D280046FA42 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		A380EA84299D1D280046FA42 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A08EC6327EBDCAC00E119C7 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -6268,7 +6267,6 @@
 				A3D581A629AFC0F600AFAA77 /* Sentry in Frameworks */,
 				A380EA7F299D1D280046FA42 /* (null) in Frameworks */,
 				A380EA80299D1D280046FA42 /* (null) in Frameworks */,
-				A380EA81299D1D280046FA42 /* Dip in Frameworks */,
 				A380EA82299D1D280046FA42 /* (null) in Frameworks */,
 				A380EA83299D1D280046FA42 /* (null) in Frameworks */,
 				A380EA84299D1D280046FA42 /* AdServices.framework in Frameworks */,
@@ -9899,7 +9897,6 @@
 				A380E81A299D1D280046FA42 /* GCDWebServers */,
 				A380E81C299D1D280046FA42 /* Glean */,
 				A380E81E299D1D280046FA42 /* Adjust */,
-				A380E820299D1D280046FA42 /* Dip */,
 				A3EAAD5229AFAB1500809FEB /* SDWebImage */,
 				A3D581A129AFC0CE00AFAA77 /* Common */,
 				A3D581A329AFC0DB00AFAA77 /* Fuzi */,
@@ -18760,14 +18757,6 @@
 				version = 4.29.6;
 			};
 		};
-		A380E821299D1D280046FA42 /* XCRemoteSwiftPackageReference "Dip" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AliSoftware/Dip.git";
-			requirement = {
-				kind = revision;
-				revision = 7ec008a5c09520b67f07669ad5a753d757f05bbe;
-			};
-		};
 		A3EAAD4929AFA9BE00809FEB /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
@@ -19024,11 +19013,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A380E81F299D1D280046FA42 /* XCRemoteSwiftPackageReference "ios_sdk" */;
 			productName = Adjust;
-		};
-		A380E820299D1D280046FA42 /* Dip */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A380E821299D1D280046FA42 /* XCRemoteSwiftPackageReference "Dip" */;
-			productName = Dip;
 		};
 		A3D581A129AFC0CE00AFAA77 /* Common */ = {
 			isa = XCSwiftPackageProductDependency;

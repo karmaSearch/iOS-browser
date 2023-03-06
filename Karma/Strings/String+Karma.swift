@@ -52,6 +52,8 @@ extension String {
     //MARK: Push
     public static let DockPushTitle = NSLocalizedString("Dock.Push.Title", tableName: "Karma", bundle: Bundle(for: BundleClass.self), comment: "")
     public static let DockPushMessage = NSLocalizedString("Dock.Push.Message", tableName: "Karma", bundle: Bundle(for: BundleClass.self), comment: "")
+    public static let DefaultBrowserPushTitle = NSLocalizedString("DefaultBrowser.Push.Title", tableName: "Karma", bundle: Bundle(for: BundleClass.self), comment: "")
+    public static let DefaultBrowserPushMessage = NSLocalizedString("DefaultBrowser.Push.Message", tableName: "Karma", bundle: Bundle(for: BundleClass.self), comment: "")
     
     
     public static let AppMenuTurnOffNightModeStatus = NSLocalizedString("Menu.NightModeTurnOff.Status", tableName: "Karma", bundle: Bundle(for: BundleClass.self), comment: "")
