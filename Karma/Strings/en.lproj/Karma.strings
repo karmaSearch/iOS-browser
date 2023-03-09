@@ -26,3 +26,8 @@
 "contextualhintlearnandact" = "With “Learn & Act“, we will keep you informed about biodiversity and animal welfare latest news, and you will learn how to concretely take action to protect them";
 
 "FirefoxSync.About" = "Learn more about the KARMA / Firefox sync";
+
+"app.update.title" = "App update available!";
+"app.update.message" = "Update KARMA to get new features and bug fixes!";
+"app.update.later" = "Later";
+"app.update.now" = "Update now";

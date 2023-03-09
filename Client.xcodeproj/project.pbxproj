@@ -678,6 +678,8 @@
 		A32FD04D2937B2B10072CD43 /* KarmaMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD0462937B2B00072CD43 /* KarmaMenu.strings */; };
 		A32FD04F2937B2B10072CD43 /* IntroKarma.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD0482937B2B10072CD43 /* IntroKarma.strings */; };
 		A32FD0512937B2B10072CD43 /* Karma.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32FD04A2937B2B10072CD43 /* Karma.strings */; };
+		A360422229B63DCE006CF009 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = A360422029B63DCB006CF009 /* Version.swift */; };
+		A360422429B63DEB006CF009 /* AppUpdateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A360422329B63DEB006CF009 /* AppUpdateManager.swift */; };
 		A380E826299D1D280046FA42 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4AC0EA28C929D700439F83 /* URLSessionProtocol.swift */; };
 		A380E827299D1D280046FA42 /* LibraryPanelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B101D1AA7F9C600C01CA3 /* LibraryPanelHelper.swift */; };
 		A380E828299D1D280046FA42 /* FxNimbus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455880A027B42F720078DEBB /* FxNimbus.swift */; };
@@ -1300,6 +1302,9 @@
 		A3C1B9BF29AE53C500ECD30F /* topdomains.txt in Resources */ = {isa = PBXBuildFile; fileRef = D37524861C6E8B5A00A5F6C2 /* topdomains.txt */; };
 		A3C1B9C129AE53D400ECD30F /* topdomains.txt in Resources */ = {isa = PBXBuildFile; fileRef = A3C1B9C029AE53D200ECD30F /* topdomains.txt */; };
 		A3C488B829BB3AC80099F4C5 /* AboutKarmaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C488B729BB3AC80099F4C5 /* AboutKarmaViewController.swift */; };
+		A3C488B329BA21BC0099F4C5 /* AppUpdateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C488B229BA21BB0099F4C5 /* AppUpdateViewModel.swift */; };
+		A3C488B529BA2C080099F4C5 /* HomepageViewController+AppUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C488B429BA2C080099F4C5 /* HomepageViewController+AppUpdate.swift */; };
+		A3C488B629BA2D9E0099F4C5 /* HomepageViewController+AppUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C488B429BA2C080099F4C5 /* HomepageViewController+AppUpdate.swift */; };
 		A3D581A229AFC0CE00AFAA77 /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = A3D581A129AFC0CE00AFAA77 /* Common */; };
 		A3D581A429AFC0DB00AFAA77 /* Fuzi in Frameworks */ = {isa = PBXBuildFile; productRef = A3D581A329AFC0DB00AFAA77 /* Fuzi */; };
 		A3D581A629AFC0F600AFAA77 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = A3D581A529AFC0F600AFAA77 /* Sentry */; };
@@ -4460,6 +4465,8 @@
 		A32FD0552937B2E30072CD43 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Karma.strings; sourceTree = "<group>"; };
 		A32FD0562937B2F40072CD43 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/KarmaMenu.strings; sourceTree = "<group>"; };
 		A32FD0572937B3020072CD43 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/KarmaMenu.strings; sourceTree = "<group>"; };
+		A360422029B63DCB006CF009 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		A360422329B63DEB006CF009 /* AppUpdateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdateManager.swift; sourceTree = "<group>"; };
 		A37D5DE42938FBA500400F74 /* LearnAndActViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LearnAndActViewCell.swift; path = Karma/Frontend/LearnAndAct/LearnAndActViewCell.swift; sourceTree = SOURCE_ROOT; };
 		A37D5DE52938FBA500400F74 /* LearnAndActViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LearnAndActViewModel.swift; path = Karma/Frontend/LearnAndAct/LearnAndActViewModel.swift; sourceTree = SOURCE_ROOT; };
 		A37D5DE62938FBA600400F74 /* LearnAndActHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LearnAndActHeader.swift; path = Karma/Frontend/LearnAndAct/LearnAndActHeader.swift; sourceTree = SOURCE_ROOT; };
@@ -4500,6 +4507,8 @@
 		A3C1B9B529AE521600ECD30F /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
 		A3C1B9C029AE53D200ECD30F /* topdomains.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = topdomains.txt; sourceTree = "<group>"; };
 		A3C488B729BB3AC80099F4C5 /* AboutKarmaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutKarmaViewController.swift; sourceTree = "<group>"; };
+		A3C488B229BA21BB0099F4C5 /* AppUpdateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdateViewModel.swift; sourceTree = "<group>"; };
+		A3C488B429BA2C080099F4C5 /* HomepageViewController+AppUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomepageViewController+AppUpdate.swift"; sourceTree = "<group>"; };
 		A3D581B129B0AD5400AFAA77 /* LightThemeKarma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightThemeKarma.swift; sourceTree = "<group>"; };
 		A3D581B329B0AD9D00AFAA77 /* KarmaColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaColors.swift; sourceTree = "<group>"; };
 		A3D581B529B0AEA000AFAA77 /* DarkThemeKarma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkThemeKarma.swift; sourceTree = "<group>"; };
@@ -7626,6 +7635,16 @@
 			path = DefaultBrowserOnboarding;
 			sourceTree = "<group>";
 		};
+		A360421F29B63DB1006CF009 /* AppUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				A360422029B63DCB006CF009 /* Version.swift */,
+				A360422329B63DEB006CF009 /* AppUpdateManager.swift */,
+				A3C488B229BA21BB0099F4C5 /* AppUpdateViewModel.swift */,
+			);
+			path = AppUpdate;
+			sourceTree = "<group>";
+		};
 		A37D5DE32938FB9100400F74 /* LearnAndAct */ = {
 			isa = PBXGroup;
 			children = (
@@ -7677,6 +7696,7 @@
 			children = (
 				A3C1B98D29AD001300ECD30F /* Home.xcassets */,
 				A380E800299D1CC90046FA42 /* LogoHeader */,
+				A3C488B429BA2C080099F4C5 /* HomepageViewController+AppUpdate.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -7739,6 +7759,7 @@
 		A3C1B96829ACF78200ECD30F /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				A360421F29B63DB1006CF009 /* AppUpdate */,
 				A3C1B97129ACF85700ECD30F /* DefaultNotificationScheduler.swift */,
 				A3C1B97229ACF85700ECD30F /* DockNotificationScheduler.swift */,
 				E4D6BEB81A0930EC00F538BD /* LaunchScreen.xib */,
@@ -11720,6 +11741,7 @@
 				A380E90E299D1D280046FA42 /* ContextualHintEligibilityUtility.swift in Sources */,
 				A380E90F299D1D280046FA42 /* LoginListDataSourceHelper.swift in Sources */,
 				A3C1B96229A90D2900ECD30F /* LegacyTheme.swift in Sources */,
+				A360422229B63DCE006CF009 /* Version.swift in Sources */,
 				A380E910299D1D280046FA42 /* LabelButtonHeaderView.swift in Sources */,
 				A380E911299D1D280046FA42 /* AddCredentialViewController.swift in Sources */,
 				A380E912299D1D280046FA42 /* LoginListViewModel.swift in Sources */,
@@ -11753,6 +11775,7 @@
 				A380E92B299D1D280046FA42 /* ButtonToast.swift in Sources */,
 				A380E92C299D1D280046FA42 /* NimbusFeatureFlagLayer.swift in Sources */,
 				A380E92D299D1D280046FA42 /* (null) in Sources */,
+				A3C488B329BA21BC0099F4C5 /* AppUpdateViewModel.swift in Sources */,
 				A380E92E299D1D280046FA42 /* SearchTermGroupsUtility.swift in Sources */,
 				A380E92F299D1D280046FA42 /* LibraryPanelDescriptor.swift in Sources */,
 				A380E930299D1D280046FA42 /* SearchSuggestClient.swift in Sources */,
@@ -11811,7 +11834,9 @@
 				A3EAAD7829AFB4E700809FEB /* UIResponder+Extensions.swift in Sources */,
 				A380E963299D1D280046FA42 /* PhotonActionSheetProtocol.swift in Sources */,
 				A3EAAD7329AFB38D00809FEB /* RemoteTabsClientAndTabsDataSource.swift in Sources */,
+				A360422429B63DEB006CF009 /* AppUpdateManager.swift in Sources */,
 				A380E964299D1D280046FA42 /* UIImage+Extension.swift in Sources */,
+				A3C488B529BA2C080099F4C5 /* HomepageViewController+AppUpdate.swift in Sources */,
 				A380EABD299D33A20046FA42 /* IntroViewController.swift in Sources */,
 				A380E965299D1D280046FA42 /* DevicePasscodeRequiredViewController.swift in Sources */,
 				A380E966299D1D280046FA42 /* (null) in Sources */,
@@ -12145,6 +12170,7 @@
 				D04CD74A216CF86B004FF5B0 /* SiriShortcuts.swift in Sources */,
 				EB9A179F20E6C1A200B12184 /* ThemedWidgets.swift in Sources */,
 				A3D581B029B0A1AE00AFAA77 /* LearnAndActDataAdapter.swift in Sources */,
+				A3C488B629BA2D9E0099F4C5 /* HomepageViewController+AppUpdate.swift in Sources */,
 				E68E39BE1C46F42000B85F42 /* AppSettingsTableViewController.swift in Sources */,
 				E1A6AB4628CA6A4C00EBEBDD /* String+Extension.swift in Sources */,
 				210887CC293E8800000AB4EE /* RemoteTabsErrorCell.swift in Sources */,

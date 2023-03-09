@@ -45,6 +45,8 @@ class HomepageViewController: UIViewController, HomePanel, FeatureFlaggable, The
     private var learnAndActContextualHintViewController: ContextualHintViewController
 
     private var collectionView: UICollectionView! = nil
+    
+    private var appUpdateViewModel: AppUpdateViewModel!
 
     var themeManager: ThemeManager
     var notificationCenter: NotificationProtocol
@@ -149,6 +151,9 @@ class HomepageViewController: UIViewController, HomePanel, FeatureFlaggable, The
 
         listenForThemeChange()
         applyTheme()
+        
+        self.appUpdateViewModel = AppUpdateViewModel(appUpdateManager: AppUpdateManager())
+        self.appUpdateViewModel.delegate = self
     }
 
     override func viewDidDisappear(_ animated: Bool) {

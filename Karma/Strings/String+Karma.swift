@@ -76,5 +76,9 @@ extension String {
 
     public static let FirefoxSyncAbout = NSLocalizedString("FirefoxSync.About", tableName: "Karma", comment: "")
 
-
+    
+    public static let AppUpdateTitle = NSLocalizedString("app.update.title", tableName: "Karma", comment: "")
+    public static let AppUpdateMessage = NSLocalizedString("app.update.message", tableName: "Karma", comment: "")
+    public static let AppUpdateLater = NSLocalizedString("app.update.later", tableName: "Karma", comment: "")
+    public static let AppUpdateNow = NSLocalizedString("app.update.now", tableName: "Karma", comment: "")
 }
