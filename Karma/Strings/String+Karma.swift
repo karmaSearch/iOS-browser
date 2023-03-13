@@ -74,5 +74,7 @@ extension String {
     public static let ContextualHintShortcut = NSLocalizedString("contextualhintshortcut", tableName: "Karma", comment: "")
     public static let ContextualHintLearnAndAct = NSLocalizedString("contextualhintlearnandact", tableName: "Karma", comment: "")
 
+    public static let FirefoxSyncAbout = NSLocalizedString("FirefoxSync.About", tableName: "Karma", comment: "")
+
 
 }

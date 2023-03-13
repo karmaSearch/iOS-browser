@@ -89,6 +89,21 @@ class FirefoxAccountSignInViewController: UIViewController {
             }
         }
     }
+    
+    #if KARMA
+    let aboutKarmaSync: UILabel = .build { label in
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        label.textColor = .label
+        label.font = DynamicFontHelper.defaultHelper.preferredFont(withTextStyle: .headline,
+                                                                   size: UX.descriptionFontSize)
+        let underlineAttribute = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue]
+        let underlineAttributedString = NSAttributedString(string: .FirefoxSyncAbout, attributes: underlineAttribute)
+
+        label.attributedText = underlineAttributedString
+
+    }
+    #endif
 
     lazy var scanButton: ResizableButton = .build { button in
         button.backgroundColor = UIColor.Photon.Green60
@@ -181,7 +196,12 @@ class FirefoxAccountSignInViewController: UIViewController {
     // MARK: - Helpers
 
     private func setupLayout() {
+        #if KARMA
+        containerView.addSubviews(qrSignInLabel, pairImageView, instructionsLabel, scanButton, emailButton, aboutKarmaSync)
+        #else
         containerView.addSubviews(qrSignInLabel, pairImageView, instructionsLabel, scanButton, emailButton)
+        #endif
+        
         scrollView.addSubviews(containerView)
         view.addSubview(scrollView)
 
@@ -226,8 +246,25 @@ class FirefoxAccountSignInViewController: UIViewController {
                                                  constant: UX.horizontalPadding),
             emailButton.trailingAnchor.constraint(equalTo: containerView.trailingAnchor,
                                                   constant: -UX.horizontalPadding),
-            emailButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -8),
+            //emailButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -8),
         ])
+        
+        #if KARMA
+      //  NSLayoutConstraint.deactivate([emailButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -8)])
+        NSLayoutConstraint.activate([
+            aboutKarmaSync.topAnchor.constraint(equalTo: emailButton.bottomAnchor, constant: 20),
+            aboutKarmaSync.leadingAnchor.constraint(equalTo: containerView.leadingAnchor,
+                                                   constant: UX.horizontalPadding),
+            aboutKarmaSync.trailingAnchor.constraint(equalTo: containerView.trailingAnchor,
+                                                    constant: -UX.horizontalPadding),
+            aboutKarmaSync.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -8),
+
+        ])
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(aboutKarmaSyncTapped))
+        aboutKarmaSync.isUserInteractionEnabled = true
+        aboutKarmaSync.addGestureRecognizer(tapGesture)
+        #endif
     }
 
     func applyTheme() {
@@ -265,6 +302,18 @@ class FirefoxAccountSignInViewController: UIViewController {
         }
         TelemetryWrapper.recordEvent(category: .firefoxAccount, method: .qrPairing, object: telemetryObject, extras: ["flow_type": "email"])
         navigationController?.pushViewController(fxaWebVC, animated: true)
+    }
+    
+    @objc func aboutKarmaSyncTapped(_ sender: UIButton) {
+        let viewController = SettingsContentViewController()
+        viewController.title = .FirefoxSyncAbout
+        if Locale.current.identifier.contains("fr") {
+            viewController.url = URL(string: "https://mykarma.notion.site/Synchronisez-l-application-KARMA-avec-Firefox-sur-ordinateur-21178bb27c944622ae82ff4941cb3f28")!
+        } else {
+            viewController.url = URL(string: "https://mykarma.notion.site/Sync-KARMA-mobile-app-with-Firefox-desktop-968bd909787a4c169a23e6c33e222b9b")!
+        }
+        navigationController?.pushViewController(viewController, animated: true)
+        
     }
 }
 
