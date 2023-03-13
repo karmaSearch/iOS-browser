@@ -9,6 +9,9 @@
 import Foundation
 import SwiftUI
 extension String {
+    
+    public static let LearnAndActTitle = NSLocalizedString("Learn & Act", tableName: "IKarma", bundle: Bundle(for: BundleClass.self), comment: "")
+
     //MARK: INTRO
     public static let IntroSlidesTitle1 = NSLocalizedString("Intro.Slides.Title.1", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
     public static let IntroSlidesSubTitle1 = NSLocalizedString("Intro.Slides.SubTitle.1", tableName: "IntroKarma", bundle: Bundle(for: BundleClass.self), comment: "")
@@ -39,7 +42,8 @@ extension String {
     public static let MenuKarmaPrivacy = NSLocalizedString("Menu.Karma.Privacy", tableName: "KarmaMenu", bundle: Bundle(for: BundleClass.self), comment: "")
     public static let MenuKarmaTermsOfService = NSLocalizedString("Menu.Karma.TermsOfService", tableName: "KarmaMenu", bundle: Bundle(for: BundleClass.self), comment: "")
     public static let MenuKarmaFeedback = NSLocalizedString("Menu.Karma.Feedback", tableName: "KarmaMenu", bundle: Bundle(for: BundleClass.self), comment: "")
-    
+    public static let MenuKarmaAbout = NSLocalizedString("Menu.Karma.About", tableName: "KarmaMenu", bundle: Bundle(for: BundleClass.self), comment: "")
+
     //MARK: feedback
     public static let MenuKarmaGiveFeedback = NSLocalizedString("Menu.Feedback.Give", tableName: "KarmaMenu", bundle: Bundle(for: BundleClass.self), comment: "")
     public static let MenuKarmaRateAppStore = NSLocalizedString("Menu.Feedback.Rate.AppStore", tableName: "KarmaMenu", bundle: Bundle(for: BundleClass.self), comment: "")

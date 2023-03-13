@@ -39,7 +39,7 @@ class HomepageMessageCardViewModel: MessageSurfaceProtocol {
     var shouldDisplayMessageCard: Bool {
         guard let message = message else { return false }
 
-        return !message.isExpired
+        return !message.isExpired && isEnabled
     }
 
     func handleMessageDisplayed() {

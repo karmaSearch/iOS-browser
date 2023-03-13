@@ -23,6 +23,11 @@ protocol ToolBarActionMenuDelegate: AnyObject {
     func showMenuPresenter(url: URL, tab: Tab, view: UIView)
     func showFindInPage()
     func showCustomizeHomePage()
+    
+    #if KARMA
+    func showAboutKarmaMenu()
+    func showFeedbackKarmaMenu()
+    #endif
 }
 
 enum MenuButtonToastAction {
@@ -98,7 +103,7 @@ class MainMenuActionHelper: PhotonActionSheetProtocol,
 
         if isHomePage {
             actions.append(contentsOf: [
-                getLibrarySection(),
+                getLibrarySection(navigationController),
                 firstMiscSection,
                 getLastSection()
             ])
@@ -109,7 +114,7 @@ class MainMenuActionHelper: PhotonActionSheetProtocol,
             updateData(dataLoadingCompletion: {
                 actions.append(contentsOf: [
                     self.getNewTabSection(),
-                    self.getLibrarySection(),
+                    self.getLibrarySection(navigationController),
                     firstMiscSection,
                     self.getSecondMiscSection(),
                     self.getLastSection()
@@ -189,7 +194,7 @@ class MainMenuActionHelper: PhotonActionSheetProtocol,
         return section
     }
 
-    private func getLibrarySection() -> [PhotonRowActions] {
+    private func getLibrarySection(_ navigationController: UINavigationController?) -> [PhotonRowActions] {
         var section = [PhotonRowActions]()
 
         if !isFileURL {
@@ -209,6 +214,10 @@ class MainMenuActionHelper: PhotonActionSheetProtocol,
         let syncAction = syncMenuButton(showFxA: showFXASyncAction)
         append(to: &section, action: syncAction)
 
+        #if KARMA
+        let passwordsAction = getPasswordAction(navigationController: navigationController)
+        append(to: &section, action: passwordsAction)
+        #endif
         return section
     }
 
@@ -223,12 +232,13 @@ class MainMenuActionHelper: PhotonActionSheetProtocol,
             append(to: &section, action: desktopSiteAction)
         }
 
+        #if !KARMA
         let nightModeAction = getNightModeAction()
         append(to: &section, action: nightModeAction)
-
+        
         let passwordsAction = getPasswordAction(navigationController: navigationController)
         append(to: &section, action: passwordsAction)
-
+        #endif
         if !isHomePage && !isFileURL {
             let reportSiteIssueAction = getReportSiteIssueAction()
             append(to: &section, action: reportSiteIssueAction)
@@ -273,11 +283,19 @@ class MainMenuActionHelper: PhotonActionSheetProtocol,
         var section = [PhotonRowActions]()
 
         if isHomePage {
+            #if !KARMA
             let whatsNewAction = getWhatsNewAction()
             append(to: &section, action: whatsNewAction)
-
+            #endif
             let helpAction = getHelpAction()
             section.append(helpAction)
+            
+            #if KARMA
+            let aboutKARMAAction = getAboutKARMAAction()
+            section.append(aboutKARMAAction)
+            let feedbackKarma = getFeedbackKarma()
+            section.append(feedbackKarma)
+            #endif
 
             let customizeHomePageAction = getCustomizeHomePageAction()
             append(to: &section, action: customizeHomePageAction)
@@ -401,9 +419,21 @@ class MainMenuActionHelper: PhotonActionSheetProtocol,
     private func getHelpAction() -> PhotonRowActions {
         return SingleActionViewModel(title: .AppMenu.Help,
                                      iconString: ImageIdentifiers.help) { _ in
+            #if KARMA
+            if Locale.current.identifier.contains("fr") {
+                if let url = URL(string: "https://mykarma.notion.site/FAQ-3f414d5137ad429a8c5812dedfb821e2") {
+                    self.delegate?.openURLInNewTab(url, isPrivate: false)
+                }
+            } else {
+                if let url = URL(string: "https://mykarma.notion.site/FAQ-cb51ac0956484daf8ede50028a3a89c7") {
+                    self.delegate?.openURLInNewTab(url, isPrivate: false)
+                }
+            }
+            #else
             if let url = URL(string: "https://support.mozilla.org/products/ios") {
                 self.delegate?.openURLInNewTab(url, isPrivate: false)
             }
+            #endif
             TelemetryWrapper.recordEvent(category: .action, method: .tap, object: .help)
         }.items
     }
@@ -828,4 +858,26 @@ class MainMenuActionHelper: PhotonActionSheetProtocol,
             items.append(contentsOf: action)
         }
     }
+    
+    
+    
+    #if KARMA
+    private func getAboutKARMAAction() -> PhotonRowActions {
+        return SingleActionViewModel(title: .MenuKarmaAbout,
+                                     iconString: "menu-panel-karma-about") { _ in
+            self.delegate?.showAboutKarmaMenu()
+
+        }.items
+    }
+    
+    private func getFeedbackKarma() -> PhotonRowActions {
+        return SingleActionViewModel(title: .MenuKarmaFeedback,
+                                     iconString: "menu-panel-karma-feedback") { _ in
+            self.delegate?.showFeedbackKarmaMenu()
+
+
+        }.items
+    }
+    
+    #endif
 }

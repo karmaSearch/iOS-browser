@@ -230,4 +230,14 @@ extension BrowserViewController: ToolBarActionMenuDelegate {
     func showWallpaperSettings() {
         showSettingsWithDeeplink(to: .wallpaper)
     }
+    
+    #if KARMA
+    func showAboutKarmaMenu() {
+        showSettingsWithDeeplink(to: .about)
+    }
+    func showFeedbackKarmaMenu() {
+        showSettingsWithDeeplink(to: .feedback)
+    }
+    
+    #endif
 }

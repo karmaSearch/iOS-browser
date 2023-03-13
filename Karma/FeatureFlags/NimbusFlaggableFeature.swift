@@ -200,6 +200,9 @@ struct NimbusFlaggableFeature: HasNimbusSearchBar {
             return false
         case .learnAndAct:
             return true
+        case .shareSheetChanges,
+                .shareToolbarChanges:
+            return false
             
             
             // Cases where users do not have the option to manipulate a setting.
@@ -207,9 +210,7 @@ struct NimbusFlaggableFeature: HasNimbusSearchBar {
                 .contextualHintForToolbar,
                 .creditCardAutofillStatus,
                 .jumpBackInSyncedTab,
-                .shakeToRestore,
-                .shareSheetChanges,
-                .shareToolbarChanges:
+                .shakeToRestore:
             return true
         case
                 .onboardingUpgrade,

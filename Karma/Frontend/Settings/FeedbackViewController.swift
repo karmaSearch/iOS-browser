@@ -28,7 +28,7 @@ class FeedbackViewController: SettingsTableViewController {
         return [
             SettingSection(children: [
                 SendFeedbackSetting(delegate: self.settingsDelegate),
-                RateAppSetting(),
+                AppStoreReviewSetting(),
                 ContactUsSettings()
             ])]
     }

@@ -39,7 +39,11 @@ class HomePageSettingViewController: SettingsTableViewController, FeatureFlaggab
     var isHistoryHighlightsSectionEnabled: Bool {
         return featureFlags.isFeatureEnabled(.historyHighlights, checking: .buildOnly)
     }
-
+    #if KARMA
+    var isLearnAndActSectionEnabled: Bool {
+        return featureFlags.isFeatureEnabled(.learnAndAct, checking: .buildOnly)
+    }
+    #endif
     // MARK: - Initializers
     init(prefs: Prefs,
          wallpaperManager: WallpaperManagerInterface = WallpaperManager()) {
@@ -136,6 +140,9 @@ class HomePageSettingViewController: SettingsTableViewController, FeatureFlaggab
                 self?.tableView.reloadData()
             }
 
+        let learnAndActSetting = BoolSetting(with: .learnAndAct,
+                                            titleText: NSAttributedString(string: .LearnAndActTitle))
+        
         let jumpBackInSetting = BoolSetting(with: .jumpBackIn,
                                             titleText: NSAttributedString(string: .Settings.Homepage.CustomizeFirefoxHome.JumpBackIn))
 
@@ -148,7 +155,13 @@ class HomePageSettingViewController: SettingsTableViewController, FeatureFlaggab
 
         // Section ordering
         sectionItems.append(TopSitesSettings(settings: self))
-
+        
+        #if KARMA
+        if isLearnAndActSectionEnabled {
+            sectionItems.append(learnAndActSetting)
+        }
+        #endif
+        
         if isJumpBackInSectionEnabled {
             sectionItems.append(jumpBackInSetting)
         }

@@ -32,23 +32,6 @@ class ContactUsSettings: Setting {
     }
 }
 
-class RateAppSetting: Setting {
-    override var title: NSAttributedString? {
-        return NSAttributedString(string: .MenuKarmaRateAppStore, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText])
-    }
-
-    override func onClick(_ navigationController: UINavigationController?) {
-        
-        navigationController?.dismiss(animated: true) {
-            if let url = URL(string: "https://apps.apple.com/app/id1596470046?action=write-review") {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            }
-        }
-
-        
-    }
-}
-
 class KarmaPrivacyPolicySetting: Setting {
     override var title: NSAttributedString? {
         return NSAttributedString(string: .AppSettingsPrivacyPolicy, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText])
@@ -65,3 +48,99 @@ class KarmaPrivacyPolicySetting: Setting {
         setUpAndPushSettingsContentViewController(navigationController, self.url)
     }
 }
+
+
+class OurMissionSetting: Setting {
+    override var title: NSAttributedString? {
+        return NSAttributedString(string: .MenuKarmaMission, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText])
+    }
+
+    override var url: URL? {
+        return URL(string: "https://info.karmasearch.org/")
+    }
+
+    override func onClick(_ navigationController: UINavigationController?) {
+        setUpAndPushSettingsContentViewController(navigationController, self.url)
+    }
+}
+
+class HowSetting: Setting {
+    override var title: NSAttributedString? {
+        return NSAttributedString(string: .MenuKarmaHow, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText])
+    }
+
+    override var url: URL? {
+        return URL(string: "https://info.karmasearch.org/what")
+    }
+
+    override func onClick(_ navigationController: UINavigationController?) {
+        setUpAndPushSettingsContentViewController(navigationController, self.url)
+    }
+}
+
+class PartnersSetting: Setting {
+    override var title: NSAttributedString? {
+        return NSAttributedString(string: .MenuKarmaPartners, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText])
+    }
+
+    override var url: URL? {
+        return URL(string: "https://info.karmasearch.org/partners")
+    }
+
+    override func onClick(_ navigationController: UINavigationController?) {
+        setUpAndPushSettingsContentViewController(navigationController, self.url)
+    }
+}
+
+class PrivacySetting: Setting {
+    override var title: NSAttributedString? {
+        return NSAttributedString(string: .MenuKarmaPrivacy, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText])
+    }
+
+    override var url: URL? {
+        if Locale.current.identifier.contains("fr") {
+            return URL(string: "https://mykarma.notion.site/Protection-de-la-vie-priv-e-chez-KARMA-bd2ecd084fad446d866073ec28b20c54")
+        }
+        return URL(string: "https://mykarma.notion.site/Privacy-policy-3b80157379e349acb1ac529daa3b70a3")
+    }
+
+    override func onClick(_ navigationController: UINavigationController?) {
+        setUpAndPushSettingsContentViewController(navigationController, self.url)
+    }
+}
+
+class TermsOfServicesSetting: Setting {
+    override var title: NSAttributedString? {
+        return NSAttributedString(string: .MenuKarmaTermsOfService, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText])
+    }
+
+    override var url: URL? {
+        if Locale.current.identifier.contains("fr") {
+            return URL(string: "https://mykarma.notion.site/Conditions-d-utilisation-c5f461f440b3475cbac000dc10d8527e")
+        }
+        return URL(string: "https://mykarma.notion.site/Terms-of-service-e73514e7789b4f98b8883f88dbd11b32")
+    }
+
+    override func onClick(_ navigationController: UINavigationController?) {
+        setUpAndPushSettingsContentViewController(navigationController, self.url)
+    }
+}
+
+class FAQSetting: Setting {
+    override var title: NSAttributedString? {
+        return NSAttributedString(string: .AppMenu.Help, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.tableView.rowText])
+    }
+
+    override var url: URL? {
+        if Locale.current.identifier.contains("fr") {
+            return URL(string: "https://mykarma.notion.site/FAQ-3f414d5137ad429a8c5812dedfb821e2")
+        } else {
+            return URL(string: "https://mykarma.notion.site/FAQ-cb51ac0956484daf8ede50028a3a89c7")
+        }
+    }
+
+    override func onClick(_ navigationController: UINavigationController?) {
+        setUpAndPushSettingsContentViewController(navigationController, self.url)
+    }
+}
+

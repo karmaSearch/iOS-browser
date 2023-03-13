@@ -19,7 +19,7 @@ import UIKit
 class LearnAndActHeader: UICollectionReusableView, ReusableCell {
 
     lazy var label: UILabel = .build { label in
-        label.text = "Learn & Act"
+        label.text = .LearnAndActTitle
         label.font = UIFont(name: "Amithen", size: 45)!
         label.textColor = UIColor.Photon.Green60
     }

@@ -791,6 +791,13 @@ class SendFeedbackSetting: Setting {
     }
 
     override var url: URL? {
+        #if KARMA
+        if Locale.current.identifier.contains("fr") {
+            return URL(string: "https://tally.so/r/mePEJn")
+        } else {
+            return URL(string: "https://tally.so/r/m65xo")
+        }
+        #endif
         return URL(string: "https://connect.mozilla.org/")
     }
 
@@ -1247,8 +1254,13 @@ class DefaultBrowserSetting: Setting {
     override var accessibilityIdentifier: String? { return "DefaultBrowserSettings" }
 
     init(theme: Theme) {
+        #if KARMA
+        super.init(title: NSAttributedString(string: String.DefaultBrowserMenuItemKARMA,
+                                             attributes: [NSAttributedString.Key.foregroundColor: theme.colors.actionPrimary]))
+        #else
         super.init(title: NSAttributedString(string: String.DefaultBrowserMenuItem,
                                              attributes: [NSAttributedString.Key.foregroundColor: theme.colors.actionPrimary]))
+        #endif
     }
 
     override func onClick(_ navigationController: UINavigationController?) {

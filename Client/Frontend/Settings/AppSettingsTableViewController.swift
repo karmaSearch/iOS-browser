@@ -12,6 +12,10 @@ enum AppSettingsDeeplinkOption {
     case customizeToolbar
     case customizeTopSites
     case wallpaper
+    #if KARMA
+    case feedback
+    case about
+    #endif
 }
 
 /// App Settings Screen (triggered by tapping the 'Gear' in the Tab Tray Controller)
@@ -89,6 +93,12 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagga
 
         case .customizeTopSites:
             viewController = TopSitesSettingsViewController()
+            #if KARMA
+        case .feedback:
+            viewController = FeedbackViewController()
+        case .about:
+            viewController = AboutKarmaViewController()
+            #endif
         }
 
         viewController.profile = profile
@@ -185,10 +195,17 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagga
         ]
 
         if #available(iOS 14.0, *) {
+            #if KARMA
+            settings += [
+                SettingSection(footerTitle: NSAttributedString(string: String.DefaultBrowserCardDescription),
+                               children: [DefaultBrowserSetting(theme: themeManager.currentTheme)])
+            ]
+            #else
             settings += [
                 SettingSection(footerTitle: NSAttributedString(string: String.FirefoxHomepage.HomeTabBanner.EvergreenMessage.HomeTabBannerDescription),
                                children: [DefaultBrowserSetting(theme: themeManager.currentTheme)])
             ]
+            #endif
         }
 
         let accountSectionTitle = NSAttributedString(string: .FxAFirefoxAccount)
@@ -225,11 +242,15 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagga
         ]
 
         privacySettings.append(ContentBlockerSetting(settings: self))
-
+        #if KARMA
+        privacySettings += [
+            PrivacySetting()
+        ]
+        #else
         privacySettings += [
             PrivacyPolicySetting()
         ]
-
+        #endif
         settings += [
             SettingSection(title: NSAttributedString(string: .AppSettingsPrivacyTitle), children: privacySettings)]
             
@@ -237,6 +258,8 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagga
             settings += [
                 SettingSection(title: NSAttributedString(string: .AppSettingsSupport), children: [
                 ShowIntroductionSetting(settings: self),
+                SendFeedbackSetting(),
+                FAQSetting(),
                 ContactUsSettings(),
             ])]
             #else
@@ -254,8 +277,7 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagga
 
         var aboutChildren = [AppStoreReviewSetting(),
             VersionSetting(settings: self),
-            LicenseAndAcknowledgementsSetting(),
-            YourRightsSetting()]
+            LicenseAndAcknowledgementsSetting()]
         
         #if !KARMA
         aboutChildren += [

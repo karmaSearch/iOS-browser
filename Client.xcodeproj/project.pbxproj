@@ -1299,6 +1299,7 @@
 		A3C1B9BE29AE521600ECD30F /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3C1B9B529AE521600ECD30F /* ProximaNova-Regular.otf */; };
 		A3C1B9BF29AE53C500ECD30F /* topdomains.txt in Resources */ = {isa = PBXBuildFile; fileRef = D37524861C6E8B5A00A5F6C2 /* topdomains.txt */; };
 		A3C1B9C129AE53D400ECD30F /* topdomains.txt in Resources */ = {isa = PBXBuildFile; fileRef = A3C1B9C029AE53D200ECD30F /* topdomains.txt */; };
+		A3C488B829BB3AC80099F4C5 /* AboutKarmaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C488B729BB3AC80099F4C5 /* AboutKarmaViewController.swift */; };
 		A3D581A229AFC0CE00AFAA77 /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = A3D581A129AFC0CE00AFAA77 /* Common */; };
 		A3D581A429AFC0DB00AFAA77 /* Fuzi in Frameworks */ = {isa = PBXBuildFile; productRef = A3D581A329AFC0DB00AFAA77 /* Fuzi */; };
 		A3D581A629AFC0F600AFAA77 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = A3D581A529AFC0F600AFAA77 /* Sentry */; };
@@ -4498,6 +4499,7 @@
 		A3C1B9B429AE521600ECD30F /* ProximaNova-Medium It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Medium It.otf"; sourceTree = "<group>"; };
 		A3C1B9B529AE521600ECD30F /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
 		A3C1B9C029AE53D200ECD30F /* topdomains.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = topdomains.txt; sourceTree = "<group>"; };
+		A3C488B729BB3AC80099F4C5 /* AboutKarmaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutKarmaViewController.swift; sourceTree = "<group>"; };
 		A3D581B129B0AD5400AFAA77 /* LightThemeKarma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightThemeKarma.swift; sourceTree = "<group>"; };
 		A3D581B329B0AD9D00AFAA77 /* KarmaColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaColors.swift; sourceTree = "<group>"; };
 		A3D581B529B0AEA000AFAA77 /* DarkThemeKarma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkThemeKarma.swift; sourceTree = "<group>"; };
@@ -7796,6 +7798,7 @@
 			children = (
 				A3C1B99529AD040600ECD30F /* FeedbackViewController.swift */,
 				A3C1B99329AD018E00ECD30F /* KarmaAppSettings.swift */,
+				A3C488B729BB3AC80099F4C5 /* AboutKarmaViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -11882,6 +11885,7 @@
 				A380E9A1299D1D280046FA42 /* ScreenshotHelper.swift in Sources */,
 				A380E9A2299D1D280046FA42 /* (null) in Sources */,
 				A380E9A3299D1D280046FA42 /* TabManager.swift in Sources */,
+				A3C488B829BB3AC80099F4C5 /* AboutKarmaViewController.swift in Sources */,
 				A380E9A4299D1D280046FA42 /* SearchGroupedItemsViewController.swift in Sources */,
 				A380E9A5299D1D280046FA42 /* TopTabsLayout.swift in Sources */,
 				A380E9A6299D1D280046FA42 /* UIConstants.swift in Sources */,
