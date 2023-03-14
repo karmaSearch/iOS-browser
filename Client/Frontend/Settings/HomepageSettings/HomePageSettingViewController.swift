@@ -101,6 +101,24 @@ class HomePageSettingViewController: SettingsTableViewController, FeatureFlaggab
                 self.currentNewTabChoice = NewTabPage.topSites
                 onFinished()
         })
+        
+        #if KARMA
+        
+        
+        let showWebPage = CheckmarkSetting(
+            title: NSAttributedString(string: .LearnAndActTitle),
+            subtitle: nil,
+            accessibilityIdentifier: "HomeAsCustomURL",
+            isChecked: { return !showTopSites.isChecked() },
+            onChecked: {
+                let persister = PrefPersister(prefs: self.prefs, prefKey: PrefsKeys.HomeButtonHomePageURL)
+                persister.writePersistedValue(value: "https://info.karmasearch.org/learn-act")
+
+                self.currentNewTabChoice = NewTabPage.homePage
+                self.prefs.setString(self.currentNewTabChoice.rawValue, forKey: NewTabAccessors.HomePrefKey)
+                self.tableView.reloadData()
+        })
+        #else
         let showWebPage = WebPageSetting(
             prefs: prefs,
             prefKey: PrefsKeys.HomeButtonHomePageURL,
@@ -115,6 +133,7 @@ class HomePageSettingViewController: SettingsTableViewController, FeatureFlaggab
         })
         showWebPage.textField.textAlignment = .natural
 
+        #endif
         return SettingSection(title: NSAttributedString(string: .SettingsHomePageURLSectionTitle),
                               footerTitle: NSAttributedString(string: .Settings.Homepage.Current.Description),
                               children: [showTopSites, showWebPage])
