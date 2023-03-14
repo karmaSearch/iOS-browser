@@ -332,6 +332,10 @@ class SearchViewController: SiteTableViewController,
             }
             leftEdge = engineButton.snp.trailing
         }
+        
+        #if KARMA
+        searchButton.isHidden = true
+        #endif
     }
 
     func didSelectEngine(_ sender: UIButton) {
@@ -744,13 +748,17 @@ class SearchViewController: SiteTableViewController,
     }
 
     private func shouldShowHeader(for section: Int) -> Bool {
-        switch section {
-        case SearchListSection.remoteTabs.rawValue:
-            return hasFirefoxSuggestions
-        case SearchListSection.searchSuggestions.rawValue:
-            return true
-        default:
-            return true
+        switch SearchListSection(rawValue: section)! {
+        case .searchSuggestions:
+            return !(suggestions?.isEmpty ?? true)
+        case .openedTabs:
+            return !filteredOpenedTabs.isEmpty
+        case .remoteTabs:
+            return !filteredRemoteClientTabs.isEmpty
+        case .bookmarksAndHistory:
+            return data.count != 0
+        case .searchHighlights:
+            return false
         }
     }
 
