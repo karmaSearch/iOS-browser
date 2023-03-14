@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "menu-panel-karma-about.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
