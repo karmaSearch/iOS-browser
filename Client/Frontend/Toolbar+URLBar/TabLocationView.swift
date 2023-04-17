@@ -69,9 +69,9 @@ class TabLocationView: UIView, FeatureFlaggable {
         }
     }
 
-    lazy var placeholder: NSAttributedString = {
+    var placeholder: NSAttributedString  {
         return NSAttributedString(string: .TabLocationURLPlaceholder, attributes: [NSAttributedString.Key.foregroundColor: UIColor.theme.textField.textAndTint, .font: UIFont.customFont(ofSize: 18, weight: .semibold)])
-    }()
+    }
 
     lazy var urlTextField: URLTextField = .build { urlTextField in
         // Prevent the field from compressing the toolbar buttons on the 4S in landscape.
@@ -349,6 +349,8 @@ extension TabLocationView: NotificationThemeable {
         searchImage.tintColor = UIColor.theme.textField.textAndTint
         let color = LegacyThemeManager.instance.currentName == .dark ? UIColor(white: 0.3, alpha: 0.6): UIColor.theme.textField.background
         menuBadge.badge.tintBackground(color: color)
+
+        urlTextField.attributedPlaceholder = placeholder
     }
 }
 

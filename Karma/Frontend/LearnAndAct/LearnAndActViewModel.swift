@@ -183,6 +183,7 @@ extension LearnAndActViewModel: HomepageSectionHandler {
         let viewModel = learnAndActViewModels[indexPath.row]
         viewModel.tag = indexPath.row
         cell.learnAndAct = viewModel
+        cell.applyTheme(theme: theme)
         prepareContextualHint?(cell)
         return cell
     }
@@ -272,10 +273,6 @@ extension LearnAndActViewModel: HomepageViewModelProtocol, FeatureFlaggable {
     
     var isEnabled: Bool {
         return featureFlags.isFeatureEnabled(.learnAndAct, checking: .buildAndUser)
-    }
-    
-    var shouldShow: Bool {
-        return !self.learnAndActViewModels.isEmpty
     }
     
     var hasData: Bool {

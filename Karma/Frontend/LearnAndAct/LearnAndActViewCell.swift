@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import SDWebImage
+import Shared
 
 class LearnAndActViewCell: UICollectionViewCell, ReusableCell {
     
@@ -108,8 +109,6 @@ class LearnAndActViewCell: UICollectionViewCell, ReusableCell {
             descriptionLabel.lineBreakMode = .byTruncatingTail
             
             descriptionLabel.sizeToFit()
-            
-            applyTheme()
 
             typeView.isHidden = learnAndAct.typeIsHidden
             typeView.backgroundColor = learnAndAct.typeBackgroundColor
@@ -255,7 +254,14 @@ class LearnAndActViewCell: UICollectionViewCell, ReusableCell {
         }
     }
     
-    func applyTheme() {
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+}
+
+extension LearnAndActViewCell: ThemeApplicable {
+    func applyTheme(theme: Theme) {
         typeView.backgroundColor = UIColor.theme.homePanel.karmaTintColor
         titleLabel.textColor =  UIColor.theme.homePanel.learnAndActCellTitleColor
         typeLabel.textColor = UIColor.theme.homePanel.learnAndActTypeColor
@@ -265,9 +271,4 @@ class LearnAndActViewCell: UICollectionViewCell, ReusableCell {
         textContent.backgroundColor = UIColor.theme.homePanel.learnAndActBackground
         contentView.backgroundColor = UIColor.theme.homePanel.learnAndActBackground
     }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
 }

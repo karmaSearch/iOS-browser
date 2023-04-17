@@ -12,7 +12,7 @@ import Foundation
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 import UIKit
-
+import Shared
 
 
 // Activity Stream header view
@@ -50,5 +50,12 @@ class LearnAndActHeader: UICollectionReusableView, ReusableCell {
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+}
+
+// MARK: - ThemeApplicable
+extension LearnAndActHeader: ThemeApplicable {
+    func applyTheme(theme: Theme) {
+        subTitleLabel.textColor = LegacyThemeManager.instance.current.homePanel.learnAndActTitleDescription
     }
 }
