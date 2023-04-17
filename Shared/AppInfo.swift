@@ -29,6 +29,9 @@ open class AppInfo {
         return applicationBundle.object(forInfoDictionaryKey: "CFBundleDisplayName") as! String
     }
 
+    public static var firefoxVersion: String {
+        return applicationBundle.object(forInfoDictionaryKey: "CFFirefoxBundleShortVersionString") as! String 
+    }
     public static var appVersion: String {
         return applicationBundle.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
     }

@@ -21,7 +21,7 @@ open class UserAgent {
     private static func clientUserAgent(prefix: String) -> String {
         let versionStr: String
         if AppInfo.buildNumber != "1" {
-            versionStr = "\(AppInfo.appVersion)b\(AppInfo.buildNumber)"
+            versionStr = "\(AppInfo.firefoxVersion)b\(AppInfo.buildNumber)"
         } else {
             versionStr = "dev"
         }
