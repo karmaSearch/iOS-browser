@@ -524,7 +524,7 @@ extension HomepageViewController: UICollectionViewDelegate, UICollectionViewData
                     withReuseIdentifier: LearnAndActHeader.cellIdentifier,
                     for: indexPath) as? LearnAndActHeader
             else { return UICollectionReusableView() }
-            
+            headerView.applyTheme(theme: themeManager.currentTheme)
             return headerView
         }
         #endif

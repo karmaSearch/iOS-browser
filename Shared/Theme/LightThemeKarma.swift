@@ -11,7 +11,16 @@ public struct LightThemeKarma: Theme {
     public init() {}
 }
 
-private struct LightColourPaletteKarma: ThemeColourPalette {
+public protocol KarmaSpecificThemeColourPalette {
+    
+    var learnAndActCellTitleColor: UIColor { get }
+    var learnAndActDescriptionColor: UIColor { get }
+    var learnAndActLinkColor: UIColor{ get }
+    var learnAndActBackground: UIColor { get }
+    var learnAndActTitleDescription: UIColor{ get }
+}
+
+private struct LightColourPaletteKarma: ThemeColourPalette, KarmaSpecificThemeColourPalette {
     // MARK: - Layers
     var layer1: UIColor = FXColors.White
     var layer2: UIColor = FXColors.White
@@ -71,4 +80,10 @@ private struct LightColourPaletteKarma: ThemeColourPalette {
 
     // MARK: - Shadow
     var shadowDefault: UIColor = FXColors.DarkGrey40.withAlphaComponent(0.16)
+    
+    var learnAndActCellTitleColor: UIColor { KarmaColors.DarkGrey90 }
+    var learnAndActDescriptionColor: UIColor { KarmaColors.DarkGrey90 }
+    var learnAndActLinkColor: UIColor { KarmaColors.Green40 }
+    var learnAndActBackground: UIColor { UIColor.white }
+    var learnAndActTitleDescription: UIColor { KarmaColors.DarkGrey90 }
 }

@@ -11,7 +11,7 @@ import UIKit
 import SDWebImage
 import Shared
 
-class LearnAndActViewCell: UICollectionViewCell, ReusableCell {
+class LearnAndActViewCell: UICollectionViewCell, ReusableCell, ThemeApplicable {
     
     struct UX {
         static let cellHeightLandscape: CGFloat = 159
@@ -56,11 +56,6 @@ class LearnAndActViewCell: UICollectionViewCell, ReusableCell {
         imageView.isUserInteractionEnabled = false
     }
     
-    private lazy var timeToRead: UILabel = .build { label in
-        label.font = UIFont.customFont(ofSize: 12, weight: .medium)
-        label.textAlignment = .left
-    }
-    
     private lazy var descriptionLabel: UILabel = .build { label in
         label.font = UIFont.customFont(ofSize: 16, weight: .medium)
         label.textAlignment = .left
@@ -91,10 +86,8 @@ class LearnAndActViewCell: UICollectionViewCell, ReusableCell {
             }
             titleLabel.text = learnAndAct.title
             typeLabel.text = learnAndAct.typeString.uppercased()
-            timeToRead.text = learnAndAct.duration
             descriptionLabel.text = learnAndAct.description
             linkLabel.text = learnAndAct.action
-            timeToRead.isHidden = learnAndAct.duration.isEmpty
             
             let url = URIFixup.getURL(learnAndAct.mobileImage)
             imageView.sd_setImage(with: url, placeholderImage: nil, completed: nil)
@@ -118,11 +111,14 @@ class LearnAndActViewCell: UICollectionViewCell, ReusableCell {
         }
     }
     
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.contentView.addSubviews(imageView, textContent, typeView)
         textStackView.addArrangedSubview(titleLabel)
-        textStackView.addArrangedSubview(timeToRead)
         textStackView.addArrangedSubview(descriptionLabel)
         textStackView.addArrangedSubview(linkLabel)
         textContent.addSubviews(textStackView)
@@ -254,21 +250,12 @@ class LearnAndActViewCell: UICollectionViewCell, ReusableCell {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-}
-
-extension LearnAndActViewCell: ThemeApplicable {
     func applyTheme(theme: Theme) {
-        typeView.backgroundColor = UIColor.theme.homePanel.karmaTintColor
-        titleLabel.textColor =  UIColor.theme.homePanel.learnAndActCellTitleColor
-        typeLabel.textColor = UIColor.theme.homePanel.learnAndActTypeColor
-        timeToRead.textColor = UIColor.theme.homePanel.learnAndActDurationColor
-        descriptionLabel.textColor = UIColor.theme.homePanel.learnAndActDescriptionColor
-        linkLabel.textColor = UIColor.theme.homePanel.learnAndActLinkColor
-        textContent.backgroundColor = UIColor.theme.homePanel.learnAndActBackground
-        contentView.backgroundColor = UIColor.theme.homePanel.learnAndActBackground
+        guard let colors = theme.colors as? KarmaSpecificThemeColourPalette else { return }
+        titleLabel.textColor =  colors.learnAndActCellTitleColor
+        descriptionLabel.textColor = colors.learnAndActDescriptionColor
+        linkLabel.textColor = colors.learnAndActLinkColor
+        textContent.backgroundColor = colors.learnAndActBackground
+        contentView.backgroundColor = colors.learnAndActBackground
     }
 }

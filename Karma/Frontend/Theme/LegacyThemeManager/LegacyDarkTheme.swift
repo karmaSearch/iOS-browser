@@ -145,12 +145,6 @@ fileprivate class DarkHomePanelColor: HomePanelColor {
     override var customizeHomepageButtonText: UIColor { return UIColor.Photon.LightGrey10 }
     
     override var sponsored: UIColor { return UIColor.Photon.LightGrey40 }
-    
-    override var learnAndActCellTitleColor: UIColor { UIColor.Photon.White100 }
-    override var learnAndActDurationColor: UIColor { UIColor.Photon.LightGrey90 }
-    override var learnAndActDescriptionColor: UIColor { UIColor.Photon.Grey11 }
-    override var learnAndActBackground: UIColor { UIColor.Photon.DarkGrey70 }
-    override var learnAndActTitleDescription: UIColor { UIColor.Photon.Grey11 }
 
     override var searchHeaderColor: UIColor { UIColor(red: 0.141, green: 0.149, blue: 0.161, alpha: 1) }
     override var searchTitleHeaderColor: UIColor { UIColor.Photon.White100 }

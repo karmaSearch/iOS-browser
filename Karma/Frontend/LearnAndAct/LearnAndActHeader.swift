@@ -21,13 +21,11 @@ class LearnAndActHeader: UICollectionReusableView, ReusableCell {
     lazy var label: UILabel = .build { label in
         label.text = .LearnAndActTitle
         label.font = UIFont(name: "Amithen", size: 45)!
-        label.textColor = UIColor.Photon.Green60
     }
     
     lazy var subTitleLabel: UILabel = .build { label in
         label.text = .LearnAndActSubTitle
         label.font = UIFont.customFont(ofSize: 15, weight: .regular)
-        label.textColor = LegacyThemeManager.instance.current.homePanel.learnAndActTitleDescription
     }
 
     override init(frame: CGRect) {
@@ -46,16 +44,17 @@ class LearnAndActHeader: UICollectionReusableView, ReusableCell {
             make.bottom.equalToSuperview().offset(-10)
         }
     }
-
+    
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
 
-// MARK: - ThemeApplicable
 extension LearnAndActHeader: ThemeApplicable {
     func applyTheme(theme: Theme) {
-        subTitleLabel.textColor = LegacyThemeManager.instance.current.homePanel.learnAndActTitleDescription
+        label.textColor = theme.colors.actionPrimary
+        guard let colors = theme.colors as? KarmaSpecificThemeColourPalette else { return }
+        subTitleLabel.textColor = colors.learnAndActTitleDescription
     }
 }

@@ -6,9 +6,9 @@ import Foundation
 import UIKit
 
 public enum ThemeType: String {
-    case light = "normal" // This needs to match the string used in the legacy system
+    case light
     case dark
-    case lightKarma
+    case lightKarma = "normal"   // This needs to match the string used in the legacy system
     case darkKarma
 
     public func getInterfaceStyle() -> UIUserInterfaceStyle {

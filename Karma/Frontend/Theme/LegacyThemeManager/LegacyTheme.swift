@@ -84,7 +84,7 @@ class URLBarColor {
 class BrowserColor {
     var background: UIColor { return defaultBackground }
     var urlBarDivider: UIColor { return UIColor.Photon.LightGrey90 }
-    var tint: UIColor { return defaultTextAndTint }
+    var tint: UIColor { return UIColor.Photon.Green60 }
 }
 
 // The back/forward/refresh/menu button (bottom toolbar)
@@ -216,13 +216,6 @@ class HomePanelColor {
     var customizeHomepageButtonText: UIColor { return UIColor.Photon.DarkGrey90 }
     
     var karmaTintColor: UIColor { UIColor.Photon.Green60 }
-    var learnAndActCellTitleColor: UIColor { UIColor.Photon.DarkGrey90 }
-    var learnAndActTypeColor: UIColor { UIColor.Photon.DarkGrey90 }
-    var learnAndActDurationColor: UIColor { UIColor(rgb: 0x94A1B2) }
-    var learnAndActDescriptionColor: UIColor { UIColor(rgb: 0x242629) }
-    var learnAndActLinkColor: UIColor { karmaTintColor }
-    var learnAndActBackground: UIColor { UIColor.white }
-    var learnAndActTitleDescription: UIColor { UIColor.Photon.Grey80 }
 
     var searchHeaderColor: UIColor { UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1) }
     var searchTitleHeaderColor: UIColor { UIColor.Photon.DarkGrey70 }
