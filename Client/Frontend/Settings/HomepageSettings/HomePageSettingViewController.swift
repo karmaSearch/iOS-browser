@@ -112,7 +112,13 @@ class HomePageSettingViewController: SettingsTableViewController, FeatureFlaggab
             isChecked: { return !showTopSites.isChecked() },
             onChecked: {
                 let persister = PrefPersister(prefs: self.prefs, prefKey: PrefsKeys.HomeButtonHomePageURL)
-                persister.writePersistedValue(value: "https://info.karmasearch.org/learn-act")
+                let url: String = {
+                    if Locale.current.identifier.contains("fr") {
+                        return "https://info.karmasearch.org/fr/learn-act"
+                    }
+                    return "https://info.karmasearch.org/learn-act"
+                }()
+                persister.writePersistedValue(value: url)
 
                 self.currentNewTabChoice = NewTabPage.homePage
                 self.prefs.setString(self.currentNewTabChoice.rawValue, forKey: NewTabAccessors.HomePrefKey)

@@ -39,9 +39,9 @@ class KarmaPrivacyPolicySetting: Setting {
 
     override var url: URL? {
         if Locale.current.identifier.contains("fr") {
-            return URL(string: "https://about.karmasearch.org/fr/legal")
+            return URL(string: "https://info.karmasearch.org/fr/legal")
         }
-        return URL(string: "https://about.karmasearch.org/legal")
+        return URL(string: "https://info.karmasearch.org/legal")
     }
 
     override func onClick(_ navigationController: UINavigationController?) {
@@ -56,7 +56,10 @@ class OurMissionSetting: Setting {
     }
 
     override var url: URL? {
-        return URL(string: "https://info.karmasearch.org/")
+        if Locale.current.identifier.contains("fr") {
+            return URL(string: "https://info.karmasearch.org/fr/mission")
+        }
+        return URL(string: "https://info.karmasearch.org")
     }
 
     override func onClick(_ navigationController: UINavigationController?) {
@@ -70,6 +73,9 @@ class HowSetting: Setting {
     }
 
     override var url: URL? {
+        if Locale.current.identifier.contains("fr") {
+            return URL(string: "https://info.karmasearch.org/fr/what")
+        }
         return URL(string: "https://info.karmasearch.org/what")
     }
 
@@ -84,6 +90,9 @@ class PartnersSetting: Setting {
     }
 
     override var url: URL? {
+        if Locale.current.identifier.contains("fr") {
+            return URL(string: "https://info.karmasearch.org/fr/partners")
+        }
         return URL(string: "https://info.karmasearch.org/partners")
     }
 
