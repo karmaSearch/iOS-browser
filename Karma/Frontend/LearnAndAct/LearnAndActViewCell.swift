@@ -85,7 +85,7 @@ class LearnAndActViewCell: UICollectionViewCell, ReusableCell, ThemeApplicable {
                 return
             }
             titleLabel.text = learnAndAct.title
-            typeLabel.text = learnAndAct.typeString.uppercased()
+            typeLabel.text = learnAndAct.type.rawValue.uppercased()
             descriptionLabel.text = learnAndAct.description
             linkLabel.text = learnAndAct.action
             

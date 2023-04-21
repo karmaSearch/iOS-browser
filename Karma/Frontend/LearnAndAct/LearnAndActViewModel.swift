@@ -16,7 +16,6 @@ import Shared
 class LearnAndActCellViewModel {
         
     var type: LearnAndActContentType { item.contentType }
-    var typeString: String { item.contentString }
     var duration: String = ""
     var mobileImage: String { item.imageURL }
     var title: String { item.title }

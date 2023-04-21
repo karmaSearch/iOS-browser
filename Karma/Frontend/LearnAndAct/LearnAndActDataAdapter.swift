@@ -19,6 +19,7 @@ class LearnAndActDataAdaptorImplementation: LearnAndActDataAdaptor, FeatureFlagg
     private var learnAndAct: LearnAndAct?
     private var pageLoading: Int = 0
     weak var delegate: LearnAndActDelegate?
+    private var lastLearnAndAct: LearnAndAct?
 
 
     init(API: LearnAndActProviding) {
@@ -45,15 +46,14 @@ class LearnAndActDataAdaptorImplementation: LearnAndActDataAdaptor, FeatureFlagg
     
     func loadNewPage() {
         guard let learnAndAct = learnAndAct,
-              learnAndAct.page < learnAndAct.numberOfPage,
-            pageLoading < learnAndAct.page+1 else { return }
+              !(lastLearnAndAct?.blocs.isEmpty ?? false) else { return }
         
-        pageLoading = learnAndAct.page+1
+        pageLoading = pageLoading+1
         Task {
             do {
-                let new = try await learnAndActAPI.fetchArticles(pageNumber: pageLoading)
-                let newList = learnAndAct.blocs + new.blocs
-                self.learnAndAct = LearnAndAct(blocs: newList, page: new.page, numberOfPage:  new.numberOfPage)
+                self.lastLearnAndAct = try await learnAndActAPI.fetchArticles(pageNumber: pageLoading)
+                let newList = learnAndAct.blocs + self.lastLearnAndAct!.blocs
+                self.learnAndAct = LearnAndAct(blocs: newList)
 
                 delegate?.didLoadNewData()
             } catch {
