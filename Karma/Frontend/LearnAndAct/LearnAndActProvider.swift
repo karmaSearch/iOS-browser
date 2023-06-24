@@ -37,7 +37,7 @@ class LearnAndActProvider: LearnAndActProviding, FeatureFlaggable, URLCaching {
     func fetchArticles(pageNumber: Int = 1) async throws -> LearnAndAct {
         
         guard let request = await createRequest(pageNumber: pageNumber) else { throw Error.failure}
-        if let cacheResponse = findCachedResponse(for: request),
+        if pageNumber == 1, let cacheResponse = findCachedResponse(for: request),
            let items = cacheResponse["learnAndAndAct"] as? [[String: Any]] {
             return try LearnAndAct.parseJSON(list: items)
         }
@@ -66,7 +66,7 @@ class LearnAndActProvider: LearnAndActProviding, FeatureFlaggable, URLCaching {
         let locale = Locale.current.identifier.replaceFirstOccurrence(of: "_", with: "-")
         guard let url = URL(string: urlPost)?.withQueryParams([
             URLQueryItem(name: "pageNumber", value: String(pageNumber)),
-            //URLQueryItem(name: "pageNumber", value: String(5)), //test pagination
+            //URLQueryItem(name: "pageSize", value: String(30)), //test pagination
             URLQueryItem(name: "locale", value: locale)]
         ) else { return nil }
         

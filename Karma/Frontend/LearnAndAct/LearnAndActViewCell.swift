@@ -24,7 +24,7 @@ class LearnAndActViewCell: UICollectionViewCell, ReusableCell, ThemeApplicable {
         static let typeHeight: CGFloat = 28
         static let cellWidth: CGFloat = 350
         static let interGroupSpacing: CGFloat = 8
-        static let interItemSpacing = NSCollectionLayoutSpacing.fixed(8)
+        static let interItemSpacing = NSCollectionLayoutSpacing.fixed(14)
     }
 
     
