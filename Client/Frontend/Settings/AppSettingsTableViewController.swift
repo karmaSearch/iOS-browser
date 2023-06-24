@@ -117,17 +117,12 @@ class AppSettingsTableViewController: SettingsTableViewController, FeatureFlagga
         let nightModeEnabled = NightModeHelper.isActivated()
 
         let nightModeTitle: String = nightModeEnabled ? String.AppMenu.AppMenuTurnOffNightMode : String.AppMenu.AppMenuTurnOnNightMode
-        let imageModeTitle: String = String.Settings.Toggle.NoImageMode
 
         var generalSettings: [Setting] = [
             HomeSetting(settings: self),
             OpenWithSetting(settings: self),
             ThemeSetting(settings: self),
             SiriPageSetting(settings: self),
-            BoolSetting(prefs: prefs, theme: themeManager.currentTheme,
-                        prefKey: PrefsKeys.KeyNoImageModeStatus, defaultValue: false, titleText: imageModeTitle, statusText: .AppMenuNoImageStatus, settingDidChange: { isOn in
-                self.tabManager.tabs.forEach { $0.noImageMode = isOn }
-            }),
             BoolSetting(prefs: prefs,
                         theme: themeManager.currentTheme,
                         prefKey: PrefsKeys.KeyBlockPopups, defaultValue: true,
