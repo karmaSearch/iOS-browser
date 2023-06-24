@@ -867,7 +867,10 @@ extension HomepageViewController: UIPopoverPresentationControllerDelegate {
     ) {
         // Do not dismiss if the popover is a CFR
         guard !jumpBackInContextualHintViewController.isPresenting &&
-                !syncTabContextualHintViewController.isPresenting else { return }
+                !syncTabContextualHintViewController.isPresenting &&
+        !shortcutContextualHintViewController.isPresenting &&
+        !learnAndActContextualHintViewController.isPresenting else { return }
+        
         popoverPresentationController.presentedViewController.dismiss(animated: false, completion: nil)
     }
     func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
